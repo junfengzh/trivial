@@ -1,0 +1,387 @@
+{
+  "1990 OIM Problems/Problem 1": {
+    "parse": {
+      "title": "1990 OIM Problems/Problem 1",
+      "pageid": 26062,
+      "revid": 208185,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> be a function defined in the set of integers greater or equal to zero such that:\n</p><p>(i) If <img src=\"//latex.artofproblemsolving.com/f/c/6/fc6e65eb9ff0e98a1cba7356a22aa4f30464c6fc.png\" class=\"latex\" alt=\"$n=2^j-1$\" style=\"vertical-align: -2px\" width=\"84\" height=\"19\" />, for all <img src=\"//latex.artofproblemsolving.com/9/6/0/9602b72b1bc0aa2414d7cf6d3dff274ca39708f8.png\" class=\"latex\" alt=\"$n=0, 1, 2, \\cdots,$\" style=\"vertical-align: -4px\" width=\"121\" height=\"17\" /> then <img src=\"//latex.artofproblemsolving.com/6/3/c/63ca62369ad0c0587639f57d93a243816307b960.png\" class=\"latex\" alt=\"$f(n)=0$\" style=\"vertical-align: -4px\" width=\"68\" height=\"18\" />\n</p><p>(ii) If <img src=\"//latex.artofproblemsolving.com/d/2/6/d263777e765545b5b8f2c95e5f8076d40de465b3.png\" class=\"latex\" alt=\"$n \\ne 2^j-1$\" style=\"vertical-align: -4px\" width=\"84\" height=\"21\" />, for all <img src=\"//latex.artofproblemsolving.com/9/6/0/9602b72b1bc0aa2414d7cf6d3dff274ca39708f8.png\" class=\"latex\" alt=\"$n=0, 1, 2, \\cdots,$\" style=\"vertical-align: -4px\" width=\"121\" height=\"17\" /> then <img src=\"//latex.artofproblemsolving.com/0/c/f/0cf49e7945b3ecebf3dae4cba91a31bf0e05096e.png\" class=\"latex\" alt=\"$f(n+1)=f(n)-1$\" style=\"vertical-align: -5px\" width=\"161\" height=\"20\" />\n</p><p>a. Prove that for all integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, greater or equal to zero, there exist an integer <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> grater than zero such that\n<img src=\"//latex.artofproblemsolving.com/e/3/4/e343172b4175bc61591e8fc2ab0e4a43b4d36323.png\" class=\"latexcenter\" alt=\"\\[f(n)+n=2^k-1\\]\" width=\"140\" height=\"20\" />\n</p><p>b. Calculate <img src=\"//latex.artofproblemsolving.com/f/1/c/f1c2cb281eb96da3d0e6e66176f6c4498697058c.png\" class=\"latex\" alt=\"$f(2^{1990})$\" style=\"vertical-align: -5px\" width=\"63\" height=\"21\" />.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><b>Part a.</b>\n</p><p><img src=\"//latex.artofproblemsolving.com/2/6/6/2663fd018bf3f2bbc27955fd6771199b132d8d28.png\" class=\"latex\" alt=\"$f(2^j-1)=0$\" style=\"vertical-align: -5px\" width=\"108\" height=\"22\" />, <img src=\"//latex.artofproblemsolving.com/e/1/7/e1772dcb65154ab57ed72cf525dca92e3c1a2bf0.png\" class=\"latex\" alt=\"$f(2^j)=-1$\" style=\"vertical-align: -5px\" width=\"90\" height=\"22\" />, <img src=\"//latex.artofproblemsolving.com/3/3/b/33b187d49c893f50524c4999569c64913f868de5.png\" class=\"latex\" alt=\"$f(2^j+1)=-2$\" style=\"vertical-align: -5px\" width=\"122\" height=\"22\" />, and so on..\n</p><p>So we pick a range where <img src=\"//latex.artofproblemsolving.com/c/5/a/c5ab3ecde20d86cdd41a99bb570ca6da1896ddd5.png\" class=\"latex\" alt=\"$f(n)\\ne 0$\" style=\"vertical-align: -5px\" width=\"71\" height=\"20\" /> which is  <img src=\"//latex.artofproblemsolving.com/a/7/c/a7ca923454ba51f748be72767bce35a01dd291db.png\" class=\"latex\" alt=\"$2^j-1&lt;2^j+b&lt;2^{j+1}-1$\" style=\"vertical-align: -2px\" width=\"208\" height=\"19\" /> where <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> is a non-negative integer.\n</p><p>Therefore, <img src=\"//latex.artofproblemsolving.com/c/2/d/c2da57d3bd5e432adb5e8206def6dd67061ae8b8.png\" class=\"latex\" alt=\"$2^j\\le2^j+b\\le2^{j+1}-2$\" style=\"vertical-align: -3px\" width=\"177\" height=\"20\" /> which provides the range for <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> as: <img src=\"//latex.artofproblemsolving.com/1/2/1/121ef6884e8b614cdcce50d224b1c8c3eef4647a.png\" class=\"latex\" alt=\"$0\\le b \\le 2^{j+1}-2-2^j$\" style=\"vertical-align: -3px\" width=\"170\" height=\"20\" />\n</p><p>In that range, this gives <img src=\"//latex.artofproblemsolving.com/0/e/6/0e6f9e46aabb0d0089b47cc8a490c24ca1f63f69.png\" class=\"latex\" alt=\"$f(2^j+b)=-(b+1)$\" style=\"vertical-align: -5px\" width=\"165\" height=\"22\" />\n</p><p>When <img src=\"//latex.artofproblemsolving.com/f/c/6/fc6e65eb9ff0e98a1cba7356a22aa4f30464c6fc.png\" class=\"latex\" alt=\"$n=2^j-1$\" style=\"vertical-align: -2px\" width=\"84\" height=\"19\" />, <img src=\"//latex.artofproblemsolving.com/2/9/e/29eb3fdab7a2bd890775c590796c094ff902ecc1.png\" class=\"latex\" alt=\"$f(n)+n=f(2^j-1)+2^j-1=0+2^j-1=2^k-1$\" style=\"vertical-align: -5px\" width=\"413\" height=\"22\" /> which proves the equality since <img src=\"//latex.artofproblemsolving.com/a/6/e/a6e2d075100261837721988399fb0344fcd2cbfc.png\" class=\"latex\" alt=\"$j=k$\" style=\"vertical-align: -4px\" width=\"45\" height=\"18\" />.\n</p><p>When <img src=\"//latex.artofproblemsolving.com/d/2/6/d263777e765545b5b8f2c95e5f8076d40de465b3.png\" class=\"latex\" alt=\"$n \\ne 2^j-1$\" style=\"vertical-align: -4px\" width=\"84\" height=\"21\" />, <img src=\"//latex.artofproblemsolving.com/b/6/2/b6206354f1c376c02f497cf091dca7dd47e78d52.png\" class=\"latex\" alt=\"$f(n)+n=f(2^j+b)+2^j+b=-(b+1)+2^j+b=2^j-1=2^k-1$\" style=\"vertical-align: -5px\" width=\"539\" height=\"22\" /> which also proves the equality since <img src=\"//latex.artofproblemsolving.com/a/6/e/a6e2d075100261837721988399fb0344fcd2cbfc.png\" class=\"latex\" alt=\"$j=k$\" style=\"vertical-align: -4px\" width=\"45\" height=\"18\" />.\n</p><p><b>Part b.</b>\n</p><p><img src=\"//latex.artofproblemsolving.com/d/6/5/d65b1e4e4e5f33cab491100e552f061b5ddbb59a.png\" class=\"latex\" alt=\"$f(2^{1990})=f(2^{1990}-1)-1=0-1=-1$\" style=\"vertical-align: -5px\" width=\"324\" height=\"21\" />\n</p>\n<ul><li>This seems to be one of the easiest problems I've seen in these types of competitions, unless I'm missing something.</li></ul>\n<p>~Tomas Diaz. orders@tomasdiaz.com\n</p><p><i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_OIM_Problems/Problem_1&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.oma.org.ar/enunciados/ibe5.htm\">https://www.oma.org.ar/enunciados/ibe5.htm</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907210540\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 269/1000000\nPreprocessor generated node count: 602/1000000\nPost‐expand include size: 344/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5063/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.469      1 Template:Alternate_solutions\n100.00%    1.469      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26062-0!canonical and timestamp 20240907210540 and revision id 208185\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://www.oma.org.ar/enunciados/ibe5.htm"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_OIM_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_OIM_Problems/Problem_1",
+          "byteoffset": 586,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_OIM_Problems/Problem_1",
+          "byteoffset": 1556,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 OIM Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1990 OIM Problems/Problem 2": {
+    "parse": {
+      "title": "1990 OIM Problems/Problem 2",
+      "pageid": 26063,
+      "revid": 207026,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In a triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" />, let <img src=\"//latex.artofproblemsolving.com/0/2/7/027f4a11d6090f9eac0ce2488df6384dad1263ea.png\" class=\"latex\" alt=\"$I$\" width=\"9\" height=\"12\" /> be the center of the inscribed circle and <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> be its points of tangency with the sides <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, respectively. Let <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> be the other point of intersection of the line <img src=\"//latex.artofproblemsolving.com/b/c/5/bc56862b1fdb71204894da278e42ef75de73a40b.png\" class=\"latex\" alt=\"$AD$\" width=\"28\" height=\"13\" /> with the inscribed circle.\n</p><p>If <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> is the midpoint of <img src=\"//latex.artofproblemsolving.com/c/1/2/c128243ea8125d0bb007b8132dcfa44461df73a7.png\" class=\"latex\" alt=\"$EF$\" width=\"28\" height=\"12\" />, show that the four points <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/0/2/7/027f4a11d6090f9eac0ce2488df6384dad1263ea.png\" class=\"latex\" alt=\"$I$\" width=\"9\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> belong to the same circle.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_OIM_Problems/Problem_2&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.oma.org.ar/enunciados/ibe5.htm\">https://www.oma.org.ar/enunciados/ibe5.htm</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907210541\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.021 seconds\nReal time usage: 0.024 seconds\nPreprocessor visited node count: 162/1000000\nPreprocessor generated node count: 368/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2433/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.376      1 Template:Solution\n100.00%    1.376      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26063-0!canonical and timestamp 20240907210541 and revision id 207026\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://www.oma.org.ar/enunciados/ibe5.htm"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_OIM_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_OIM_Problems/Problem_2",
+          "byteoffset": 613,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_OIM_Problems/Problem_2",
+          "byteoffset": 642,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 OIM Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1990 OIM Problems/Problem 3": {
+    "parse": {
+      "title": "1990 OIM Problems/Problem 3",
+      "pageid": 26064,
+      "revid": 208186,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/4/c/0/4c00dbb539d83bd9a5c4bd889f3243fc7b5e6c09.png\" class=\"latex\" alt=\"$f(x) = (x + b)^2-c$\" style=\"vertical-align: -5px\" width=\"154\" height=\"21\" />, be a polynomial with <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> as integers.\n</p><p>a. If <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> is a prime number such that <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> divides <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/5/9/1/591f689f950feb4a9cff58ff3166d915f916a405.png\" class=\"latex\" alt=\"$p^2$\" style=\"vertical-align: -3px\" width=\"16\" height=\"18\" /> does not divide <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" />, show that, whatever the integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is, <img src=\"//latex.artofproblemsolving.com/0/c/f/0cfcb3cd89ef667a2fa51ff63845c6ccb974bb9e.png\" class=\"latex\" alt=\"$p^22$\" style=\"vertical-align: -4px\" width=\"28\" height=\"20\" /> does not divide <img src=\"//latex.artofproblemsolving.com/e/e/f/eef0203e65664bd00b5f0325c5c5fcd81bcead8d.png\" class=\"latex\" alt=\"$f(n)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" />.\n</p><p>b. Let <img src=\"//latex.artofproblemsolving.com/0/6/1/0615acc3725de21025457e7d6f7694dab8e2f758.png\" class=\"latex\" alt=\"$q$\" style=\"vertical-align: -3px\" width=\"8\" height=\"11\" /> be a prime number other than 2, that divides <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" />. If <img src=\"//latex.artofproblemsolving.com/0/6/1/0615acc3725de21025457e7d6f7694dab8e2f758.png\" class=\"latex\" alt=\"$q$\" style=\"vertical-align: -3px\" width=\"8\" height=\"11\" /> divides <img src=\"//latex.artofproblemsolving.com/e/e/f/eef0203e65664bd00b5f0325c5c5fcd81bcead8d.png\" class=\"latex\" alt=\"$f(n)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" /> for some integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, show that for every positive integer <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" /> there exists an integer <img src=\"//latex.artofproblemsolving.com/c/6/b/c6bed33114d0579936e00565024dad5a983cbac1.png\" class=\"latex\" alt=\"$n&#39;$\" width=\"14\" height=\"14\" /> such that <img src=\"//latex.artofproblemsolving.com/1/0/8/108880f2aeb6e6fb3741d3ef55cabe89819cbd1e.png\" class=\"latex\" alt=\"$q^r$\" style=\"vertical-align: -4px\" width=\"18\" height=\"18\" /> divides <img src=\"//latex.artofproblemsolving.com/9/0/8/9080054906eee08714ffe770cebe80ba48668311.png\" class=\"latex\" alt=\"$f(n&#39;)$\" style=\"vertical-align: -5px\" width=\"42\" height=\"20\" />.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_OIM_Problems/Problem_3&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.oma.org.ar/enunciados/ibe5.htm\">https://www.oma.org.ar/enunciados/ibe5.htm</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907210541\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.023 seconds\nReal time usage: 0.024 seconds\nPreprocessor visited node count: 198/1000000\nPreprocessor generated node count: 448/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3228/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.649      1 Template:Solution\n100.00%    1.649      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26064-0!canonical and timestamp 20240907210541 and revision id 208186\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://www.oma.org.ar/enunciados/ibe5.htm"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_OIM_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_OIM_Problems/Problem_3",
+          "byteoffset": 736,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_OIM_Problems/Problem_3",
+          "byteoffset": 765,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 OIM Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1990 OIM Problems/Problem 4": {
+    "parse": {
+      "title": "1990 OIM Problems/Problem 4",
+      "pageid": 26065,
+      "revid": 207028,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let: <img src=\"//latex.artofproblemsolving.com/7/0/b/70b97eb4ad6e4e7a5a97e2547d9ed6e965960d0c.png\" class=\"latex\" alt=\"$C_1$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> be a circle, <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> be one of its diameters, <img src=\"//latex.artofproblemsolving.com/e/0/d/e0d2bf360290fd61d1c1557e763f2622363b3d35.png\" class=\"latex\" alt=\"$t$\" width=\"6\" height=\"11\" /> be its tangent at <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> be a point on <img src=\"//latex.artofproblemsolving.com/7/0/b/70b97eb4ad6e4e7a5a97e2547d9ed6e965960d0c.png\" class=\"latex\" alt=\"$C_1$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> other than <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />.  A circle <img src=\"//latex.artofproblemsolving.com/b/6/5/b65e6facfe122c182fe14d503aeace2c52a9739d.png\" class=\"latex\" alt=\"$C_2$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" /> is constructed tangent to <img src=\"//latex.artofproblemsolving.com/7/0/b/70b97eb4ad6e4e7a5a97e2547d9ed6e965960d0c.png\" class=\"latex\" alt=\"$C_1$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> at <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and to the line <img src=\"//latex.artofproblemsolving.com/e/0/d/e0d2bf360290fd61d1c1557e763f2622363b3d35.png\" class=\"latex\" alt=\"$t$\" width=\"6\" height=\"11\" />.\n</p><p>a. Determine the point <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> of tangency of <img src=\"//latex.artofproblemsolving.com/e/0/d/e0d2bf360290fd61d1c1557e763f2622363b3d35.png\" class=\"latex\" alt=\"$t$\" width=\"6\" height=\"11\" /> and <img src=\"//latex.artofproblemsolving.com/b/6/5/b65e6facfe122c182fe14d503aeace2c52a9739d.png\" class=\"latex\" alt=\"$C_2$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" />, and find the locus of the centers of the circles by varying <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />.\n</p><p>b. Prove that there is a circle orthogonal to all the circles <img src=\"//latex.artofproblemsolving.com/b/6/5/b65e6facfe122c182fe14d503aeace2c52a9739d.png\" class=\"latex\" alt=\"$C_2$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" />.\n</p><p>NOTE: Two circles are orthogonal if they intersect and the respective tangents at the points of intersection are perpendicular.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_OIM_Problems/Problem_4&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.oma.org.ar/enunciados/ibe5.htm\">https://www.oma.org.ar/enunciados/ibe5.htm</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907210541\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.022 seconds\nReal time usage: 0.022 seconds\nPreprocessor visited node count: 162/1000000\nPreprocessor generated node count: 368/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2466/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.469      1 Template:Solution\n100.00%    1.469      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26065-0!canonical and timestamp 20240907210541 and revision id 207028\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://www.oma.org.ar/enunciados/ibe5.htm"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_OIM_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_OIM_Problems/Problem_4",
+          "byteoffset": 776,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_OIM_Problems/Problem_4",
+          "byteoffset": 805,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 OIM Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1990 OIM Problems/Problem 5": {
+    "parse": {
+      "title": "1990 OIM Problems/Problem 5",
+      "pageid": 26066,
+      "revid": 207029,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> be opposite vertices of a gridded board of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> by <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> squares <img src=\"//latex.artofproblemsolving.com/8/9/7/897470a282b6b85fa5221eacd41369b9a157f491.png\" class=\"latex\" alt=\"$n \\ge 1$\" style=\"vertical-align: -2px\" width=\"43\" height=\"14\" />, to each of which its diagonal of direction <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> is added, thus forming <img src=\"//latex.artofproblemsolving.com/b/d/6/bd6917e1a598e7efad0531d69a9cf51badfe01d7.png\" class=\"latex\" alt=\"$2n^2$\" width=\"26\" height=\"15\" /> equal triangles. A piece is moved along a path that goes from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> to <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> formed by segments of the board, and each time it is traveled, a seed is placed in each of the triangles that accepts that segment as a side. The path is traveled in such a way that no segment is passed more than once, and it is observed, after traveling, that there are exactly two seeds in each of the <img src=\"//latex.artofproblemsolving.com/b/d/6/bd6917e1a598e7efad0531d69a9cf51badfe01d7.png\" class=\"latex\" alt=\"$2n^2$\" width=\"26\" height=\"15\" /> triangles of the board. For what values of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is this situation possible?\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_OIM_Problems/Problem_5&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.oma.org.ar/enunciados/ibe5.htm\">https://www.oma.org.ar/enunciados/ibe5.htm</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907210542\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.020 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 117/1000000\nPreprocessor generated node count: 268/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1611/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.683      1 Template:Solution\n100.00%    1.683      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26066-0!canonical and timestamp 20240907210542 and revision id 207029\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://www.oma.org.ar/enunciados/ibe5.htm"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_OIM_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_OIM_Problems/Problem_5",
+          "byteoffset": 825,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_OIM_Problems/Problem_5",
+          "byteoffset": 854,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 OIM Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1990 OIM Problems/Problem 6": {
+    "parse": {
+      "title": "1990 OIM Problems/Problem 6",
+      "pageid": 26067,
+      "revid": 207030,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/c/9/6/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png\" class=\"latex\" alt=\"$f(x)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" /> be a polynomial of degree 3 with rational coefficients. Prove that if the graph of <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> is tangent to the x-axis, then <img src=\"//latex.artofproblemsolving.com/c/9/6/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png\" class=\"latex\" alt=\"$f(x)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" /> has its 3 rational roots.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_OIM_Problems/Problem_6&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_OIM_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.oma.org.ar/enunciados/ibe5.htm\">https://www.oma.org.ar/enunciados/ibe5.htm</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907210542\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.019 seconds\nReal time usage: 0.020 seconds\nPreprocessor visited node count: 45/1000000\nPreprocessor generated node count: 108/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 519/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.503      1 Template:Solution\n100.00%    1.503      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26067-0!canonical and timestamp 20240907210542 and revision id 207030\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://www.oma.org.ar/enunciados/ibe5.htm"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_OIM_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_OIM_Problems/Problem_6",
+          "byteoffset": 273,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_OIM_Problems/Problem_6",
+          "byteoffset": 302,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 OIM Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

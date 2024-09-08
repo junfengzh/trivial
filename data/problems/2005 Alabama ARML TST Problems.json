@@ -1,0 +1,2378 @@
+{
+  "2005 Alabama ARML TST Problems/Problem 1": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 1",
+      "pageid": 4306,
+      "revid": 185599,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a href=\"/wiki/index.php/Two\" title=\"Two\">Two</a> six-sided dice are constructed such that each face is equally likely to show up when rolled. The numbers on the faces of one of the dice are <img src=\"//latex.artofproblemsolving.com/5/f/1/5f199fe948dd076745e9f1e929912872779457f5.png\" class=\"latex\" alt=\"$1, 3, 4, 5, 6,\\text{ and }8$\" style=\"vertical-align: -3px\" width=\"132\" height=\"16\" />. The numbers on the faces of the other die are <img src=\"//latex.artofproblemsolving.com/2/f/8/2f8c53560e7d7b5f7a1fe058cb6f26f077471ea7.png\" class=\"latex\" alt=\"$1, 2, 2, 3, 3,\\text{ and }4$\" style=\"vertical-align: -3px\" width=\"132\" height=\"16\" />. Find the <a href=\"/wiki/index.php/Probability\" title=\"Probability\">probability</a> of rolling a sum of <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" /> with these two dice.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2><p>\nWe use <a href=\"/wiki/index.php/Generating_function\" title=\"Generating function\">generating functions</a> to represent the sum of the two dice rolls: </p><center><img src=\"//latex.artofproblemsolving.com/5/c/c/5ccfba347f8f50397e9ea58a75e3a91d70dbdbe9.png\" class=\"latex\" alt=\"$(x+x^3+x^4+x^5+x^6+x^8)(x+2x^2+2x^3+x^4)=$\" style=\"vertical-align: -4px\" width=\"406\" height=\"19\" /></center>\n<center><img src=\"//latex.artofproblemsolving.com/b/a/e/bae4b5b67050f0eba8a61fbb67a10a32a2856308.png\" class=\"latex\" alt=\"$x^2(1+x^2+x^3+x^4+x^5+x^7)(1+x+x^2)(1+x)$\" style=\"vertical-align: -4px\" width=\"391\" height=\"19\" /></center>\n<p>The <a href=\"/wiki/index.php/Coefficient\" title=\"Coefficient\">coefficient</a> of <img src=\"//latex.artofproblemsolving.com/e/4/e/e4ec8841ee1606e40f6921ed5714c485945bb8d9.png\" class=\"latex\" alt=\"$x^9$\" width=\"16\" height=\"15\" />, that is, the number of ways of rolling a sum of 9, is thus <img src=\"//latex.artofproblemsolving.com/5/d/4/5d4db6777539657997cdf6e5b4d37e08ec0ffb8c.png\" class=\"latex\" alt=\"$(1+2+1)=4$\" style=\"vertical-align: -4px\" width=\"119\" height=\"18\" />, out of a total of <img src=\"//latex.artofproblemsolving.com/e/8/4/e8406a2a50c1aa1040c8862b912a5f3d703d9569.png\" class=\"latex\" alt=\"$6^2$\" width=\"15\" height=\"15\" /> possible two-roll combinations, for a probability of <img src=\"//latex.artofproblemsolving.com/b/9/c/b9c574e142f6a0741704e64530a9fab949619c60.png\" class=\"latex\" alt=\"$\\frac 19$\" style=\"vertical-align: -12px\" width=\"11\" height=\"37\" />.\n</p><p>Alternatively, just note the possible pairs which work: <img src=\"//latex.artofproblemsolving.com/2/7/d/27d975b2f09739655551781f5914b5f71de13d04.png\" class=\"latex\" alt=\"$(5, 4), (6, 3), (6, 3)$\" style=\"vertical-align: -4px\" width=\"135\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/2/b/8/2b8507d7d45400a0565889da66e6fca555aa7485.png\" class=\"latex\" alt=\"$(8, 1)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> are all possible combinations that give us a sum of <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" /> (where we count <img src=\"//latex.artofproblemsolving.com/e/9/3/e936447969453c86785fddfee03c502514fa298f.png\" class=\"latex\" alt=\"$(6, 3)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> twice because there are two different <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />s to roll).  Thus the probability of one of these outcomes is <img src=\"//latex.artofproblemsolving.com/1/b/a/1ba442591c440c478dd6b381a90621bf09c34001.png\" class=\"latex\" alt=\"$\\frac{4}{36} = \\frac19$\" style=\"vertical-align: -12px\" width=\"58\" height=\"37\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b>First question</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907114245\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.023 seconds\nReal time usage: 0.024 seconds\nPreprocessor visited node count: 195/1000000\nPreprocessor generated node count: 560/1000000\nPost‐expand include size: 1340/2097152 bytes\nTemplate argument size: 214/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2632/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.905      1 Template:ARML_box\n100.00%    2.905      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:4306-0!canonical and timestamp 20240907114245 and revision id 185599\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Coefficient"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Generating function"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Probability"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Two"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_1",
+          "byteoffset": 373,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_1",
+          "byteoffset": 1212,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 10": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 10",
+      "pageid": 6528,
+      "revid": 23704,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_10&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>When Jon Stewart walks up stairs he takes one or two steps at a time. His stepping sequence is not necessarily regular. He might step up one step, then two, then two again, then one, then one, and then two in order to climb up a total of 9 steps. In how many ways can Jon walk up a 14 step stairwell?\n</p>\n<div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Solution_2\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Solution 2</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_also\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_10&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h3><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_10&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>He can either take 14 one-steps, or 12 one-steps and 1 two-step, etc., so we have\n</p><p><img src=\"//latex.artofproblemsolving.com/9/e/0/9e061b884182c95403d4b2326a817ec552b7c62f.png\" class=\"latexcenter\" alt=\"\\begin{eqnarray*} \\frac{14!}{14!}+\\frac{13!}{12!\\cdot 1!}+\\frac{12!}{10!\\cdot 2!}+\\frac{11!}{8!\\cdot 3!}+\\frac{10!}{6!\\cdot 4!}+\\frac{9!}{4!\\cdot 5!}+\\frac{8!}{2!\\cdot 6!}+\\frac{7!}{7!}\\\\ =1+13+66+165+210+126+28+1=14+231+336+29=245+365=\\boxed{610} \\end{eqnarray*}\" width=\"674\" height=\"67\" />\n</p>\n<h3><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_10&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>Let <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> represent the number of sequences of steps that can be taken up the stairs. Clearly <img src=\"//latex.artofproblemsolving.com/d/d/5/dd5a04bc25d97b228a7ea2717962aec9e2e2f330.png\" class=\"latex\" alt=\"$a_{1} = 1, a_{2} = 2$\" style=\"vertical-align: -3px\" width=\"108\" height=\"15\" />. Any sequence of length <img src=\"//latex.artofproblemsolving.com/a/c/5/ac5429dc4aa7ba1f3b20be4599a34c4220cc79db.png\" class=\"latex\" alt=\"$n + 1$\" style=\"vertical-align: -2px\" width=\"44\" height=\"15\" /> is either composed of a sequence of length <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> followed by another step or a sequence of length <img src=\"//latex.artofproblemsolving.com/4/b/d/4bdca93962a2beaffc172ca394e04fe05bd74ffd.png\" class=\"latex\" alt=\"$n-1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" /> followed by two steps. Thus we have the recursion\n<img src=\"//latex.artofproblemsolving.com/2/4/e/24ea72de8ad8e9ead04a363ffe7769aedcbe4d6c.png\" class=\"latexcenter\" alt=\"\\[a_{n + 1} = a_{n} + a_{n - 1}\\]\" width=\"133\" height=\"15\" />\nwhich indeed is the Fibonacci sequence, except with indexes shifted. Matching them, we have <img src=\"//latex.artofproblemsolving.com/8/1/6/8165ea5806120466e480003f70df0db1c4101fc1.png\" class=\"latex\" alt=\"$a_n = F_{n + 1}$\" style=\"vertical-align: -4px\" width=\"78\" height=\"16\" />, and <img src=\"//latex.artofproblemsolving.com/e/e/4/ee4930f4fae2ebecbd7cae9f0313b4c3207c4566.png\" class=\"latex\" alt=\"$a_{14} = F_{15} = \\boxed{610}$\" style=\"vertical-align: -5px\" width=\"137\" height=\"23\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_10&amp;action=edit&amp;section=5\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">Problem 9</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">Problem 11</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a class=\"mw-selflink selflink\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211623\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.031 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 153/1000000\nPreprocessor generated node count: 448/1000000\nPost‐expand include size: 1382/2097152 bytes\nTemplate argument size: 215/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1828/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.014      1 Template:ARML_box\n100.00%    3.014      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6528-0!canonical and timestamp 20240907211623 and revision id 23704\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_10",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_10",
+          "byteoffset": 322,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 1",
+          "number": "2.1",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_10",
+          "byteoffset": 335,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 2",
+          "number": "2.2",
+          "index": "4",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_10",
+          "byteoffset": 717,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "5",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_10",
+          "byteoffset": 1310,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 10",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 11": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 11",
+      "pageid": 6559,
+      "revid": 26605,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_11&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In concave hexagon <img src=\"//latex.artofproblemsolving.com/8/0/2/8029902caf855d940e465d04ff40101d8850c3e0.png\" class=\"latex\" alt=\"$ABCDEF$\" width=\"86\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/6/e/2/6e2bf3903dcf08182b9bc44b5e0153a3e38b1335.png\" class=\"latex\" alt=\"$\\angle  A = \\angle B = \\angle C = 90^\\circ$\" width=\"178\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/3/4/5/345a3cb7b326b67b7b0e39c385dfe5265cf2cac5.png\" class=\"latex\" alt=\"$\\angle D = 100^\\circ$\" style=\"vertical-align: 0px\" width=\"85\" height=\"13\" />, and <img src=\"//latex.artofproblemsolving.com/7/d/6/7d635c27674519f2b6302be7acded81f60cc76a0.png\" class=\"latex\" alt=\"$\\angle F = 80^\\circ$\" width=\"75\" height=\"13\" />. Also, <img src=\"//latex.artofproblemsolving.com/2/3/8/238ade9e1cf392fb43ffdf15156e22246030ad59.png\" class=\"latex\" alt=\"$CD=FA$\" width=\"82\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/d/a/b/dab757085426e6962c7d3068e5180cccf07a5cce.png\" class=\"latex\" alt=\"$AB=7$\" width=\"61\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/2/f/8/2f8bf6a33fda7064bc18de335471565522d1147a.png\" class=\"latex\" alt=\"$BC=9$\" width=\"61\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/e/3/2/e3225e9d5b22ec0f9eab6cf95ce55f908c9547cb.png\" class=\"latex\" alt=\"$EF+DE=12$\" style=\"vertical-align: -1px\" width=\"122\" height=\"14\" />. Compute the area of the hexagon.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_11&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Join four such hexagons and let the points be labeled as shown below: \n</p><p><a href=\"/wiki/index.php/File:Fourhexsquare.JPG\" class=\"image\"><img alt=\"Fourhexsquare.JPG\" src=\"https://wiki-images.artofproblemsolving.com//2/29/Fourhexsquare.JPG\" width=\"487\" height=\"488\" /></a>\n</p><p>Since the sum of the angles in a hexagon is <img src=\"//latex.artofproblemsolving.com/4/3/e/43e9665443fdbbcc4a3c52d9a67abbef6692ff6a.png\" class=\"latex\" alt=\"$(6-2)180^\\circ = 720^\\circ$\" style=\"vertical-align: -4px\" width=\"146\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/0/b/f/0bfc105e16150606beacea21c95cdd9f221ad703.png\" class=\"latex\" alt=\"$\\angle E = 720^\\circ - (3\\cdot 90^\\circ + 80^\\circ + 100^\\circ) = 270^\\circ$\" style=\"vertical-align: -4px\" width=\"333\" height=\"18\" />. \n</p><p>Since <img src=\"//latex.artofproblemsolving.com/3/8/3/38385d6898d665bcf77f1756bfc6f27daeaba5f6.png\" class=\"latex\" alt=\"$\\angle D_iE_iF_i = 360^\\circ - \\angle E = 360^\\circ - 270^\\circ = 90^\\circ$\" style=\"vertical-align: -2px\" width=\"343\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/f/0/e/f0eb16c7a05dbeee1ffb774482f0dedaa4dcbe2f.png\" class=\"latex\" alt=\"$\\angle E_iF_iE_{i+1} = \\angle F + \\angle D = 80^\\circ + 100^\\circ = 180^\\circ$\" style=\"vertical-align: -4px\" width=\"351\" height=\"17\" />, <img src=\"//latex.artofproblemsolving.com/1/0/a/10a5f190c27a8a9a1e4117e3763884b16851ad7e.png\" class=\"latex\" alt=\"$E_1E_2E_3E_4$\" style=\"vertical-align: -4px\" width=\"85\" height=\"17\" /> is a square with a side length of <img src=\"//latex.artofproblemsolving.com/4/c/0/4c09a75f73a74c5ccda06821fd7a2bbfb28e76e9.png\" class=\"latex\" alt=\"$EF+DE = 12$\" style=\"vertical-align: -1px\" width=\"122\" height=\"14\" />. \n</p><p>Also, Since <img src=\"//latex.artofproblemsolving.com/9/2/7/9277780810d402011bb1c169fbb1b28945ada2fa.png\" class=\"latex\" alt=\"$\\angle A_iB_iC_i = \\angle B = 90^\\circ$\" style=\"vertical-align: -2px\" width=\"170\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/a/c/6/ac6665c28dfb68d19a764fa7bbe8b2ba9bf501cd.png\" class=\"latex\" alt=\"$\\angle B_iA_iB_{i+1} = \\angle A + \\angle C = 90^\\circ + 90^\\circ = 180^\\circ$\" style=\"vertical-align: -5px\" width=\"347\" height=\"19\" />, <img src=\"//latex.artofproblemsolving.com/1/3/6/1369336df7ad1a224953b38c35363db90313344d.png\" class=\"latex\" alt=\"$B_1B_2B_3B_4$\" style=\"vertical-align: -2px\" width=\"84\" height=\"15\" /> is a square with a side length of <img src=\"//latex.artofproblemsolving.com/8/4/d/84d952d13fefad2362137aed4d2e93a8e900f996.png\" class=\"latex\" alt=\"$AB+BC = 7+9 = 16$\" style=\"vertical-align: -2px\" width=\"188\" height=\"16\" />. \n</p><p>Therefore, <img src=\"//latex.artofproblemsolving.com/a/e/d/aed1e51fe0d3df551bc6fb6bf43fe3e2d597993b.png\" class=\"latex\" alt=\"$4[ABCDEF] + [E_1E_2E_3E_4] = [B_1B_2B_3B_4] \\Longrightarrow$\" style=\"vertical-align: -5px\" width=\"377\" height=\"20\" /> <img src=\"//latex.artofproblemsolving.com/f/3/d/f3d21ea3e16de49ce23d924792940857df6e45e6.png\" class=\"latex\" alt=\"$[ABCDEF] =  \\frac{[B_1B_2B_3B_4] - [E_1E_2E_3E_4]}{4} = \\frac{16^2-12^2}{4} = \\boxed{28}$\" style=\"vertical-align: -13px\" width=\"492\" height=\"39\" />. \n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_11&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">Problem 10</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">Problem 12</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a class=\"mw-selflink selflink\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211624\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.054 seconds\nReal time usage: 0.059 seconds\nPreprocessor visited node count: 244/1000000\nPreprocessor generated node count: 660/1000000\nPost‐expand include size: 1384/2097152 bytes\nTemplate argument size: 217/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3915/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.557      1 Template:ARML_box\n100.00%    2.557      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6559-0!canonical and timestamp 20240907211624 and revision id 26605\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [
+        "Fourhexsquare.JPG"
+      ],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_11",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_11",
+          "byteoffset": 307,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_11",
+          "byteoffset": 1316,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 11",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 12": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 12",
+      "pageid": 6164,
+      "revid": 26659,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_12&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2><p>\nFind the number of ordered pairs of positive integers <img src=\"//latex.artofproblemsolving.com/f/a/e/faedb9d30dc3763d92cbcacf2cc17e2bf64f3e8b.png\" class=\"latex\" alt=\"$(a,b,c,d)$\" style=\"vertical-align: -4px\" width=\"71\" height=\"18\" /> that satisfy the following equation:</p><center><img src=\"//latex.artofproblemsolving.com/c/e/6/ce6136616ccd8c46acf5b3c5add0fcd7203037b3.png\" class=\"latex\" alt=\"$a+b+c+d=12$\" style=\"vertical-align: -1px\" width=\"143\" height=\"14\" />.</center>\n<div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Solution_2\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Solution 2</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_also\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_12&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h3><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_12&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>The <a href=\"/wiki/index.php/Generating_function\" title=\"Generating function\">generating function</a> for <img src=\"//latex.artofproblemsolving.com/2/d/0/2d02bb2275100261109b043261e702124460a83e.png\" class=\"latex\" alt=\"$a, b, c,$\" style=\"vertical-align: -3px\" width=\"45\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/b/b/b/bbb3690943e9be010c35aba038402827ca4b27bd.png\" class=\"latex\" alt=\"$x+x^2+x^3+\\cdots$\" style=\"vertical-align: -1px\" width=\"132\" height=\"16\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/a/f/6/af6b10a5b30af6b204cdd1721e90475bf7fec437.png\" class=\"latexcenter\" alt=\"\\[(x+x^2+x^3+\\cdots)^4=x^4(1+x+x^2+x^3)^4= x^4+{4\\choose 3}x^5+{5\\choose 3}x^6+\\cdots\\]\" width=\"537\" height=\"53\" />\n</p><p>The coefficient of <img src=\"//latex.artofproblemsolving.com/2/8/6/2861637af5302d7734ffcb197e2ec9072d197db7.png\" class=\"latex\" alt=\"$x^{12}$\" width=\"23\" height=\"15\" /> is <img src=\"//latex.artofproblemsolving.com/c/c/0/cc033761893c4ad57bccfd00a710084903fce452.png\" class=\"latex\" alt=\"$\\binom{3+12-4}{3}=165$\" style=\"vertical-align: -22px\" width=\"159\" height=\"53\" />.\n</p>\n<h3><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_12&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>We consider a <a href=\"/wiki/index.php/Bijection\" title=\"Bijection\">bijection</a> to the following combinatorial argument. Suppose we have twelve balls and we would like to put them into four urns. There is a positive number of balls in each urn, so we put one ball into each urn initially. We are left with eight balls to go into four urns, which is equivalent to have three dividers. Thus there are <img src=\"//latex.artofproblemsolving.com/f/d/6/fd6cfacb4baebf26618b5deba321aae7f5ffc6f2.png\" class=\"latex\" alt=\"$\\frac{11!}{8!3!} = 165$\" style=\"vertical-align: -12px\" width=\"83\" height=\"38\" /> ordered pairs.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_12&amp;action=edit&amp;section=5\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">Problem 11</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">Problem 13</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a class=\"mw-selflink selflink\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n<center><a href=\"/wiki/index.php/2006_Alabama_ARML_TST_Problems/Problem_9\" title=\"2006 Alabama ARML TST Problems/Problem 9\">A similar problem</a></center>\n\n<!-- \nNewPP limit report\nCached time: 20240907211624\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.032 seconds\nReal time usage: 0.035 seconds\nPreprocessor visited node count: 153/1000000\nPreprocessor generated node count: 448/1000000\nPost‐expand include size: 1384/2097152 bytes\nTemplate argument size: 217/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1635/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.798      1 Template:ARML_box\n100.00%    2.798      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6164-0!canonical and timestamp 20240907211624 and revision id 26659\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2006 Alabama ARML TST Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Bijection"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Generating function"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_12",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_12",
+          "byteoffset": 176,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 1",
+          "number": "2.1",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_12",
+          "byteoffset": 189,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 2",
+          "number": "2.2",
+          "index": "4",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_12",
+          "byteoffset": 495,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "5",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_12",
+          "byteoffset": 913,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 12",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 13": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 13",
+      "pageid": 6522,
+      "revid": 68669,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_13&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>There is one natural number with exactly 6 positive divisors, the sum of whose reciprocals is 2. Find that natural number.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_13&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let the number be <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, and let <img src=\"//latex.artofproblemsolving.com/e/0/1/e01486dcc7cb25518b89692706b17389dc67c92b.png\" class=\"latex\" alt=\"$p_1$\" style=\"vertical-align: -3px\" width=\"15\" height=\"11\" /> and <img src=\"//latex.artofproblemsolving.com/a/2/e/a2e8bc2235f5b0094bc37f2ef74f7dc647f0a406.png\" class=\"latex\" alt=\"$p_2$\" style=\"vertical-align: -4px\" width=\"18\" height=\"13\" /> be primes. Therefore, one of the following is true:\n</p>\n<ul><li><img src=\"//latex.artofproblemsolving.com/5/d/5/5d5536bb74f9764c7f336fa1a46e64ad8872c037.png\" class=\"latex\" alt=\"$n=p_1^5$\" style=\"vertical-align: -4px\" width=\"50\" height=\"19\" /></li>\n<li><img src=\"//latex.artofproblemsolving.com/9/9/b/99b06dbf79760e8025e8a489436eace2fbaf4874.png\" class=\"latex\" alt=\"$n=p_1p_2^2$\" style=\"vertical-align: -4px\" width=\"67\" height=\"19\" /></li></ul>\n<p>For the first one, the sum of the reciprocals of the divisors of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is therefore <img src=\"//latex.artofproblemsolving.com/c/d/3/cd308afb7d5e380fae9a1109ba9e5351ee771cf3.png\" class=\"latex\" alt=\"$1+\\dfrac{1}{p_1}+\\dfrac{1}{p_1^2}+\\dfrac{1}{p_1^3}+\\dfrac{1}{p_1^4}+\\dfrac{1}{p_1^5}$\" style=\"vertical-align: -16px\" width=\"221\" height=\"41\" />. The smallest prime (2) makes that less than 2, and if <img src=\"//latex.artofproblemsolving.com/e/0/1/e01486dcc7cb25518b89692706b17389dc67c92b.png\" class=\"latex\" alt=\"$p_1$\" style=\"vertical-align: -3px\" width=\"15\" height=\"11\" /> gets bigger, then that expression gets smaller, so there is absolutely no way that <img src=\"//latex.artofproblemsolving.com/5/d/5/5d5536bb74f9764c7f336fa1a46e64ad8872c037.png\" class=\"latex\" alt=\"$n=p_1^5$\" style=\"vertical-align: -4px\" width=\"50\" height=\"19\" />. So the second case is true.\n</p><p><img src=\"//latex.artofproblemsolving.com/c/f/3/cf335d226ccc967d5a1a9bfb650e1e3708f5c05a.png\" class=\"latexcenter\" alt=\"\\begin{eqnarray*}1+\\dfrac{1}{p_1}+\\dfrac{1}{p_1p_2}+\\dfrac{1}{p_1p_2^2}+\\dfrac{1}{p_2}+\\dfrac{1}{p_2^2}=2\\\\ \\dfrac{p_1p_2^2+p_1p_2+p_1+p_2^2+p_2+1}{p_1p_2^2}=2\\\\ p_1p_2^2-p_1p_2-p_1=p_2^2+p_2+1\\\\ p_1(p_2^2-p_2-1)=p_2^2+p_2+1 \\end{eqnarray*}\" width=\"287\" height=\"141\" />\n</p><p>Therefore, <img src=\"//latex.artofproblemsolving.com/6/1/8/618ded45311bbed16c275302edfc65e1969fd645.png\" class=\"latex\" alt=\"$p_1\\equiv -1\\bmod{p_2}$\" style=\"vertical-align: -3px\" width=\"125\" height=\"16\" />. Now the only way that that is possible is when <img src=\"//latex.artofproblemsolving.com/9/4/d/94dbf949aa27aeaf8e04434692aa1aedb0c4d9f4.png\" class=\"latex\" alt=\"$p_2=2$\" style=\"vertical-align: -3px\" width=\"50\" height=\"15\" />. Solving for <img src=\"//latex.artofproblemsolving.com/e/0/1/e01486dcc7cb25518b89692706b17389dc67c92b.png\" class=\"latex\" alt=\"$p_1$\" style=\"vertical-align: -3px\" width=\"15\" height=\"11\" />, we get that <img src=\"//latex.artofproblemsolving.com/f/7/2/f727e786e8e09c2e031b331f8bb31e72e84813da.png\" class=\"latex\" alt=\"$p_1=7$\" style=\"vertical-align: -3px\" width=\"51\" height=\"15\" />. Checking, the sum of the reciprocals of the divisors of <img src=\"//latex.artofproblemsolving.com/0/d/f/0df6f7b8b7508033bdb866472ec195ec08cde8f7.png\" class=\"latex\" alt=\"$\\boxed{28}$\" style=\"vertical-align: -5px\" width=\"30\" height=\"23\" /> indeed sum to 2, and 28 does have 6 factors.\n</p><p>Furthermore, if we rearrange <img src=\"//latex.artofproblemsolving.com/e/0/2/e02e02e15dd7de4dcf4467022e40068e969cd5d9.png\" class=\"latex\" alt=\"$\\textbf{(2)}$\" style=\"vertical-align: -4px\" width=\"23\" height=\"17\" />, we can see that the number would be the sum of all its divisors other than itself, making it a perfect number. Checking the perfect numbers, we find that the second perfect number, <img src=\"//latex.artofproblemsolving.com/9/2/6/9265f5dd6dade78136a6be158ace46bf7c0f8ce3.png\" class=\"latex\" alt=\"$28$\" width=\"17\" height=\"12\" />, fits the required form and is indeed the solution.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_13&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">Problem 12</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">Problem 14</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a class=\"mw-selflink selflink\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907184155\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.020 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 217/1000000\nPreprocessor generated node count: 600/1000000\nPost‐expand include size: 1384/2097152 bytes\nTemplate argument size: 217/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3203/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.402      1 Template:ARML_box\n100.00%    2.402      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6522-0!canonical and timestamp 20240907184155 and revision id 68669\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_13",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_13",
+          "byteoffset": 136,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_13",
+          "byteoffset": 1593,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 13",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 14": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 14",
+      "pageid": 6523,
+      "revid": 58658,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Solution_2\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Solution 2</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_also\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_14&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2><p>\nFind the fourth smallest possible value of <img src=\"//latex.artofproblemsolving.com/d/3/d/d3da9f8c7fe0473fdd6f8597eff61d71fedda430.png\" class=\"latex\" alt=\"$x+y$\" style=\"vertical-align: -3px\" width=\"41\" height=\"14\" /> where <i>x</i> and <i>y</i> are positive integers that satisfy the following equation:</p><center><img src=\"//latex.artofproblemsolving.com/b/b/e/bbe557a9f6ab3e6417a1e8771e49d3bdc81ead11.png\" class=\"latex\" alt=\"$x^2-2y^2=1$\" style=\"vertical-align: -3px\" width=\"98\" height=\"18\" />.</center>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_14&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h3><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_14&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p><img src=\"//latex.artofproblemsolving.com/b/b/e/bbe557a9f6ab3e6417a1e8771e49d3bdc81ead11.png\" class=\"latex\" alt=\"$x^2-2y^2=1$\" style=\"vertical-align: -3px\" width=\"98\" height=\"18\" /> means that <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> is odd. We can let <img src=\"//latex.artofproblemsolving.com/8/c/2/8c2ed08eb857606b318adeb14389231cb797a613.png\" class=\"latex\" alt=\"$x=2x_1-1$\" style=\"vertical-align: -2px\" width=\"92\" height=\"14\" /> for some <img src=\"//latex.artofproblemsolving.com/9/e/9/9e96def4329a5728b42ec3979c2ac55cbc20ab88.png\" class=\"latex\" alt=\"$x_1&gt;0$\" style=\"vertical-align: -2px\" width=\"50\" height=\"15\" />:\n</p><p><img src=\"//latex.artofproblemsolving.com/0/8/7/08748009c5c4027b4c4e369dfe1cc85d98aa2647.png\" class=\"latexcenter\" alt=\"\\[4x_1^2-4x_1-2y^2=0\\Longrightarrow 2x_1^2-2x_1=y^2\\]\" width=\"312\" height=\"19\" />\n</p><p>y is even, <img src=\"//latex.artofproblemsolving.com/f/4/2/f42596afb0ed5d8776cbc82f99fd9c61eb1f5360.png\" class=\"latex\" alt=\"$y=2y_1$\" style=\"vertical-align: -3px\" width=\"57\" height=\"15\" /> for some <img src=\"//latex.artofproblemsolving.com/f/e/c/fec6413c4a7c203d78caf1285078697b3f5dc856.png\" class=\"latex\" alt=\"$y_1&gt;0$\" style=\"vertical-align: -3px\" width=\"49\" height=\"16\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/a/3/b/a3be445840555fb149f8b62921ac72b75d2321dd.png\" class=\"latexcenter\" alt=\"\\[2x_1^2-2x_1=4y_1^2\\Longrightarrow x_1^2-x_1=x_1(x_1-1)=2y_1^2\\]\" width=\"377\" height=\"20\" />\n</p><p>We need to find all integers <img src=\"//latex.artofproblemsolving.com/c/c/a/ccada11db7b2b90693e2fac4f887a57fce6f96bf.png\" class=\"latex\" alt=\"$x_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> such that <img src=\"//latex.artofproblemsolving.com/5/9/2/59231149d2b5758ac6990db1670e48b2a75a3c4b.png\" class=\"latex\" alt=\"$x_1(x_1-1)$\" style=\"vertical-align: -4px\" width=\"79\" height=\"18\" /> is twice a perfect square.\n</p><p>Since <img src=\"//latex.artofproblemsolving.com/c/c/a/ccada11db7b2b90693e2fac4f887a57fce6f96bf.png\" class=\"latex\" alt=\"$x_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/6/7/1/671f8bd9bfb946d14808b4a911b78d394af28c83.png\" class=\"latex\" alt=\"$x_1-1$\" style=\"vertical-align: -2px\" width=\"48\" height=\"14\" /> are relatively prime, one of them is a perfect square and the other is twice a perfect square. Moreover, the perfect square must be odd.\n</p><p>We will now find four smallest solutions for <img src=\"//latex.artofproblemsolving.com/c/c/a/ccada11db7b2b90693e2fac4f887a57fce6f96bf.png\" class=\"latex\" alt=\"$x_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />. Obviously, these will give the four smallest solutions for <img src=\"//latex.artofproblemsolving.com/d/3/d/d3da9f8c7fe0473fdd6f8597eff61d71fedda430.png\" class=\"latex\" alt=\"$x+y$\" style=\"vertical-align: -3px\" width=\"41\" height=\"14\" />.\n</p><p>Each time we examine whether the value <img src=\"//latex.artofproblemsolving.com/6/3/9/639ddee901d3155cf5cc1ac4c52865bc58975596.png\" class=\"latex\" alt=\"$y_1=\\sqrt{\\frac{x_1(x_1-1)}2}$\" style=\"vertical-align: -13px\" width=\"144\" height=\"43\" /> is a positive integer.\n</p>\n<ul><li><img src=\"//latex.artofproblemsolving.com/9/f/4/9f4c0d0aa9c49057019e9c1c32e919861eb45fca.png\" class=\"latex\" alt=\"$x_1=1$\" style=\"vertical-align: -2px\" width=\"50\" height=\"14\" /> gives <img src=\"//latex.artofproblemsolving.com/9/d/f/9df08a68c571aaf99ef76f8a02251579e3edf8c3.png\" class=\"latex\" alt=\"$y_1=0$\" style=\"vertical-align: -3px\" width=\"49\" height=\"16\" /> which is not positive.</li>\n<li><img src=\"//latex.artofproblemsolving.com/2/d/d/2dd246710192dc6fc743d872ff8b20d239053e7a.png\" class=\"latex\" alt=\"$x_1-1=1$\" style=\"vertical-align: -2px\" width=\"81\" height=\"14\" /> gives <img src=\"//latex.artofproblemsolving.com/9/2/b/92b7d8b0846e425165869acf789e48993165e6df.png\" class=\"latex\" alt=\"$y_1=1$\" style=\"vertical-align: -3px\" width=\"48\" height=\"15\" />, hence <img src=\"//latex.artofproblemsolving.com/f/6/0/f60bbb25c633a593e5271656605024821f7ef62a.png\" class=\"latex\" alt=\"$(x,y)=(3,2)$\" style=\"vertical-align: -4px\" width=\"105\" height=\"18\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/7/4/b/74b62cf44727fe5e36554b7eafb6a2a53e8f01a5.png\" class=\"latex\" alt=\"$x_1=9$\" style=\"vertical-align: -2px\" width=\"50\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/d/d/0/dd00b4dd99c277b663b7f47500d2c5f869ab35b7.png\" class=\"latex\" alt=\"$y_1=6$\" style=\"vertical-align: -3px\" width=\"49\" height=\"16\" />, hence <img src=\"//latex.artofproblemsolving.com/5/1/7/517a67009eec3ef28b67de317da509a19f0150cb.png\" class=\"latex\" alt=\"$(x,y)=(17,12)$\" style=\"vertical-align: -4px\" width=\"123\" height=\"18\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/6/c/f/6cfb9918d10a085e256617046b62d9824255faf9.png\" class=\"latex\" alt=\"$x_1-1=9$\" style=\"vertical-align: -2px\" width=\"82\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/7/b/e/7bece65a9f1e452e5ed66dd7c155dcc201231825.png\" class=\"latex\" alt=\"$y_1=\\sqrt{9\\cdot 5}$\" style=\"vertical-align: -3px\" width=\"87\" height=\"20\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/7/4/5/7452387a815214ed5a660831a1d8c5ef1c8e195a.png\" class=\"latex\" alt=\"$x_1=25$\" style=\"vertical-align: -2px\" width=\"59\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/a/1/3/a13697e7c6ba85ff923ca95d5a101ca35c16a9c8.png\" class=\"latex\" alt=\"$y_1=\\sqrt{25\\cdot 12}$\" style=\"vertical-align: -4px\" width=\"107\" height=\"23\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/1/b/2/1b2d2abc81f65a1bc1fa0c37e3b134cba2cde0c5.png\" class=\"latex\" alt=\"$x_1-1=25$\" style=\"vertical-align: -2px\" width=\"91\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/d/9/b/d9bd6089fc9ad139159f5d730d0a4671a32ab3e3.png\" class=\"latex\" alt=\"$y_1=\\sqrt{25\\cdot 13}$\" style=\"vertical-align: -3px\" width=\"105\" height=\"20\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/3/9/e/39e54f53bc65599e8756a8b4db2e49015a2abf79.png\" class=\"latex\" alt=\"$x_1=49$\" style=\"vertical-align: -2px\" width=\"59\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/e/f/2/ef2c4273661729b906fd7bcd74c0eb2bdb26d856.png\" class=\"latex\" alt=\"$y_1=\\sqrt{49\\cdot 24}$\" style=\"vertical-align: -3px\" width=\"105\" height=\"20\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/2/5/8/258a9e0b3d367e6ea8682a9ceb429d2e33789455.png\" class=\"latex\" alt=\"$x_1-1=49$\" style=\"vertical-align: -2px\" width=\"91\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/b/b/7/bb7eb81d51b56bea57f814d5f7cbc68adcccca67.png\" class=\"latex\" alt=\"$y_1=\\sqrt{49\\cdot 25}=35$\" style=\"vertical-align: -3px\" width=\"147\" height=\"20\" />, hence <img src=\"//latex.artofproblemsolving.com/c/5/5/c556bd5b9c17ff1443413194d03ed387da481afa.png\" class=\"latex\" alt=\"$(x,y)=(99,70)$\" style=\"vertical-align: -4px\" width=\"123\" height=\"18\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/0/a/5/0a57268015fc8388b97d083afad846e1b4223a91.png\" class=\"latex\" alt=\"$x_1=81$\" style=\"vertical-align: -2px\" width=\"59\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/8/c/8/8c87a7d4021cfd9988364123d2eb9511c98f8a7a.png\" class=\"latex\" alt=\"$y_1=\\sqrt{81\\cdot 40}$\" style=\"vertical-align: -3px\" width=\"105\" height=\"20\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/8/c/5/8c5c1861be4f59304262ed55e93c4725066db719.png\" class=\"latex\" alt=\"$x_1-1=81$\" style=\"vertical-align: -2px\" width=\"90\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/8/2/c/82c7375c94e75d7f267fbf336d5e030a6d48864f.png\" class=\"latex\" alt=\"$y_1=\\sqrt{81\\cdot 41}$\" style=\"vertical-align: -3px\" width=\"105\" height=\"20\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/a/f/a/afa2c8887e5bd198bce70449b91c22ff0237390b.png\" class=\"latex\" alt=\"$x_1=121$\" style=\"vertical-align: -4px\" width=\"71\" height=\"17\" /> gives <img src=\"//latex.artofproblemsolving.com/1/0/0/100340f89fa802556b4b64734a89d3c65b7d290e.png\" class=\"latex\" alt=\"$y_1=\\sqrt{121\\cdot 60}$\" style=\"vertical-align: -4px\" width=\"116\" height=\"23\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/1/4/7/147bca2ebdf6c42238ef776f913dc28663680e2f.png\" class=\"latex\" alt=\"$x_1-1=121$\" style=\"vertical-align: -2px\" width=\"99\" height=\"14\" /> gives <img src=\"//latex.artofproblemsolving.com/1/6/4/1646097cc0d6002213ca06e0416d25eb09432a0e.png\" class=\"latex\" alt=\"$y_1=\\sqrt{121\\cdot 61}$\" style=\"vertical-align: -3px\" width=\"115\" height=\"20\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/1/f/e/1fea6e0ef11656119226fd6f82bee162e4113805.png\" class=\"latex\" alt=\"$x_1=169$\" style=\"vertical-align: -2px\" width=\"68\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/5/1/c/51cc9aaaad30db720f6f5d539c2d293ec5f4d98c.png\" class=\"latex\" alt=\"$y_1=\\sqrt{169\\cdot 84}$\" style=\"vertical-align: -3px\" width=\"115\" height=\"20\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/4/5/8/458dba5570b779508280f01d3982b1d5dbb3c2f9.png\" class=\"latex\" alt=\"$x_1-1=169$\" style=\"vertical-align: -2px\" width=\"100\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/e/b/9/eb910fb02a3a36ec21ae2079eb5b89d0fadf2eb9.png\" class=\"latex\" alt=\"$y_1=\\sqrt{169\\cdot 85}$\" style=\"vertical-align: -3px\" width=\"115\" height=\"20\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/c/c/b/ccbca1ec4a7cb1e477f5a7d65ea96dd0d6780014.png\" class=\"latex\" alt=\"$x_1=225$\" style=\"vertical-align: -2px\" width=\"68\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/d/e/e/dee1e88b872a04c1ba3894f1e4d8d089b288f36a.png\" class=\"latex\" alt=\"$y_1=\\sqrt{225\\cdot 112}$\" style=\"vertical-align: -3px\" width=\"124\" height=\"20\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/8/e/5/8e552ed0a81d7d7dfb02ef6457a7952a631990eb.png\" class=\"latex\" alt=\"$x_1-1=225$\" style=\"vertical-align: -2px\" width=\"100\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/1/0/a/10ab36b867b5e190681a029ab27cb2ae68cef10e.png\" class=\"latex\" alt=\"$y_1=\\sqrt{225\\cdot 113}$\" style=\"vertical-align: -4px\" width=\"125\" height=\"23\" />.</li>\n<li><img src=\"//latex.artofproblemsolving.com/4/b/7/4b71c241fc93562ca5a24b293a5df16305d1421f.png\" class=\"latex\" alt=\"$x_1=289$\" style=\"vertical-align: -2px\" width=\"68\" height=\"15\" /> gives <img src=\"//latex.artofproblemsolving.com/8/e/8/8e86e92c1f36b7a51184064b7430a2310d81dff0.png\" class=\"latex\" alt=\"$y_1=\\sqrt{289\\cdot 144}=17\\cdot 12 = 204$\" style=\"vertical-align: -3px\" width=\"248\" height=\"20\" />, hence <img src=\"//latex.artofproblemsolving.com/4/a/a/4aa58ab7be40d46dfb4beb64b4fac2a954b689d6.png\" class=\"latex\" alt=\"$(x,y)=(577,408)$\" style=\"vertical-align: -4px\" width=\"141\" height=\"18\" />, and the answer is <img src=\"//latex.artofproblemsolving.com/d/5/f/d5fb3fc52dc80d34ec8d5eb9988135c68cfe4d57.png\" class=\"latex\" alt=\"$x+y=\\boxed{985}$\" style=\"vertical-align: -5px\" width=\"105\" height=\"23\" />.</li></ul>\n<h3><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_14&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>We quickly find the first solution, <img src=\"//latex.artofproblemsolving.com/f/6/0/f60bbb25c633a593e5271656605024821f7ef62a.png\" class=\"latex\" alt=\"$(x,y)=(3,2)$\" style=\"vertical-align: -4px\" width=\"105\" height=\"18\" />.  Factoring, we get \n<img src=\"//latex.artofproblemsolving.com/7/c/8/7c82a95c6a33acb6756dc67c1181d21001b8862a.png\" class=\"latexcenter\" alt=\"\\[(3-2\\sqrt{2})(3+2\\sqrt{2})=1\\]\" width=\"188\" height=\"21\" />\nWe can square both sides to get \n<img src=\"//latex.artofproblemsolving.com/d/7/2/d72f74135fb2d9b1ae85fe2ff19876cd7a579537.png\" class=\"latexcenter\" alt=\"\\[(3-2\\sqrt{2})^2(3+2\\sqrt{2})^2=1^2 \\Rightarrow (17-12\\sqrt{2})(17+12\\sqrt{2})=1\\]\" width=\"466\" height=\"21\" />\nSo <img src=\"//latex.artofproblemsolving.com/5/1/7/517a67009eec3ef28b67de317da509a19f0150cb.png\" class=\"latex\" alt=\"$(x,y)=(17,12)$\" style=\"vertical-align: -4px\" width=\"123\" height=\"18\" /> is another solution.\n</p><p>This gives us a way to generate whatever solutions we want to the equation.  Raising the first equation to the fourth power gives us \n<img src=\"//latex.artofproblemsolving.com/c/6/8/c688b06d5bc44913b5e216b9a9922890a8485ad3.png\" class=\"latexcenter\" alt=\"\\[(577-408\\sqrt{2})(577+408\\sqrt{2})=1\\]\" width=\"261\" height=\"21\" />\nThe answer is <img src=\"//latex.artofproblemsolving.com/d/5/6/d5632a74cde5d42a1a8660e21ac2464811117353.png\" class=\"latex\" alt=\"$577+408=\\boxed{985}$\" style=\"vertical-align: -5px\" width=\"140\" height=\"23\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_14&amp;action=edit&amp;section=5\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">Problem 13</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">Problem 15</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a class=\"mw-selflink selflink\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211625\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.047 seconds\nReal time usage: 0.050 seconds\nPreprocessor visited node count: 630/1000000\nPreprocessor generated node count: 1508/1000000\nPost‐expand include size: 1384/2097152 bytes\nTemplate argument size: 217/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 11401/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.926      1 Template:ARML_box\n100.00%    2.926      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6523-0!canonical and timestamp 20240907211625 and revision id 58658\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_14",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_14",
+          "byteoffset": 201,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 1",
+          "number": "2.1",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_14",
+          "byteoffset": 214,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 2",
+          "number": "2.2",
+          "index": "4",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_14",
+          "byteoffset": 2390,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "5",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_14",
+          "byteoffset": 2948,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 14",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 15": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 15",
+      "pageid": 6560,
+      "revid": 26684,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_15&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Virginia has a pair of fair 8 sided dice with faces numbered 1-8 on each die. Montana has a pair of fair 8 sided dice with faces numbered with positive integers in such a way that when her pair of dice is rolled, the probability of any particular sum occurring is the same as when Virginia rolls her dice. The largest number on any face of either of Montana's dice is 11. Find the sum of the numbers on the faces of Montana's die whose faces are all less than 11.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_15&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Since the probability of any particular sum occurring on Montana's dice is the same as when Virginia rolls her dice, if we make a grid of the possible sums, then it will be identical to Virginia's grid with the exception of the entries are rearranged. So the sum of the entries in the grid is the same as on Virginia's grid. The sum of the numbers on Virginia's grid is <img src=\"//latex.artofproblemsolving.com/e/0/b/e0bf55e57d238d37dfd5f0383aae2e6bc7ab48a7.png\" class=\"latex\" alt=\"$(2+3+\\cdots +9)+(3+4+\\cdots +10)+\\cdots +(9+10+\\cdots +16)=576$\" style=\"vertical-align: -4px\" width=\"554\" height=\"18\" />. Since the entry in an intersection of a row and column is the sum of the number of the row and the number of the column, 576 is 8 times the sum of the numbers in the row and column of the grid. We divide by 8 to get 72 is the sum of the numbers on both dice. Since 16 is the highest valued entry in the grid, 11 must be on only one of the dice, so we only need to subtract 11 once to get <img src=\"//latex.artofproblemsolving.com/a/b/d/abdad103a89e8105327ac90f405444a09f282f1d.png\" class=\"latex\" alt=\"$\\boxed{61}$\" style=\"vertical-align: -6px\" width=\"31\" height=\"25\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_15&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">Problem 14</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b>Final Question</b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a class=\"mw-selflink selflink\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211625\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 78/1000000\nPreprocessor generated node count: 300/1000000\nPost‐expand include size: 1341/2097152 bytes\nTemplate argument size: 216/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 413/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.202      1 Template:ARML_box\n100.00%    2.202      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6560-0!canonical and timestamp 20240907211625 and revision id 26684\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_15",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_15",
+          "byteoffset": 477,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_15",
+          "byteoffset": 1351,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 15",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 2": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 2",
+      "pageid": 4307,
+      "revid": 29766,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A large <a href=\"/wiki/index.php/Cube_(geometry)\" title=\"Cube (geometry)\"> cube</a> is painted green and then chopped up into 64 smaller congruent cubes. How many of the smaller cubes have at least one face painted green?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The cube is <img src=\"//latex.artofproblemsolving.com/d/f/6/df6bd226f45d7767603f53041f10eac66d74a021.png\" class=\"latex\" alt=\"$4\\times 4\\times4$\" style=\"vertical-align: 0px\" width=\"71\" height=\"12\" />. Only the inside sub-cubes are unpainted, thus <img src=\"//latex.artofproblemsolving.com/8/4/5/8455f3b5cb3b4880b8c9d782a5c1f0334db819eb.png\" class=\"latex\" alt=\"$8$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> are unpainted, leaving <img src=\"//latex.artofproblemsolving.com/a/6/a/a6ae1795ada2526cba9eaf8431f7a3f4d4973c25.png\" class=\"latex\" alt=\"$64-8=56$\" style=\"vertical-align: -2px\" width=\"94\" height=\"15\" /> painted.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211621\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.024 seconds\nReal time usage: 0.025 seconds\nPreprocessor visited node count: 91/1000000\nPreprocessor generated node count: 320/1000000\nPost‐expand include size: 1380/2097152 bytes\nTemplate argument size: 213/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 533/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.565      1 Template:ARML_box\n100.00%    2.565      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:4307-0!canonical and timestamp 20240907211621 and revision id 29766\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Cube (geometry)"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_2",
+          "byteoffset": 186,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_2",
+          "byteoffset": 357,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 3": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 3",
+      "pageid": 4308,
+      "revid": 33326,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The difference between the <a href=\"/wiki/index.php/Area\" title=\"Area\">areas</a> of the <a href=\"/wiki/index.php/Circumcircle\" title=\"Circumcircle\">circumcircle</a> and <a href=\"/wiki/index.php/Incircle\" title=\"Incircle\">incircle</a> of an <a href=\"/wiki/index.php/Equilateral_triangle\" title=\"Equilateral triangle\">equilateral triangle</a> is <img src=\"//latex.artofproblemsolving.com/3/8/9/389ad519decc7d610a987d38308d5d0f962a947e.png\" class=\"latex\" alt=\"$300\\pi$\" width=\"37\" height=\"12\" /> square units. Find the number of units in the <a href=\"/wiki/index.php/Length\" title=\"Length\">length</a> of a <a href=\"/wiki/index.php/Edge\" title=\"Edge\"> side</a> of the <a href=\"/wiki/index.php/Triangle\" title=\"Triangle\">triangle</a>.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> be the <a href=\"/wiki/index.php/Radius\" title=\"Radius\">radius</a> of the circumcircle and let <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" /> be the radius of the incircle. Then we have <img src=\"//latex.artofproblemsolving.com/9/2/1/921ce00608f7b4e39371de92da78120ab39b7fb4.png\" class=\"latex\" alt=\"$R^2-r^2=300$\" width=\"110\" height=\"15\" />.  If the center of these two circles is <img src=\"//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png\" class=\"latex\" alt=\"$O$\" width=\"13\" height=\"12\" />, the <a href=\"/wiki/index.php/Vertex\" title=\"Vertex\"> vertices</a> are <img src=\"//latex.artofproblemsolving.com/b/e/f/bef747a48a2a8d43c4841e12c89f2de2502a672e.png\" class=\"latex\" alt=\"$A, B$\" style=\"vertical-align: -3px\" width=\"35\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> is the <a href=\"/wiki/index.php/Midpoint\" title=\"Midpoint\">midpoint</a> of side <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, triangle <img src=\"//latex.artofproblemsolving.com/5/5/9/559bcef8d1fe7cbc2254a111bb1cdf6e2b6745a0.png\" class=\"latex\" alt=\"$\\triangle AMO$\" width=\"63\" height=\"13\" /> is a <img src=\"//latex.artofproblemsolving.com/8/0/f/80f57a6496573d4a5870a2d40a90c06735171aff.png\" class=\"latex\" alt=\"$30^\\circ-60^\\circ-90^\\circ$\" width=\"120\" height=\"13\" /> <a href=\"/wiki/index.php/Right_triangle\" title=\"Right triangle\">right triangle</a>, and its <a href=\"/wiki/index.php/Hypotenuse\" title=\"Hypotenuse\">hypotenuse</a> has length <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> and its shorter leg has length <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" />.  Thus <img src=\"//latex.artofproblemsolving.com/a/7/f/a7fc25b5a1ac8d1b238208c07793a5bfca53fbe4.png\" class=\"latex\" alt=\"$R = 2r$\" style=\"vertical-align: -1px\" width=\"58\" height=\"14\" />.  (There are many other arguments to get to this conclusion; for instance, <img src=\"//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png\" class=\"latex\" alt=\"$O$\" width=\"13\" height=\"12\" /> is also the <a href=\"/wiki/index.php/Centroid\" title=\"Centroid\">centroid</a> of the triangle and <img src=\"//latex.artofproblemsolving.com/2/7/f/27f004902e715d48d946dfa78571749ec5ceecef.png\" class=\"latex\" alt=\"$COM$\" width=\"47\" height=\"12\" /> is a <a href=\"/wiki/index.php/Median_of_a_triangle\" title=\"Median of a triangle\"> median</a>, so <img src=\"//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png\" class=\"latex\" alt=\"$O$\" width=\"13\" height=\"12\" /> trisects <img src=\"//latex.artofproblemsolving.com/e/9/d/e9dc4f9abdac55c081c747fd2db62ae369497f05.png\" class=\"latex\" alt=\"$CO$\" width=\"28\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/2/f/b/2fb59a3df30ba60b088e73aebfc9c1cc39296fe4.png\" class=\"latex\" alt=\"$R = CO = 2OM = 2r$\" width=\"175\" height=\"12\" />.)\n</p><p>Then <img src=\"//latex.artofproblemsolving.com/6/7/0/67030b5f2f483439767aa76af54a28ef4a70e333.png\" class=\"latex\" alt=\"$4r^2 - r^2 = 300$\" style=\"vertical-align: 0px\" width=\"114\" height=\"15\" /> so <img src=\"//latex.artofproblemsolving.com/5/9/3/593cebfe2f4feac91cf23dfc53f17cb2efc5f235.png\" class=\"latex\" alt=\"$r = 10$\" style=\"vertical-align: 0px\" width=\"50\" height=\"13\" /> and the side length of the triangle is equal to <img src=\"//latex.artofproblemsolving.com/7/1/5/715a32b1b292e926c34b05e9883646bcfd3e5115.png\" class=\"latex\" alt=\"$20\\sqrt 3$\" style=\"vertical-align: -1px\" width=\"43\" height=\"18\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907170945\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.025 seconds\nReal time usage: 0.026 seconds\nPreprocessor visited node count: 262/1000000\nPreprocessor generated node count: 700/1000000\nPost‐expand include size: 1380/2097152 bytes\nTemplate argument size: 213/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3392/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.676      1 Template:ARML_box\n100.00%    2.676      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:4308-0!canonical and timestamp 20240907170945 and revision id 33326\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Area"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Centroid"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Circumcircle"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Edge"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Equilateral triangle"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Hypotenuse"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Incircle"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Length"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Median of a triangle"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Midpoint"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Radius"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Right triangle"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Triangle"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Vertex"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_3",
+          "byteoffset": 243,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_3",
+          "byteoffset": 1220,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 4": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 4",
+      "pageid": 4309,
+      "revid": 21955,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For how many <a href=\"/wiki/index.php/Ordered_pair\" title=\"Ordered pair\">ordered pairs</a> of <a href=\"/wiki/index.php/Digit\" title=\"Digit\">digits</a> <img src=\"//latex.artofproblemsolving.com/b/b/0/bb0c75d9abe3e693ba0bb677cecbb923cefd81af.png\" class=\"latex\" alt=\"$(A,B)$\" style=\"vertical-align: -4px\" width=\"49\" height=\"18\" /> is <img src=\"//latex.artofproblemsolving.com/1/6/6/16662bf8b1645f757c3debcc07f1a53978620dd5.png\" class=\"latex\" alt=\"$2AB8$\" width=\"46\" height=\"13\" /> a <a href=\"/wiki/index.php/Multiple\" title=\"Multiple\">multiple</a> of <img src=\"//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png\" class=\"latex\" alt=\"$12$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" />?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A number is divisible by <img src=\"//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png\" class=\"latex\" alt=\"$12$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> if it is divisible by <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" />. A number is divisible by <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" /> if its last two digits are divisible by <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" />, so <img src=\"//latex.artofproblemsolving.com/8/8/d/88dfa6c21fe80b94852e70796c0227a0a3426fa8.png\" class=\"latex\" alt=\"$4|\\overline{B8} \\Longrightarrow B = 0,2,4,6,8$\" style=\"vertical-align: -4px\" width=\"193\" height=\"20\" />. A number is divisible by <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" /> if the sum of its digits is <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />, so\n</p>\n<ul><li><img src=\"//latex.artofproblemsolving.com/6/6/9/6693847914736b840c808993697eaf997685e614.png\" class=\"latex\" alt=\"$3| s(2A08) = 10 + A \\Longrightarrow A = 2,5,8$\" style=\"vertical-align: -4px\" width=\"276\" height=\"18\" /> - 3 solutions</li>\n<li><img src=\"//latex.artofproblemsolving.com/c/8/4/c8434b8ead42a1f5d8bcb65eba9f13a32e103731.png\" class=\"latex\" alt=\"$3| s(2A28) = 12 + A \\Longrightarrow A = 0,3,6,9$\" style=\"vertical-align: -4px\" width=\"293\" height=\"18\" /> - 4 solutions</li>\n<li><img src=\"//latex.artofproblemsolving.com/4/e/1/4e196dc4d8bf0b9c930aced40477af7ec2715cf4.png\" class=\"latex\" alt=\"$3| s(2A48) = 14 + A \\Longrightarrow A = 1,4,7$\" style=\"vertical-align: -4px\" width=\"276\" height=\"18\" /> - 3 solutions</li>\n<li><img src=\"//latex.artofproblemsolving.com/b/3/5/b351370b75fdca807f1100fe63ba0ff81eaab48d.png\" class=\"latex\" alt=\"$3| s(2A68) = 16 + A \\Longrightarrow A = 2,5,8$\" style=\"vertical-align: -4px\" width=\"276\" height=\"18\" /> - 3 solutions</li>\n<li><img src=\"//latex.artofproblemsolving.com/0/3/4/034be198ccffbd006a0259c7c982c40ebc7953c7.png\" class=\"latex\" alt=\"$3| s(2A88) = 18 + A \\Longrightarrow A = 0,3,6,9$\" style=\"vertical-align: -4px\" width=\"293\" height=\"18\" /> - 4 solutions</li></ul>\n<p>These sum to <img src=\"//latex.artofproblemsolving.com/b/7/6/b7616a230c77f0d9a577e5bca01aa06f1c35c457.png\" class=\"latex\" alt=\"$17$\" style=\"vertical-align: 0px\" width=\"18\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211621\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.030 seconds\nReal time usage: 0.031 seconds\nPreprocessor visited node count: 217/1000000\nPreprocessor generated node count: 600/1000000\nPost‐expand include size: 1380/2097152 bytes\nTemplate argument size: 213/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3067/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.852      1 Template:ARML_box\n100.00%    2.852      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:4309-0!canonical and timestamp 20240907211621 and revision id 21955\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        },
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Digit"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Multiple"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Ordered pair"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_4",
+          "byteoffset": 133,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_4",
+          "byteoffset": 897,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 5": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 5",
+      "pageid": 4310,
+      "revid": 223122,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Solution_2\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Solution 2</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_Also\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A <img src=\"//latex.artofproblemsolving.com/7/9/0/7901356dd65ec4da1b694937cc4ffc663e90d800.png\" class=\"latex\" alt=\"$2\\times 2$\" width=\"40\" height=\"12\" /> square grid is constructed with four <img src=\"//latex.artofproblemsolving.com/8/a/8/8a8df7312744a199daa5c8008af5b9b4798bfd64.png\" class=\"latex\" alt=\"$1\\times 1$\" style=\"vertical-align: 0px\" width=\"39\" height=\"12\" /> squares. The square on the upper left is labeled <i>A</i>, the square on the upper right is labeled <i>B</i>, the square in the lower left is labeled <i>C</i>, and the square on the lower right is labeled <i>D</i>. The four squares are to be painted such that 2 are blue, 1 is red, and 1 is green. In how many ways can this be done?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h3><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>We choose two squares to be blue and one to be red; then the green's position is forced. There are <img src=\"//latex.artofproblemsolving.com/6/d/5/6d59b2c1e68b03c4a102b9a10bd27e0d3ec07856.png\" class=\"latex\" alt=\"${4 \\choose 2}{2 \\choose 1}=12$\" style=\"vertical-align: -22px\" width=\"116\" height=\"53\" /> ways to do this.\n</p><p>Equivalently, we could choose one square to be red and one square to be green, then blue is forced: <img src=\"//latex.artofproblemsolving.com/1/c/9/1c97611d99ac9fcc3061a77e5fb155e0054b3d3b.png\" class=\"latex\" alt=\"$\\binom{4}{1} \\binom{3}{1}=12$\" style=\"vertical-align: -22px\" width=\"116\" height=\"53\" />.\n</p>\n<h3><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_5&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>Since rotations and reflections are not distinct, the number of ways is just <img src=\"//latex.artofproblemsolving.com/0/8/4/0843013ba151493ca5edb8ecf3e0562987d995b2.png\" class=\"latex\" alt=\"$\\frac{4!}{2! \\cdot 1! \\cdot 1!} = 12$\" style=\"vertical-align: -13px\" width=\"117\" height=\"39\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_5&amp;action=edit&amp;section=5\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211622\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.031 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 117/1000000\nPreprocessor generated node count: 368/1000000\nPost‐expand include size: 1380/2097152 bytes\nTemplate argument size: 213/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 938/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.309      1 Template:ARML_box\n100.00%    2.309      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:4310-0!canonical and timestamp 20240907211622 and revision id 223122\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_5",
+          "byteoffset": 431,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 1",
+          "number": "2.1",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_5",
+          "byteoffset": 445,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 2",
+          "number": "2.2",
+          "index": "4",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_5",
+          "byteoffset": 766,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "5",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_5",
+          "byteoffset": 911,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 6": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 6",
+      "pageid": 4311,
+      "revid": 21020,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>How many of the <a href=\"/wiki/index.php/Positive\" class=\"mw-redirect\" title=\"Positive\">positive</a> <a href=\"/wiki/index.php/Divisor\" title=\"Divisor\">divisors</a> of <img src=\"//latex.artofproblemsolving.com/1/a/6/1a6792dbe39fce8fb36104857e86e32d26b199d7.png\" class=\"latex\" alt=\"$3,240,000$\" style=\"vertical-align: -3px\" width=\"79\" height=\"16\" /> are <a href=\"/wiki/index.php/Perfect_cube\" title=\"Perfect cube\">perfect cubes</a>?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/b/f/5/bf5bb67c55ab16fbd2b8ba96955e7121d03c6977.png\" class=\"latex\" alt=\"$3240000=2^7\\cdot 3^4\\cdot 5^4$\" style=\"vertical-align: 0px\" width=\"162\" height=\"15\" />. We want to know how many numbers are in the form <img src=\"//latex.artofproblemsolving.com/2/3/b/23b10c7af073178266261104ab59f6defb9546e8.png\" class=\"latex\" alt=\"$2^{3a}3^{3b}5^{3c}$\" width=\"67\" height=\"15\" /> which divide <img src=\"//latex.artofproblemsolving.com/1/a/6/1a6792dbe39fce8fb36104857e86e32d26b199d7.png\" class=\"latex\" alt=\"$3,240,000$\" style=\"vertical-align: -3px\" width=\"79\" height=\"16\" />.  This imposes the restrictions <img src=\"//latex.artofproblemsolving.com/0/b/0/0b028b21f4795bdec3d5a4608b46bdf5d3774883.png\" class=\"latex\" alt=\"$0\\leq a\\leq 2$\" style=\"vertical-align: -2px\" width=\"75\" height=\"15\" />,<img src=\"//latex.artofproblemsolving.com/9/e/a/9ea74fdfeb5475305cc42e33709402bfef7039a0.png\" class=\"latex\" alt=\"$0 \\leq b\\leq 1$\" style=\"vertical-align: -2px\" width=\"73\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/c/09cbc8e483a28ea25bf6b193f47d4aced22584af.png\" class=\"latex\" alt=\"$0 \\leq c\\leq 1$\" style=\"vertical-align: -2px\" width=\"73\" height=\"15\" />, which lead to 12 solutions and thus 12 such divisors.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">Problem 7</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908053749\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.028 seconds\nPreprocessor visited node count: 127/1000000\nPreprocessor generated node count: 400/1000000\nPost‐expand include size: 1380/2097152 bytes\nTemplate argument size: 213/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1268/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.825      1 Template:ARML_box\n100.00%    2.825      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:4311-0!canonical and timestamp 20240908053749 and revision id 21020\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Divisor"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Perfect cube"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Positive"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_6",
+          "byteoffset": 103,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_6",
+          "byteoffset": 453,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 7": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 7",
+      "pageid": 5955,
+      "revid": 153900,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_7&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2><p>\nFind the sum of the infinite series: </p><center><img src=\"//latex.artofproblemsolving.com/a/4/6/a4657ca66dc0a7a43979875ccca23536384ad7b0.png\" class=\"latex\" alt=\"$3+\\frac{11}4+\\frac 94 + \\cdots + \\frac{n^2+2n+3}{2^n}+\\cdots$\" style=\"vertical-align: -13px\" width=\"299\" height=\"41\" />.</center>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_7&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/8/8/0/8807be811117da3f39d2801b4e2dbb7c9fd1bedb.png\" class=\"latex\" alt=\"$\\sum_{n=1}^{\\infty} \\frac{n^2+2n+3}{2^n}=\\sum_{n=1}^{\\infty} \\left(\\frac{n^2}{2^n}\\right)+\\sum_{n=1}^{\\infty} \\left(\\frac{2n}{2^n}\\right)+\\sum_{n=1}^{\\infty} \\left(\\frac{3}{2^n}\\right)$\" style=\"vertical-align: -20px\" width=\"422\" height=\"48\" />\n</p><p>We can compute those sums:\n</p><p><img src=\"//latex.artofproblemsolving.com/8/c/8/8c8bddbddf53ff6021221ab257494948440dd065.png\" class=\"latexcenter\" alt=\"\\begin{eqnarray*} \\sum_{n=1}^{\\infty} \\left(\\frac{3}{2^n}\\right)=x\\\\ =3\\left(\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\cdots\\right)\\\\ 2x=3\\left(1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\cdots\\right)\\\\ x=3(1)=3\\\\ \\sum_{n=1}^{\\infty} \\left(\\frac{2n}{2^n}\\right)=y\\\\ =\\frac{2}{2}+\\frac{4}{4}+\\frac{6}{8}+\\frac{8}{16}+\\cdots\\\\ 2y=2+\\frac{4}{2}+\\frac{6}{4}+\\frac{8}{8}+\\cdots\\\\ y=2+\\frac{2}{2}+\\frac{2}{4}+\\frac{2}{8}+\\cdots=4\\\\ \\sum_{n=1}^{\\infty} \\left(\\frac{n^2}{2^n}\\right)=z\\\\ =\\frac{1}{2}+\\frac{4}{4}+\\frac{9}{8}+\\frac{16}{16}+\\cdots\\\\ 2z=1+\\frac{4}{2}+\\frac{9}{4}+\\frac{16}{8}+\\cdots\\\\ z=1+\\frac{3}{2}+\\frac{5}{4}+\\frac{7}{8}+\\frac{9}{16}+\\cdots\\\\ 2z=2+3+\\frac{5}{2}+\\frac{7}{4}+\\frac{9}{8}+\\cdots\\\\ z=4+\\frac{2}{2}+\\frac{2}{4}+\\frac{2}{8}+\\cdots=6\\\\ 3+4+6=\\boxed{13} \\end{eqnarray*}\" width=\"246\" height=\"663\" />\n</p><p>If you didn't understand the third case / summation, all they did was subtract the summation for <img src=\"//latex.artofproblemsolving.com/b/1/3/b13f21416d84e13708696f34dea81026cda583c9.png\" class=\"latex\" alt=\"$z$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> from <img src=\"//latex.artofproblemsolving.com/6/1/2/612cb53032b6b7359a67ad3d622a6b2208728afa.png\" class=\"latex\" alt=\"$2z$\" width=\"17\" height=\"12\" /> to get the new <img src=\"//latex.artofproblemsolving.com/b/1/3/b13f21416d84e13708696f34dea81026cda583c9.png\" class=\"latex\" alt=\"$z$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and then repeat this.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_7&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">Problem 6</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">Problem 8</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a class=\"mw-selflink selflink\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211622\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.025 seconds\nReal time usage: 0.025 seconds\nPreprocessor visited node count: 118/1000000\nPreprocessor generated node count: 380/1000000\nPost‐expand include size: 1380/2097152 bytes\nTemplate argument size: 213/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1999/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.709      1 Template:ARML_box\n100.00%    2.709      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:5955-0!canonical and timestamp 20240907211622 and revision id 153900\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_7",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_7",
+          "byteoffset": 143,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_7",
+          "byteoffset": 1363,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 7",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 8": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 8",
+      "pageid": 5940,
+      "revid": 72631,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_8&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2><p>\nFind the number of ordered pairs of integers <img src=\"//latex.artofproblemsolving.com/e/5/3/e53b1fe25be1c679117fb44a6a886fe1247d189a.png\" class=\"latex\" alt=\"$(x,y)$\" style=\"vertical-align: -4px\" width=\"40\" height=\"18\" /> which satisfy </p><center><img src=\"//latex.artofproblemsolving.com/9/d/b/9db3357e293b63851ef1642c66d41e9e2bb2aad4.png\" class=\"latex\" alt=\"$x^2+4xy+y^2=21$\" style=\"vertical-align: -3px\" width=\"149\" height=\"18\" />.</center>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_8&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We look at <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/2/9/029cdfb3634328533466c749372b7520f027b36b.png\" class=\"latex\" alt=\"$y \\pmod{3}$\" style=\"vertical-align: -4px\" width=\"80\" height=\"18\" />, since <img src=\"//latex.artofproblemsolving.com/f/2/5/f25d31faf472ddb4c698a14522fe8125c06f8dd8.png\" class=\"latex\" alt=\"$21$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> is a multiple of <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />.\n</p>\n<ul><li>Case 1: <img src=\"//latex.artofproblemsolving.com/9/6/f/96f0c2605ee421c29d4e905a6538b512e15d6124.png\" class=\"latex\" alt=\"$x\\equiv 0\\pmod{3}$\" style=\"vertical-align: -4px\" width=\"114\" height=\"18\" />\n<ul><li>Case 1a: <img src=\"//latex.artofproblemsolving.com/e/5/5/e5545ffdaa5d526655c8ea1a22d71dd70ea79183.png\" class=\"latex\" alt=\"$y\\equiv 0\\pmod{3}$\" style=\"vertical-align: -4px\" width=\"113\" height=\"18\" />: Then <img src=\"//latex.artofproblemsolving.com/5/6/a/56ab01cceb4cae05a7dbee18d8f1b558beb7f858.png\" class=\"latex\" alt=\"$x^2+4xy+y^2$\" style=\"vertical-align: -3px\" width=\"107\" height=\"18\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee19f2230cc721282aa8253c8d9b7e5ff8ffbe9.png\" class=\"latex\" alt=\"$3^2=9$\" width=\"49\" height=\"15\" />, but <img src=\"//latex.artofproblemsolving.com/f/2/5/f25d31faf472ddb4c698a14522fe8125c06f8dd8.png\" class=\"latex\" alt=\"$21$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> isn't.</li>\n<li>Case 1b: <img src=\"//latex.artofproblemsolving.com/6/9/8/6985143755d9114ff71e8a68c06aa48dafe2cd01.png\" class=\"latex\" alt=\"$y\\equiv 1\\pmod{3}$\" style=\"vertical-align: -4px\" width=\"113\" height=\"18\" />: Then the LHS is <img src=\"//latex.artofproblemsolving.com/9/c/6/9c66dfe80a14eba051f449b79732ace3cfd6ad65.png\" class=\"latex\" alt=\"$1\\pmod{3}$\" style=\"vertical-align: -4px\" width=\"79\" height=\"18\" />, while the RHS isn't.</li>\n<li>Case 1c: <img src=\"//latex.artofproblemsolving.com/a/8/7/a87f701bf13f75c4a2100e14acd794c2e57b2ba4.png\" class=\"latex\" alt=\"$y\\equiv 2\\pmod{3}$\" style=\"vertical-align: -5px\" width=\"117\" height=\"20\" />: Then the LHS is <img src=\"//latex.artofproblemsolving.com/9/c/6/9c66dfe80a14eba051f449b79732ace3cfd6ad65.png\" class=\"latex\" alt=\"$1\\pmod{3}$\" style=\"vertical-align: -4px\" width=\"79\" height=\"18\" />, while the RHS isn't.</li></ul></li>\n<li>Case 2: x=1mod3\n<ul><li>Case 2a: y=0mod3: This is equivalent to case 1b.</li>\n<li>Case 2b: y=1mod3: We let <img src=\"//latex.artofproblemsolving.com/3/4/1/34179847721223308b658caa729abaad9f01d95b.png\" class=\"latex\" alt=\"$x=3x_1+1$\" style=\"vertical-align: -2px\" width=\"92\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/0/e/6/0e6253a9c6711291d3c5864f9196f77820365f84.png\" class=\"latex\" alt=\"$y=3y_1+1$\" style=\"vertical-align: -3px\" width=\"89\" height=\"16\" />:</li></ul></li></ul>\n<p><img src=\"//latex.artofproblemsolving.com/c/d/6/cd60d33a25eb49441278d0ee7041ddf686f51a46.png\" class=\"latex\" alt=\"$x^2+4xy+y^2=21=(3x_1+1)^2+4(3x_1+1)(3y_1+1)+(3y_1+1)^2=9(x^2+y^2+4x_1y_1+2x_1+2y_1)+6$\" style=\"vertical-align: -4px\" width=\"827\" height=\"19\" />\n</p><p>But 21 isn't 6mod9, it's 3mod9.\n</p>\n<ul><li><ul><li>Case 2c: y=2mod3: Then the LHS is 1mod3 while the RHS isn't.</li></ul></li>\n<li>Case 3: x=2mod3\n<ul><li>Case 3a: y=0mod3: This is equivalent to case 1c.</li>\n<li>Case 3b: y=1mod3: This is equivalent to case 2c.</li>\n<li>Case 3c: y=2mod3: We let <img src=\"//latex.artofproblemsolving.com/e/0/0/e0073e39e79b885510f95012c1a53741c6f05122.png\" class=\"latex\" alt=\"$x=3x_1+2$\" style=\"vertical-align: -2px\" width=\"92\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/4/1/f/41f3247ebdeefe6fc04d76be681517198435d829.png\" class=\"latex\" alt=\"$y=3y_1+2$\" style=\"vertical-align: -3px\" width=\"90\" height=\"16\" />:</li></ul></li></ul>\n<p><img src=\"//latex.artofproblemsolving.com/8/8/4/884872ee499971e9402be91b1995b0c16bca9d03.png\" class=\"latex\" alt=\"$x^2+4xy+y^2=21=(3x_1+2)^2+4(3x_1+2)(3y_1+2)+(3y_1+2)^2=9(x_1^2+y_1^2+4x_1y_1+4x_1+4y_1+2)+6$\" style=\"vertical-align: -4px\" width=\"859\" height=\"19\" />\n</p><p>But 21 isn't 6mod9, it's 3mod9.\n</p><p>Therefore, there are absolutely no solutions to the above equation.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_8&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">Problem 7</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">Problem 9</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a class=\"mw-selflink selflink\">8</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_9\" title=\"2005 Alabama ARML TST Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211623\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.030 seconds\nReal time usage: 0.031 seconds\nPreprocessor visited node count: 253/1000000\nPreprocessor generated node count: 680/1000000\nPost‐expand include size: 1380/2097152 bytes\nTemplate argument size: 213/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3864/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.599      1 Template:ARML_box\n100.00%    2.599      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:5940-0!canonical and timestamp 20240907211623 and revision id 72631\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 9"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_8",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_8",
+          "byteoffset": 137,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_8",
+          "byteoffset": 1402,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 8",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Alabama ARML TST Problems/Problem 9": {
+    "parse": {
+      "title": "2005 Alabama ARML TST Problems/Problem 9",
+      "pageid": 6558,
+      "revid": 23870,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_9&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A square is inscribed in a circle of diameter 12. Two vertices of a triangle are also vertices of one side of the square. The other vertex of the triangle is on the circle. Find the largest possible area of the triangle.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_9&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let the \"base\" of the triangle, which is a side of the square, be <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, and let the third point of the triangle be <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />. Clearly we want <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> to be as far as possible from <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, so we have that the base of the triangle is <img src=\"//latex.artofproblemsolving.com/b/8/1/b81097ac54e434963766001e47caa1dcd88003fd.png\" class=\"latex\" alt=\"$6\\sqrt{2}$\" style=\"vertical-align: -1px\" width=\"33\" height=\"18\" /> and the height, after some side chasing, is <img src=\"//latex.artofproblemsolving.com/d/4/d/d4d10cd187e2a8024df8d423ad1909cbc5b2346d.png\" class=\"latex\" alt=\"$\\dfrac{12-6\\sqrt{2}}{2}+6\\sqrt{2}=6+3\\sqrt{2}$\" style=\"vertical-align: -12px\" width=\"222\" height=\"41\" />. We multiply and divide by 2 to get <img src=\"//latex.artofproblemsolving.com/f/d/9/fd9c524dec3928e755e202c0a518131670130e40.png\" class=\"latex\" alt=\"$\\boxed{18+18\\sqrt{2}}$\" style=\"vertical-align: -7px\" width=\"94\" height=\"30\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Alabama_ARML_TST_Problems/Problem_9&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST\" title=\"2005 Alabama ARML TST\">2005 Alabama ARML TST</a> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems\" title=\"2005 Alabama ARML TST Problems\">(Problems)</a></b>\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">Problem 8</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by:<br /><b><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">Problem 10</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\"><a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_1\" title=\"2005 Alabama ARML TST Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_2\" title=\"2005 Alabama ARML TST Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_3\" title=\"2005 Alabama ARML TST Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_4\" title=\"2005 Alabama ARML TST Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_5\" title=\"2005 Alabama ARML TST Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_6\" title=\"2005 Alabama ARML TST Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_7\" title=\"2005 Alabama ARML TST Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_8\" title=\"2005 Alabama ARML TST Problems/Problem 8\">8</a> <b>•</b> <a class=\"mw-selflink selflink\">9</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_10\" title=\"2005 Alabama ARML TST Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_11\" title=\"2005 Alabama ARML TST Problems/Problem 11\">11</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_12\" title=\"2005 Alabama ARML TST Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_13\" title=\"2005 Alabama ARML TST Problems/Problem 13\">13</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_14\" title=\"2005 Alabama ARML TST Problems/Problem 14\">14</a> <b>•</b> <a href=\"/wiki/index.php/2005_Alabama_ARML_TST_Problems/Problem_15\" title=\"2005 Alabama ARML TST Problems/Problem 15\">15</a>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211623\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.034 seconds\nReal time usage: 0.035 seconds\nPreprocessor visited node count: 127/1000000\nPreprocessor generated node count: 400/1000000\nPost‐expand include size: 1382/2097152 bytes\nTemplate argument size: 215/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1161/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.190      1 Template:ARML_box\n100.00%    3.190      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6558-0!canonical and timestamp 20240907211623 and revision id 23870\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 15"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Alabama ARML TST Problems/Problem 8"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:ARML box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_9",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_9",
+          "byteoffset": 234,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Alabama_ARML_TST_Problems/Problem_9",
+          "byteoffset": 710,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Alabama ARML TST Problems/Problem 9",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

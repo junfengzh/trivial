@@ -1,0 +1,723 @@
+{
+  "2023 USAJMO Problems/Problem 1": {
+    "parse": {
+      "title": "2023 USAJMO Problems/Problem 1",
+      "pageid": 24151,
+      "revid": 216309,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all triples of positive integers <img src=\"//latex.artofproblemsolving.com/c/7/3/c73ed093cc73a8d9a14185fa525e7067e5c3725d.png\" class=\"latex\" alt=\"$(x,y,z)$\" style=\"vertical-align: -4px\" width=\"58\" height=\"18\" /> that satisfy the equation\n</p><p><img src=\"//latex.artofproblemsolving.com/4/9/9/499d5680772ad15ef3b6ae2aea6e3ff14e082f81.png\" class=\"latexcenter\" alt=\"\\begin{align*} 2(x+y+z+2xyz)^2=(2xy+2yz+2zx+1)^2+2023  \\end{align*}\" width=\"429\" height=\"20\" />\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We claim that the only solutions are <img src=\"//latex.artofproblemsolving.com/7/2/f/72fe948983bda6c2ec8222b54114782b946fb423.png\" class=\"latex\" alt=\"$(2,3,3)$\" style=\"vertical-align: -4px\" width=\"56\" height=\"18\" /> and its permutations.\n</p><p>Factoring the above squares and canceling the terms gives you:\n</p><p><img src=\"//latex.artofproblemsolving.com/9/f/a/9fae74c4cc673e6b20a27fa5f227b9ab0002ae58.png\" class=\"latex\" alt=\"$8(xyz)^2 + 2(x^2 +y^2 + z^2) = 4((xy)^2 + (yz)^2 + (zx)^2) + 2024$\" style=\"vertical-align: -5px\" width=\"477\" height=\"21\" />\n</p><p>Jumping on the coefficients in front of the <img src=\"//latex.artofproblemsolving.com/7/6/b/76b2878564ab19b80abb21ba964abe90fe120846.png\" class=\"latex\" alt=\"$x^2$\" width=\"16\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/f/5/a/f5a3faa3658bcbd8bde8e16cfa5baf019619fc9c.png\" class=\"latex\" alt=\"$y^2$\" style=\"vertical-align: -3px\" width=\"15\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/9/c/3/9c3b0b966fdafe902c6375ebef2b7fa9fdc4d223.png\" class=\"latex\" alt=\"$z^2$\" width=\"15\" height=\"15\" /> terms, we factor into: \n</p><p><img src=\"//latex.artofproblemsolving.com/2/d/4/2d47064dd5f9dda321772c551ab96f137e958bb7.png\" class=\"latex\" alt=\"$(2x^2 - 1)(2y^2 - 1)(2z^2 - 1) = 2023$\" style=\"vertical-align: -5px\" width=\"278\" height=\"21\" />\n</p><p>Realizing that the only factors of 2023 that could be expressed as <img src=\"//latex.artofproblemsolving.com/1/0/d/10d8f39618727fb28303abfd62f01189a9c089c6.png\" class=\"latex\" alt=\"$(2x^2 - 1)$\" style=\"vertical-align: -5px\" width=\"74\" height=\"21\" /> are <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/b/7/6/b7616a230c77f0d9a577e5bca01aa06f1c35c457.png\" class=\"latex\" alt=\"$17$\" style=\"vertical-align: 0px\" width=\"18\" height=\"12\" />, we simply find that the only solutions are <img src=\"//latex.artofproblemsolving.com/7/2/f/72fe948983bda6c2ec8222b54114782b946fb423.png\" class=\"latex\" alt=\"$(2,3,3)$\" style=\"vertical-align: -4px\" width=\"56\" height=\"18\" /> by inspection.\n</p><p>-Max\n</p><p><br />\nAlternatively, a more obvious factorization is:\n</p><p><img src=\"//latex.artofproblemsolving.com/c/9/a/c9a7195b83e9569397a0e652ec693f0ffa89c44e.png\" class=\"latex\" alt=\"$2(x+y+z+2xyz)^2=(2xy+2yz+2zx+1)^2+2023$\" style=\"vertical-align: -5px\" width=\"433\" height=\"21\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/e/1/a/e1af90d432fb22c7886acab62b03c37fb6b9158f.png\" class=\"latex\" alt=\"$(\\sqrt{2}x+\\sqrt{2}y+\\sqrt{2}z+2\\sqrt{2}xyz)^2-(2xy+2yz+2zx+1)^2=2023$\" style=\"vertical-align: -5px\" width=\"520\" height=\"24\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/6/9/5/695e9d6807c21627e6ae1dd5157fefe653f41469.png\" class=\"latex\" alt=\"$(2\\sqrt{2}xyz+2xy+2yz+2zx+\\sqrt{2}x+\\sqrt{2}y+\\sqrt{2}z+1)(2\\sqrt{2}xyz-2xy-2yz-2zx+\\sqrt{2}x+\\sqrt{2}y+\\sqrt{2}z-1)=2023$\" style=\"vertical-align: -5px\" width=\"920\" height=\"24\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/c/0/a/c0a871295087c27d0a9876788a1eb6268423b3fb.png\" class=\"latex\" alt=\"$(\\sqrt{2}x+1)(\\sqrt{2}y+1)(\\sqrt{2}z+1)(\\sqrt{2}x-1)(\\sqrt{2}y-1)(\\sqrt{2}z-1)=2023$\" style=\"vertical-align: -5px\" width=\"539\" height=\"24\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/9/d/f/9df97e95906558ccbd80b8a0ad2da1b152ab84bd.png\" class=\"latex\" alt=\"$(2x^2-1)(2y^2-1)(2z^2-1)=2023$\" style=\"vertical-align: -5px\" width=\"278\" height=\"21\" />\n</p><p>Proceed as above. ~eevee9406\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2023_USAJMO\" title=\"2023 USAJMO\">2023 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2023_USAJMO_Problems\" title=\"2023 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2023\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First Question</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_2\" title=\"2023 USAJMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_2\" title=\"2023 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_3\" title=\"2023 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_4\" title=\"2023 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_5\" title=\"2023 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_6\" title=\"2023 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240908060318\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.050 seconds\nReal time usage: 0.057 seconds\nPreprocessor visited node count: 201/1000000\nPreprocessor generated node count: 554/1000000\nPost‐expand include size: 1204/2097152 bytes\nTemplate argument size: 56/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3511/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.431      1 -total\n 70.79%    3.137      1 Template:USAJMO_newbox\n 23.81%    1.055      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24151-0!canonical and timestamp 20240908060317 and revision id 216309\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2023",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2023_USAJMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2023_USAJMO_Problems/Problem_1",
+          "byteoffset": 185,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2023_USAJMO_Problems/Problem_1",
+          "byteoffset": 1329,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2023 USAJMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2023 USAJMO Problems/Problem 2": {
+    "parse": {
+      "title": "2023 USAJMO Problems/Problem 2",
+      "pageid": 24152,
+      "revid": 214686,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_3_.28Less_technical_bary.29\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 3 (Less technical bary)</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Solution_4_.28Less_bashy_bary.29\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Solution 4 (Less bashy bary)</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#See_Also\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>(Holden Mui) In an acute triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" />, let <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> be the midpoint of <img src=\"//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png\" class=\"latex\" alt=\"$\\overline{BC}$\" width=\"29\" height=\"15\" />. Let <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> be the foot of the perpendicular from <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> to <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" />. Suppose that the circumcircle of triangle <img src=\"//latex.artofproblemsolving.com/a/7/b/a7b510ddc7cf8a87b5cc0dd15adf8480cd2e6945.png\" class=\"latex\" alt=\"$ABP$\" style=\"vertical-align: -1px\" width=\"44\" height=\"14\" /> intersects line <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> at two distinct points <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />. Let <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> be the midpoint of <img src=\"//latex.artofproblemsolving.com/0/4/0/0400d2a78f3adac267e7621c65d063b35fe53ab1.png\" class=\"latex\" alt=\"$\\overline{AQ}$\" style=\"vertical-align: -3px\" width=\"28\" height=\"19\" />. Prove that <img src=\"//latex.artofproblemsolving.com/b/d/0/bd096f6d987ad71625f4170c44fd9d738b79e322.png\" class=\"latex\" alt=\"$NB=NC$\" width=\"86\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The condition is solved only if <img src=\"//latex.artofproblemsolving.com/8/7/d/87d67bf46f45c7330734f12c19fcba43404c234d.png\" class=\"latex\" alt=\"$\\triangle{NBC}$\" style=\"vertical-align: -4px\" width=\"64\" height=\"18\" /> is isosceles, which in turn only happens if <img src=\"//latex.artofproblemsolving.com/3/1/f/31fc3d60a21c65a04974f46defd2d131f5c0111e.png\" class=\"latex\" alt=\"$\\overline{MN}$\" width=\"36\" height=\"15\" /> is perpendicular to <img src=\"//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png\" class=\"latex\" alt=\"$\\overline{BC}$\" width=\"29\" height=\"15\" />. \n</p><p>Now, draw the altitude from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> to <img src=\"//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png\" class=\"latex\" alt=\"$\\overline{BC}$\" width=\"29\" height=\"15\" />, and call that point <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" />. Because of the Midline Theorem, the only way that this condition is met is if <img src=\"//latex.artofproblemsolving.com/0/a/3/0a33969855e5d7551e0d6787777573226890146b.png\" class=\"latex\" alt=\"$\\triangle{AXQ} \\sim \\triangle{NMQ}$\" style=\"vertical-align: -4px\" width=\"153\" height=\"18\" />, or if <img src=\"//latex.artofproblemsolving.com/7/b/0/7b07f14c61770fcf8a12f88efef076045f97c749.png\" class=\"latex\" alt=\"$\\overline{XM}=\\overline{MQ}$\" style=\"vertical-align: -4px\" width=\"96\" height=\"21\" />.\n</p><p>By <img src=\"//latex.artofproblemsolving.com/b/0/b/b0b3dbb5e0c16cabfa02f10ace626714ac385dbd.png\" class=\"latex\" alt=\"$AA$\" width=\"27\" height=\"13\" /> similarity, <img src=\"//latex.artofproblemsolving.com/0/c/0/0c01d0b09ffbabb4399473fdb10ad100a96795d1.png\" class=\"latex\" alt=\"$\\triangle{AXM} \\sim \\triangle{CPM}$\" style=\"vertical-align: -4px\" width=\"156\" height=\"18\" />. Using similarity ratios, we get that <img src=\"//latex.artofproblemsolving.com/2/5/9/2591ce68ccaa29a14f2b2e8423191b43cff96a8f.png\" class=\"latex\" alt=\"$\\frac{\\overline{AM}}{\\overline{XM}}=\\frac{\\overline{CM}}{\\overline{PM}}$\" style=\"vertical-align: -15px\" width=\"104\" height=\"44\" />. Rearranging, we get that <img src=\"//latex.artofproblemsolving.com/a/d/6/ad685ea4e1afc879672d9862b16995e2f574635c.png\" class=\"latex\" alt=\"$\\overline{AM} \\cdot \\overline{MP}=\\overline{XM} \\cdot \\overline{MC}$\" style=\"vertical-align: -1px\" width=\"189\" height=\"18\" />. This implies that <img src=\"//latex.artofproblemsolving.com/6/9/e/69e1fe7b717fcc82ea6f6387a10cd98aca60c7f4.png\" class=\"latex\" alt=\"$AXPC$\" style=\"vertical-align: -1px\" width=\"60\" height=\"14\" /> is cyclic.\n</p><p>Now we start using Power of a Point. We get that <img src=\"//latex.artofproblemsolving.com/7/3/8/738b191b5126c21355a53bec039968d8cdfc8ded.png\" class=\"latex\" alt=\"$\\overline{BX} \\cdot \\overline {XQ}= \\overline{AM} \\cdot \\overline{MP}$\" style=\"vertical-align: -4px\" width=\"181\" height=\"21\" />, and <img src=\"//latex.artofproblemsolving.com/a/d/6/ad685ea4e1afc879672d9862b16995e2f574635c.png\" class=\"latex\" alt=\"$\\overline{AM} \\cdot \\overline{MP}=\\overline{XM} \\cdot \\overline{MC}$\" style=\"vertical-align: -1px\" width=\"189\" height=\"18\" /> from before. This leads us to get that <img src=\"//latex.artofproblemsolving.com/6/2/5/625f9ad15b0f56a7ff3800c88e208256ffabdffd.png\" class=\"latex\" alt=\"$\\overline{BX} \\cdot \\overline {XQ}=\\overline{XM} \\cdot \\overline{MC}$\" style=\"vertical-align: -4px\" width=\"184\" height=\"21\" />. \n</p><p>Now we assign variables to the values of the segments. Let <img src=\"//latex.artofproblemsolving.com/9/2/4/924c1ac6c1a273082e0b2d31cba5579a2ccde29a.png\" class=\"latex\" alt=\"$\\overline{BX}=a, \\overline{XM}=b, \\overline{MQ}=c,$\" style=\"vertical-align: -4px\" width=\"222\" height=\"21\" /> and <img src=\"//latex.artofproblemsolving.com/a/5/4/a54aecdace997cacdfa8f3380947327da2a25a20.png\" class=\"latex\" alt=\"$\\overline{QC}=d$\" style=\"vertical-align: -4px\" width=\"64\" height=\"21\" />. The equation from above gets us that <img src=\"//latex.artofproblemsolving.com/d/0/4/d045ba39a0618033560a142df75931bd5deea95f.png\" class=\"latex\" alt=\"$(a+b)c=b(c+d)$\" style=\"vertical-align: -5px\" width=\"149\" height=\"20\" />. As <img src=\"//latex.artofproblemsolving.com/1/4/1/141742d9ebf66b82ec079813e9f26862516ec432.png\" class=\"latex\" alt=\"$a+b=c+d$\" style=\"vertical-align: -1px\" width=\"103\" height=\"14\" /> from the problem statements, this gets us that <img src=\"//latex.artofproblemsolving.com/e/b/d/ebda5306c70a24c574ef0107ed5b5152b5f594cf.png\" class=\"latex\" alt=\"$b=c$\" width=\"40\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/0/4/5/045f52cb282e7f037f76676f4a22a19ae61a5f8b.png\" class=\"latex\" alt=\"$\\overline{XC}=\\overline{CQ}$\" style=\"vertical-align: -4px\" width=\"86\" height=\"21\" />, and we are done.\n</p><p>-dragoon and rhydon516 (:\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> be the foot of the altitude from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> onto <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" />. We want to show that <img src=\"//latex.artofproblemsolving.com/d/0/6/d066d7dbafb50ff40194cdb3db7fa51d8dce89f1.png\" class=\"latex\" alt=\"$DM=MQ$\" style=\"vertical-align: -4px\" width=\"95\" height=\"18\" /> for obvious reasons. \n</p><p>Notice that <img src=\"//latex.artofproblemsolving.com/c/9/f/c9f8d590d11df9d9402950c405ad0087d010d929.png\" class=\"latex\" alt=\"$ADPC$\" width=\"57\" height=\"13\" /> is cyclic and that <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> lies on the radical axis of <img src=\"//latex.artofproblemsolving.com/e/3/2/e32d658aa51e2d4c830f4d956ce8f76a2e0bc246.png\" class=\"latex\" alt=\"$(ABPQ)$\" style=\"vertical-align: -4px\" width=\"69\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/0/6/6/066c11891ed23332c5f3285df6b1641e203f64cf.png\" class=\"latex\" alt=\"$(ADPC)$\" style=\"vertical-align: -5px\" width=\"74\" height=\"20\" />. By Power of a Point, <img src=\"//latex.artofproblemsolving.com/0/3/6/0362b8e4641d3497f9e6993269fb7fb67249f7b3.png\" class=\"latex\" alt=\"$(CM)(DM)=(BM)(MQ)$\" style=\"vertical-align: -5px\" width=\"220\" height=\"20\" />. As <img src=\"//latex.artofproblemsolving.com/5/7/e/57e0eb8d7b4f725df74fabcdee6dcd761509a946.png\" class=\"latex\" alt=\"$BM=CM$\" width=\"92\" height=\"12\" />, we have <img src=\"//latex.artofproblemsolving.com/d/0/6/d066d7dbafb50ff40194cdb3db7fa51d8dce89f1.png\" class=\"latex\" alt=\"$DM=MQ$\" style=\"vertical-align: -4px\" width=\"95\" height=\"18\" />, as desired. \n</p><p>- Leo.Euler\n</p>\n<h2><span id=\"Solution_3_(Less_technical_bary)\"></span><span class=\"mw-headline\" id=\"Solution_3_.28Less_technical_bary.29\">Solution 3 (Less technical bary)</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 3 (Less technical bary)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We are going to use barycentric coordinates on <img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" />. Let <img src=\"//latex.artofproblemsolving.com/5/c/1/5c12b28a637be3bb4c707e2a5e4bce47aabeed31.png\" class=\"latex\" alt=\"$A=(1,0,0)$\" style=\"vertical-align: -4px\" width=\"94\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/c/0/1/c015abd5846b8538042d38f167ec4d3abb8b4bb2.png\" class=\"latex\" alt=\"$B=(0,1,0)$\" style=\"vertical-align: -4px\" width=\"95\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/0/6/0/0601dfe585e5f1db64ff77ab451365145c24c9b2.png\" class=\"latex\" alt=\"$C=(0,0,1)$\" style=\"vertical-align: -4px\" width=\"94\" height=\"18\" />, and <img src=\"//latex.artofproblemsolving.com/2/0/5/20520aed0f4d38d4ba63fdbf54491f0e4555b3c5.png\" class=\"latex\" alt=\"$a=BC$\" style=\"vertical-align: -1px\" width=\"65\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/4/d/0/4d0945ed672d46e0b3ce68eab77d3c8c97785ca4.png\" class=\"latex\" alt=\"$b=CA$\" width=\"60\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/1/1/4/114ba3529432afc9366c7bf2c908575b7f8ed901.png\" class=\"latex\" alt=\"$c=AB$\" width=\"59\" height=\"13\" />. We have <img src=\"//latex.artofproblemsolving.com/1/f/b/1fb5112505bce7988d9cc8b91da48b484ab06729.png\" class=\"latex\" alt=\"$M=\\left(0,\\frac{1}{2},\\frac{1}{2}\\right)$\" style=\"vertical-align: -18px\" width=\"123\" height=\"45\" /> and <img src=\"//latex.artofproblemsolving.com/d/6/a/d6a80903db44d5eb62bb383a6511a5833a3526d8.png\" class=\"latex\" alt=\"$P=(x:1:1)$\" style=\"vertical-align: -5px\" width=\"113\" height=\"20\" /> so <img src=\"//latex.artofproblemsolving.com/2/6/5/265432797fab2788235bc02940d95ca9d9b57d82.png\" class=\"latex\" alt=\"$\\overrightarrow{CP}=\\left(\\frac{x}{x+2},\\frac{1}{x+2},\\frac{1}{x+2}-1\\right)$\" style=\"vertical-align: -18px\" width=\"265\" height=\"45\" /> and <img src=\"//latex.artofproblemsolving.com/e/5/0/e506695b7c7d73acd8a66004cee5cb4ba53e34a3.png\" class=\"latex\" alt=\"$\\overrightarrow{AM}=\\left(-1,\\frac{1}{2},\\frac{1}{2}\\right)$\" style=\"vertical-align: -18px\" width=\"151\" height=\"45\" />. Since <img src=\"//latex.artofproblemsolving.com/3/b/5/3b5bc4e868718f71c6bab0f1489cea52ccb6aa0b.png\" class=\"latex\" alt=\"$\\overleftrightarrow{CP}\\perp\\overleftrightarrow{AM}$\" style=\"vertical-align: -1px\" width=\"88\" height=\"21\" />, it follows that\n<img src=\"//latex.artofproblemsolving.com/8/7/7/8774a16099bf43614563e9f59b300ea161eb65e3.png\" class=\"latexcenter\" alt=\"\\begin{align*} a^2\\left(\\frac{1}{2}\\cdot\\frac{1}{x+2}+\\frac{1}{2}\\left(\\frac{1}{x+2}-1\\right)\\right)+b^2\\left(\\frac{1}{2}\\cdot\\frac{x}{x+2}-\\left(\\frac{1}{x+2}-1\\right)\\right)\\\\ +c^2\\left(\\frac{1}{2}\\cdot\\frac{x}{x+2}-\\frac{1}{x+2}\\right)=0. \\end{align*}\" width=\"521\" height=\"92\" />\nSolving this gives\n<img src=\"//latex.artofproblemsolving.com/f/4/6/f46af55f622c06ea0c8f0b11db8e8844679eb110.png\" class=\"latexcenter\" alt=\"\\[ x=\\frac{2b^2-2c^2}{a^2-3b^2-c^2} \\]\" width=\"137\" height=\"39\" />\nso\n<img src=\"//latex.artofproblemsolving.com/b/1/3/b134fccca3069ac67bf46ab3c50eb22e82974883.png\" class=\"latexcenter\" alt=\"\\[ P=\\left(\\frac{b^2-c^2}{a^2-2b^2-2c^2},\\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2},\\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}\\right). \\]\" width=\"448\" height=\"43\" />\nThe equation for <img src=\"//latex.artofproblemsolving.com/3/8/0/38054f87ce27ca0068b0ed685d6809b70f85c17a.png\" class=\"latex\" alt=\"$(ABP)$\" style=\"vertical-align: -4px\" width=\"55\" height=\"18\" /> is\n<img src=\"//latex.artofproblemsolving.com/0/a/4/0a431e6df8acb6e9f7331534548de50f87789bf9.png\" class=\"latexcenter\" alt=\"\\[ -a^2yz-b^2zx-c^2xy+ux+vy+wz=0. \\]\" width=\"329\" height=\"19\" />\nPlugging in <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> gives <img src=\"//latex.artofproblemsolving.com/9/8/0/980113411db28cef19af839a617cbfbc250a74dd.png\" class=\"latex\" alt=\"$u=v=0$\" width=\"77\" height=\"12\" />. Plugging in <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> gives\n<img src=\"//latex.artofproblemsolving.com/5/c/5/5c51b92055f6630b6adee4b39574bdab97b62280.png\" class=\"latexcenter\" alt=\"\\begin{align*} -a^2\\left(\\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}\\right)^2-b^2\\cdot\\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}\\cdot\\frac{b^2-c^2}{a^2-2b^2-2c^2}\\\\ -c^2\\cdot\\frac{b^2-c^2}{a^2-2b^2-2c^2}\\cdot\\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}+w\\cdot\\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}=0 \\end{align*}\" width=\"496\" height=\"92\" />\nso\n<img src=\"//latex.artofproblemsolving.com/c/a/c/cacc5ed4245e3142586554d67b96c9894eb26a51.png\" class=\"latexcenter\" alt=\"\\[ w=\\frac{2b^4-2c^4+a^4-3a^2b^2-a^2c^2}{2a^2-4b^2-4c^2}=\\frac{a^2}{2}-\\frac{b^2}{2}+\\frac{c^2}{2}. \\]\" width=\"401\" height=\"39\" />\nNow let <img src=\"//latex.artofproblemsolving.com/9/b/d/9bd9f2dc5e7ef092528294ffa1db4f4cdc823892.png\" class=\"latex\" alt=\"$Q=(0,t,1-t)$\" style=\"vertical-align: -5px\" width=\"124\" height=\"20\" /> where\n<img src=\"//latex.artofproblemsolving.com/4/0/5/40569ae868c107d288ca900bf4308a5ec3d06c4a.png\" class=\"latexcenter\" alt=\"\\begin{align*} -a^2t(1-t)+w(1-t)&amp;=0\\\\ \\implies t&amp;=\\frac{w}{a^2} \\end{align*}\" width=\"220\" height=\"61\" />\nso <img src=\"//latex.artofproblemsolving.com/4/e/a/4ea5d87a2a8f672ac53be2e61345323fd917bd3b.png\" class=\"latex\" alt=\"$Q=\\left(0,\\frac{w}{a^2},1-\\frac{w}{a^2}\\right)$\" style=\"vertical-align: -13px\" width=\"160\" height=\"35\" />. It follows that <img src=\"//latex.artofproblemsolving.com/9/2/2/9226706e7929581ce4f48af5e57b0d3de406b164.png\" class=\"latex\" alt=\"$N=\\left(\\frac{1}{2},\\frac{w}{2a^2},1-\\frac{w}{2a^2}\\right)$\" style=\"vertical-align: -18px\" width=\"190\" height=\"45\" />. It suffices to prove that <img src=\"//latex.artofproblemsolving.com/b/5/6/b5640aeb11cfa95574e7b2b1396db5e505663109.png\" class=\"latex\" alt=\"$\\overleftrightarrow{ON}\\perp\\overleftrightarrow{BC}$\" style=\"vertical-align: -1px\" width=\"86\" height=\"21\" />. Setting <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee4e42bc5e7374f0b2b36b46cc2b7476dc93848.png\" class=\"latex\" alt=\"$\\overrightarrow{O}=0$\" width=\"51\" height=\"22\" />, we get <img src=\"//latex.artofproblemsolving.com/5/f/8/5f875f10b1d091790d4916fef1fd7117a1de2d53.png\" class=\"latex\" alt=\"$\\overrightarrow{N}=\\left(\\frac{1}{2},\\frac{w}{2a^2},1-\\frac{w}{2a^2}\\right)$\" style=\"vertical-align: -18px\" width=\"191\" height=\"45\" />. Furthermore we have <img src=\"//latex.artofproblemsolving.com/6/c/0/6c08f67143f71779e30f39ef699ba4d2e5139a7c.png\" class=\"latex\" alt=\"$\\overrightarrow{CB}=(0,1,-1)$\" style=\"vertical-align: -5px\" width=\"127\" height=\"25\" /> so it suffices to prove that\n<img src=\"//latex.artofproblemsolving.com/b/c/f/bcf00717d151a33ae8a9e8342be0b6e3830aa19e.png\" class=\"latexcenter\" alt=\"\\begin{align*} a^2\\left(-\\frac{w}{2a^2}+\\frac{1}{2}-\\frac{u}{2a^2}\\right)+b^2\\left(-\\frac{1}{2}\\right)+c^2\\left(\\frac{1}{2}\\right)=0\\\\ \\implies w=\\frac{a^2}{2}-\\frac{b^2}{2}+\\frac{c^2}{2} \\end{align*}\" width=\"384\" height=\"88\" />\nwhich is valid. <img src=\"//latex.artofproblemsolving.com/b/6/c/b6cf65b1f2fbdf388e3daeff9b96b34d3399d777.png\" class=\"latex\" alt=\"$\\square$\" width=\"13\" height=\"12\" />\n</p><p>~KevinYang2.71\n</p>\n<h2><span id=\"Solution_4_(Less_bashy_bary)\"></span><span class=\"mw-headline\" id=\"Solution_4_.28Less_bashy_bary.29\">Solution 4 (Less bashy bary)</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=5\" title=\"Edit section: Solution 4 (Less bashy bary)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We employ barycentric coordinates. Set <img src=\"//latex.artofproblemsolving.com/0/1/9/01927bf7bbcf5688067a91087d440c77879049b6.png\" class=\"latex\" alt=\"$AMC$\" width=\"47\" height=\"13\" /> as the reference triangle with <img src=\"//latex.artofproblemsolving.com/5/5/9/5594734f575ba9bb2b41af9aebde75dcddb18834.png\" class=\"latex\" alt=\"$A = (1, 0, 0)$\" style=\"vertical-align: -4px\" width=\"94\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/f/5/c/f5ce8d4cea17289b11560c07bef64662add5c36d.png\" class=\"latex\" alt=\"$M = (0, 1, 0)$\" style=\"vertical-align: -5px\" width=\"103\" height=\"20\" />, and <img src=\"//latex.artofproblemsolving.com/c/2/f/c2fd56e5e6cc30249cdd51c3121d4622fdbc53a2.png\" class=\"latex\" alt=\"$C = (0, 0, 1)$\" style=\"vertical-align: -4px\" width=\"94\" height=\"18\" />. We immediately have,\n<img src=\"//latex.artofproblemsolving.com/4/5/2/45202cdcf43c309fca11a82495e26ff159fdf443.png\" class=\"latexcenter\" alt=\"\\[P = (S_B&#160;: S_A&#160;: 0); B = (0, 2, -1)\\]\" width=\"253\" height=\"18\" />\nSince it passes through <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, for some <img src=\"//latex.artofproblemsolving.com/1/e/3/1e32d8fab3a6be819121744a83223454c8626c15.png\" class=\"latex\" alt=\"$v, w$\" style=\"vertical-align: -4px\" width=\"33\" height=\"13\" />, the equation of circle <img src=\"//latex.artofproblemsolving.com/3/8/0/38054f87ce27ca0068b0ed685d6809b70f85c17a.png\" class=\"latex\" alt=\"$(ABP)$\" style=\"vertical-align: -4px\" width=\"55\" height=\"18\" /> is,\n<img src=\"//latex.artofproblemsolving.com/f/2/e/f2ef8946d24d1a87633a4d382aa87d20d4cda035.png\" class=\"latexcenter\" alt=\"\\[(ABP): -a^2 yz - b^2 zx - c^2 xy + (vy + wz)(x + y + z) = 0\\]\" width=\"456\" height=\"20\" />\nPlugging in <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />,\n<img src=\"//latex.artofproblemsolving.com/f/0/7/f074438404ac03d2f941bd628a83c8b6f41985b9.png\" class=\"latexcenter\" alt=\"\\[- c^2 S_{AB} + (v S_A)(c^2) = 0\\]\" width=\"190\" height=\"20\" />\n<img src=\"//latex.artofproblemsolving.com/4/d/1/4d182d7a523813a4cd2cdee3e04b9515ba891a89.png\" class=\"latexcenter\" alt=\"\\[\\iff v = S_B\\]\" width=\"97\" height=\"15\" />\nPlugging in <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />,\n<img src=\"//latex.artofproblemsolving.com/f/7/0/f708aff323dd08b3db9a250242b7eec560ca236e.png\" class=\"latexcenter\" alt=\"\\[2a^2 + (2v - w) = 0\\]\" width=\"149\" height=\"20\" />\n<img src=\"//latex.artofproblemsolving.com/b/5/5/b55da59e5e00d72170b5b59f2df5be192175f4e1.png\" class=\"latexcenter\" alt=\"\\[\\iff 2a^2 + 2 S_B = 3 a^2 - b^2 + c^2 = w\\]\" width=\"285\" height=\"18\" />\nIn conclusion the circle has formula,\n<img src=\"//latex.artofproblemsolving.com/9/1/f/91fd78b723ece5460835f195e46bd9e33b9ac125.png\" class=\"latexcenter\" alt=\"\\[(ABP): -a^2 yz - b^2 zx - c^2 xy + ((S_B)y + (3 a^2 - b^2 + c^2) z)(x + y + z) = 0\\]\" width=\"538\" height=\"20\" />\n<img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> is the second intersection of circle <img src=\"//latex.artofproblemsolving.com/3/8/0/38054f87ce27ca0068b0ed685d6809b70f85c17a.png\" class=\"latex\" alt=\"$(ABP)$\" style=\"vertical-align: -4px\" width=\"55\" height=\"18\" /> with <img src=\"//latex.artofproblemsolving.com/c/b/e/cbeda7159b33badd3617a005290a98fb0be341cb.png\" class=\"latex\" alt=\"$\\overline{CM}$\" width=\"34\" height=\"15\" />. We let <img src=\"//latex.artofproblemsolving.com/9/6/6/966f64e76775b3e71f90898a4472f4547173aefa.png\" class=\"latex\" alt=\"$Q = (0, 1 - t, t)$\" style=\"vertical-align: -5px\" width=\"124\" height=\"20\" /> for some <img src=\"//latex.artofproblemsolving.com/8/0/0/80008cbc162ed3b9cbfc7b14b760aa92cf163c88.png\" class=\"latex\" alt=\"$t \\neq -1$\" style=\"vertical-align: -4px\" width=\"56\" height=\"18\" />. Plugging this in,\n<img src=\"//latex.artofproblemsolving.com/e/5/7/e57e1ecd99b6e5d80eca1444e73abf724258da23.png\" class=\"latexcenter\" alt=\"\\[-a^2 (1-t)t + ((S_B)(1-t) + (3 a^2 - b^2 + c^2) t) = 0\\]\" width=\"390\" height=\"20\" />\nWe claim that <img src=\"//latex.artofproblemsolving.com/1/6/3/1638a55c5bc28591fc6b281f87c3d35fc070ebb5.png\" class=\"latex\" alt=\"$t = -\\frac{S_B}{a^2}$\" style=\"vertical-align: -13px\" width=\"73\" height=\"39\" /> is the other solution. \n<img src=\"//latex.artofproblemsolving.com/8/9/e/89e568df6522796ffc0a075fbd65b1cb1b5fc809.png\" class=\"latexcenter\" alt=\"\\[\\left(1+ \\frac{S_B}{a^2} \\right) S_B + \\left((S_B)\\left(1+ \\frac{S_B}{a^2}\\right) - (3 a^2 - b^2 + c^2) \\frac{S_B}{a^2}\\right) = 0\\]\" width=\"475\" height=\"43\" />\n<img src=\"//latex.artofproblemsolving.com/5/4/c/54c6200b34a79dec091ffb91c70960bd8f068415.png\" class=\"latexcenter\" alt=\"\\[\\iff \\left(\\frac{3a^2 - b^2 + c^2}{2a^2} \\right) + \\left(\\left(\\frac{3a^2 - b^2 + c^2}{2a^2}\\right) - (3 a^2 - b^2 + c^2) \\frac{1}{a^2}\\right) = 0\\]\" width=\"536\" height=\"43\" />\nFactoring out the <img src=\"//latex.artofproblemsolving.com/0/5/e/05e4947376055419bf672f5956c4ea5337cd2015.png\" class=\"latex\" alt=\"$\\frac{3a^2 - b^2 + c^2}{2a^2}$\" style=\"vertical-align: -13px\" width=\"107\" height=\"41\" />, this is clearly true.\n</p><p>We also check that, these are not the same value.\n<img src=\"//latex.artofproblemsolving.com/0/8/0/080ebd41f5e536581a61fdb698dc397a690bb386.png\" class=\"latexcenter\" alt=\"\\[-\\frac{S_B}{a^2} = -1\\]\" width=\"85\" height=\"37\" />\n<img src=\"//latex.artofproblemsolving.com/0/6/6/066c101dcd95e176ce93d33a36a5363774c49061.png\" class=\"latexcenter\" alt=\"\\[\\iff a^2 - b^2 + c^2 = 2a^2\\]\" width=\"183\" height=\"17\" />\n<img src=\"//latex.artofproblemsolving.com/a/6/5/a653776eaf3942135e836bacbd1e84a4661a44b3.png\" class=\"latexcenter\" alt=\"\\[\\iff c^2 = a^2 + b^2\\]\" width=\"135\" height=\"17\" />\nThe triangle is acute, so this is impossible.\n</p><p>Since we had a quadratic in <img src=\"//latex.artofproblemsolving.com/e/0/d/e0d2bf360290fd61d1c1557e763f2622363b3d35.png\" class=\"latex\" alt=\"$t$\" width=\"6\" height=\"11\" /> with at most two solutions, the second intersection <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> is indeed,\n<img src=\"//latex.artofproblemsolving.com/c/0/2/c02425ab755c655c060d32d7e02e9b8b3fad414f.png\" class=\"latexcenter\" alt=\"\\[Q = \\left( 0, 1 + \\frac{S_B}{a^2}, -\\frac{S_B}{a^2} \\right)\\]\" width=\"184\" height=\"43\" />\nTherefore,\n<img src=\"//latex.artofproblemsolving.com/d/4/2/d42832af41854e6184ca734e6789b9f154227205.png\" class=\"latexcenter\" alt=\"\\[N = \\frac{A + Q}{2} = \\left( \\frac{1}{2}, \\frac{1}{2} - \\frac{S_B}{2a^2}, \\frac{S_B}{2a^2} \\right)\\]\" width=\"266\" height=\"43\" />\n</p><p>~ Daniel Ge\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=6\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2023_USAJMO\" title=\"2023 USAJMO\">2023 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2023_USAJMO_Problems\" title=\"2023 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2023\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_1\" title=\"2023 USAJMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_3\" title=\"2023 USAJMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_1\" title=\"2023 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_3\" title=\"2023 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_4\" title=\"2023 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_5\" title=\"2023 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_6\" title=\"2023 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240908060318\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.078 seconds\nReal time usage: 0.082 seconds\nPreprocessor visited node count: 1062/1000000\nPreprocessor generated node count: 2446/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 21007/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.848      1 -total\n 71.94%    2.768      1 Template:USAJMO_newbox\n 23.20%    0.893      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24152-0!canonical and timestamp 20240908060318 and revision id 214686\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2023",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2023_USAJMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2023_USAJMO_Problems/Problem_2",
+          "byteoffset": 469,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2023_USAJMO_Problems/Problem_2",
+          "byteoffset": 2053,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 3 (Less technical bary)",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2023_USAJMO_Problems/Problem_2",
+          "byteoffset": 2489,
+          "anchor": "Solution_3_.28Less_technical_bary.29"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 4 (Less bashy bary)",
+          "number": "5",
+          "index": "5",
+          "fromtitle": "2023_USAJMO_Problems/Problem_2",
+          "byteoffset": 5068,
+          "anchor": "Solution_4_.28Less_bashy_bary.29"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "6",
+          "index": "6",
+          "fromtitle": "2023_USAJMO_Problems/Problem_2",
+          "byteoffset": 7174,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2023 USAJMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2023 USAJMO Problems/Problem 3": {
+    "parse": {
+      "title": "2023 USAJMO Problems/Problem 3",
+      "pageid": 24379,
+      "revid": 210682,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider an <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />-by-<img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> board of unit squares for some odd positive integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />. We say that a collection <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> of identical dominoes is a maximal grid-aligned configuration on the board if <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> consists of <img src=\"//latex.artofproblemsolving.com/5/9/6/59644e0d78c2a2496e34bf86ed7dc28ff6a220f6.png\" class=\"latex\" alt=\"$(n^2-1)/2$\" style=\"vertical-align: -5px\" width=\"84\" height=\"21\" /> dominoes where each domino covers exactly two neighboring squares and the dominoes don't overlap: <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> then covers all but one square on the board. We are allowed to slide (but not rotate) a domino on the board to cover the uncovered square, resulting in a new maximal grid-aligned configuration with another square uncovered. Let <img src=\"//latex.artofproblemsolving.com/4/d/c/4dca09215505f66dfb6c1c7f5919f6dc91377d58.png\" class=\"latex\" alt=\"$k(C)$\" style=\"vertical-align: -5px\" width=\"40\" height=\"20\" /> be the number of distinct maximal grid-aligned configurations obtainable from <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> by repeatedly sliding dominoes. Find the maximum value of <img src=\"//latex.artofproblemsolving.com/4/d/c/4dca09215505f66dfb6c1c7f5919f6dc91377d58.png\" class=\"latex\" alt=\"$k(C)$\" style=\"vertical-align: -5px\" width=\"40\" height=\"20\" /> as a function of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>To start off, we put the initial non-covered square in a corner (marked by the shaded square). Let's consider what happens when our first domino slides over the empty square. We will call such a move where we slide a domino over the uncovered square a \"step\":\n</p><p><img src=\"//latex.artofproblemsolving.com/d/1/a/d1ab3446e2b746fe426901f23035301c8d519cfa.png\" class=\"latexcenter\" alt=\"[asy] size(5cm);  draw((0,0)--(0,3.2)); draw((1,0)--(1,3.2)); draw((0,0)--(1.2,0)); draw((0,1)--(1.2,1)); draw((0,2)--(1.2,2)); draw((0,3)--(1.2,3)); fill(origin--(1,0)--(1,1)--(0,1)--cycle, grey);  draw((0.1,1.1)--(0.1,2.9)--(0.9,2.9)--(0.9,1.1)--cycle,dashed); draw((0.1,0.1)--(0.1,1.9)--(0.9,1.9)--(0.9,0.1)--cycle);  [/asy]\" width=\"92\" height=\"238\" />\n</p><p>When the vertically-oriented domino above the shaded square moved down to cover the shaded square, it had uncovered a new square two squares above the original one. Next, we consider the second another direction the uncovered square can move to:\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/4/4/e/44ea2e2b07c89cfdab977b6cc0cb9ca23494610c.png\" class=\"latexcenter\" alt=\"[asy] size(5cm);  draw((0,0)--(0,3.2)); draw((1,0)--(1,3.2)); draw((0,0)--(1.2,0)); draw((0,1)--(1.2,1)); draw((0,2)--(1.2,2)); draw((0,3)--(1.2,3)); fill((0,2)--(1,2)--(1,3)--(0,3)--cycle, grey);  draw((0.1,2.9)--(0.1,2.1)--(1.9,2.1)--(1.9,2.9)--cycle); draw((1.1,2.9)--(1.1,2.1)--(2.9,2.1)--(2.9,2.9)--cycle,dashed); draw((0.1,0.1)--(0.1,1.9)--(0.9,1.9)--(0.9,0.1)--cycle);  [/asy]\" width=\"215\" height=\"238\" />\n</p><p>In this case, the horizontally-oriented domino besides the shaded square moved to cover the previous shaded square. The new uncovered square, as a result, would be either two squares to the left, or to the right of the previous shaded square.\n</p><p>So, to summarize, during each \"move\", the uncovered square can move either two steps up, down, left, or right. We can make a path for which the shaded square takes:\n</p><p><img src=\"//latex.artofproblemsolving.com/1/4/5/1455f3407fdfc5d05f323754db7d74a7d265de9e.png\" class=\"latexcenter\" alt=\"[asy] size(5cm);  draw((0,0)--(0,5)); draw((1,0)--(1,5)); draw((2,0)--(2,5)); draw((3,0)--(3,5)); draw((4,0)--(4,5)); draw((5,0)--(5,5));  draw((0,0)--(5,0)); draw((0,1)--(5,1)); draw((0,2)--(5,2)); draw((0,3)--(5,3)); draw((0,4)--(5,4)); draw((0,5)--(5,5));  draw((0.5,0.5)--(0.5,2.5)--(2.5,2.5)--(2.5,0.5)--(4.5,0.5)--(4.5,2.5)--(4.5,4.5)--(2.5,4.5)--(0.5,4.5)); dot((0.5,0.5)); dot((0.5,2.5)); dot((2.5,2.5)); dot((2.5,0.5)); dot((4.5,0.5)); dot((4.5,2.5)); dot((4.5,4.5)); dot((2.5,4.5)); dot((0.5,4.5)); [/asy]\" width=\"238\" height=\"238\" />\n</p><p>We put the original shaded square was in the corner, so, the possible number of squares that cound be uncovered is <img src=\"//latex.artofproblemsolving.com/6/f/6/6f63e3c307f328dbe61f0e677e16ff30175486ce.png\" class=\"latex\" alt=\"$\\left(\\dfrac{n+1}{2}\\right)^2 = \\frac{n^2+2n+1}{4}$\" style=\"vertical-align: -18px\" width=\"202\" height=\"48\" />, all of which can be connected by a single path. Let those <img src=\"//latex.artofproblemsolving.com/d/0/1/d017d4e10fcbd019ea1068fde8f35519271f2c5c.png\" class=\"latex\" alt=\"$\\frac{n^2+2n+1}{4}$\" style=\"vertical-align: -13px\" width=\"98\" height=\"41\" /> belong to a set <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> of squares.\n</p><p>If the initial uncovered square was not an element of <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />, then it could either be <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> or <img src=\"//latex.artofproblemsolving.com/2/c/4/2c4dc1409208ff6a3039f4871d85c16763334983.png\" class=\"latex\" alt=\"$\\sqrt{2}$\" style=\"vertical-align: -1px\" width=\"24\" height=\"18\" /> away from a square in <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />. If the initial square was a distance of <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> from a element of <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />, then there would be <img src=\"//latex.artofproblemsolving.com/6/8/9/6897b01f4ad0d7d2c983beebe4b2a4722f4dc165.png\" class=\"latex\" alt=\"$\\left(\\dfrac{n+1}{2}\\right)\\left(\\dfrac{n-1}{2}\\right)$\" style=\"vertical-align: -18px\" width=\"150\" height=\"45\" /> possible uncovered squares:\n</p><p><img src=\"//latex.artofproblemsolving.com/e/2/3/e230c6ac37b3acf24dbc1486301693441deebbae.png\" class=\"latexcenter\" alt=\"[asy] draw((0,0)--(0,5)); draw((1,0)--(1,5)); draw((2,0)--(2,5)); draw((3,0)--(3,5)); draw((4,0)--(4,5)); draw((5,0)--(5,5));  draw((0,0)--(5,0)); draw((0,1)--(5,1)); draw((0,2)--(5,2)); draw((0,3)--(5,3)); draw((0,4)--(5,4)); draw((0,5)--(5,5));  dot((0.5,1.5)); dot((0.5,3.5)); dot((2.5,1.5)); dot((2.5,3.5)); dot((4.5,1.5)); dot((4.5,3.5)); [/asy]\" width=\"252\" height=\"252\" />\n</p><p>If the initial square was a distance of <img src=\"//latex.artofproblemsolving.com/2/c/4/2c4dc1409208ff6a3039f4871d85c16763334983.png\" class=\"latex\" alt=\"$\\sqrt{2}$\" style=\"vertical-align: -1px\" width=\"24\" height=\"18\" /> away from a square in <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />, then there would be <img src=\"//latex.artofproblemsolving.com/3/8/f/38fbd7e918c8493c975e015fcaf7fe93358a6804.png\" class=\"latex\" alt=\"$\\left(\\dfrac{n-1}{2}\\right)^2$\" style=\"vertical-align: -18px\" width=\"82\" height=\"48\" /> possible squares that could be uncovered:\n</p><p><img src=\"//latex.artofproblemsolving.com/7/c/a/7ca27b2aa67aa180132cfece33da86160c7b4bce.png\" class=\"latexcenter\" alt=\"[asy] draw((0,0)--(0,5)); draw((1,0)--(1,5)); draw((2,0)--(2,5)); draw((3,0)--(3,5)); draw((4,0)--(4,5)); draw((5,0)--(5,5));  draw((0,0)--(5,0)); draw((0,1)--(5,1)); draw((0,2)--(5,2)); draw((0,3)--(5,3)); draw((0,4)--(5,4)); draw((0,5)--(5,5));  dot((1.5,1.5)); dot((1.5,3.5)); dot((3.5,1.5)); dot((3.5,3.5)); [/asy]\" width=\"252\" height=\"252\" />\n</p><p>So, that means the maximal number of squares that can be uncovered is <img src=\"//latex.artofproblemsolving.com/d/0/1/d017d4e10fcbd019ea1068fde8f35519271f2c5c.png\" class=\"latex\" alt=\"$\\frac{n^2+2n+1}{4}$\" style=\"vertical-align: -13px\" width=\"98\" height=\"41\" />, thus making a maxmial of <img src=\"//latex.artofproblemsolving.com/d/f/f/dffc7760f336e83da782aa06ce8630f11b642bba.png\" class=\"latex\" alt=\"$k(C)=\\boxed{\\frac{n^2+2n+1}{4}}$\" style=\"vertical-align: -19px\" width=\"172\" height=\"52\" /> achievable configurations from <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> (<img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />'s uncovered square must belong in <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />).\n</p><p>~ sml1809\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2023_USAJMO\" title=\"2023 USAJMO\">2023 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2023_USAJMO_Problems\" title=\"2023 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2023\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_2\" title=\"2023 USAJMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_4\" title=\"2023 USAJMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_1\" title=\"2023 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_2\" title=\"2023 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_4\" title=\"2023 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_5\" title=\"2023 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_6\" title=\"2023 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907213449\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.057 seconds\nReal time usage: 0.346 seconds\nPreprocessor visited node count: 348/1000000\nPreprocessor generated node count: 874/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 7538/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   27.048      1 -total\n 71.75%   19.408      1 Template:USAJMO_newbox\n 27.34%    7.395      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24379-0!canonical and timestamp 20240907213449 and revision id 210682\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2023",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2023_USAJMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2023_USAJMO_Problems/Problem_3",
+          "byteoffset": 855,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2023_USAJMO_Problems/Problem_3",
+          "byteoffset": 4887,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2023 USAJMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2023 USAJMO Problems/Problem 4": {
+    "parse": {
+      "title": "2023 USAJMO Problems/Problem 4",
+      "pageid": 24154,
+      "revid": 199233,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Two players, <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" />, play the following game on an infinite grid of unit squares, all initially colored white. The players take turns starting with <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />. On <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />'s turn, <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> selects one white unit square and colors it blue. On <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" />'s turn, <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> selects two white unit squares and colors them red. The players alternate until <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> decides to end the game. At this point, <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> gets a score, given by the number of unit squares in the largest (in terms of area) simple polygon containing only blue unit squares. What is the largest score <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> can guarantee?\n</p><p>(A simple polygon is a polygon (not necessarily convex) that does not intersect itself and has no holes.)\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>It is clear that <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> can guarantee a score of <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" /> squares. We will show that <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> has a strategy to limit blue to <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" /> squares, thus solving the problem.\n</p><p>Partition the grid into 2x2 squares. Red's strategy is as follows: \n</p><p>- If <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> plays in a 2x2 square, play the two adjacent squares to <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />'s square that are not in the 2x2 square.\n- If one (or both) of these moves are blocked, instead play a square a megaparsec away from the rest of the moves. This move can only benefit you and will not change the outcome of the game.\n</p><p>By induction, it is clear that no two blue squares that are adjacent are not in the same 2x2 square. Thus, we conclude that <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> has limited blue to a maximum score of <img src=\"//latex.artofproblemsolving.com/8/c/b/8cb0e6e64d73bacef9c8869039bc21581f1884e6.png\" class=\"latex\" alt=\"$2^2 = 4$\" style=\"vertical-align: 0px\" width=\"50\" height=\"15\" />, and the proof is complete. <img src=\"//latex.artofproblemsolving.com/b/6/c/b6cf65b1f2fbdf388e3daeff9b96b34d3399d777.png\" class=\"latex\" alt=\"$\\square$\" width=\"13\" height=\"12\" />\n</p><p>~mathboy100\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2023_USAJMO\" title=\"2023 USAJMO\">2023 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2023_USAJMO_Problems\" title=\"2023 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2023\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_3\" title=\"2023 USAJMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_5\" title=\"2023 USAJMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_1\" title=\"2023 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_2\" title=\"2023 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_3\" title=\"2023 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_5\" title=\"2023 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_6\" title=\"2023 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240908060319\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.044 seconds\nReal time usage: 0.067 seconds\nPreprocessor visited node count: 213/1000000\nPreprocessor generated node count: 574/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2808/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.787      1 -total\n 71.90%    2.723      1 Template:USAJMO_newbox\n 23.71%    0.898      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24154-0!canonical and timestamp 20240908060319 and revision id 199233\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2023",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2023_USAJMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2023_USAJMO_Problems/Problem_4",
+          "byteoffset": 784,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2023_USAJMO_Problems/Problem_4",
+          "byteoffset": 1650,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2023 USAJMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2023 USAJMO Problems/Problem 5": {
+    "parse": {
+      "title": "2023 USAJMO Problems/Problem 5",
+      "pageid": 25861,
+      "revid": 210390,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A positive integer <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> is selected, and some positive integers are written on a board. Alice and Bob play the following game. On Alice's turn, she must replace some integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> on the board with <img src=\"//latex.artofproblemsolving.com/5/a/a/5aa16b166227643381b65714d6f31d82d432bfb4.png\" class=\"latex\" alt=\"$n+a$\" style=\"vertical-align: -1px\" width=\"42\" height=\"12\" />, and on Bob's turn he must replace some even integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> on the board with <img src=\"//latex.artofproblemsolving.com/c/8/3/c8332f3acf37eb5aeaeca80118fd58e33bd93d25.png\" class=\"latex\" alt=\"$n/2$\" style=\"vertical-align: -4px\" width=\"28\" height=\"18\" />. Alice goes first and they alternate turns. If on his turn Bob has no valid moves, the game ends.\n</p><p>After analyzing the integers on the board, Bob realizes that, regardless of what moves Alice makes, he will be able to force the game to end eventually. Show that, in fact, for this value of <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and these integers on the board, the game is guaranteed to end regardless of Alice's or Bob's moves.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We claim that the game will always end if and only if <img src=\"//latex.artofproblemsolving.com/c/f/4/cf46831a07c2b36c15300045668370c985bc7a9b.png\" class=\"latex\" alt=\"$\\nu_{2}(n) &lt; \\nu_{2} (a)$\" style=\"vertical-align: -5px\" width=\"108\" height=\"20\" /> for all <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> that are in the list of positive integers.\n</p><p><br />\nFirst, we will prove the if direction. Notice that if Alice adds <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> to <img src=\"//latex.artofproblemsolving.com/c/5/4/c54e7152acd659788861f0453ac195c635e0a005.png\" class=\"latex\" alt=\"$n,$\" style=\"vertical-align: -3px\" width=\"15\" height=\"11\" /> since we have <img src=\"//latex.artofproblemsolving.com/4/9/7/497947efefe52c51794522f68a639c5558f41e11.png\" class=\"latexcenter\" alt=\"\\[\\nu_{2} (ka+n) = \\nu_{2} (n) &lt; \\nu_{2} (a)\\]\" width=\"211\" height=\"18\" /> for all integers <img src=\"//latex.artofproblemsolving.com/4/f/b/4fbd3ce8d05a7804d58ce1b971e75f157311c7fe.png\" class=\"latex\" alt=\"$k&gt;0,$\" style=\"vertical-align: -3px\" width=\"47\" height=\"16\" /> eventually Bob will decrease <img src=\"//latex.artofproblemsolving.com/b/6/c/b6c0ac95cdff6bbf6949e98750cd3b372339615d.png\" class=\"latex\" alt=\"$\\nu_{2} (n)$\" style=\"vertical-align: -5px\" width=\"43\" height=\"20\" /> by <img src=\"//latex.artofproblemsolving.com/5/b/f/5bf27edd6ee0c25241392922eca9b9c9144f4d73.png\" class=\"latex\" alt=\"$1,$\" style=\"vertical-align: -3px\" width=\"13\" height=\"15\" /> and Alice will not be able to change <img src=\"//latex.artofproblemsolving.com/e/a/1/ea107aba96fd2242123a344ed95fa4d568f5d07f.png\" class=\"latex\" alt=\"$\\nu_{2} (n),$\" style=\"vertical-align: -5px\" width=\"48\" height=\"20\" /> and so <img src=\"//latex.artofproblemsolving.com/7/e/f/7ef37b9767e396ebeeba7ca1e307cfcca61d54e7.png\" class=\"latex\" alt=\"$\\nu_{2}(n)$\" style=\"vertical-align: -5px\" width=\"43\" height=\"20\" /> will eventually become <img src=\"//latex.artofproblemsolving.com/6/0/4/604c735470dd0152ca1cff75fe26eadf5cef7f49.png\" class=\"latex\" alt=\"$0.$\" width=\"12\" height=\"12\" /> \n</p><p>Similarly, all of the other numbers on the list will have the same fate as <img src=\"//latex.artofproblemsolving.com/c/5/4/c54e7152acd659788861f0453ac195c635e0a005.png\" class=\"latex\" alt=\"$n,$\" style=\"vertical-align: -3px\" width=\"15\" height=\"11\" /> and so, no matter what Bob or Alice do, the game will end.\n</p><p><br />\nNow, we complete the only if direction, i.e. if <img src=\"//latex.artofproblemsolving.com/0/8/3/0837ec39886a4a0d8dcfcfed3b739bae4c2a41eb.png\" class=\"latex\" alt=\"$\\nu_{2} (n) \\ge \\nu_{2} (a),$\" style=\"vertical-align: -5px\" width=\"113\" height=\"20\" /> where <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is one of the numbers in the list, we will prove that Alice can keep the game going forever. \n</p><p><br />\nNotice that Bob can only decrease <img src=\"//latex.artofproblemsolving.com/b/6/c/b6c0ac95cdff6bbf6949e98750cd3b372339615d.png\" class=\"latex\" alt=\"$\\nu_{2} (n)$\" style=\"vertical-align: -5px\" width=\"43\" height=\"20\" /> by <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> at a time, and so if <img src=\"//latex.artofproblemsolving.com/b/0/a/b0a96e9c2520ebeb087445ad397acd3e5297c643.png\" class=\"latex\" alt=\"$\\nu_{2} (n) \\le \\nu_{2} (a),$\" style=\"vertical-align: -5px\" width=\"113\" height=\"20\" /> we need <img src=\"//latex.artofproblemsolving.com/f/d/d/fdd08b26f5f589b33218576204af91124cd29645.png\" class=\"latex\" alt=\"$\\nu_{2} (n) = \\nu_{2} (a)$\" style=\"vertical-align: -5px\" width=\"108\" height=\"20\" /> at some point. But, then, if this is true, take <img src=\"//latex.artofproblemsolving.com/f/9/8/f98c2cef4692f55aeaaa1ee7fabe2203d23293c1.png\" class=\"latex\" alt=\"$n = 2^{k}(2m+1),$\" style=\"vertical-align: -5px\" width=\"130\" height=\"22\" /> and <img src=\"//latex.artofproblemsolving.com/3/6/0/360136a685879a42b7bee4ef0736d243274c61f8.png\" class=\"latex\" alt=\"$a = 2^{k}(2\\ell+1),$\" style=\"vertical-align: -5px\" width=\"120\" height=\"22\" /> and notice that \n<img src=\"//latex.artofproblemsolving.com/5/8/0/58056356842feaad3cef6e2a9855755765f6bfc8.png\" class=\"latexcenter\" alt=\"\\[a+n = 2^{k}(2m+1)+2^{k}(2\\ell+1) = 2^{k}(2m+2\\ell+2) = 2^{k+1}(m+\\ell+1),\\]\" width=\"538\" height=\"20\" /> so\n<img src=\"//latex.artofproblemsolving.com/8/c/0/8c0c55261e33846df3edb0b92fe0ee4ca1e26f22.png\" class=\"latex\" alt=\"$\\nu_{2}(a+n) &gt; \\nu_{2} (n).$\" style=\"vertical-align: -5px\" width=\"146\" height=\"20\" />\nThus, if Bob gets <img src=\"//latex.artofproblemsolving.com/b/6/c/b6c0ac95cdff6bbf6949e98750cd3b372339615d.png\" class=\"latex\" alt=\"$\\nu_{2} (n)$\" style=\"vertical-align: -5px\" width=\"43\" height=\"20\" /> equal to <img src=\"//latex.artofproblemsolving.com/9/8/e/98e576fc9ab1afd43b741a18870d09cc77fc1bd5.png\" class=\"latex\" alt=\"$\\nu_{2} (a),$\" style=\"vertical-align: -5px\" width=\"47\" height=\"20\" /> Alice can simply add <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> to <img src=\"//latex.artofproblemsolving.com/c/5/4/c54e7152acd659788861f0453ac195c635e0a005.png\" class=\"latex\" alt=\"$n,$\" style=\"vertical-align: -3px\" width=\"15\" height=\"11\" /> and then <img src=\"//latex.artofproblemsolving.com/8/0/c/80c83879458b40e7b5d073bfadde5e3c1d6676a9.png\" class=\"latex\" alt=\"$\\nu_{2} (n) &gt; \\nu_{2} (a)$\" style=\"vertical-align: -5px\" width=\"108\" height=\"20\" /> again. Thus, Alice can keep the game going forever, and hence we are done.\n</p><p>~Mr.Sharkman\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2023_USAJMO\" title=\"2023 USAJMO\">2023 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2023_USAJMO_Problems\" title=\"2023 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2023\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_4\" title=\"2023 USAJMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_6\" title=\"2023 USAJMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_1\" title=\"2023 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_2\" title=\"2023 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_3\" title=\"2023 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_4\" title=\"2023 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_6\" title=\"2023 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240908060319\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.048 seconds\nReal time usage: 0.050 seconds\nPreprocessor visited node count: 339/1000000\nPreprocessor generated node count: 854/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5854/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.902      1 -total\n 74.29%    2.899      1 Template:USAJMO_newbox\n 21.01%    0.820      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:25861-0!canonical and timestamp 20240908060319 and revision id 210390\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2023",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2023_USAJMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2023_USAJMO_Problems/Problem_5",
+          "byteoffset": 756,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2023_USAJMO_Problems/Problem_5",
+          "byteoffset": 2425,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2023 USAJMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2023 USAJMO Problems/Problem 6": {
+    "parse": {
+      "title": "2023 USAJMO Problems/Problem 6",
+      "pageid": 25862,
+      "revid": 219974,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Isosceles triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" />, with <img src=\"//latex.artofproblemsolving.com/3/c/9/3c99bbe74cccdc92b249d376f13d9429d41a8b7a.png\" class=\"latex\" alt=\"$AB=AC$\" width=\"80\" height=\"13\" />, is inscribed in circle <img src=\"//latex.artofproblemsolving.com/5/4/d/54d7d48553f4d9e7ab418118607ea324cbfddfda.png\" class=\"latex\" alt=\"$\\omega$\" width=\"11\" height=\"8\" />. Let <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> be an arbitrary point inside <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/f/8/e/f8ed443e8c249a4e5eccbb4e0706591ce7c2bc05.png\" class=\"latex\" alt=\"$BD\\neq DC$\" style=\"vertical-align: -4px\" width=\"86\" height=\"18\" />. Ray <img src=\"//latex.artofproblemsolving.com/b/c/5/bc56862b1fdb71204894da278e42ef75de73a40b.png\" class=\"latex\" alt=\"$AD$\" width=\"28\" height=\"13\" /> intersects <img src=\"//latex.artofproblemsolving.com/5/4/d/54d7d48553f4d9e7ab418118607ea324cbfddfda.png\" class=\"latex\" alt=\"$\\omega$\" width=\"11\" height=\"8\" /> again at <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> (other than <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />). Point <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> (other than <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />) is chosen on <img src=\"//latex.artofproblemsolving.com/5/4/d/54d7d48553f4d9e7ab418118607ea324cbfddfda.png\" class=\"latex\" alt=\"$\\omega$\" width=\"11\" height=\"8\" /> such that <img src=\"//latex.artofproblemsolving.com/0/1/2/0126ef22a96d12557a37abe02b291133cd593868.png\" class=\"latex\" alt=\"$\\angle DFE = 90^\\circ$\" width=\"105\" height=\"13\" />. Line <img src=\"//latex.artofproblemsolving.com/5/2/b/52b3b006e6f9fe1681bd1f340795f789d888318e.png\" class=\"latex\" alt=\"$FE$\" width=\"28\" height=\"12\" /> intersects rays <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> at points <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" />, respectively. Prove that <img src=\"//latex.artofproblemsolving.com/1/e/5/1e5f14d3ce4d3be22741a7232bcf139c968ec30e.png\" class=\"latex\" alt=\"$\\angle XDE = \\angle EDY$\" style=\"vertical-align: -1px\" width=\"143\" height=\"14\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>All angle and side length names are defined as in the figures below. Figure 1 is the diagram of the problem while Figure 2 is the diagram of the Ratio Lemma. Do note that the point names defined in the Ratio Lemma are not necessarily the same defined points on Figure 1.\n</p><p>First, we claim the Ratio Lemma:\n</p><p><img src=\"//latex.artofproblemsolving.com/f/d/8/fd8b8f24e059cd7deb80e41cc0d7a564291f6a54.png\" class=\"latexcenter\" alt=\"\\[\\frac{\\sin{\\theta_2}}{\\sin{\\theta_2’}}=\\frac{PB}{PC}\\cdot\\frac{b}{c}.\\]\" width=\"129\" height=\"41\" />\n</p><p>We prove this as follows:\n</p><p>By the Law of Sines of <img src=\"//latex.artofproblemsolving.com/1/5/2/15228e3c3fa9e149613200891cfa8ef62dfd7fdb.png\" class=\"latex\" alt=\"$\\triangle{ABP},$\" style=\"vertical-align: -4px\" width=\"66\" height=\"18\" /> we get:\n<img src=\"//latex.artofproblemsolving.com/6/5/6/6562a868a03e93aed8ec800b8c690083249d37b9.png\" class=\"latexcenter\" alt=\"\\[\\frac{\\sin\\theta_2}{BP}=\\frac{\\sin\\theta_1}{c}=\\frac{\\sin B}{AP}.\\]\" width=\"184\" height=\"37\" />\nBy the Law of Sines of <img src=\"//latex.artofproblemsolving.com/8/1/9/819e14b1d048a25f3fb1c07636f2b10787f8f029.png\" class=\"latex\" alt=\"$\\triangle{ACP},$\" style=\"vertical-align: -4px\" width=\"65\" height=\"18\" /> we get:\n<img src=\"//latex.artofproblemsolving.com/5/1/4/51400526e75694a6110530ad44f700b1c4c3592b.png\" class=\"latexcenter\" alt=\"\\[\\frac{\\sin\\theta_2’}{PC}=\\frac{\\sin\\theta_1’}{b}=\\frac{\\sin C}{AP}.\\]\" width=\"184\" height=\"38\" />\nDividing each of the corresponding equations, we get:\n<img src=\"//latex.artofproblemsolving.com/e/d/b/edb5f148a7915ffb1624f22c85bf06dff753775c.png\" class=\"latexcenter\" alt=\"\\[\\frac{PC}{PB}\\cdot\\frac{\\sin\\theta_2}{\\sin\\theta_1}=\\frac{b}{c}\\cdot\\frac{\\sin\\theta_1}{\\sin\\theta_1’}=\\frac{\\sin B}{\\sin C}.\\]\" width=\"255\" height=\"41\" />\nNoting that <img src=\"//latex.artofproblemsolving.com/c/e/4/ce4d7527dde2a28dba35744007ba10ca130a43b9.png\" class=\"latex\" alt=\"$\\sin \\theta_1= \\sin(180^\\circ - \\theta_1’)=\\sin \\theta_1’,$\" style=\"vertical-align: -5px\" width=\"248\" height=\"20\" /> we have:\n<img src=\"//latex.artofproblemsolving.com/a/a/4/aa429c8f441e586c77e71ae269e4ef0527ca0ca8.png\" class=\"latexcenter\" alt=\"\\[\\frac{\\sin\\theta_2}{\\sin\\theta_1}=\\frac{PB}{PC}\\cdot\\frac{b}{c}.\\]\" width=\"129\" height=\"40\" />\n</p><p>We transition into our problem.\n</p><p>By Power of a Point on circle <img src=\"//latex.artofproblemsolving.com/0/d/c/0dcdcd9c8cdbd7c4679fd83fca62a617ba3727fc.png\" class=\"latex\" alt=\"$\\omega,$\" style=\"vertical-align: -3px\" width=\"16\" height=\"11\" /> we have:\n<img src=\"//latex.artofproblemsolving.com/9/f/a/9fa54c74e9b4d2724651f2ced184912d55506089.png\" class=\"latexcenter\" alt=\"\\[XK\\cdot XD=XF\\cdot XE\\]\" width=\"177\" height=\"12\" />\n<img src=\"//latex.artofproblemsolving.com/5/b/2/5b27a4cbc4f8fa552d63c4ac5f5f929c85b282a3.png\" class=\"latexcenter\" alt=\"\\[YL\\cdot YD=YF\\cdot YE.\\]\" width=\"168\" height=\"12\" />\nBy power of a point on circle <img src=\"//latex.artofproblemsolving.com/8/d/2/8d267e485fb4b435196bf6c6671e60a09ce180fa.png\" class=\"latex\" alt=\"$\\omega_1,$\" style=\"vertical-align: -4px\" width=\"26\" height=\"13\" /> we have:\n<img src=\"//latex.artofproblemsolving.com/8/7/d/87d0157572921b1e087a28f693d6c104016e584c.png\" class=\"latexcenter\" alt=\"\\[XB\\cdot XA=XF\\cdot XE\\]\" width=\"173\" height=\"13\" />\n<img src=\"//latex.artofproblemsolving.com/9/c/2/9c2485400a3888ff47be29486e86bb8fff9f5eb0.png\" class=\"latexcenter\" alt=\"\\[YC\\cdot YA=YF\\cdot YE.\\]\" width=\"168\" height=\"13\" />\nUsing the transitive property, we have:\n<img src=\"//latex.artofproblemsolving.com/d/e/3/de3ecccc4653aa561f9818d02a34bdc1acfdb11a.png\" class=\"latexcenter\" alt=\"\\[XK\\cdot XD=XB\\cdot XA\\]\" width=\"177\" height=\"13\" />\n<img src=\"//latex.artofproblemsolving.com/4/4/8/448492dd0a8d7b9be544e4c9e9990de2e2f8822d.png\" class=\"latexcenter\" alt=\"\\[YC\\cdot YA=YL\\cdot YD.\\]\" width=\"168\" height=\"13\" />\nThus, by reverse Power of a Point, we have that quadrilaterals <img src=\"//latex.artofproblemsolving.com/c/c/8/cc8a9e1bd1a900ae8c3c51e8c49f405922c0a809.png\" class=\"latex\" alt=\"$ADKB$\" style=\"vertical-align: -1px\" width=\"62\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/7/d/3/7d3702b98525cf559475d9ad041755a5b142fa54.png\" class=\"latex\" alt=\"$ACLD$\" style=\"vertical-align: -1px\" width=\"58\" height=\"14\" /> are cyclic.\n</p><p>Now, we move to angle chasing.\n</p>\n<ul><li><img src=\"//latex.artofproblemsolving.com/e/8/b/e8b0e5923b6681e84c0a0d8721ff9aff3eb861a3.png\" class=\"latex\" alt=\"$\\angle{ABD}=\\angle{AKD}=\\alpha$\" style=\"vertical-align: -1px\" width=\"178\" height=\"14\" /> (from cyclic <img src=\"//latex.artofproblemsolving.com/c/c/8/cc8a9e1bd1a900ae8c3c51e8c49f405922c0a809.png\" class=\"latex\" alt=\"$ADKB$\" style=\"vertical-align: -1px\" width=\"62\" height=\"14\" />)</li></ul>\n<ul><li><img src=\"//latex.artofproblemsolving.com/8/a/4/8a4b11456558eb33e38e257c08dfbc07893cd7fe.png\" class=\"latex\" alt=\"$\\angle{ABD}=\\alpha=\\angle{ACD}$\" style=\"vertical-align: -1px\" width=\"175\" height=\"14\" /> (from the isosceles triangle)</li></ul>\n<ul><li><img src=\"//latex.artofproblemsolving.com/4/3/8/4381325ac465e2ceb077fbca5a445bc952b88ba5.png\" class=\"latex\" alt=\"$\\angle{ACD}=\\alpha=\\angle{ALD}$\" style=\"vertical-align: -1px\" width=\"173\" height=\"14\" /> (from cyclic <img src=\"//latex.artofproblemsolving.com/7/d/3/7d3702b98525cf559475d9ad041755a5b142fa54.png\" class=\"latex\" alt=\"$ACLD$\" style=\"vertical-align: -1px\" width=\"58\" height=\"14\" />)</li></ul>\n<p>It is from here in which we focus on quadrilateral <img src=\"//latex.artofproblemsolving.com/0/e/8/0e85c0c86df7fe8aee1913eea3ed0760ba1e4791.png\" class=\"latex\" alt=\"$AKEL.$\" style=\"vertical-align: -1px\" width=\"64\" height=\"14\" /> \n</p><p>Let <img src=\"//latex.artofproblemsolving.com/9/9/4/994eda45165945b404fa27fe9fff977e76a61293.png\" class=\"latex\" alt=\"$\\angle KDE=\\beta$\" style=\"vertical-align: -4px\" width=\"97\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/1/7/9/179c8b67f027b2621d28555db0f716b9c2859112.png\" class=\"latex\" alt=\"$\\angle EDL=\\gamma.$\" style=\"vertical-align: -4px\" width=\"97\" height=\"18\" /> Now realize that all we want to show, as given by the problem statement, is <img src=\"//latex.artofproblemsolving.com/1/2/b/12b36858b7fd3d131c741f0fde688eba5e8e1bd0.png\" class=\"latex\" alt=\"$\\beta=\\gamma.$\" style=\"vertical-align: -4px\" width=\"53\" height=\"18\" />\n</p><p>Thus, <img src=\"//latex.artofproblemsolving.com/f/b/a/fbaf94683693f20fb656457595f451cd62d6c1d5.png\" class=\"latex\" alt=\"$\\angle{KED}=90^\\circ-\\beta, \\angle{DEL}=90^\\circ-\\gamma.$\" style=\"vertical-align: -4px\" width=\"296\" height=\"18\" />\n</p><p>We also have:\n\\begin{align*}\n\\angle LAD&amp;=180^\\circ-(\\angle ADL+\\alpha)\\\\\n&amp;=180^\\circ-((180^\\circ-\\gamma)+\\alpha))\\\\\n&amp;=\\gamma-\\alpha.\n\\end{align*}\nSimilarly, <img src=\"//latex.artofproblemsolving.com/0/2/1/0219bd693a50e380c7d0d844cdef853d91eda157.png\" class=\"latex\" alt=\"$\\angle{KAD}=\\beta-\\alpha.$\" style=\"vertical-align: -4px\" width=\"135\" height=\"18\" /> \n</p><p>Calling back to what we want to show - if we want to show that <img src=\"//latex.artofproblemsolving.com/6/0/5/60571a3cec5bbbc27033d7edcd62445ab260576f.png\" class=\"latex\" alt=\"$\\beta=\\gamma,$\" style=\"vertical-align: -4px\" width=\"53\" height=\"18\" /> it suffices to show that <img src=\"//latex.artofproblemsolving.com/7/5/2/752f42c00ee8921853beb0f50bb00ae89bce3700.png\" class=\"latex\" alt=\"$\\angle KAD=\\angle LAD$\" style=\"vertical-align: -1px\" width=\"139\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/b/a/e/bae482f9e5aae5bdd3b3ba6420c0c4c67eeb8366.png\" class=\"latex\" alt=\"$\\angle KED=\\angle LED.$\" style=\"vertical-align: -1px\" width=\"146\" height=\"14\" /> But this is equivalent to showing <img src=\"//latex.artofproblemsolving.com/3/5/1/351c18f89d71f294b688cf75914854e8ce6fc7b1.png\" class=\"latex\" alt=\"$\\triangle{AKE}\\sim\\triangle{ALE}.$\" style=\"vertical-align: -4px\" width=\"149\" height=\"18\" />\n</p><p>However, applying our Ratio Lemma to <img src=\"//latex.artofproblemsolving.com/0/5/e/05ea476bf420dbbad5ba13ae8049f42fb6b54d93.png\" class=\"latex\" alt=\"$\\triangle{AKE},$\" style=\"vertical-align: -4px\" width=\"68\" height=\"18\" /> we have:\n<img src=\"//latex.artofproblemsolving.com/b/8/4/b843b4ea3e46ec94e586a9955634861216022895.png\" class=\"latexcenter\" alt=\"\\[\\frac{\\sin\\alpha}{\\sin 90^\\circ}=\\frac{AD}{DE}\\cdot\\frac{KE}{KA}.\\]\" width=\"163\" height=\"37\" />\nApplying our Ratio Lemma to <img src=\"//latex.artofproblemsolving.com/8/a/8/8a88bdc1b96fa7b0a5733773ec62b388680e0765.png\" class=\"latex\" alt=\"$\\triangle{ALE},$\" style=\"vertical-align: -4px\" width=\"64\" height=\"18\" /> we have:\n<img src=\"//latex.artofproblemsolving.com/f/f/1/ff13089e7954431b369d1766176212e5fd5e4ac1.png\" class=\"latexcenter\" alt=\"\\[\\frac{\\sin\\alpha}{\\sin 90^\\circ}=\\frac{AD}{DE}\\cdot\\frac{LE}{LA}.\\]\" width=\"159\" height=\"37\" />\nFrom the transitive property, we have:\n<img src=\"//latex.artofproblemsolving.com/3/b/6/3b62496021af6df63be223cdd9af2452071eeb74.png\" class=\"latexcenter\" alt=\"\\[\\frac{KE}{KA}=\\frac{LE}{LA}.\\]\" width=\"91\" height=\"37\" />\nNow, realize that we already have a shared side <img src=\"//latex.artofproblemsolving.com/9/a/6/9a65c05bd85d2609bea5db2b109ed5f556463511.png\" class=\"latex\" alt=\"$AE$\" width=\"27\" height=\"13\" /> and equivalent angles <img src=\"//latex.artofproblemsolving.com/f/4/a/f4ae8916e74ef4cd88b868014b51bf963fa4e921.png\" class=\"latex\" alt=\"$\\angle{ALE}=90^\\circ+\\alpha=\\angle{AKE}.$\" style=\"vertical-align: -2px\" width=\"226\" height=\"16\" /> Thus, we establish a stronger bound between these two triangles - a congruence.\n</p><p>Thus, these two triangles are similar, and our proof is complete.\n</p><p><b>mathboy282</b>\n</p><p><a href=\"/wiki/index.php/File:2023USAJMOP6Diag.jpg\" class=\"image\"><img alt=\"2023USAJMOP6Diag.jpg\" src=\"https://wiki-images.artofproblemsolving.com//d/df/2023USAJMOP6Diag.jpg\" width=\"1073\" height=\"1197\" /></a>\n</p><p><br />\n(cred. to v_Enhance diagram)\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2023_USAJMO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2023_USAJMO\" title=\"2023 USAJMO\">2023 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2023_USAJMO_Problems\" title=\"2023 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2023\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_4\" title=\"2023 USAJMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_1\" title=\"2023 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_2\" title=\"2023 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_3\" title=\"2023 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_4\" title=\"2023 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2023_USAJMO_Problems/Problem_5\" title=\"2023 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907090057\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.072 seconds\nReal time usage: 0.386 seconds\nPreprocessor visited node count: 579/1000000\nPreprocessor generated node count: 1394/1000000\nPost‐expand include size: 1203/2097152 bytes\nTemplate argument size: 55/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 10839/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   27.515      1 -total\n 69.92%   19.238      1 Template:USAJMO_newbox\n 29.34%    8.074      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:25862-0!canonical and timestamp 20240907090057 and revision id 219974\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2023 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "2023USAJMOP6Diag.jpg",
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2023",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2023_USAJMO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2023_USAJMO_Problems/Problem_6",
+          "byteoffset": 630,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2023_USAJMO_Problems/Problem_6",
+          "byteoffset": 4066,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2023 USAJMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

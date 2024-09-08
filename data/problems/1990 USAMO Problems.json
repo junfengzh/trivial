@@ -1,0 +1,623 @@
+{
+  "1990 USAMO Problems/Problem 1": {
+    "parse": {
+      "title": "1990 USAMO Problems/Problem 1",
+      "pageid": 5595,
+      "revid": 219668,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A certain state issues license plates consisting of six digits (from 0 through 9). The state requires that any two plates differ in at least two places. (Thus the plates <img src=\"//latex.artofproblemsolving.com/4/7/d/47da34531875c9d1f4c9626396e436cf11ade0e3.png\" class=\"latex\" alt=\"$\\boxed{027592}$\" style=\"vertical-align: -5px\" width=\"66\" height=\"23\" /> and <img src=\"//latex.artofproblemsolving.com/f/0/a/f0a2bad2d1257c5a4df093b2fb62d586f5c437f7.png\" class=\"latex\" alt=\"$\\boxed{020592}$\" style=\"vertical-align: -5px\" width=\"66\" height=\"23\" /> cannot both be used.) Determine, with proof, the maximum number of distinct license plates that the state can use.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider license plates of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> digits, for some fixed <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, issued with the same criteria.\n</p><p>We first note that by the pigeonhole principle, we may have at most <img src=\"//latex.artofproblemsolving.com/c/1/d/c1d84fdd8a443af3b729ea401dc0f70d6ebf6115.png\" class=\"latex\" alt=\"$10^{n-1}$\" style=\"vertical-align: 0px\" width=\"42\" height=\"15\" /> distinct plates.  Indeed, if we have more, then there must be two plates which agree on the first <img src=\"//latex.artofproblemsolving.com/4/b/d/4bdca93962a2beaffc172ca394e04fe05bd74ffd.png\" class=\"latex\" alt=\"$n-1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" /> digits; these plates thus differ only on one digit, the last one.\n</p><p>We now show that it is possible to issue <img src=\"//latex.artofproblemsolving.com/c/1/d/c1d84fdd8a443af3b729ea401dc0f70d6ebf6115.png\" class=\"latex\" alt=\"$10^{n-1}$\" style=\"vertical-align: 0px\" width=\"42\" height=\"15\" /> distinct license plates which satisfy the problem's criteria.  Indeed, we issue plates with all <img src=\"//latex.artofproblemsolving.com/c/1/d/c1d84fdd8a443af3b729ea401dc0f70d6ebf6115.png\" class=\"latex\" alt=\"$10^{n-1}$\" style=\"vertical-align: 0px\" width=\"42\" height=\"15\" /> possible combinations for the first <img src=\"//latex.artofproblemsolving.com/4/b/d/4bdca93962a2beaffc172ca394e04fe05bd74ffd.png\" class=\"latex\" alt=\"$n-1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" /> digit, and for each plate, we let the last digit be the sum of the preceding digits taken mod 10.  This way, if two plates agree on the first <img src=\"//latex.artofproblemsolving.com/4/b/d/4bdca93962a2beaffc172ca394e04fe05bd74ffd.png\" class=\"latex\" alt=\"$n-1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" /> digits, they agree on the last digit and are thus the same plate, and if two plates differ in only one of the first <img src=\"//latex.artofproblemsolving.com/4/b/d/4bdca93962a2beaffc172ca394e04fe05bd74ffd.png\" class=\"latex\" alt=\"$n-1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" /> digits, they must differ as well in the last digit.\n</p><p>It then follows that <img src=\"//latex.artofproblemsolving.com/c/1/d/c1d84fdd8a443af3b729ea401dc0f70d6ebf6115.png\" class=\"latex\" alt=\"$10^{n-1}$\" style=\"vertical-align: 0px\" width=\"42\" height=\"15\" /> is the greatest number of license plates the state can issue.  For <img src=\"//latex.artofproblemsolving.com/2/f/2/2f2a6991d2108f237ee451bf37db91cacaf4134e.png\" class=\"latex\" alt=\"$n=6$\" width=\"43\" height=\"12\" />, as in the problem, this number is <img src=\"//latex.artofproblemsolving.com/e/7/d/e7d8b576968ccdbfeff38053b7c606905adb945e.png\" class=\"latex\" alt=\"$10^5$\" style=\"vertical-align: 0px\" width=\"24\" height=\"15\" />.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/b/b/f/bbf8d087ab4892310e96c1bee195e7c8d742cb32.png\" class=\"latex\" alt=\"$\\text{Constructive Induction for } n=6$\" style=\"vertical-align: -1px\" width=\"245\" height=\"14\" />\n</p>\n<pre>  <img src=\"//latex.artofproblemsolving.com/b/9/1/b915059011f69f9d4202fb1ee6af372a63021864.png\" class=\"latexcenter\" alt=\"\\[n=1 \\quad \\text{1 element} \\quad n=2 \\quad \\text{10 elements}\\]\" width=\"291\" height=\"12\" />\n  Suppose for <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, we have a set <img src=\"//latex.artofproblemsolving.com/5/1/1/511159fad8de2e746933066867090ab017ef6c23.png\" class=\"latex\" alt=\"$\\left\\{ \\left( a_1, \\ldots, a_n \\right) \\right\\}$\" style=\"vertical-align: -5px\" width=\"110\" height=\"20\" /> that satisfies the condition. We need to construct <img src=\"//latex.artofproblemsolving.com/3/0/8/3081f1e821e51dbb8fbaa81464e1df1f85eb2767.png\" class=\"latex\" alt=\"$S_{n+1}$\" style=\"vertical-align: -4px\" width=\"34\" height=\"16\" /> such that it does not contain <img src=\"//latex.artofproblemsolving.com/b/c/7/bc76d6a3224cf9f76f6d73179872d5dd0de05235.png\" class=\"latex\" alt=\"$\\left( a_1, \\ldots, a_n \\right)$\" style=\"vertical-align: -5px\" width=\"92\" height=\"20\" />, denoted as <img src=\"//latex.artofproblemsolving.com/a/2/9/a296c167227cb4f1862f80bc1043a1ce07ac6316.png\" class=\"latex\" alt=\"$\\left( b_1, \\ldots, b_n \\right)$\" style=\"vertical-align: -5px\" width=\"88\" height=\"20\" />.\n  Construct:\n  <img src=\"//latex.artofproblemsolving.com/8/d/3/8d3242bf8ff290dd7162c898e7a363d509c69d2b.png\" class=\"latexcenter\" alt=\"\\[S_{n+1} = \\left\\{ \\left( a_1, a_2, \\ldots, a_{n-k}, k \\right) \\mid k = 1, 2, \\ldots, 10, \\left( a_1, \\ldots, a_n \\right) \\in S_n \\right\\}\\]\" width=\"504\" height=\"18\" />\n  If <img src=\"//latex.artofproblemsolving.com/6/9/a/69aefc4c9b380d1d65a657df33f852e294e04665.png\" class=\"latex\" alt=\"$\\left( a_1 + k, \\ldots, a_{n+k}, k \\right)$\" style=\"vertical-align: -5px\" width=\"160\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/c/5/7/c57badc37ad8c5ec9a1a825a958642da76aef2ac.png\" class=\"latex\" alt=\"$\\left( b_1, \\ldots, b_{n+\\ell}, \\ell \\right)$\" style=\"vertical-align: -5px\" width=\"120\" height=\"20\" /> have exactly one difference:\n  1. Case 1: <img src=\"//latex.artofproblemsolving.com/0/9/6/096355deeb7471ff006bc14321c8a2dde8c99feb.png\" class=\"latex\" alt=\"$k \\neq \\ell$\" style=\"vertical-align: -4px\" width=\"44\" height=\"18\" />\n     <img src=\"//latex.artofproblemsolving.com/2/1/d/21ddc4b850c47a3955a60775d071cdd0c1b1864a.png\" class=\"latexcenter\" alt=\"\\[a_1 = b_1, \\ldots, a_{n-1} = b_{n-1}, a_n = b_n \\Rightarrow a_{n+k} \\neq b_{n+\\ell}, \\text{contradiction}\\]\" width=\"483\" height=\"17\" />\n  2. Case 2: <img src=\"//latex.artofproblemsolving.com/5/4/e/54e67f22aeb081bcd83530cdb32b006af0fa7209.png\" class=\"latex\" alt=\"$k = \\ell$\" style=\"vertical-align: -1px\" width=\"44\" height=\"14\" />\n     If <img src=\"//latex.artofproblemsolving.com/5/1/c/51c5878bc02df2ad56b3ebf0e0a44048222cd370.png\" class=\"latex\" alt=\"$a_i = b_i$\" style=\"vertical-align: -2px\" width=\"52\" height=\"15\" /> for <img src=\"//latex.artofproblemsolving.com/2/4/8/2487c47c8f61645b4b81fe8be841023a87494262.png\" class=\"latex\" alt=\"$i \\neq n$\" style=\"vertical-align: -4px\" width=\"41\" height=\"17\" />,\n     <img src=\"//latex.artofproblemsolving.com/a/5/7/a5717d8944e0ab8dcc81037373c1d3d33a0fdd8b.png\" class=\"latexcenter\" alt=\"\\[a_1 = b_1, \\ldots, a_n = b_n \\quad (\\text{removing } i)\\]\" width=\"264\" height=\"18\" />\n     Contradiction! If <img src=\"//latex.artofproblemsolving.com/5/e/3/5e36fe6881230eb806b69a9b5106f93d207e5186.png\" class=\"latex\" alt=\"$a_{n+k} \\neq b_{n+\\ell} \\Rightarrow a_n \\neq b_n$\" style=\"vertical-align: -5px\" width=\"183\" height=\"18\" />, contradiction with the same <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />.\n  At least two positions are different, i.e., there cannot be exactly one difference. Therefore, in the set <img src=\"//latex.artofproblemsolving.com/7/9/2/792712f68cf7c2ea96c56c174c6f960d584b64ac.png\" class=\"latex\" alt=\"$\\{0, 1, \\ldots, 9\\}^6$\" style=\"vertical-align: -5px\" width=\"103\" height=\"21\" /> (hypercube), there are no collinear points (parallel to the coordinate axes).\n  <img src=\"//latex.artofproblemsolving.com/9/b/5/9b5080ed4648a87d701d7eca61fbb928f7d23494.png\" class=\"latexcenter\" alt=\"\\[\\text{1 dimension: 1 element}\\]\" width=\"166\" height=\"11\" />\n  <img src=\"//latex.artofproblemsolving.com/2/e/6/2e6180b5d218714787282d80b33c66a0f588a754.png\" class=\"latexcenter\" alt=\"\\[\\text{2 dimensions: 10 elements}\\]\" width=\"189\" height=\"11\" />\n  <img src=\"//latex.artofproblemsolving.com/2/6/6/2661055a0d76680f9af961ec5d16d5863ac29a3d.png\" class=\"latexcenter\" alt=\"\\[\\text{3 dimensions: 100 elements}\\]\" width=\"197\" height=\"11\" />\n  <img src=\"//latex.artofproblemsolving.com/1/5/9/1592bcdf2452a76bf9f6cb99bb5b9248cab71268.png\" class=\"latexcenter\" alt=\"\\[10^6 \\text{ points can be covered by } 10^5 \\text{ lines} \\Rightarrow \\text{At most } 10^5 \\text{ elements.}\\]\" width=\"468\" height=\"19\" />\n</pre>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_1&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1990_USAMO\" title=\"1990 USAMO\">1990 USAMO</a></b> (<b><a href=\"/wiki/index.php/1990_USAMO_Problems\" title=\"1990 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1990\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First question</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_2\" title=\"1990 USAMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_2\" title=\"1990 USAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_3\" title=\"1990 USAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_4\" title=\"1990 USAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_5\" title=\"1990 USAMO Problems/Problem 5\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/viewtopic.php?p=63538#63538\">Discussion on AoPS/MathLinks</a></li></ul>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907210542\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.054 seconds\nReal time usage: 0.059 seconds\nPreprocessor visited node count: 384/1000000\nPreprocessor generated node count: 956/1000000\nPost‐expand include size: 1146/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 7134/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.366      1 -total\n 64.95%    2.186      1 Template:USAMO_box\n 29.38%    0.989      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:5595-0!canonical and timestamp 20240907210542 and revision id 219668\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1990",
+        "http://www.artofproblemsolving.com/Forum/viewtopic.php?p=63538#63538",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_USAMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_USAMO_Problems/Problem_1",
+          "byteoffset": 359,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_USAMO_Problems/Problem_1",
+          "byteoffset": 1550,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "1990_USAMO_Problems/Problem_1",
+          "byteoffset": 3411,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 USAMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1990 USAMO Problems/Problem 2": {
+    "parse": {
+      "title": "1990 USAMO Problems/Problem 2",
+      "pageid": 5577,
+      "revid": 79456,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A sequence of <a href=\"/wiki/index.php/Function\" title=\"Function\">functions</a> <img src=\"//latex.artofproblemsolving.com/5/9/9/59949c1d770092cabf7ba322885613f109a54d5c.png\" class=\"latex\" alt=\"$\\, \\{f_n(x) \\} \\,$\" style=\"vertical-align: -4px\" width=\"62\" height=\"18\" /> is defined <a href=\"/wiki/index.php/Recursion\" title=\"Recursion\">recursively</a> as follows:\n<img src=\"//latex.artofproblemsolving.com/f/9/9/f99ce5a5223238b6e4c778b5e0c38441abd3c49d.png\" class=\"latexcenter\" alt=\"\\begin{align*} f_1(x) &amp;= \\sqrt {x^2 + 48}, \\quad \\text{and} \\\\ f_{n + 1}(x) &amp;= \\sqrt {x^2 + 6f_n(x)} \\quad \\text{for } n \\geq 1. \\end{align*}\" width=\"282\" height=\"62\" />\n(Recall that <img src=\"//latex.artofproblemsolving.com/e/5/f/e5f47dc6b447e054a3d1806dfb40f12d3932582f.png\" class=\"latex\" alt=\"$\\sqrt {\\makebox[5mm]{}}$\" style=\"vertical-align: -7px\" width=\"39\" height=\"18\" /> is understood to represent the positive <a href=\"/wiki/index.php/Square_root\" title=\"Square root\">square root</a>.) For each positive integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, find all real solutions of the equation <img src=\"//latex.artofproblemsolving.com/d/7/3/d73811955191480958a85b6491e00828c91183ce.png\" class=\"latex\" alt=\"$\\, f_n(x) = 2x \\,$\" style=\"vertical-align: -4px\" width=\"88\" height=\"18\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We define <img src=\"//latex.artofproblemsolving.com/8/8/5/885d26274ba8af8233a80586cbb46903dc6afca3.png\" class=\"latex\" alt=\"$f_0(x) = 8$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" />.  Then the recursive relation holds for <img src=\"//latex.artofproblemsolving.com/0/2/3/02349576cee613512cdf301a365f06c0760acab5.png\" class=\"latex\" alt=\"$n=0$\" width=\"43\" height=\"12\" />, as well.\n</p><p>Since <img src=\"//latex.artofproblemsolving.com/7/2/3/7233b172cbd1a8d72b8a6383cb3d2eb1540e7807.png\" class=\"latex\" alt=\"$f_n (x) \\ge 0$\" style=\"vertical-align: -4px\" width=\"75\" height=\"18\" /> for all nonnegative integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, it suffices to consider nonnegative values of <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />.\n</p><p>We claim that the following set of relations hold true for all natural numbers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> and nonnegative reals <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />:\n<img src=\"//latex.artofproblemsolving.com/d/8/b/d8bd8edd9250073987b215495c73a219716b3005.png\" class=\"latexcenter\" alt=\"\\begin{align*} f_n(x) &amp;&lt; 2x \\text{ if }x&gt;4&#160;; \\\\ f_n(x) &amp;= 2x \\text{ if }x=4&#160;; \\\\ f_n(x) &amp;&gt; 2x \\text{ if }x&lt;4 . \\end{align*}\" width=\"154\" height=\"68\" />\nTo prove this claim, we induct on <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />.  The statement evidently holds for our base case, <img src=\"//latex.artofproblemsolving.com/0/2/3/02349576cee613512cdf301a365f06c0760acab5.png\" class=\"latex\" alt=\"$n=0$\" width=\"43\" height=\"12\" />.\n</p><p>Now, suppose the claim holds for <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />.  Then\n<img src=\"//latex.artofproblemsolving.com/5/5/0/5505749b4755541931635953af52237641baf3fb.png\" class=\"latexcenter\" alt=\"\\begin{align*} f_{n+1}(x) &amp;= \\sqrt{x^2 + 6f_n(x)} &lt; \\sqrt{x^2+12x} &lt; \\sqrt{4x^2} = 2x, \\text{ if } x&gt;4&#160;; \\\\ f_{n+1}(x) &amp;= \\sqrt{x^2 + 6f_n(x)} = \\sqrt{x^2 + 12x} = \\sqrt{4x^2} = 2x, \\text{ if } x=4&#160;; \\\\ f_{n+1}(x) &amp;= \\sqrt{x^2 + 6f_n(x)} &gt; \\sqrt{x^2+12x} &gt; \\sqrt{4x^2} = 2x, \\text{ if } x&lt;4 . \\end{align*}\" width=\"487\" height=\"111\" />\nThe claim therefore holds by induction.  It then follows that for all nonnegative integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, <img src=\"//latex.artofproblemsolving.com/2/e/7/2e7d65cfa316d639c9267398009812f3eb45fea9.png\" class=\"latex\" alt=\"$x=4$\" style=\"vertical-align: 0px\" width=\"43\" height=\"12\" /> is the unique solution to the equation <img src=\"//latex.artofproblemsolving.com/d/b/7/db7b2b3d437e4b76a46f1a0b0c7c4a58f52c84a2.png\" class=\"latex\" alt=\"$f_n(x) = 2x$\" style=\"vertical-align: -4px\" width=\"85\" height=\"18\" />.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p><br />\n<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_USAMO_Problems/Problem_2&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1990_USAMO\" title=\"1990 USAMO\">1990 USAMO</a></b> (<b><a href=\"/wiki/index.php/1990_USAMO_Problems\" title=\"1990 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1990\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_1\" title=\"1990 USAMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_3\" title=\"1990 USAMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_1\" title=\"1990 USAMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_3\" title=\"1990 USAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_4\" title=\"1990 USAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_5\" title=\"1990 USAMO Problems/Problem 5\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/viewtopic.php?p=356624#p356624\">Discussion on AoPS/MathLinks</a></li></ul>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907210543\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.047 seconds\nReal time usage: 0.049 seconds\nPreprocessor visited node count: 237/1000000\nPreprocessor generated node count: 638/1000000\nPost‐expand include size: 1525/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3994/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.951      1 -total\n 41.64%    1.645      1 Template:USAMO_box\n 32.34%    1.278      1 Template:Alternate_solutions\n 21.51%    0.850      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:5577-0!canonical and timestamp 20240907210543 and revision id 79456\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Function"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Recursion"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Square root"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1990",
+        "http://www.artofproblemsolving.com/Forum/viewtopic.php?p=356624#p356624",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_USAMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_USAMO_Problems/Problem_2",
+          "byteoffset": 504,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_USAMO_Problems/Problem_2",
+          "byteoffset": 1776,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 USAMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1990 USAMO Problems/Problem 3": {
+    "parse": {
+      "title": "1990 USAMO Problems/Problem 3",
+      "pageid": 6257,
+      "revid": 79457,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Suppose that necklace <img src=\"//latex.artofproblemsolving.com/f/9/d/f9df92a172becf847cbd8d51e73c49e8f599226d.png\" class=\"latex\" alt=\"$\\, A \\,$\" width=\"16\" height=\"13\" /> has 14 beads and necklace <img src=\"//latex.artofproblemsolving.com/3/8/3/383f0c0eda7bc1df06ff41a27a121fe8e92aacb1.png\" class=\"latex\" alt=\"$\\, B \\,$\" width=\"17\" height=\"12\" /> has \n19. Prove that for any odd integer <img src=\"//latex.artofproblemsolving.com/5/7/8/578cf6c5b8058f6f8e6369416da6dcaf73f8fc01.png\" class=\"latex\" alt=\"$n \\geq 1$\" style=\"vertical-align: -2px\" width=\"43\" height=\"14\" />, there is a way to number \neach of the 33 beads with an integer from the sequence\n<img src=\"//latex.artofproblemsolving.com/b/2/5/b252524973dd08438c603c8e2873ec8d7b239963.png\" class=\"latexcenter\" alt=\"\\[\\{ n, n+1, n+2, \\dots, n+32 \\}\\]\" width=\"219\" height=\"18\" />\nso that each integer is used once, and adjacent beads correspond to \nrelatively prime integers. (Here a \"necklace\" is viewed as a circle in \nwhich each bead is adjacent to two other beads.)\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><b>Lemma.</b>  For every positive odd integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, there exists a nonnegative integer <img src=\"//latex.artofproblemsolving.com/6/1/3/613876a5ac47de16064bda8fa90a3b0aec74c025.png\" class=\"latex\" alt=\"$k \\le 17$\" style=\"vertical-align: -2px\" width=\"52\" height=\"15\" /> such that <img src=\"//latex.artofproblemsolving.com/f/9/e/f9ece7f97f556d5af63003cb94ecbc04def23999.png\" class=\"latex\" alt=\"$n+k$\" style=\"vertical-align: -1px\" width=\"42\" height=\"14\" /> is relatively prime to <img src=\"//latex.artofproblemsolving.com/e/c/c/eccbeffe9ecf9fc302c27fb9c225fe3eaaf5042e.png\" class=\"latex\" alt=\"$n+k+15$\" style=\"vertical-align: -1px\" width=\"83\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/2/1/e/21e8672a493d95e72c7fc575e2fa012f3084e678.png\" class=\"latex\" alt=\"$n+k+1$\" style=\"vertical-align: -1px\" width=\"73\" height=\"14\" /> is relatively prime to <img src=\"//latex.artofproblemsolving.com/9/6/1/961b252fe0a58700ed1ff1f9af109d34670321f3.png\" class=\"latex\" alt=\"$n+k+14$\" style=\"vertical-align: -1px\" width=\"83\" height=\"14\" />.\n</p><p><i>Proof.</i>  Consider the positive integers <img src=\"//latex.artofproblemsolving.com/2/1/0/21071a32f7151239e1bdb8aa900a59fb004399b7.png\" class=\"latex\" alt=\"$n, n+1, n+2$\" style=\"vertical-align: -3px\" width=\"111\" height=\"15\" />.  Note that at most one of these is divisible by 3, and at most one is divisible by 5.  Therefore one of these, say <img src=\"//latex.artofproblemsolving.com/5/a/a/5aa16b166227643381b65714d6f31d82d432bfb4.png\" class=\"latex\" alt=\"$n+a$\" style=\"vertical-align: -1px\" width=\"42\" height=\"12\" />, is divisible by neither, and is therefore relatively prime to 15.  Furthermore, <img src=\"//latex.artofproblemsolving.com/d/b/3/db3d99dd3c9582606526a330a2538a8b756e8fe6.png\" class=\"latex\" alt=\"$n+a+1$\" style=\"vertical-align: -1px\" width=\"73\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/a/6/f/a6f396055796794e073d3ef844d1fc2718f3c854.png\" class=\"latex\" alt=\"$n+(a+15)+1$\" style=\"vertical-align: -5px\" width=\"130\" height=\"20\" /> have different residues mod 13, so one of them, say <img src=\"//latex.artofproblemsolving.com/f/9/7/f97cb613d461b5df6d29f08ec9f988aa56158a79.png\" class=\"latex\" alt=\"$n+b+1$\" style=\"vertical-align: -1px\" width=\"71\" height=\"14\" />, is relatively prime to 13.  Since <img src=\"//latex.artofproblemsolving.com/4/4/8/4480722e17fb4e92890b48602dff957979064a2c.png\" class=\"latex\" alt=\"$n+b \\equiv n+a \\pmod{15}$\" style=\"vertical-align: -4px\" width=\"187\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/0/2/2/022547042b70ad9237c25b416cf89a79f9eb051d.png\" class=\"latex\" alt=\"$n+b$\" style=\"vertical-align: -1px\" width=\"41\" height=\"14\" /> is relatively prime to 15.  But\n<img src=\"//latex.artofproblemsolving.com/0/9/9/09942b036b67b3e32b21cd8d3eea85ff0db8d249.png\" class=\"latexcenter\" alt=\"\\[\\gcd(n+b,n+b+15) = \\gcd\\bigl[ n+b,(n+b+15) - (n+b) \\bigr] = \\gcd(n+b,15) = 1,\\]\" width=\"556\" height=\"22\" />\nso <img src=\"//latex.artofproblemsolving.com/0/2/2/022547042b70ad9237c25b416cf89a79f9eb051d.png\" class=\"latex\" alt=\"$n+b$\" style=\"vertical-align: -1px\" width=\"41\" height=\"14\" /> is relatively prime to <img src=\"//latex.artofproblemsolving.com/d/a/9/da9bab2e1da16329bcd7a29a895c73031298daf0.png\" class=\"latex\" alt=\"$n+b+15$\" style=\"vertical-align: -1px\" width=\"80\" height=\"14\" />.  Also,\n<img src=\"//latex.artofproblemsolving.com/5/a/5/5a505041f6d268db4a3c3329c5c5dc0264f37992.png\" class=\"latexcenter\" alt=\"\\[\\gcd(n+b+1, n+b+14) = \\gcd \\bigl[ n+b+1, (n+b+14)-(n+b+1) \\bigr] = \\gcd( n+b+1, 13) ,\\]\" width=\"616\" height=\"22\" />\nso <img src=\"//latex.artofproblemsolving.com/f/9/7/f97cb613d461b5df6d29f08ec9f988aa56158a79.png\" class=\"latex\" alt=\"$n+b+1$\" style=\"vertical-align: -1px\" width=\"71\" height=\"14\" /> is relatively prime to <img src=\"//latex.artofproblemsolving.com/e/1/f/e1f181ccc1087fc2f860ad36fb3acc08f0af9c3e.png\" class=\"latex\" alt=\"$n+b+14$\" style=\"vertical-align: -1px\" width=\"81\" height=\"14\" />.  Finally, <img src=\"//latex.artofproblemsolving.com/e/7/0/e70a2f04eb778adbe0cd576c31be978bc90c82c0.png\" class=\"latex\" alt=\"$b \\le a+15 \\le 17$\" style=\"vertical-align: -2px\" width=\"124\" height=\"15\" />.  It follows that setting <img src=\"//latex.artofproblemsolving.com/6/a/1/6a1cdc4cffad1993912e2ce4da56ed6b8dcac68e.png\" class=\"latex\" alt=\"$k=b$\" width=\"42\" height=\"12\" /> satisfies the lemma.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p>Let <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> be an integer as described in the lemma.  We place the integers <img src=\"//latex.artofproblemsolving.com/e/5/0/e50447e305a6491b80a089a557468a1f6296b36f.png\" class=\"latex\" alt=\"$n, \\dotsc, n+k, n+k+15, \\dotsc, n+32$\" style=\"vertical-align: -3px\" width=\"277\" height=\"16\" /> on the necklace with 19 beads, and the integers <img src=\"//latex.artofproblemsolving.com/d/0/7/d076b80ffe1fd0c41ee2649bb4c0e455eae583cf.png\" class=\"latex\" alt=\"$n+k+1, \\dotsc, n+k+14$\" style=\"vertical-align: -3px\" width=\"198\" height=\"16\" /> on the necklace with 14 beads, in those orders.  Since <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is odd, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is relatively prime to <img src=\"//latex.artofproblemsolving.com/a/0/2/a025d38551bb30f76fdb72120dfa2c62bcfb3b2a.png\" class=\"latex\" alt=\"$n+32 = n+2^5$\" style=\"vertical-align: -2px\" width=\"127\" height=\"18\" />.  By definition, <img src=\"//latex.artofproblemsolving.com/f/9/e/f9ece7f97f556d5af63003cb94ecbc04def23999.png\" class=\"latex\" alt=\"$n+k$\" style=\"vertical-align: -1px\" width=\"42\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/e/c/c/eccbeffe9ecf9fc302c27fb9c225fe3eaaf5042e.png\" class=\"latex\" alt=\"$n+k+15$\" style=\"vertical-align: -1px\" width=\"83\" height=\"14\" /> are relatively prime, as are <img src=\"//latex.artofproblemsolving.com/2/1/e/21e8672a493d95e72c7fc575e2fa012f3084e678.png\" class=\"latex\" alt=\"$n+k+1$\" style=\"vertical-align: -1px\" width=\"73\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/9/6/1/961b252fe0a58700ed1ff1f9af109d34670321f3.png\" class=\"latex\" alt=\"$n+k+14$\" style=\"vertical-align: -1px\" width=\"83\" height=\"14\" />; finally, <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/6/4/b/64be5731bafe97ab8fb5d0f9c52c1c5362f963d8.png\" class=\"latex\" alt=\"$a+1$\" style=\"vertical-align: -1px\" width=\"40\" height=\"13\" /> are relatively prime for all integers <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />.  It follows that each bead in this arrangement is relatively prime to its neighbors.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p><br />\n<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_USAMO_Problems/Problem_3&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1990_USAMO\" title=\"1990 USAMO\">1990 USAMO</a></b> (<b><a href=\"/wiki/index.php/1990_USAMO_Problems\" title=\"1990 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1990\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_2\" title=\"1990 USAMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_4\" title=\"1990 USAMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_1\" title=\"1990 USAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_2\" title=\"1990 USAMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_4\" title=\"1990 USAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_5\" title=\"1990 USAMO Problems/Problem 5\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/viewtopic.php?p=356629#356629\">Discussion on AoPS/MathLinks</a></li></ul>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907210543\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.057 seconds\nReal time usage: 0.059 seconds\nPreprocessor visited node count: 408/1000000\nPreprocessor generated node count: 1018/1000000\nPost‐expand include size: 1525/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6959/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.992      1 -total\n 38.30%    1.912      1 Template:Alternate_solutions\n 36.40%    1.817      1 Template:USAMO_box\n 20.93%    1.045      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6257-0!canonical and timestamp 20240907210543 and revision id 79457\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1990",
+        "http://www.artofproblemsolving.com/Forum/viewtopic.php?p=356629#356629",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_USAMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_USAMO_Problems/Problem_3",
+          "byteoffset": 488,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_USAMO_Problems/Problem_3",
+          "byteoffset": 2474,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 USAMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1990 USAMO Problems/Problem 4": {
+    "parse": {
+      "title": "1990 USAMO Problems/Problem 4",
+      "pageid": 6258,
+      "revid": 79458,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find, with proof, the number of positive integers whose base-<img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> representation consists of distinct digits with the property that, except for the leftmost digit, every digit differs by <img src=\"//latex.artofproblemsolving.com/7/c/f/7cfbd35086ffefb83637d42166582b43c8a1ff4a.png\" class=\"latex\" alt=\"$\\pm 1$\" style=\"vertical-align: 0px\" width=\"22\" height=\"12\" /> from some digit further to the left.  (Your answer should be an explicit function of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> in simplest form.)\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let a <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />-good sequence be a sequence of distinct integers <img src=\"//latex.artofproblemsolving.com/6/7/3/67358a50b0c28fd3937621f0c424dac7e3a79c3f.png\" class=\"latex\" alt=\"$\\{ a_i \\}_{i=1}^k$\" style=\"vertical-align: -4px\" width=\"53\" height=\"20\" /> such that for all integers <img src=\"//latex.artofproblemsolving.com/0/c/2/0c290a7bab2d8b78d2e6e704d8a3baa01e3938d7.png\" class=\"latex\" alt=\"$2\\le i \\le k$\" style=\"vertical-align: -2px\" width=\"73\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" /> differs from some preceding term by <img src=\"//latex.artofproblemsolving.com/7/c/f/7cfbd35086ffefb83637d42166582b43c8a1ff4a.png\" class=\"latex\" alt=\"$\\pm 1$\" style=\"vertical-align: 0px\" width=\"22\" height=\"12\" />.\n</p><p><b>Lemma.</b>  Let <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> be an integer.  Then there are <img src=\"//latex.artofproblemsolving.com/8/d/4/8d4f26614a4233b3c4b29e6e33a1729227be3cc9.png\" class=\"latex\" alt=\"$2^{k-1}$\" width=\"32\" height=\"15\" /> <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />-good sequences starting on <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, and furthermore, the terms of each of these sequences constitute a permutation of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> consecutive integers.\n</p><p><i>Proof.</i> We induct on <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />.  For <img src=\"//latex.artofproblemsolving.com/5/e/d/5ed8470bc717a49aafe4556c7e2c2e11ddc7b687.png\" class=\"latex\" alt=\"$k=1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"13\" />, the lemma is trivially true.  Now, suppose the lemma holds for <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />.  If <img src=\"//latex.artofproblemsolving.com/f/d/b/fdb17272b5ca5af51ddfb3ce387e434be1d528b2.png\" class=\"latex\" alt=\"$\\{ a_i \\}_{i=1}^{k+1}$\" style=\"vertical-align: -4px\" width=\"56\" height=\"20\" /> is a <img src=\"//latex.artofproblemsolving.com/9/c/b/9cba1efe0450bd8158d00008780f2ad6b1dba387.png\" class=\"latex\" alt=\"$(k+1)$\" style=\"vertical-align: -4px\" width=\"54\" height=\"18\" />-good sequence, then <img src=\"//latex.artofproblemsolving.com/6/7/3/67358a50b0c28fd3937621f0c424dac7e3a79c3f.png\" class=\"latex\" alt=\"$\\{ a_i \\}_{i=1}^k$\" style=\"vertical-align: -4px\" width=\"53\" height=\"20\" /> is a <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />-good sequence which starts on <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, so it is a permutation of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> consecutive integers, say <img src=\"//latex.artofproblemsolving.com/b/9/c/b9c263ece11b584d8f24a8e8fa7d936efbc1224a.png\" class=\"latex\" alt=\"$m, \\dotsc, M$\" style=\"vertical-align: -3px\" width=\"75\" height=\"16\" />.  Then the only possibilities for <img src=\"//latex.artofproblemsolving.com/5/1/b/51bb8f97be092c275f4636c0782c3b93b3c69df8.png\" class=\"latex\" alt=\"$a_{k+1}$\" style=\"vertical-align: -4px\" width=\"32\" height=\"12\" /> are <img src=\"//latex.artofproblemsolving.com/9/6/e/96eec32de93b032b6d531a03aa5b346156b62a75.png\" class=\"latex\" alt=\"$m-1$\" style=\"vertical-align: 0px\" width=\"46\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/a/f/e/afe144e5517842d0ce8986c6fada40267e99bd6d.png\" class=\"latex\" alt=\"$M+1$\" style=\"vertical-align: -2px\" width=\"53\" height=\"16\" />; either way, <img src=\"//latex.artofproblemsolving.com/f/d/b/fdb17272b5ca5af51ddfb3ce387e434be1d528b2.png\" class=\"latex\" alt=\"$\\{ a_i \\}_{i=1}^{k+1}$\" style=\"vertical-align: -4px\" width=\"56\" height=\"20\" /> constitutes a permutation of <img src=\"//latex.artofproblemsolving.com/f/0/5/f05f085f774fc8ab50676b778b86a1f1d1114fc8.png\" class=\"latex\" alt=\"$k+1$\" style=\"vertical-align: -1px\" width=\"40\" height=\"14\" /> consecutive integers.  Since there are <img src=\"//latex.artofproblemsolving.com/7/6/7/767b7dc4a8df95a9f8a0faa3bb155e7b49943407.png\" class=\"latex\" alt=\"$2^k$\" width=\"16\" height=\"15\" /> possible sequences <img src=\"//latex.artofproblemsolving.com/1/7/d/17df2c50299f5339f80ca729e29e62d1739f30a4.png\" class=\"latex\" alt=\"$\\{a_i\\}_{i=1}^k$\" style=\"vertical-align: -4px\" width=\"53\" height=\"20\" />, and 2 choices of <img src=\"//latex.artofproblemsolving.com/5/1/b/51bb8f97be092c275f4636c0782c3b93b3c69df8.png\" class=\"latex\" alt=\"$a_{k+1}$\" style=\"vertical-align: -4px\" width=\"32\" height=\"12\" /> for each of these sequences, it also follows that there are <img src=\"//latex.artofproblemsolving.com/3/5/2/352399030dd8cd151c1eba1887009abd649a4708.png\" class=\"latex\" alt=\"$2^k \\cdot 2 = 2^{k+1}$\" width=\"95\" height=\"15\" /> <img src=\"//latex.artofproblemsolving.com/9/c/b/9cba1efe0450bd8158d00008780f2ad6b1dba387.png\" class=\"latex\" alt=\"$(k+1)$\" style=\"vertical-align: -4px\" width=\"54\" height=\"18\" />-good sequences which start on <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />.  Thus the lemma holds by induction.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p>We now consider the number of desired positive integers with <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> digits.  Evidently, <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> must be less than or equal to <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />.  We also note that the digits of such an integer must constitute a <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />-good sequence.  Since the minimum of this sequence can be any of the digits <img src=\"//latex.artofproblemsolving.com/4/9/5/4954c3fc31826b6c7260413abec5748d6077d973.png\" class=\"latex\" alt=\"$0, \\dotsc, n-k$\" style=\"vertical-align: -3px\" width=\"92\" height=\"16\" />, unless the minimum is 0 and is the first digit (in which case the only possible sequence is an increasing arithmetic sequence), and there are <img src=\"//latex.artofproblemsolving.com/8/d/4/8d4f26614a4233b3c4b29e6e33a1729227be3cc9.png\" class=\"latex\" alt=\"$2^{k-1}$\" width=\"32\" height=\"15\" /> <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />-good sequences up to translation, it follows that there are <img src=\"//latex.artofproblemsolving.com/2/f/b/2fb77cf2af36a0b0e4a4e136eb19918b37384c78.png\" class=\"latex\" alt=\"$(n-k+1) 2^{k-1}-1$\" style=\"vertical-align: -4px\" width=\"153\" height=\"20\" /> desired positive integers with <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> digits.  Thus the total number of desired positive integers is\n<img src=\"//latex.artofproblemsolving.com/5/8/e/58e3824c2e198f86bace94bb98348d9ee85e5590.png\" class=\"latexcenter\" alt=\"\\begin{align*} \\sum_{k=1}^n \\bigl[ (n-k+1) 2^{k-1}-1 \\bigr] &amp;= -n + \\sum_{k=1}^n \\sum_{j=k}^n 2^{k-1} = -n + \\sum_{j=1}^n \\sum_{k=1}^j 2^{k-1} \\\\ &amp;= -n + \\sum_{j=1}^n (2^k-1) = - 2n -1 + \\sum_{j=0}^n 2^k, \\end{align*}\" width=\"518\" height=\"113\" />\nwhich is equal to <img src=\"//latex.artofproblemsolving.com/7/a/7/7a79cab03e9eec9ef9f86d180f32817fe7c48435.png\" class=\"latex\" alt=\"$2^{n+1} - 2(n+1)$\" style=\"vertical-align: -4px\" width=\"121\" height=\"19\" />, our answer.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p><br />\n<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_USAMO_Problems/Problem_4&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1990_USAMO\" title=\"1990 USAMO\">1990 USAMO</a></b> (<b><a href=\"/wiki/index.php/1990_USAMO_Problems\" title=\"1990 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1990\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_3\" title=\"1990 USAMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_5\" title=\"1990 USAMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_1\" title=\"1990 USAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_2\" title=\"1990 USAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_3\" title=\"1990 USAMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_5\" title=\"1990 USAMO Problems/Problem 5\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/viewtopic.php?p=258568#258568\">Discussion on AoPS/MathLinks</a></li>\n<li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/viewtopic.php?p=364433#364433\">More Discussion</a></li></ul>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907210544\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.054 seconds\nReal time usage: 0.056 seconds\nPreprocessor visited node count: 471/1000000\nPreprocessor generated node count: 1158/1000000\nPost‐expand include size: 1525/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 7880/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.679      1 -total\n 39.39%    1.843      1 Template:USAMO_box\n 35.50%    1.661      1 Template:Alternate_solutions\n 20.65%    0.966      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6258-0!canonical and timestamp 20240907210544 and revision id 79458\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1990",
+        "http://www.artofproblemsolving.com/Forum/viewtopic.php?p=258568#258568",
+        "http://www.artofproblemsolving.com/Forum/viewtopic.php?p=364433#364433",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_USAMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_USAMO_Problems/Problem_4",
+          "byteoffset": 351,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_USAMO_Problems/Problem_4",
+          "byteoffset": 2904,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 USAMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1990 USAMO Problems/Problem 5": {
+    "parse": {
+      "title": "1990 USAMO Problems/Problem 5",
+      "pageid": 6388,
+      "revid": 98271,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_3_.28Radical_Lemma.29\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 3 (Radical Lemma)</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_Also\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>An acute-angled triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> is given in the plane. The circle with diameter <img src=\"//latex.artofproblemsolving.com/f/d/4/fd4774acfb9dfe8e417f29066551922b1c1e4d31.png\" class=\"latex\" alt=\"$\\, AB \\,$\" width=\"30\" height=\"13\" /> intersects altitude <img src=\"//latex.artofproblemsolving.com/a/7/b/a7b3f39b4f11f8d1954076c6f781bb1ef8fba734.png\" class=\"latex\" alt=\"$\\, CC&#39; \\,$\" style=\"vertical-align: -1px\" width=\"41\" height=\"16\" /> and its extension at points <img src=\"//latex.artofproblemsolving.com/0/b/d/0bdbf4202a6d434c0399cac092ec88a87ce61862.png\" class=\"latex\" alt=\"$\\, M \\,$\" width=\"22\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/5/9/1/5918b268ad77763fc1db0bc1032e5975875220d0.png\" class=\"latex\" alt=\"$\\, N \\,$\" width=\"19\" height=\"12\" />, and the circle with diameter <img src=\"//latex.artofproblemsolving.com/1/9/3/193642f76e2a2eb22b96303cdabc7bb0cd030c62.png\" class=\"latex\" alt=\"$\\, AC \\,$\" width=\"30\" height=\"13\" /> intersects altitude <img src=\"//latex.artofproblemsolving.com/5/f/d/5fdfd7da17355e750b960ba838acef92ec176e42.png\" class=\"latex\" alt=\"$\\, BB&#39; \\,$\" width=\"36\" height=\"14\" /> and its extensions at <img src=\"//latex.artofproblemsolving.com/2/c/a/2cab31c9f3998a76a46b6b840b98ab1135de2873.png\" class=\"latex\" alt=\"$\\, P \\,$\" width=\"17\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/2/e/2/2e27e2d672dd10ad08898547b79d7afe029fc7aa.png\" class=\"latex\" alt=\"$\\, Q \\,$\" style=\"vertical-align: -3px\" width=\"16\" height=\"16\" />. Prove that the points <img src=\"//latex.artofproblemsolving.com/e/1/7/e17566ef6f2cdfd5333d9617453b1144aff9c3a6.png\" class=\"latex\" alt=\"$\\, M, N, P, Q \\,$\" style=\"vertical-align: -3px\" width=\"87\" height=\"16\" /> lie on a common circle.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> be the intersection of the two circles (other than <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />). <img src=\"//latex.artofproblemsolving.com/d/5/9/d59f5d75cc27d504ede022aab803742e799709f4.png\" class=\"latex\" alt=\"$AA&#39;$\" width=\"30\" height=\"14\" /> is perpendicular to both <img src=\"//latex.artofproblemsolving.com/7/e/8/7e87a7892593a0dd61130b76e1f75a86f2f26eae.png\" class=\"latex\" alt=\"$BA&#39;$\" width=\"31\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/f/b/9/fb99816d33d66bb0d40923ac9a7f64415c8ef192.png\" class=\"latex\" alt=\"$CA&#39;$\" width=\"31\" height=\"14\" /> implying <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> are collinear. Since <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> is the foot of the altitude from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />: <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png\" class=\"latex\" alt=\"$H$\" width=\"16\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> are concurrent, where <img src=\"//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png\" class=\"latex\" alt=\"$H$\" width=\"16\" height=\"12\" /> is the orthocentre.\n</p><p>Now, <img src=\"//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png\" class=\"latex\" alt=\"$H$\" width=\"16\" height=\"12\" /> is also the intersection of <img src=\"//latex.artofproblemsolving.com/c/2/a/c2ae0e30605dc87c83aecb3f588afa7129bee6aa.png\" class=\"latex\" alt=\"$BB&#39;$\" width=\"33\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/4/4/b/44b7058f8a28ca225136b284b337138a54e39e8c.png\" class=\"latex\" alt=\"$CC&#39;$\" width=\"32\" height=\"14\" /> which means that <img src=\"//latex.artofproblemsolving.com/d/5/9/d59f5d75cc27d504ede022aab803742e799709f4.png\" class=\"latex\" alt=\"$AA&#39;$\" width=\"30\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/b/b/c/bbcfabd65745f2b759dea1840f9a0753b2f992e8.png\" class=\"latex\" alt=\"$MN$\" width=\"36\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" /> are concurrent. Since <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> are cyclic, <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> are cyclic by the radical axis theorem.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Define <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> as the foot of the altitude from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> to <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" />. Then, <img src=\"//latex.artofproblemsolving.com/0/c/4/0c4fa8b95666148576fe7f6598728eadafef355c.png\" class=\"latex\" alt=\"$AA&#39; \\cap BB&#39; \\cap CC&#39;$\" style=\"vertical-align: 0px\" width=\"138\" height=\"14\" /> is the orthocenter. We will denote this point as <img src=\"//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png\" class=\"latex\" alt=\"$H$\" width=\"16\" height=\"12\" />.\nSince <img src=\"//latex.artofproblemsolving.com/4/b/e/4be645ff147d183f1b4a7367fa68c689c776a766.png\" class=\"latex\" alt=\"$\\angle AA&#39;C$\" width=\"59\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/1/7/b/17b63f6f5dab43c3027f388a97233e8d0f4ca4aa.png\" class=\"latex\" alt=\"$\\angle AA&#39;B$\" width=\"59\" height=\"14\" /> are both <img src=\"//latex.artofproblemsolving.com/6/a/7/6a7dfa8a2a90d521b2b03f5b82a1fb9f85dce88c.png\" class=\"latex\" alt=\"$90^{\\circ}$\" width=\"24\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> lies on the circles with diameters <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />.\n</p><p>Now we use the Power of a Point theorem with respect to point <img src=\"//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png\" class=\"latex\" alt=\"$H$\" width=\"16\" height=\"12\" />. From the circle with diameter <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> we get <img src=\"//latex.artofproblemsolving.com/9/3/2/932e704270010607cb32deb7433bb09371d86ed2.png\" class=\"latex\" alt=\"$AH \\cdot A&#39;H = MH \\cdot NH$\" width=\"185\" height=\"14\" />. From the circle with diameter <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> we get <img src=\"//latex.artofproblemsolving.com/6/8/b/68b71379b92681998f0d7539a4a1c5a17f7c70c6.png\" class=\"latex\" alt=\"$AH \\cdot A&#39;H = PH \\cdot QH$\" style=\"vertical-align: -3px\" width=\"177\" height=\"17\" />. Thus, we conclude that <img src=\"//latex.artofproblemsolving.com/0/3/f/03fa18bc7ea2486df17b461649050156e98b28af.png\" class=\"latex\" alt=\"$PH \\cdot QH = MH \\cdot NH$\" style=\"vertical-align: -3px\" width=\"181\" height=\"16\" />, which implies that <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> all lie on a circle.\n</p>\n<h2><span id=\"Solution_3_(Radical_Lemma)\"></span><span class=\"mw-headline\" id=\"Solution_3_.28Radical_Lemma.29\">Solution 3 (Radical Lemma)</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_5&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 3 (Radical Lemma)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/c/d/d/cddbccf89c00e019e9878f87f8d6325697e3f2fa.png\" class=\"latex\" alt=\"$\\omega_1$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> be the circumcircle with diameter <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/7/c/e/7cef5fa7ec053472a6e471aaacb0c5927ce36b36.png\" class=\"latex\" alt=\"$\\omega_2$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> be the circumcircle with diameter <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" />.  We claim that the second intersection of <img src=\"//latex.artofproblemsolving.com/c/d/d/cddbccf89c00e019e9878f87f8d6325697e3f2fa.png\" class=\"latex\" alt=\"$\\omega_1$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/7/c/e/7cef5fa7ec053472a6e471aaacb0c5927ce36b36.png\" class=\"latex\" alt=\"$\\omega_2$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> other than <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> is <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" />, where <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> is the feet of the perpendicular from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> to segment <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" />.  Note that <img src=\"//latex.artofproblemsolving.com/5/3/3/5336652b43e285a85dd160bad68b409c2f462757.png\" class=\"latexcenter\" alt=\"\\[\\angle AA&#39;B=90^{\\circ}=\\angle AB&#39;B\\]\" width=\"193\" height=\"14\" /> so <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> lies on <img src=\"//latex.artofproblemsolving.com/2/1/8/2181b109c12b979b3f5c904bb5b8f49c00298eff.png\" class=\"latex\" alt=\"$\\omega_1.$\" style=\"vertical-align: -2px\" width=\"22\" height=\"10\" />  Similarly, <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> lies on <img src=\"//latex.artofproblemsolving.com/7/c/e/7cef5fa7ec053472a6e471aaacb0c5927ce36b36.png\" class=\"latex\" alt=\"$\\omega_2$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" />.  Hence, <img src=\"//latex.artofproblemsolving.com/d/5/9/d59f5d75cc27d504ede022aab803742e799709f4.png\" class=\"latex\" alt=\"$AA&#39;$\" width=\"30\" height=\"14\" /> is the radical axis of <img src=\"//latex.artofproblemsolving.com/c/d/d/cddbccf89c00e019e9878f87f8d6325697e3f2fa.png\" class=\"latex\" alt=\"$\\omega_1$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/7/c/e/7cef5fa7ec053472a6e471aaacb0c5927ce36b36.png\" class=\"latex\" alt=\"$\\omega_2$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" />.  By the Radical Lemma, it suffices to prove that the intersection of lines <img src=\"//latex.artofproblemsolving.com/b/b/c/bbcfabd65745f2b759dea1840f9a0753b2f992e8.png\" class=\"latex\" alt=\"$MN$\" width=\"36\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" /> lie on <img src=\"//latex.artofproblemsolving.com/d/5/9/d59f5d75cc27d504ede022aab803742e799709f4.png\" class=\"latex\" alt=\"$AA&#39;$\" width=\"30\" height=\"14\" />.  But, <img src=\"//latex.artofproblemsolving.com/b/b/c/bbcfabd65745f2b759dea1840f9a0753b2f992e8.png\" class=\"latex\" alt=\"$MN$\" width=\"36\" height=\"12\" /> is the same line as <img src=\"//latex.artofproblemsolving.com/4/4/b/44b7058f8a28ca225136b284b337138a54e39e8c.png\" class=\"latex\" alt=\"$CC&#39;$\" width=\"32\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" /> is the same line as <img src=\"//latex.artofproblemsolving.com/c/2/a/c2ae0e30605dc87c83aecb3f588afa7129bee6aa.png\" class=\"latex\" alt=\"$BB&#39;$\" width=\"33\" height=\"14\" />.  Since <img src=\"//latex.artofproblemsolving.com/c/e/f/cef09c22c1781c1252657411e8021749ac37a694.png\" class=\"latex\" alt=\"$AA&#39;, BB&#39;$\" style=\"vertical-align: -3px\" width=\"73\" height=\"17\" />, and <img src=\"//latex.artofproblemsolving.com/4/4/b/44b7058f8a28ca225136b284b337138a54e39e8c.png\" class=\"latex\" alt=\"$CC&#39;$\" width=\"32\" height=\"14\" /> intersect at the orthocenter <img src=\"//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png\" class=\"latex\" alt=\"$H$\" width=\"16\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png\" class=\"latex\" alt=\"$H$\" width=\"16\" height=\"12\" /> lies on the radical axis <img src=\"//latex.artofproblemsolving.com/d/5/9/d59f5d75cc27d504ede022aab803742e799709f4.png\" class=\"latex\" alt=\"$AA&#39;$\" width=\"30\" height=\"14\" /> and we are done. <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p><i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1990_USAMO_Problems/Problem_5&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1990_USAMO_Problems/Problem_5&amp;action=edit&amp;section=5\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1990_USAMO\" title=\"1990 USAMO\">1990 USAMO</a></b> (<b><a href=\"/wiki/index.php/1990_USAMO_Problems\" title=\"1990 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1990\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_4\" title=\"1990 USAMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_1\" title=\"1990 USAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_2\" title=\"1990 USAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_3\" title=\"1990 USAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1990_USAMO_Problems/Problem_4\" title=\"1990 USAMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/viewtopic.php?p=356630#356630\">Discussion on AoPS/MathLinks</a></li></ul>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907134751\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.061 seconds\nReal time usage: 0.063 seconds\nPreprocessor visited node count: 908/1000000\nPreprocessor generated node count: 2126/1000000\nPost‐expand include size: 1495/2097152 bytes\nTemplate argument size: 51/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 15142/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.810      1 -total\n 37.55%    1.806      1 Template:USAMO_box\n 35.55%    1.710      1 Template:Alternate_solutions\n 22.56%    1.085      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6388-0!canonical and timestamp 20240907134751 and revision id 98271\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1990 USAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1990",
+        "http://www.artofproblemsolving.com/Forum/viewtopic.php?p=356630#356630",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1990_USAMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1990_USAMO_Problems/Problem_5",
+          "byteoffset": 484,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1990_USAMO_Problems/Problem_5",
+          "byteoffset": 1335,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 3 (Radical Lemma)",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "1990_USAMO_Problems/Problem_5",
+          "byteoffset": 2170,
+          "anchor": "Solution_3_.28Radical_Lemma.29"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "5",
+          "index": "5",
+          "fromtitle": "1990_USAMO_Problems/Problem_5",
+          "byteoffset": 3336,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1990 USAMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

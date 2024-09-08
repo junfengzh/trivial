@@ -1,0 +1,1214 @@
+{
+  "2000 PMWC Problems/Problem I1": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I1",
+      "pageid": 12616,
+      "revid": 113225,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" /> is a number that has <img src=\"//latex.artofproblemsolving.com/8/4/5/8455f3b5cb3b4880b8c9d782a5c1f0334db819eb.png\" class=\"latex\" alt=\"$8$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> different factors (including the number <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> and itself). What is the smallest possible value of <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The formula for the number of factors is found by adding one to each exponent in the prime factorization, then finding the product of these exponents. In this case, we want the smallest possible number with 8 total factors. \n</p><p>There are three distinct \"configurations\" of prime factorizations that will yield 8 factors. They are <img src=\"//latex.artofproblemsolving.com/1/8/a/18a6aa4124716643b30aa6de8e0ab6db0b5a2cea.png\" class=\"latex\" alt=\"$p^7$\" style=\"vertical-align: -3px\" width=\"16\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/b/d/a/bda24759ead666bf0f6880c53014d98a5a37aac2.png\" class=\"latex\" alt=\"$p^3 * q^1$\" style=\"vertical-align: -3px\" width=\"49\" height=\"18\" />, and <img src=\"//latex.artofproblemsolving.com/c/2/2/c2273bc1a275324da2b3b1c3dfbfc2b74792b162.png\" class=\"latex\" alt=\"$p^1 * q^1 * r^1$\" style=\"vertical-align: -3px\" width=\"82\" height=\"18\" />, since <img src=\"//latex.artofproblemsolving.com/8/2/2/82215de6bc6836856e3d352826debd1850a2d6d2.png\" class=\"latex\" alt=\"$(7+1) = 8$\" style=\"vertical-align: -4px\" width=\"87\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/6/9/5/695c4965496efe64786d1e877193b9a6e69c7fb5.png\" class=\"latex\" alt=\"$(3+1)(1+1)=8$\" style=\"vertical-align: -4px\" width=\"142\" height=\"18\" />, and <img src=\"//latex.artofproblemsolving.com/3/2/2/322233e7fa8afad9d2e7fdd6c986ee9cacca5fe8.png\" class=\"latex\" alt=\"$(1+1)(1+1)(1+1) = 8$\" style=\"vertical-align: -4px\" width=\"196\" height=\"18\" />, respectively. (In the previously listed prime configurations, the letters <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />, <img src=\"//latex.artofproblemsolving.com/0/6/1/0615acc3725de21025457e7d6f7694dab8e2f758.png\" class=\"latex\" alt=\"$q$\" style=\"vertical-align: -3px\" width=\"8\" height=\"11\" />, and <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" />, stand for distinct primes.)\n</p><p>For each of these cases, the smallest possible number that satisfies this configuration is computed. 2 is the smallest prime, so 2 is always used as the base for the prime with the largest exponent. The next largest exponent should have a base of 3, then 5, then 7, and so on. In the first case, we have <img src=\"//latex.artofproblemsolving.com/e/8/9/e899fe4bb9ec81033800976c5bc9d601c80f4d77.png\" class=\"latex\" alt=\"$2^7 = 128$\" style=\"vertical-align: 0px\" width=\"67\" height=\"15\" />, in the second case, we have <img src=\"//latex.artofproblemsolving.com/0/2/7/02749457866277e73be0fbaad179e6a6d2e49d5c.png\" class=\"latex\" alt=\"$2^3 * 3^1 = 24$\" style=\"vertical-align: 0px\" width=\"92\" height=\"15\" />, and in the third case, we have <img src=\"//latex.artofproblemsolving.com/9/c/2/9c2a71ccd8e4e19531ce0a5722c7d1e93628772d.png\" class=\"latex\" alt=\"$2^1 * 3^1 * 5^1 = 30$\" width=\"125\" height=\"15\" />. \n</p><p>Since the second case yields the lowest number, <img src=\"//latex.artofproblemsolving.com/e/2/9/e290f2cba0ba0e11c0b91630da15a408da2fcf1c.png\" class=\"latex\" alt=\"$24$\" style=\"vertical-align: 0px\" width=\"18\" height=\"12\" /> is the answer. You can check by listing out the factors: 1, 2, 3, 4, 6, 8, 12, and 24.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I1&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Back to test: <a rel=\"nofollow\" class=\"external free\" href=\"https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems\">https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908053226\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.021 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 163/1000000\nPreprocessor generated node count: 356/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2950/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12616-0!canonical and timestamp 20240908053226 and revision id 113225\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I1",
+          "byteoffset": 187,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I1",
+          "byteoffset": 1459,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I10": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I10",
+      "pageid": 12625,
+      "revid": 61671,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I10&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In the sum <img src=\"//latex.artofproblemsolving.com/0/0/f/00f0ad7aa4e79da4e702a3c022aabcc046430f01.png\" class=\"latex\" alt=\"$\\frac{a}{b}+\\frac{c}{d}$\" style=\"vertical-align: -12px\" width=\"47\" height=\"33\" />, each letter represents a distinct digit from <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> to <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />. The sum is as close as possible to <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> without being greater than or equal to <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />. What is the sum?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I10&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I10&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211139\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.015 seconds\nReal time usage: 0.016 seconds\nPreprocessor visited node count: 55/1000000\nPreprocessor generated node count: 116/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 849/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12625-0!canonical and timestamp 20240907211139 and revision id 61671\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I10",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I10",
+          "byteoffset": 263,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I10",
+          "byteoffset": 277,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I10",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I11": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I11",
+      "pageid": 12626,
+      "revid": 61672,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I11&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>You have a pack of cards, among which are <img src=\"//latex.artofproblemsolving.com/f/8/3/f8366cd6196dd8a9da6d38a3e9eafb109e99d53e.png\" class=\"latex\" alt=\"$20$\" width=\"17\" height=\"12\" /> red, <img src=\"//latex.artofproblemsolving.com/f/8/3/f8366cd6196dd8a9da6d38a3e9eafb109e99d53e.png\" class=\"latex\" alt=\"$20$\" width=\"17\" height=\"12\" /> yellow, <img src=\"//latex.artofproblemsolving.com/f/8/3/f8366cd6196dd8a9da6d38a3e9eafb109e99d53e.png\" class=\"latex\" alt=\"$20$\" width=\"17\" height=\"12\" /> green and <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> blue ones. How many cards would you need to draw out to ensure that you have <img src=\"//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png\" class=\"latex\" alt=\"$12$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> cards of the same colour?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I11&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I11&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211139\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.016 seconds\nReal time usage: 0.017 seconds\nPreprocessor visited node count: 55/1000000\nPreprocessor generated node count: 116/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 774/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12626-0!canonical and timestamp 20240907211139 and revision id 61672\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I11",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I11",
+          "byteoffset": 261,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I11",
+          "byteoffset": 275,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I11",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I12": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I12",
+      "pageid": 12627,
+      "revid": 113229,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I12&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>During the rest hour, one of five students (<img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />) dropped a glass of water. The following are the responses of the children when the teacher questioned them: \n</p>\n<ul><li><img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />: It was <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> who dropped it.</li>\n<li><img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />: Neither <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> nor I did it.</li>\n<li><img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />: Both <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are lying.</li>\n<li><img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" />: Only one of <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> or <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> is telling the truth.</li>\n<li><img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />: <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> is not speaking the truth.</li></ul>\n<p>The class teacher knows that three of them NEVER lie while the other two ALWAYS lie. Who dropped the glass?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I12&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Suppose that <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> is telling the truth. Then <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> and one of <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are lying. But only two students are lying, so there is a contradiction. Hence <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> is lying.\nThen there are two possible scenarios: both <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are lying, or both <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are telling the truth.\nSuppose that both <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are lying. Then there are three students (<img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" />) who are lying, a contradiction. So both <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are telling the truth.\nUsing their responses, we get that <img src=\"//latex.artofproblemsolving.com/3/f/5/3f58d2efaaa17d28cec9dd927d78708a63b43e24.png\" class=\"latex\" alt=\"$\\boxed{C}$\" style=\"vertical-align: -5px\" width=\"26\" height=\"24\" /> dropped the glass.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I12&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Back to test: <a rel=\"nofollow\" class=\"external free\" href=\"https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems\">https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908053227\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.023 seconds\nReal time usage: 0.023 seconds\nPreprocessor visited node count: 334/1000000\nPreprocessor generated node count: 736/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5464/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12627-0!canonical and timestamp 20240908053227 and revision id 113229\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I12",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I12",
+          "byteoffset": 699,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I12",
+          "byteoffset": 1422,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I12",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I13": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I13",
+      "pageid": 12628,
+      "revid": 61674,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I13&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In the figure, the squares <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/b/9/9/b9999387007f4a97839d25ea4f6b00b9ad129b24.png\" class=\"latex\" alt=\"$DCEG$\" width=\"58\" height=\"12\" /> both have the same area of <img src=\"//latex.artofproblemsolving.com/1/d/f/1df6903ee27a3aea462144b44e7eeec0611ff856.png\" class=\"latex\" alt=\"$64cm^2$\" style=\"vertical-align: 0px\" width=\"48\" height=\"15\" />. <img src=\"//latex.artofproblemsolving.com/6/c/a/6ca8e1ed0a0d34754cdd985dfc1d6683a066da7a.png\" class=\"latex\" alt=\"$EFG$\" width=\"42\" height=\"12\" /> is a semicircle. The point <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> is the mid-point of the arc <img src=\"//latex.artofproblemsolving.com/6/c/a/6ca8e1ed0a0d34754cdd985dfc1d6683a066da7a.png\" class=\"latex\" alt=\"$EFG$\" width=\"42\" height=\"12\" />. Find the area of the shaded part. (Assume <img src=\"//latex.artofproblemsolving.com/a/e/3/ae363309e6f3d81c30df23c4ab3308c4c103bf99.png\" class=\"latex\" alt=\"$\\pi=3.14$\" style=\"vertical-align: -1px\" width=\"69\" height=\"14\" />)\n</p><p><img src=\"//latex.artofproblemsolving.com/4/8/f/48fbdb9ab948aa92a7aa6061eefbedb0e0a04382.png\" class=\"latexcenter\" alt=\"[asy] void unitsquare(pair p){ draw(p--(p.x+1,p.y)--(p.x+1,p.y+1)--(p.x,p.y+1)--cycle); return; } fill(buildcycle(arc((2,0.5),(2,0),(2,1)),(2,1)--(0,1)--(2.5,0.5)),gray); unitsquare((0,0)); draw((1,0)--(2,0)--(2,1)--(1,1)); draw(arc((2,0.5),(2,0),(2,1))); label(&quot;$A$&quot;,(0,1),NW); label(&quot;$B$&quot;,(0,0),SW); label(&quot;$C$&quot;,(1,0),S); label(&quot;$D$&quot;,(1,1),N); label(&quot;$E$&quot;,(2,0),S); label(&quot;$F$&quot;,(2.5,0.5),E); label(&quot;$G$&quot;,(2,1),N); //Credit to chezbgone2 for the diagram[/asy]\" width=\"252\" height=\"128\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I13&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I13&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211140\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.016 seconds\nReal time usage: 0.017 seconds\nPreprocessor visited node count: 82/1000000\nPreprocessor generated node count: 176/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1784/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12628-0!canonical and timestamp 20240907211139 and revision id 61674\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I13",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I13",
+          "byteoffset": 760,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I13",
+          "byteoffset": 774,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I13",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I14": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I14",
+      "pageid": 12629,
+      "revid": 61675,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I14&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A copy machine has a following enlargement/reduction buttons:\n</p><p><img src=\"//latex.artofproblemsolving.com/0/1/7/0176bdca670f44d403b2d4628b3ea8686eb1abc9.png\" class=\"latexcenter\" alt=\"\\[\\begin{tabular}{|l|l|l|l|l|l|l|} \\hline 250\\% &amp; 200\\% &amp; 128\\% &amp; 125\\% &amp; 100\\% &amp; 50\\% &amp; 10\\% \\\\ \\hline \\end{tabular}\\]\" width=\"395\" height=\"21\" />\n</p><p>The buttons <img src=\"//latex.artofproblemsolving.com/c/e/d/ced2308bb20a7239049c0d7b0cb07a7482699335.png\" class=\"latex\" alt=\"$\\boxed{50\\%}$\" style=\"vertical-align: -6px\" width=\"45\" height=\"26\" />, <img src=\"//latex.artofproblemsolving.com/6/2/b/62b548185886eaf8501857eff26383ed82780008.png\" class=\"latex\" alt=\"$\\boxed{100\\%}$\" style=\"vertical-align: -6px\" width=\"54\" height=\"26\" />, and <img src=\"//latex.artofproblemsolving.com/e/4/4/e44324e0469ec52827a4b0025138575ef7538d68.png\" class=\"latex\" alt=\"$\\boxed{250\\%}$\" style=\"vertical-align: -6px\" width=\"54\" height=\"26\" /> are out of order and cannot be used any more. Sam wants to make a copy that is the same size as the original document by using the remaining buttons. When he presses a button, he has to pay <img src=\"//latex.artofproblemsolving.com/9/9/a/99a3fbfb198561bee14769b5a9fbb39e139ffcfa.png\" class=\"latex\" alt=\"$\\textdollar 1$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" />. What is the minimum amount he has to pay?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I14&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I14&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907054024\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.010 seconds\nReal time usage: 0.010 seconds\nPreprocessor visited node count: 55/1000000\nPreprocessor generated node count: 116/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1021/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12629-0!canonical and timestamp 20240907054024 and revision id 61675\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I14",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I14",
+          "byteoffset": 565,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I14",
+          "byteoffset": 579,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I14",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I15": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I15",
+      "pageid": 12630,
+      "revid": 82644,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I15&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The sum of several positive integers is <img src=\"//latex.artofproblemsolving.com/f/8/3/f8366cd6196dd8a9da6d38a3e9eafb109e99d53e.png\" class=\"latex\" alt=\"$20$\" width=\"17\" height=\"12\" />. Find the largest product that can be formed by these integers.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I15&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Try <img src=\"//latex.artofproblemsolving.com/1/1/c/11c22eb0174181ecd2c30a1d2d27b88d1639ddac.png\" class=\"latexcenter\" alt=\"\\[5: 2*3*4*5*6 = 720\\]\" width=\"188\" height=\"13\" />\nTry <img src=\"//latex.artofproblemsolving.com/4/5/3/453667a07be111ae92326dca9b4f7a0f081da41d.png\" class=\"latexcenter\" alt=\"\\[4: 3*4*6*7 = 504\\]\" width=\"163\" height=\"13\" />\nTry 3, then realize it's going to be smaller.\n6 numbers is too many, since <img src=\"//latex.artofproblemsolving.com/7/c/e/7cea75cd91286e850ef4923b19782b463dc49be2.png\" class=\"latexcenter\" alt=\"\\[1+2+3+4+5+6=21\\]\" width=\"205\" height=\"14\" />\nThus the answer is 720\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I15&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211140\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.016 seconds\nReal time usage: 0.017 seconds\nPreprocessor visited node count: 46/1000000\nPreprocessor generated node count: 96/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 645/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12630-0!canonical and timestamp 20240907211140 and revision id 82644\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I15",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I15",
+          "byteoffset": 133,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I15",
+          "byteoffset": 349,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I15",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I2": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I2",
+      "pageid": 12617,
+      "revid": 113226,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>As far as we know, the greatest prime number is <img src=\"//latex.artofproblemsolving.com/0/7/b/07b1b78fd4faaf449b3bc16cb8354cf9a775edf4.png\" class=\"latex\" alt=\"$2^{6972593}-1$\" style=\"vertical-align: 0px\" width=\"86\" height=\"15\" />. What is the remainder when <img src=\"//latex.artofproblemsolving.com/0/7/b/07b1b78fd4faaf449b3bc16cb8354cf9a775edf4.png\" class=\"latex\" alt=\"$2^{6972593}-1$\" style=\"vertical-align: 0px\" width=\"86\" height=\"15\" /> is divided by <img src=\"//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png\" class=\"latex\" alt=\"$5$\" width=\"8\" height=\"12\" />?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Since the question only asks for the remainder when this monstrous number is divided by 5, we can use some tricks to reduce this number. \n</p><p>Specifically, since <img src=\"//latex.artofproblemsolving.com/9/5/2/9521a8469412ce4dd8556ba0edd5af8a8b1ac754.png\" class=\"latex\" alt=\"$2^4 = 16$\" style=\"vertical-align: 0px\" width=\"58\" height=\"15\" />, and 16 has a remainder of 1 when divided by 5, all of the <img src=\"//latex.artofproblemsolving.com/4/2/0/420813c47b9ba0edd71bba84716bd485967ac81a.png\" class=\"latex\" alt=\"$2^4$\" width=\"15\" height=\"15\" />s within <img src=\"//latex.artofproblemsolving.com/e/a/9/ea9d2c53fa47a24b16713d3714b92867436f5670.png\" class=\"latex\" alt=\"$2^{6972593}$\" width=\"54\" height=\"15\" /> can be divided out. Another way of explaining that step is that if you split <img src=\"//latex.artofproblemsolving.com/e/a/9/ea9d2c53fa47a24b16713d3714b92867436f5670.png\" class=\"latex\" alt=\"$2^{6972593}$\" width=\"54\" height=\"15\" /> into as many factors of 16 as you could and had whatever was left on the side, you could remove all of the <img src=\"//latex.artofproblemsolving.com/9/a/5/9a5b4928c8fe50ce3c2428da3bee3505e891b788.png\" class=\"latex\" alt=\"$16$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" />s because multiplying a number by <img src=\"//latex.artofproblemsolving.com/9/a/5/9a5b4928c8fe50ce3c2428da3bee3505e891b788.png\" class=\"latex\" alt=\"$16$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> is multiplying it by <img src=\"//latex.artofproblemsolving.com/0/1/7/017e9a26e8ac464990c993b85da381b7f1130032.png\" class=\"latex\" alt=\"$(3 * 5) + 1$\" style=\"vertical-align: -4px\" width=\"79\" height=\"18\" />, and so will not change its remainder when divided by <img src=\"//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png\" class=\"latex\" alt=\"$5$\" width=\"8\" height=\"12\" />. Applying this logic to <img src=\"//latex.artofproblemsolving.com/e/a/9/ea9d2c53fa47a24b16713d3714b92867436f5670.png\" class=\"latex\" alt=\"$2^{6972593}$\" width=\"54\" height=\"15\" />, we find that it simplifies to <img src=\"//latex.artofproblemsolving.com/4/e/6/4e68ad31d12ba3d14b80a9341ee44e6238555124.png\" class=\"latex\" alt=\"$2^1$\" width=\"14\" height=\"15\" />, leaving <img src=\"//latex.artofproblemsolving.com/8/6/d/86dcf63afaf4e85ea595dd359e6f09944524703c.png\" class=\"latex\" alt=\"$2^1 - 1$\" style=\"vertical-align: 0px\" width=\"47\" height=\"15\" />, which is clearly just <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />.\n</p><p>Thus the remainder is <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I2&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Back to test: <a rel=\"nofollow\" class=\"external free\" href=\"https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems\">https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908053228\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.019 seconds\nReal time usage: 0.020 seconds\nPreprocessor visited node count: 154/1000000\nPreprocessor generated node count: 336/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2615/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12617-0!canonical and timestamp 20240908053228 and revision id 113226\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I2",
+          "byteoffset": 173,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I2",
+          "byteoffset": 1071,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I3": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I3",
+      "pageid": 12618,
+      "revid": 61664,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>How many whole numbers less than <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee927e1332358c96c62c277441c907c4f51057f.png\" class=\"latex\" alt=\"$1000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> contain at least one <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> but no <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240908053229\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.015 seconds\nReal time usage: 0.015 seconds\nPreprocessor visited node count: 37/1000000\nPreprocessor generated node count: 76/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 457/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12618-0!canonical and timestamp 20240908053229 and revision id 61664\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I3",
+          "byteoffset": 123,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I3",
+          "byteoffset": 137,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I4": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I4",
+      "pageid": 12619,
+      "revid": 113228,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given that <img src=\"//latex.artofproblemsolving.com/8/f/7/8f78d2ccb6372497d15587449f35a41a52e1b504.png\" class=\"latex\" alt=\"$A^4=75600\\times B$\" width=\"127\" height=\"15\" />. If <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are positive integers, find the smallest value of <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>If <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are positive integers, then <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> must be the smallest positive integer that, when multiplied by <img src=\"//latex.artofproblemsolving.com/c/e/8/ce8bc8cc7670c4071a7c48a227daa1f3cb7f7ef1.png\" class=\"latex\" alt=\"$75600$\" width=\"44\" height=\"12\" />, yields a perfect fourth power. The prime factorization of <img src=\"//latex.artofproblemsolving.com/c/e/8/ce8bc8cc7670c4071a7c48a227daa1f3cb7f7ef1.png\" class=\"latex\" alt=\"$75600$\" width=\"44\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/a/4/d/a4d54e67a3b3cf3ea53eacce7cd2dda44e13e665.png\" class=\"latex\" alt=\"$2^4 * 3^3 * 5^2 * 7^1$\" style=\"vertical-align: -1px\" width=\"120\" height=\"17\" />, so the smallest value of <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/e/4/8/e48fac5190e062b774d63ddf4c094e9c41fbc1ac.png\" class=\"latex\" alt=\"$2^0 * 3^1 * 5^2 * 7^3 = 25,725$\" style=\"vertical-align: -3px\" width=\"194\" height=\"18\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Back to test: <a rel=\"nofollow\" class=\"external free\" href=\"https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems\">https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908053229\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.019 seconds\nReal time usage: 0.019 seconds\nPreprocessor visited node count: 118/1000000\nPreprocessor generated node count: 256/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1848/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12619-0!canonical and timestamp 20240908053229 and revision id 113228\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I4",
+          "byteoffset": 159,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I4",
+          "byteoffset": 540,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I5": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I5",
+      "pageid": 12620,
+      "revid": 126361,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In a language college, <img src=\"//latex.artofproblemsolving.com/f/1/6/f167871f064b4304bed8d5ea0ed5b631ebed2b44.png\" class=\"latex\" alt=\"$72\\%$\" style=\"vertical-align: -1px\" width=\"32\" height=\"14\" /> students can speak Chinese, <img src=\"//latex.artofproblemsolving.com/f/f/1/ff169c8eb4e8e515216bcd0f6f207a78af94c8b4.png\" class=\"latex\" alt=\"$65\\%$\" style=\"vertical-align: -1px\" width=\"32\" height=\"14\" /> students can speak English, and <img src=\"//latex.artofproblemsolving.com/2/b/5/2b56bd637cb2c936d539be1b5000a64a898af389.png\" class=\"latex\" alt=\"$10\\%$\" style=\"vertical-align: -1px\" width=\"32\" height=\"14\" /> students can speak neither Chinese nor English. Find the percentage of students who can speak both Chinese and English.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Since 10% of the students speak neither language, 90% must speak at least one language. Since 72% speak Chinese and 65% can speak English, we know, by <a href=\"/wiki/index.php/Principle_of_Inclusion-Exclusion\" title=\"Principle of Inclusion-Exclusion\">Principle of Inclusion-Exclusion</a>, that 72+65-90=47% of the students speak both languages.\n</p><p>-Potato2017\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211136\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.018 seconds\nReal time usage: 0.018 seconds\nPreprocessor visited node count: 37/1000000\nPreprocessor generated node count: 76/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 522/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12620-0!canonical and timestamp 20240907211136 and revision id 126361\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Principle of Inclusion-Exclusion"
+        }
+      ],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I5",
+          "byteoffset": 270,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I5",
+          "byteoffset": 542,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I6": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I6",
+      "pageid": 12621,
+      "revid": 61667,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> is the product of two <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" />-digit numbers formed by the digits <img src=\"//latex.artofproblemsolving.com/5/f/4/5f4dc5bd16e2328729476dcb148d08a7cab4d5fe.png\" class=\"latex\" alt=\"$1,2,3,4,5,6,7,8$\" style=\"vertical-align: -3px\" width=\"128\" height=\"16\" /> without any repetition. Find the largest value of <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> in the form of <img src=\"//latex.artofproblemsolving.com/c/c/e/cced79459b3ad2b85d807146e69766ec0a9a7364.png\" class=\"latex\" alt=\"$\\Box\\Box\\Box\\Box\\times\\Box\\Box\\Box\\Box$\" style=\"vertical-align: -1px\" width=\"129\" height=\"11\" />. (You are not required to multiply the numbers).\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211136\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.015 seconds\nReal time usage: 0.015 seconds\nPreprocessor visited node count: 55/1000000\nPreprocessor generated node count: 116/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 906/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12621-0!canonical and timestamp 20240907211136 and revision id 61667\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I6",
+          "byteoffset": 310,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I6",
+          "byteoffset": 324,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I6",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I7": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I7",
+      "pageid": 12622,
+      "revid": 61668,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I7&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> are two numbers that have prime factors <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png\" class=\"latex\" alt=\"$5$\" width=\"8\" height=\"12\" /> only. <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> has <img src=\"//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png\" class=\"latex\" alt=\"$12$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> factors (<img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> and itself are included), <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> has <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> factors (<img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> and itself are included), and their HCF (Highest Common Factor) is <img src=\"//latex.artofproblemsolving.com/a/7/e/a7e4c2930d79c57bee209557767b878cd704ea46.png\" class=\"latex\" alt=\"$75$\" style=\"vertical-align: -1px\" width=\"20\" height=\"14\" />. What is the LCM (Least Common Multiple of <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I7&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I7&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211137\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.018 seconds\nReal time usage: 0.018 seconds\nPreprocessor visited node count: 127/1000000\nPreprocessor generated node count: 276/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2166/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12622-0!canonical and timestamp 20240907211137 and revision id 61668\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I7",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I7",
+          "byteoffset": 432,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I7",
+          "byteoffset": 446,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I7",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I8": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I8",
+      "pageid": 12623,
+      "revid": 61669,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I8&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A circle and a triangle are placed on intersections of the grid. The circle and the triangle are not allowed to lie on the same vertical and horizontal line. How many total possible ways are there of placing the circle and the triangle? (the following is an example).\n</p><p><img src=\"//latex.artofproblemsolving.com/6/0/a/60ab895b88a2a762e82ee7d8a90c842f44f8e0f4.png\" class=\"latexcenter\" alt=\"[asy] for(int i = 0; i &lt; 4; ++i){ if(i &lt; 2){ draw((i,0)--(i,3)); }else{ draw((i,0)--(i,2)); } } for(int i = 0; i &lt; 4; ++i){ if(i &lt; 3) draw((0,i)--(3,i)); else draw((0,i)--(1,i)); } filldraw(Circle((0,3),0.3),white); filldraw((2-0.3*cos(pi/2),1+0.3*sin(pi/2))--(2-0.3*cos(7pi/6),1+0.3*sin(7pi/6))--(2-0.3*cos(11pi/6),1+0.3*sin(11pi/6))--cycle,white); //Credit to chezbgone2 for the diagram[/asy]\" width=\"252\" height=\"252\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I8&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I8&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907053903\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.008 seconds\nReal time usage: 0.009 seconds\nPreprocessor visited node count: 19/1000000\nPreprocessor generated node count: 36/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 554/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12623-0!canonical and timestamp 20240907053903 and revision id 61669\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I8",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I8",
+          "byteoffset": 676,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I8",
+          "byteoffset": 690,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I8",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem I9": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem I9",
+      "pageid": 12624,
+      "revid": 61670,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I9&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Using only odd digits, all possible three-digit numbers are formed. Determine the sum of all such numbers.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I9&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_I9&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907155122\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.008 seconds\nReal time usage: 0.020 seconds\nPreprocessor visited node count: 10/1000000\nPreprocessor generated node count: 16/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12624-0!canonical and timestamp 20240907155122 and revision id 61670\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_I9",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_I9",
+          "byteoffset": 120,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_I9",
+          "byteoffset": 134,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem I9",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem T1": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem T1",
+      "pageid": 12633,
+      "revid": 219640,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A box contains <img src=\"//latex.artofproblemsolving.com/0/9/2/0929ed034079c23455c385741744274c1f69b61b.png\" class=\"latex\" alt=\"$4000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> to <img src=\"//latex.artofproblemsolving.com/0/2/8/02898859d6d4b1ad43353498a3a96846ea8cc02c.png\" class=\"latex\" alt=\"$6000$\" width=\"35\" height=\"12\" /> candies. When the candies are evenly distributed to <img src=\"//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png\" class=\"latex\" alt=\"$5$\" width=\"8\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/8/4/5/8455f3b5cb3b4880b8c9d782a5c1f0334db819eb.png\" class=\"latex\" alt=\"$8$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />, or <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" /> children, there is always one candy left. If the candies are packaged into small bags each having the same number of candies, what is the largest number of candies below <img src=\"//latex.artofproblemsolving.com/0/9/2/0929ed034079c23455c385741744274c1f69b61b.png\" class=\"latex\" alt=\"$4000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> in each bag so that no candies are left?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>If there is always one candy left over when the candies are evenly distributed to <img src=\"//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png\" class=\"latex\" alt=\"$5$\" width=\"8\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/8/4/5/8455f3b5cb3b4880b8c9d782a5c1f0334db819eb.png\" class=\"latex\" alt=\"$8$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />, or <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" /> children, then there must also be exactly one candy left over when the candies are distributed to <img src=\"//latex.artofproblemsolving.com/9/2/5/925aa45f0095a8e73be8011099d8cfa23c560973.png\" class=\"latex\" alt=\"$LCM(5, 6, 7, 8, 9)$\" style=\"vertical-align: -4px\" width=\"136\" height=\"18\" /> children. Since <img src=\"//latex.artofproblemsolving.com/d/2/e/d2ea493076686d82e813a1ff9d7a0aa26687c13b.png\" class=\"latex\" alt=\"$LCM(5, 6, 7, 8, 9) = 2^3 * 3^2 * 5^1 * 7^1 = 2520$\" style=\"vertical-align: -4px\" width=\"340\" height=\"19\" />, the total number of candies can be expressed as <img src=\"//latex.artofproblemsolving.com/7/0/9/7098a89e39ed00342905ff3090424accd0f52398.png\" class=\"latex\" alt=\"$2520n + 1$\" style=\"vertical-align: -1px\" width=\"77\" height=\"14\" />, where <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is any nonnegative integer. However, we know that there are between <img src=\"//latex.artofproblemsolving.com/0/9/2/0929ed034079c23455c385741744274c1f69b61b.png\" class=\"latex\" alt=\"$4000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/0/2/8/02898859d6d4b1ad43353498a3a96846ea8cc02c.png\" class=\"latex\" alt=\"$6000$\" width=\"35\" height=\"12\" /> candies, so the only viable value for <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />, meaning the total number of candies is <img src=\"//latex.artofproblemsolving.com/b/b/3/bb35d4b61e56af5ca0126f2660c56f8315f43861.png\" class=\"latex\" alt=\"$2520(2) + 1 = 5040 + 1 = 5041$\" style=\"vertical-align: -4px\" width=\"242\" height=\"18\" />. \n</p><p>The problem then asks us to find the largest number of candies below <img src=\"//latex.artofproblemsolving.com/0/9/2/0929ed034079c23455c385741744274c1f69b61b.png\" class=\"latex\" alt=\"$4000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> such that the candies are evenly distributed and no candies are left over. This is equivalent to asking what the largest factor of <img src=\"//latex.artofproblemsolving.com/3/3/a/33a7a09396524a705d5e737cbecbc3bc6f100cba.png\" class=\"latex\" alt=\"$5401$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> is that is less than <img src=\"//latex.artofproblemsolving.com/0/9/2/0929ed034079c23455c385741744274c1f69b61b.png\" class=\"latex\" alt=\"$4000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />. Since <img src=\"//latex.artofproblemsolving.com/8/9/5/895ca0376c19081059af5723084161b3ed7d5cf9.png\" class=\"latex\" alt=\"$5401 = 71^2$\" style=\"vertical-align: 0px\" width=\"84\" height=\"15\" />, the only factors of <img src=\"//latex.artofproblemsolving.com/3/3/a/33a7a09396524a705d5e737cbecbc3bc6f100cba.png\" class=\"latex\" alt=\"$5401$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> are <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/3/8/c/38c4bc29a5a0d6756b52b0277d9cd07e756225c8.png\" class=\"latex\" alt=\"$71$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/3/3/a/33a7a09396524a705d5e737cbecbc3bc6f100cba.png\" class=\"latex\" alt=\"$5401$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />. Thus the answer is <img src=\"//latex.artofproblemsolving.com/c/e/3/ce3fadaa111eea58b1835644c54d879949bfa94f.png\" class=\"latex\" alt=\"$\\boxed{71}$\" style=\"vertical-align: -5px\" width=\"30\" height=\"23\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T1&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Since <img src=\"//latex.artofproblemsolving.com/3/2/0/32071c3e7e109ed95709d13f9c67a1521a6fb9cf.png\" class=\"latex\" alt=\"$n \\equiv 1(\\bmod k)$\" style=\"vertical-align: -5px\" width=\"107\" height=\"20\" /> for each <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> from the set <img src=\"//latex.artofproblemsolving.com/7/1/0/7104ad4ce22cfa442ee62e179100ecba63e7d180.png\" class=\"latex\" alt=\"$\\{5,6,7,8,9\\}$\" style=\"vertical-align: -5px\" width=\"98\" height=\"20\" />, we know that:\n<img src=\"//latex.artofproblemsolving.com/b/b/2/bb2f6cd77511e0400d0cfe3a5d75f625991900c6.png\" class=\"latexcenter\" alt=\"\\[\\begin{gathered} n-1 \\equiv 0 \\quad(\\bmod 5) \\\\ n-1 \\equiv 0 \\quad(\\bmod 6) \\\\ n-1 \\equiv 0 \\quad(\\bmod 7) \\\\ n-1 \\equiv 0 \\quad(\\bmod 8) \\\\ n-1 \\equiv 0 \\quad(\\bmod 9) \\end{gathered}\\]\" width=\"150\" height=\"117\" />\nPrime factorizations:\n<img src=\"//latex.artofproblemsolving.com/5/7/1/5711276f64e4f60585cc25f4db648034d144dbcc.png\" class=\"latexcenter\" alt=\"\\[\\begin{gathered} 5=5 \\\\ 6=2 \\cdot 3 \\\\ 7=7 \\\\ 8=2^3 \\\\ 9=3^2 \\end{gathered}\\]\" width=\"63\" height=\"118\" />\n</p><p>The LCM is determined by taking the highest power of each prime that appears in the factorizations:\n<img src=\"//latex.artofproblemsolving.com/c/0/b/c0b1adfea320069ddf85730e3a93e4523dcff149.png\" class=\"latexcenter\" alt=\"\\[\\mathrm{LCM}=2^3 \\cdot 3^2 \\cdot 5 \\cdot 7=8 \\cdot 9 \\cdot 5 \\cdot 7\\]\" width=\"255\" height=\"15\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/b/3/5/b3500c93d54ddde52b28d30ca644203245e24512.png\" class=\"latexcenter\" alt=\"\\[\\begin{gathered} 8 \\cdot 9=72 \\\\ 72 \\cdot 5=360 \\\\ 360 \\cdot 7=2520 \\end{gathered}\\]\" width=\"108\" height=\"63\" />\n</p><p>Thus, the LCM of <img src=\"//latex.artofproblemsolving.com/1/0/1/101f57ca47ec6e47357b8ca83e3a43cfe516480a.png\" class=\"latex\" alt=\"$5,6,7,8$\" style=\"vertical-align: -4px\" width=\"62\" height=\"17\" />, and 9 is 2520 . Therefore:\n<img src=\"//latex.artofproblemsolving.com/f/1/7/f17b0d5c750b2fb088d9cd157017cff3ab1663d5.png\" class=\"latexcenter\" alt=\"\\[n-1=2520 k\\]\" width=\"111\" height=\"13\" />\n<img src=\"//latex.artofproblemsolving.com/e/5/8/e58476bda6fb8d088e45f635d073f9ebac6bad8c.png\" class=\"latexcenter\" alt=\"\\[n=2520 k+1\\]\" width=\"111\" height=\"14\" />\n</p><p>Given that the total number of candies lies between 4000 and 6000&#160;:\n<img src=\"//latex.artofproblemsolving.com/b/d/1/bd1562d642e6b20e7c84cadda4298c204874a6f7.png\" class=\"latexcenter\" alt=\"\\[4000 \\leq 2520 k+1 \\leq 6000\\]\" width=\"197\" height=\"15\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/1/d/c/1dc1d1436d6141ba6aa6de84dfde5e06ad6ebc50.png\" class=\"latexcenter\" alt=\"\\[\\begin{gathered} 3999 \\leq 2520 k \\leq 5999 \\\\ k \\geq \\frac{3999}{2520} \\approx 1.587 \\\\ k \\leq \\frac{5999}{2520} \\approx 2.380 \\end{gathered}\\]\" width=\"166\" height=\"105\" />\n</p><p>Since <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> must be an integer, the possible value for <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> is 2 . Substituting <img src=\"//latex.artofproblemsolving.com/4/f/6/4f681bd84648c174d45eed0037702cae77ed0686.png\" class=\"latex\" alt=\"$k=2$\" width=\"43\" height=\"12\" />&#160;:\n<img src=\"//latex.artofproblemsolving.com/2/0/f/20f3118ebfad07c70032925f4f4ad3f2cb6c3cb1.png\" class=\"latexcenter\" alt=\"\\[n=2520 \\cdot 2+1=5041\\]\" width=\"184\" height=\"14\" />\n</p><p>To find the largest number of candies per bag so that no candies are left when the total is below 4000, we consider the largest divisor of 2520 that is less than 4000 . The largest divisor of 2520 is 2520 itself (as 2520 is a factor of 5040 , and 5041 is not under 4000 ).\n</p><p>Thus, the largest number of candies in each bag, ensuring no candies are left, is:\n<img src=\"//latex.artofproblemsolving.com/5/a/5/5a58d8d5a3c61911a6d8faf86497d212c0ed5fa3.png\" class=\"latexcenter\" alt=\"\\[\\boxed{2520}\\]\" width=\"48\" height=\"23\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T1&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Back to test: <a rel=\"nofollow\" class=\"external free\" href=\"https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems\">https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907211134\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.037 seconds\nReal time usage: 0.039 seconds\nPreprocessor visited node count: 446/1000000\nPreprocessor generated node count: 980/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 8333/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12633-0!canonical and timestamp 20240907211134 and revision id 219640\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_T1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_T1",
+          "byteoffset": 430,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_T1",
+          "byteoffset": 1628,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2000_PMWC_Problems/Problem_T1",
+          "byteoffset": 3311,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem T1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem T2": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem T2",
+      "pageid": 12634,
+      "revid": 61702,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A <img src=\"//latex.artofproblemsolving.com/d/3/e/d3e924cb707ea7d4db9ae26d3aefa5e21fbf9a1f.png\" class=\"latex\" alt=\"$5 \\times 5 \\times 5$\" width=\"71\" height=\"12\" /> cube is formed using <img src=\"//latex.artofproblemsolving.com/c/5/8/c58deba0f41c4da22eb2c1016638fd874231c042.png\" class=\"latex\" alt=\"$1 \\times 1 \\times 1$\" style=\"vertical-align: 0px\" width=\"70\" height=\"12\" /> cubes. A number of the smaller cubes are removed by punching out the 15 designated columns from front to back, top to bottom, and side to side. Find the number of smaller cubes that remain.\n</p><p><img src=\"//latex.artofproblemsolving.com/a/f/7/af72e820083cf8f480f414f7f1359273186cf40a.png\" class=\"latexcenter\" alt=\"[asy] import three; currentprojection=orthographic(1,1/2,0.4); draw(surface((5,1,1)--(5,1,2)--(5,2,2)--(5,2,1)--cycle),black,nolight); draw(surface((5,1,3)--(5,1,4)--(5,2,4)--(5,2,3)--cycle),black,nolight); draw(surface((5,3,1)--(5,3,2)--(5,4,2)--(5,4,1)--cycle),black,nolight); draw(surface((5,3,3)--(5,3,4)--(5,4,4)--(5,4,3)--cycle),black,nolight); draw(surface((5,2,2)--(5,2,3)--(5,3,3)--(5,3,2)--cycle),black,nolight); draw(surface((1,5,1)--(1,5,2)--(2,5,2)--(2,5,1)--cycle),black,nolight); draw(surface((1,5,3)--(1,5,4)--(2,5,4)--(2,5,3)--cycle),black,nolight); draw(surface((3,5,1)--(3,5,2)--(4,5,2)--(4,5,1)--cycle),black,nolight); draw(surface((3,5,3)--(3,5,4)--(4,5,4)--(4,5,3)--cycle),black,nolight); draw(surface((2,5,2)--(2,5,3)--(3,5,3)--(3,5,2)--cycle),black,nolight); draw(surface((1,1,5)--(1,2,5)--(2,2,5)--(2,1,5)--cycle),black,nolight); draw(surface((1,3,5)--(1,4,5)--(2,4,5)--(2,3,5)--cycle),black,nolight); draw(surface((3,1,5)--(3,2,5)--(4,2,5)--(4,1,5)--cycle),black,nolight); draw(surface((3,3,5)--(3,4,5)--(4,4,5)--(4,3,5)--cycle),black,nolight); draw(surface((2,2,5)--(2,3,5)--(3,3,5)--(3,2,5)--cycle),black,nolight); for(int i = 0; i &lt;= 5; ++i) draw((i,0,5)--(i,5,5)); for(int i = 0; i &lt;= 5; ++i) draw((0,i,5)--(5,i,5)); for(int i = 0; i &lt;= 5; ++i) draw((5,i,0)--(5,i,5)); for(int i = 0; i &lt;= 5; ++i) draw((5,0,i)--(5,5,i)); for(int i = 0; i &lt;= 5; ++i) draw((i,5,0)--(i,5,5)); for(int i = 0; i &lt;= 5; ++i) draw((0,5,i)--(5,5,i)); //Credit to chezbgone2 for the diagram[/asy]\" width=\"242\" height=\"252\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T2&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211134\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.016 seconds\nReal time usage: 0.016 seconds\nPreprocessor visited node count: 37/1000000\nPreprocessor generated node count: 76/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2014/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12634-0!canonical and timestamp 20240907211134 and revision id 61702\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_T2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_T2",
+          "byteoffset": 1793,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_T2",
+          "byteoffset": 1807,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem T2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem T3": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem T3",
+      "pageid": 12635,
+      "revid": 188416,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In the figure, <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" /> is a square, <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> are midpoints of the sides <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/0/b/3/0b31cd391bebc36897a8c10ea78e5d584980b049.png\" class=\"latex\" alt=\"$DA$\" width=\"29\" height=\"13\" /> respectively. Find the ratio of the shaded area to the area of the square <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" />. \n</p><p><img src=\"//latex.artofproblemsolving.com/b/a/a/baa5783b2f8d6973e8fe88bcc8ecbfb56857698e.png\" class=\"latexcenter\" alt=\"[asy] fill(buildcycle((0,2)--(1,0),(2,2)--(0,1),(2,0)--(1,2),(0,0)--(2,1)),gray); draw((0,0)--(2,0)--(2,2)--(0,2)--cycle); draw((0,2)--(1,0)); draw((2,2)--(0,1)); draw((2,0)--(1,2)); draw((0,0)--(2,1)); label(&quot;A&quot;,(0,2),NW); label(&quot;B&quot;,(2,2),NE); label(&quot;C&quot;,(2,0),SE); label(&quot;D&quot;,(0,0),SW); label(&quot;P&quot;,(1,2),N); label(&quot;Q&quot;,(2,1),E); label(&quot;R&quot;,(1,0),S); label(&quot;S&quot;,(0,1),W); //Credit to chezbgone2 for the diagram[/asy]\" width=\"252\" height=\"252\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Rotate the four smallest triangles around their corresponding midpoints, so that there will be <img src=\"//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png\" class=\"latex\" alt=\"$5$\" width=\"8\" height=\"12\" /> squares, which <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> is shaded. Since the area didn't change, the ratio of the shaded area to the area of square ABCD is <img src=\"//latex.artofproblemsolving.com/0/9/1/091cb78867f36f799bc76a76ea54da95c4e1b43d.png\" class=\"latex\" alt=\"$\\boxed{\\frac{1}{5}}$\" style=\"vertical-align: -18px\" width=\"24\" height=\"48\" />.\n</p><p>~megaboy6679\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211135\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.019 seconds\nReal time usage: 0.019 seconds\nPreprocessor visited node count: 136/1000000\nPreprocessor generated node count: 296/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2638/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12635-0!canonical and timestamp 20240907211135 and revision id 188416\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_T3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_T3",
+          "byteoffset": 730,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_T3",
+          "byteoffset": 1032,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem T3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem T4": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem T4",
+      "pageid": 12636,
+      "revid": 61703,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Use the four colours red, yellow, blue and green to fill in the regions of the following diagram so that the adjacent regions are not the same colour. How many different ways are there to colour the regions?\n</p><p><img src=\"//latex.artofproblemsolving.com/3/b/2/3b2be69949c740399e570efabd32cfac6891a88f.png\" class=\"latexcenter\" alt=\"[asy] import geometry; draw((0,0)--(3,0)--(3,2)--(0,2)--cycle); draw((0,1)--(1.5,2)); draw((2.3,0)--(2.3,0.7)--(3,0.7)); draw(ellipse((1.5,1),0.6,0.5)); //Credit to chezbgone2 for the diagram[/asy]\" width=\"252\" height=\"168\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211136\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.014 seconds\nReal time usage: 0.015 seconds\nPreprocessor visited node count: 19/1000000\nPreprocessor generated node count: 36/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 345/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12636-0!canonical and timestamp 20240907211136 and revision id 61703\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_T4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_T4",
+          "byteoffset": 420,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_T4",
+          "byteoffset": 434,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem T4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem T5": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem T5",
+      "pageid": 12637,
+      "revid": 61704,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Each of <img src=\"//latex.artofproblemsolving.com/f/8/3/f8366cd6196dd8a9da6d38a3e9eafb109e99d53e.png\" class=\"latex\" alt=\"$20$\" width=\"17\" height=\"12\" /> children ranked <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" /> kinds of chocolate (A, B, and C) in order of their preferences, with no absentions. Suppose <img src=\"//latex.artofproblemsolving.com/c/6/8/c6878713578626763c38433b3f4c8c2205ad0c15.png\" class=\"latex\" alt=\"$11$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> children preferred B to C, <img src=\"//latex.artofproblemsolving.com/8/2/0/820a20de2847dfdc1bc5cffc8d904933150032bd.png\" class=\"latex\" alt=\"$14$\" style=\"vertical-align: 0px\" width=\"18\" height=\"12\" /> preferred C to A, and <img src=\"//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png\" class=\"latex\" alt=\"$12$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> preferred A to B, and all possible ordered of A, B, and C existed. Find the number of children who ranked A as their first preference.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211136\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.015 seconds\nReal time usage: 0.015 seconds\nPreprocessor visited node count: 55/1000000\nPreprocessor generated node count: 116/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 799/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12637-0!canonical and timestamp 20240907211136 and revision id 61704\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_T5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_T5",
+          "byteoffset": 392,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_T5",
+          "byteoffset": 406,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem T5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem T6": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem T6",
+      "pageid": 12638,
+      "revid": 61705,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In <img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/0/1/a/01af69044b21ad779380d5362fa085a71b558e50.png\" class=\"latex\" alt=\"$BC=6BD$\" width=\"92\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/6/6/2/6623dfff40f19f942a00e2a3a50afe201c9da697.png\" class=\"latex\" alt=\"$AC=5EC$\" width=\"89\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/d/e/e/dee4eef499b5b0a9e443525fc826d386d7b52693.png\" class=\"latex\" alt=\"$DG=GH=HE$\" width=\"140\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/a/0/9a0a143998d56f22551bfbebb93a6a20194cc712.png\" class=\"latex\" alt=\"$AF=FG$\" width=\"80\" height=\"13\" />. Find the ratio of the area of <img src=\"//latex.artofproblemsolving.com/f/7/2/f722737ea859dab2d8c9e3d24325ecac6c28ac9b.png\" class=\"latex\" alt=\"$\\triangle FGH$\" width=\"61\" height=\"13\" /> to the area of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" />. \n</p><p><img src=\"//latex.artofproblemsolving.com/9/3/5/935c4d02cf262e05e775b29a11df5eeb680452d4.png\" class=\"latexcenter\" alt=\"[asy] fill((1,2.5)--(0.9,0.72)--(1.82,1.46)--cycle,black); draw((0,5)--(-3,0)--(4,0)--(0,5)--(0,0)); draw((0,0)--(2.5,2)); draw((0,5)--(1,2.5)--(0.9,0.72)); draw((1,2.5)--(1.82,1.46)); label(&quot;$A$&quot;,(0,5),N); label(&quot;$B$&quot;,(-3,0),W); label(&quot;$C$&quot;,(4,0),E); label(&quot;$D$&quot;,(0,0),S); label(&quot;$E$&quot;,(2.5,2),NE); label(&quot;$F$&quot;,(1,2.5),E); label(&quot;$G$&quot;,(0.9,0.72),S); label(&quot;$H$&quot;,(1.82,1.46),S); //Credit to chezbgone2 for the diagram[/asy]\" width=\"252\" height=\"192\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907053701\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.011 seconds\nReal time usage: 0.011 seconds\nPreprocessor visited node count: 82/1000000\nPreprocessor generated node count: 176/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1765/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12638-0!canonical and timestamp 20240907053701 and revision id 61705\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_T6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_T6",
+          "byteoffset": 654,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_T6",
+          "byteoffset": 668,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem T6",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem T7": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem T7",
+      "pageid": 12639,
+      "revid": 61706,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T7&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The digits <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" /> to <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" /> without repetition form two 5-digit numbers <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" />. Given that <img src=\"//latex.artofproblemsolving.com/a/f/e/afea62308d0190241b7ab5db7faa68052e3c1466.png\" class=\"latex\" alt=\"$\\frac{M}{N}$\" style=\"vertical-align: -13px\" width=\"25\" height=\"39\" /> equals to <img src=\"//latex.artofproblemsolving.com/2/f/9/2f960094315d60883495f9b74148e17487ee9584.png\" class=\"latex\" alt=\"$\\frac{1}{2}$\" style=\"vertical-align: -12px\" width=\"11\" height=\"37\" />, find the largest possible sum of <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T7&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T7&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211137\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.016 seconds\nReal time usage: 0.016 seconds\nPreprocessor visited node count: 82/1000000\nPreprocessor generated node count: 176/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1220/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12639-0!canonical and timestamp 20240907211137 and revision id 61706\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_T7",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_T7",
+          "byteoffset": 276,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_T7",
+          "byteoffset": 290,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem T7",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2000 PMWC Problems/Problem T8": {
+    "parse": {
+      "title": "2000 PMWC Problems/Problem T8",
+      "pageid": 12640,
+      "revid": 113361,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T8&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>There are positive integers <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> such that <img src=\"//latex.artofproblemsolving.com/9/f/1/9f15249f213ddb13cabe6757dbe55fd8d11d5eb5.png\" class=\"latex\" alt=\"$\\frac{19}{20}&lt;\\frac{1}{k}+\\frac{1}{n}+\\frac{1}{m}&lt;1$\" style=\"vertical-align: -12px\" width=\"172\" height=\"37\" />. What is the smallest possible value of <img src=\"//latex.artofproblemsolving.com/4/0/1/401ec23f836dfc71f331769726191402f60c75db.png\" class=\"latex\" alt=\"$k+n+m$\" style=\"vertical-align: -1px\" width=\"81\" height=\"14\" />?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T8&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given that <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, and <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> are positive integers, it is obvious that none of them can be 1, because that would immediately make the quantity <img src=\"//latex.artofproblemsolving.com/e/4/8/e48dd4021b161ee0e6c0d251417c0cee94a7a85f.png\" class=\"latex\" alt=\"$\\frac{1}{k}+\\frac{1}{n}+\\frac{1}{m}$\" style=\"vertical-align: -12px\" width=\"91\" height=\"37\" /> too large. \n</p><p><br />\nWhat about having one of them equal <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />? We can actually prove through casework that at least one of the integers must be equal to <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> by considering what would happen if none of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, or <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> were equal to <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />. If this was true, then the smallest <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, or <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> could be would be <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />. If all three were equal to <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />, then we would have <img src=\"//latex.artofproblemsolving.com/8/1/7/8173b52eaed5883b4d1005abdc6aeaa4c2e38b04.png\" class=\"latex\" alt=\"$\\frac{1}{3}+\\frac{1}{3}+\\frac{1}{3} = 1$\" style=\"vertical-align: -12px\" width=\"116\" height=\"37\" />, which is too large. However, the next largest value for the sum <img src=\"//latex.artofproblemsolving.com/e/4/8/e48dd4021b161ee0e6c0d251417c0cee94a7a85f.png\" class=\"latex\" alt=\"$\\frac{1}{k}+\\frac{1}{n}+\\frac{1}{m}$\" style=\"vertical-align: -12px\" width=\"91\" height=\"37\" /> would be <img src=\"//latex.artofproblemsolving.com/0/a/5/0a54baabf7e6f4483f416fae9d5d196f2375d237.png\" class=\"latex\" alt=\"$\\frac{1}{3}+\\frac{1}{3}+\\frac{1}{4} = \\frac{11}{12}$\" style=\"vertical-align: -13px\" width=\"128\" height=\"37\" />, which is too small. Thus there are no possibilities that have no <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />s, meaning we can set any one of the variables <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, or <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> equal to <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> and continue solving. \n</p><p><br />\nLet's say we choose <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> to equal <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />. Then we have <img src=\"//latex.artofproblemsolving.com/2/a/0/2a0d6d34332573888ed91e4084f826ffd1ba2bed.png\" class=\"latex\" alt=\"$\\frac{9}{20}&lt;\\frac{1}{n}+\\frac{1}{m}&lt;\\frac{1}{2}$\" style=\"vertical-align: -12px\" width=\"139\" height=\"37\" />. Obviously we can't have another <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />, but what if we had a <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />? It turns out that we can prove that we must have a <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" /> in much the same way we proved that there must be a <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />. If we assume that there is no <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />, the largest value of <img src=\"//latex.artofproblemsolving.com/e/3/2/e32fee672a4eeca3f053d6d150d3511c2d3ce274.png\" class=\"latex\" alt=\"$\\frac{1}{n}+\\frac{1}{m}$\" style=\"vertical-align: -12px\" width=\"55\" height=\"37\" /> would be <img src=\"//latex.artofproblemsolving.com/8/2/5/82563c3518f933fa70f208c5c63492d21a348caa.png\" class=\"latex\" alt=\"$\\frac{1}{4}+\\frac{1}{4} = \\frac{1}{2}$\" style=\"vertical-align: -13px\" width=\"84\" height=\"37\" />, which is too large. Just as last time, the next largest possibility, <img src=\"//latex.artofproblemsolving.com/e/8/a/e8acec91bcc78385ba9a3acac434b87dcc660b33.png\" class=\"latex\" alt=\"$\\frac{1}{4}+\\frac{1}{5} = \\frac{9}{20}$\" style=\"vertical-align: -13px\" width=\"93\" height=\"38\" />, is too small. Thus, there are no possibilities that have no <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />s, meaning one of the remaining variables must be <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />. If we randomly select <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> to equal <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />, we are left with the equation <img src=\"//latex.artofproblemsolving.com/b/4/8/b487f8af62f08887d6d39c4c57d75918ff7d17f3.png\" class=\"latex\" alt=\"$\\frac{9}{20} - \\frac{1}{3} &lt; \\frac{1}{m} &lt; \\frac{1}{2} - \\frac{1}{3}$\" style=\"vertical-align: -12px\" width=\"172\" height=\"37\" />, which means <img src=\"//latex.artofproblemsolving.com/d/0/3/d037022be672bfd55f63e49a796329b508ca7f68.png\" class=\"latex\" alt=\"$\\frac{7}{60} &lt; \\frac{1}{m} &lt; \\frac{1}{6}$\" style=\"vertical-align: -12px\" width=\"102\" height=\"37\" />. This inequality shows that <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> can be equal to <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/8/4/5/8455f3b5cb3b4880b8c9d782a5c1f0334db819eb.png\" class=\"latex\" alt=\"$8$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />. The problem asks for the least possible value of <img src=\"//latex.artofproblemsolving.com/4/0/1/401ec23f836dfc71f331769726191402f60c75db.png\" class=\"latex\" alt=\"$k+n+m$\" style=\"vertical-align: -1px\" width=\"81\" height=\"14\" />, so we say that <img src=\"//latex.artofproblemsolving.com/a/6/f/a6f38decf04b2dccac3561c0582a3909e1e9a087.png\" class=\"latex\" alt=\"$m = 7$\" style=\"vertical-align: -1px\" width=\"51\" height=\"14\" />.\n</p><p><br />\nTo conclude, we have <img src=\"//latex.artofproblemsolving.com/6/d/e/6dea8a63bfe52ad965b09000bca83c8346f222b6.png\" class=\"latex\" alt=\"$\\frac{1}{k}+\\frac{1}{n}+\\frac{1}{m} = \\frac{1}{2}+\\frac{1}{3}+\\frac{1}{7} = \\frac{21}{42}+\\frac{14}{42}+\\frac{6}{42} = \\frac{41}{42}$\" style=\"vertical-align: -13px\" width=\"381\" height=\"38\" />, which is indeed greater than <img src=\"//latex.artofproblemsolving.com/9/c/1/9c1019aa85fa0fda9192f308e522e4a2a119698d.png\" class=\"latex\" alt=\"$\\frac{19}{20}$\" style=\"vertical-align: -12px\" width=\"20\" height=\"37\" /> and less than <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />. This configuration, <img src=\"//latex.artofproblemsolving.com/1/d/5/1d5834a1f738697ced841167851bef0f4453f1ff.png\" class=\"latex\" alt=\"$(2,3,7)$\" style=\"vertical-align: -4px\" width=\"56\" height=\"18\" /> is one of two that satisfies the given conditions, the other being <img src=\"//latex.artofproblemsolving.com/8/f/0/8f03f0db06e69d626093ff052ad1e7fa60f340a5.png\" class=\"latex\" alt=\"$(2,3,8)$\" style=\"vertical-align: -4px\" width=\"56\" height=\"18\" />. Of these two solutions, <img src=\"//latex.artofproblemsolving.com/1/d/5/1d5834a1f738697ced841167851bef0f4453f1ff.png\" class=\"latex\" alt=\"$(2,3,7)$\" style=\"vertical-align: -4px\" width=\"56\" height=\"18\" /> has the lower sum, meaning our answer is <img src=\"//latex.artofproblemsolving.com/5/b/5/5b5bca5500e284868c7f02aa3786009e04fe97ca.png\" class=\"latex\" alt=\"$2 + 3 + 7 = \\boxed{12}$\" style=\"vertical-align: -5px\" width=\"126\" height=\"23\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2000_PMWC_Problems/Problem_T8&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Back to test: <a rel=\"nofollow\" class=\"external free\" href=\"https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems\">https://artofproblemsolving.com/wiki/index.php/2000_PMWC_Problems</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908053233\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.029 seconds\nReal time usage: 0.030 seconds\nPreprocessor visited node count: 523/1000000\nPreprocessor generated node count: 1156/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 9425/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12640-0!canonical and timestamp 20240908053233 and revision id 113361\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2000_PMWC_Problems/Problem_T8",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2000_PMWC_Problems/Problem_T8",
+          "byteoffset": 223,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2000_PMWC_Problems/Problem_T8",
+          "byteoffset": 3134,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2000 PMWC Problems/Problem T8",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

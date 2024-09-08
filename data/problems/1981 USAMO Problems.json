@@ -1,0 +1,575 @@
+{
+  "1981 USAMO Problems/Problem 1": {
+    "parse": {
+      "title": "1981 USAMO Problems/Problem 1",
+      "pageid": 11417,
+      "revid": 107507,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Generalization\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Generalization</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Prove that if <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is not a multiple of <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />, then the angle <img src=\"//latex.artofproblemsolving.com/c/d/e/cdeee4fd621d5c0ef073b19fab6042e4838ff62b.png\" class=\"latex\" alt=\"$\\frac{\\pi}{n}$\" style=\"vertical-align: -12px\" width=\"13\" height=\"33\" /> can be trisected with ruler and compasses. \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/5/3/c/53c656616a839be403fc3a343073475b9dbd4f98.png\" class=\"latex\" alt=\"$n=3k+1$\" style=\"vertical-align: -1px\" width=\"84\" height=\"14\" />.  Multiply throughout by <img src=\"//latex.artofproblemsolving.com/9/8/b/98b9d1b70043b0702c76a679585c86a4c1e6c335.png\" class=\"latex\" alt=\"$\\pi/3n$\" style=\"vertical-align: -4px\" width=\"39\" height=\"18\" />. We get \n</p><p><img src=\"//latex.artofproblemsolving.com/6/f/9/6f96d0ee7848ddaabdd58c82b79c0811502303ff.png\" class=\"latex\" alt=\"$\\frac{\\pi}{3} = \\frac{\\pi \\times k}{n} + \\frac{\\pi}{3n}$\" style=\"vertical-align: -12px\" width=\"131\" height=\"37\" />\n</p><p>Re-arranging, we get\n</p><p><img src=\"//latex.artofproblemsolving.com/8/f/f/8ff133d78a523fdcc68d937024de30943e069444.png\" class=\"latex\" alt=\"$\\frac{\\pi}{3} - \\frac{\\pi \\times k}{n} = \\frac{\\pi}{3n}$\" style=\"vertical-align: -12px\" width=\"131\" height=\"37\" />\n</p><p>A way to interpret it is that if we know the value <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, then the remainder angle of subtracting <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> times the given angle from <img src=\"//latex.artofproblemsolving.com/2/d/2/2d2d0dc818ffa40c824ec87c9ad9c51fa86f458d.png\" class=\"latex\" alt=\"$\\frac{\\pi}{3}$\" style=\"vertical-align: -12px\" width=\"13\" height=\"33\" /> gives us <img src=\"//latex.artofproblemsolving.com/2/4/c/24c30b4c8d9cd986a8f753420fb890f74dcdde30.png\" class=\"latex\" alt=\"$\\frac{\\pi}{3n}$\" style=\"vertical-align: -12px\" width=\"22\" height=\"33\" />, the desired trisected angle.\n</p><p>This can be extended to the case when <img src=\"//latex.artofproblemsolving.com/7/b/f/7bfe3b3000df5941b33ecbe64b96765cfbdf5b2c.png\" class=\"latex\" alt=\"$n=3k+2$\" style=\"vertical-align: -1px\" width=\"85\" height=\"14\" /> where now, the equation becomes\n<img src=\"//latex.artofproblemsolving.com/1/6/0/1604c1086622579b5f57f7358a1fefe5be040957.png\" class=\"latex\" alt=\"$\\frac{\\pi}{3} - \\frac{\\pi \\times k}{n} = \\frac{2\\pi}{3n}$\" style=\"vertical-align: -12px\" width=\"131\" height=\"37\" />\n</p><p>Hence in this case, we will have to subtract <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> times the original angle from <img src=\"//latex.artofproblemsolving.com/2/d/2/2d2d0dc818ffa40c824ec87c9ad9c51fa86f458d.png\" class=\"latex\" alt=\"$\\frac{\\pi}{3}$\" style=\"vertical-align: -12px\" width=\"13\" height=\"33\" /> to get twice the the trisected angle. We can bisect it after that to get the trisected angle.\n</p>\n<h2><span class=\"mw-headline\" id=\"Generalization\">Generalization</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: Generalization\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>If regular polygons of <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> sides and <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> sides can be constructed, where <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> are relatively prime integers greater than or equal to three, then regular polygons of <img src=\"//latex.artofproblemsolving.com/1/5/0/150c08478d63c3d2f5cc0de4222ea9183673d7ef.png\" class=\"latex\" alt=\"$mn$\" width=\"26\" height=\"8\" /> sides can be constructed. Indeed, such a polygon can be constructed by first constructing an <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" />-gon, and then creating <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> distinct <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />-gons with at least one vertex being a vertex of the <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" />-gon.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_1&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1981_USAMO\" title=\"1981 USAMO\">1981 USAMO</a></b> (<b><a href=\"/wiki/index.php/1981_USAMO_Problems\" title=\"1981 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1981\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First Question</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_2\" title=\"1981 USAMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_2\" title=\"1981 USAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_3\" title=\"1981 USAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_4\" title=\"1981 USAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_5\" title=\"1981 USAMO Problems/Problem 5\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907210138\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.049 seconds\nReal time usage: 0.052 seconds\nPreprocessor visited node count: 258/1000000\nPreprocessor generated node count: 676/1000000\nPost‐expand include size: 1146/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3936/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.869      1 -total\n 64.52%    1.851      1 Template:USAMO_box\n 29.87%    0.857      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11417-0!canonical and timestamp 20240907210138 and revision id 107507\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Geometry_Problems"
+        },
+        {
+          "sortkey": "",
+          "*": "Geometric_Construction_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1981",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1981_USAMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1981_USAMO_Problems/Problem_1",
+          "byteoffset": 167,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Generalization",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1981_USAMO_Problems/Problem_1",
+          "byteoffset": 1040,
+          "anchor": "Generalization"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "1981_USAMO_Problems/Problem_1",
+          "byteoffset": 1534,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1981 USAMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1981 USAMO Problems/Problem 2": {
+    "parse": {
+      "title": "1981 USAMO Problems/Problem 2",
+      "pageid": 11418,
+      "revid": 192349,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>What is the largest number of towns that can meet the following criteria. Each pair is directly linked by just one of air, bus or train. At least one pair is linked by air, at least one pair by bus and at least one pair by train. No town has an air link, a bus link and a train link. No three towns, <img src=\"//latex.artofproblemsolving.com/2/9/9/299ddf7c0f03ea46bf09f81f93adeea0756aa15c.png\" class=\"latex\" alt=\"$A, B, C$\" style=\"vertical-align: -3px\" width=\"58\" height=\"16\" /> are such that the links between <img src=\"//latex.artofproblemsolving.com/5/4/7/547f225d9af24dda08195ad51ee009872c3d3fc7.png\" class=\"latex\" alt=\"$AB, AC$\" style=\"vertical-align: -3px\" width=\"64\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> are all air, all bus or all train.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Assume <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/b/c/5/bc56862b1fdb71204894da278e42ef75de73a40b.png\" class=\"latex\" alt=\"$AD$\" width=\"28\" height=\"13\" /> are all rail.\n</p><p>None of <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" />, or <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> can be rail, as those cities would form a rail triangle with <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />.\n</p><p>If <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> is bus, then <img src=\"//latex.artofproblemsolving.com/8/9/f/89fff82bb65d0215e49c8c91cb7c553da52205e2.png\" class=\"latex\" alt=\"$BD$\" width=\"29\" height=\"12\" /> is bus as well, as otherwise <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> has all three types.\n</p><p>However, <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> cannot be rail (as <img src=\"//latex.artofproblemsolving.com/0/f/7/0f7a55113a84ee4c04eb66f66d08310c32533ca2.png\" class=\"latex\" alt=\"$\\triangle ACD$\" width=\"59\" height=\"13\" /> would be a rail triangle), bus (as <img src=\"//latex.artofproblemsolving.com/d/7/a/d7ada763e99852a6e44a15d46cce3c3709a944d5.png\" class=\"latex\" alt=\"$BCD$\" width=\"44\" height=\"12\" /> would be a bus triangle), or ferry (as <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> would have all three types).\n</p><p>Therefore, no city can have three connections of the same type.\n</p><p><br />\nAssume there are 5 towns - <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />.\n</p><p>Two connections from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> must be of one type, and two of another; otherwise there would be at least three connections of the same type from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, which has been shown to be impossible.\n</p><p>Let <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> be rail connections, and <img src=\"//latex.artofproblemsolving.com/b/c/5/bc56862b1fdb71204894da278e42ef75de73a40b.png\" class=\"latex\" alt=\"$AD$\" width=\"28\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/9/a/6/9a65c05bd85d2609bea5db2b109ed5f556463511.png\" class=\"latex\" alt=\"$AE$\" width=\"27\" height=\"13\" /> be bus.\n</p><p>Assume <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> is air.\n</p><p><img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> cannot be rail (<img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" /> would be a rail triangle) or bus (<img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> would have all three types), so <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> must be air.\n</p><p><img src=\"//latex.artofproblemsolving.com/6/d/5/6d5c9afa92ae3180f02754c177e530d9d0f8b4d4.png\" class=\"latex\" alt=\"$DE$\" width=\"29\" height=\"12\" /> cannot be bus (<img src=\"//latex.artofproblemsolving.com/d/b/0/db041d9c0fda44cf24b4f4ae7f02243ef2ea7f92.png\" class=\"latex\" alt=\"$\\triangle ADE$\" width=\"59\" height=\"13\" /> would be a bus triangle) or rail (<img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> would have all three types), so <img src=\"//latex.artofproblemsolving.com/6/d/5/6d5c9afa92ae3180f02754c177e530d9d0f8b4d4.png\" class=\"latex\" alt=\"$DE$\" width=\"29\" height=\"12\" /> must be air.\n</p><p><img src=\"//latex.artofproblemsolving.com/a/7/b/a7baf95ecafc2d7791788ec79aeeae390d60b119.png\" class=\"latex\" alt=\"$BE$\" style=\"vertical-align: -1px\" width=\"31\" height=\"14\" /> cannot be rail (<img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> would have all three types) or bus (<img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> would have all three types), so <img src=\"//latex.artofproblemsolving.com/a/7/b/a7baf95ecafc2d7791788ec79aeeae390d60b119.png\" class=\"latex\" alt=\"$BE$\" style=\"vertical-align: -1px\" width=\"31\" height=\"14\" /> must be air.\n</p><p>However, <img src=\"//latex.artofproblemsolving.com/8/9/f/89fff82bb65d0215e49c8c91cb7c553da52205e2.png\" class=\"latex\" alt=\"$BD$\" width=\"29\" height=\"12\" /> cannot be rail (<img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> would have all three types), bus (<img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> would have all three types), or air (<img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> would have three air connections).\n</p><p>Therefore, the assumption that <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> is air is false.\n</p><p><img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> can equally be rail or bus; assume it is bus.\n</p><p><img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> cannot be rail (<img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" /> would be a rail triangle) or air (<img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> would have all three types), so <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> must be bus.\n</p><p><img src=\"//latex.artofproblemsolving.com/8/9/f/89fff82bb65d0215e49c8c91cb7c553da52205e2.png\" class=\"latex\" alt=\"$BD$\" width=\"29\" height=\"12\" /> cannot be air (<img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> would have all three types) or bus (<img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> would have three bus connections), so <img src=\"//latex.artofproblemsolving.com/8/9/f/89fff82bb65d0215e49c8c91cb7c553da52205e2.png\" class=\"latex\" alt=\"$BD$\" width=\"29\" height=\"12\" /> must be rail.\n</p><p><img src=\"//latex.artofproblemsolving.com/6/d/5/6d5c9afa92ae3180f02754c177e530d9d0f8b4d4.png\" class=\"latex\" alt=\"$DE$\" width=\"29\" height=\"12\" /> cannot be air (<img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> would have all three types) or bus (<img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> would have three bus connections), so <img src=\"//latex.artofproblemsolving.com/6/d/5/6d5c9afa92ae3180f02754c177e530d9d0f8b4d4.png\" class=\"latex\" alt=\"$DE$\" width=\"29\" height=\"12\" /> must be rail.\n</p><p><img src=\"//latex.artofproblemsolving.com/1/3/c/13c970cbf5e2e7029089517d5e8efbb8cade6d8a.png\" class=\"latex\" alt=\"$CE$\" width=\"28\" height=\"12\" /> cannot be air (<img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> would have all three types) or bus (<img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> would have three bus connections), so <img src=\"//latex.artofproblemsolving.com/1/3/c/13c970cbf5e2e7029089517d5e8efbb8cade6d8a.png\" class=\"latex\" alt=\"$CE$\" width=\"28\" height=\"12\" /> must be rail.\n</p><p>The only connection remaining is <img src=\"//latex.artofproblemsolving.com/a/7/b/a7baf95ecafc2d7791788ec79aeeae390d60b119.png\" class=\"latex\" alt=\"$BE$\" style=\"vertical-align: -1px\" width=\"31\" height=\"14\" />, which cannot be orange as both <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> would have all three types, but this means there are no air connections.\n</p><p>Therefore, it is impossible with five (or more) towns.\n</p><p><br />\nA four-town mapping is possible:\n</p><p><img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/0/b/3/0b31cd391bebc36897a8c10ea78e5d584980b049.png\" class=\"latex\" alt=\"$DA$\" width=\"29\" height=\"13\" /> are connected by bus.\n</p><p><img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> is connected by rail.\n</p><p><img src=\"//latex.artofproblemsolving.com/8/9/f/89fff82bb65d0215e49c8c91cb7c553da52205e2.png\" class=\"latex\" alt=\"$BD$\" width=\"29\" height=\"12\" /> is connected by air.\n</p><p>Therefore, the maximum number of towns is <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1981_USAMO\" title=\"1981 USAMO\">1981 USAMO</a></b> (<b><a href=\"/wiki/index.php/1981_USAMO_Problems\" title=\"1981 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1981\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_1\" title=\"1981 USAMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_3\" title=\"1981 USAMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_1\" title=\"1981 USAMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_3\" title=\"1981 USAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_4\" title=\"1981 USAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_5\" title=\"1981 USAMO Problems/Problem 5\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907210138\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.057 seconds\nReal time usage: 0.059 seconds\nPreprocessor visited node count: 707/1000000\nPreprocessor generated node count: 1672/1000000\nPost‐expand include size: 1175/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 11324/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.948      1 -total\n 64.25%    1.894      1 Template:USAMO_box\n 30.30%    0.893      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11418-0!canonical and timestamp 20240907210138 and revision id 192349\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1981",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1981_USAMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1981_USAMO_Problems/Problem_2",
+          "byteoffset": 442,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1981_USAMO_Problems/Problem_2",
+          "byteoffset": 3535,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1981 USAMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1981 USAMO Problems/Problem 3": {
+    "parse": {
+      "title": "1981 USAMO Problems/Problem 3",
+      "pageid": 11419,
+      "revid": 207773,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Show that for any triangle, <img src=\"//latex.artofproblemsolving.com/e/4/6/e4692b6467def91187653d02108be9a6b8aab6fe.png\" class=\"latex\" alt=\"$\\frac{3\\sqrt{3}}{2}\\ge \\sin(3A) + \\sin(3B) + \\sin (3C) \\ge -2$\" style=\"vertical-align: -12px\" width=\"332\" height=\"41\" />. \n</p><p>When does the equality hold?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given three angles that add to 180°, one can construct a triangle from them.  This is true even if the angles are negative; however, the resulting triangle could then be recognized as having only positive angles, and the interpretation with negative angles (and, likely, negative side lengths) might be considered perverse.  In this case, the problem must be interpreted as ruling out such \"perverse\" triangles; otherwise, its angles could be -30°, -20°, and 230°, in which case sin(3x) becomes -1, -√3/2, and -1/2 respectively, which add to about -2.3, contradicting the problem statement.\n</p><p>The constraints on the angles of a non-perverse triangle are: <span style=\"color:red\">$0\\degree\\leq A,B,C\\leq180\\degree$ (Error compiling LaTeX. Unknown error_msg)</span>, and <span style=\"color:red\">$A+B+C=180\\degree$ (Error compiling LaTeX. Unknown error_msg)</span>.\n</p><p>In fact, at this point, we only care about 3A, 3B, and 3C.  Let us call them x, y, and z.  We have:\n</p><p>0 ≤ x,y,z ≤ 540°; x+y+z = 540°.  Prove <img src=\"//latex.artofproblemsolving.com/6/9/c/69cd3c3b1646116853ce619f3ee5a61e1041d413.png\" class=\"latex\" alt=\"$\\frac{3\\sqrt{3}}{2}\\ge \\sin(x) + \\sin(y) + \\sin (z) \\ge -2$\" style=\"vertical-align: -12px\" width=\"291\" height=\"41\" />.\n</p><p>Now.  Without loss of generality, assume x ≤ y ≤ z.  It follows that x ≤ 180° and z ≥ 180° [otherwise, x+y+z would be strictly greater than 180°, or strictly less than 180°, respectively].\n</p><p>Since sin(u) is nonnegative over the interval [0, 180°], and -1 ≤ sin u ≤ 1 for all real u, we can immediately use the x ≤ 180° result to show that sin x + sin y + sin z ≤ 0 + -1 + -1 = -2.  This proves the lower bound on sin x + sin y + sin z; equality occurs when sin x = 0 and sin y = sin z = -1, and this is reachable only when y = z = 270° and x = 0°, which translates into A = 0° and B = C = 90°.  (This might be considered a degenerate triangle and ruled out; in that case, the lower bound could be stated as a strict one.)\n</p><p>Now for the upper bound.  It is true that sin(u) is non-positive over the interval [180°, 360°].  Also, 3√3/2 is greater than 2 (it is roughly 2.6): if you square it, you get 27/4, while if you square 2, you get 16/4.  So... We know z ≥ 180°.  If z ≤ 360°, then sin z ≤ 0, and then sin x + sin y + sin z ≤ 1 + 1 + 0 = 2 &lt; 3√3/2.  Therefore, we need merely handle the case where z ≥ 360°.  sin(u + 360°) = sin(u), so we may as well subtract 360° from z.  Then the problem effectively becomes:\n</p><p>\"Given 0 ≤ x,y,z ≤ 180° and x+y+z = 180°, prove that sin x + sin y + sin z ≤ 3√3/2.  Also find when you get equality.\"\n</p><p>This is probably a well-known theorem, but I shall address it here anyway.\n</p><p>Let us suppose that {x,y,z} is the selection of x,y,z given the above constraints with the largest value of sin x + sin y + sin z.  It suffices to show that, for this selection, sin x + sin y + sin z ≤ 3√3/2.  We shall see that, given these constraints, sin x + sin y + sin z increases when you move any two variables closer together, and it is maximized when x=y=z.\n</p><p>Lemma with some general expository use: A special case of a result called \"Jensen's inequality\".  If f(x) is well-behaved and f'(x) is strictly decreasing over an open interval (a, b), then, for any {x,y} selected from that interval with x ≠ y, <img src=\"//latex.artofproblemsolving.com/b/9/d/b9d4d8e1266ccc06746e4420bb9966aef22f0904.png\" class=\"latex\" alt=\"$2f(\\frac{x + y}{2}) &gt; f(x) + f(y).$\" style=\"vertical-align: -12px\" width=\"200\" height=\"35\" />\n</p>\n<dl><dd>Proof of lemma: It is true that, for any well-behaved function f, f(x+d) = f(x) + ∫(f'(u), u from x to x+d), and likewise f(x-d) = f(x) - ∫(f'(u), u from x-d to x).  Addressing the lemma, WLOG suppose x &lt; y; let d = (y-x)/2.  Since f'(u) is given to be strictly decreasing over the relevant interval, we have f'(u) &gt; f'(x+d) for all u in (x, x+d); therefore f(x+d) = f(x) + ∫(f'(u), u from x to x+d) &gt; f(x) + ∫(f'(x+d), u from x to x+d) = f(x) + d*f'(x+d).  Likewise, f'(u) &lt; f'(y-d) for all u in (y-d, y); therefore f(y-d) = f(y) - ∫(f'(u), u from y-d to y) &gt; f(y) - ∫(f'(y-d), u from y-d to y) = f(y) - d*f'(y-d).  Therefore, adding our inequalities together, <img src=\"//latex.artofproblemsolving.com/4/e/c/4ec146e36b57a44ab6393e61f3af4c6e908f8b16.png\" class=\"latex\" alt=\"$f(x+d) + f(y-d) &gt; f(x) + d\\cdot f&#39;(x+d) + f(y) - d*f&#39;(y-d)$\" style=\"vertical-align: -4px\" width=\"506\" height=\"18\" />.  But <img src=\"//latex.artofproblemsolving.com/3/d/1/3d1794c48e6c36da7a1dd79dbe9f1bbd80cc1a00.png\" class=\"latex\" alt=\"$x+d = y-d = \\frac{x+y}{2}$\" style=\"vertical-align: -12px\" width=\"176\" height=\"35\" />.  In that case, the <img src=\"//latex.artofproblemsolving.com/a/6/8/a680a5953e3385194fe6ec8631282da7758a6e52.png\" class=\"latex\" alt=\"$d\\cdot f&#39;(x+d)$\" style=\"vertical-align: -5px\" width=\"96\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/4/c/e/4ce0c9a581b897f2500efe95e64c3be1a34d57c8.png\" class=\"latex\" alt=\"$-d\\cdot f&#39;(y-d)$\" style=\"vertical-align: -4px\" width=\"106\" height=\"18\" /> terms cancel, and we get our desired result: <img src=\"//latex.artofproblemsolving.com/f/5/a/f5a29d6b595f541cb1a5aee2661710567d29b219.png\" class=\"latex\" alt=\"$2 f(\\frac{x+y}{2}) &gt; f(x) + f(y).$\" style=\"vertical-align: -12px\" width=\"200\" height=\"35\" /></dd></dl>\n<p>So.  sin(u) is well-behaved, and sin'(u) = cos(u), which is strictly decreasing over the open interval (0, 180°).  Suppose that {x,y,z} are not all the same value.  Then, without loss of generality, suppose x ≠ y.  Let a = (x+y)/2.  Then the selection {a,a,z} also satisfies the constraints 0 ≤ a,a,z ≤ 180° and a+a+z ≤ 180°.  Furthermore, by the above lemma, 2*sin a &gt; sin x + sin y, so this new selection {a,a,z} has a larger corresponding value sin a + sin a + sin z than the selection {x,y,z}.  This contradicts our original assumption that {x,y,z} was chosen to have the largest value of sin x + sin y + sin z.  Therefore, x=y=z.\n</p><p>Then, since x+y+z = 180°, we conclude x=y=z=60°.  Then sin x + sin y + sin z = 3 * sin 60° = 3 * √3/2.  So 3√3/2 is indeed the maximum value of sin x + sin y + sin z, which was to be proven.  Translating back into the previous problem (0 ≤ x,y,z ≤ 540°; x+y+z = 540°), the maximum occurs when x=y=60° and z=420°; translating into the original problem, we have proven the upper bound, and equality with the upper bound occurs when A=B=20° and C = 140°.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1981_USAMO\" title=\"1981 USAMO\">1981 USAMO</a></b> (<b><a href=\"/wiki/index.php/1981_USAMO_Problems\" title=\"1981 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1981\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_2\" title=\"1981 USAMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_4\" title=\"1981 USAMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_1\" title=\"1981 USAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_2\" title=\"1981 USAMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_4\" title=\"1981 USAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_5\" title=\"1981 USAMO Problems/Problem 5\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907210141\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.057 seconds\nReal time usage: 1.885 seconds\nPreprocessor visited node count: 131/1000000\nPreprocessor generated node count: 392/1000000\nPost‐expand include size: 1175/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1899/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.451      1 -total\n 67.98%    2.346      1 Template:USAMO_box\n 26.60%    0.918      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11419-0!canonical and timestamp 20240907210139 and revision id 207773\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Trigonometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1981",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1981_USAMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1981_USAMO_Problems/Problem_3",
+          "byteoffset": 148,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1981_USAMO_Problems/Problem_3",
+          "byteoffset": 5228,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1981 USAMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1981 USAMO Problems/Problem 4": {
+    "parse": {
+      "title": "1981 USAMO Problems/Problem 4",
+      "pageid": 11420,
+      "revid": 53473,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A convex polygon has <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> sides. Each vertex is joined to a point <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> not in the same plane. If <img src=\"//latex.artofproblemsolving.com/2/9/9/299ddf7c0f03ea46bf09f81f93adeea0756aa15c.png\" class=\"latex\" alt=\"$A, B, C$\" style=\"vertical-align: -3px\" width=\"58\" height=\"16\" /> are adjacent vertices of the polygon take the angle between the planes <img src=\"//latex.artofproblemsolving.com/4/f/5/4f550db59d15933de1a0871aaa917acdd99966af.png\" class=\"latex\" alt=\"$PAB$\" width=\"41\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/e/0/8/e0830febe7535fbbdf19782a978c79c0c9e6cd70.png\" class=\"latex\" alt=\"$PBC$\" width=\"43\" height=\"12\" />. The sum of the <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> such angles equals the sum of the <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> angles in the polygon. Show that <img src=\"//latex.artofproblemsolving.com/5/6/3/5635737307f5f0651cced8ee2e6558a426fd27b5.png\" class=\"latex\" alt=\"$n=3$\" width=\"43\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1981_USAMO_Problems/Problem_4&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1981_USAMO\" title=\"1981 USAMO\">1981 USAMO</a></b> (<b><a href=\"/wiki/index.php/1981_USAMO_Problems\" title=\"1981 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1981\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_3\" title=\"1981 USAMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_5\" title=\"1981 USAMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_1\" title=\"1981 USAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_2\" title=\"1981 USAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_3\" title=\"1981 USAMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_5\" title=\"1981 USAMO Problems/Problem 5\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907210141\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.044 seconds\nReal time usage: 0.049 seconds\nPreprocessor visited node count: 121/1000000\nPreprocessor generated node count: 384/1000000\nPost‐expand include size: 1604/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1181/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.447      1 -total\n 42.32%    1.882      1 Template:USAMO_box\n 28.85%    1.283      1 Template:Solution\n 25.05%    1.114      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11420-0!canonical and timestamp 20240907210141 and revision id 53473\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        },
+        {
+          "sortkey": "",
+          "*": "Olympiad_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1981",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1981_USAMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1981_USAMO_Problems/Problem_4",
+          "byteoffset": 391,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1981_USAMO_Problems/Problem_4",
+          "byteoffset": 418,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1981 USAMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1981 USAMO Problems/Problem 5": {
+    "parse": {
+      "title": "1981 USAMO Problems/Problem 5",
+      "pageid": 11421,
+      "revid": 153567,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Show that for any positive real <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/9/0/890ce23466abfd1bcb2eb253ac571925c0362163.png\" class=\"latex\" alt=\"$[nx]\\ge \\sum_{1}^{n}\\left(\\frac{[kx]}{k}\\right)$\" style=\"vertical-align: -20px\" width=\"141\" height=\"48\" />\n</p>\n<h2><span id=\"Solution(due_to_Pavel_Zatitskiy)\"></span><span class=\"mw-headline\" id=\"Solution.28due_to_Pavel_Zatitskiy.29\">Solution(due to Pavel Zatitskiy)</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution(due to Pavel Zatitskiy)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>First of all we write <img src=\"//latex.artofproblemsolving.com/0/d/4/0d4a0d2f325f9215668973f735ec2166dba659f8.png\" class=\"latex\" alt=\"$[kx]=kx-\\{kx\\}$\" style=\"vertical-align: -5px\" width=\"135\" height=\"19\" />. So, we need to prove that\n<img src=\"//latex.artofproblemsolving.com/6/3/0/63070d2537be3dcacfaed88a7b656bad706fe45b.png\" class=\"latex\" alt=\"$\\sum_{1}^{n}\\left(\\frac{\\{kx\\}}{k}\\right)\\geq \\{nx\\}.$\" style=\"vertical-align: -20px\" width=\"164\" height=\"48\" />\nLet's denote <img src=\"//latex.artofproblemsolving.com/7/9/c/79c89a221f82f6f3eacff2e46b5842022e9fc83f.png\" class=\"latex\" alt=\"$a_k=\\{kx\\}$\" style=\"vertical-align: -4px\" width=\"79\" height=\"18\" />. It is easy to see that <img src=\"//latex.artofproblemsolving.com/c/5/c/c5cddf94fcfc8887c8b99faed15066d9045af24f.png\" class=\"latex\" alt=\"$a_k+a_m \\geq a_{k+m}$\" style=\"vertical-align: -4px\" width=\"125\" height=\"16\" />. We need to prove\n<img src=\"//latex.artofproblemsolving.com/2/d/e/2de84014d400959bd26cba554fe483f596339c8b.png\" class=\"latex\" alt=\"$\\sum_{1}^{n}\\left(\\frac{a_k}{k}\\right)\\geq a_n.$\" style=\"vertical-align: -20px\" width=\"118\" height=\"48\" />\n</p><p>We will prove it by induction by <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />. The base is obvious, so we need to make a step.\n</p><p>Let's take <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> such that <img src=\"//latex.artofproblemsolving.com/4/9/6/49633d7acb858bc4dcea661a448aa017c00fd745.png\" class=\"latex\" alt=\"$\\frac{a_m}{m}$\" style=\"vertical-align: -12px\" width=\"24\" height=\"33\" /> is minimal. If <img src=\"//latex.artofproblemsolving.com/f/e/c/fec4f3da4f422b2346efe86724c8a0aee1023fac.png\" class=\"latex\" alt=\"$m=n$\" width=\"50\" height=\"8\" /> then our inequality is obvious. So, <img src=\"//latex.artofproblemsolving.com/3/c/c/3cc5d678e78938bc0ceb0fed5e5694362b69fb36.png\" class=\"latex\" alt=\"$m&lt;n$\" style=\"vertical-align: 0px\" width=\"50\" height=\"10\" />. Then, by induction, <img src=\"//latex.artofproblemsolving.com/a/2/0/a201795e91f3f1ce8c93234f10fce7c643a62cc3.png\" class=\"latex\" alt=\"$\\sum_{1}^{n-m}\\left(\\frac{a_k}{k}\\right)\\geq a_{n-m}$\" style=\"vertical-align: -23px\" width=\"143\" height=\"55\" /> and <img src=\"//latex.artofproblemsolving.com/f/8/b/f8b5942f9227146fb4abea8b70bb392662add21e.png\" class=\"latex\" alt=\"$\\sum_{n-m+1}^{n}\\left(\\frac{a_k}{k}\\right)\\geq m\\cdot \\frac{a_m}{m}=a_m$\" style=\"vertical-align: -22px\" width=\"218\" height=\"49\" />. Now we can add these two inequalities and get\n<img src=\"//latex.artofproblemsolving.com/b/c/9/bc999787c9b8a87b1cdb84316d51ccb1ea9fbe7c.png\" class=\"latexcenter\" alt=\"\\[\\sum_{1}^{n}\\left(\\frac{a_k}{k}\\right) \\geq a_{n-m}+a_m \\geq a_n\\]\" width=\"222\" height=\"47\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1981_USAMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1981_USAMO\" title=\"1981 USAMO\">1981 USAMO</a></b> (<b><a href=\"/wiki/index.php/1981_USAMO_Problems\" title=\"1981 USAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=1981\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_4\" title=\"1981 USAMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_1\" title=\"1981 USAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_2\" title=\"1981 USAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_3\" title=\"1981 USAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1981_USAMO_Problems/Problem_4\" title=\"1981 USAMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAMO_Problems_and_Solutions\" title=\"USAMO Problems and Solutions\"> All USAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907210141\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.045 seconds\nReal time usage: 0.048 seconds\nPreprocessor visited node count: 173/1000000\nPreprocessor generated node count: 492/1000000\nPost‐expand include size: 1145/2097152 bytes\nTemplate argument size: 51/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2859/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.753      1 -total\n 65.76%    2.468      1 Template:USAMO_box\n 28.78%    1.080      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11421-0!canonical and timestamp 20240907210141 and revision id 153567\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1981 USAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=1981",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1981_USAMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution(due to Pavel Zatitskiy)",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1981_USAMO_Problems/Problem_5",
+          "byteoffset": 122,
+          "anchor": "Solution.28due_to_Pavel_Zatitskiy.29"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1981_USAMO_Problems/Problem_5",
+          "byteoffset": 1028,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1981 USAMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

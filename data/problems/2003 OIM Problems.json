@@ -1,0 +1,380 @@
+{
+  "2003 OIM Problems/Problem 1": {
+    "parse": {
+      "title": "2003 OIM Problems/Problem 1",
+      "pageid": 26164,
+      "revid": 219583,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>a) There are two sequences, each of 2003 consecutive integers, and a board with 2 rows and 2003 columns\n</p><p>Decide if it is always possible to distribute the numbers of the first sequence in the first row and those of the second sequence in the second row, in such a way that the results obtained by adding the two numbers in each column form a new sequence of 2003 consecutive numbers.\n</p><p>b) What if 2003 is replaced by 2004?\n</p><p>In both a) and b), if the answer is affirmative, explain how you would distribute the numbers, and if the answer is negative, justify why.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2003_OIM_Problems/Problem_1&amp;action=edit\">adding it</a></span>.</i>\n</p><p>We have,\n</p><p>Sequence 1 (First Row): \\(a, a+1, a+2, \\ldots, a+2002\\)\n</p><p>Sequence 2 (Second Row): \\(b, b+1, b+2, \\ldots, b+2002\\)\n</p><p>We need to arrange these numbers such that the sum in each column forms a sequence of 2003 consecutive numbers.\n</p><p>Let \\(S_i\\) be the sum of the numbers in column \\(i\\), where \\(i\\) ranges from 0 to 2002.\n</p><p><img src=\"//latex.artofproblemsolving.com/d/3/4/d342851c67306cc1540ba20b82cff8fb899b9cbe.png\" class=\"latexcenter\" alt=\"\\[S_i = \\text{First Row}_i + \\text{Second Row}_i\\]\" width=\"233\" height=\"15\" />\n</p><p>Suppose we directly distribute the numbers into each row:\n</p><p>First Row: \\(a + i\\)\n</p><p>Second Row: \\(b + i\\)\n</p><p>Then the sum in each column is:\n</p><p><img src=\"//latex.artofproblemsolving.com/7/8/0/78052f8b6ed54e9814097007ab8e11ce163e8c12.png\" class=\"latexcenter\" alt=\"\\[S_i = (a + i) + (b + i) = a + b + 2i\\]\" width=\"265\" height=\"18\" />\n</p><p>We want \\(S_i\\) to form a new sequence of 2003 consecutive numbers.\n</p><p>Suppose \\(S_i\\) forms a sequence starting at \\(x\\):\n</p><p><img src=\"//latex.artofproblemsolving.com/a/7/4/a74d595844b5e3ae7a56f98fc4db36217d87985a.png\" class=\"latexcenter\" alt=\"\\[S_i = x + i\\]\" width=\"78\" height=\"15\" />\n</p><p>For \\(S_i = a + b + 2i\\), we need to find appropriate \\(a\\) and \\(b\\) such that \\(a + b + 2i = x + i\\) for all \\(i\\).\n</p><p>This implies:\n</p><p><img src=\"//latex.artofproblemsolving.com/b/7/9/b7953f67a3d3b2079383841f5677cab4a6e14aae.png\" class=\"latexcenter\" alt=\"\\[a + b + i = x\\]\" width=\"102\" height=\"14\" />\n</p><p>This is impossible for all \\(i\\) because \\(a\\) and \\(b\\) are fixed, while \\(i\\) is variable.\n</p><p>Therefore, we cannot distribute the numbers in such a way that the sums in each column form a new sequence of 2003 consecutive numbers.\n</p><p>The same analysis applies to 2004 integers:\n</p><p>Sequence 1 (First Row): \\(a, a+1, a+2, \\ldots, a+2003\\)\n</p><p>Sequence 2 (Second Row): \\(b, b+1, b+2, \\ldots, b+2003\\)\n</p><p>Following similar steps, the sum in each column \\(S_i\\) would be:\n</p><p><img src=\"//latex.artofproblemsolving.com/7/8/0/78052f8b6ed54e9814097007ab8e11ce163e8c12.png\" class=\"latexcenter\" alt=\"\\[S_i = (a + i) + (b + i) = a + b + 2i\\]\" width=\"265\" height=\"18\" />\n</p><p>Again, it is impossible to form a new sequence of 2004 consecutive numbers.\n</p><p>For both 2003 and 2004 consecutive integers, it is impossible to distribute the numbers in the sequences into two rows in such a way that the sums of the numbers in each column form a new sequence of consecutive numbers.\n</p><p>Thus, the answer is:\n</p><p>For both 2003 and 2004 integers, it is not possible.\n</p><p><img src=\"//latex.artofproblemsolving.com/c/c/a/ccaa5ca478db38b7a56e60cf4dc289019cee0685.png\" class=\"latexcenter\" alt=\"\\[\\boxed{\\text{Not possible}}\\]\" width=\"101\" height=\"26\" />\n</p><p>By AnYu\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211456\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 72/1000000\nPreprocessor generated node count: 168/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1074/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.317      1 Template:Solution\n100.00%    2.317      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26164-0!canonical and timestamp 20240907211456 and revision id 219583\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2003_OIM_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2003_OIM_Problems/Problem_1",
+          "byteoffset": 641,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2003_OIM_Problems/Problem_1",
+          "byteoffset": 2517,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2003 OIM Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2003 OIM Problems/Problem 2": {
+    "parse": {
+      "title": "2003 OIM Problems/Problem 2",
+      "pageid": 26165,
+      "revid": 207232,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> be two points on the semicircle of diameter <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> such that <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> are in different semiplanes with respect to the line <img src=\"//latex.artofproblemsolving.com/b/c/5/bc56862b1fdb71204894da278e42ef75de73a40b.png\" class=\"latex\" alt=\"$AD$\" width=\"28\" height=\"13\" />. Let <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> denote the midpoints of <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/2/0/4/204a6f5a6757f5da4c1b3035ad8d806769744e63.png\" class=\"latex\" alt=\"$DB$\" width=\"29\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" />, respectively. Let <img src=\"//latex.artofproblemsolving.com/4/d/8/4d8aa423de2031c09aa06a1687767414dbb8120d.png\" class=\"latex\" alt=\"$O_A$\" style=\"vertical-align: -2px\" width=\"23\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/0/e/0/0e0af44578003bbd64382d00ed07ed2e33099284.png\" class=\"latex\" alt=\"$O_B$\" style=\"vertical-align: -2px\" width=\"24\" height=\"15\" /> be the circumcenters of the triangles <img src=\"//latex.artofproblemsolving.com/1/e/4/1e489c2e6fe536f8d01b4b29f213364699766b9c.png\" class=\"latex\" alt=\"$ACP$\" width=\"42\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/d/5/e/d5e0cb0ad7a62d9b5ebf6f8cb484aafc01574b4d.png\" class=\"latex\" alt=\"$BDP$\" style=\"vertical-align: -1px\" width=\"46\" height=\"14\" />. Show that the lines <img src=\"//latex.artofproblemsolving.com/1/2/6/12652bbb2ab55049670f8994e60f80fe38e25d6f.png\" class=\"latex\" alt=\"$O_AO_B$\" style=\"vertical-align: -2px\" width=\"48\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/b/b/c/bbcfabd65745f2b759dea1840f9a0753b2f992e8.png\" class=\"latex\" alt=\"$MN$\" width=\"36\" height=\"12\" /> are parallel.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2003_OIM_Problems/Problem_2&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211456\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.024 seconds\nReal time usage: 0.025 seconds\nPreprocessor visited node count: 180/1000000\nPreprocessor generated node count: 408/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2761/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.835      1 Template:Solution\n100.00%    1.835      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26165-0!canonical and timestamp 20240907211456 and revision id 207232\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2003_OIM_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2003_OIM_Problems/Problem_2",
+          "byteoffset": 629,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2003_OIM_Problems/Problem_2",
+          "byteoffset": 658,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2003 OIM Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2003 OIM Problems/Problem 3": {
+    "parse": {
+      "title": "2003 OIM Problems/Problem 3",
+      "pageid": 26166,
+      "revid": 207233,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Pablo was copying the following problem from a blackboard:\n</p><p><img src=\"//latex.artofproblemsolving.com/3/1/2/312b7e2e31dcab62115f3894f180dcf0e7df640f.png\" class=\"latexcenter\" alt=\"\\[\\textit{Consider all sequences of 2004 real numbers }(x_0,x_1,x_2,\\cdots , x_{2003})\\textit{, such that}\\]\" width=\"566\" height=\"18\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/7/1/0/7105128b22cc531f7e576cfa1adc6450043414a5.png\" class=\"latexcenter\" alt=\"\\[x_0=1\\text{,}\\]\" width=\"54\" height=\"15\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/7/c/e/7ce41adc2095765e2245ca25606984ca92429b43.png\" class=\"latexcenter\" alt=\"\\[0\\le x_1 \\le 2x_0 \\text{,}\\]\" width=\"105\" height=\"15\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/0/2/2/022158d922f05ea61ff38d739667b0e1158463d8.png\" class=\"latexcenter\" alt=\"\\[0\\le x_2 \\le 2x_1 \\text{,}\\]\" width=\"105\" height=\"15\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/7/6/4/76403adfdd35fb846675aaeaac92daec680a4fba.png\" class=\"latexcenter\" alt=\"\\[\\vdots\\]\" width=\"2\" height=\"16\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/6/a/0/6a0dd99faf558b05a6ab6570b9bdbdd432731893.png\" class=\"latexcenter\" alt=\"\\[0\\le x_{2003} \\le 2x_{2004} \\text{.}\\]\" width=\"145\" height=\"15\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/4/4/2/4427e71f8d2a3a311672edaa6d1437cb61830836.png\" class=\"latexcenter\" alt=\"\\[\\textit{Among all these sequences, find the one for which the following expression takes its largest value:}\\]\" width=\"704\" height=\"15\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/b/c/2/bc258e2b9facb2ca2d82ed814496ea646232627e.png\" class=\"latexcenter\" alt=\"\\[S = ...\\]\" width=\"49\" height=\"12\" />\n</p><p>When Pablo was going to copy the expression for <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />, they erased the blackboard. The only thing he could remember was that <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> was of the form\n</p><p><img src=\"//latex.artofproblemsolving.com/e/9/f/e9ff6369960142dea4bafc4a3b8ccf6c2d55413e.png\" class=\"latexcenter\" alt=\"\\[S=\\pm x_1\\pm x_2\\pm \\cdots\\pm x_{2002}+x_{2003}\\]\" width=\"269\" height=\"15\" />\n</p><p>where the last term, <img src=\"//latex.artofproblemsolving.com/3/b/d/3bdca026e14671999bf3662b260975149dd9afc0.png\" class=\"latex\" alt=\"$x_{2003}$\" style=\"vertical-align: -4px\" width=\"40\" height=\"13\" />, had a coefficient +1, and the previous ones had a coefficient +1 or -1. Show that Paul, despite not having the complete statement, can find with certainty the solution to the problem.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2003_OIM_Problems/Problem_3&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211457\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.023 seconds\nReal time usage: 0.024 seconds\nPreprocessor visited node count: 126/1000000\nPreprocessor generated node count: 288/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2248/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.792      1 Template:Solution\n100.00%    1.792      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26166-0!canonical and timestamp 20240907211456 and revision id 207233\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2003_OIM_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2003_OIM_Problems/Problem_3",
+          "byteoffset": 1059,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2003_OIM_Problems/Problem_3",
+          "byteoffset": 1088,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2003 OIM Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2003 OIM Problems/Problem 4": {
+    "parse": {
+      "title": "2003 OIM Problems/Problem 4",
+      "pageid": 26167,
+      "revid": 207234,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/a/0/8/a0887d4f6d8eaf81e81a72f3027f1d561d9eca90.png\" class=\"latex\" alt=\"$M = {1, 2, \\cdots , 49}$\" style=\"vertical-align: -4px\" width=\"134\" height=\"18\" /> be the set of the first <img src=\"//latex.artofproblemsolving.com/3/4/c/34c8e6bf4d57cd6f2bb0d7d43e00f0f442f53b84.png\" class=\"latex\" alt=\"$49$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> positive integers. Determine the maximum integer <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> such that the set <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> has a subset of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> elements in which there are no <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" /> consecutive numbers. For that maximum value of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, find the number of subsets of <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> elements, that have the mentioned property.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2003_OIM_Problems/Problem_4&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211457\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.020 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 99/1000000\nPreprocessor generated node count: 228/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1361/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.724      1 Template:Solution\n100.00%    1.724      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26167-0!canonical and timestamp 20240907211457 and revision id 207234\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2003_OIM_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2003_OIM_Problems/Problem_4",
+          "byteoffset": 504,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2003_OIM_Problems/Problem_4",
+          "byteoffset": 533,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2003 OIM Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2003 OIM Problems/Problem 5": {
+    "parse": {
+      "title": "2003 OIM Problems/Problem 5",
+      "pageid": 26168,
+      "revid": 207235,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In the square <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" />, let <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> be points belonging to the sides <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> respectively, different from the ends, such that <img src=\"//latex.artofproblemsolving.com/8/6/f/86fcb31ab7acfa7942db6c63f1665cb91b2f0c1f.png\" class=\"latex\" alt=\"$BP = CQ$\" style=\"vertical-align: -4px\" width=\"84\" height=\"18\" />. Points <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" /> are considered, belonging to the segments <img src=\"//latex.artofproblemsolving.com/e/3/b/e3bb4eeb347e74e025fd175c22f1f7275af0555e.png\" class=\"latex\" alt=\"$AP$\" width=\"27\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/7/5/6/7563031eab26ad18658cf2f6a8e4948861bb9013.png\" class=\"latex\" alt=\"$AQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" /> respectively. Show that, whatever <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" />, there exists a triangle whose sides have the lengths of the segments <img src=\"//latex.artofproblemsolving.com/b/7/a/b7a4b9c32938e96f30b59dcb29f410cd4c2e3982.png\" class=\"latex\" alt=\"$BX$\" width=\"30\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/2/c/7/2c7774174993ffa29a38cf577ae34d8e0a3a63cb.png\" class=\"latex\" alt=\"$XY$\" width=\"30\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/5/2/1/521eb037ef25ecef93c9644d789eed0163a05c52.png\" class=\"latex\" alt=\"$DY$\" width=\"29\" height=\"12\" />.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2003_OIM_Problems/Problem_5&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211457\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.021 seconds\nReal time usage: 0.023 seconds\nPreprocessor visited node count: 153/1000000\nPreprocessor generated node count: 348/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2245/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.588      1 Template:Solution\n100.00%    1.588      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26168-0!canonical and timestamp 20240907211457 and revision id 207235\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2003_OIM_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2003_OIM_Problems/Problem_5",
+          "byteoffset": 601,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2003_OIM_Problems/Problem_5",
+          "byteoffset": 630,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2003 OIM Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2003 OIM Problems/Problem 6": {
+    "parse": {
+      "title": "2003 OIM Problems/Problem 6",
+      "pageid": 26169,
+      "revid": 207239,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Sequences <img src=\"//latex.artofproblemsolving.com/8/b/8/8b805f8cf0c3429cf15fd3c4f8ddccb951fa63a1.png\" class=\"latex\" alt=\"$(a_n)_{n \\ge 0}$\" style=\"vertical-align: -6px\" width=\"61\" height=\"20\" />, and <img src=\"//latex.artofproblemsolving.com/d/4/d/d4d184ee8aefed23647eb68e0e04e6f37c31ffd4.png\" class=\"latex\" alt=\"$(b_n)_{n \\ge 0}$\" style=\"vertical-align: -6px\" width=\"59\" height=\"20\" /> are defined by:\n</p><p><img src=\"//latex.artofproblemsolving.com/c/6/e/c6e6af268ab953f1fbc3de325f74019c3d5317fa.png\" class=\"latexcenter\" alt=\"\\[a_0=1 \\text{, }b_0=4\\text{, and}\\]\" width=\"145\" height=\"16\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/3/5/e/35e31f66225c73b04cc439fb8e2f77f0ae18fbc3.png\" class=\"latexcenter\" alt=\"\\[a_{n+1}=a_n^{2001}+b_n\\text{,  for }n \\ge 0\\text{.}\\]\" width=\"218\" height=\"20\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/b/6/2/b62307a6806d57e18e7a905ac1f1e2b126621e88.png\" class=\"latexcenter\" alt=\"\\[b_{n+1}=b_n^{2001}+a_n\\text{,  for }n \\ge 0\\text{.}\\]\" width=\"216\" height=\"20\" />\n</p><p>Show that 2003 does not divide any of the terms of these sequences.\n</p><p>~translated into English by Tomas Diaz. ~orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2003_OIM_Problems/Problem_6&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2003_OIM_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907211458\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.019 seconds\nReal time usage: 0.019 seconds\nPreprocessor visited node count: 63/1000000\nPreprocessor generated node count: 148/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 957/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.437      1 Template:Solution\n100.00%    1.437      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26169-0!canonical and timestamp 20240907211458 and revision id 207239\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2003_OIM_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2003_OIM_Problems/Problem_6",
+          "byteoffset": 421,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2003_OIM_Problems/Problem_6",
+          "byteoffset": 450,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2003 OIM Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

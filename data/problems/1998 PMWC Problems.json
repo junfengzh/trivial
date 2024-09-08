@@ -1,0 +1,88 @@
+{
+  "1998 PMWC Problems/Problem I1": {
+    "parse": {
+      "title": "1998 PMWC Problems/Problem I1",
+      "pageid": 8323,
+      "revid": 32612,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_I1\">Problem I1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1998_PMWC_Problems/Problem_I1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem I1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Calculate: <img src=\"//latex.artofproblemsolving.com/8/4/4/844eeb3f0f309221609b68402d6f20dd18e8027f.png\" class=\"latex\" alt=\"$\\frac{1*2*3+2*4*6+3*6*9+4*8*12+5*10*15}{1*3*5+2*6*10+3*9*15+4*12*20+5*15*25}$\" style=\"vertical-align: -15px\" width=\"457\" height=\"40\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1998_PMWC_Problems/Problem_I1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>If you factor the top, you get <img src=\"//latex.artofproblemsolving.com/2/3/1/231ef44f0e00d06fd03881aafe7617b93e37b37f.png\" class=\"latex\" alt=\"$(1*2*3)(1^{3}+2^{3}+3^{3}+4^{3}+5^{3})$\" style=\"vertical-align: -4px\" width=\"260\" height=\"19\" />\n</p><p><br />\nIf you factor the bottom, you get <img src=\"//latex.artofproblemsolving.com/4/e/4/4e43d2f4b0e474fcf755776dbde4a437c86b4760.png\" class=\"latex\" alt=\"$(1*3*5)(1^{3}+2^{3}+3^{3}+4^{3}+5^{3})$\" style=\"vertical-align: -4px\" width=\"260\" height=\"19\" />\n</p><p>Dividing out the common factor, you get <img src=\"//latex.artofproblemsolving.com/9/b/b/9bb9ad74ecaafb7038982c79beef367a86ad6996.png\" class=\"latex\" alt=\"$\\frac {1*2*3}{1*3*5}=\\frac {6}{15}= \\frac {2}{5}$\" style=\"vertical-align: -13px\" width=\"147\" height=\"38\" />\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907211015\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.015 seconds\nReal time usage: 0.016 seconds\nPreprocessor visited node count: 24/1000000\nPreprocessor generated node count: 92/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 886/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8323-0!canonical and timestamp 20240907211015 and revision id 32612\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem I1",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1998_PMWC_Problems/Problem_I1",
+          "byteoffset": 0,
+          "anchor": "Problem_I1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1998_PMWC_Problems/Problem_I1",
+          "byteoffset": 119,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1998 PMWC Problems/Problem I1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "1998 PMWC Problems/Problem I2": {
+    "parse": {
+      "title": "1998 PMWC Problems/Problem I2",
+      "pageid": 12761,
+      "revid": 62646,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_I2\">Problem I2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1998_PMWC_Problems/Problem_I2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem I2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Triangular numbers and Square numbers can be represented in the following manner:\n</p><p><img src=\"//latex.artofproblemsolving.com/6/c/b/6cb7204dc80c7ceb83b805c0c6d6f1ad3abc1345.png\" class=\"latexcenter\" alt=\"[asy] int triangle(pair z, int n){ for(int i = 0; i &lt; n; ++i){ for(int j = n-i; j &gt; 0; --j){ dot((z.x+j -1 + i/2 ,z.y + i*sqrt(3)/2)); } } return 0; } triangle((0,0),2); label(&quot;3&quot;,(0.5,0),2S); triangle((5,0),3); label(&quot;6&quot;,(6,0),2S); triangle((11,0),4); label(&quot;10&quot;,(12.5,0),2S); int squ(pair z, int n){ for(int i = 0; i &lt; n; ++i){ for(int j = 0; j &lt; n; ++j){ dot((z.x + i , z.y + j)); } } return 0; } squ((0,-6),2); label(&quot;4&quot;,(0.5,-6),2S); squ((5,-6),3); label(&quot;9&quot;,(6,-6),2S); squ((11,-6),4); label(&quot;16&quot;,(12.5,-6),2S); //Credit to chezbgone2 for the diagram[/asy]\" width=\"252\" height=\"182\" />\n</p><p>Find a pair of consecutive Triangular Numbers and the difference between a pair of consecutive Square Numbers whose difference are both 11. What is the sum of these four numbers?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1998_PMWC_Problems/Problem_I2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We want <img src=\"//latex.artofproblemsolving.com/2/4/9/249feb9572a08c2598529858dd06e4e5f2604c11.png\" class=\"latex\" alt=\"$n^2-(n-1)^2=11$\" style=\"vertical-align: -4px\" width=\"145\" height=\"19\" /> or <img src=\"//latex.artofproblemsolving.com/2/b/7/2b77d1c73f53fef9f326c081b85cf09c4c3995a2.png\" class=\"latex\" alt=\"$2n-1=11$\" style=\"vertical-align: 0px\" width=\"92\" height=\"12\" /> for <img src=\"//latex.artofproblemsolving.com/2/f/2/2f2a6991d2108f237ee451bf37db91cacaf4134e.png\" class=\"latex\" alt=\"$n=6$\" width=\"43\" height=\"12\" />. Therefore the two square numbers are <img src=\"//latex.artofproblemsolving.com/6/6/6/66644fd9f411299c3c1eabf151b5f601c9ef6c21.png\" class=\"latex\" alt=\"$25$\" width=\"17\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce5d3cbb9ab0a992ed503c2d4499e4f4af2f9d65.png\" class=\"latex\" alt=\"$36$\" width=\"17\" height=\"12\" />.\n</p><p>The <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />th triangular number is equal to <img src=\"//latex.artofproblemsolving.com/3/c/4/3c4dc0cb9604dc0b2e470d33b0e484c3c0643941.png\" class=\"latex\" alt=\"$n(n+1)/2$\" style=\"vertical-align: -4px\" width=\"84\" height=\"18\" />. Therefore we want <img src=\"//latex.artofproblemsolving.com/d/a/c/dac3063ebb815e54481e6985b92c28746937ef2c.png\" class=\"latex\" alt=\"$\\frac{n(n+1)}{2}=\\frac{(n-1)n}{2}+11$\" style=\"vertical-align: -12px\" width=\"206\" height=\"38\" /> or <img src=\"//latex.artofproblemsolving.com/6/4/4/6441ccfcd7e898bac622e3e45e65afcf58241f23.png\" class=\"latex\" alt=\"$n(n+1)=n(n-1)+22$\" style=\"vertical-align: -4px\" width=\"198\" height=\"18\" />. Solving gives <img src=\"//latex.artofproblemsolving.com/0/9/3/093e72c1ebd91ade8c33ce3bcc3ccd3e640cad8c.png\" class=\"latex\" alt=\"$n=11$\" style=\"vertical-align: 0px\" width=\"52\" height=\"12\" /> so our two numbers are <img src=\"//latex.artofproblemsolving.com/b/7/9/b79030abeb688469b5ffc2e1c4e37fee225a529e.png\" class=\"latex\" alt=\"$55$\" width=\"17\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/2/d/4/2d40f3652c1962e98ce050a88c04ed37997c67df.png\" class=\"latex\" alt=\"$66$\" width=\"17\" height=\"12\" />.\n</p><p>The sum of all our numbers is therefore <img src=\"//latex.artofproblemsolving.com/2/f/e/2feb6d1569d1b7a66f2ffedbb082fb066b733762.png\" class=\"latex\" alt=\"$25+36+55+66=\\boxed{182}$\" style=\"vertical-align: -5px\" width=\"202\" height=\"23\" />.\n</p><p>(Credit to 54math for the solution <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/viewtopic.php?f=132&amp;t=586102\">here</a>)\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907211016\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.023 seconds\nReal time usage: 0.025 seconds\nPreprocessor visited node count: 54/1000000\nPreprocessor generated node count: 292/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2946/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:12761-0!canonical and timestamp 20240907211016 and revision id 62646\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/viewtopic.php?f=132&t=586102"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem I2",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1998_PMWC_Problems/Problem_I2",
+          "byteoffset": 0,
+          "anchor": "Problem_I2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1998_PMWC_Problems/Problem_I2",
+          "byteoffset": 842,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1998 PMWC Problems/Problem I2",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

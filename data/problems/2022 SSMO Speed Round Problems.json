@@ -1,0 +1,223 @@
+{
+  "2022 SSMO Speed Round Problems/Problem 1": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 1",
+      "pageid": 24733,
+      "revid": 219638,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"solution_1\">solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_SSMO_Speed_Round_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider the probability <img src=\"//latex.artofproblemsolving.com/8/0/e/80e1f82fe070695d9510f8c7a458b5aa4fecd00e.png\" class=\"latex\" alt=\"$P($\" style=\"vertical-align: -4px\" width=\"20\" height=\"18\" /> win <img src=\"//latex.artofproblemsolving.com/8/5/8/85852dfb3301b06f35017d1598f80915cce9a9ce.png\" class=\"latex\" alt=\"$)$\" style=\"vertical-align: -4px\" width=\"5\" height=\"18\" /> as the sum of the probabilities of all sequences where Bobby wins:\n<img src=\"//latex.artofproblemsolving.com/8/0/e/80e1f82fe070695d9510f8c7a458b5aa4fecd00e.png\" class=\"latex\" alt=\"$P($\" style=\"vertical-align: -4px\" width=\"20\" height=\"18\" /> win <img src=\"//latex.artofproblemsolving.com/9/9/f/99f974eb50ddb99aaa943f97727fb98cd24f617f.png\" class=\"latex\" alt=\"$)=P(2$\" style=\"vertical-align: -5px\" width=\"64\" height=\"20\" /> heads and then 1 tails <img src=\"//latex.artofproblemsolving.com/8/f/b/8fb827f2717d148896570a8d20b2b3c29e370a7c.png\" class=\"latex\" alt=\"$)+P(4$\" style=\"vertical-align: -5px\" width=\"61\" height=\"20\" /> heads and then 1 tails <img src=\"//latex.artofproblemsolving.com/a/4/2/a4287b715d7777730e3fe5ccf68ccb644f63c849.png\" class=\"latex\" alt=\"$)+$\" style=\"vertical-align: -5px\" width=\"23\" height=\"20\" /> <img src=\"//latex.artofproblemsolving.com/4/7/7/477737825de363ee360b8e19a3f00318b15f3980.png\" class=\"latex\" alt=\"$P(6$\" style=\"vertical-align: -5px\" width=\"32\" height=\"20\" /> heads and then 1 tails <img src=\"//latex.artofproblemsolving.com/0/0/c/00ca773ada6c9c798f5ae6d1551cc12f1cdae1ac.png\" class=\"latex\" alt=\"$)+\\ldots$\" style=\"vertical-align: -5px\" width=\"52\" height=\"20\" />\n</p><p>For any sequence with <img src=\"//latex.artofproblemsolving.com/c/b/4/cb42e8060c016dd0d8a17ccb231e5f5a1477371b.png\" class=\"latex\" alt=\"$2 k$\" style=\"vertical-align: -1px\" width=\"21\" height=\"14\" /> heads followed by a tail, the probability is:\n<img src=\"//latex.artofproblemsolving.com/4/b/6/4b61fed8b9ded4cdd083063cb8509bfcd4375d36.png\" class=\"latexcenter\" alt=\"\\[\\left(\\frac{1}{2}\\right)^{2 k} \\times\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)^{2 k+1}\\]\" width=\"205\" height=\"46\" />\n</p><p>We sum this for <img src=\"//latex.artofproblemsolving.com/e/a/a/eaa0c9c69e0dd1c98c15567404d099116af0e2f1.png\" class=\"latex\" alt=\"$k=1,2,3, \\ldots$\" style=\"vertical-align: -4px\" width=\"109\" height=\"18\" />&#160;:\n<img src=\"//latex.artofproblemsolving.com/a/c/5/ac571cc8e2e1343c13072159e20fd119536e01fd.png\" class=\"latexcenter\" alt=\"\\[P(\\text { win })=\\sum_{k=1}^{\\infty}\\left(\\frac{1}{2}\\right)^{2 k+1}\\]\" width=\"186\" height=\"50\" />\n</p><p>Factor out the constant term <img src=\"//latex.artofproblemsolving.com/2/f/9/2f960094315d60883495f9b74148e17487ee9584.png\" class=\"latex\" alt=\"$\\frac{1}{2}$\" style=\"vertical-align: -12px\" width=\"11\" height=\"37\" />&#160;:\n<img src=\"//latex.artofproblemsolving.com/0/1/7/0179eb8de00368bd7683babb03fd2f21bdeccceb.png\" class=\"latexcenter\" alt=\"\\[P(\\text { win })=\\frac{1}{2} \\sum_{k=1}^{\\infty}\\left(\\frac{1}{4}\\right)^k\\]\" width=\"180\" height=\"50\" />\n</p><p>This is a geometric series with the first term <img src=\"//latex.artofproblemsolving.com/6/f/8/6f89620f5d9d2161cc3b41a7864f30df51d2bce1.png\" class=\"latex\" alt=\"$a=\\left(\\frac{1}{4}\\right)$\" style=\"vertical-align: -18px\" width=\"75\" height=\"45\" /> and common ratio\n<img src=\"//latex.artofproblemsolving.com/d/2/8/d28b38db4e1aa2d6a0b86132d3289740ff2b7b1d.png\" class=\"latexcenter\" alt=\"\\[r=\\left(\\frac{1}{4}\\right)\\]\" width=\"68\" height=\"43\" />\n<img src=\"//latex.artofproblemsolving.com/0/3/2/0326189259a7be9a79ebbb73e9b23cc973ede084.png\" class=\"latexcenter\" alt=\"\\[\\sum_{k=0}^{\\infty} r^k=\\frac{a}{1-r}=\\frac{\\frac{1}{4}}{1-\\frac{1}{4}}=\\frac{\\frac{1}{4}}{\\frac{3}{4}}=\\frac{1}{3}\\]\" width=\"258\" height=\"49\" />\n</p><p>Thus:\n<img src=\"//latex.artofproblemsolving.com/a/c/8/ac8363202f0a4b5b7f601dc64348001d81118d93.png\" class=\"latexcenter\" alt=\"\\[P(\\text { win })=\\frac{1}{2} \\times \\frac{1}{3}=\\frac{1}{6}\\]\" width=\"173\" height=\"37\" />\n</p><p>The probability <img src=\"//latex.artofproblemsolving.com/8/0/e/80e1f82fe070695d9510f8c7a458b5aa4fecd00e.png\" class=\"latex\" alt=\"$P($\" style=\"vertical-align: -4px\" width=\"20\" height=\"18\" /> win) can be expressed as:\n<img src=\"//latex.artofproblemsolving.com/c/b/d/cbdab43c95438d64794bff9ae943d6640d26f625.png\" class=\"latexcenter\" alt=\"\\[\\frac{1}{6}\\]\" width=\"9\" height=\"37\" />\n</p><p>In this case, <img src=\"//latex.artofproblemsolving.com/a/4/b/a4b5800f5ad040d308609190ef18a9e0ca08a9b0.png\" class=\"latex\" alt=\"$m=1$\" style=\"vertical-align: -1px\" width=\"51\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/2/f/2/2f2a6991d2108f237ee451bf37db91cacaf4134e.png\" class=\"latex\" alt=\"$n=6$\" width=\"43\" height=\"12\" />. Therefore, <img src=\"//latex.artofproblemsolving.com/4/8/2/482a359885ab80365e1d49a5fb035d5e09852b52.png\" class=\"latex\" alt=\"$m+n=1+6=7$\" style=\"vertical-align: -2px\" width=\"149\" height=\"15\" />.\nThus, the value of <img src=\"//latex.artofproblemsolving.com/0/2/d/02dbab3601fa6cce490d54263017048f69e1a35d.png\" class=\"latex\" alt=\"$m+n$\" style=\"vertical-align: -1px\" width=\"48\" height=\"12\" /> is:\n<img src=\"//latex.artofproblemsolving.com/b/f/f/bffecf5b6b90ffbcb90577557c4141916f865694.png\" class=\"latexcenter\" alt=\"\\[\\boxed{\\text{7}}\\]\" width=\"20\" height=\"22\" />\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908060142\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.020 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 77/1000000\nPreprocessor generated node count: 508/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4635/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24733-0!canonical and timestamp 20240908060142 and revision id 219638\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "solution 1",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_SSMO_Speed_Round_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "solution_1"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2022 SSMO Speed Round Problems/Problem 10": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 10",
+      "pageid": 24743,
+      "revid": 195182,
+      "text": {
+        "*": "<div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060143\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.012 seconds\nReal time usage: 0.015 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24743-0!canonical and timestamp 20240908060143 and revision id 195182\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 10",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2022 SSMO Speed Round Problems/Problem 2": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 2",
+      "pageid": 24734,
+      "revid": 195165,
+      "text": {
+        "*": "<div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060143\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.012 seconds\nReal time usage: 0.014 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24734-0!canonical and timestamp 20240908060143 and revision id 195165\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2022 SSMO Speed Round Problems/Problem 3": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 3",
+      "pageid": 24736,
+      "revid": 195167,
+      "text": {
+        "*": "<div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060143\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.011 seconds\nReal time usage: 0.012 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24736-0!canonical and timestamp 20240908060143 and revision id 195167\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2022 SSMO Speed Round Problems/Problem 4": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 4",
+      "pageid": 24737,
+      "revid": 195170,
+      "text": {
+        "*": "<div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060143\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.015 seconds\nReal time usage: 0.015 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24737-0!canonical and timestamp 20240908060143 and revision id 195170\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2022 SSMO Speed Round Problems/Problem 5": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 5",
+      "pageid": 24738,
+      "revid": 195171,
+      "text": {
+        "*": "<div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060144\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.011 seconds\nReal time usage: 0.013 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24738-0!canonical and timestamp 20240908060144 and revision id 195171\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2022 SSMO Speed Round Problems/Problem 6": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 6",
+      "pageid": 24739,
+      "revid": 195177,
+      "text": {
+        "*": "<div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060144\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.011 seconds\nReal time usage: 0.014 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24739-0!canonical and timestamp 20240908060144 and revision id 195177\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2022 SSMO Speed Round Problems/Problem 7": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 7",
+      "pageid": 24740,
+      "revid": 195178,
+      "text": {
+        "*": "<div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060144\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.012 seconds\nReal time usage: 0.012 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24740-0!canonical and timestamp 20240908060144 and revision id 195178\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 7",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2022 SSMO Speed Round Problems/Problem 8": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 8",
+      "pageid": 24742,
+      "revid": 195180,
+      "text": {
+        "*": "<div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060145\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.012 seconds\nReal time usage: 0.012 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24742-0!canonical and timestamp 20240908060145 and revision id 195180\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 8",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2022 SSMO Speed Round Problems/Problem 9": {
+    "parse": {
+      "title": "2022 SSMO Speed Round Problems/Problem 9",
+      "pageid": 24741,
+      "revid": 195181,
+      "text": {
+        "*": "<div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060145\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.011 seconds\nReal time usage: 0.012 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:24741-0!canonical and timestamp 20240908060145 and revision id 195181\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 SSMO Speed Round Problems/Problem 9",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

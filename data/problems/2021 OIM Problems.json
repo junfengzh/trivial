@@ -1,0 +1,392 @@
+{
+  "2021 OIM Problems/Problem 1": {
+    "parse": {
+      "title": "2021 OIM Problems/Problem 1",
+      "pageid": 26152,
+      "revid": 207209,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/9/d/9/9d9b563819a7777631ebdabf5212247484a49612.png\" class=\"latex\" alt=\"$P = {p_1, p_2, \\cdots  p_{10}}$\" style=\"vertical-align: -4px\" width=\"137\" height=\"18\" /> be a set of 10 different prime numbers and let <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> be the set of all integers greater than 1 such that their prime factorizations contain only primes in <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />.  Each element in <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> is colored in the following way:\n</p><p>a) each element in <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> has a distinct color,\n</p><p>b) if <img src=\"//latex.artofproblemsolving.com/b/7/c/b7ca8a225fcf7575b55ddb91218b0fe39846cdd9.png\" class=\"latex\" alt=\"$m, n \\in A$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" />, then <img src=\"//latex.artofproblemsolving.com/1/5/0/150c08478d63c3d2f5cc0de4222ea9183673d7ef.png\" class=\"latex\" alt=\"$mn$\" width=\"26\" height=\"8\" /> has the same color as <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> or <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />,\n</p><p>c) for each pair of distinct colors <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />, there are no <img src=\"//latex.artofproblemsolving.com/1/5/0/1505b4726650ed8aa29bd9251de08cc3418afc78.png\" class=\"latex\" alt=\"$j, k, m, n \\in A$\" style=\"vertical-align: -4px\" width=\"106\" height=\"18\" /> (not necessarily distinct), with <img src=\"//latex.artofproblemsolving.com/e/b/f/ebfc8404a879a1e5f904dfdcdbf66a9b773ebb11.png\" class=\"latex\" alt=\"$j, k$\" style=\"vertical-align: -3px\" width=\"25\" height=\"16\" /> colored <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" />, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> colored <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />, such that both <img src=\"//latex.artofproblemsolving.com/8/1/2/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png\" class=\"latex\" alt=\"$j$\" style=\"vertical-align: -3px\" width=\"8\" height=\"16\" /> divides <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> divides <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />.  Show that there is some prime in <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> such that all of its multiples in <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> have the same color.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2021_OIM_Problems/Problem_1&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://olcoma.ac.cr/internacional/oim-2021/examenes\">https://olcoma.ac.cr/internacional/oim-2021/examenes</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907223243\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.016 seconds\nReal time usage: 0.016 seconds\nPreprocessor visited node count: 225/1000000\nPreprocessor generated node count: 508/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3535/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.289      1 Template:Solution\n100.00%    1.289      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26152-0!canonical and timestamp 20240907223243 and revision id 207209\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://olcoma.ac.cr/internacional/oim-2021/examenes"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2021_OIM_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2021_OIM_Problems/Problem_1",
+          "byteoffset": 938,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2021_OIM_Problems/Problem_1",
+          "byteoffset": 967,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2021 OIM Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2021 OIM Problems/Problem 2": {
+    "parse": {
+      "title": "2021 OIM Problems/Problem 2",
+      "pageid": 26153,
+      "revid": 207211,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider an acute triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" />, with <img src=\"//latex.artofproblemsolving.com/1/7/c/17c46c79d467485a101014e212ee8e61eac7a676.png\" class=\"latex\" alt=\"$AC &gt; AB$\" style=\"vertical-align: -2px\" width=\"82\" height=\"15\" />, and let <img src=\"//latex.artofproblemsolving.com/9/1/3/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png\" class=\"latex\" alt=\"$\\Gamma$\" style=\"vertical-align: 0px\" width=\"11\" height=\"13\" /> be its circumcircle.  Let <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> be the midpoints of the sides <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, respectively. The circumcircle of triangle <img src=\"//latex.artofproblemsolving.com/a/9/c/a9c5f98c6f70b855ea3d874c757247f6dfbbac5f.png\" class=\"latex\" alt=\"$CEF$\" style=\"vertical-align: -1px\" width=\"45\" height=\"14\" /> intersects <img src=\"//latex.artofproblemsolving.com/9/1/3/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png\" class=\"latex\" alt=\"$\\Gamma$\" style=\"vertical-align: 0px\" width=\"11\" height=\"13\" /> at <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />, with <img src=\"//latex.artofproblemsolving.com/5/1/6/516347f8d3b28b18096a75c16e7fd7310cd14f16.png\" class=\"latex\" alt=\"$X \\ne C$\" style=\"vertical-align: -4px\" width=\"54\" height=\"17\" />. The line <img src=\"//latex.artofproblemsolving.com/b/7/a/b7a4b9c32938e96f30b59dcb29f410cd4c2e3982.png\" class=\"latex\" alt=\"$BX$\" width=\"30\" height=\"12\" /> and the line tangent to <img src=\"//latex.artofproblemsolving.com/9/1/3/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png\" class=\"latex\" alt=\"$\\Gamma$\" style=\"vertical-align: 0px\" width=\"11\" height=\"13\" /> at <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> intersect at <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" />. Let <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> be the point on segment <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> such that <img src=\"//latex.artofproblemsolving.com/1/7/7/177255968e300ccd0105d8eb417e39ed278f810d.png\" class=\"latex\" alt=\"$YP = YA$\" style=\"vertical-align: -1px\" width=\"83\" height=\"14\" />, with <img src=\"//latex.artofproblemsolving.com/c/a/0/ca011d726ffc516194a74b1b72ad809a9b188f1e.png\" class=\"latex\" alt=\"$P \\ne A$\" style=\"vertical-align: -4px\" width=\"54\" height=\"18\" />, and let <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> be the point where <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> intersects the line parallel to <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> passing through <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" />. Show that <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> is the midpoint of <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" />.\n</p><p><b>Note:</b> The circumcircle of a triangle is the circle passing through its three vertices.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2021_OIM_Problems/Problem_2&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://olcoma.ac.cr/internacional/oim-2021/examenes\">https://olcoma.ac.cr/internacional/oim-2021/examenes</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907223241\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.017 seconds\nReal time usage: 0.018 seconds\nPreprocessor visited node count: 252/1000000\nPreprocessor generated node count: 568/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4160/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.257      1 Template:Solution\n100.00%    1.257      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26153-0!canonical and timestamp 20240907223241 and revision id 207211\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://olcoma.ac.cr/internacional/oim-2021/examenes"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2021_OIM_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2021_OIM_Problems/Problem_2",
+          "byteoffset": 926,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2021_OIM_Problems/Problem_2",
+          "byteoffset": 955,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2021 OIM Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2021 OIM Problems/Problem 3": {
+    "parse": {
+      "title": "2021 OIM Problems/Problem 3",
+      "pageid": 26154,
+      "revid": 207213,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/d/0/4/d0461fe8d09e9ec7b5fe6e81320800dfbaf0cb5e.png\" class=\"latex\" alt=\"$a_1, a_2, a_3, \\cdots$\" style=\"vertical-align: -3px\" width=\"95\" height=\"11\" /> be a sequence of positive integers and let <img src=\"//latex.artofproblemsolving.com/f/f/2/ff2553c2dc4ee9978f740a4c14d5f90891f71721.png\" class=\"latex\" alt=\"$b_1, b_2, b_3, \\cdots$\" style=\"vertical-align: -4px\" width=\"96\" height=\"18\" /> be the sequence of real numbers given by\n</p><p><img src=\"//latex.artofproblemsolving.com/c/e/8/ce84c9832d5d0d9aacdb6c835f0bcd63bc83d774.png\" class=\"latexcenter\" alt=\"\\[b_n=\\frac{a_1a_2,\\cdots a_n}{a_1+a_2+\\cdots + a_n}, \\text{ for } n \\ge 1.\\]\" width=\"272\" height=\"35\" />\n</p><p>Show that if among every one million consecutive terms of the sequence <img src=\"//latex.artofproblemsolving.com/f/f/2/ff2553c2dc4ee9978f740a4c14d5f90891f71721.png\" class=\"latex\" alt=\"$b_1, b_2, b_3, \\cdots$\" style=\"vertical-align: -4px\" width=\"96\" height=\"18\" /> there is at least one integer, then there is some <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/9/7/f/97f29ef2ddbc15df44dc61987cefa60869940d75.png\" class=\"latex\" alt=\"$b_k &gt; 2021^{2021}$\" style=\"vertical-align: -4px\" width=\"106\" height=\"20\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2021_OIM_Problems/Problem_3&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://olcoma.ac.cr/internacional/oim-2021/examenes\">https://olcoma.ac.cr/internacional/oim-2021/examenes</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907223239\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.013 seconds\nReal time usage: 0.014 seconds\nPreprocessor visited node count: 72/1000000\nPreprocessor generated node count: 168/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1130/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.309      1 Template:Solution\n100.00%    1.309      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26154-0!canonical and timestamp 20240907223239 and revision id 207213\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://olcoma.ac.cr/internacional/oim-2021/examenes"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2021_OIM_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2021_OIM_Problems/Problem_3",
+          "byteoffset": 478,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2021_OIM_Problems/Problem_3",
+          "byteoffset": 507,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2021 OIM Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2021 OIM Problems/Problem 4": {
+    "parse": {
+      "title": "2021 OIM Problems/Problem 4",
+      "pageid": 26155,
+      "revid": 207214,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/f/5/8/f58a67a26ed639a87104e27cf97e81d86b040fbc.png\" class=\"latex\" alt=\"$a,b,c,x,y,z$\" style=\"vertical-align: -3px\" width=\"94\" height=\"16\" /> be real numbers such that\n</p><p><img src=\"//latex.artofproblemsolving.com/b/f/f/bfff796c3b6ba4c7d7a4ce071aed963145cf5028.png\" class=\"latexcenter\" alt=\"\\[a^2+x^2=b^2+y^2=c^2+z^2=(a+b)^2+(x+y)^2=(b+c)^2+(y+z)^2=(c+a)^2+(z+x)^2\\]\" width=\"626\" height=\"20\" />\n</p><p>Show that <img src=\"//latex.artofproblemsolving.com/1/d/f/1dfab0d52f902ccb11daedd667eda3578ce818f9.png\" class=\"latex\" alt=\"$a^2+b^2+c^2=x^2+y^2+z^2$\" style=\"vertical-align: -4px\" width=\"214\" height=\"20\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2021_OIM_Problems/Problem_4&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://olcoma.ac.cr/internacional/oim-2021/examenes\">https://olcoma.ac.cr/internacional/oim-2021/examenes</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908060017\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.020 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 45/1000000\nPreprocessor generated node count: 108/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 597/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.045      1 Template:Solution\n100.00%    2.045      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26155-0!canonical and timestamp 20240908060017 and revision id 207214\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://olcoma.ac.cr/internacional/oim-2021/examenes"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2021_OIM_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2021_OIM_Problems/Problem_4",
+          "byteoffset": 207,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2021_OIM_Problems/Problem_4",
+          "byteoffset": 236,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2021 OIM Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2021 OIM Problems/Problem 5": {
+    "parse": {
+      "title": "2021 OIM Problems/Problem 5",
+      "pageid": 26156,
+      "revid": 207215,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For a finite set <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> of integers, we define <img src=\"//latex.artofproblemsolving.com/9/b/f/9bfc8dcf67f26d7a9338dfd9c58afbf9f6a62cdf.png\" class=\"latex\" alt=\"$S(C)$\" style=\"vertical-align: -5px\" width=\"42\" height=\"20\" /> to be the sum of the elements of <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />. Find two nonempty sets <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />, whose intersection is empty and whose union is the set <img src=\"//latex.artofproblemsolving.com/8/e/0/8e01767bed680c72b4c06f3735d4b8b17c8b3d39.png\" class=\"latex\" alt=\"${1, 2, \\cdots , 2021}$\" style=\"vertical-align: -4px\" width=\"108\" height=\"17\" />, such that the product <img src=\"//latex.artofproblemsolving.com/e/b/0/eb0ba3e513ae15c309d442964543d8eb580b0260.png\" class=\"latex\" alt=\"$S(A)S(B)$\" style=\"vertical-align: -5px\" width=\"83\" height=\"20\" /> is a perfect square.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2021_OIM_Problems/Problem_5&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://olcoma.ac.cr/internacional/oim-2021/examenes\">https://olcoma.ac.cr/internacional/oim-2021/examenes</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907062259\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.012 seconds\nReal time usage: 0.013 seconds\nPreprocessor visited node count: 81/1000000\nPreprocessor generated node count: 188/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1116/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.321      1 Template:Solution\n100.00%    1.321      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26156-0!canonical and timestamp 20240907062259 and revision id 207215\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://olcoma.ac.cr/internacional/oim-2021/examenes"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2021_OIM_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2021_OIM_Problems/Problem_5",
+          "byteoffset": 352,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2021_OIM_Problems/Problem_5",
+          "byteoffset": 381,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2021 OIM Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2021 OIM Problems/Problem 6": {
+    "parse": {
+      "title": "2021 OIM Problems/Problem 6",
+      "pageid": 26157,
+      "revid": 207217,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider a regular polygon with <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> sides, <img src=\"//latex.artofproblemsolving.com/d/1/b/d1b94ea0cc3ac2d353695f157196aed47896fefc.png\" class=\"latex\" alt=\"$n \\ge 4$\" style=\"vertical-align: -2px\" width=\"44\" height=\"14\" />, and let <img src=\"//latex.artofproblemsolving.com/1/2/d/12d58aa29201da09d8e620f8698e3a37547f6b4a.png\" class=\"latex\" alt=\"$V$\" width=\"14\" height=\"12\" /> be a subset of <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" /> vertices of the polygon. Show that if <img src=\"//latex.artofproblemsolving.com/7/a/e/7aed0243e7e4a839989dd9ca493503f6cf4978c8.png\" class=\"latex\" alt=\"$r(r - 3) \\ge n$\" style=\"vertical-align: -5px\" width=\"100\" height=\"20\" />, then there exist at least two congruent triangles whose\nvertices are in <img src=\"//latex.artofproblemsolving.com/1/2/d/12d58aa29201da09d8e620f8698e3a37547f6b4a.png\" class=\"latex\" alt=\"$V$\" width=\"14\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2021_OIM_Problems/Problem_6&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2021_OIM_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://olcoma.ac.cr/internacional/oim-2021/examenes\">https://olcoma.ac.cr/internacional/oim-2021/examenes</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907223237\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.013 seconds\nReal time usage: 0.013 seconds\nPreprocessor visited node count: 72/1000000\nPreprocessor generated node count: 168/1000000\nPost‐expand include size: 423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 931/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.370      1 Template:Solution\n100.00%    1.370      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:26157-0!canonical and timestamp 20240907223237 and revision id 207217\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://olcoma.ac.cr/internacional/oim-2021/examenes"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2021_OIM_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2021_OIM_Problems/Problem_6",
+          "byteoffset": 300,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2021_OIM_Problems/Problem_6",
+          "byteoffset": 329,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2021 OIM Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

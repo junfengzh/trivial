@@ -1,0 +1,999 @@
+{
+  "2005 Indonesia MO Problems/Problem 1": {
+    "parse": {
+      "title": "2005 Indonesia MO Problems/Problem 1",
+      "pageid": 17739,
+      "revid": 188542,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> be a positive integer. Determine the number of triangles (non congruent) with integral side lengths and the longest side length is <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a href=\"/wiki/index.php/WLOG\" class=\"mw-redirect\" title=\"WLOG\">WLOG</a>, let <img src=\"//latex.artofproblemsolving.com/a/2/3/a2302b55976150e405d90fb9ab199d6a8a954dcf.png\" class=\"latex\" alt=\"$n \\ge y \\ge x$\" style=\"vertical-align: -4px\" width=\"81\" height=\"17\" />.  The original problem is essentially asking for the number of <a href=\"/wiki/index.php/Lattice_points\" class=\"mw-redirect\" title=\"Lattice points\">lattice points</a> that lie within this bound as well as <img src=\"//latex.artofproblemsolving.com/4/1/7/417b6770e75662b1c58825662d0f76cbc115f6e7.png\" class=\"latex\" alt=\"$x + y &gt; n$\" style=\"vertical-align: -3px\" width=\"77\" height=\"14\" />.\n</p><p>By experimenting with smaller graphs, we can split into two cases.\n</p><p><b>Case 1: <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is even</b>\n</p><p>Below is the case where <img src=\"//latex.artofproblemsolving.com/5/2/1/5218af40079081e694d8b82eeac2d368ef6ea76a.png\" class=\"latex\" alt=\"$n = 4$\" style=\"vertical-align: 0px\" width=\"44\" height=\"12\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/3/3/2/332e706b3f356494811f063d2281f364e23779ce.png\" class=\"latexcenter\" alt=\"[asy]  import graph; size(8.22 cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-1.2,xmax=5.2,ymin=-1.2,ymax=5.2;  pen cqcqcq=rgb(0.75,0.75,0.75), evevff=rgb(0.9,0.9,1), zzttqq=rgb(0.6,0.2,0);   /*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(&quot;2 2&quot;); real gx=1,gy=1; for(real i=ceil(xmin/gx)*gx;i&lt;=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i&lt;=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);  Label laxis; laxis.p=fontsize(10);  xaxis(xmin,xmax,defaultpen+black,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true); yaxis(ymin,ymax,defaultpen+black,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true); clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);  draw((-1,5)--(5,-1),dotted,Arrows); draw((-1,-1)--(5,5),Arrows); draw((4,5)--(4,-1),Arrows); draw((5,4)--(-1,4),Arrows);  [/asy]\" width=\"392\" height=\"392\" />\n</p><p>The line <img src=\"//latex.artofproblemsolving.com/0/9/3/0931641e47d6a5b7dc098c8fe97118ff08e37e57.png\" class=\"latex\" alt=\"$x+y&gt;n$\" style=\"vertical-align: -3px\" width=\"77\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/f/1/3/f13f250f1481908fb7f400238ab1c0c2b04d8c60.png\" class=\"latex\" alt=\"$y \\ge x$\" style=\"vertical-align: -3px\" width=\"44\" height=\"15\" /> intersect at <img src=\"//latex.artofproblemsolving.com/c/7/e/c7e82b8e5ad252124750f9f0bed670d2301e9fdb.png\" class=\"latex\" alt=\"$(\\frac{n}{2},\\frac{n}{2})$\" style=\"vertical-align: -12px\" width=\"50\" height=\"33\" />.  By symmetry, for each of the four line segments from the diagonal, there are <img src=\"//latex.artofproblemsolving.com/f/2/7/f275b1f33e3c37ece0e41964f0bcb806e95b46b7.png\" class=\"latex\" alt=\"$\\frac{n}{2}$\" style=\"vertical-align: -12px\" width=\"13\" height=\"33\" /> lattice points.  Since there are a total of <img src=\"//latex.artofproblemsolving.com/5/7/e/57efb5c0b218135087ac110b8467426b528d7856.png\" class=\"latex\" alt=\"$(n+1)^2$\" style=\"vertical-align: -4px\" width=\"62\" height=\"19\" /> lattice points within <img src=\"//latex.artofproblemsolving.com/6/9/5/69566810c7585216134f61eeba73015ce3375232.png\" class=\"latex\" alt=\"$0 \\le x,y \\le n$\" style=\"vertical-align: -3px\" width=\"96\" height=\"16\" />, by symmetry, each section formed from the diagonals has <img src=\"//latex.artofproblemsolving.com/4/f/a/4fa4193c0e27329d80789d2aede66e922027e86c.png\" class=\"latex\" alt=\"$\\frac{(n+1)^2 - 2n - 1}{4} = \\frac{n^2}{4}$\" style=\"vertical-align: -13px\" width=\"186\" height=\"39\" /> lattice points.  We want the points on lines <img src=\"//latex.artofproblemsolving.com/8/3/3/833366d62bce12012358da85fc97ac37ff2ddbfd.png\" class=\"latex\" alt=\"$y = n$\" style=\"vertical-align: -3px\" width=\"44\" height=\"11\" />, <img src=\"//latex.artofproblemsolving.com/a/4/0/a40fee4603b4536f856dde720ee499468ace443f.png\" class=\"latex\" alt=\"$y = x$\" style=\"vertical-align: -4px\" width=\"46\" height=\"13\" /> and not <img src=\"//latex.artofproblemsolving.com/7/3/d/73d4d19d8d25d19c651e83a48bdac3abd2c459d4.png\" class=\"latex\" alt=\"$x+y=n$\" style=\"vertical-align: -3px\" width=\"77\" height=\"14\" />, so there are <img src=\"//latex.artofproblemsolving.com/e/2/5/e25977a90ca4893ce981920983d8343b49530504.png\" class=\"latex\" alt=\"$\\frac{n^2 + 2n}{4}$\" style=\"vertical-align: -13px\" width=\"63\" height=\"39\" /> points that satisfy the conditions if <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is even.\n</p><p><b>Case 1: <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is odd</b>\n</p><p>Below is the case where <img src=\"//latex.artofproblemsolving.com/e/c/3/ec37f4048b4f92c2227c9bfe79fcb7d52ab99c9c.png\" class=\"latex\" alt=\"$n = 5$\" width=\"43\" height=\"12\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/c/b/f/cbf8b2523721841616ed3f38b46f072bbdb51af2.png\" class=\"latexcenter\" alt=\"[asy]  import graph; size(8.22 cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-1.2,xmax=6.2,ymin=-1.2,ymax=6.2;  pen cqcqcq=rgb(0.75,0.75,0.75), evevff=rgb(0.9,0.9,1), zzttqq=rgb(0.6,0.2,0);   /*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(&quot;2 2&quot;); real gx=1,gy=1; for(real i=ceil(xmin/gx)*gx;i&lt;=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i&lt;=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);  Label laxis; laxis.p=fontsize(10);  xaxis(xmin,xmax,defaultpen+black,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true); yaxis(ymin,ymax,defaultpen+black,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true); clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);  draw((-1,6)--(6,-1),dotted,Arrows); draw((-1,-1)--(6,6),Arrows); draw((5,6)--(5,-1),Arrows); draw((6,5)--(-1,5),Arrows);  [/asy]\" width=\"392\" height=\"392\" />\n</p><p>The line <img src=\"//latex.artofproblemsolving.com/0/9/3/0931641e47d6a5b7dc098c8fe97118ff08e37e57.png\" class=\"latex\" alt=\"$x+y&gt;n$\" style=\"vertical-align: -3px\" width=\"77\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/f/1/3/f13f250f1481908fb7f400238ab1c0c2b04d8c60.png\" class=\"latex\" alt=\"$y \\ge x$\" style=\"vertical-align: -3px\" width=\"44\" height=\"15\" /> intersect at <img src=\"//latex.artofproblemsolving.com/c/7/e/c7e82b8e5ad252124750f9f0bed670d2301e9fdb.png\" class=\"latex\" alt=\"$(\\frac{n}{2},\\frac{n}{2})$\" style=\"vertical-align: -12px\" width=\"50\" height=\"33\" />, but that value is not an integer.  By symmetry, for each of the four line segments from the diagonal, there are <img src=\"//latex.artofproblemsolving.com/3/6/f/36ff83257ab4ee6b8fa29edf847deb73d5778815.png\" class=\"latex\" alt=\"$\\frac{n+1}{2}$\" style=\"vertical-align: -12px\" width=\"44\" height=\"37\" /> lattice points.  Since there are a total of <img src=\"//latex.artofproblemsolving.com/5/7/e/57efb5c0b218135087ac110b8467426b528d7856.png\" class=\"latex\" alt=\"$(n+1)^2$\" style=\"vertical-align: -4px\" width=\"62\" height=\"19\" /> lattice points within <img src=\"//latex.artofproblemsolving.com/6/9/5/69566810c7585216134f61eeba73015ce3375232.png\" class=\"latex\" alt=\"$0 \\le x,y \\le n$\" style=\"vertical-align: -3px\" width=\"96\" height=\"16\" />, by symmetry, each section formed from the diagonals has <img src=\"//latex.artofproblemsolving.com/f/6/f/f6f2da5c39b6103322e5d13e931148177552825e.png\" class=\"latex\" alt=\"$\\frac{(n+1)^2 - 2n - 2}{4} = \\frac{n^2 - 1}{4}$\" style=\"vertical-align: -13px\" width=\"217\" height=\"39\" /> lattice points.  We want the points on lines <img src=\"//latex.artofproblemsolving.com/8/3/3/833366d62bce12012358da85fc97ac37ff2ddbfd.png\" class=\"latex\" alt=\"$y = n$\" style=\"vertical-align: -3px\" width=\"44\" height=\"11\" />, <img src=\"//latex.artofproblemsolving.com/a/4/0/a40fee4603b4536f856dde720ee499468ace443f.png\" class=\"latex\" alt=\"$y = x$\" style=\"vertical-align: -4px\" width=\"46\" height=\"13\" /> and not <img src=\"//latex.artofproblemsolving.com/7/3/d/73d4d19d8d25d19c651e83a48bdac3abd2c459d4.png\" class=\"latex\" alt=\"$x+y=n$\" style=\"vertical-align: -3px\" width=\"77\" height=\"14\" />, so there are <img src=\"//latex.artofproblemsolving.com/d/9/8/d9895b2ba6016f046b966696ef77fee0200aac26.png\" class=\"latex\" alt=\"$\\frac{n^2 + 2n + 1}{4}$\" style=\"vertical-align: -13px\" width=\"94\" height=\"39\" /> points that satisfy the conditions if <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is odd.\n</p><p>In summary, the number of triangles that satisfy the conditions are <img src=\"//latex.artofproblemsolving.com/c/3/3/c33c22faf49f2d4e5e977c40cde37e10a1b2f5d1.png\" class=\"latex\" alt=\"$\\boxed{\\frac{n^2 + 2n}{4} (n \\text{ is even)}}$\" style=\"vertical-align: -18px\" width=\"155\" height=\"50\" /> and <img src=\"//latex.artofproblemsolving.com/7/7/8/7780a87ccf94d1881f4caccd41e14936162d15ba.png\" class=\"latex\" alt=\"$\\boxed{\\frac{n^2 + 2n + 1}{4} (n \\text{ is odd)}}$\" style=\"vertical-align: -18px\" width=\"181\" height=\"50\" />, or <img src=\"//latex.artofproblemsolving.com/f/8/b/f8bc9c507f9c4b7a750f9eb5a42cc8e503e36bd0.png\" class=\"latex\" alt=\"$\\boxed{\\lceil \\frac{n^2 + 2n}{4} \\rceil}$\" style=\"vertical-align: -19px\" width=\"94\" height=\"52\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Indonesia_MO\" title=\"2005 Indonesia MO\">2005 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems\" title=\"2005 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_2\" title=\"2005 Indonesia MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_3\" title=\"2005 Indonesia MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_4\" title=\"2005 Indonesia MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_5\" title=\"2005 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_6\" title=\"2005 Indonesia MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_7\" title=\"2005 Indonesia MO Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_8\" title=\"2005 Indonesia MO Problems/Problem 8\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_2\" title=\"2005 Indonesia MO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211723\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.033 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 370/1000000\nPreprocessor generated node count: 920/1000000\nPost‐expand include size: 1007/2097152 bytes\nTemplate argument size: 59/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 8370/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.096      1 Template:Indonesia_MO_box\n100.00%    2.096      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17739-0!canonical and timestamp 20240907211723 and revision id 188542\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Lattice points"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "WLOG"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_1",
+          "byteoffset": 182,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_1",
+          "byteoffset": 4030,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Indonesia MO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Indonesia MO Problems/Problem 2": {
+    "parse": {
+      "title": "2005 Indonesia MO Problems/Problem 2",
+      "pageid": 16759,
+      "revid": 97756,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For an arbitrary positive integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, define <img src=\"//latex.artofproblemsolving.com/7/5/d/75dfcf7177739e768582307df28f20b900dab55c.png\" class=\"latex\" alt=\"$p(n)$\" style=\"vertical-align: -4px\" width=\"33\" height=\"18\" /> as the product of the digits of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> (in decimal). Find all positive integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> such that <img src=\"//latex.artofproblemsolving.com/1/1/6/11667cb05e252d10862c9c65b9e7732c65f2c7da.png\" class=\"latex\" alt=\"$11 p(n)=n^2-2005$\" style=\"vertical-align: -4px\" width=\"152\" height=\"19\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>First we will prove that <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> must have 2 digits.  Afterward, we'll let <img src=\"//latex.artofproblemsolving.com/2/d/2/2d2bcbee57f94857cab17dc0ee5157cf92236a04.png\" class=\"latex\" alt=\"$n = 10a + b$\" style=\"vertical-align: -1px\" width=\"93\" height=\"14\" /> and will solve for <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />.\n</p><p><br />\n<b>Lemma: <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> must have 2 digits</b><br />\nFirst, if <img src=\"//latex.artofproblemsolving.com/9/7/b/97bb685e1f0bf6f1c095e1df86dd7c8e45d130f1.png\" class=\"latex\" alt=\"$n &lt; 10$\" style=\"vertical-align: 0px\" width=\"52\" height=\"13\" />, then <img src=\"//latex.artofproblemsolving.com/3/2/3/3239394fabb67a6a7519b5304aba99761ab4c4f0.png\" class=\"latex\" alt=\"$n^2 - 2005$\" width=\"76\" height=\"15\" /> is a negative number, so <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> must have more than 1 digit.\n</p><p><br />\nNext, we will show that <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> can not have 3 digits.  Since 2005 is not a perfect square, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> can not have any zeroes.  That means the minimum value of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> that has <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> digits is <img src=\"//latex.artofproblemsolving.com/1/f/a/1fa638ba30cd0ac9d53c1e9314edbb8bb383bd9b.png\" class=\"latex\" alt=\"$\\frac{10^k - 1}{9}$\" style=\"vertical-align: -12px\" width=\"60\" height=\"39\" />.  The maximum value of <img src=\"//latex.artofproblemsolving.com/7/5/d/75dfcf7177739e768582307df28f20b900dab55c.png\" class=\"latex\" alt=\"$p(n)$\" style=\"vertical-align: -4px\" width=\"33\" height=\"18\" /> with three digits is <img src=\"//latex.artofproblemsolving.com/1/c/e/1ce7c0a6485914eedfae663f0a949623ea5df66e.png\" class=\"latex\" alt=\"$9^k$\" width=\"16\" height=\"15\" />.  For the case where <img src=\"//latex.artofproblemsolving.com/7/f/9/7f96a3de68cfb881f4b3cc002ec222bba93f1e16.png\" class=\"latex\" alt=\"$k = 3$\" width=\"43\" height=\"12\" />, the minimum number is <img src=\"//latex.artofproblemsolving.com/5/8/d/58d1eed7be2e1dcbfd4f7fe86fba2eb7566d8bbf.png\" class=\"latex\" alt=\"$111$\" style=\"vertical-align: 0px\" width=\"26\" height=\"12\" /> and the maximum value of <img src=\"//latex.artofproblemsolving.com/7/5/d/75dfcf7177739e768582307df28f20b900dab55c.png\" class=\"latex\" alt=\"$p(n)$\" style=\"vertical-align: -4px\" width=\"33\" height=\"18\" /> is <img src=\"//latex.artofproblemsolving.com/8/3/a/83ad96d22f37773114fd550dbd82d2bcd95e51fb.png\" class=\"latex\" alt=\"$729$\" width=\"26\" height=\"12\" />.  Since <img src=\"//latex.artofproblemsolving.com/3/5/1/351d853542b266575cc6f4b4ef797d9cb70342b7.png\" class=\"latex\" alt=\"$111^2 - 2005 &gt; 11 \\cdot 729$\" style=\"vertical-align: 0px\" width=\"175\" height=\"15\" />, all three-digit values of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> more than 111 have <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2f2468b2e515c0aa9a2e399437613c90fb1320.png\" class=\"latex\" alt=\"$11 p(n) &lt; n^2 - 2005$\" style=\"vertical-align: -4px\" width=\"152\" height=\"19\" />, so <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> can not be a 3-digit number.\n</p><p><br />\nFinally, we will use <a href=\"/wiki/index.php/Induction\" title=\"Induction\">induction</a> to show that if <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> can not have four or more digits.  If <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> has <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> digits, where <img src=\"//latex.artofproblemsolving.com/9/f/6/9f6ac472f19141dc7e30aec12019de3d23847e58.png\" class=\"latex\" alt=\"$k \\ge 4$\" style=\"vertical-align: -2px\" width=\"43\" height=\"15\" />, then the maximum value of <img src=\"//latex.artofproblemsolving.com/7/5/d/75dfcf7177739e768582307df28f20b900dab55c.png\" class=\"latex\" alt=\"$p(n)$\" style=\"vertical-align: -4px\" width=\"33\" height=\"18\" /> is <img src=\"//latex.artofproblemsolving.com/1/c/e/1ce7c0a6485914eedfae663f0a949623ea5df66e.png\" class=\"latex\" alt=\"$9^k$\" width=\"16\" height=\"15\" /> while the minimum value of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is <img src=\"//latex.artofproblemsolving.com/3/9/5/395fd7cf809c8176ede85020b19c35645a920c5f.png\" class=\"latex\" alt=\"$10^{k-1}$\" style=\"vertical-align: 0px\" width=\"41\" height=\"16\" />.  For the base case, since <img src=\"//latex.artofproblemsolving.com/9/7/4/9745a9e8d37c2522bda3e821deca1d19054553de.png\" class=\"latex\" alt=\"$11 \\cdot 9^4 &lt; (10^3)^2 - 2005$\" style=\"vertical-align: -4px\" width=\"177\" height=\"19\" />, we would have <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2f2468b2e515c0aa9a2e399437613c90fb1320.png\" class=\"latex\" alt=\"$11 p(n) &lt; n^2 - 2005$\" style=\"vertical-align: -4px\" width=\"152\" height=\"19\" /> for all four digit numbers, so no four digit number would work.\n</p><p><br />\nAssume that <img src=\"//latex.artofproblemsolving.com/6/f/8/6f8c80f0226f54f69456ac4517c52649c361e2ef.png\" class=\"latex\" alt=\"$11 \\cdot 9^k &lt; (10^{k-1})^2 - 2005$\" style=\"vertical-align: -4px\" width=\"195\" height=\"20\" />, where <img src=\"//latex.artofproblemsolving.com/9/f/6/9f6ac472f19141dc7e30aec12019de3d23847e58.png\" class=\"latex\" alt=\"$k \\ge 4$\" style=\"vertical-align: -2px\" width=\"43\" height=\"15\" />.  Multiplying both sides by 100 and adding 2005(99) results in\n<img src=\"//latex.artofproblemsolving.com/9/9/8/9989af751bdd72ef680b16e964f8cb4b2f7b4d81.png\" class=\"latexcenter\" alt=\"\\begin{align*} 110 \\cdot 9^k + 2005(99) &amp;&lt; (10^k)^2 - 2005 \\\\ 11(10 \\cdot 9^k + 2005(9)) &amp;&lt; (10^k)^2 - 2005 \\\\ 11(9 \\cdot 9^k + 9^k + 2005(9)) &amp;&lt; (10^k)^2 - 2005 \\\\ 11 \\cdot 9^{k+1} + 11(9^k + 2005(9)) &amp;&lt; (10^k)^2 - 2005 \\\\ 11 \\cdot 9^{k+1} &amp;&lt; (10^k)^2 - 2005. \\end{align*}\" width=\"351\" height=\"133\" />\nWith the induction step complete, we've shown that <img src=\"//latex.artofproblemsolving.com/6/f/8/6f8c80f0226f54f69456ac4517c52649c361e2ef.png\" class=\"latex\" alt=\"$11 \\cdot 9^k &lt; (10^{k-1})^2 - 2005$\" style=\"vertical-align: -4px\" width=\"195\" height=\"20\" /> if <img src=\"//latex.artofproblemsolving.com/9/f/6/9f6ac472f19141dc7e30aec12019de3d23847e58.png\" class=\"latex\" alt=\"$k \\ge 4$\" style=\"vertical-align: -2px\" width=\"43\" height=\"15\" />.  Since <img src=\"//latex.artofproblemsolving.com/1/5/9/159304f4b206e258fa37f67320743bd21da4f1c0.png\" class=\"latex\" alt=\"$11 p(n) \\le 11 \\cdot 9^k$\" style=\"vertical-align: -4px\" width=\"124\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/8/d/8/8d8f971af43f73836967a694911f8b745e38e91d.png\" class=\"latex\" alt=\"$(10^{k-1})^2 - 2005 \\le n^2 - 2005$\" style=\"vertical-align: -4px\" width=\"224\" height=\"20\" />, we have <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2f2468b2e515c0aa9a2e399437613c90fb1320.png\" class=\"latex\" alt=\"$11 p(n) &lt; n^2 - 2005$\" style=\"vertical-align: -4px\" width=\"152\" height=\"19\" />, so <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> can not be number with four or more digits.  Thus, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> must be a two-digit number. <img src=\"//latex.artofproblemsolving.com/6/f/c/6fc5105471ea92e40beac90d6fbd8ed846ab6b8b.png\" class=\"latex\" alt=\"$\\blacktriangleright$\" style=\"vertical-align: -1px\" width=\"12\" height=\"11\" />\n</p><p><br />\nFrom the Lemma, let <img src=\"//latex.artofproblemsolving.com/2/d/2/2d2bcbee57f94857cab17dc0ee5157cf92236a04.png\" class=\"latex\" alt=\"$n = 10a + b$\" style=\"vertical-align: -1px\" width=\"93\" height=\"14\" />.  Substitution results in\n<img src=\"//latex.artofproblemsolving.com/f/2/5/f25617914be0c04f54787a0005147bb4b70b71f6.png\" class=\"latexcenter\" alt=\"\\begin{align*} 11ab &amp;= (10a+b)^2 - 2005 \\\\ 11ab &amp;= 100a^2 + 20ab + b^2 - 2005 \\\\ 2005 &amp;= 100a^2 + 9ab + b^2. \\end{align*}\" width=\"257\" height=\"72\" />\nTaking the equation <a href=\"/wiki/index.php/Modulo\" class=\"mw-redirect\" title=\"Modulo\">modulo</a> 4, we have <img src=\"//latex.artofproblemsolving.com/f/0/2/f026d5554fa66357d0ee71d4f81f7462fa318212.png\" class=\"latex\" alt=\"$ab + b^2 \\equiv 1 \\pmod{4}$\" style=\"vertical-align: -4px\" width=\"159\" height=\"19\" />.  That means <img src=\"//latex.artofproblemsolving.com/7/8/e/78ed257fb978e79adaea96ce64bd618d289162d1.png\" class=\"latex\" alt=\"$a \\equiv 0 \\pmod{4}$\" style=\"vertical-align: -4px\" width=\"113\" height=\"18\" />.  Let <img src=\"//latex.artofproblemsolving.com/a/6/2/a62b32128dbf99776d37e190b7708a5a318bd43f.png\" class=\"latex\" alt=\"$a = 4a_1$\" style=\"vertical-align: -4px\" width=\"62\" height=\"17\" />, resulting in\n<img src=\"//latex.artofproblemsolving.com/0/f/7/0f7a6d27b86e2cdcf421a41976592081521f7d20.png\" class=\"latexcenter\" alt=\"\\[2005 = 1600a_1^2 + 36a_1b + b^2.\\]\" width=\"220\" height=\"19\" />\nIf <img src=\"//latex.artofproblemsolving.com/1/c/5/1c5c8e85c919cdbfe751cc06f02bd7de5e0d3fde.png\" class=\"latex\" alt=\"$a_1 &gt; 1$\" style=\"vertical-align: -2px\" width=\"49\" height=\"14\" />, then <img src=\"//latex.artofproblemsolving.com/d/5/c/d5c8999a23445ce12e9cbf893ca17b51e4121403.png\" class=\"latex\" alt=\"$1600a_1^2 &gt; 2005$\" style=\"vertical-align: -4px\" width=\"113\" height=\"19\" />, so <img src=\"//latex.artofproblemsolving.com/b/1/1/b1171ce641826e9aca894162f9c15a57f6b46e09.png\" class=\"latex\" alt=\"$a_1 = 1$\" style=\"vertical-align: -2px\" width=\"49\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/2/f/9/2f98b3f405113241659d8c8db2ea3480346db4d0.png\" class=\"latex\" alt=\"$a = 4$\" style=\"vertical-align: 0px\" width=\"43\" height=\"12\" />.  Substitution results in\n<img src=\"//latex.artofproblemsolving.com/0/c/9/0c913ef0576cd02d1104ef2867a99d1dadcc43ec.png\" class=\"latexcenter\" alt=\"\\begin{align*} 2005 &amp;= 1600 + 36b + b^2 \\\\ 0 &amp;= b^2 + 36n - 405 \\\\ &amp;= (b-9)(b+45) \\end{align*}\" width=\"181\" height=\"72\" />\nThe only feasible value of <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> is <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />, so the only positive integer such that <img src=\"//latex.artofproblemsolving.com/0/4/4/044e1af540ed72254d7cbd427ee7b20c212e4d59.png\" class=\"latex\" alt=\"$11 p(n) = n^2 - 2005$\" style=\"vertical-align: -4px\" width=\"152\" height=\"19\" /> is <img src=\"//latex.artofproblemsolving.com/4/2/1/421fc4dd92b07b768ba57f5e489e184f57c0048d.png\" class=\"latex\" alt=\"$\\boxed{49}$\" style=\"vertical-align: -5px\" width=\"30\" height=\"23\" />.  When plugging the value in, the equality holds.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Indonesia_MO\" title=\"2005 Indonesia MO\">2005 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems\" title=\"2005 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_1\" title=\"2005 Indonesia MO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_1\" title=\"2005 Indonesia MO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_3\" title=\"2005 Indonesia MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_4\" title=\"2005 Indonesia MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_5\" title=\"2005 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_6\" title=\"2005 Indonesia MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_7\" title=\"2005 Indonesia MO Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_8\" title=\"2005 Indonesia MO Problems/Problem 8\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_3\" title=\"2005 Indonesia MO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211723\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.040 seconds\nReal time usage: 0.041 seconds\nPreprocessor visited node count: 607/1000000\nPreprocessor generated node count: 1440/1000000\nPost‐expand include size: 1044/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 11057/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.160      1 Template:Indonesia_MO_box\n100.00%    2.160      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:16759-0!canonical and timestamp 20240907211723 and revision id 97756\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Induction"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Modulo"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_2",
+          "byteoffset": 238,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_2",
+          "byteoffset": 3493,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Indonesia MO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Indonesia MO Problems/Problem 3": {
+    "parse": {
+      "title": "2005 Indonesia MO Problems/Problem 3",
+      "pageid": 17755,
+      "revid": 109839,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> be positive integers such that <img src=\"//latex.artofproblemsolving.com/4/9/7/497ee1d14a90ba7132bafbf4062967ced7ba56b3.png\" class=\"latex\" alt=\"$\\frac12\\left(\\sqrt{k+4\\sqrt{m}}-\\sqrt{k}\\right)$\" style=\"vertical-align: -17px\" width=\"176\" height=\"43\" /> is an integer.\n</p><p>(a) Prove that <img src=\"//latex.artofproblemsolving.com/6/d/b/6dbed5733821b674267de9296d47f5c1652c8f64.png\" class=\"latex\" alt=\"$\\sqrt{k}$\" style=\"vertical-align: -1px\" width=\"25\" height=\"18\" /> is rational.\n</p><p>(b) Prove that <img src=\"//latex.artofproblemsolving.com/6/d/b/6dbed5733821b674267de9296d47f5c1652c8f64.png\" class=\"latex\" alt=\"$\\sqrt{k}$\" style=\"vertical-align: -1px\" width=\"25\" height=\"18\" /> is a positive integer.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/6/c/2/6c2b3dadd03b4e35e6e833fab64593ba32c3c0fa.png\" class=\"latex\" alt=\"$\\frac12\\left(\\sqrt{k+4\\sqrt{m}}-\\sqrt{k}\\right) = n$\" style=\"vertical-align: -17px\" width=\"214\" height=\"43\" />, where all variables are integers.  Rearranging the expression results in <img src=\"//latex.artofproblemsolving.com/2/6/4/264b9618d0331a67010fe505cfa8b66341a1bdca.png\" class=\"latex\" alt=\"$\\sqrt{k+4\\sqrt{m}} = 2n + \\sqrt{k}$\" style=\"vertical-align: -8px\" width=\"182\" height=\"32\" />.\n</p><p><br />\nSquaring both sides results in <img src=\"//latex.artofproblemsolving.com/0/a/c/0ac688a56b3efe5ed32d362989e731c44a0c2b8e.png\" class=\"latex\" alt=\"$k+4\\sqrt{m} = 4n^2 + 4n\\sqrt{k} + k$\" style=\"vertical-align: -3px\" width=\"223\" height=\"21\" />, and rearranging terms results in <img src=\"//latex.artofproblemsolving.com/a/e/4/ae4dee8efa7cc1c2aef1905ffc2a36ca6fbdb335.png\" class=\"latex\" alt=\"$\\sqrt{m} = n^2 + n\\sqrt{k}$\" style=\"vertical-align: -4px\" width=\"134\" height=\"23\" />.\n</p><p><br />\nSquaring both sides results in <img src=\"//latex.artofproblemsolving.com/b/d/4/bd41a318006183cd0921f73fea24e5619a81f427.png\" class=\"latex\" alt=\"$m = n^4 + 2n^3 \\sqrt{k} + n^2 k$\" style=\"vertical-align: -1px\" width=\"183\" height=\"19\" />.  Solving for <img src=\"//latex.artofproblemsolving.com/6/d/b/6dbed5733821b674267de9296d47f5c1652c8f64.png\" class=\"latex\" alt=\"$\\sqrt{k}$\" style=\"vertical-align: -1px\" width=\"25\" height=\"18\" /> results in <img src=\"//latex.artofproblemsolving.com/f/d/5/fd51d58b3427cb79d596dbcfed1cd20b2e418d2e.png\" class=\"latex\" alt=\"$\\sqrt{k} = \\frac{m - n^4 - n^2 k}{2n^3}$\" style=\"vertical-align: -12px\" width=\"159\" height=\"39\" />.  Since the right side is rational, the left side must be rational.  Therefore, <img src=\"//latex.artofproblemsolving.com/6/d/b/6dbed5733821b674267de9296d47f5c1652c8f64.png\" class=\"latex\" alt=\"$\\sqrt{k}$\" style=\"vertical-align: -1px\" width=\"25\" height=\"18\" /> is rational, and since <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> is a positive integer, <img src=\"//latex.artofproblemsolving.com/6/d/b/6dbed5733821b674267de9296d47f5c1652c8f64.png\" class=\"latex\" alt=\"$\\sqrt{k}$\" style=\"vertical-align: -1px\" width=\"25\" height=\"18\" /> must be a positive integer.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Indonesia_MO\" title=\"2005 Indonesia MO\">2005 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems\" title=\"2005 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_2\" title=\"2005 Indonesia MO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_1\" title=\"2005 Indonesia MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_2\" title=\"2005 Indonesia MO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_4\" title=\"2005 Indonesia MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_5\" title=\"2005 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_6\" title=\"2005 Indonesia MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_7\" title=\"2005 Indonesia MO Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_8\" title=\"2005 Indonesia MO Problems/Problem 8\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_4\" title=\"2005 Indonesia MO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907175004\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.018 seconds\nReal time usage: 0.019 seconds\nPreprocessor visited node count: 175/1000000\nPreprocessor generated node count: 480/1000000\nPost‐expand include size: 1044/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2779/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.865      1 Template:Indonesia_MO_box\n100.00%    1.865      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17755-0!canonical and timestamp 20240907175004 and revision id 109839\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_3",
+          "byteoffset": 275,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_3",
+          "byteoffset": 1038,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Indonesia MO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Indonesia MO Problems/Problem 4": {
+    "parse": {
+      "title": "2005 Indonesia MO Problems/Problem 4",
+      "pageid": 17780,
+      "revid": 110350,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> be a point in triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> such that <img src=\"//latex.artofproblemsolving.com/7/c/1/7c1c5489a832d1fba1b0c0b925f97530d6091d46.png\" class=\"latex\" alt=\"$\\angle AMC=90^{\\circ}$\" width=\"108\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/3/b/3/3b30238d073239e8c392082376a76633ebd73fc4.png\" class=\"latex\" alt=\"$\\angle AMB=150^{\\circ}$\" style=\"vertical-align: 0px\" width=\"118\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/f/e/7/fe7b5ca66bc7e2b1fdc6b77f4d88d0e0af25fc20.png\" class=\"latex\" alt=\"$\\angle BMC=120^{\\circ}$\" style=\"vertical-align: 0px\" width=\"118\" height=\"13\" />. The centers of circumcircles of triangles <img src=\"//latex.artofproblemsolving.com/7/1/b/71b0b26d295a2b6379ca4d0ee45dacd21cdd3122.png\" class=\"latex\" alt=\"$AMC,AMB,BMC$\" style=\"vertical-align: -3px\" width=\"159\" height=\"16\" /> are <img src=\"//latex.artofproblemsolving.com/3/e/f/3efd92d7eef6e4b04b61b6ff7e353462a2607585.png\" class=\"latex\" alt=\"$P,Q,R$\" style=\"vertical-align: -3px\" width=\"56\" height=\"16\" />, respectively. Prove that the area of <img src=\"//latex.artofproblemsolving.com/b/4/a/b4a455d533200d7dfbd00731fa8bd9e8796fb803.png\" class=\"latex\" alt=\"$\\triangle PQR$\" style=\"vertical-align: -3px\" width=\"59\" height=\"17\" /> is greater than the area of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>From the above constraints, we can let <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> be <img src=\"//latex.artofproblemsolving.com/f/9/6/f9603ca3089464e548fc6f1366bc474e7efef8d9.png\" class=\"latex\" alt=\"$(0,0)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> be <img src=\"//latex.artofproblemsolving.com/6/2/e/62e6c71996e6eed72b0a8bd03c70644f04bcdbe3.png\" class=\"latex\" alt=\"$(0,2c)$\" style=\"vertical-align: -4px\" width=\"46\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> be <img src=\"//latex.artofproblemsolving.com/e/8/9/e8956fb40a7eee60c32534f42869f179ab4d1695.png\" class=\"latex\" alt=\"$(-2a,0)$\" style=\"vertical-align: -4px\" width=\"62\" height=\"18\" />, and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> be <img src=\"//latex.artofproblemsolving.com/2/a/0/2a054c082cfdef9167e25f100651def717e72b30.png\" class=\"latex\" alt=\"$(2b\\sqrt{3},-2b)$\" style=\"vertical-align: -4px\" width=\"93\" height=\"21\" />, where <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b29b358e825defa3e11b7d903d43ec31e5909a.png\" class=\"latex\" alt=\"$a,b,c$\" style=\"vertical-align: -4px\" width=\"43\" height=\"18\" /> are positive.  Note that the centers of circumcircles are on the <a href=\"/wiki/index.php/Perpendicular_bisector\" title=\"Perpendicular bisector\">perpendicular bisectors</a> of <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/8/0/6/8068607716f3c2549af1dc978d77a422ca7201dc.png\" class=\"latex\" alt=\"$BM$\" width=\"33\" height=\"12\" />, or <img src=\"//latex.artofproblemsolving.com/f/a/3/fa38fd42cdaa5db0dd4e0f7df98ae79a598eb627.png\" class=\"latex\" alt=\"$CM$\" width=\"33\" height=\"12\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/6/3/f/63fc90a0824900ea770e03a36fae1f83abe9f8cc.png\" class=\"latexcenter\" alt=\"[asy] import graph; size(9.22 cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-24.2,xmax=24.2,ymin=-24.2,ymax=24.2;  pen cqcqcq=rgb(0.75,0.75,0.75), evevff=rgb(0.9,0.9,1), zzttqq=rgb(0.6,0.2,0);   /*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(&quot;2 2&quot;); real gx=4,gy=4; for(real i=ceil(xmin/gx)*gx;i&lt;=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i&lt;=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);  Label laxis; laxis.p=fontsize(10);  clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);  draw((-24,0)--(24,0),Arrows); draw((0,24)--(0,-24),Arrows);  pair M=(0,0),A=(-16,0),C=(0,10),B=(6.928,-4),P=(-8,5),R=(7.506,5),Q=(-8,-21.856); dot(M); label(&quot;$(0,0)$&quot;,M,NW); draw(A--B--C--A); dot(A); label(&quot;$(0,2c)$&quot;,C,N); dot(B); label(&quot;$(2b\\sqrt{3},-2b)$&quot;,B,SE); dot(C); label(&quot;$(-2a,0)$&quot;,A,SW); draw(A--M,dotted); draw(B--M,dotted); draw(C--M,dotted);  dot(P); label(&quot;$P$&quot;,P,NW); dot(Q); label(&quot;$Q$&quot;,Q,S); dot(R); label(&quot;$R$&quot;,R,NE); draw(P--Q--R--P,dotted); [/asy]\" width=\"435\" height=\"438\" />\n</p><p>Because <img src=\"//latex.artofproblemsolving.com/0/1/9/01927bf7bbcf5688067a91087d440c77879049b6.png\" class=\"latex\" alt=\"$AMC$\" width=\"47\" height=\"13\" /> is a right triangle, the <a href=\"/wiki/index.php/Circumcenter\" title=\"Circumcenter\">circumcenter</a> of <img src=\"//latex.artofproblemsolving.com/3/4/3/3431b35dcd263cac56e5c8a8aed399ba0ce6fce2.png\" class=\"latex\" alt=\"$\\triangle AMC$\" width=\"63\" height=\"13\" /> is the <a href=\"/wiki/index.php/Midpoint\" title=\"Midpoint\">midpoint</a> of <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" />, so the coordinates of <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> are <img src=\"//latex.artofproblemsolving.com/8/f/a/8fa5db1c5ada649954382305e1d59b5da27701a5.png\" class=\"latex\" alt=\"$(-a,c)$\" style=\"vertical-align: -4px\" width=\"52\" height=\"18\" />.  Additionally, the midpoint of <img src=\"//latex.artofproblemsolving.com/8/5/6/856c130e0bb237c3edeb7e3c0246d40cc607e861.png\" class=\"latex\" alt=\"$MB$\" width=\"33\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/d/2/5/d252d4d511d1b8b88fac38027a63893fca86e3da.png\" class=\"latex\" alt=\"$(b\\sqrt{3},-b)$\" style=\"vertical-align: -4px\" width=\"74\" height=\"21\" /> and the slope of line <img src=\"//latex.artofproblemsolving.com/8/5/6/856c130e0bb237c3edeb7e3c0246d40cc607e861.png\" class=\"latex\" alt=\"$MB$\" width=\"33\" height=\"12\" /> on the coordinate grid is <img src=\"//latex.artofproblemsolving.com/b/5/e/b5e72e8d1d9831e4f16d2e426241475421448270.png\" class=\"latex\" alt=\"$-\\tfrac{\\sqrt{3}}{3}$\" style=\"vertical-align: -6px\" width=\"34\" height=\"24\" />.  Therefore, the equation of the perpendicular bisector of <img src=\"//latex.artofproblemsolving.com/8/5/6/856c130e0bb237c3edeb7e3c0246d40cc607e861.png\" class=\"latex\" alt=\"$MB$\" width=\"33\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/b/b/6/bb66ceff7cd32ff77d92561816b61e9a64874849.png\" class=\"latex\" alt=\"$y + b = \\sqrt{3} (x - b\\sqrt{3})$\" style=\"vertical-align: -4px\" width=\"165\" height=\"21\" />.\n</p><p><br />\nNote that <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> is on the perpendicular bisector of <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" />, so the y-coordinate of <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" />.  Therefore, the x-coordinate of <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/6/e/2/6e2664c0a0797ba1646bb7c9870df7d33e931407.png\" class=\"latex\" alt=\"$\\tfrac{\\sqrt{3}}{3}c + \\tfrac{4\\sqrt{3}}{3}b$\" style=\"vertical-align: -6px\" width=\"87\" height=\"24\" />.  Thus, the length of <img src=\"//latex.artofproblemsolving.com/e/c/6/ec6916b50feec24773d374eaada26a95bcabc6fd.png\" class=\"latex\" alt=\"$PR$\" width=\"28\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/4/c/2/4c2ea35dcb6b83e64fb9c227882418e07dd9f726.png\" class=\"latex\" alt=\"$\\tfrac{\\sqrt{3}}{3}c + \\tfrac{4\\sqrt{3}}{3}b + a$\" style=\"vertical-align: -6px\" width=\"119\" height=\"24\" />.\n</p><p><br />\nNow we'll calculate the area of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/b/4/a/b4a455d533200d7dfbd00731fa8bd9e8796fb803.png\" class=\"latex\" alt=\"$\\triangle PQR$\" style=\"vertical-align: -3px\" width=\"59\" height=\"17\" />.  By using a triangle area formula,\n<img src=\"//latex.artofproblemsolving.com/f/7/9/f790e869e1fcf5ba8202da9e6c1433eeaf11dcfb.png\" class=\"latexcenter\" alt=\"\\begin{align*} [ABC] &amp;= \\frac12 \\cdot 2a \\cdot 2c + \\frac12 \\cdot 2c \\cdot 4b \\cdot \\frac12 + \\frac12 \\cdot 2a \\cdot 4b \\cdot \\frac{\\sqrt{3}}{2} \\\\ &amp;= 2ac + 2bc + 2ab\\sqrt{3}. \\end{align*}\" width=\"408\" height=\"66\" />\nSince <img src=\"//latex.artofproblemsolving.com/b/4/a/b4a455d533200d7dfbd00731fa8bd9e8796fb803.png\" class=\"latex\" alt=\"$\\triangle PQR$\" style=\"vertical-align: -3px\" width=\"59\" height=\"17\" /> is a 30-60-90 triangle, <img src=\"//latex.artofproblemsolving.com/1/0/c/10c56ddda3ba245916ce01cb482235e344fed18e.png\" class=\"latex\" alt=\"$PQ = c + 4b + a\\sqrt{3}$\" style=\"vertical-align: -4px\" width=\"158\" height=\"23\" />.  Therefore,\n<img src=\"//latex.artofproblemsolving.com/c/c/1/cc18e06e70585b00b6b3673d1a1988789a1ac9e2.png\" class=\"latexcenter\" alt=\"\\begin{align*} [PQR] &amp;= \\frac12 \\cdot (\\frac{\\sqrt{3}}{3}c + \\frac{4\\sqrt{3}}{3}b + a) \\cdot (c + 4b + a\\sqrt{3}) \\\\ &amp;= \\frac{\\sqrt{3}}{2} \\cdot (\\frac{\\sqrt{3}}{3}c + \\frac{4\\sqrt{3}}{3}b + a)^2 \\\\ &amp;= \\frac{\\sqrt{3}}{2} \\cdot (\\frac13 c^2  + \\frac{16}{3} b^2 + a^2 + \\frac83 bc + \\frac{2\\sqrt{3}}{3}ac + \\frac{8\\sqrt{3}}{3}ab) \\\\ &amp;= \\frac{\\sqrt{3}}{6}c^2 + \\frac{8\\sqrt{3}}{3}b^2 + \\frac{\\sqrt{3}}{2}a^2 + \\frac{4\\sqrt{3}}{3}bc + ac + 4ab. \\end{align*}\" width=\"461\" height=\"184\" />\nNow what's left is to show that <img src=\"//latex.artofproblemsolving.com/6/c/3/6c3bc69afcf9b092b0eec5c674c9ed17570af909.png\" class=\"latex\" alt=\"$[PQR] &gt; [ABC]$\" style=\"vertical-align: -5px\" width=\"127\" height=\"18\" />.  Since <img src=\"//latex.artofproblemsolving.com/8/e/c/8eccefd3b2141147b7f6934056f975a86fe99d95.png\" class=\"latex\" alt=\"$a,b,c &gt; 0$\" style=\"vertical-align: -3px\" width=\"74\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/1/5/3/153b809b7d10fcf33cd4381672a74ded5129f84f.png\" class=\"latex\" alt=\"$\\tfrac{4\\sqrt{3}}{3}bc + 4ab &gt; 2bc + 2ab\\sqrt{3}$\" style=\"vertical-align: -6px\" width=\"215\" height=\"24\" />.  Additionally, by using the <a href=\"/wiki/index.php/AM-GM_Inequality\" title=\"AM-GM Inequality\">AM-GM Inequality</a>,\n<img src=\"//latex.artofproblemsolving.com/c/f/c/cfc8ee77c771efcab07f3b618e12efe5153f1d3b.png\" class=\"latexcenter\" alt=\"\\begin{align*} \\frac{\\frac{\\sqrt{3}}{6} c^2 + \\frac{\\sqrt{3}}{2} a^2}{2} &amp;\\ge \\sqrt{\\frac14 \\cdot (ac)^2} \\\\ \\frac{\\sqrt{3}}{6} c^2 + \\frac{\\sqrt{3}}{2} a^2 &amp;\\ge ac \\\\ ac + \\frac{\\sqrt{3}}{6} c^2 + \\frac{\\sqrt{3}}{2} a^2 &amp;\\ge 2ac. \\end{align*}\" width=\"257\" height=\"141\" />\nTherefore, <img src=\"//latex.artofproblemsolving.com/8/8/7/887efe8aa4ed6aa358567910c704f2a01f8a6c99.png\" class=\"latex\" alt=\"$[PQR] &gt; ac + \\frac{\\sqrt{3}}{6} c^2 + \\frac{\\sqrt{3}}{2} a^2 + \\frac{4\\sqrt{3}}{3}bc + 4ab &gt; [ABC]$\" style=\"vertical-align: -12px\" width=\"426\" height=\"41\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Indonesia_MO\" title=\"2005 Indonesia MO\">2005 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems\" title=\"2005 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_3\" title=\"2005 Indonesia MO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_1\" title=\"2005 Indonesia MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_2\" title=\"2005 Indonesia MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_3\" title=\"2005 Indonesia MO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_5\" title=\"2005 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_6\" title=\"2005 Indonesia MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_7\" title=\"2005 Indonesia MO Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_8\" title=\"2005 Indonesia MO Problems/Problem 8\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_5\" title=\"2005 Indonesia MO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211724\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.037 seconds\nReal time usage: 0.038 seconds\nPreprocessor visited node count: 508/1000000\nPreprocessor generated node count: 1220/1000000\nPost‐expand include size: 1044/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 10807/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.439      1 Template:Indonesia_MO_box\n100.00%    2.439      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17780-0!canonical and timestamp 20240907211724 and revision id 110350\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "AM-GM Inequality"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Circumcenter"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Midpoint"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Perpendicular bisector"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_4",
+          "byteoffset": 413,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_4",
+          "byteoffset": 4247,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Indonesia MO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Indonesia MO Problems/Problem 5": {
+    "parse": {
+      "title": "2005 Indonesia MO Problems/Problem 5",
+      "pageid": 17748,
+      "revid": 109778,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For an arbitrary real number <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/4/4/1/441416e660d25335f27e55334ac2a06e51541c97.png\" class=\"latex\" alt=\"$\\lfloor x\\rfloor$\" style=\"vertical-align: -5px\" width=\"23\" height=\"19\" /> denotes the greatest integer not exceeding <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />. Prove that there is exactly one integer <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> which satisfy <img src=\"//latex.artofproblemsolving.com/4/0/0/40060455609a5b41b0a731d5dc1f8d654e8dc056.png\" class=\"latex\" alt=\"$m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor=2005$\" style=\"vertical-align: -12px\" width=\"157\" height=\"33\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>First we will show that <img src=\"//latex.artofproblemsolving.com/1/8/8/188ff54fb17d78ba1e5d7470da98f02318230255.png\" class=\"latex\" alt=\"$m = 2006$\" width=\"75\" height=\"12\" /> is a solution.  Then we will show that there are no other integers that are a solution.\n</p><p><br />\nTo find the solution, note that the absolute value of <img src=\"//latex.artofproblemsolving.com/c/6/f/c6f40f0cb879514c68221dc060a24e469fbcbed3.png\" class=\"latex\" alt=\"$\\left\\lfloor \\frac{m}{2005}\\right\\rfloor$\" style=\"vertical-align: -12px\" width=\"55\" height=\"33\" /> is usually smaller than <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" />, so <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> should be close to <img src=\"//latex.artofproblemsolving.com/9/f/5/9f5b442c275b4324f100c365b774e872b6b21f1e.png\" class=\"latex\" alt=\"$2005$\" width=\"35\" height=\"12\" />.  Plugging in <img src=\"//latex.artofproblemsolving.com/9/e/7/9e7aff059941e3f0ee2fdd62131229e180a2ca97.png\" class=\"latex\" alt=\"$m = 2005$\" width=\"75\" height=\"12\" /> results in <img src=\"//latex.artofproblemsolving.com/9/8/2/982ea6e6b630e7781be0634f31f9c702da839493.png\" class=\"latex\" alt=\"$m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor = 2004$\" style=\"vertical-align: -12px\" width=\"157\" height=\"33\" />.  Trying out <img src=\"//latex.artofproblemsolving.com/1/8/8/188ff54fb17d78ba1e5d7470da98f02318230255.png\" class=\"latex\" alt=\"$m = 2006$\" width=\"75\" height=\"12\" /> results in <img src=\"//latex.artofproblemsolving.com/4/f/1/4f1d0b3fc57dafde27fd32ac06d68d15388db588.png\" class=\"latex\" alt=\"$m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor = 2005$\" style=\"vertical-align: -12px\" width=\"157\" height=\"33\" />, so that value is a solution.\n</p><p><br />\nTo show that there are no other integers that are a solution, we will consider two cases: one where <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> is less than <img src=\"//latex.artofproblemsolving.com/d/1/2/d1216dd3855e1bb88b6136b4ce49c58b57747417.png\" class=\"latex\" alt=\"$2006$\" width=\"35\" height=\"12\" /> and one where <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> is greater than <img src=\"//latex.artofproblemsolving.com/d/1/2/d1216dd3855e1bb88b6136b4ce49c58b57747417.png\" class=\"latex\" alt=\"$2006$\" width=\"35\" height=\"12\" />.\n</p><p><br />\n<b>Case 1: <img src=\"//latex.artofproblemsolving.com/8/3/a/83acea62fcc41cc5383b7abbb8192af8e4722d5a.png\" class=\"latex\" alt=\"$m &lt; 2006$\" style=\"vertical-align: 0px\" width=\"75\" height=\"13\" /></b>\n</p><p>The highest integer <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> that meets the conditions is <img src=\"//latex.artofproblemsolving.com/9/f/5/9f5b442c275b4324f100c365b774e872b6b21f1e.png\" class=\"latex\" alt=\"$2005$\" width=\"35\" height=\"12\" />, and in that condition, <img src=\"//latex.artofproblemsolving.com/4/c/1/4c10f95e2d1dd80f9ec8f3555b944a262e70fceb.png\" class=\"latex\" alt=\"$m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor=2004$\" style=\"vertical-align: -12px\" width=\"157\" height=\"33\" />.\n</p><p><br />\nAssume that <img src=\"//latex.artofproblemsolving.com/f/d/9/fd906c8b237c771457d8ead737766ea329829815.png\" class=\"latex\" alt=\"$m - \\left \\lfloor \\frac{m}{2005} \\right \\rfloor &lt; 2005$\" style=\"vertical-align: -12px\" width=\"157\" height=\"33\" />.  Let <img src=\"//latex.artofproblemsolving.com/a/9/5/a9522e7db2df2c407113874d60822d160bd798cf.png\" class=\"latex\" alt=\"$m = 2005a + b$\" style=\"vertical-align: -2px\" width=\"118\" height=\"16\" />, where <img src=\"//latex.artofproblemsolving.com/e/9/b/e9bdf3e496517e8f8742f81dd774be1f93cf6e8c.png\" class=\"latex\" alt=\"$a,b$\" style=\"vertical-align: -3px\" width=\"25\" height=\"16\" /> are integers and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> is less than <img src=\"//latex.artofproblemsolving.com/9/f/5/9f5b442c275b4324f100c365b774e872b6b21f1e.png\" class=\"latex\" alt=\"$2005$\" width=\"35\" height=\"12\" />.\n</p><p><br />\nIf <img src=\"//latex.artofproblemsolving.com/b/e/7/be7a58270d4285821716c6093a83541f3ea31dc7.png\" class=\"latex\" alt=\"$b = 0$\" width=\"40\" height=\"12\" />, then <img src=\"//latex.artofproblemsolving.com/5/5/3/553300aa5df7a997376e5719abf93b616d0cbe53.png\" class=\"latex\" alt=\"$m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor = 2005a - \\left\\lfloor \\frac{2005a}{2005}\\right\\rfloor = 2004a$\" style=\"vertical-align: -17px\" width=\"330\" height=\"43\" />.  Additionally, \n<img src=\"//latex.artofproblemsolving.com/1/5/1/1518da9ba749c59171b9b43116af5d5e7eda7009.png\" class=\"latexcenter\" alt=\"\\begin{align*} m-1-\\left\\lfloor \\frac{m-1}{2005}\\right\\rfloor &amp;= 2005a - 1 - \\left\\lfloor \\frac{2005a - 1}{2005}\\right\\rfloor \\\\ &amp;= 2005a - 1 - \\left\\lfloor \\frac{2005(a-1) + 2004}{2005} \\right\\rfloor \\\\ &amp;= 2005a - 1 - a + 1 \\\\ &amp;= 2004a. \\end{align*}\" width=\"435\" height=\"138\" />\nIf <img src=\"//latex.artofproblemsolving.com/0/f/f/0ff39ba262fdf0fc8425b3548976378ba294afba.png\" class=\"latex\" alt=\"$b &gt; 0$\" style=\"vertical-align: 0px\" width=\"40\" height=\"13\" />, then <img src=\"//latex.artofproblemsolving.com/1/4/4/144374065bb4db0d49b21a4b90ccd8fcaea7f7ec.png\" class=\"latex\" alt=\"$m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor = 2005a + b - \\left\\lfloor \\frac{2005a+b}{2005}\\right\\rfloor = 2004a + b$\" style=\"vertical-align: -17px\" width=\"421\" height=\"43\" />.  Additionally,\n<img src=\"//latex.artofproblemsolving.com/1/6/a/16af40019301feb299f14f822bfcaadfc94ca55c.png\" class=\"latexcenter\" alt=\"\\begin{align*} m-1-\\left\\lfloor \\frac{m-1}{2005}\\right\\rfloor &amp;= 2005a + b - 1 - \\left\\lfloor \\frac{2005a + b - 1}{2005}\\right\\rfloor \\\\ &amp;= 2005a + b - 1 - a \\\\ &amp;= 2004a + b - 1. \\end{align*}\" width=\"422\" height=\"90\" />\nFor both cases, <img src=\"//latex.artofproblemsolving.com/a/e/e/aeed826cb15132b452d25e5318cc782831e83f4e.png\" class=\"latex\" alt=\"$m-1-\\left\\lfloor \\frac{m-1}{2005}\\right\\rfloor \\le m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor$\" style=\"vertical-align: -18px\" width=\"265\" height=\"45\" />, so by <a href=\"/wiki/index.php/Induction\" title=\"Induction\">induction</a>, there are no integers less than <img src=\"//latex.artofproblemsolving.com/d/1/2/d1216dd3855e1bb88b6136b4ce49c58b57747417.png\" class=\"latex\" alt=\"$2006$\" width=\"35\" height=\"12\" /> that satisfy the equation.\n</p><p><b>Case 2: <img src=\"//latex.artofproblemsolving.com/6/4/2/64266c9ef6bc3d00a4c26e4fe4ca662544e6220f.png\" class=\"latex\" alt=\"$m &gt; 2006$\" style=\"vertical-align: 0px\" width=\"75\" height=\"13\" /></b>\n</p><p>The lowest integer <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> that meets the conditions is <img src=\"//latex.artofproblemsolving.com/b/0/d/b0db9f93bcba529c93ae151a1ac5c740eec7cca3.png\" class=\"latex\" alt=\"$2007$\" width=\"36\" height=\"12\" />, and in that condition, <img src=\"//latex.artofproblemsolving.com/3/c/b/3cbfb39ea22d46b2ed47e6c100c20d83301180ce.png\" class=\"latex\" alt=\"$m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor=2006$\" style=\"vertical-align: -12px\" width=\"157\" height=\"33\" />.\n</p><p><br />\nAssume that <img src=\"//latex.artofproblemsolving.com/6/2/0/620648098c1c69867d31c8e84f85f58a66497da5.png\" class=\"latex\" alt=\"$m - \\left \\lfloor \\frac{m}{2005} \\right \\rfloor &gt; 2005$\" style=\"vertical-align: -12px\" width=\"157\" height=\"33\" />.  Once again, let <img src=\"//latex.artofproblemsolving.com/a/9/5/a9522e7db2df2c407113874d60822d160bd798cf.png\" class=\"latex\" alt=\"$m = 2005a + b$\" style=\"vertical-align: -2px\" width=\"118\" height=\"16\" />, where <img src=\"//latex.artofproblemsolving.com/e/9/b/e9bdf3e496517e8f8742f81dd774be1f93cf6e8c.png\" class=\"latex\" alt=\"$a,b$\" style=\"vertical-align: -3px\" width=\"25\" height=\"16\" /> are integers and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> is less than <img src=\"//latex.artofproblemsolving.com/9/f/5/9f5b442c275b4324f100c365b774e872b6b21f1e.png\" class=\"latex\" alt=\"$2005$\" width=\"35\" height=\"12\" />.\n</p><p><br />\nIf <img src=\"//latex.artofproblemsolving.com/6/3/6/636d47dbd1df8ba5007022c847f9b821a77f366f.png\" class=\"latex\" alt=\"$b = 2004$\" style=\"vertical-align: 0px\" width=\"68\" height=\"13\" />, then <img src=\"//latex.artofproblemsolving.com/2/3/5/235295a362d2ceb6cf4455432c9ad50fb342d785.png\" class=\"latex\" alt=\"$m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor = 2005a + 2004 - \\left\\lfloor \\frac{2005a+2004}{2005}\\right\\rfloor = 2004a + 2004$\" style=\"vertical-align: -17px\" width=\"506\" height=\"43\" />.  Additionally, \n<img src=\"//latex.artofproblemsolving.com/5/a/6/5a6cc7a97b2e2c40320f16935970a0bc83671913.png\" class=\"latexcenter\" alt=\"\\begin{align*} m+1-\\left\\lfloor \\frac{m+1}{2005}\\right\\rfloor &amp;= 2005a + 2005 - \\left\\lfloor \\frac{2005a +2005}{2005}\\right\\rfloor \\\\ &amp;= 2005a + 2005 - a - 1 \\\\ &amp;= 2004a + 2004 \\end{align*}\" width=\"417\" height=\"90\" />\nIf <img src=\"//latex.artofproblemsolving.com/9/9/3/9934be0ea34ff8167035c6e172cb3ce33853c7d5.png\" class=\"latex\" alt=\"$b &lt; 2004$\" style=\"vertical-align: 0px\" width=\"68\" height=\"13\" />, then <img src=\"//latex.artofproblemsolving.com/1/4/4/144374065bb4db0d49b21a4b90ccd8fcaea7f7ec.png\" class=\"latex\" alt=\"$m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor = 2005a + b - \\left\\lfloor \\frac{2005a+b}{2005}\\right\\rfloor = 2004a + b$\" style=\"vertical-align: -17px\" width=\"421\" height=\"43\" />.  Additionally,\n<img src=\"//latex.artofproblemsolving.com/9/6/4/964bdf6bc1b46f415405b74d9405d3287fb80162.png\" class=\"latexcenter\" alt=\"\\begin{align*} m+1-\\left\\lfloor \\frac{m+1}{2005}\\right\\rfloor &amp;= 2005a + b + 1 - \\left\\lfloor \\frac{2005a + b + 1}{2005}\\right\\rfloor \\\\ &amp;= 2005a + b + 1 - a \\\\ &amp;= 2004a + b + 1 \\end{align*}\" width=\"422\" height=\"90\" />\nFor both cases, <img src=\"//latex.artofproblemsolving.com/4/6/2/462ae4b0c80ee28cacfd6d9e444b4892365c654c.png\" class=\"latex\" alt=\"$m+1-\\left\\lfloor \\frac{m+1}{2005}\\right\\rfloor \\ge m-\\left\\lfloor \\frac{m}{2005}\\right\\rfloor$\" style=\"vertical-align: -17px\" width=\"259\" height=\"43\" />, so by induction, there are no integers greater than <img src=\"//latex.artofproblemsolving.com/d/1/2/d1216dd3855e1bb88b6136b4ce49c58b57747417.png\" class=\"latex\" alt=\"$2006$\" width=\"35\" height=\"12\" /> that satisfy the equation.\n</p><p><br />\nTherefore, there is only one integer that satisfies the original equation.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Indonesia_MO\" title=\"2005 Indonesia MO\">2005 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems\" title=\"2005 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_4\" title=\"2005 Indonesia MO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_1\" title=\"2005 Indonesia MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_2\" title=\"2005 Indonesia MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_3\" title=\"2005 Indonesia MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_4\" title=\"2005 Indonesia MO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_6\" title=\"2005 Indonesia MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_7\" title=\"2005 Indonesia MO Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_8\" title=\"2005 Indonesia MO Problems/Problem 8\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_6\" title=\"2005 Indonesia MO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211724\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.036 seconds\nReal time usage: 0.037 seconds\nPreprocessor visited node count: 508/1000000\nPreprocessor generated node count: 1220/1000000\nPost‐expand include size: 1044/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 10289/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.033      1 Template:Indonesia_MO_box\n100.00%    2.033      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17748-0!canonical and timestamp 20240907211724 and revision id 109778\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Induction"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_5",
+          "byteoffset": 283,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_5",
+          "byteoffset": 4067,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Indonesia MO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Indonesia MO Problems/Problem 6": {
+    "parse": {
+      "title": "2005 Indonesia MO Problems/Problem 6",
+      "pageid": 17751,
+      "revid": 119626,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all triples <img src=\"//latex.artofproblemsolving.com/c/7/3/c73ed093cc73a8d9a14185fa525e7067e5c3725d.png\" class=\"latex\" alt=\"$(x,y,z)$\" style=\"vertical-align: -4px\" width=\"58\" height=\"18\" /> of integers which satisfy\n</p><p><img src=\"//latex.artofproblemsolving.com/a/f/f/aff854d394e4cf1f367c0eef149c8ebdb1c0f18e.png\" class=\"latex\" alt=\"$x(y + z) = y^2 + z^2 - 2$\" style=\"vertical-align: -5px\" width=\"179\" height=\"21\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/0/b/2/0b248b318fdac98aefb4bc7366cc831b5636411b.png\" class=\"latex\" alt=\"$y(z + x) = z^2 + x^2 - 2$\" style=\"vertical-align: -4px\" width=\"177\" height=\"19\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/2/3/5/23507f2738bccec9a419f83217bd48b530b3dee3.png\" class=\"latex\" alt=\"$z(x + y) = x^2 + y^2 - 2$\" style=\"vertical-align: -4px\" width=\"177\" height=\"19\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>By using the <a href=\"/wiki/index.php/Distributive_Property\" class=\"mw-redirect\" title=\"Distributive Property\">Distributive Property</a> on all three equations, we get\n<img src=\"//latex.artofproblemsolving.com/3/3/b/33bc60d26794bb0a6532780fa72aecfe22464a2c.png\" class=\"latexcenter\" alt=\"\\begin{align*} xy + xz &amp;= y^2 + z^2 - 2 \\\\ yz + yx &amp;= x^2 + z^2 - 2 \\\\ zx + zy &amp;= x^2 + y^2 - 2. \\end{align*}\" width=\"177\" height=\"74\" />\nAdd all three equations, rearrange, and factor to get\n<img src=\"//latex.artofproblemsolving.com/5/5/8/558fc3bed6071c0b10b49bbe51a85b6cdacfd1c7.png\" class=\"latexcenter\" alt=\"\\begin{align*} 2xy + 2yz + 2xz &amp;= 2x^2 + 2y^2 + 2z^2 - 6 \\\\ 6 &amp;= x^2 - 2xy + y^2 + y^2 - 2yz + z^2 + z^2 - 2xz + x^2 \\\\ 6 &amp;= (x-y)^2 + (y-z)^2 + (z-x)^2. \\end{align*}\" width=\"519\" height=\"75\" />\nNotice that since all the variables are integers, the squares must also be integers.  The only combination of three integer squares that sum to six is <img src=\"//latex.artofproblemsolving.com/3/7/3/373464f7996ebaae31ae3dcd174b2a6030448825.png\" class=\"latex\" alt=\"$1, 1, 4$\" style=\"vertical-align: -3px\" width=\"43\" height=\"15\" />.\n</p><p><br />\nAlso note that the system is <a href=\"/wiki/index.php/Symmetry\" title=\"Symmetry\">symmetric</a>, so any permutation of a solution will work.  Therefore, we can, <a href=\"/wiki/index.php/WLOG\" class=\"mw-redirect\" title=\"WLOG\">WLOG</a>, let <img src=\"//latex.artofproblemsolving.com/6/9/a/69a3849b6e275e68de33f23398b08eaa079897a5.png\" class=\"latex\" alt=\"$x \\ge y \\ge z$\" style=\"vertical-align: -3px\" width=\"77\" height=\"15\" />.\n</p><p><br />\nTherefore, <img src=\"//latex.artofproblemsolving.com/8/2/3/823a094fa9953d7ff21bbc91151c305e9d2f5598.png\" class=\"latex\" alt=\"$(x-y)^2 = 1$\" style=\"vertical-align: -4px\" width=\"96\" height=\"19\" />, <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1c6ac6df909f7fc4ce43412be85e87bc412345.png\" class=\"latex\" alt=\"$(y-z)^2 = 1$\" style=\"vertical-align: -4px\" width=\"95\" height=\"19\" />, and <img src=\"//latex.artofproblemsolving.com/0/d/3/0d32dad2661594607deee6a0c8f326b0ca433d8d.png\" class=\"latex\" alt=\"$(x-z)^2 = 4$\" style=\"vertical-align: -4px\" width=\"96\" height=\"19\" />, so <img src=\"//latex.artofproblemsolving.com/c/2/1/c21ec7f20b1c1d844c1f40e14c7df5a502c88027.png\" class=\"latex\" alt=\"$x-y = 1$\" style=\"vertical-align: -3px\" width=\"74\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/4/2/d/42d66904671e7421ff6302e273c2488ba3ba7fc6.png\" class=\"latex\" alt=\"$y-z = 1$\" style=\"vertical-align: -3px\" width=\"73\" height=\"15\" />, and <img src=\"//latex.artofproblemsolving.com/c/6/1/c61208416a2ff2313cac8fc0cdf4b2222b6ce537.png\" class=\"latex\" alt=\"$x-z = 2$\" width=\"74\" height=\"12\" />.  By rearrangement, <img src=\"//latex.artofproblemsolving.com/b/3/7/b374f60240b1c6a5d97f85a9d5ff973d54068c3d.png\" class=\"latex\" alt=\"$y = x-1$\" style=\"vertical-align: -3px\" width=\"74\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/3/d/b/3dbc61a483669ed9e9d2ed12ee8cea8a3f506b45.png\" class=\"latex\" alt=\"$z = x-2$\" width=\"74\" height=\"12\" />.\n</p><p><br />\nSubstitute and solve to get\n<img src=\"//latex.artofproblemsolving.com/3/7/3/3734b6e1382733ec44e973a0bf5c3b9777cf7a8f.png\" class=\"latexcenter\" alt=\"\\begin{align*} x(x-1) + x(x-2) &amp;= 2x^2 - 6x + 5 - 2 \\\\ 2x^2 - 3x &amp;= 2x^2 - 6x + 3 \\\\ 3x &amp;= 3 \\\\ x &amp;= 1 \\end{align*}\" width=\"309\" height=\"93\" />\nTherefore, one solution is <img src=\"//latex.artofproblemsolving.com/8/0/d/80d89e4abd8a608bce76c9e328ab85d51c8c4c10.png\" class=\"latex\" alt=\"$(1,0,-1)$\" style=\"vertical-align: -4px\" width=\"70\" height=\"18\" />, and plugging that value back in satisfies the system.  Since any permutation is also a solution, the solutions are <img src=\"//latex.artofproblemsolving.com/3/5/f/35f35de14b645ad747d6c04034549c72c3f106ea.png\" class=\"latex\" alt=\"$\\boxed{(1,0,-1), (1,-1,0), (0,1,-1), (0,-1,1), (-1,0,1), (-1,1,0)}$\" style=\"vertical-align: -10px\" width=\"482\" height=\"29\" />, and plugging all the values back into the original system satisfies the system.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Indonesia_MO\" title=\"2005 Indonesia MO\">2005 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems\" title=\"2005 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_5\" title=\"2005 Indonesia MO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_1\" title=\"2005 Indonesia MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_2\" title=\"2005 Indonesia MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_3\" title=\"2005 Indonesia MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_4\" title=\"2005 Indonesia MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_5\" title=\"2005 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_7\" title=\"2005 Indonesia MO Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_8\" title=\"2005 Indonesia MO Problems/Problem 8\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_7\" title=\"2005 Indonesia MO Problems/Problem 7\">Problem 7</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211724\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.029 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 211/1000000\nPreprocessor generated node count: 560/1000000\nPost‐expand include size: 1044/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3781/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.486      1 Template:Indonesia_MO_box\n100.00%    2.486      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17751-0!canonical and timestamp 20240907211724 and revision id 119626\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Distributive Property"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Symmetry"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "WLOG"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_6",
+          "byteoffset": 200,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_6",
+          "byteoffset": 1713,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Indonesia MO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Indonesia MO Problems/Problem 7": {
+    "parse": {
+      "title": "2005 Indonesia MO Problems/Problem 7",
+      "pageid": 17777,
+      "revid": 110265,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_7&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" /> be a convex quadrilateral. Square <img src=\"//latex.artofproblemsolving.com/a/2/7/a279cc8b342cd89126096013604c77e51c350ce8.png\" class=\"latex\" alt=\"$AB_1A_2B$\" style=\"vertical-align: -4px\" width=\"72\" height=\"17\" /> is constructed such that the two vertices <img src=\"//latex.artofproblemsolving.com/e/5/a/e5a15c38547415620c7350e89e69fefee33951cc.png\" class=\"latex\" alt=\"$A_2,B_1$\" style=\"vertical-align: -3px\" width=\"48\" height=\"16\" /> is located outside <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" />. Similarly, we construct squares <img src=\"//latex.artofproblemsolving.com/8/a/7/8a74b64d4137680cc1f6da8a877f17e3d5cc3348.png\" class=\"latex\" alt=\"$BC_1B_2C$\" style=\"vertical-align: -2px\" width=\"70\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/6/f/9/6f94de38e8d1bdd99bafbb0a57e5beb9016527e1.png\" class=\"latex\" alt=\"$CD_1C_2D$\" style=\"vertical-align: -2px\" width=\"72\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/6/3/4/634e4d50fab713b29331d1280acf5cae0345171b.png\" class=\"latex\" alt=\"$DA_1D_2A$\" style=\"vertical-align: -2px\" width=\"72\" height=\"15\" />. Let <img src=\"//latex.artofproblemsolving.com/d/f/b/dfb064112b6c94470339f6571f69d07afc1c024c.png\" class=\"latex\" alt=\"$K$\" width=\"16\" height=\"12\" /> be the intersection of <img src=\"//latex.artofproblemsolving.com/9/4/d/94d0633018dbc03207082be8baf7432b02c10a67.png\" class=\"latex\" alt=\"$AA_2$\" style=\"vertical-align: -2px\" width=\"33\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/e/9/9/e99f9f70325371de6deea41a42eb2dccde9c8802.png\" class=\"latex\" alt=\"$BB_1$\" style=\"vertical-align: -2px\" width=\"34\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/8/5/9/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png\" class=\"latex\" alt=\"$L$\" width=\"12\" height=\"12\" /> be the intersection of <img src=\"//latex.artofproblemsolving.com/a/0/c/a0c236c35f96c3005246407474dd38633898db38.png\" class=\"latex\" alt=\"$BB_2$\" style=\"vertical-align: -4px\" width=\"38\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/1/6/f/16f46c430dadb18e2cf3e9f17f6ed9e5e1138d48.png\" class=\"latex\" alt=\"$CC_1$\" style=\"vertical-align: -2px\" width=\"33\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> be the intersection of <img src=\"//latex.artofproblemsolving.com/3/3/8/33869fb88069924d3791285da73cd9f47cde2412.png\" class=\"latex\" alt=\"$CC_2$\" style=\"vertical-align: -2px\" width=\"33\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/8/9/b/89bfae7961de126e67e9c1f094aae6204b68dfae.png\" class=\"latex\" alt=\"$DD_1$\" style=\"vertical-align: -2px\" width=\"36\" height=\"15\" />, and <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> be the intersection of <img src=\"//latex.artofproblemsolving.com/d/3/7/d3760565ea96d6a5c66d40cf6f2e936256cc3405.png\" class=\"latex\" alt=\"$DD_2$\" style=\"vertical-align: -2px\" width=\"36\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/9/f/0/9f0bd1bf44e9dd29cf5383c208c802b0dccb4920.png\" class=\"latex\" alt=\"$AA_1$\" style=\"vertical-align: -2px\" width=\"32\" height=\"15\" />. Prove that <img src=\"//latex.artofproblemsolving.com/f/3/f/f3fdf465274d91e623cc580002c0cc42fa72e36e.png\" class=\"latex\" alt=\"$KM$\" width=\"35\" height=\"12\" /> is perpendicular to <img src=\"//latex.artofproblemsolving.com/e/c/4/ec434c6580ce358d81ec4a2a1a2e0e110dcc2b20.png\" class=\"latex\" alt=\"$LN$\" width=\"29\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_7&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let the coordinates of <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> be <img src=\"//latex.artofproblemsolving.com/8/b/d/8bdae3486e634158da70e3693e7a596be692a494.png\" class=\"latex\" alt=\"$(2a,0)$\" style=\"vertical-align: -4px\" width=\"48\" height=\"18\" />, the coordinates of <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> be <img src=\"//latex.artofproblemsolving.com/4/2/5/425b17e4fd5640ac49baaa4efedfe105d575dafb.png\" class=\"latex\" alt=\"$(2b_1, 2b_2)$\" style=\"vertical-align: -4px\" width=\"69\" height=\"18\" />, the coordinates of <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> be <img src=\"//latex.artofproblemsolving.com/8/9/c/89c7ca21e6936222b25181cb293f7f566dec5346.png\" class=\"latex\" alt=\"$(-2c,0)$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" />, and the coordinates of <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> be <img src=\"//latex.artofproblemsolving.com/1/b/9/1b9f0433761b6ac3f127293c153c0a0d0fc6dde2.png\" class=\"latex\" alt=\"$(2d_1, -2d_2)$\" style=\"vertical-align: -4px\" width=\"87\" height=\"18\" />, where all variables are rational and <img src=\"//latex.artofproblemsolving.com/0/0/5/00583e7d8566fe6f6baa5feedc666067f1f3cd79.png\" class=\"latex\" alt=\"$a, b_2, c, d_2 \\ge 0$\" style=\"vertical-align: -3px\" width=\"106\" height=\"16\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/e/7/d/e7d204cc71c65bb65ae8f2812eadcafd589ac2c9.png\" class=\"latexcenter\" alt=\"[asy] import graph; size(9.22 cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-10.2,xmax=10.2,ymin=-10.2,ymax=10.2;  pen cqcqcq=rgb(0.75,0.75,0.75), evevff=rgb(0.9,0.9,1), zzttqq=rgb(0.6,0.2,0);   /*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(&quot;2 2&quot;); real gx=2,gy=2; for(real i=ceil(xmin/gx)*gx;i&lt;=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i&lt;=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);  Label laxis; laxis.p=fontsize(10);  draw((-10,0)--(10,0),Arrows); draw((0,10)--(0,-10),Arrows); clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);  pair A=(8,0), B=(2,8), C=(-6,0), D=(-4,-4); draw(A--B--C--D--A); dot(A); label(&quot;$(2a,0)$&quot;,A,NE); dot(B); label(&quot;$(2b_1,2b_2)$&quot;,B,N); dot(C); label(&quot;$(-2c,0)$&quot;,C,NW); dot(D); label(&quot;$(2d_1,-2d_2)$&quot;,D,S); [/asy]\" width=\"438\" height=\"432\" />\n</p><p>Let <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> be the <a href=\"/wiki/index.php/Midpoint\" title=\"Midpoint\">midpoint</a> of <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, which is point <img src=\"//latex.artofproblemsolving.com/9/b/f/9bf9b8407279d1ad48c7925347ffe9cc44f18a46.png\" class=\"latex\" alt=\"$(a+b_1,b_2)$\" style=\"vertical-align: -4px\" width=\"83\" height=\"18\" />.  Additionally, mark points <img src=\"//latex.artofproblemsolving.com/3/0/2/3020d68ec8c6201bb57aea9dc6a2332f6ec70652.png\" class=\"latex\" alt=\"$Y = (2b_1,b_2)$\" style=\"vertical-align: -4px\" width=\"99\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/b/3/1/b3153356639e4817658412566e48e2dacaa1ff05.png\" class=\"latex\" alt=\"$K = (x,y)$\" style=\"vertical-align: -4px\" width=\"81\" height=\"18\" />, and <img src=\"//latex.artofproblemsolving.com/b/2/0/b20ffca3da01734d98d226219ed1fb1d20ba753d.png\" class=\"latex\" alt=\"$Z = (x,b_2)$\" style=\"vertical-align: -4px\" width=\"84\" height=\"18\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/2/e/0/2e00c86a2899afd3cf8ae47ac1c7ae09f7df4a64.png\" class=\"latexcenter\" alt=\"[asy] import graph; size(9.22 cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-0.2,xmax=10.2,ymin=-0.2,ymax=10.2;  pen cqcqcq=rgb(0.75,0.75,0.75), evevff=rgb(0.9,0.9,1), zzttqq=rgb(0.6,0.2,0);   /*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(&quot;2 2&quot;); real gx=2,gy=2; for(real i=ceil(xmin/gx)*gx;i&lt;=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i&lt;=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);  Label laxis; laxis.p=fontsize(10);  clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);  pair A=(8,0), B=(2,8); draw(A--B); dot(A); label(&quot;$(2a,0)$&quot;,A,NE); dot(B); label(&quot;$(2b_1,2b_2)$&quot;,B,N);  dot((5,4)); label(&quot;$(a+b_1,b_2)$&quot;,(5,4),NE); dot((9,7)); label(&quot;$(x,y)$&quot;,(9,7),NE); dot((2,4)); label(&quot;$(2b_1,b_2)$&quot;,(2,4),SW); dot((9,4)); label(&quot;$(x,b_2)$&quot;,(9,4),SE); [/asy]\" width=\"438\" height=\"438\" />\n</p><p>Note that since <img src=\"//latex.artofproblemsolving.com/d/f/b/dfb064112b6c94470339f6571f69d07afc1c024c.png\" class=\"latex\" alt=\"$K$\" width=\"16\" height=\"12\" /> is the center of square <img src=\"//latex.artofproblemsolving.com/a/2/7/a279cc8b342cd89126096013604c77e51c350ce8.png\" class=\"latex\" alt=\"$AB_1A_2B$\" style=\"vertical-align: -4px\" width=\"72\" height=\"17\" />, <img src=\"//latex.artofproblemsolving.com/8/5/8/8588efa679719c7fd4beb14e4ba06a657eafd392.png\" class=\"latex\" alt=\"$BX \\perp KX$\" width=\"87\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/5/8/6/5860df75efcbfe364545fc23d02a84afe00d9b48.png\" class=\"latex\" alt=\"$BX = KX$\" width=\"87\" height=\"12\" />.  Additionally, <img src=\"//latex.artofproblemsolving.com/c/9/c/c9cb2c007341655156be8c660e1575ed925228bb.png\" class=\"latex\" alt=\"$BY \\parallel KZ$\" style=\"vertical-align: -5px\" width=\"78\" height=\"19\" /> and <img src=\"//latex.artofproblemsolving.com/a/2/6/a260906aaed20f030dc06aa2096530d950f1a596.png\" class=\"latex\" alt=\"$BY \\perp YZ$\" style=\"vertical-align: -1px\" width=\"84\" height=\"14\" />.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/3/a/a/3aab17e2f2005ca643854186430099294ad84b85.png\" class=\"latex\" alt=\"$YZ$\" width=\"28\" height=\"12\" /> is a line, so <img src=\"//latex.artofproblemsolving.com/6/6/7/667919d2c1f8b3c444ba97d85451a1f8539dc153.png\" class=\"latex\" alt=\"$\\angle BXY + \\angle KXZ + \\angle BXK = 180^\\circ$\" style=\"vertical-align: -1px\" width=\"281\" height=\"14\" />.  Since <img src=\"//latex.artofproblemsolving.com/8/5/8/8588efa679719c7fd4beb14e4ba06a657eafd392.png\" class=\"latex\" alt=\"$BX \\perp KX$\" width=\"87\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/4/8/c/48cd8e095679e4b29151229fa8956a2d23c8e35d.png\" class=\"latex\" alt=\"$\\angle BXK = 90^\\circ$\" width=\"109\" height=\"13\" />, so <img src=\"//latex.artofproblemsolving.com/8/9/6/8963196434222f9bd26c65b7422e056763408890.png\" class=\"latex\" alt=\"$\\angle BXY + \\angle KXZ = 90^\\circ$\" style=\"vertical-align: -1px\" width=\"189\" height=\"14\" />.  Additionally, because <img src=\"//latex.artofproblemsolving.com/1/4/2/1428cf6b8afcc03c33d3305e32892d8a9826fdff.png\" class=\"latex\" alt=\"$BXY$\" width=\"45\" height=\"12\" /> is a right triangle, <img src=\"//latex.artofproblemsolving.com/e/e/9/ee97c4a783fea2e7294d67aebcb993741e06183c.png\" class=\"latex\" alt=\"$\\angle YBX + \\angle YXB = 90^\\circ$\" style=\"vertical-align: -1px\" width=\"187\" height=\"14\" />.  Rearranging and substituting results in <img src=\"//latex.artofproblemsolving.com/e/2/1/e219ff2ae76ea3ec418c8764839f1d31d5464af6.png\" class=\"latex\" alt=\"$\\angle KXZ = \\angle YBX$\" width=\"141\" height=\"12\" />.\n</p><p><br />\nSince both <img src=\"//latex.artofproblemsolving.com/b/a/2/ba2c9af2af77f2fbcafd872014f9e6220e611f16.png\" class=\"latex\" alt=\"$BYX$\" width=\"45\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/0/e/0/0e0bbedfac9fae24224dd49a7ec2ec41a6fea556.png\" class=\"latex\" alt=\"$XZK$\" width=\"46\" height=\"12\" /> are right triangles, by AAS Congruency, <img src=\"//latex.artofproblemsolving.com/a/3/3/a33366fc0b99882cc7a3839045349a5057700539.png\" class=\"latex\" alt=\"$\\triangle BYX \\cong \\triangle XZK$\" style=\"vertical-align: -4px\" width=\"151\" height=\"18\" />.  Therefore <img src=\"//latex.artofproblemsolving.com/2/8/8/288df8c353ebb9c2c62edad559141d152cf9dac2.png\" class=\"latex\" alt=\"$BY = XZ = b_2$\" style=\"vertical-align: -2px\" width=\"122\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/4/8/2/4828f8e6548ab7028aa364ee38e708baaccebb72.png\" class=\"latex\" alt=\"$YX = ZK = a - b_1$\" style=\"vertical-align: -2px\" width=\"155\" height=\"15\" />.  From this information, the coordinates of <img src=\"//latex.artofproblemsolving.com/d/f/b/dfb064112b6c94470339f6571f69d07afc1c024c.png\" class=\"latex\" alt=\"$K$\" width=\"16\" height=\"12\" /> are <img src=\"//latex.artofproblemsolving.com/d/a/5/da59a017f9034767a66a6848153ab6c5ea893ddf.png\" class=\"latex\" alt=\"$(a+b_1+b_2, b_2 + a - b_1)$\" style=\"vertical-align: -4px\" width=\"190\" height=\"18\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/4/1/3/413cf05926d14728a8a28f49d97966a405abe3c7.png\" class=\"latexcenter\" alt=\"[asy] import graph; size(9.22 cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-10.2,xmax=10.2,ymin=-10.2,ymax=10.2;  pen cqcqcq=rgb(0.75,0.75,0.75), evevff=rgb(0.9,0.9,1), zzttqq=rgb(0.6,0.2,0);   /*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(&quot;2 2&quot;); real gx=2,gy=2; for(real i=ceil(xmin/gx)*gx;i&lt;=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i&lt;=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);  Label laxis; laxis.p=fontsize(10);  draw((-10,0)--(10,0),Arrows); draw((0,10)--(0,-10),Arrows); clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);  pair A=(8,0), B=(2,8), C=(-6,0), D=(-4,-4), K=(9,7), L=(-6,8), M=(-7,-3), N=(4,-8); draw(A--B--C--D--A); dot(A); label(&quot;$(2a,0)$&quot;,A,NE); dot(B); label(&quot;$(2b_1,2b_2)$&quot;,B,NE); dot(C); label(&quot;$(-2c,0)$&quot;,C,NW); dot(D); label(&quot;$(2d_1,-2d_2)$&quot;,D,S);  dot(K); label(&quot;$K$&quot;,K,NE); dot(L); label(&quot;$L$&quot;,L,NW); dot(M); label(&quot;$M$&quot;,M,SW); dot(N); label(&quot;$N$&quot;,N,SE); [/asy]\" width=\"438\" height=\"432\" />\n</p><p><br />\nBy using similar reasoning, the coordinates of <img src=\"//latex.artofproblemsolving.com/8/5/9/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png\" class=\"latex\" alt=\"$L$\" width=\"12\" height=\"12\" /> are <img src=\"//latex.artofproblemsolving.com/4/8/1/48155c7e13bf47ea2bb2f8ea5db0608705f4a6ea.png\" class=\"latex\" alt=\"$(b_1-b_2-c,b_2+b_1+c)$\" style=\"vertical-align: -4px\" width=\"186\" height=\"18\" />, the coordinates of <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> are <img src=\"//latex.artofproblemsolving.com/d/a/c/dacd4769ca0f03f75f2a90fba07969a567dc2542.png\" class=\"latex\" alt=\"$(-c+d_1-d_2,-d_2-c-d_1)$\" style=\"vertical-align: -4px\" width=\"221\" height=\"18\" />, and the coordinates of <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> are <img src=\"//latex.artofproblemsolving.com/f/3/a/f3ac7da57271ff03ffd202b744bfbf5650cdace0.png\" class=\"latex\" alt=\"$(a+d_1+d_2,d_1-d_2-a)$\" style=\"vertical-align: -4px\" width=\"196\" height=\"18\" />.\n</p><p><br />\nThe slope of <img src=\"//latex.artofproblemsolving.com/f/3/f/f3fdf465274d91e623cc580002c0cc42fa72e36e.png\" class=\"latex\" alt=\"$KM$\" width=\"35\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/0/b/6/0b63ffb19510729f55e35c43a6058007943d83f7.png\" class=\"latex\" alt=\"$\\frac{a+b_2-b_1+c+d_2+d_1}{a+b_1+b_2+c+d_2-d_1}$\" style=\"vertical-align: -15px\" width=\"195\" height=\"40\" />.  The slope of <img src=\"//latex.artofproblemsolving.com/e/c/4/ec434c6580ce358d81ec4a2a1a2e0e110dcc2b20.png\" class=\"latex\" alt=\"$LN$\" width=\"29\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/a/c/3/ac344bd100eaf502b524875c27bfb7318ca6aa60.png\" class=\"latex\" alt=\"$\\frac{b_1+b_2+c+a+d_2-d_1}{b_1-b_2-c-a-d_1-d_2}$\" style=\"vertical-align: -16px\" width=\"199\" height=\"42\" />.  The product of the two slopes is <img src=\"//latex.artofproblemsolving.com/b/a/e/bae5aba07d37ff6ff813107e76260fb31ad5794e.png\" class=\"latex\" alt=\"$-1$\" style=\"vertical-align: 0px\" width=\"22\" height=\"12\" />, so <img src=\"//latex.artofproblemsolving.com/6/8/f/68fe7c5013cec00b8d48bac7d929914f156b6d6d.png\" class=\"latex\" alt=\"$KM \\perp LN$\" width=\"89\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_7&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Indonesia_MO\" title=\"2005 Indonesia MO\">2005 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems\" title=\"2005 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_6\" title=\"2005 Indonesia MO Problems/Problem 6\">Problem 6</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_1\" title=\"2005 Indonesia MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_2\" title=\"2005 Indonesia MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_3\" title=\"2005 Indonesia MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_4\" title=\"2005 Indonesia MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_5\" title=\"2005 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_6\" title=\"2005 Indonesia MO Problems/Problem 6\">6</a> <b>•</b> <a class=\"mw-selflink selflink\">7</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_8\" title=\"2005 Indonesia MO Problems/Problem 8\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_8\" title=\"2005 Indonesia MO Problems/Problem 8\">Problem 8</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211725\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.050 seconds\nReal time usage: 0.051 seconds\nPreprocessor visited node count: 688/1000000\nPreprocessor generated node count: 1620/1000000\nPost‐expand include size: 1044/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 15014/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.426      1 Template:Indonesia_MO_box\n100.00%    2.426      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17777-0!canonical and timestamp 20240907211725 and revision id 110265\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Midpoint"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_7",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_7",
+          "byteoffset": 703,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_7",
+          "byteoffset": 5466,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Indonesia MO Problems/Problem 7",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2005 Indonesia MO Problems/Problem 8": {
+    "parse": {
+      "title": "2005 Indonesia MO Problems/Problem 8",
+      "pageid": 17774,
+      "revid": 214414,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1_.28credit_to_Diarmuid.29\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1 (credit to Diarmuid)</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_3_.28credit_to_dskull16.29\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 3 (credit to dskull16)</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_Also\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_8&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>There are <img src=\"//latex.artofproblemsolving.com/b/f/c/bfcfee7bd8a5e15e5f6b7881c138de43651572a9.png\" class=\"latex\" alt=\"$90$\" width=\"17\" height=\"12\" /> contestants in a mathematics competition. Each contestant gets acquainted with at least <img src=\"//latex.artofproblemsolving.com/3/0/2/302e99c1c7cd91a6ae371139e5142ccef5977dca.png\" class=\"latex\" alt=\"$60$\" width=\"17\" height=\"12\" /> other contestants. One of the contestants, Amin, state that at least four contestants have the same number of new friends. Prove or disprove his statement.\n</p>\n<h2><span id=\"Solution_1_(credit_to_Diarmuid)\"></span><span class=\"mw-headline\" id=\"Solution_1_.28credit_to_Diarmuid.29\">Solution 1 (credit to Diarmuid)</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_8&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1 (credit to Diarmuid)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In order to disprove Amin's statement, we just need to find one counterexample to Amin's claim.\n</p><p><br />\nNote that each person can meet up to <img src=\"//latex.artofproblemsolving.com/e/6/0/e609f93104b193a2355181ca62ff083ea9fd3821.png\" class=\"latex\" alt=\"$89$\" width=\"17\" height=\"12\" /> other contestants.  Thus, there are <img src=\"//latex.artofproblemsolving.com/4/2/c/42cb31fefcec544c451bf54710c76c6a66e11570.png\" class=\"latex\" alt=\"$89 - 60 + 1 = 30$\" style=\"vertical-align: -1px\" width=\"131\" height=\"14\" /> numbers that can be the number of contestants one meets.\n</p><p><br />\nFor each number of contestants one meets, there can be at most 3 contestants (for Amin's claim to be disproven), so there can be a total of at most <img src=\"//latex.artofproblemsolving.com/b/f/c/bfcfee7bd8a5e15e5f6b7881c138de43651572a9.png\" class=\"latex\" alt=\"$90$\" width=\"17\" height=\"12\" /> contestants (which is the same as the number at the competition).  So we only need to check whether it's possible for that one case to happen.\n</p><p><br />\nThe total number of meets in this scenario is <img src=\"//latex.artofproblemsolving.com/2/5/2/252bed760389c92f6f39c952757cd9358971e98f.png\" class=\"latex\" alt=\"$\\frac12 \\cdot 3 \\cdot \\frac{(60+89) \\cdot 30}{2} = \\frac{6705}{2}$\" style=\"vertical-align: -12px\" width=\"219\" height=\"38\" />, which can not happen.  Therefore, there are no valid cases where at most three contestants have the same number of new friends, so Amin is correct.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_8&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For every contestant, he or she already knows 60 people, so he or she can at most make 29 new friends (excluding oneself). The least number of friends one can make is obviously 0, so there seems to be <img src=\"//latex.artofproblemsolving.com/3/1/f/31f53777dd192877fce9cff8bb2f83dfbdc7be8c.png\" class=\"latex\" alt=\"$29 - 0 + 1 = 30$\" style=\"vertical-align: -1px\" width=\"122\" height=\"14\" /> numbers that can be the number of each contestant's new friends. And this seems to disprove Amin's claim because <img src=\"//latex.artofproblemsolving.com/d/8/f/d8f944d0e44afd061f4b3a55cb8b533a27a78f7e.png\" class=\"latex\" alt=\"$\\frac{90}{30}$\" style=\"vertical-align: -13px\" width=\"24\" height=\"38\" /> is exactly equal to 3.\n</p><p>However, it's important to note that number 0 and number 29 cannot be reached simultaneously, because if one knows 29 new people, he or she must make friends with everyone, so 0 cannot be achieved. Therefore, there is at most 29 numbers possible. Since <img src=\"//latex.artofproblemsolving.com/3/7/c/37c17f8bc594eca4788e543539d9d2fbe69a446a.png\" class=\"latex\" alt=\"$\\frac{90}{29} &gt; 3$\" style=\"vertical-align: -12px\" width=\"55\" height=\"37\" />, there must be four contestants that make the same number of new friends, just as Amin claims.\n</p>\n<h2><span id=\"Solution_3_(credit_to_dskull16)\"></span><span class=\"mw-headline\" id=\"Solution_3_.28credit_to_dskull16.29\">Solution 3 (credit to dskull16)</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_8&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 3 (credit to dskull16)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We can represent this problem by a graph where the nodes are the 90 contestants and an edge between two nodes represents an acquaintance being made. It is worth noting that this graph is simple meaning that double connections and self connections are not allowed and therefore that the maximum degree of any given vertex is 89.\n</p><p><br />\nIn the limiting case, the degree sequence of the graph is <img src=\"//latex.artofproblemsolving.com/a/5/d/a5debbb61d6517fae7ed802027ed79c8930b7ae2.png\" class=\"latex\" alt=\"$60, 60, 60, 61, 61, 61 ... 89, 89, 89$\" style=\"vertical-align: -4px\" width=\"237\" height=\"17\" />. Note that we cannot change any of these degrees as 60 is a lower bound and 89 is an upper bound and as such, any alteration would give a node with a degree of 4. By the fundamental theorem of graph theory, the sum of all the degrees in a graph is precisely equal to twice the number of edges. This implies that the above degree sum must be an even number. \n</p><p><br />\nGiven that there are 15 odd numbers between 60 and 89 inclusive, this shows that the sum is in fact odd and hence constructing such a graph is not possible meaning that Amin is correct.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2005_Indonesia_MO_Problems/Problem_8&amp;action=edit&amp;section=5\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2005_Indonesia_MO\" title=\"2005 Indonesia MO\">2005 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems\" title=\"2005 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_7\" title=\"2005 Indonesia MO Problems/Problem 7\">Problem 7</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_1\" title=\"2005 Indonesia MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_2\" title=\"2005 Indonesia MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_3\" title=\"2005 Indonesia MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_4\" title=\"2005 Indonesia MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_5\" title=\"2005 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_6\" title=\"2005 Indonesia MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2005_Indonesia_MO_Problems/Problem_7\" title=\"2005 Indonesia MO Problems/Problem 7\">7</a> <b>•</b> <a class=\"mw-selflink selflink\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Problem</b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908040649\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.020 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 135/1000000\nPreprocessor generated node count: 388/1000000\nPost‐expand include size: 1006/2097152 bytes\nTemplate argument size: 58/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1769/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.761      1 Template:Indonesia_MO_box\n100.00%    1.761      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17774-0!canonical and timestamp 20240908040649 and revision id 214414\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2005 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_8",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1 (credit to Diarmuid)",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_8",
+          "byteoffset": 300,
+          "anchor": "Solution_1_.28credit_to_Diarmuid.29"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_8",
+          "byteoffset": 1209,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 3 (credit to dskull16)",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_8",
+          "byteoffset": 1999,
+          "anchor": "Solution_3_.28credit_to_dskull16.29"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "5",
+          "index": "5",
+          "fromtitle": "2005_Indonesia_MO_Problems/Problem_8",
+          "byteoffset": 3030,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2005 Indonesia MO Problems/Problem 8",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

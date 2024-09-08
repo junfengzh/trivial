@@ -1,0 +1,1195 @@
+{
+  "2020 CIME II Problems/Problem 1": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 1",
+      "pageid": 19660,
+      "revid": 167075,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be a triangle. The bisector of <img src=\"//latex.artofproblemsolving.com/a/3/a/a3ad57710b6810476e6017ea2c2cc6d41219c218.png\" class=\"latex\" alt=\"$\\angle ABC$\" style=\"vertical-align: -1px\" width=\"57\" height=\"14\" /> intersects <img src=\"//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png\" class=\"latex\" alt=\"$\\overline{AC}$\" style=\"vertical-align: -1px\" width=\"30\" height=\"18\" /> at <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />, and the bisector of <img src=\"//latex.artofproblemsolving.com/0/7/2/0728bebb477a2636300c56851b6a6f9e382c1b83.png\" class=\"latex\" alt=\"$\\angle ACB$\" width=\"55\" height=\"13\" /> intersects <img src=\"//latex.artofproblemsolving.com/8/4/0/840e2b592390eb6ec918fa6f3292716ce170de66.png\" class=\"latex\" alt=\"$\\overline{AB}$\" style=\"vertical-align: -1px\" width=\"30\" height=\"18\" /> at <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />. If <img src=\"//latex.artofproblemsolving.com/a/9/5/a9535592cb7aac018a9af8e68f6bc0815c4bee92.png\" class=\"latex\" alt=\"$BF=1$\" style=\"vertical-align: -1px\" width=\"64\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/f/0/f/f0f4eb40721d2d7f8b3125281443c8feecb50958.png\" class=\"latex\" alt=\"$CE=2$\" width=\"61\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/b/e/6/be6680a35b22c11c0ee9f16a760de124151579b2.png\" class=\"latex\" alt=\"$BC=3$\" width=\"61\" height=\"12\" />, then the perimeter of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" /> can be expressed in the form <img src=\"//latex.artofproblemsolving.com/c/c/3/cc39f6ba583f6159aadcb898b5f7677688db8f89.png\" class=\"latex\" alt=\"$\\tfrac mn$\" style=\"vertical-align: -6px\" width=\"14\" height=\"18\" />, where <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> are relatively prime positive integers. Find <img src=\"//latex.artofproblemsolving.com/0/2/d/02dbab3601fa6cce490d54263017048f69e1a35d.png\" class=\"latex\" alt=\"$m+n$\" style=\"vertical-align: -1px\" width=\"48\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For simplicity, let <img src=\"//latex.artofproblemsolving.com/2/b/e/2bed5de057bbd1b0e6e79522632261e788b716a4.png\" class=\"latex\" alt=\"$AE=x$\" width=\"62\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/e/f/3/ef3af0915f32bced1d5fa2ba9bdf63c60fabfe42.png\" class=\"latex\" alt=\"$AF=y$\" style=\"vertical-align: -4px\" width=\"63\" height=\"18\" />. By the angle bisector theorem, we have that <img src=\"//latex.artofproblemsolving.com/f/0/e/f0e8df09996054b4cbd514c4d1b8510edd8d99d1.png\" class=\"latexcenter\" alt=\"\\[\\frac{AB}{AE}=\\frac{BC}{CE}\\Longrightarrow\\frac{y+1}{x}=\\frac{3}{2}\\]\" width=\"207\" height=\"37\" /> using <img src=\"//latex.artofproblemsolving.com/2/9/1/2918f7d23f9ee8c04baabad86100d68023ec03f9.png\" class=\"latex\" alt=\"$\\angle B$\" width=\"27\" height=\"12\" /> as the bisected angle. Using <img src=\"//latex.artofproblemsolving.com/4/0/5/4056d41f42aa8a00adca0ff5d1209b6bb0e92d6b.png\" class=\"latex\" alt=\"$\\angle C$\" width=\"27\" height=\"12\" /> as the bisected angle, we have that <img src=\"//latex.artofproblemsolving.com/b/2/6/b261c2136a9267ba7d9cfd6f4d617652e226a64e.png\" class=\"latexcenter\" alt=\"\\[\\frac{AC}{AF}=\\frac{BC}{BF}\\Longrightarrow\\frac{x+2}{y}=3\\]\" width=\"205\" height=\"41\" />These two equations form a system of equations: <img src=\"//latex.artofproblemsolving.com/d/4/8/d4842ef9ca4d22fd26eeb026a15aef8bdce0f26f.png\" class=\"latexcenter\" alt=\"\\[\\left\\{\\begin{matrix} 2y+2=3x \\\\ x+2=3y \\end{matrix}\\right.\\Longrightarrow x=\\frac{10}{7}, y=\\frac{8}{7}\\]\" width=\"256\" height=\"43\" />\nTherefore, the perimeter is <img src=\"//latex.artofproblemsolving.com/f/c/9/fc987c9c815a826d8f7ef8d880382e0f58820bb7.png\" class=\"latex\" alt=\"$1+2+3+\\frac{10}{7}+\\frac{8}{7}=\\frac{60}{7}\\Longrightarrow\\boxed{067}$\" style=\"vertical-align: -13px\" width=\"278\" height=\"38\" />\\\\\n~bhargavakanakapura\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CIME_II\" title=\"2020 CIME II\">2020 CIME II</a></b> (<b><a href=\"/wiki/index.php/2020_CIME_II_Problems\" title=\"2020 CIME II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2020_CIME_II_Answer_Key\" title=\"2020 CIME II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=45&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_2\" title=\"2020 CIME II Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_2\" title=\"2020 CIME II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_3\" title=\"2020 CIME II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_4\" title=\"2020 CIME II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_5\" title=\"2020 CIME II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_6\" title=\"2020 CIME II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_7\" title=\"2020 CIME II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_8\" title=\"2020 CIME II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_9\" title=\"2020 CIME II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_10\" title=\"2020 CIME II Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_11&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 11 (page does not exist)\">11</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_12\" title=\"2020 CIME II Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_13&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 13 (page does not exist)\">13</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_14&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 14 (page does not exist)\">14</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_15&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 15 (page does not exist)\">15</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/CIME_Problems_and_Solutions\" title=\"CIME Problems and Solutions\"> All CIME Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055742\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.054 seconds\nReal time usage: 0.058 seconds\nPreprocessor visited node count: 276/1000000\nPreprocessor generated node count: 884/1000000\nPost‐expand include size: 1605/2097152 bytes\nTemplate argument size: 133/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4012/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.384      1 -total\n 71.58%    3.138      1 Template:CIME_box\n 22.51%    0.987      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19660-0!canonical and timestamp 20240908055742 and revision id 167075\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CIME Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 15"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CIME box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=45&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CIME_II_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CIME_II_Problems/Problem_1",
+          "byteoffset": 516,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CIME_II_Problems/Problem_1",
+          "byteoffset": 1206,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 10": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 10",
+      "pageid": 22426,
+      "revid": 168913,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p>First suppose that <img src=\"//latex.artofproblemsolving.com/0/e/4/0e4cc644ec8a1c3623c13ed3d14904096a0d87b9.png\" class=\"latex\" alt=\"$c=1$\" style=\"vertical-align: 0px\" width=\"40\" height=\"12\" />. Then <img src=\"//latex.artofproblemsolving.com/5/7/0/570ef5195d5a3411bbcd9bf6c7a402d25639fbee.png\" class=\"latex\" alt=\"$a+b+1=ab\\Rightarrow (a-1)(b-1)=2$\" style=\"vertical-align: -5px\" width=\"284\" height=\"20\" /> from whence we have <img src=\"//latex.artofproblemsolving.com/8/9/8/898a2dd80654e947233c9e8be0ae0a661a8a5d65.png\" class=\"latex\" alt=\"$(a,b,c)\\in\\{(2,3,1),(3,2,1)\\}$\" style=\"vertical-align: -5px\" width=\"221\" height=\"20\" />.\n</p><p>Now suppose that <img src=\"//latex.artofproblemsolving.com/b/a/3/ba31d01344f3f0810ed29dee40b5933c165cf598.png\" class=\"latex\" alt=\"$c\\geq 2$\" style=\"vertical-align: -3px\" width=\"43\" height=\"16\" />. Since <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> is a positive integer, from the equation we have <img src=\"//latex.artofproblemsolving.com/8/1/f/81f7c004bf53f854777beb6cf564f901d97264fe.png\" class=\"latex\" alt=\"$bc-1\\leq a(bc-1)=b+c^2$\" style=\"vertical-align: -5px\" width=\"213\" height=\"21\" />. Hence <img src=\"//latex.artofproblemsolving.com/a/2/0/a209c41af9fdec3ddf92bb464d7721a956445ded.png\" class=\"latex\" alt=\"$b(c-1)\\leq c^2+1$\" style=\"vertical-align: -5px\" width=\"134\" height=\"21\" />, and since <img src=\"//latex.artofproblemsolving.com/b/a/3/ba31d01344f3f0810ed29dee40b5933c165cf598.png\" class=\"latex\" alt=\"$c\\geq 2$\" style=\"vertical-align: -3px\" width=\"43\" height=\"16\" /> we have <img src=\"//latex.artofproblemsolving.com/d/5/5/d55d2c82564fa567b0dc29a9a51245abad12db9b.png\" class=\"latex\" alt=\"$b\\leq \\frac{c^2+1}{c-1}=c+1+\\frac{2}{c-1}\\leq c+3$\" style=\"vertical-align: -15px\" width=\"277\" height=\"42\" />. Since the original equation is symmetric in <img src=\"//latex.artofproblemsolving.com/8/e/8/8e8da0aef2d19017da7471378386d61620f288f5.png\" class=\"latex\" alt=\"$(a,b)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> it follows that <img src=\"//latex.artofproblemsolving.com/a/b/5/ab50f7f4f0eebc7e63cb8e49e98633ea674f1751.png\" class=\"latex\" alt=\"$a\\leq c+3$\" style=\"vertical-align: -3px\" width=\"75\" height=\"16\" /> as well. Adding the inequalities gives <img src=\"//latex.artofproblemsolving.com/3/c/c/3cc659e1a4a1e3743781ff5fe547f51c7b573a9c.png\" class=\"latex\" alt=\"$a+b\\leq 2c+6$\" style=\"vertical-align: -3px\" width=\"114\" height=\"17\" />. From the original equation we know that <img src=\"//latex.artofproblemsolving.com/3/9/d/39d71890648775aa51d0dd044049c0232e5a1632.png\" class=\"latex\" alt=\"$c|a+b$\" style=\"vertical-align: -5px\" width=\"54\" height=\"20\" />; hence <img src=\"//latex.artofproblemsolving.com/a/d/d/add2609af1bb7632cc22b68fd49fdd94de06b327.png\" class=\"latex\" alt=\"$a+b$\" style=\"vertical-align: -2px\" width=\"41\" height=\"16\" /> is a multiple of <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> which is no more than <img src=\"//latex.artofproblemsolving.com/5/5/6/556efe6f743f432f1e5408d87a9f4af09a29bbca.png\" class=\"latex\" alt=\"$2c+6$\" style=\"vertical-align: -1px\" width=\"47\" height=\"14\" />. It follows that <img src=\"//latex.artofproblemsolving.com/8/2/6/8264d9f11ec40993fbe48b7bd523ff7a36cb0d5c.png\" class=\"latex\" alt=\"$a+b\\in\\{c,2c,3c,4c,5c\\}$\" style=\"vertical-align: -5px\" width=\"190\" height=\"20\" />, for if <img src=\"//latex.artofproblemsolving.com/6/7/1/671d4b45b1bb8967cd1bcaf12b56ae3f07272e50.png\" class=\"latex\" alt=\"$a+b\\geq 6c$\" style=\"vertical-align: -3px\" width=\"83\" height=\"17\" /> we have <img src=\"//latex.artofproblemsolving.com/9/7/5/97542e0b1c0e2c0f29ead3d4418321b22b8538e3.png\" class=\"latex\" alt=\"$6c\\leq 2c+6\\Rightarrow c\\leq3/2\\Rightarrow c=1$\" style=\"vertical-align: -5px\" width=\"248\" height=\"20\" />; a contradiction since <img src=\"//latex.artofproblemsolving.com/b/a/3/ba31d01344f3f0810ed29dee40b5933c165cf598.png\" class=\"latex\" alt=\"$c\\geq 2$\" style=\"vertical-align: -3px\" width=\"43\" height=\"16\" />.\n</p><p>We now check each of these 5 cases using the original equation, keeping in mind the two solutions already found.\n</p><p>Case I) <img src=\"//latex.artofproblemsolving.com/b/1/0/b1094c1c962911254e957ff0ab748a4f932a8f2b.png\" class=\"latex\" alt=\"$a+b=c\\Rightarrow c+c^2=abc\\Rightarrow 1+c=ab\\Rightarrow1+a+b=ab\\Rightarrow (a-1)(b-1)=2$\" style=\"vertical-align: -5px\" width=\"617\" height=\"21\" />\n<img src=\"//latex.artofproblemsolving.com/4/c/4/4c4884810baea6fec7b93b777b4140170ea2319e.png\" class=\"latex\" alt=\"$\\Rightarrow (a,b,c)\\in\\{(3,2,5),(2,3,5)\\}$\" style=\"vertical-align: -5px\" width=\"244\" height=\"20\" />.\n</p><p>Case II) <img src=\"//latex.artofproblemsolving.com/d/4/1/d411011bf1d95c286d9d6a86f778b111124af635.png\" class=\"latex\" alt=\"$a+b=2c\\Rightarrow 2+c=ab\\Rightarrow4+a+b=2ab\\Rightarrow(2a-1)(2b-1)=9$\" style=\"vertical-align: -5px\" width=\"530\" height=\"20\" />\n<img src=\"//latex.artofproblemsolving.com/0/d/4/0d4b2942c978c531ed28d99458714508b9f02440.png\" class=\"latex\" alt=\"$\\Rightarrow(a,b,c)\\in\\{(5,1,3),(1,5,3),(2,2,2)\\}$\" style=\"vertical-align: -5px\" width=\"310\" height=\"20\" />.\n</p><p>Case III) <img src=\"//latex.artofproblemsolving.com/8/8/a/88afaa736092a52b5958273aa29901d39cb730fc.png\" class=\"latex\" alt=\"$a+b=3c\\Rightarrow (3a-1)(3b-1)=28\\Rightarrow (a,b,c)\\in\\{(5,1,2),(1,5,2)\\}$\" style=\"vertical-align: -5px\" width=\"527\" height=\"20\" />.\n</p><p>Case IV) <img src=\"//latex.artofproblemsolving.com/b/7/8/b785d4094626ceb7063b11cdf99387768b38392d.png\" class=\"latex\" alt=\"$a+b=4c\\Rightarrow (4a-1)(4b-1)=65$\" style=\"vertical-align: -5px\" width=\"280\" height=\"20\" /> for which there are no solutions.\n</p><p>Case V) <img src=\"//latex.artofproblemsolving.com/2/5/f/25f2a1bfdd21fe8fb4b3ee1cec96aeba7577c870.png\" class=\"latex\" alt=\"$a+b=5c\\Rightarrow (5a-1)(5b-1)=126$\" style=\"vertical-align: -5px\" width=\"289\" height=\"20\" /> for which there are 2 solutions (corresponding to the factors 9 and 14) however they have <img src=\"//latex.artofproblemsolving.com/0/e/4/0e4cc644ec8a1c3623c13ed3d14904096a0d87b9.png\" class=\"latex\" alt=\"$c=1$\" style=\"vertical-align: 0px\" width=\"40\" height=\"12\" />; already covered.\n</p><p>Computing <img src=\"//latex.artofproblemsolving.com/d/7/5/d75f8570bc4167ee6ce2202365119f1bdae80116.png\" class=\"latex\" alt=\"$a^3+b^2+c$\" style=\"vertical-align: -1px\" width=\"85\" height=\"16\" /> for each of the 9 solutions and adding the results we have <img src=\"//latex.artofproblemsolving.com/b/4/0/b4058dc7aceb6a3d2a406337b1d5f8fce4acc445.png\" class=\"latex\" alt=\"$28+29+14+18+22+32+36+128+129=436$\" style=\"vertical-align: -2px\" width=\"413\" height=\"15\" />.\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908021903\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.015 seconds\nReal time usage: 0.015 seconds\nPreprocessor visited node count: 91/1000000\nPreprocessor generated node count: 604/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5806/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22426-0!canonical and timestamp 20240908021903 and revision id 168913\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 10",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 12": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 12",
+      "pageid": 20278,
+      "revid": 142737,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p>Note that the <img src=\"//latex.artofproblemsolving.com/1/8/8/188880cb7cf9b04c120f956e0ad8feaf61ce4b8c.png\" class=\"latex\" alt=\"$\\text{lcm}(\\text{gcd}(a,b),c)$\" style=\"vertical-align: -4px\" width=\"119\" height=\"18\" /> and its iterations are all divisible by 180. This implies that 2 of <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b29b358e825defa3e11b7d903d43ec31e5909a.png\" class=\"latex\" alt=\"$a,b,c$\" style=\"vertical-align: -4px\" width=\"43\" height=\"18\" /> are divisible by 4, 2 are divisible by 9 and 2 are divisible by 5. \n<img src=\"//latex.artofproblemsolving.com/9/6/a/96a447d3a1d1934ce75df37d304441f0437d857d.png\" class=\"latexcenter\" alt=\"\\[a,b,c = d 20, e 36, f 45\\]\" width=\"164\" height=\"16\" />\n</p><p>Next we note that iterations are 180,<img src=\"//latex.artofproblemsolving.com/e/e/a/eeaac0da54f2a38db6949f709ba9b1eabf5eb322.png\" class=\"latex\" alt=\"$2\\times 180$\" style=\"vertical-align: 0px\" width=\"58\" height=\"13\" />,<img src=\"//latex.artofproblemsolving.com/0/d/7/0d79fa6a17c1fe79e42e01c4433499e1bc55b69a.png\" class=\"latex\" alt=\"$3 \\times 180$\" style=\"vertical-align: 0px\" width=\"58\" height=\"13\" />. This implies that <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/a/3/a/a3a59bb1293ee3f6dec19de4019a7178874219ae.png\" class=\"latex\" alt=\"$e$\" style=\"vertical-align: -1px\" width=\"10\" height=\"10\" /> must have an additional factor of 2 and <img src=\"//latex.artofproblemsolving.com/a/3/a/a3a59bb1293ee3f6dec19de4019a7178874219ae.png\" class=\"latex\" alt=\"$e$\" style=\"vertical-align: -1px\" width=\"10\" height=\"10\" /> or <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> must have an additional factor of 3. The sum is minimized if d=2 and e=3 and f=1.\n</p><p><img src=\"//latex.artofproblemsolving.com/c/3/9/c3938226c109ba1830dceefb12a97ae31586bd69.png\" class=\"latexcenter\" alt=\"\\[a,b,c = 40,45,108\\]\" width=\"144\" height=\"16\" />\n<img src=\"//latex.artofproblemsolving.com/b/0/9/b09cde7e3d6a41372e85d09ee3befce4df3fedfc.png\" class=\"latexcenter\" alt=\"\\[a+b+c = 193\\]\" width=\"120\" height=\"14\" />\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907213613\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.011 seconds\nReal time usage: 0.011 seconds\nPreprocessor visited node count: 34/1000000\nPreprocessor generated node count: 224/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1896/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:20278-0!canonical and timestamp 20240907213613 and revision id 142737\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 12",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 2": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 2",
+      "pageid": 19661,
+      "revid": 133256,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem_2\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem 2</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Note\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Note</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem_2\">Problem 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find the number of nonempty subsets <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> of <img src=\"//latex.artofproblemsolving.com/b/f/8/bf8e187d63569296a57573ff70e19dd18a97b5a0.png\" class=\"latex\" alt=\"$\\{1,2,3,4,5,6,7,8,9,10\\}$\" style=\"vertical-align: -4px\" width=\"189\" height=\"18\" /> such that <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> has an even number of elements, and the product of the elements of <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> is even.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>If <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> has two elements, then there are <img src=\"//latex.artofproblemsolving.com/c/c/6/cc61bcd70dd08ca88b8f214b03d595ad1613d97a.png\" class=\"latex\" alt=\"$\\binom{10}{2}=45$\" style=\"vertical-align: -22px\" width=\"88\" height=\"53\" /> subsets.\nIf <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> has four elements, then there are <img src=\"//latex.artofproblemsolving.com/a/c/9/ac9a2d5bfbe7970222bfc53c9928a905a0ab2384.png\" class=\"latex\" alt=\"$\\binom{10}{4}=210$\" style=\"vertical-align: -23px\" width=\"100\" height=\"55\" /> subsets.\nIf <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> has six elements then there are <img src=\"//latex.artofproblemsolving.com/5/5/e/55e1a90b4e76b3a7e1bcb41d75ebcef144e7481e.png\" class=\"latex\" alt=\"$\\binom{10}{6}=210$\" style=\"vertical-align: -22px\" width=\"97\" height=\"53\" /> subsets.\nIf <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> has eight elements then there are <img src=\"//latex.artofproblemsolving.com/c/5/8/c58b55dc873bb266cfa960b1f83a86a876d1faee.png\" class=\"latex\" alt=\"$\\binom{10}{8}=45$\" style=\"vertical-align: -22px\" width=\"88\" height=\"53\" /> subsets.\nIf <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> has <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> elements then there is only one subset, namely <img src=\"//latex.artofproblemsolving.com/b/f/8/bf8e187d63569296a57573ff70e19dd18a97b5a0.png\" class=\"latex\" alt=\"$\\{1,2,3,4,5,6,7,8,9,10\\}$\" style=\"vertical-align: -4px\" width=\"189\" height=\"18\" />.\nThis gives us <img src=\"//latex.artofproblemsolving.com/2/7/9/279e3152f46f7a6415209d30f0dea6f66290c6a1.png\" class=\"latex\" alt=\"$45+210+210+45+1=511$\" style=\"vertical-align: -1px\" width=\"239\" height=\"14\" /> subsets. However, some of these subsets do not have the property that <img src=\"//latex.artofproblemsolving.com/3/e/1/3e1ce054937fabc66eb733fab1929021ee57c2f7.png\" class=\"latex\" alt=\"$\\prod S$\" style=\"vertical-align: -8px\" width=\"37\" height=\"25\" /> is even, that is, it is not true that the subset has at least one even element, so all of the elements must be odd. If <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> has two elements, there are <img src=\"//latex.artofproblemsolving.com/e/e/5/ee559317aed18491b8093c9dffcc7931e41f1991.png\" class=\"latex\" alt=\"$\\binom{5}{2}=10$\" style=\"vertical-align: -22px\" width=\"79\" height=\"53\" /> subsets with only odds, and if <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> has <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" /> elements there are <img src=\"//latex.artofproblemsolving.com/2/a/c/2ac58ac4645888bbb8213b107340fea9033ca930.png\" class=\"latex\" alt=\"$\\binom{5}{4}=5$\" style=\"vertical-align: -22px\" width=\"70\" height=\"53\" /> subsets with only odds. For <img src=\"//latex.artofproblemsolving.com/2/9/4/2946316eb40fbaf98d6cff6376c3118d2f7c10ff.png\" class=\"latex\" alt=\"$|S|=6, |S|=8$\" style=\"vertical-align: -4px\" width=\"118\" height=\"18\" />, or <img src=\"//latex.artofproblemsolving.com/c/d/1/cd1dec31e517b989480f109378d33fe0b3318b45.png\" class=\"latex\" alt=\"$|S|=10$\" style=\"vertical-align: -4px\" width=\"64\" height=\"18\" />, by the <a href=\"/wiki/index.php/Pigeonhole_principle\" class=\"mw-redirect\" title=\"Pigeonhole principle\">pigeonhole principle</a>, we are guaranteed to have at least one even element. The answer is thus <img src=\"//latex.artofproblemsolving.com/6/2/9/62924a5fffa07c829f5370bb67f15b21201e6642.png\" class=\"latex\" alt=\"$511-10-5=\\boxed{496}$\" style=\"vertical-align: -5px\" width=\"162\" height=\"23\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Note\">Note</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: Note\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We did not actually have to compute each of the values to compute the sum <img src=\"//latex.artofproblemsolving.com/c/8/c/c8c97361d6ca1d21355fc88fa56adb410b1b3b64.png\" class=\"latexcenter\" alt=\"\\[\\binom{10}{2}+\\binom{10}{4}+\\binom{10}{6}+\\binom{10}{8}+\\binom{10}{10}.\\]\" width=\"320\" height=\"53\" /> This sum is given by the <a href=\"/wiki/index.php/Combinatorial_identity\" title=\"Combinatorial identity\">combinatorial identity</a> and it is equal to <img src=\"//latex.artofproblemsolving.com/2/5/4/25497e15189ed6f6c62cca3075b697ae90ff3e32.png\" class=\"latex\" alt=\"$\\frac{2^{10}}{2}-1$\" style=\"vertical-align: -12px\" width=\"57\" height=\"39\" /> or <img src=\"//latex.artofproblemsolving.com/0/6/6/06681161db752e0642652340b0832dcdaecefde0.png\" class=\"latex\" alt=\"$511$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_2&amp;action=edit&amp;section=4\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CIME_II\" title=\"2020 CIME II\">2020 CIME II</a></b> (<b><a href=\"/wiki/index.php/2020_CIME_II_Problems\" title=\"2020 CIME II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2020_CIME_II_Answer_Key\" title=\"2020 CIME II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=45&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_1\" title=\"2020 CIME II Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_3\" title=\"2020 CIME II Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_1\" title=\"2020 CIME II Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_3\" title=\"2020 CIME II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_4\" title=\"2020 CIME II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_5\" title=\"2020 CIME II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_6\" title=\"2020 CIME II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_7\" title=\"2020 CIME II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_8\" title=\"2020 CIME II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_9\" title=\"2020 CIME II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_10\" title=\"2020 CIME II Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_11&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 11 (page does not exist)\">11</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_12\" title=\"2020 CIME II Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_13&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 13 (page does not exist)\">13</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_14&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 14 (page does not exist)\">14</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_15&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 15 (page does not exist)\">15</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/CIME_Problems_and_Solutions\" title=\"CIME Problems and Solutions\"> All CIME Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055743\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.056 seconds\nReal time usage: 0.059 seconds\nPreprocessor visited node count: 329/1000000\nPreprocessor generated node count: 988/1000000\nPost‐expand include size: 1637/2097152 bytes\nTemplate argument size: 128/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5062/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.305      1 -total\n 71.57%    3.081      1 Template:CIME_box\n 22.83%    0.983      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19661-0!canonical and timestamp 20240908055743 and revision id 133256\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CIME Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Combinatorial identity"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Pigeonhole principle"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 15"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CIME box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=45&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 2",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CIME_II_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CIME_II_Problems/Problem_2",
+          "byteoffset": 223,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Note",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CIME_II_Problems/Problem_2",
+          "byteoffset": 1405,
+          "anchor": "Note"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2020_CIME_II_Problems/Problem_2",
+          "byteoffset": 1723,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 3": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 3",
+      "pageid": 19662,
+      "revid": 133247,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p>In a jar there are blue jelly beans and green jelly beans. Then, <img src=\"//latex.artofproblemsolving.com/8/7/a/87a8787ca8fcdf64f42e938d20fa64f63871646d.png\" class=\"latex\" alt=\"$15\\%$\" style=\"vertical-align: -1px\" width=\"32\" height=\"14\" /> of the blue jelly beans are removed and <img src=\"//latex.artofproblemsolving.com/f/4/e/f4e4e5c6d549ce47918b94180cad5c1644d9ea88.png\" class=\"latex\" alt=\"$40\\%$\" style=\"vertical-align: -1px\" width=\"32\" height=\"14\" /> of the green jelly beans are removed. If afterwards the total number of jelly beans is <img src=\"//latex.artofproblemsolving.com/b/b/7/bb7e03ccc8985ba9d029ea4add6e3e15ab9a953a.png\" class=\"latex\" alt=\"$80\\%$\" style=\"vertical-align: -1px\" width=\"32\" height=\"14\" /> of the original number of jelly beans, then determine the percent of the remaining jelly beans that are blue.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Suppose there are <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> jelly beans total at the beginning. Suppose further that there are <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> blue jelly beans and <img src=\"//latex.artofproblemsolving.com/c/1/9/c192c6e3f37d5c1b7d5cd1f5372415d6aaae7874.png\" class=\"latex\" alt=\"$x-b$\" width=\"40\" height=\"12\" /> green jelly beans. Then, after the removal, there will be <img src=\"//latex.artofproblemsolving.com/c/7/1/c7151dea0c63b30e25c79e4f5e3ff4791a6954d2.png\" class=\"latex\" alt=\"$0.85b$\" width=\"40\" height=\"12\" /> blue jelly beans and <img src=\"//latex.artofproblemsolving.com/2/d/f/2dfc6d8bf0ace89960841228a4e85755f9e613c2.png\" class=\"latex\" alt=\"$0.6x-0.6b$\" width=\"87\" height=\"12\" /> green jelly beans. Because the total number of jelly beans at the end is <img src=\"//latex.artofproblemsolving.com/b/b/7/bb7e03ccc8985ba9d029ea4add6e3e15ab9a953a.png\" class=\"latex\" alt=\"$80\\%$\" style=\"vertical-align: -1px\" width=\"32\" height=\"14\" /> of the starting number, we can create an equation: <img src=\"//latex.artofproblemsolving.com/e/e/2/ee29bccf754db7ff5bb9dc6449506e7974fc9fbb.png\" class=\"latexcenter\" alt=\"\\[0.6x+0.25b=0.8x\\]\" width=\"152\" height=\"14\" /> <img src=\"//latex.artofproblemsolving.com/e/e/0/ee0da4a2d551961808881fe432e40e27a8757221.png\" class=\"latexcenter\" alt=\"\\[0.2x=0.25b\\]\" width=\"97\" height=\"12\" /> <img src=\"//latex.artofproblemsolving.com/7/e/8/7e805abb0746b741e7ee69234ce2d6d0663640f7.png\" class=\"latexcenter\" alt=\"\\[0.8x=b\\]\" width=\"65\" height=\"12\" /> This tells us there were originally <img src=\"//latex.artofproblemsolving.com/1/7/a/17a2fb4bcc6090bd04da6e4dbe232e0374589212.png\" class=\"latex\" alt=\"$0.8x$\" width=\"33\" height=\"12\" /> blue jelly beans and <img src=\"//latex.artofproblemsolving.com/7/1/a/71aafb205b7de5c6d44ada13e4db83676d17c372.png\" class=\"latex\" alt=\"$0.2x$\" width=\"33\" height=\"12\" /> green jelly beans at the beginning, so now there must be <img src=\"//latex.artofproblemsolving.com/2/3/4/2344e75f07e474ec3389d216469d783689ca3734.png\" class=\"latex\" alt=\"$0.68x$\" width=\"42\" height=\"12\" /> blue and <img src=\"//latex.artofproblemsolving.com/3/3/1/331d2271115968e1a55ae60ecd732127ae86f092.png\" class=\"latex\" alt=\"$0.12x$\" style=\"vertical-align: 0px\" width=\"42\" height=\"13\" /> green. The percent of the remaining jelly beans that are blue is <img src=\"//latex.artofproblemsolving.com/d/9/6/d9644409a80bc9f3c379a959f59f1f1e87392c6c.png\" class=\"latexcenter\" alt=\"\\[\\frac{0.68x}{0.68x+0.12x}=\\frac{68}{80}=\\frac{85}{100},\\]\" width=\"215\" height=\"39\" /> so the answer is <img src=\"//latex.artofproblemsolving.com/c/5/5/c555f3ff7542af9cc260bf31c530725c1e122eac.png\" class=\"latex\" alt=\"$\\boxed{085}$\" style=\"vertical-align: -5px\" width=\"39\" height=\"23\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CIME_II\" title=\"2020 CIME II\">2020 CIME II</a></b> (<b><a href=\"/wiki/index.php/2020_CIME_II_Problems\" title=\"2020 CIME II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2020_CIME_II_Answer_Key\" title=\"2020 CIME II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=45&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_2\" title=\"2020 CIME II Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_4\" title=\"2020 CIME II Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_1\" title=\"2020 CIME II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_2\" title=\"2020 CIME II Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_4\" title=\"2020 CIME II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_5\" title=\"2020 CIME II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_6\" title=\"2020 CIME II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_7\" title=\"2020 CIME II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_8\" title=\"2020 CIME II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_9\" title=\"2020 CIME II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_10\" title=\"2020 CIME II Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_11&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 11 (page does not exist)\">11</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_12\" title=\"2020 CIME II Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_13&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 13 (page does not exist)\">13</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_14&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 14 (page does not exist)\">14</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_15&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 15 (page does not exist)\">15</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/CIME_Problems_and_Solutions\" title=\"CIME Problems and Solutions\"> All CIME Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055744\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.048 seconds\nReal time usage: 0.052 seconds\nPreprocessor visited node count: 232/1000000\nPreprocessor generated node count: 780/1000000\nPost‐expand include size: 1637/2097152 bytes\nTemplate argument size: 128/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2963/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.897      1 -total\n 72.54%    2.827      1 Template:CIME_box\n 23.40%    0.912      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19662-0!canonical and timestamp 20240908055744 and revision id 133247\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CIME Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 15"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CIME box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=45&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CIME_II_Problems/Problem_3",
+          "byteoffset": 357,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CIME_II_Problems/Problem_3",
+          "byteoffset": 1244,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 4": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 4",
+      "pageid": 19664,
+      "revid": 139963,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Similar_Problems\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Similar Problems</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The probability a randomly chosen positive integer <img src=\"//latex.artofproblemsolving.com/9/7/2/9728307a9d1b90df73065b07c8201e08c2d9e291.png\" class=\"latex\" alt=\"$N&lt;1000$\" style=\"vertical-align: 0px\" width=\"76\" height=\"13\" /> has more digits when written in base <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" /> than when written in base <img src=\"//latex.artofproblemsolving.com/8/4/5/8455f3b5cb3b4880b8c9d782a5c1f0334db819eb.png\" class=\"latex\" alt=\"$8$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> can be expressed in the form <img src=\"//latex.artofproblemsolving.com/c/c/3/cc39f6ba583f6159aadcb898b5f7677688db8f89.png\" class=\"latex\" alt=\"$\\tfrac mn$\" style=\"vertical-align: -6px\" width=\"14\" height=\"18\" />, where <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> are relatively prime positive integers. Find <img src=\"//latex.artofproblemsolving.com/0/2/d/02dbab3601fa6cce490d54263017048f69e1a35d.png\" class=\"latex\" alt=\"$m+n$\" style=\"vertical-align: -1px\" width=\"48\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>If a positive integer <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> has more digits in base <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" /> than base <img src=\"//latex.artofproblemsolving.com/8/4/5/8455f3b5cb3b4880b8c9d782a5c1f0334db819eb.png\" class=\"latex\" alt=\"$8$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />, then <img src=\"//latex.artofproblemsolving.com/5/3/4/53462f140d35ade7a83cae7c7c89f9482951ecf1.png\" class=\"latex\" alt=\"$7^k \\le N &lt; 8^k$\" style=\"vertical-align: -2px\" width=\"98\" height=\"18\" /> for some positive integer <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />. There are <img src=\"//latex.artofproblemsolving.com/e/1/7/e175fe5f2ef3e2cedc4b50f368ab0a267560c79a.png\" class=\"latex\" alt=\"$8^k-7^k$\" width=\"55\" height=\"15\" /> positive integers <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> that satisfy this condition for every positive integer <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />. If <img src=\"//latex.artofproblemsolving.com/c/1/e/c1ef767dfc3df471239be2977a059086b929f922.png\" class=\"latex\" alt=\"$k \\geq 4$\" style=\"vertical-align: -2px\" width=\"43\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> will be greater than <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee927e1332358c96c62c277441c907c4f51057f.png\" class=\"latex\" alt=\"$1000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />, so we only need to consider <img src=\"//latex.artofproblemsolving.com/9/a/0/9a029d3c3f349093b4eaa361075fb04b0e37b9ed.png\" class=\"latex\" alt=\"$k \\le 3$\" style=\"vertical-align: -2px\" width=\"43\" height=\"15\" />. The number of possible values of <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/1/7/3/1739855fc74562170b4bb3610ab65377fbc07200.png\" class=\"latexcenter\" alt=\"\\[\\sum^{3}_{k=1}[8^k-7^k]=8-7+64-49+512-343=185.\\]\" width=\"391\" height=\"50\" /> The requested probability is <img src=\"//latex.artofproblemsolving.com/4/6/2/462894a34dabff95b02534749bf0a5e7dcdd68bf.png\" class=\"latexcenter\" alt=\"\\[\\frac{185}{999}=\\frac{5}{27},\\]\" width=\"79\" height=\"37\" /> and so the answer is <img src=\"//latex.artofproblemsolving.com/5/d/8/5d81b2aa50c1e5a29f3aae46944205d223fcd289.png\" class=\"latex\" alt=\"$5+27=\\boxed{032}$\" style=\"vertical-align: -5px\" width=\"112\" height=\"23\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Similar_Problems\">Similar Problems</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: Similar Problems\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a href=\"/wiki/index.php/2009_AIME_I_Problems/Problem_6\" title=\"2009 AIME I Problems/Problem 6\">2009 AIME I Problem 6</a>\n</p><p>The intuition behind the above solution:\n</p>\n<pre>consider 7^3 = 343 &lt;= N &lt; 8^3 = 512&#160;; notice that any N in this range will have 4 digits in base 7 ( since 1*7^3 &lt;= N) and since  1*8^3 &gt; N , we have almost 3 digits in base 8 representation of N\n</pre>\n<p>its easy to see 3 can be replaced by any positive integer k , where k = 1,2,3\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_4&amp;action=edit&amp;section=4\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CIME_II\" title=\"2020 CIME II\">2020 CIME II</a></b> (<b><a href=\"/wiki/index.php/2020_CIME_II_Problems\" title=\"2020 CIME II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2020_CIME_II_Answer_Key\" title=\"2020 CIME II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=45&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_3\" title=\"2020 CIME II Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_5\" title=\"2020 CIME II Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_1\" title=\"2020 CIME II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_2\" title=\"2020 CIME II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_3\" title=\"2020 CIME II Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_5\" title=\"2020 CIME II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_6\" title=\"2020 CIME II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_7\" title=\"2020 CIME II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_8\" title=\"2020 CIME II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_9\" title=\"2020 CIME II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_10\" title=\"2020 CIME II Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_11&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 11 (page does not exist)\">11</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_12\" title=\"2020 CIME II Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_13&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 13 (page does not exist)\">13</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_14&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 14 (page does not exist)\">14</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_15&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 15 (page does not exist)\">15</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/CIME_Problems_and_Solutions\" title=\"CIME Problems and Solutions\"> All CIME Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055744\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.059 seconds\nReal time usage: 0.063 seconds\nPreprocessor visited node count: 284/1000000\nPreprocessor generated node count: 888/1000000\nPost‐expand include size: 1637/2097152 bytes\nTemplate argument size: 128/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3724/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.328      1 -total\n 74.54%    3.226      1 Template:CIME_box\n 20.61%    0.892      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19664-0!canonical and timestamp 20240908055744 and revision id 139963\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 AIME I Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CIME Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 15"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CIME box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=45&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CIME_II_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CIME_II_Problems/Problem_4",
+          "byteoffset": 333,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Similar Problems",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CIME_II_Problems/Problem_4",
+          "byteoffset": 1031,
+          "anchor": "Similar_Problems"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2020_CIME_II_Problems/Problem_4",
+          "byteoffset": 1428,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 5": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 5",
+      "pageid": 19667,
+      "revid": 133268,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A positive integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is said to be <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />-consecutive if it can be written as the sum of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> consecutive positive integers. Find the number of positive integers less than <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee927e1332358c96c62c277441c907c4f51057f.png\" class=\"latex\" alt=\"$1000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> that are either <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />-consecutive or <img src=\"//latex.artofproblemsolving.com/c/6/8/c6878713578626763c38433b3f4c8c2205ad0c15.png\" class=\"latex\" alt=\"$11$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" />-consecutive (or both), but not <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" />-consecutive.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The smallest <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />-consecutive positive integer is <img src=\"//latex.artofproblemsolving.com/4/3/0/430146f579a6c81774e8b4b6c2822ca27e955559.png\" class=\"latex\" alt=\"$1+2+3+4+5+6+7+8+9=45$\" style=\"vertical-align: -1px\" width=\"301\" height=\"14\" />, and every multiple of <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" /> greater than <img src=\"//latex.artofproblemsolving.com/f/2/7/f27da4fca6f3fecb215974023aad210b70ec3857.png\" class=\"latex\" alt=\"$45$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> is also <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />-consecutive, with the last one less than <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee927e1332358c96c62c277441c907c4f51057f.png\" class=\"latex\" alt=\"$1000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> being <img src=\"//latex.artofproblemsolving.com/0/7/0/0705411d92671faf1fe5602cfef8f353c7f0f83d.png\" class=\"latex\" alt=\"$999$\" width=\"26\" height=\"12\" />. There are <img src=\"//latex.artofproblemsolving.com/7/7/0/7701e3e0bd94047cb6d8bba94c73907b8ccd5d79.png\" class=\"latex\" alt=\"$\\frac{999-45}{9}+1=107$\" style=\"vertical-align: -12px\" width=\"154\" height=\"37\" /> <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />-consecutive positive integers less than <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee927e1332358c96c62c277441c907c4f51057f.png\" class=\"latex\" alt=\"$1000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />. The smallest <img src=\"//latex.artofproblemsolving.com/c/6/8/c6878713578626763c38433b3f4c8c2205ad0c15.png\" class=\"latex\" alt=\"$11$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" />-consecutive positive integer is <img src=\"//latex.artofproblemsolving.com/5/a/5/5a5ba902ba187b312d4b33bd9bd2f51eaf9c7d6b.png\" class=\"latex\" alt=\"$1+2+3+4+5+6+7+8+9+10+11=66$\" style=\"vertical-align: -1px\" width=\"382\" height=\"14\" />, and the largest one less than <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee927e1332358c96c62c277441c907c4f51057f.png\" class=\"latex\" alt=\"$1000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> is <img src=\"//latex.artofproblemsolving.com/4/0/4/404b48a4ae33b33c0c11ab63a6258b91251111e4.png\" class=\"latex\" alt=\"$990$\" width=\"26\" height=\"12\" />. There are <img src=\"//latex.artofproblemsolving.com/b/2/6/b260a79bd48d34ab56e7cb6c4cd86169b28bfdff.png\" class=\"latex\" alt=\"$\\frac{990-66}{11}+1=85$\" style=\"vertical-align: -13px\" width=\"144\" height=\"38\" /> of these. However, we counted <img src=\"//latex.artofproblemsolving.com/2/0/0/200efe21cc4ab30e0a0c330b5d0fb331b3eb4d32.png\" class=\"latex\" alt=\"$99,198,297,396,495,594,693,792,891,990$\" style=\"vertical-align: -3px\" width=\"335\" height=\"16\" /> twice and we only wanted to count them once, so we subtract <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> from our total, giving us a total of <img src=\"//latex.artofproblemsolving.com/1/0/e/10e815c17fb4511376b7203be16c2c56b876b6fe.png\" class=\"latex\" alt=\"$107+85-10=182$\" style=\"vertical-align: -2px\" width=\"161\" height=\"15\" /> that are either <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />- or <img src=\"//latex.artofproblemsolving.com/c/6/8/c6878713578626763c38433b3f4c8c2205ad0c15.png\" class=\"latex\" alt=\"$11$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" />-consecutive. The ones that are also <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" />-consecutive are <img src=\"//latex.artofproblemsolving.com/8/c/3/8c32457baf7ed5e796c927727271440f6ead441c.png\" class=\"latexcenter\" alt=\"\\[135,165,225,275,315,385,405,495,585,605,675,715,765,825,855,935,945\\]\" width=\"590\" height=\"16\" /> for a total of <img src=\"//latex.artofproblemsolving.com/b/7/6/b7616a230c77f0d9a577e5bca01aa06f1c35c457.png\" class=\"latex\" alt=\"$17$\" style=\"vertical-align: 0px\" width=\"18\" height=\"12\" /> integers to be removed. The answer is <img src=\"//latex.artofproblemsolving.com/e/a/4/ea4f8fc60f490d5b8b7b054d8776993e8f7b21bf.png\" class=\"latex\" alt=\"$182-17=\\boxed{165}$\" style=\"vertical-align: -5px\" width=\"131\" height=\"23\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CIME_II\" title=\"2020 CIME II\">2020 CIME II</a></b> (<b><a href=\"/wiki/index.php/2020_CIME_II_Problems\" title=\"2020 CIME II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2020_CIME_II_Answer_Key\" title=\"2020 CIME II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=45&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_4\" title=\"2020 CIME II Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_6\" title=\"2020 CIME II Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_1\" title=\"2020 CIME II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_2\" title=\"2020 CIME II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_3\" title=\"2020 CIME II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_4\" title=\"2020 CIME II Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_6\" title=\"2020 CIME II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_7\" title=\"2020 CIME II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_8\" title=\"2020 CIME II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_9\" title=\"2020 CIME II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_10\" title=\"2020 CIME II Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_11&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 11 (page does not exist)\">11</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_12\" title=\"2020 CIME II Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_13&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 13 (page does not exist)\">13</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_14&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 14 (page does not exist)\">14</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_15&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 15 (page does not exist)\">15</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/CIME_Problems_and_Solutions\" title=\"CIME Problems and Solutions\"> All CIME Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055744\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.053 seconds\nReal time usage: 0.057 seconds\nPreprocessor visited node count: 352/1000000\nPreprocessor generated node count: 1044/1000000\nPost‐expand include size: 1637/2097152 bytes\nTemplate argument size: 128/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5204/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.158      1 -total\n 72.53%    3.016      1 Template:CIME_box\n 22.65%    0.942      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19667-0!canonical and timestamp 20240908055744 and revision id 133268\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CIME Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 15"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CIME box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=45&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CIME_II_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CIME_II_Problems/Problem_5",
+          "byteoffset": 356,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CIME_II_Problems/Problem_5",
+          "byteoffset": 1500,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 6": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 6",
+      "pageid": 23854,
+      "revid": 188757,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>An infinite number of buckets, labeled <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/3/9/5/3958e984d2597b35da7975f4503cdcf965a777f7.png\" class=\"latex\" alt=\"$\\ldots$\" width=\"19\" height=\"2\" />, lie in a line. A red ball, a green ball, and a blue ball are each tossed into a bucket, such that for each ball, the probability the ball lands in bucket <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/c/b/a/cba5226e90f4d5104850cd306ee1ab94098fb100.png\" class=\"latex\" alt=\"$2^{-k}$\" width=\"26\" height=\"15\" />. Given that all three balls land in the same bucket <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and that <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> is even, then the expected value of <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> can be expressed as <img src=\"//latex.artofproblemsolving.com/c/c/3/cc39f6ba583f6159aadcb898b5f7677688db8f89.png\" class=\"latex\" alt=\"$\\tfrac mn$\" style=\"vertical-align: -6px\" width=\"14\" height=\"18\" />, where <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> are relatively prime positive integers. Find <img src=\"//latex.artofproblemsolving.com/0/2/d/02dbab3601fa6cce490d54263017048f69e1a35d.png\" class=\"latex\" alt=\"$m+n$\" style=\"vertical-align: -1px\" width=\"48\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The probability that all three balls land in box <img src=\"//latex.artofproblemsolving.com/f/9/3/f93f5c51ea4b04b4992b003b39479f29018f6bda.png\" class=\"latex\" alt=\"$2n$\" width=\"19\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/7/e/9/7e912b20adfad79dc8cb7f1ad3887f5cfcdf09c1.png\" class=\"latex\" alt=\"$\\frac{1}{64^n}$\" style=\"vertical-align: -13px\" width=\"33\" height=\"38\" />. This means that the probability that the three balls land in the same even box is <img src=\"//latex.artofproblemsolving.com/3/b/5/3b5d298d0d3f2e0d7c8f226185a502c9123b6ba5.png\" class=\"latex\" alt=\"$\\frac{1}{64} + \\frac{1}{64^2} + \\ldots = \\frac{1}{63}$\" style=\"vertical-align: -13px\" width=\"166\" height=\"38\" />. This means that the probability that all three balls land in box <img src=\"//latex.artofproblemsolving.com/f/9/3/f93f5c51ea4b04b4992b003b39479f29018f6bda.png\" class=\"latex\" alt=\"$2n$\" width=\"19\" height=\"12\" /> <img src=\"//latex.artofproblemsolving.com/c/8/8/c88457189a2c6e4d6cafd613571456a57cd22560.png\" class=\"latex\" alt=\"$\\emph{given that they land in the same even box}$\" style=\"vertical-align: -4px\" width=\"303\" height=\"17\" /> is simply <img src=\"//latex.artofproblemsolving.com/b/6/f/b6fab252a241b9f093c76f36c36a61e365c3d8e9.png\" class=\"latex\" alt=\"$\\frac{63}{64^n}$\" style=\"vertical-align: -13px\" width=\"33\" height=\"38\" />. For events <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" />, <img src=\"//latex.artofproblemsolving.com/3/9/5/3958e984d2597b35da7975f4503cdcf965a777f7.png\" class=\"latex\" alt=\"$\\ldots$\" width=\"19\" height=\"2\" /> and probabilities <img src=\"//latex.artofproblemsolving.com/8/d/8/8d874e17c7ea25b97dc858c88374b891b2a6f6d3.png\" class=\"latex\" alt=\"$P_a$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/1/5/2/15245bc6e388de68e6fa07b00f49b5386c770d5d.png\" class=\"latex\" alt=\"$P_b$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/f/e/2/fe288e3048ab6eaa4dd26fe6b67f9a8ccc7ebfc6.png\" class=\"latex\" alt=\"$P_c$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/3/9/5/3958e984d2597b35da7975f4503cdcf965a777f7.png\" class=\"latex\" alt=\"$\\ldots$\" width=\"19\" height=\"2\" />, the expected value when conducting the experiment is <img src=\"//latex.artofproblemsolving.com/7/2/4/7242134b74d6b10dc31caee0fae6eddc62737b51.png\" class=\"latex\" alt=\"$P_aa + P_bb + P_cc + \\ldots$\" style=\"vertical-align: -4px\" width=\"171\" height=\"17\" />. Thus, our expected value is just\n</p><p><img src=\"//latex.artofproblemsolving.com/5/9/2/592bc44e4d20deb1d4901f56b899f1466701f28d.png\" class=\"latexcenter\" alt=\"\\[\\frac{2 \\cdot 63}{64} + \\frac{4 \\cdot 63}{64^2} + \\frac{6 \\cdot 63}{64^3} + \\ldots\\]\" width=\"217\" height=\"37\" />\n<img src=\"//latex.artofproblemsolving.com/c/f/c/cfcf5138f0cb446c37379cccc09d58ada18d3330.png\" class=\"latexcenter\" alt=\"\\[= 2\\left(\\frac{63}{64} + \\frac{63}{64^2} + \\ldots\\right) + 2\\left(\\frac{63}{64^2} + \\frac{63}{64^3}\\right) + \\ldots\\]\" width=\"357\" height=\"43\" />\n<img src=\"//latex.artofproblemsolving.com/d/1/4/d1460f45b00bbcc27e2c25fcb913c8fe604ee45e.png\" class=\"latexcenter\" alt=\"\\[= 2 \\cdot 1 + 2 \\cdot \\frac{1}{64} + 2 \\cdot \\frac{1}{64^2} + \\ldots\\]\" width=\"232\" height=\"37\" />\n<img src=\"//latex.artofproblemsolving.com/8/1/3/813b38421d5acef45a83e907f5f902172ba4fe2f.png\" class=\"latexcenter\" alt=\"\\[= 2 \\cdot \\frac{64}{63}\\]\" width=\"61\" height=\"37\" />\n<img src=\"//latex.artofproblemsolving.com/a/4/2/a422898ae43aeaaa41e127e07d7e2757e88799d1.png\" class=\"latexcenter\" alt=\"\\[= \\frac{128}{63}.\\]\" width=\"53\" height=\"37\" />\n</p><p>Our answer is <img src=\"//latex.artofproblemsolving.com/4/b/1/4b15d921b3a6b160192bda9cd5fe4f27cfc79f36.png\" class=\"latex\" alt=\"$128 + 63 = \\boxed{191}$\" style=\"vertical-align: -6px\" width=\"132\" height=\"25\" />.\n</p><p>~mathboy100\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055745\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.023 seconds\nReal time usage: 0.023 seconds\nPreprocessor visited node count: 186/1000000\nPreprocessor generated node count: 692/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5805/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:23854-0!canonical and timestamp 20240908055745 and revision id 188757\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CIME_II_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CIME_II_Problems/Problem_6",
+          "byteoffset": 602,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 7": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 7",
+      "pageid": 19658,
+      "revid": 133239,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_7\">Problem 7</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_7&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 7\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be a triangle with <img src=\"//latex.artofproblemsolving.com/3/e/0/3e055135d74cf1398148a3832f952eb0730bd23d.png\" class=\"latex\" alt=\"$AB=340$\" style=\"vertical-align: 0px\" width=\"79\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/9/7/3/973c3f80d65986408c1c1dff17bd75f53e0abc45.png\" class=\"latex\" alt=\"$BC=146$\" style=\"vertical-align: 0px\" width=\"79\" height=\"13\" />, and <img src=\"//latex.artofproblemsolving.com/7/a/1/7a1086fcb54dab3b6d76fdcdb37bab28e91bdd60.png\" class=\"latex\" alt=\"$CA=390$\" width=\"78\" height=\"13\" />. If <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> is a point on the interior of segment <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> such that the length <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" /> is an integer, then the average of all distinct possible values of <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" /> can be expressed in the form <img src=\"//latex.artofproblemsolving.com/b/1/e/b1ec98d653e92241491489b63d512a898317539d.png\" class=\"latex\" alt=\"$\\tfrac pq$\" style=\"vertical-align: -8px\" width=\"9\" height=\"21\" />, where <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> and <img src=\"//latex.artofproblemsolving.com/0/6/1/0615acc3725de21025457e7d6f7694dab8e2f758.png\" class=\"latex\" alt=\"$q$\" style=\"vertical-align: -3px\" width=\"8\" height=\"11\" /> are relatively prime positive integers. Find <img src=\"//latex.artofproblemsolving.com/1/7/0/170200756543596efeb46fca1cf29a617e8c9192.png\" class=\"latex\" alt=\"$p+q$\" style=\"vertical-align: -3px\" width=\"41\" height=\"14\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/6/7/b/67b384cbecaa595bc5afa5a24f722a8887611cc7.png\" class=\"latexcenter\" alt=\"[asy] size(3.5cm); defaultpen(fontsize(10pt)); pair A,B,C,M; A=dir(95); B=dir(-117); C=dir(-63); M=(2B+3C)/5;  draw(A--B--C--A); draw(A--M,dashed); dot(&quot;$A$&quot;,A,N); dot(&quot;$B$&quot;,B,SW); dot(&quot;$C$&quot;,C,SE); dot(&quot;$M$&quot;,M,NW); label(&quot;$340$&quot;,A--B,W); label(&quot;$390$&quot;,A--C,E); label(&quot;$146$&quot;,B--C,S); [/asy]\" width=\"102\" height=\"168\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_7&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given that the length <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" /> is an integer and that it lies on the interior of segment <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" />, the shortest possible length of <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" /> is the length of the altitude dropped straight down from vertex <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />. This can be calculated as <img src=\"//latex.artofproblemsolving.com/e/d/c/edc54a3a69e46d191bf7226cd1a996f3b9c5a3f5.png\" class=\"latex\" alt=\"$\\frac{2[\\triangle ABC]}{BC}$\" style=\"vertical-align: -12px\" width=\"80\" height=\"38\" />, which is equal to <img src=\"//latex.artofproblemsolving.com/b/5/b/b5b8e2a396e6068718549901c58451f6a39ad8e3.png\" class=\"latexcenter\" alt=\"\\[\\frac{2[\\triangle ABC]}{146}\\]\" width=\"78\" height=\"39\" /> or <img src=\"//latex.artofproblemsolving.com/7/6/5/765bdd4c99cf7ccb5d661dfb4afe099fb09e5d17.png\" class=\"latexcenter\" alt=\"\\[\\frac{[\\triangle ABC]}{73}.\\]\" width=\"74\" height=\"38\" /> The area of triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> can be found using Heron's formula. It is just <img src=\"//latex.artofproblemsolving.com/6/2/3/623ccfce0dfafe401f04cef9c752a9b3c2e9448d.png\" class=\"latexcenter\" alt=\"\\[\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{438 \\cdot 98 \\cdot 292 \\cdot 48}=24528.\\]\" width=\"427\" height=\"32\" /> The shortest possible length of <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" /> is <img src=\"//latex.artofproblemsolving.com/8/8/2/8829b98774f1597d278cc095f02f3ad8985bee65.png\" class=\"latexcenter\" alt=\"\\[\\frac{24528}{73}=336.\\]\" width=\"102\" height=\"37\" /> <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" /> can be anything greater than or equal to <img src=\"//latex.artofproblemsolving.com/a/d/2/ad2d0937b35e43b1d504a7197abe9c3560a3a856.png\" class=\"latex\" alt=\"$336$\" style=\"vertical-align: -1px\" width=\"29\" height=\"14\" />, but the condition that point <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> lies in the interior of segment <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> limits the values that we can reach. Starting at <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and heading east (we cannot get <img src=\"//latex.artofproblemsolving.com/e/e/a/eea83521b9e585be335f2a1db9eafb6e4cfe19b2.png\" class=\"latex\" alt=\"$340$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> because <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> is strictly between <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />), we reach the integers <img src=\"//latex.artofproblemsolving.com/7/a/8/7a8e01538310ba9bf6e53b4dd562d0122fec6e69.png\" class=\"latexcenter\" alt=\"\\[AM=339, 338, 337, 336,\\]\" width=\"194\" height=\"16\" /> and then as we move further east the length of <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" /> will start to increase. We then reach <img src=\"//latex.artofproblemsolving.com/e/5/0/e50e90aac731ddd0cc999e57cc726bf5490e740f.png\" class=\"latexcenter\" alt=\"\\[AM=337, 338, 339, 340,..., 386, 387, 388, 389.\\]\" width=\"358\" height=\"16\" /> We cannot get <img src=\"//latex.artofproblemsolving.com/1/7/2/172bf264a8b2c082be7f24b12296b09faaa2dfff.png\" class=\"latex\" alt=\"$390$\" width=\"26\" height=\"12\" /> because then <img src=\"//latex.artofproblemsolving.com/e/7/6/e76eeae26796bb8b10b09293c8c4c7c2cc009d44.png\" class=\"latex\" alt=\"$M=C$\" width=\"58\" height=\"12\" /> which is not allowed. The distinct possible values of <img src=\"//latex.artofproblemsolving.com/e/7/3/e73bc78b745edf7fe1e55dbfc3d914190faf5015.png\" class=\"latex\" alt=\"$AM$\" width=\"32\" height=\"13\" /> are <img src=\"//latex.artofproblemsolving.com/6/e/7/6e7ba3739a38c01a597ad1837f3adc8eccf2c213.png\" class=\"latexcenter\" alt=\"\\[336, 337, 338,..., 388, 389.\\]\" width=\"194\" height=\"16\" /> The average is <img src=\"//latex.artofproblemsolving.com/6/3/0/630f7efe28c48c60cdb1e5725a3a4a085cec5031.png\" class=\"latexcenter\" alt=\"\\[\\frac{336+389}{2}=\\frac{725}{2}.\\]\" width=\"137\" height=\"37\" /> The answer is <img src=\"//latex.artofproblemsolving.com/7/c/8/7c8bd458df5b8c2758d2bb983c54a5fea76c61ad.png\" class=\"latex\" alt=\"$725+2=\\boxed{727}.$\" style=\"vertical-align: -5px\" width=\"125\" height=\"23\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_7&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CIME_II\" title=\"2020 CIME II\">2020 CIME II</a></b> (<b><a href=\"/wiki/index.php/2020_CIME_II_Problems\" title=\"2020 CIME II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2020_CIME_II_Answer_Key\" title=\"2020 CIME II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=45&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_6\" title=\"2020 CIME II Problems/Problem 6\">Problem 6</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_8\" title=\"2020 CIME II Problems/Problem 8\">Problem 8</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_1\" title=\"2020 CIME II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_2\" title=\"2020 CIME II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_3\" title=\"2020 CIME II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_4\" title=\"2020 CIME II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_5\" title=\"2020 CIME II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_6\" title=\"2020 CIME II Problems/Problem 6\">6</a> <b>•</b> <a class=\"mw-selflink selflink\">7</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_8\" title=\"2020 CIME II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_9\" title=\"2020 CIME II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_10\" title=\"2020 CIME II Problems/Problem 10\">10</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_11&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 11 (page does not exist)\">11</a> <b>•</b> <a href=\"/wiki/index.php/2020_CIME_II_Problems/Problem_12\" title=\"2020 CIME II Problems/Problem 12\">12</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_13&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 13 (page does not exist)\">13</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_14&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 14 (page does not exist)\">14</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_15&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CIME II Problems/Problem 15 (page does not exist)\">15</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/CIME_Problems_and_Solutions\" title=\"CIME Problems and Solutions\"> All CIME Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055745\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.055 seconds\nReal time usage: 0.059 seconds\nPreprocessor visited node count: 451/1000000\nPreprocessor generated node count: 1264/1000000\nPost‐expand include size: 1637/2097152 bytes\nTemplate argument size: 128/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 7074/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.187      1 -total\n 70.36%    2.946      1 Template:CIME_box\n 24.79%    1.038      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19658-0!canonical and timestamp 20240908055745 and revision id 133239\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 12"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CIME II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CIME Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 11"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 13"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 14"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CIME II Problems/Problem 15"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CIME box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=45&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 7",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CIME_II_Problems/Problem_7",
+          "byteoffset": 0,
+          "anchor": "Problem_7"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CIME_II_Problems/Problem_7",
+          "byteoffset": 762,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CIME_II_Problems/Problem_7",
+          "byteoffset": 2321,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 7",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 8": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 8",
+      "pageid": 20364,
+      "revid": 208573,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem_8\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem 8</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_3\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 3</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem_8\">Problem 8</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_8&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 8\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A committee has an oligarchy, consisting of <img src=\"//latex.artofproblemsolving.com/b/7/e/b7e6e54563490764928092b338cfec09bb367b54.png\" class=\"latex\" alt=\"$A\\%$\" style=\"vertical-align: -1px\" width=\"28\" height=\"14\" /> of the members of the committee. Suppose that <img src=\"//latex.artofproblemsolving.com/2/6/1/26105534bd8206595ea225d215418593e1ce439e.png\" class=\"latex\" alt=\"$B\\%$\" style=\"vertical-align: -1px\" width=\"29\" height=\"14\" /> of the work is done by the oligarchy. If the average amount of work done by a member of the oligarchy is <img src=\"//latex.artofproblemsolving.com/9/a/5/9a5b4928c8fe50ce3c2428da3bee3505e891b788.png\" class=\"latex\" alt=\"$16$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> times the amount of work done by a nonmember of the oligarchy, find the maximum possible value of <img src=\"//latex.artofproblemsolving.com/f/1/b/f1b733a187ce539dcda5cdc3d49df586c7373f22.png\" class=\"latex\" alt=\"$B-A$\" width=\"50\" height=\"13\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_8&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Average work done sets up an equation:\n<img src=\"//latex.artofproblemsolving.com/b/e/0/be085a12f58ce5754658ae1fcecf194727e5e8aa.png\" class=\"latexcenter\" alt=\"\\[\\frac{B}{A} = 16\\frac{100-B}{100-A}\\]\" width=\"125\" height=\"37\" />\n<img src=\"//latex.artofproblemsolving.com/3/1/4/3140c108239e38f9f075df9bd8898929e14e6f1c.png\" class=\"latexcenter\" alt=\"\\[(100-A)B = 16(100-B)A\\]\" width=\"224\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/e/9/5/e95f24055adf9a3c8af0d02de311f9f818d4cdb0.png\" class=\"latexcenter\" alt=\"\\[100B - AB = 1600 A - 16AB\\]\" width=\"233\" height=\"13\" />\nLet <img src=\"//latex.artofproblemsolving.com/e/7/3/e73cc7f9e9f0ab8060096f511272b9317aef2809.png\" class=\"latex\" alt=\"$B-A = C$\" width=\"89\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/6/f/d/6fd98f4d430c80047b5c62fcdbda50ebe09325dd.png\" class=\"latex\" alt=\"$A+B = D$\" style=\"vertical-align: -1px\" width=\"90\" height=\"14\" />:\n<img src=\"//latex.artofproblemsolving.com/b/1/4/b14149473a2ceafc3e5064d2e4f4ffa6d8bb239b.png\" class=\"latexcenter\" alt=\"\\[50C + 50D - \\frac{D^2-C^2}{4} = 800D - 800C - 4(D^2-C^2)\\]\" width=\"423\" height=\"39\" />\n<img src=\"//latex.artofproblemsolving.com/a/b/0/ab0292dfdf83a56db70bb3ecdd84c90e706a908f.png\" class=\"latexcenter\" alt=\"\\[15D^2 -3000D = 15C^2-3400C\\]\" width=\"250\" height=\"15\" />\nComplete the squares:\n<img src=\"//latex.artofproblemsolving.com/f/0/b/f0bdff5678a0d4e517482fc6192da5724ac4e0f9.png\" class=\"latexcenter\" alt=\"\\[15(D-100)^2 - 1500^2 = 15(C-1700/15)^2 - 1700^2/15\\]\" width=\"426\" height=\"19\" />\n<img src=\"//latex.artofproblemsolving.com/0/6/0/06000ec6b73f65d385a1e3191bc9677cca1ce68e.png\" class=\"latexcenter\" alt=\"\\[(D-100)^2 + \\frac{(17^2-15^2) \\times 100^2}{15^2} = (C-1700/15)^2\\]\" width=\"400\" height=\"39\" />\n<img src=\"//latex.artofproblemsolving.com/d/a/b/daba2db1a5fab76dda9052f303ec3fd971b095af.png\" class=\"latexcenter\" alt=\"\\[C = \\frac{1700}{15} \\pm \\sqrt{(D-100)^2 + \\frac{8^2 \\times 100^2}{15^2}}\\]\" width=\"304\" height=\"43\" />\n</p><p>Note that <img src=\"//latex.artofproblemsolving.com/c/c/d/ccd19610604c780289706e0544adad2ffa0c5956.png\" class=\"latex\" alt=\"$\\frac{1700+800}{15}&gt;100$\" style=\"vertical-align: -13px\" width=\"140\" height=\"38\" /> so must use minus. This means that C is maximized if <img src=\"//latex.artofproblemsolving.com/d/a/0/da0f123b1e2803f0f1d2dca4e176d864be69a34c.png\" class=\"latex\" alt=\"$D=100$\" style=\"vertical-align: 0px\" width=\"66\" height=\"13\" />\n<img src=\"//latex.artofproblemsolving.com/c/6/7/c675aa7cf6f5420946ea77dbfbd1cb18eb95db05.png\" class=\"latexcenter\" alt=\"\\[C = \\frac{1700}{15} - \\frac{8 \\times 100}{15} = 900/15=60\\]\" width=\"283\" height=\"38\" />\n<img src=\"//latex.artofproblemsolving.com/f/1/b/f1b733a187ce539dcda5cdc3d49df586c7373f22.png\" class=\"latex\" alt=\"$B-A$\" width=\"50\" height=\"13\" /> is at a maximum <img src=\"//latex.artofproblemsolving.com/3/0/2/302e99c1c7cd91a6ae371139e5142ccef5977dca.png\" class=\"latex\" alt=\"$60$\" width=\"17\" height=\"12\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_8&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>As in the first solution, we get <img src=\"//latex.artofproblemsolving.com/2/b/9/2b9a28fca08ee61458fa01fae18026ca4267e08e.png\" class=\"latex\" alt=\"$100B - AB = 1600A - 16AB$\" style=\"vertical-align: -2px\" width=\"237\" height=\"16\" />. We rearrange and obtain <img src=\"//latex.artofproblemsolving.com/b/d/0/bd0be608f735bd026d265776ffdfd5223d7d2b61.png\" class=\"latex\" alt=\"$15AB + 100B - 1600A = 0$\" style=\"vertical-align: -2px\" width=\"218\" height=\"16\" />. We divide by <img src=\"//latex.artofproblemsolving.com/f/1/9/f1965fae079a9ba2c0726c307070c2355dfcb213.png\" class=\"latex\" alt=\"$15$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> to obtain <img src=\"//latex.artofproblemsolving.com/f/4/f/f4f2dd17f0bff0f7787a96b319327e49ff9f6bb3.png\" class=\"latex\" alt=\"$AB + \\frac{100}{15}B - \\frac{1600}{15}A = 0$\" style=\"vertical-align: -13px\" width=\"208\" height=\"38\" />. We then subtract <img src=\"//latex.artofproblemsolving.com/4/5/5/45515c959f1dcd5f0553dc2c1e1ee7ad3f3e3687.png\" class=\"latex\" alt=\"$\\frac{160000}{225}$\" style=\"vertical-align: -13px\" width=\"60\" height=\"38\" /> from both sides, and factor to obtain <img src=\"//latex.artofproblemsolving.com/5/f/f/5ff0b51a35db6a2a08a78de7c4e21e1bc2b53fe2.png\" class=\"latex\" alt=\"$(A + \\frac{100}{15})(B - \\frac{1600}{15}) = -\\frac{1600000}{225} = -\\left(\\frac{400}{15}\\right)^2$\" style=\"vertical-align: -18px\" width=\"387\" height=\"48\" />. If we graph this with <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> being on the <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />-axis and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> being on the <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />-axis, this equation is the hyperbola <img src=\"//latex.artofproblemsolving.com/5/9/8/598dc22afe2486653a8ef80602915f2b457815f0.png\" class=\"latex\" alt=\"$xy = 1$\" style=\"vertical-align: -3px\" width=\"52\" height=\"15\" />, except scaled up by <img src=\"//latex.artofproblemsolving.com/8/e/2/8e2b7ff348b65b1c6962ddd36a35c41cf964fa2e.png\" class=\"latex\" alt=\"$\\frac{400}{15}$\" style=\"vertical-align: -13px\" width=\"33\" height=\"38\" /> and translated <img src=\"//latex.artofproblemsolving.com/6/7/3/673a629ea698e09ae508643986bfcc442cbb722d.png\" class=\"latex\" alt=\"$\\frac{100}{15}$\" style=\"vertical-align: -13px\" width=\"29\" height=\"38\" /> to the left and <img src=\"//latex.artofproblemsolving.com/e/5/0/e50a31c99db7f133a43ad022f70639fd8d8a042b.png\" class=\"latex\" alt=\"$\\frac{1600}{15}$\" style=\"vertical-align: -13px\" width=\"42\" height=\"38\" /> up. This graph intersects <img src=\"//latex.artofproblemsolving.com/c/4/b/c4b86f54134d69cad8793688a431aa907aaf2698.png\" class=\"latex\" alt=\"$(0, 0)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/b/5/5/b55706a4c8f407fa8826751211286c3135234692.png\" class=\"latex\" alt=\"$(100, 100)$\" style=\"vertical-align: -4px\" width=\"75\" height=\"18\" />, and the maximum difference clearly occurs at the point when the slope of the function is <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />. This is at <img src=\"//latex.artofproblemsolving.com/1/8/7/18711acf067d16ab68a1d317b9db47f2d9191ca6.png\" class=\"latex\" alt=\"$(-\\frac{100}{15} + \\frac{400}{15}, \\frac{1600}{15} - \\frac{40}{15}) = (20, 80)$\" style=\"vertical-align: -13px\" width=\"290\" height=\"38\" />. Our answer is <img src=\"//latex.artofproblemsolving.com/9/7/6/97683fa04ddf8598844187b2900923df2c5bac04.png\" class=\"latex\" alt=\"$\\boxed{60}$\" style=\"vertical-align: -5px\" width=\"30\" height=\"23\" />.\n</p><p>~mathboy100\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_3\">Solution 3</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_8&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 3\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Assume WLOG, there are <img src=\"//latex.artofproblemsolving.com/e/5/9/e59e2c6e83eb78cca610a5fd4070ae01c8d4ae60.png\" class=\"latex\" alt=\"$100$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> members and that there are <img src=\"//latex.artofproblemsolving.com/e/5/9/e59e2c6e83eb78cca610a5fd4070ae01c8d4ae60.png\" class=\"latex\" alt=\"$100$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> work that is done. So, there are <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> members of the oligarchy and they've done <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> work in total. Thus, on average, each member of the oligarchy does <img src=\"//latex.artofproblemsolving.com/5/6/4/56467a81b9922af523b4792191d086507927400f.png\" class=\"latex\" alt=\"$\\dfrac{B}{A}$\" style=\"vertical-align: -13px\" width=\"21\" height=\"39\" /> work. Then, the  average work a nonmember of the oligarchy will be <img src=\"//latex.artofproblemsolving.com/8/6/e/86e9536feacbc4f066f18e1b41ae71383863b2f0.png\" class=\"latex\" alt=\"$\\dfrac{B}{16A}$\" style=\"vertical-align: -13px\" width=\"38\" height=\"39\" />. Thus,\n<img src=\"//latex.artofproblemsolving.com/6/b/5/6b5293b3285c14036a6ab61746aee10e9fd82de1.png\" class=\"latexcenter\" alt=\"\\[B+(100-A)\\cdot \\dfrac{B}{16A} = 100\\]\" width=\"213\" height=\"37\" />\n<img src=\"//latex.artofproblemsolving.com/4/6/6/466d2905b80823669ebb1281da349a895a0163d3.png\" class=\"latexcenter\" alt=\"\\[\\implies 16AB+(100-A)B = 1600A\\]\" width=\"272\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/5/a/2/5a2f7370af0081c7ec7c15addb04dcf67aa7996b.png\" class=\"latexcenter\" alt=\"\\[\\implies 3AB+20B-320A = 0\\]\" width=\"226\" height=\"14\" />\n<img src=\"//latex.artofproblemsolving.com/2/3/5/2354f8bbeef5ca4d67cbd1697631e97d618551ca.png\" class=\"latexcenter\" alt=\"\\[\\implies (3B-20)(3A+20) = -6400\\]\" width=\"268\" height=\"18\" />\nWhen <img src=\"//latex.artofproblemsolving.com/3/b/0/3b053e36c59352eb15f52ae27ebd173ce7d3c0f9.png\" class=\"latex\" alt=\"$3B-20 = -80$\" style=\"vertical-align: -2px\" width=\"123\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/e/7/8/e78ca8dfbb46112dddfd51184ce49322bd745ba6.png\" class=\"latex\" alt=\"$3A+20 = 80$\" style=\"vertical-align: -2px\" width=\"107\" height=\"16\" />, we have <img src=\"//latex.artofproblemsolving.com/1/4/6/146fd6417cb8515fdb33a2c246b258b7019db102.png\" class=\"latex\" alt=\"$A=20, B=80$\" style=\"vertical-align: -4px\" width=\"123\" height=\"18\" />, giving <img src=\"//latex.artofproblemsolving.com/8/2/e/82e7c5929ba3b4b6444d7c02d5b80c199ea40a38.png\" class=\"latex\" alt=\"$B-A = 80-20 = \\boxed{60}$\" style=\"vertical-align: -6px\" width=\"189\" height=\"25\" />\n</p><p>~sml1809\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055745\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.036 seconds\nReal time usage: 0.039 seconds\nPreprocessor visited node count: 398/1000000\nPreprocessor generated node count: 1060/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 9427/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:20364-0!canonical and timestamp 20240908055745 and revision id 208573\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 8",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CIME_II_Problems/Problem_8",
+          "byteoffset": 0,
+          "anchor": "Problem_8"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CIME_II_Problems/Problem_8",
+          "byteoffset": 376,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CIME_II_Problems/Problem_8",
+          "byteoffset": 1231,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 3",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2020_CIME_II_Problems/Problem_8",
+          "byteoffset": 2325,
+          "anchor": "Solution_3"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 8",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2020 CIME II Problems/Problem 9": {
+    "parse": {
+      "title": "2020 CIME II Problems/Problem 9",
+      "pageid": 22325,
+      "revid": 219584,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem_9\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem 9</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_3\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 3</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem_9\">Problem 9</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_9&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 9\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/5/f/3/5f344da4b7281482f8a8a4334cbaea8fb61f6942.png\" class=\"latex\" alt=\"$f(x)=x^2-2$\" style=\"vertical-align: -4px\" width=\"108\" height=\"19\" />. There are <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> real numbers <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> such that <img src=\"//latex.artofproblemsolving.com/c/3/c/c3c8ebe3420f7ac9e21e8cb1cec66190946e42d2.png\" class=\"latexcenter\" alt=\"\\[\\underbrace{f(f(\\ldots f}_{2019\\text{ times}}(x)\\ldots))=\\underbrace{f(f(\\ldots f}_{2020\\text{ times}}(x)\\ldots)).\\]\" width=\"296\" height=\"41\" />Find the remainder when <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> is divided by <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee927e1332358c96c62c277441c907c4f51057f.png\" class=\"latex\" alt=\"$1000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_9&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/f/0/7/f07283aa774db2960ae2447ac0572966650af613.png\" class=\"latex\" alt=\"$f^n(x)$\" style=\"vertical-align: -5px\" width=\"46\" height=\"20\" /> denote the composition of <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> with itself <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> times. We require that <img src=\"//latex.artofproblemsolving.com/b/9/6/b96913473edee82b431ced97dbc7bd2939e0d0b9.png\" class=\"latex\" alt=\"$f^{2019}(x)=f^{2020}(x)$\" style=\"vertical-align: -5px\" width=\"151\" height=\"21\" />. Since\n</p><p><img src=\"//latex.artofproblemsolving.com/4/e/4/4e458cc35e98cb38983f2a80469677cd4da106bd.png\" class=\"latex\" alt=\"$f^{2020}(x)=f(f^{2019}(x))=(f^{2019}(x))^2-2$\" style=\"vertical-align: -5px\" width=\"316\" height=\"21\" />, we have <img src=\"//latex.artofproblemsolving.com/3/f/6/3f65b293c6cfbc6ae5adbefdeed83564a82029e9.png\" class=\"latex\" alt=\"$f^{2019}(x)=(f^{2019}(x))^2-2$\" style=\"vertical-align: -5px\" width=\"204\" height=\"21\" />. Hence\n</p><p><img src=\"//latex.artofproblemsolving.com/2/4/2/24234b6083747e4ff86591b8de6925876ff9ed3c.png\" class=\"latex\" alt=\"$(f^{2019}(x)+1)(f^{2019}(x)-2)=0$\" style=\"vertical-align: -5px\" width=\"251\" height=\"21\" /> so that <img src=\"//latex.artofproblemsolving.com/d/5/0/d5072ce335d6151baee0fbaa1ec54f75c82e4003.png\" class=\"latex\" alt=\"$f^{2019}(x)\\in\\{-1,2\\}$\" style=\"vertical-align: -5px\" width=\"145\" height=\"21\" />.\n</p><p><br />\nNow if <img src=\"//latex.artofproblemsolving.com/a/5/4/a5456b9f7a21247a8f5453483bffd422684a30da.png\" class=\"latex\" alt=\"$f^{n+1}(x)=k$\" style=\"vertical-align: -5px\" width=\"97\" height=\"21\" /> for some <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, then <img src=\"//latex.artofproblemsolving.com/a/9/4/a940ea6ea60f793e014475f7045af99defec7c71.png\" class=\"latex\" alt=\"$k=f^{n+1}(x)=f(f^{n}(x))=(f^{n}(x))^2-2$\" style=\"vertical-align: -5px\" width=\"313\" height=\"21\" /> so that\n</p><p><img src=\"//latex.artofproblemsolving.com/6/8/5/685030d714bcbd48f1f8890ecba202e5bd10b1d3.png\" class=\"latex\" alt=\"$f^{n}(x)=\\pm\\sqrt{k+2}$\" style=\"vertical-align: -5px\" width=\"141\" height=\"23\" />. Hence we find  <img src=\"//latex.artofproblemsolving.com/5/d/3/5d36d2d9a6f813db08db0375ec0e8a804936545f.png\" class=\"latex\" alt=\"$f^{2018}(x)\\in\\{\\pm1,\\pm2\\}$\" style=\"vertical-align: -5px\" width=\"159\" height=\"21\" />, and similarly \n</p><p><img src=\"//latex.artofproblemsolving.com/8/2/8/828fee05d09b61c3d8ee44288d1fa8b8cd65765e.png\" class=\"latex\" alt=\"$f^{2017}(x)\\in\\{\\pm\\sqrt{3},\\pm1,\\pm2,0\\}$\" style=\"vertical-align: -5px\" width=\"223\" height=\"24\" />. Note that at each step since our values for <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> are <img src=\"//latex.artofproblemsolving.com/c/5/8/c581db6f9b3a1baaa118a3f5144f0e0079d594f8.png\" class=\"latex\" alt=\"$\\geq -2$\" style=\"vertical-align: -3px\" width=\"44\" height=\"16\" /> we have\n</p><p><img src=\"//latex.artofproblemsolving.com/8/0/3/8036fcefe2d0343ad5481be222f5bf1ae8fb27eb.png\" class=\"latex\" alt=\"$\\sqrt{k+2}$\" style=\"vertical-align: -3px\" width=\"58\" height=\"21\" /> is real; and <img src=\"//latex.artofproblemsolving.com/e/c/5/ec5598c560ca2c77f60bf02e40c73c3ffa6b84f6.png\" class=\"latex\" alt=\"$\\pm\\sqrt{k+2}$\" style=\"vertical-align: -3px\" width=\"72\" height=\"21\" /> are distinct, and also <img src=\"//latex.artofproblemsolving.com/8/8/4/884e1cea61931de9990f5b4768f075d95a9e8e95.png\" class=\"latex\" alt=\"$\\neq k$\" style=\"vertical-align: -4px\" width=\"31\" height=\"18\" />, except when <img src=\"//latex.artofproblemsolving.com/7/0/0/7005f941fa3a9946bb4ae9a306a3692f8945011b.png\" class=\"latex\" alt=\"$k=-2$\" width=\"57\" height=\"12\" />. Note that every <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> that satisfies <img src=\"//latex.artofproblemsolving.com/a/5/4/a5456b9f7a21247a8f5453483bffd422684a30da.png\" class=\"latex\" alt=\"$f^{n+1}(x)=k$\" style=\"vertical-align: -5px\" width=\"97\" height=\"21\" /> also satisfies <img src=\"//latex.artofproblemsolving.com/6/8/5/685030d714bcbd48f1f8890ecba202e5bd10b1d3.png\" class=\"latex\" alt=\"$f^{n}(x)=\\pm\\sqrt{k+2}$\" style=\"vertical-align: -5px\" width=\"141\" height=\"23\" />. Since <img src=\"//latex.artofproblemsolving.com/6/2/a/62a76677add1d246708c86edfc7c4b8a40184914.png\" class=\"latex\" alt=\"$-2$\" width=\"22\" height=\"12\" /> is a value of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> starting with <img src=\"//latex.artofproblemsolving.com/c/8/7/c8786ff2950786a08eb50f528475d69ed11cf119.png\" class=\"latex\" alt=\"$f^{2018}$\" style=\"vertical-align: -4px\" width=\"40\" height=\"20\" />, we have for <img src=\"//latex.artofproblemsolving.com/b/d/d/bddb5bf5401c7e05d66a8f0fad87706c2fb23985.png\" class=\"latex\" alt=\"$n\\leq 2018$\" style=\"vertical-align: -2px\" width=\"70\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/1/d/4/1d49a0b3b70b55f8af659d100e75f9114b131369.png\" class=\"latex\" alt=\"$f^{n}(x)$\" style=\"vertical-align: -4px\" width=\"43\" height=\"18\" /> must equal any one of <img src=\"//latex.artofproblemsolving.com/0/9/5/095b3f206ccf92f65fa3d806d95ed0daada4f96b.png\" class=\"latex\" alt=\"$3\\cdot 2^{2018-n}+1$\" style=\"vertical-align: -2px\" width=\"110\" height=\"18\" /> many values. It follows that there are <img src=\"//latex.artofproblemsolving.com/e/0/1/e01487e8c80a5d56345f5c316879a525a9004285.png\" class=\"latex\" alt=\"$3\\cdot 2^{2018}+1$\" style=\"vertical-align: -2px\" width=\"92\" height=\"18\" /> many real solutions.\n</p><p>By Eulers Theorem <img src=\"//latex.artofproblemsolving.com/a/4/8/a48014bb3518db8dc4f2b716169cbc04608624d0.png\" class=\"latex\" alt=\"$2^{\\phi(125)}=2^{100}\\equiv1\\mod 125$\" style=\"vertical-align: -1px\" width=\"218\" height=\"18\" /> so <img src=\"//latex.artofproblemsolving.com/4/6/c/46c3f9b24e3c355790efe0deafa395be624c50e6.png\" class=\"latex\" alt=\"$2^{2000}=(2^{100})^{20}\\equiv 1^{20}=1\\mod 125$\" style=\"vertical-align: -5px\" width=\"281\" height=\"21\" /> and hence <img src=\"//latex.artofproblemsolving.com/8/a/6/8a64a970a7c7beefcf3f5c0123cac1122c87ba44.png\" class=\"latex\" alt=\"$2^{2003}\\equiv 8\\mod 1000$\" style=\"vertical-align: -1px\" width=\"161\" height=\"17\" />. Since <img src=\"//latex.artofproblemsolving.com/a/c/7/ac75057e6112a2c5cc1dc7688d2925bfbba6ae52.png\" class=\"latex\" alt=\"$2^{15}=2^{10}\\cdot 2^5\\equiv 24\\cdot 32=768\\mod 1000$\" style=\"vertical-align: -1px\" width=\"317\" height=\"17\" /> we have <img src=\"//latex.artofproblemsolving.com/e/1/4/e142befe1aef25871db80a449f81bb18f06b171d.png\" class=\"latex\" alt=\"$2^{2018}\\equiv 8\\cdot 768\\equiv 144\\mod 1000$\" style=\"vertical-align: -1px\" width=\"253\" height=\"17\" />. Hence <img src=\"//latex.artofproblemsolving.com/7/8/6/786937f9390452b1291b8e5d83fe96c358322d60.png\" class=\"latex\" alt=\"$3\\cdot 2^{2018}+1\\equiv 3\\cdot 144+1=433\\mod 1000$\" style=\"vertical-align: -2px\" width=\"338\" height=\"18\" />. Thus the answer is 433 as desired.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_9&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We can start by finding the number of solution for smaller repeptitions of <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" />. Notice that we can solve <img src=\"//latex.artofproblemsolving.com/f/9/7/f975bf55a649f0dcec31bcc9d929d483c9f41b56.png\" class=\"latex\" alt=\"$f(f(x))=f(x)$\" style=\"vertical-align: -4px\" width=\"118\" height=\"18\" /> by applying the functional inverse <img src=\"//latex.artofproblemsolving.com/7/4/1/74153d34ed1e2096b5c034cb85eff5a695b887c1.png\" class=\"latex\" alt=\"$f^{-1}$\" style=\"vertical-align: -3px\" width=\"27\" height=\"18\" /> to both sides as you would to solve any equation: <img src=\"//latex.artofproblemsolving.com/b/9/b/b9be0a593f81b435eac714ce691219ba3c55695b.png\" class=\"latex\" alt=\"$f^{-1}(f(f(x)))=f^{-1}(f(x))\\Longrightarrow f(x)=|x|$\" style=\"vertical-align: -5px\" width=\"327\" height=\"21\" /> (We put the absolute value bars because we know that taking the inverse of <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> of both sides involves taking the square root of both sides, and <img src=\"//latex.artofproblemsolving.com/2/c/7/2c7473c5a1471a336117654c79464208a40ca115.png\" class=\"latex\" alt=\"$\\sqrt{t^2}=|t|$\" style=\"vertical-align: -5px\" width=\"72\" height=\"24\" />). From here, it is easy to see that this equation has <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" /> solutions at <img src=\"//latex.artofproblemsolving.com/d/f/7/df7b3bf2759e157328baa87c3b360986388df339.png\" class=\"latex\" alt=\"$\\pm1$\" style=\"vertical-align: 0px\" width=\"22\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/1/b/f/1bf1206f6336e32f04f5871b76751193e5c19c4c.png\" class=\"latex\" alt=\"$\\pm2$\" style=\"vertical-align: 0px\" width=\"22\" height=\"12\" />. We can also try for <img src=\"//latex.artofproblemsolving.com/1/f/4/1f450b5384b5f4b5605d5cd216546f6d7f0d2ac7.png\" class=\"latex\" alt=\"$f(f(f(x)))=f(f(x))$\" style=\"vertical-align: -4px\" width=\"168\" height=\"18\" /> (we will solve more methodically here): <img src=\"//latex.artofproblemsolving.com/9/2/9/929723a947ac4a6f33edce98d277724b7eb5888f.png\" class=\"latexcenter\" alt=\"\\[((x^2-2)^2-2)^2-2=(x^2-2)^2-2\\]\" width=\"279\" height=\"20\" /> <img src=\"//latex.artofproblemsolving.com/2/d/2/2d2f6ea9c7a3db5ef9a06d1b69be815d7991df39.png\" class=\"latexcenter\" alt=\"\\[(x^2-2)^2-2)^2 = (x^2-2)^2\\]\" width=\"208\" height=\"20\" /> <img src=\"//latex.artofproblemsolving.com/9/d/9/9d99fba5d70d53abd622f287c47c8f03f3379ecc.png\" class=\"latexcenter\" alt=\"\\[(x^2-2)^2-2=|x^2-2|\\]\" width=\"182\" height=\"20\" /> <img src=\"//latex.artofproblemsolving.com/4/4/0/44012a29ff641a7b73f30588259f8a49daafbb37.png\" class=\"latexcenter\" alt=\"\\[(x^2-2)^2-2=\\pm(x^2-2)\\]\" width=\"200\" height=\"20\" /> <img src=\"//latex.artofproblemsolving.com/7/2/7/72700b7c25b55714d314559498e8b799b0b80990.png\" class=\"latexcenter\" alt=\"\\[(x^2-2)^2=x^2 \\textup{   OR   } (x^2-2)^2=-x^2+4\\]\" width=\"305\" height=\"20\" />The first equation yeilds <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" /> results, and the second equation yields <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> results for a total of <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" /> results. It appears that <img src=\"//latex.artofproblemsolving.com/f/4/5/f4557721986ddb0fead3f3185239b3e4ac35c560.png\" class=\"latex\" alt=\"$\\underbrace{f(f\\cdots f}_{n\\textup{ times}}(x))=\\underbrace{f(f\\cdots f}_{n-1\\textup{ times}}(x))$\" style=\"vertical-align: -31px\" width=\"223\" height=\"45\" /> bas <img src=\"//latex.artofproblemsolving.com/f/9/3/f93f5c51ea4b04b4992b003b39479f29018f6bda.png\" class=\"latex\" alt=\"$2n$\" width=\"19\" height=\"12\" /> real solutions, giving a total of <img src=\"//latex.artofproblemsolving.com/0/4/c/04c607a4d1aa863d2759c3e4c2e7950bffc63cc8.png\" class=\"latex\" alt=\"$4040$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> apparent solutions for the original equation. This makes logical sense considering that <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> is an even polynomial with 2 roots. For a more formal proof, we consider <img src=\"//latex.artofproblemsolving.com/e/b/8/eb83499f322ab519519949c26c61bdc718a52465.png\" class=\"latex\" alt=\"$F_n(x)=\\underbrace{f(f\\cdots f}_{n\\textup{ times}}(x))$\" style=\"vertical-align: -29px\" width=\"170\" height=\"44\" />. We are asked to find the number of solutions of the equation in the form <img src=\"//latex.artofproblemsolving.com/5/3/4/53480922d1159b8750853d39817eb4a6e83cee44.png\" class=\"latex\" alt=\"$F_n(x)=F_{n-1}(x)$\" style=\"vertical-align: -5px\" width=\"134\" height=\"20\" />. Following from how we solved the first simple case, <img src=\"//latex.artofproblemsolving.com/1/e/b/1ebc8690c86f098a4f132ca66df98c5e62a5abab.png\" class=\"latex\" alt=\"$f^{-1}(F_n(x))=f^{-1}(F_{n-1}(x)) = F_{n-1}(x)=|F_{n-2}(x)|$\" style=\"vertical-align: -5px\" width=\"402\" height=\"21\" />. Note that the absolute value branches off in rwo directions: <img src=\"//latex.artofproblemsolving.com/0/c/3/0c3f2adea7ed70ba23556393162187ed4e098e8f.png\" class=\"latex\" alt=\"$F_{n-1}(x)=\\pm F_{n-2}(x)$\" style=\"vertical-align: -5px\" width=\"165\" height=\"20\" />. This would give a total of <img src=\"//latex.artofproblemsolving.com/4/4/f/44f31873b07d2121b119d8717b1717a90260c3a0.png\" class=\"latex\" alt=\"$2\\cdot2n=4n$\" style=\"vertical-align: -1px\" width=\"88\" height=\"14\" /> real and complex solutions (we multiply by 2 because <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> is a quadratic, which has 2 total roots). The complex roots come from the negative branches, so there are <img src=\"//latex.artofproblemsolving.com/3/1/6/316d1bcb4243dc8377adaa0720ae9a0756fc6379.png\" class=\"latex\" alt=\"$2\\cdot n=2n$\" style=\"vertical-align: -1px\" width=\"79\" height=\"14\" /> complex solutions. Therefore, there are a total of <img src=\"//latex.artofproblemsolving.com/f/9/3/f93f5c51ea4b04b4992b003b39479f29018f6bda.png\" class=\"latex\" alt=\"$2n$\" width=\"19\" height=\"12\" /> real roots, which again gives <img src=\"//latex.artofproblemsolving.com/0/4/c/04c607a4d1aa863d2759c3e4c2e7950bffc63cc8.png\" class=\"latex\" alt=\"$4040$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> roots for the original question. The question asks for <img src=\"//latex.artofproblemsolving.com/7/2/8/7287d3159d7039c02c50f42b0c9b6fd39a75fa17.png\" class=\"latex\" alt=\"$\\boxed{040}\\equiv4040(\\mod1000)&lt;cmath&gt;&lt;/cmath&gt;$\" style=\"vertical-align: -6px\" width=\"396\" height=\"25\" />~bhargavakanakapura\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_3\">Solution 3</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CIME_II_Problems/Problem_9&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 3\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given the function <img src=\"//latex.artofproblemsolving.com/5/f/3/5f344da4b7281482f8a8a4334cbaea8fb61f6942.png\" class=\"latex\" alt=\"$f(x)=x^2-2$\" style=\"vertical-align: -4px\" width=\"108\" height=\"19\" />, we need to find the number of real numbers <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> that satisfy:\n<img src=\"//latex.artofproblemsolving.com/7/6/1/76158b996634ac458ec3c6ab7a05c27623ed13ab.png\" class=\"latexcenter\" alt=\"\\[f^{2019}(x)=f^{2020}(x)\\]\" width=\"147\" height=\"20\" />\n</p><p>Here, <img src=\"//latex.artofproblemsolving.com/f/0/7/f07283aa774db2960ae2447ac0572966650af613.png\" class=\"latex\" alt=\"$f^n(x)$\" style=\"vertical-align: -5px\" width=\"46\" height=\"20\" /> denotes the function <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> iterated <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> times. To proceed, we note that:\n<img src=\"//latex.artofproblemsolving.com/5/b/f/5bf40ddde6be0201b99d4eb152c4570a36d09bdb.png\" class=\"latexcenter\" alt=\"\\[f^{2020}(x)=f\\left(f^{2019}(x)\\right)\\]\" width=\"176\" height=\"21\" />\n</p><p>Thus, the equation becomes:\n<img src=\"//latex.artofproblemsolving.com/4/c/8/4c8b6f31fb757aab4d35b694ab43da92eac80fd8.png\" class=\"latexcenter\" alt=\"\\[f^{2019}(x)=f\\left(f^{2019}(x)\\right)\\]\" width=\"176\" height=\"21\" />\n</p><p>Let <img src=\"//latex.artofproblemsolving.com/4/3/3/43311103c300db4433f64c8566f621956e35770e.png\" class=\"latex\" alt=\"$y=f^{2019}(x)$\" style=\"vertical-align: -5px\" width=\"98\" height=\"21\" />. Then we need:\n<img src=\"//latex.artofproblemsolving.com/5/e/6/5e6d07ac09e073aa73c2a42ac5ba0472bd53d54b.png\" class=\"latexcenter\" alt=\"\\[y=f(y)\\]\" width=\"66\" height=\"18\" />\n</p><p>Given <img src=\"//latex.artofproblemsolving.com/b/2/1/b2100cbd10c707e96ea3ca228a78cd54a8bdcd7a.png\" class=\"latex\" alt=\"$f(y)=y^2-2$\" style=\"vertical-align: -5px\" width=\"109\" height=\"21\" />, the equation <img src=\"//latex.artofproblemsolving.com/6/a/7/6a725f3a5718a5048e653af08da49ab20b1e1d3c.png\" class=\"latex\" alt=\"$y=y^2-2$\" style=\"vertical-align: -4px\" width=\"84\" height=\"20\" /> can be rewritten as:\n<img src=\"//latex.artofproblemsolving.com/e/c/b/ecb502ffcf5d3c6956b96af1911de461e9588f5a.png\" class=\"latexcenter\" alt=\"\\[y^2-y-2=0\\]\" width=\"112\" height=\"19\" />\n</p><p>Solving this quadratic equation:\n<img src=\"//latex.artofproblemsolving.com/7/f/a/7fa4ec713bd4ee79ca4ebc5014bde31079d0b408.png\" class=\"latexcenter\" alt=\"\\[y^2-y-2=(y-2)(y+1)=0\\]\" width=\"246\" height=\"20\" />\n</p><p>Thus, <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" /> can be either 2 or -1 . Hence, we must solve for <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> such that:\n1. <img src=\"//latex.artofproblemsolving.com/a/e/3/ae338938b488e7c5d797db83587b5bf93f015511.png\" class=\"latex\" alt=\"$f^{2019}(x)=2$\" style=\"vertical-align: -5px\" width=\"98\" height=\"21\" />\n2. <img src=\"//latex.artofproblemsolving.com/0/7/9/0791e4abd36fc38bca50a2660043178582b73872.png\" class=\"latex\" alt=\"$f^{2019}(x)=-1$\" style=\"vertical-align: -5px\" width=\"112\" height=\"21\" />\n</p><p>First, consider <img src=\"//latex.artofproblemsolving.com/a/e/3/ae338938b488e7c5d797db83587b5bf93f015511.png\" class=\"latex\" alt=\"$f^{2019}(x)=2$\" style=\"vertical-align: -5px\" width=\"98\" height=\"21\" />. We will determine the structure of the iterates of <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> to see how many <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> lead to 2 . Next, consider <img src=\"//latex.artofproblemsolving.com/0/7/9/0791e4abd36fc38bca50a2660043178582b73872.png\" class=\"latex\" alt=\"$f^{2019}(x)=-1$\" style=\"vertical-align: -5px\" width=\"112\" height=\"21\" /> and analyze similarly.\n</p><p>We start by analyzing the dynamics of <img src=\"//latex.artofproblemsolving.com/c/9/6/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png\" class=\"latex\" alt=\"$f(x)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" />. The fixed points of <img src=\"//latex.artofproblemsolving.com/c/9/6/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png\" class=\"latex\" alt=\"$f(x)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" /> are the solutions to <img src=\"//latex.artofproblemsolving.com/2/1/1/211f5d2a35f581bceeeabc4ab66e6a5584be4ab1.png\" class=\"latex\" alt=\"$x=f(x)$\" style=\"vertical-align: -5px\" width=\"72\" height=\"20\" />&#160;:\n<img src=\"//latex.artofproblemsolving.com/4/d/3/4d38f7d1e15d44014a62167e1cdaa1555c6f02cf.png\" class=\"latexcenter\" alt=\"\\[x=x^2-2 \\Rightarrow x^2-x-2=0\\]\" width=\"226\" height=\"16\" />\n</p><p>The solutions are <img src=\"//latex.artofproblemsolving.com/6/9/2/69271b422e022ea65ff1f288eddfcfa82afd8ab7.png\" class=\"latex\" alt=\"$x=2$\" width=\"43\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/8/6/c/86c2e8c17cff668023b2f29f2e95e4a0fafa6271.png\" class=\"latex\" alt=\"$x=-1$\" style=\"vertical-align: 0px\" width=\"56\" height=\"12\" />.\n</p><p>Next, we analyze the behavior around these fixed points:\n- For <img src=\"//latex.artofproblemsolving.com/9/9/2/992b91477b2cc7d7c089b8f364ddd8333c457afe.png\" class=\"latex\" alt=\"$y=2, f(2)=2^2-2=2$\" style=\"vertical-align: -5px\" width=\"192\" height=\"21\" />. So 2 is a fixed point of <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" />.\n- For <img src=\"//latex.artofproblemsolving.com/2/6/9/269710e34c6f83e1ea0ff0a59690992720451e72.png\" class=\"latex\" alt=\"$y=-1, f(-1)=(-1)^2-2=-1$\" style=\"vertical-align: -5px\" width=\"263\" height=\"21\" />. So -1 is also a fixed point of <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" />.\n</p><p>Now we determine the number of preimages for these points under <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" />.\nGiven <img src=\"//latex.artofproblemsolving.com/4/0/a/40ac4b6f5ab516ac6fe7132ed2fe7a1d77ca02dd.png\" class=\"latex\" alt=\"$y=2$\" style=\"vertical-align: -3px\" width=\"42\" height=\"15\" />&#160;:\n<img src=\"//latex.artofproblemsolving.com/8/3/6/836fcee8097aed93f07fde62ea4c5b4f650838bd.png\" class=\"latexcenter\" alt=\"\\[f(x)=2 \\quad \\Rightarrow \\quad x^2-2=2 \\quad \\Rightarrow \\quad x^2=4 \\quad \\Rightarrow \\quad x= \\pm 2\\]\" width=\"443\" height=\"20\" />\n</p><p>Given <img src=\"//latex.artofproblemsolving.com/3/8/5/385b0b37ab86602661f59d29be1b0b38fbee7888.png\" class=\"latex\" alt=\"$y=-1:$\" style=\"vertical-align: -4px\" width=\"69\" height=\"17\" />\n<img src=\"//latex.artofproblemsolving.com/3/8/8/3880b5f426c47053161d350ee6d6f7b8abbf9870.png\" class=\"latexcenter\" alt=\"\\[f(x)=-1 \\quad \\Rightarrow \\quad x^2-2=-1 \\quad \\Rightarrow \\quad x^2=1 \\quad \\Rightarrow \\quad x= \\pm 1\\]\" width=\"471\" height=\"20\" />\n</p><p>At each iteration, each of <img src=\"//latex.artofproblemsolving.com/e/6/5/e6588c6e54b4cc2501b76a080de5b56efcd2bc56.png\" class=\"latex\" alt=\"$\\pm 2$\" style=\"vertical-align: 0px\" width=\"22\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/7/c/f/7cfbd35086ffefb83637d42166582b43c8a1ff4a.png\" class=\"latex\" alt=\"$\\pm 1$\" style=\"vertical-align: 0px\" width=\"22\" height=\"12\" /> can have 2 preimages under the iteration. This means the total number of solutions doubles with each iteration.\n- For <img src=\"//latex.artofproblemsolving.com/a/e/3/ae338938b488e7c5d797db83587b5bf93f015511.png\" class=\"latex\" alt=\"$f^{2019}(x)=2$\" style=\"vertical-align: -5px\" width=\"98\" height=\"21\" />, starting with 2, it could be reached through <img src=\"//latex.artofproblemsolving.com/9/a/f/9af1fa5df92ca7d5de78e762f4b6824653cd78fc.png\" class=\"latex\" alt=\"$f^{2018}(x)= \\pm 2$\" style=\"vertical-align: -5px\" width=\"112\" height=\"21\" /> with doubling at each iteration.\n- For <img src=\"//latex.artofproblemsolving.com/0/7/9/0791e4abd36fc38bca50a2660043178582b73872.png\" class=\"latex\" alt=\"$f^{2019}(x)=-1$\" style=\"vertical-align: -5px\" width=\"112\" height=\"21\" />, starting with -1 , it could be reached through <img src=\"//latex.artofproblemsolving.com/0/2/1/021136edfe7c9e6c50d0920a83cbf27edd12f3ef.png\" class=\"latex\" alt=\"$f^{2018}(x)= \\pm 1$\" style=\"vertical-align: -5px\" width=\"112\" height=\"21\" /> with doubling at each iteration.\n</p><p>Each iteration brings doubling of the number of preimages, leading to:\n<img src=\"//latex.artofproblemsolving.com/0/c/d/0cde5e3894eb432027cea97adfd245a70f1a3723.png\" class=\"latexcenter\" alt=\"\\[2^{2019} \\text { for each target value }(2 \\text { and }-1)\\]\" width=\"286\" height=\"20\" />\n</p><p>Summing these:\n<img src=\"//latex.artofproblemsolving.com/2/b/f/2bf39fbe7b18e98d3f7432c44b131ae300ba875e.png\" class=\"latexcenter\" alt=\"\\[N=2 \\times 2^{2019}=2^{2020}\\]\" width=\"166\" height=\"15\" />\n</p><p>Finally, we find the remainder when <img src=\"//latex.artofproblemsolving.com/6/2/f/62f6066547f82ef40934e833df063c1728c0b3d6.png\" class=\"latex\" alt=\"$2^{2020}$\" width=\"34\" height=\"15\" /> is divided by 1000 . Using Euler's theorem for finding <img src=\"//latex.artofproblemsolving.com/6/9/d/69d980c08fae5bd490ed9d37b17bc60c421b3428.png\" class=\"latex\" alt=\"$2^{2020} \\bmod 1000$\" style=\"vertical-align: -1px\" width=\"120\" height=\"17\" />&#160;:\n<img src=\"//latex.artofproblemsolving.com/0/e/3/0e3d45f1e4ae58479507c91bf22460d4404a47a3.png\" class=\"latexcenter\" alt=\"\\[\\phi(1000)=400\\]\" width=\"111\" height=\"18\" />\n</p><p>Thus,\n<img src=\"//latex.artofproblemsolving.com/9/a/0/9a05b353151e881462b8a60464bba4999a485976.png\" class=\"latexcenter\" alt=\"\\[2^{400} \\equiv 1 \\quad \\bmod 1000\\]\" width=\"159\" height=\"15\" />\n</p><p>Since <img src=\"//latex.artofproblemsolving.com/5/6/7/567cf0c7ddee6622ac6ffcfe63584ec3354981ce.png\" class=\"latex\" alt=\"$2020=5 \\times 400+20$\" style=\"vertical-align: -2px\" width=\"161\" height=\"15\" />\n<img src=\"//latex.artofproblemsolving.com/9/8/2/982377c7b4d48f92172cb8e1d829340fa8290252.png\" class=\"latexcenter\" alt=\"\\[2^{2020}=\\left(2^{400}\\right)^5 \\cdot 2^{20} \\equiv 1^5 \\cdot 2^{20} \\equiv 2^{20} \\quad \\bmod 1000\\]\" width=\"371\" height=\"24\" />\n</p><p>Computing <img src=\"//latex.artofproblemsolving.com/9/4/1/94170d2f69393bdbaabeebae30df45a91a9672d1.png\" class=\"latex\" alt=\"$2^{20} \\bmod 1000$\" style=\"vertical-align: -1px\" width=\"106\" height=\"17\" />&#160;:\n<img src=\"//latex.artofproblemsolving.com/7/2/a/72a4125dbe697e5392876b4cbcaabf6aefef96f8.png\" class=\"latexcenter\" alt=\"\\[2^{10}=1024 \\Rightarrow 1024 \\quad \\bmod 1000=24 \\\\ 2^{20}= \\left(2^{10}\\right)^2=24^2=576\\]\" width=\"483\" height=\"24\" />\n</p><p>Thus, the remainder when <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> is divided by 1000 is:\n\\(\\boxed{\\text{576}}\\)\nBy AnYu\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055746\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.054 seconds\nReal time usage: 0.057 seconds\nPreprocessor visited node count: 842/1000000\nPreprocessor generated node count: 2580/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 23369/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22325-0!canonical and timestamp 20240908055746 and revision id 219584\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 9",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CIME_II_Problems/Problem_9",
+          "byteoffset": 0,
+          "anchor": "Problem_9"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CIME_II_Problems/Problem_9",
+          "byteoffset": 307,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CIME_II_Problems/Problem_9",
+          "byteoffset": 2060,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 3",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2020_CIME_II_Problems/Problem_9",
+          "byteoffset": 4429,
+          "anchor": "Solution_3"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CIME II Problems/Problem 9",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

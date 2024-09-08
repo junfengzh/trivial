@@ -1,0 +1,645 @@
+{
+  "2012 USAJMO Problems/Problem 1": {
+    "parse": {
+      "title": "2012 USAJMO Problems/Problem 1",
+      "pageid": 11052,
+      "revid": 207930,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given a triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" />, let <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> be points on segments <img src=\"//latex.artofproblemsolving.com/8/4/0/840e2b592390eb6ec918fa6f3292716ce170de66.png\" class=\"latex\" alt=\"$\\overline{AB}$\" style=\"vertical-align: -1px\" width=\"30\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png\" class=\"latex\" alt=\"$\\overline{AC}$\" style=\"vertical-align: -1px\" width=\"30\" height=\"18\" />, respectively, such that <img src=\"//latex.artofproblemsolving.com/d/a/0/da0acc3d5b6eb42db210a8b11d84482c9376c6c1.png\" class=\"latex\" alt=\"$AP = AQ$\" style=\"vertical-align: -3px\" width=\"79\" height=\"16\" />.  Let <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> be distinct points on segment <img src=\"//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png\" class=\"latex\" alt=\"$\\overline{BC}$\" width=\"29\" height=\"15\" /> such that <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> lies between <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/2/c/12ccd09622786cbe2c7bbb227e0672c37b79d5e4.png\" class=\"latex\" alt=\"$\\angle{BPS} = \\angle{PRS}$\" style=\"vertical-align: -1px\" width=\"133\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/0/3/d/03d47d353b43bb1039a10b2675f98034268c9b80.png\" class=\"latex\" alt=\"$\\angle{CQR} = \\angle{QSR}$\" style=\"vertical-align: -3px\" width=\"133\" height=\"16\" />.  Prove that <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> are concyclic (in other words, these four points lie on a circle).\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Since <img src=\"//latex.artofproblemsolving.com/b/9/b/b9ba8e578e996df4bd38679d00fef58c7ed72a9b.png\" class=\"latex\" alt=\"$\\angle BPS = \\angle PRS$\" width=\"131\" height=\"12\" />, the circumcircle of triangle <img src=\"//latex.artofproblemsolving.com/2/d/1/2d181e84c1a9fdca6a3dcd051f910a607c666acb.png\" class=\"latex\" alt=\"$PRS$\" width=\"40\" height=\"12\" /> is tangent to <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> at <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />.  Similarly, since <img src=\"//latex.artofproblemsolving.com/7/c/1/7c1ca80bfe2c7f2aa00de6690576cff216a99521.png\" class=\"latex\" alt=\"$\\angle CQR = \\angle QSR$\" style=\"vertical-align: -3px\" width=\"133\" height=\"16\" />, the circumcircle of triangle <img src=\"//latex.artofproblemsolving.com/d/d/c/ddc0d690868e31082e37790552b4480943852bf7.png\" class=\"latex\" alt=\"$QRS$\" style=\"vertical-align: -3px\" width=\"40\" height=\"16\" /> is tangent to <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> at <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/b/8/e/b8ef0072169f6d57eb2fc462cf8654009d9d7408.png\" class=\"latexcenter\" alt=\"[asy] import markers;  unitsize(0.5 cm);  pair A, B, C, O, P, Q, R, S;  A = (2,12); B = (0,0); C = (14,0); P = intersectionpoint(A--B,Circle(A,8)); Q = intersectionpoint(A--C,Circle(A,8)); O = extension(P, P + rotate(90)*(A - P), Q, Q + rotate(90)*(A - Q)); S = intersectionpoint(B--C,arc(O, abs(O - P), 180, 270)); R = intersectionpoint(B--C,arc(O, abs(O - P), 270, 360));  draw(A--B--C--cycle); draw(Circle(O, abs(O - P))); draw(S--P--R); draw(S--Q--R);  label(&quot;$A$&quot;, A, N); label(&quot;$B$&quot;, B, SW); label(&quot;$C$&quot;, C, SE); label(&quot;$P$&quot;, P, W); label(&quot;$Q$&quot;, Q, NE); label(&quot;$R$&quot;, R, SE); label(&quot;$S$&quot;, S, SW);  markangle(1, B, P, S, radius=4mm, marker(markinterval(stickframe(n=1,2mm),true))); markangle(1, P, R, S, radius=4mm, marker(markinterval(stickframe(n=1,2mm),true))); markangle(1, R, Q, C, radius=4mm, marker(markinterval(stickframe(n=2,2mm),true))); markangle(1, R, S, Q, radius=4mm, marker(markinterval(stickframe(n=2,2mm),true))); [/asy]\" width=\"378\" height=\"328\" />\n</p><p>For the sake of contradiction, suppose that the circumcircles of triangles <img src=\"//latex.artofproblemsolving.com/2/d/1/2d181e84c1a9fdca6a3dcd051f910a607c666acb.png\" class=\"latex\" alt=\"$PRS$\" width=\"40\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/d/d/c/ddc0d690868e31082e37790552b4480943852bf7.png\" class=\"latex\" alt=\"$QRS$\" style=\"vertical-align: -3px\" width=\"40\" height=\"16\" /> are not the same circle.  Since <img src=\"//latex.artofproblemsolving.com/d/a/0/da0acc3d5b6eb42db210a8b11d84482c9376c6c1.png\" class=\"latex\" alt=\"$AP = AQ$\" style=\"vertical-align: -3px\" width=\"79\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/6/b/2/6b2688eab8230516d56988476932af153c57499d.png\" class=\"latex\" alt=\"$AP^2 = AQ^2$\" style=\"vertical-align: -4px\" width=\"97\" height=\"20\" />, so the power of A with respect to both circumcircles is the same. Thus, <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> lies on the <a href=\"/wiki/index.php/Radical_axis\" title=\"Radical axis\">radical axis</a> of both circles.  However, both circles pass through <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />, so the radical axis of both circles is <img src=\"//latex.artofproblemsolving.com/7/6/3/7631e00d1deb6ad3d55301906009f15d342e412a.png\" class=\"latex\" alt=\"$RS$\" width=\"26\" height=\"12\" />.  Hence, <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> lies on <img src=\"//latex.artofproblemsolving.com/7/6/3/7631e00d1deb6ad3d55301906009f15d342e412a.png\" class=\"latex\" alt=\"$RS$\" width=\"26\" height=\"12\" />, which is a contradiction.\n</p><p>Therefore, the two circumcircles are the same circle.  In other words, <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> all lie on the same circle.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Note that (as in the first solution) the circumcircle of triangle <img src=\"//latex.artofproblemsolving.com/2/d/1/2d181e84c1a9fdca6a3dcd051f910a607c666acb.png\" class=\"latex\" alt=\"$PRS$\" width=\"40\" height=\"12\" /> is tangent to <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> at <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />.  Similarly, since <img src=\"//latex.artofproblemsolving.com/7/c/1/7c1ca80bfe2c7f2aa00de6690576cff216a99521.png\" class=\"latex\" alt=\"$\\angle CQR = \\angle QSR$\" style=\"vertical-align: -3px\" width=\"133\" height=\"16\" />, the circumcircle of triangle <img src=\"//latex.artofproblemsolving.com/d/d/c/ddc0d690868e31082e37790552b4480943852bf7.png\" class=\"latex\" alt=\"$QRS$\" style=\"vertical-align: -3px\" width=\"40\" height=\"16\" /> is tangent to <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> at <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />.\n</p><p>Now, suppose these circumcircles are not the same circle. They already intersect at <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />, so they cannot intersect anymore. Thus, AS must touch the two circumcircles at points <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" />, with <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> on the circumcircle of triangle <img src=\"//latex.artofproblemsolving.com/2/d/1/2d181e84c1a9fdca6a3dcd051f910a607c666acb.png\" class=\"latex\" alt=\"$PRS$\" width=\"40\" height=\"12\" />. By Power of a Point, <img src=\"//latex.artofproblemsolving.com/a/8/3/a83e9938926fdd1417132f4fceb618bb30b866de.png\" class=\"latex\" alt=\"$AQ^2 = AM \\cdot AS$\" style=\"vertical-align: -4px\" width=\"134\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/5/3/4/534f3d346eb79c5da8687076057e2a240588b39f.png\" class=\"latex\" alt=\"$AP^2 = AN \\cdot AS$\" width=\"128\" height=\"15\" />. Hence, because <img src=\"//latex.artofproblemsolving.com/d/a/0/da0acc3d5b6eb42db210a8b11d84482c9376c6c1.png\" class=\"latex\" alt=\"$AP = AQ$\" style=\"vertical-align: -3px\" width=\"79\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/f/2/6/f26d1a5e7a68526b0f0bcab473fb4772e3a77036.png\" class=\"latex\" alt=\"$AM = AN$\" width=\"87\" height=\"13\" />, a contradiction because then, as they lie on the same line segment, M and N must be the same point! (Note line segment, not line.) Hence, the two circumcircles are the same circle.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=4\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\">USAJMO Problems and Solutions</a></li></ul>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2012_USAJMO\" title=\"2012 USAJMO\">2012 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2012_USAJMO_Problems\" title=\"2012 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2012\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\"><b>First Problem</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_2\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_2\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_3\" title=\"2012 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_4\" title=\"2012 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_5\" title=\"2012 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_6\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240908004401\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.060 seconds\nReal time usage: 0.068 seconds\nPreprocessor visited node count: 567/1000000\nPreprocessor generated node count: 1370/1000000\nPost‐expand include size: 1182/2097152 bytes\nTemplate argument size: 55/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 10313/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.604      1 -total\n 69.37%    3.194      1 Template:USAJMO_newbox\n 25.87%    1.191      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11052-0!canonical and timestamp 20240908004400 and revision id 207930\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Radical axis"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2012",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2012_USAJMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2012_USAJMO_Problems/Problem_1",
+          "byteoffset": 608,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2012_USAJMO_Problems/Problem_1",
+          "byteoffset": 2564,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2012_USAJMO_Problems/Problem_1",
+          "byteoffset": 3504,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2012 USAJMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2012 USAJMO Problems/Problem 2": {
+    "parse": {
+      "title": "2012 USAJMO Problems/Problem 2",
+      "pageid": 11056,
+      "revid": 46603,
+      "text": {
+        "*": "<div class=\"redirectMsg\"><p>Redirect to:</p><ul class=\"redirectText\"><li><a href=\"/wiki/index.php/2012_USAMO_Problems/Problem_1\" title=\"2012 USAMO Problems/Problem 1\">2012 USAMO Problems/Problem 1</a></li></ul></div><div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908054735\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.013 seconds\nReal time usage: 0.013 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11056-0!canonical and timestamp 20240908054735 and revision id 46603\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAMO Problems/Problem 1"
+        }
+      ],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2012 USAJMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2012 USAJMO Problems/Problem 3": {
+    "parse": {
+      "title": "2012 USAJMO Problems/Problem 3",
+      "pageid": 11053,
+      "revid": 175015,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_3\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 3</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Solution_4\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Solution 4</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Solution_5\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Solution 5</span></a></li>\n<li class=\"toclevel-1 tocsection-7\"><a href=\"#Solution_6\"><span class=\"tocnumber\">7</span> <span class=\"toctext\">Solution 6</span></a></li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#See_Also\"><span class=\"tocnumber\">8</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> be positive real numbers.  Prove that\n<img src=\"//latex.artofproblemsolving.com/4/4/8/448b311f5688c5c18e520bfe1a9c56906700c3d2.png\" class=\"latexcenter\" alt=\"\\[\\frac{a^3 + 3b^3}{5a + b} + \\frac{b^3 + 3c^3}{5b + c} + \\frac{c^3 + 3a^3}{5c + a} \\ge \\frac{2}{3} (a^2 + b^2 + c^2).\\]\" width=\"390\" height=\"40\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>By the <a href=\"/wiki/index.php/Cauchy-Schwarz_Inequality\" title=\"Cauchy-Schwarz Inequality\">Cauchy-Schwarz</a> inequality,\n<img src=\"//latex.artofproblemsolving.com/c/8/5/c853ed04ce97a5d53eb2c179cc962c2d9e0af755.png\" class=\"latexcenter\" alt=\"\\[[a(5a + b) + b(5b + c) + c(5c + a)] \\left( \\frac{a^3}{5a + b} + \\frac{b^3}{5b + c} + \\frac{c^3}{5c + a} \\right) \\ge (a^2 + b^2 + c^2)^2,\\]\" width=\"580\" height=\"43\" />\nso\n<img src=\"//latex.artofproblemsolving.com/c/7/0/c70b85f9d08ce18cabc92505778450fa22084b5d.png\" class=\"latexcenter\" alt=\"\\[\\frac{a^3}{5a + b} + \\frac{b^3}{5b + c} + \\frac{c^3}{5c + a} \\ge \\frac{(a^2 + b^2 + c^2)^2}{5a^2 + 5b^2 + 5c^2 + ab + ac + bc}.\\]\" width=\"467\" height=\"40\" />\nSince <img src=\"//latex.artofproblemsolving.com/d/b/1/db15b2d04ba34c80476cc7ef7e6a4a0886d22e18.png\" class=\"latex\" alt=\"$a^2 + b^2 + c^2 \\ge ab + ac + bc$\" style=\"vertical-align: -2px\" width=\"211\" height=\"17\" />,\n<img src=\"//latex.artofproblemsolving.com/c/6/7/c67539d05946214142c90df1baebf0bcc6fc3875.png\" class=\"latexcenter\" alt=\"\\[\\frac{(a^2 + b^2 + c^2)^2}{5a^2 + 5b^2 + 5c^2 + ab + ac + bc} \\ge \\frac{(a^2 + b^2 + c^2)^2}{6a^2 + 6b^2 + 6c^2} = \\frac{1}{6} (a^2 + b^2 + c^2).\\]\" width=\"517\" height=\"40\" />\nHence,\n<img src=\"//latex.artofproblemsolving.com/2/5/b/25b8b46bbae4a04cad9f782369cbd6b469179254.png\" class=\"latexcenter\" alt=\"\\[\\frac{a^3}{5a + b} + \\frac{b^3}{5b + c} + \\frac{c^3}{5c + a} \\ge \\frac{1}{6} (a^2 + b^2 + c^2).\\]\" width=\"346\" height=\"40\" />\n</p><p>Again by the Cauchy-Schwarz inequality,\n<img src=\"//latex.artofproblemsolving.com/d/f/4/df4ba3115174961740e725bbf3e055ee3c95ca60.png\" class=\"latexcenter\" alt=\"\\[[b(5a + b) + c(5b + c) + a(5c + a)] \\left( \\frac{b^3}{5a + b} + \\frac{c^3}{5b + c} + \\frac{a^3}{5c + a} \\right) \\ge (a^2 + b^2 + c^2)^2,\\]\" width=\"580\" height=\"43\" />\nso\n<img src=\"//latex.artofproblemsolving.com/a/0/9/a091852266f2a5080dcdc2d9bd4f5aabb253c303.png\" class=\"latexcenter\" alt=\"\\[\\frac{b^3}{5a + b} + \\frac{c^3}{5b + c} + \\frac{a^3}{5c + a} \\ge \\frac{(a^2 + b^2 + c^2)^2}{a^2 + b^2 + c^2 + 5ab + 5ac + 5bc}.\\]\" width=\"467\" height=\"41\" />\nSince <img src=\"//latex.artofproblemsolving.com/d/b/1/db15b2d04ba34c80476cc7ef7e6a4a0886d22e18.png\" class=\"latex\" alt=\"$a^2 + b^2 + c^2 \\ge ab + ac + bc$\" style=\"vertical-align: -2px\" width=\"211\" height=\"17\" />,\n<img src=\"//latex.artofproblemsolving.com/0/c/5/0c593c978f6e27800e4421768d0df18ee5d7ee1d.png\" class=\"latexcenter\" alt=\"\\[\\frac{(a^2 + b^2 + c^2)^2}{a^2 + b^2 + c^2 + 5ab + 5ac + 5bc} \\ge \\frac{(a^2 + b^2 + c^2)^2}{6a^2 + 6b^2 + 6c^2} = \\frac{1}{6} (a^2 + b^2 + c^2).\\]\" width=\"517\" height=\"40\" />\nHence,\n<img src=\"//latex.artofproblemsolving.com/5/4/a/54abb3c7c80aa1733717f8d78fa9680a3cf52dc2.png\" class=\"latexcenter\" alt=\"\\[\\frac{b^3}{5a + b} + \\frac{c^3}{5b + c} + \\frac{a^3}{5c + a} \\ge \\frac{1}{6} (a^2 + b^2 + c^2).\\]\" width=\"346\" height=\"40\" />\n</p><p>Therefore,\n<img src=\"//latex.artofproblemsolving.com/9/7/3/9736e742df8602ada135197c276e1cdd5c4d108c.png\" class=\"latexcenter\" alt=\"\\[\\frac{a^3 + 3b^3}{5a + b} + \\frac{b^3 + 3c^3}{5b + c} + \\frac{c^3 + 3a^3}{5c + a} \\ge \\frac{1 + 3}{6} (a^2 + b^2 + c^2) = \\frac{2}{3} (a^2 + b^2 + c^2).\\]\" width=\"517\" height=\"40\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Titu's Lemma: The sum of multiple fractions in the form <img src=\"//latex.artofproblemsolving.com/4/f/3/4f3572d609c6f93238a4cbae6bccbe04616342d4.png\" class=\"latex\" alt=\"$\\frac{a_n^2}{b_n}$\" style=\"vertical-align: -15px\" width=\"21\" height=\"41\" /> where <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/8/f/f/8ffd01cdc48042ce7c67d8edcd4904809831cfe4.png\" class=\"latex\" alt=\"$b_n$\" style=\"vertical-align: -2px\" width=\"16\" height=\"15\" /> are sequences of real numbers is greater than of equal to the square of the sum of all <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" /> divided by the sum of all <img src=\"//latex.artofproblemsolving.com/9/4/d/94d9565abaadf04609a2e9941aa2d20b0a299b8a.png\" class=\"latex\" alt=\"$b_i$\" style=\"vertical-align: -2px\" width=\"12\" height=\"15\" />, where i is a whole number less than n+1. Titu's Lemma can be proved using the Cauchy-Schwarz Inequality after multiplying out the denominator of the RHS.\n</p><p>Consider the LHS of the proposed inequality. Split up the numerators and multiply both sides of the fraction by either a or 3a to make the LHS\n<img src=\"//latex.artofproblemsolving.com/b/b/5/bb59c991eeec060f418f26510fdcedc497241af0.png\" class=\"latexcenter\" alt=\"\\[\\sum_{cyc} \\frac {a^4} {5a^2+ab}+\\sum_{cyc} \\frac {9a^4} {15ac+3a^2}\\]\" width=\"235\" height=\"48\" />\n(Cyclic notation is a special notation in which all permutations of (a,b,c) is the summation command.)\n</p><p>Then use Titu's Lemma on all terms: <img src=\"//latex.artofproblemsolving.com/1/e/6/1e6ffd148cf766ae878225a88cdfbd6a8a32a8ac.png\" class=\"latexcenter\" alt=\"\\[\\sum_{cyc} \\frac {a^4} {5a^2+ab} +\\sum_{cyc} \\frac {9a^4} {15ac+3a^2} \\ge \\frac {16(a^2+b^2+c^2)^2} {8(a^2+b^2+c^2)+16(ab+bc+ca)} \\ge \\frac {16(a^2 + b^2 + c^2)^2}{24(a^2 + b^2 + c^2)} = \\frac{2}{3} (a^2 + b^2 + c^2)\\]\" width=\"807\" height=\"48\" /> owing to the fact that <img src=\"//latex.artofproblemsolving.com/7/8/5/785b4231507f4c99c93aa4bf203c784e36ccb8f8.png\" class=\"latex\" alt=\"$a^2+b^2+c^2 \\ge ab+bc+ca$\" style=\"vertical-align: -2px\" width=\"211\" height=\"17\" />, which is actually equivalent to <img src=\"//latex.artofproblemsolving.com/5/8/5/585312fcef71b349b70cf1a047d1830de142630e.png\" class=\"latex\" alt=\"$(a-b)^2 + (b-c)^2 + (c-a)^2 \\ge 0$\" style=\"vertical-align: -4px\" width=\"259\" height=\"19\" />!\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_3\">Solution 3</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 3\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We proceed to prove that\n<img src=\"//latex.artofproblemsolving.com/c/5/2/c52d3a698663e0f197adc851cb5e2dae41a640ab.png\" class=\"latexcenter\" alt=\"\\[\\frac{a^3 + 3b^3}{5a + b} \\ge -\\frac{1}{36} a^2 + \\frac{25}{36} b^2\\]\" width=\"201\" height=\"40\" />\n</p><p>(then the inequality in question is just the cyclic sum of both sides, since <img src=\"//latex.artofproblemsolving.com/8/5/b/85b9c8f86b494c420b447b4ab18833e3c7888935.png\" class=\"latexcenter\" alt=\"\\[\\sum_{cyc} (-\\frac{1}{36} a^2 + \\frac{25}{36} b^2) = \\frac{24}{36}\\sum_{cyc} a^2 = \\frac{2}{3} (a^2+b^2+c^2)\\]\" width=\"389\" height=\"47\" />\n)\n</p><p>Indeed, by AP-GP, we have \n</p><p><img src=\"//latex.artofproblemsolving.com/0/4/0/040230a38420df1ebd9c6f4a3b8ed4864046a31c.png\" class=\"latexcenter\" alt=\"\\[41 (a^3 + b^3+b^3) \\ge 41 \\cdot 3 ab^2\\]\" width=\"212\" height=\"19\" />\n</p><p>and\n</p><p><img src=\"//latex.artofproblemsolving.com/7/8/c/78cc2657bcc406488570de8825696deaaf82a955.png\" class=\"latexcenter\" alt=\"\\[b^3 + a^2b \\ge 2 ab^2\\]\" width=\"119\" height=\"17\" />\n</p><p>Summing up, we have\n</p><p><img src=\"//latex.artofproblemsolving.com/c/c/6/cc6c8baaba46e8a756ed5f46223336f7a3205ad8.png\" class=\"latexcenter\" alt=\"\\[41a^3 + 83b^3 + a^2 b \\ge 125 ab^2\\]\" width=\"212\" height=\"17\" />\n</p><p>which is equivalent to:\n</p><p><img src=\"//latex.artofproblemsolving.com/5/2/4/524e82b05d73c8c604d6457527696244b5eda9d0.png\" class=\"latexcenter\" alt=\"\\[36(a^3 + 3b^3) \\ge (5a + b)(-a^2 + 25b^2)\\]\" width=\"282\" height=\"19\" />\n</p><p>Dividing <img src=\"//latex.artofproblemsolving.com/c/6/d/c6d32ef86ddf98713b23490465e9be353dfc1fbc.png\" class=\"latex\" alt=\"$36(5a+b)$\" style=\"vertical-align: -4px\" width=\"79\" height=\"18\" /> from both sides, the desired inequality is proved.\n</p><p>--<a href=\"/wiki/index.php/User:Lightest\" title=\"User:Lightest\">Lightest</a> 15:31, 7 May 2012 (EDT)\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_4\">Solution 4</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=5\" title=\"Edit section: Solution 4\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>By Cauchy-Schwarz, \n</p><p><img src=\"//latex.artofproblemsolving.com/5/d/d/5dd205430dfa38b6aa7aab8207b972ba9b392cfc.png\" class=\"latexcenter\" alt=\"\\[\\left(\\sum_{cyc} \\dfrac{a^3}{5a + b} + \\dfrac{b^3}{5a + b} + \\dfrac{b^3}{5a + b} + \\dfrac{b^3}{5a + b} \\right) \\ge \\dfrac{\\left( \\sum_{cyc} a^2 + b^2 + b^2 + b^2 \\right)^2}{ \\left( \\sum_{cyc} a(5a + b) + b(5a + b) + b(5a + b) + b(5a + b) \\right) }\\]\" width=\"771\" height=\"72\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/c/d/1/cd12be6cc3fab31909d40c6674da42903db894d6.png\" class=\"latexcenter\" alt=\"\\[= \\dfrac{\\left(4a^2 + 4b^2 + 4c^2\\right)^2}{\\left(8a^2 + 8b^2 + 8c^2\\right) + \\left(16ab + 16bc + 16ca\\right)}\\]\" width=\"340\" height=\"46\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/6/c/1/6c1a2614c369fe54215fbcd0bcdce724ff9e12c3.png\" class=\"latexcenter\" alt=\"\\[\\ge \\dfrac{16\\left(a^2 + b^2 + c^2\\right)^2}{\\left(8a^2 + 8b^2 + 8c^2\\right) + \\left(8a^2 + 8b^2\\right) + \\left(8b^2 + 8c^2\\right) + \\left(8c^2 + 8a^2\\right)}\\]\" width=\"479\" height=\"46\" /> (by AM-GM) <img src=\"//latex.artofproblemsolving.com/b/9/c/b9c7c7316e0057962340f7896f96616b0757235b.png\" class=\"latexcenter\" alt=\"\\[= \\dfrac{2}{3}\\left(a^2 + b^2 + c^2\\right)\\]\" width=\"140\" height=\"37\" /> as desired.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_5\">Solution 5</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=6\" title=\"Edit section: Solution 5\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We note that if we can prove that there exists a real number <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> such that <img src=\"//latex.artofproblemsolving.com/9/f/c/9fc8cc7b68f1a1d227dd9c2f94bcd46b8f28bd24.png\" class=\"latexcenter\" alt=\"\\[\\frac{a^3+3b^3}{5a+b}\\geq xa^2+(\\frac{2}{3}-x)b^2\\]\" width=\"213\" height=\"41\" /> for all positive reals <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, then we are done since both sides are a cyclic sum of <img src=\"//latex.artofproblemsolving.com/e/9/b/e9bdf3e496517e8f8742f81dd774be1f93cf6e8c.png\" class=\"latex\" alt=\"$a,b$\" style=\"vertical-align: -3px\" width=\"25\" height=\"16\" />, and <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" />. Note that if we multiply both <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> by a constant <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" />, the left and right sides will both multiply by <img src=\"//latex.artofproblemsolving.com/e/2/2/e2221c84f16a3f75ae07e5023384cc40d9c05357.png\" class=\"latex\" alt=\"$r^2$\" width=\"14\" height=\"15\" /> (since the numerator on the left will multiply by <img src=\"//latex.artofproblemsolving.com/2/4/7/2471a708cb8167c372f2215758379284f3bf332d.png\" class=\"latex\" alt=\"$r^3$\" width=\"14\" height=\"15\" /> and the denominator will multiply by <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" />. This means that if the inequality is satisfied for an ordered pair <img src=\"//latex.artofproblemsolving.com/8/e/8/8e8da0aef2d19017da7471378386d61620f288f5.png\" class=\"latex\" alt=\"$(a,b)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" />, then it is also satisfied for <img src=\"//latex.artofproblemsolving.com/a/b/6/ab6b44c5e8cea6ebcee83b63fd1f7f81cc7a8e4e.png\" class=\"latex\" alt=\"$(ar,br)$\" style=\"vertical-align: -5px\" width=\"58\" height=\"20\" /> for any positive real <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" />. Thus, without loss of generality we can let <img src=\"//latex.artofproblemsolving.com/c/f/5/cf590e9abb33aa9776ddc386b1ba6ee7b43fa413.png\" class=\"latex\" alt=\"$b=1$\" style=\"vertical-align: 0px\" width=\"40\" height=\"13\" />,and our inequality becomes <img src=\"//latex.artofproblemsolving.com/0/6/e/06e6718a41c304a5f8a7c598007fbd66bf40b5fc.png\" class=\"latexcenter\" alt=\"\\[\\frac{a^3+3}{5a+1}\\geq a^2x+\\frac{2}{3}-x.\\]\" width=\"175\" height=\"41\" /> Expanding this and rearranging we get <img src=\"//latex.artofproblemsolving.com/b/2/0/b203a4bda873d656c86d2c642177179a04c92840.png\" class=\"latex\" alt=\"$a^3(1-5x)+a^2(-x)+a(5x-\\frac{10}{3})+x+\\frac{7}{3}\\geq0$\" style=\"vertical-align: -13px\" width=\"373\" height=\"38\" />. Since <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> is a root of the left side, we can factor this as <img src=\"//latex.artofproblemsolving.com/5/2/0/520f541c8897c940cba7e9c8c253fc7bda812e79.png\" class=\"latexcenter\" alt=\"\\[(a-1)(a^2(1-5x)+a(1-6x)-x-\\frac{7}{3})\\geq0.\\]\" width=\"351\" height=\"38\" /> Note that for this to always be nonnegative, we must have <img src=\"//latex.artofproblemsolving.com/3/e/a/3ea9a2974d5614f8770ac8f2449db978dedf4320.png\" class=\"latex\" alt=\"$a^2(1-5x)+a(1-6x)-x-\\frac{7}{3}$\" style=\"vertical-align: -13px\" width=\"249\" height=\"38\" /> be positive when <img src=\"//latex.artofproblemsolving.com/e/b/8/eb8726d98aced2f3140dd77a2d8614c2e7674700.png\" class=\"latex\" alt=\"$a&gt;1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" /> and negative when <img src=\"//latex.artofproblemsolving.com/2/c/a/2ca0e3b3ba285808d0db4e2f698887c144059000.png\" class=\"latex\" alt=\"$a&lt;1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" />. Thus, it must have a root at <img src=\"//latex.artofproblemsolving.com/5/0/2/502e059d1a020b368aee3a99c5669d88331d321f.png\" class=\"latex\" alt=\"$a=1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" />, so we plug in <img src=\"//latex.artofproblemsolving.com/5/0/2/502e059d1a020b368aee3a99c5669d88331d321f.png\" class=\"latex\" alt=\"$a=1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" /> is a root and find that we must have <img src=\"//latex.artofproblemsolving.com/7/2/0/720fc70b4a48f960bc40450305d578566bd633e1.png\" class=\"latex\" alt=\"$x=-\\frac{1}{36}$\" style=\"vertical-align: -13px\" width=\"73\" height=\"38\" />. When <img src=\"//latex.artofproblemsolving.com/7/2/0/720fc70b4a48f960bc40450305d578566bd633e1.png\" class=\"latex\" alt=\"$x=-\\frac{1}{36}$\" style=\"vertical-align: -13px\" width=\"73\" height=\"38\" />, the expression factors as <img src=\"//latex.artofproblemsolving.com/e/1/6/e16e2ab63f64605299c1a2567df0ae1d017aec9a.png\" class=\"latex\" alt=\"$(a-1)^2(\\frac{41}{36}a+\\frac{83}{36})\\geq0$\" style=\"vertical-align: -13px\" width=\"188\" height=\"38\" /> which obviously is nonnegative for all positive reals <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, so we are done.\n</p><p>~john0512, bronzetruck2016\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_6\">Solution 6</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=7\" title=\"Edit section: Solution 6\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/2/e/a/2ea7850559a04eefb485500c15ccd030e2206953.png\" class=\"latex\" alt=\"$LHS=\\sum_{cyc}\\frac{a^3+3b^3}{5a+b}=\\sum_{cyc}\\frac{a^3}{5a+b}+\\sum_{cyc}\\frac{3b^3}{5a+b}=\\sum_{cyc}\\frac{a^4}{5a^2+ab}+\\sum_{cyc}\\frac{9b^4}{15ab+3b^2}$\" style=\"vertical-align: -25px\" width=\"633\" height=\"53\" /> which tells that <img src=\"//latex.artofproblemsolving.com/d/8/f/d8f07ccd3becb1a2e2279756ea9a97d5d0d3d791.png\" class=\"latex\" alt=\"$LHS\\geq \\frac{(a^2+b^2+c^2)^2}{5(a^2+b^2+c^2)+ab+bc+ac}+\\frac{3(a^2+b^2+c^2)}{(a^2+b^2+c^2)+5(ab+bc+ac)}\\geq (\\frac{1}{2}+\\frac{1}{6})(a^2+b^2+c^2)=RHS$\" style=\"vertical-align: -18px\" width=\"837\" height=\"45\" />, our proof is done\n</p><p>~bluesoul\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_3&amp;action=edit&amp;section=8\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\">USAJMO Problems and Solutions</a></li></ul>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2012_USAJMO\" title=\"2012 USAJMO\">2012 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2012_USAJMO_Problems\" title=\"2012 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2012\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_2\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_4\" title=\"2012 USAJMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_1\" title=\"2012 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_2\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_4\" title=\"2012 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_5\" title=\"2012 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_6\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907171915\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.073 seconds\nReal time usage: 0.078 seconds\nPreprocessor visited node count: 656/1000000\nPreprocessor generated node count: 1534/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 13786/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.964      1 -total\n 73.97%    3.672      1 Template:USAJMO_newbox\n 21.17%    1.051      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11053-0!canonical and timestamp 20240907171915 and revision id 175015\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Cauchy-Schwarz Inequality"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        },
+        {
+          "ns": 2,
+          "exists": "",
+          "*": "User:Lightest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2012",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2012_USAJMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2012_USAJMO_Problems/Problem_3",
+          "byteoffset": 237,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2012_USAJMO_Problems/Problem_3",
+          "byteoffset": 1796,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 3",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2012_USAJMO_Problems/Problem_3",
+          "byteoffset": 2988,
+          "anchor": "Solution_3"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 4",
+          "number": "5",
+          "index": "5",
+          "fromtitle": "2012_USAJMO_Problems/Problem_3",
+          "byteoffset": 3741,
+          "anchor": "Solution_4"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 5",
+          "number": "6",
+          "index": "6",
+          "fromtitle": "2012_USAJMO_Problems/Problem_3",
+          "byteoffset": 4424,
+          "anchor": "Solution_5"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 6",
+          "number": "7",
+          "index": "7",
+          "fromtitle": "2012_USAJMO_Problems/Problem_3",
+          "byteoffset": 6131,
+          "anchor": "Solution_6"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "8",
+          "index": "8",
+          "fromtitle": "2012_USAJMO_Problems/Problem_3",
+          "byteoffset": 6527,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2012 USAJMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2012 USAJMO Problems/Problem 4": {
+    "parse": {
+      "title": "2012 USAJMO Problems/Problem 4",
+      "pageid": 11059,
+      "revid": 85240,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/0/f/10f32377ac67d94f764f12a15ea987e88c85d3e1.png\" class=\"latex\" alt=\"$\\alpha$\" style=\"vertical-align: -1px\" width=\"14\" height=\"10\" /> be an irrational number with <img src=\"//latex.artofproblemsolving.com/8/2/b/82b616f2cf1d5626ca6e70dd3804c7288d4addf3.png\" class=\"latex\" alt=\"$0 &lt; \\alpha &lt; 1$\" style=\"vertical-align: 0px\" width=\"77\" height=\"13\" />, and draw a circle in the plane whose circumference has length 1.  Given any integer <img src=\"//latex.artofproblemsolving.com/8/f/1/8f1e2533d6abdb11a9a1626c0240fab1a9200fc6.png\" class=\"latex\" alt=\"$n \\ge 3$\" style=\"vertical-align: -2px\" width=\"43\" height=\"15\" />, define a sequence of points <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" />, <img src=\"//latex.artofproblemsolving.com/1/0/7/107c7c8e5a64d81ed24331e510b777b7d08345b7.png\" class=\"latex\" alt=\"$P_2$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" />, <img src=\"//latex.artofproblemsolving.com/6/4/6/64683f315744c851898c8d65dace1a8aa31b93ab.png\" class=\"latex\" alt=\"$\\dots$\" width=\"19\" height=\"2\" />, <img src=\"//latex.artofproblemsolving.com/5/4/c/54c51a4acedda645113145d008dbfb50d35f1da3.png\" class=\"latex\" alt=\"$P_n$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" /> as follows.  First select any point <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" /> on the circle, and for <img src=\"//latex.artofproblemsolving.com/7/b/c/7bc5ae30a4bbf51ae529e0d2fbdbdf4b07798930.png\" class=\"latex\" alt=\"$2 \\le k \\le n$\" style=\"vertical-align: -2px\" width=\"78\" height=\"15\" /> define <img src=\"//latex.artofproblemsolving.com/7/6/e/76ebaba4ae3d5c911d6e31ad855d502ad88d48a6.png\" class=\"latex\" alt=\"$P_k$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> as the point on the circle for which the length of arc <img src=\"//latex.artofproblemsolving.com/9/0/d/90d27f75e568c161aa1065b29d0b9ce18bc933b0.png\" class=\"latex\" alt=\"$P_{k - 1} P_k$\" style=\"vertical-align: -2px\" width=\"55\" height=\"15\" /> is <img src=\"//latex.artofproblemsolving.com/1/0/f/10f32377ac67d94f764f12a15ea987e88c85d3e1.png\" class=\"latex\" alt=\"$\\alpha$\" style=\"vertical-align: -1px\" width=\"14\" height=\"10\" />, when travelling counterclockwise around the circle from <img src=\"//latex.artofproblemsolving.com/1/f/1/1f11ab8936ec43ea50c80ca2c67a1b4d2fe6ab34.png\" class=\"latex\" alt=\"$P_{k - 1}$\" style=\"vertical-align: -2px\" width=\"35\" height=\"15\" /> to <img src=\"//latex.artofproblemsolving.com/7/6/e/76ebaba4ae3d5c911d6e31ad855d502ad88d48a6.png\" class=\"latex\" alt=\"$P_k$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" />.  Supose that <img src=\"//latex.artofproblemsolving.com/8/d/8/8d874e17c7ea25b97dc858c88374b891b2a6f6d3.png\" class=\"latex\" alt=\"$P_a$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/1/5/2/15245bc6e388de68e6fa07b00f49b5386c770d5d.png\" class=\"latex\" alt=\"$P_b$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> are the nearest adjacent points on either side of <img src=\"//latex.artofproblemsolving.com/5/4/c/54c51a4acedda645113145d008dbfb50d35f1da3.png\" class=\"latex\" alt=\"$P_n$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" />.  Prove that <img src=\"//latex.artofproblemsolving.com/1/3/0/130f017b31ab3b50b451b177eebcaf0b8b85bdd6.png\" class=\"latex\" alt=\"$a + b \\le n$\" style=\"vertical-align: -2px\" width=\"74\" height=\"15\" />.\n</p>\n<h3><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>Use mathematical induction. For <img src=\"//latex.artofproblemsolving.com/5/6/3/5635737307f5f0651cced8ee2e6558a426fd27b5.png\" class=\"latex\" alt=\"$n=3$\" width=\"43\" height=\"12\" /> it is true because one point can't be closest to <img src=\"//latex.artofproblemsolving.com/9/0/9/9090f2e6bd5da465fea10a8c755d64e9185f61f1.png\" class=\"latex\" alt=\"$P_3$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> in both ways, and that <img src=\"//latex.artofproblemsolving.com/1/b/8/1b8857cc5dba4aae2c106e3240b3f5b4ca6019cc.png\" class=\"latex\" alt=\"$1+2\\le 3$\" style=\"vertical-align: -2px\" width=\"73\" height=\"15\" />. Suppose that for some <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, the nearest adjacent points <img src=\"//latex.artofproblemsolving.com/8/d/8/8d874e17c7ea25b97dc858c88374b891b2a6f6d3.png\" class=\"latex\" alt=\"$P_a$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/1/5/2/15245bc6e388de68e6fa07b00f49b5386c770d5d.png\" class=\"latex\" alt=\"$P_b$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> on either side of <img src=\"//latex.artofproblemsolving.com/5/4/c/54c51a4acedda645113145d008dbfb50d35f1da3.png\" class=\"latex\" alt=\"$P_n$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" /> satisfy  <img src=\"//latex.artofproblemsolving.com/2/0/1/201c65d7f8dff3e04e7eeca0eb76d184c36908ff.png\" class=\"latex\" alt=\"$a+b \\le n$\" style=\"vertical-align: -2px\" width=\"74\" height=\"15\" />. Then consider the nearest adjacent points <img src=\"//latex.artofproblemsolving.com/f/e/2/fe288e3048ab6eaa4dd26fe6b67f9a8ccc7ebfc6.png\" class=\"latex\" alt=\"$P_c$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/7/4/5/74505c8c90cbac5d5ca5e984a5dbb0be2d3f2535.png\" class=\"latex\" alt=\"$P_d$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> on either side of <img src=\"//latex.artofproblemsolving.com/c/8/9/c898e4838db56320e10a77c62839f4237c974733.png\" class=\"latex\" alt=\"$P_{n+1}$\" style=\"vertical-align: -4px\" width=\"35\" height=\"16\" />. It is by the assumption of the nearness we can see that either <img src=\"//latex.artofproblemsolving.com/9/b/e/9be0d03ba61547ca6ab19c1f555bfa9a3a74b0e8.png\" class=\"latex\" alt=\"$(c,d)=(a+1,b+1)$\" style=\"vertical-align: -4px\" width=\"164\" height=\"18\" /> still holds, or <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" /> jumps into the interior of the arc <img src=\"//latex.artofproblemsolving.com/4/9/3/4931ffda6a5c361c27c337b41a374a855b13f4f3.png\" class=\"latex\" alt=\"$P_{a+1}P_{n}P_{b+1}$\" style=\"vertical-align: -4px\" width=\"90\" height=\"16\" />, so that <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> or <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" /> equals to <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />. Let's consider the following two cases.\n</p><p>(i) Suppose <img src=\"//latex.artofproblemsolving.com/6/e/4/6e42302f9dd0afe4a7cd50ac2115f72bee849423.png\" class=\"latex\" alt=\"$a+b=n$\" style=\"vertical-align: -1px\" width=\"74\" height=\"14\" />.\n</p><p>Since the length of the arc <img src=\"//latex.artofproblemsolving.com/1/3/4/13478ee6e54d332a7c9de87471ce3d361a36d143.png\" class=\"latex\" alt=\"$P_nP_a$\" style=\"vertical-align: -2px\" width=\"39\" height=\"15\" /> is <img src=\"//latex.artofproblemsolving.com/1/c/9/1c901d5c70aa0c82bda136f6a7ae09ab8bdd016b.png\" class=\"latex\" alt=\"$\\{(a-n)\\alpha\\}$\" style=\"vertical-align: -4px\" width=\"85\" height=\"18\" /> (where <img src=\"//latex.artofproblemsolving.com/3/d/f/3df2919191b1220773d9b0142dec5c3528fd4c42.png\" class=\"latex\" alt=\"$\\{x\\}$\" style=\"vertical-align: -4px\" width=\"27\" height=\"18\" /> equals to <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> subtracted by the greatest integer not exceeding <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />) and length of the arc <img src=\"//latex.artofproblemsolving.com/3/9/8/3980c67a9221a9ad69a9bf42a9c5818d6aadf30b.png\" class=\"latex\" alt=\"$P_bP_n$\" style=\"vertical-align: -2px\" width=\"38\" height=\"15\" /> is <img src=\"//latex.artofproblemsolving.com/1/a/a/1aab0c293fcafb65b4d9f6fc6dd9dc80c9a2cccd.png\" class=\"latex\" alt=\"$\\{(n-b)\\alpha\\} = \\{a\\alpha\\}$\" style=\"vertical-align: -4px\" width=\"147\" height=\"18\" />, we now consider a point <img src=\"//latex.artofproblemsolving.com/2/4/1/241e6e35ad6d73fb2ef98244b0211deb2f25222a.png\" class=\"latex\" alt=\"$P_0$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> which is defined by <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" /> traveling clockwise on the circle such that the length of arc <img src=\"//latex.artofproblemsolving.com/1/0/f/10f87574947eecd302ba2d136ae87aa3b03b81f1.png\" class=\"latex\" alt=\"$P_0P_1$\" style=\"vertical-align: -4px\" width=\"40\" height=\"17\" /> is <img src=\"//latex.artofproblemsolving.com/1/0/f/10f32377ac67d94f764f12a15ea987e88c85d3e1.png\" class=\"latex\" alt=\"$\\alpha$\" style=\"vertical-align: -1px\" width=\"14\" height=\"10\" />. We claim that <img src=\"//latex.artofproblemsolving.com/2/4/1/241e6e35ad6d73fb2ef98244b0211deb2f25222a.png\" class=\"latex\" alt=\"$P_0$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> is in the interior of the arc <img src=\"//latex.artofproblemsolving.com/5/a/d/5ad839084efe7f1954112f6fc918ccf7bcd417c8.png\" class=\"latex\" alt=\"$P_bP_nP_a$\" style=\"vertical-align: -2px\" width=\"57\" height=\"15\" />. Algebraically, it is equivalent to either <img src=\"//latex.artofproblemsolving.com/4/8/7/4875a3cc7a1c6808be8e688e3a3652b3f10cddca.png\" class=\"latex\" alt=\"$\\{0-n\\alpha\\} &lt; \\{a\\alpha-n\\alpha\\}$\" style=\"vertical-align: -4px\" width=\"179\" height=\"18\" /> or <img src=\"//latex.artofproblemsolving.com/2/c/3/2c3410356d14aa06289a73e716e56b7d473b043a.png\" class=\"latex\" alt=\"$\\{n\\alpha -0 \\} &lt; \\{n\\alpha - b\\alpha\\} = \\{a\\alpha\\}$\" style=\"vertical-align: -4px\" width=\"241\" height=\"18\" />.\n</p><p>Suppose the latter fails, i.e. <img src=\"//latex.artofproblemsolving.com/4/1/4/41426ff5c8d324f8272ab4d02ca4495020fe1e55.png\" class=\"latex\" alt=\"$\\{n\\alpha\\} \\ge \\{a\\alpha\\}$\" style=\"vertical-align: -4px\" width=\"103\" height=\"18\" />. Then suppose <img src=\"//latex.artofproblemsolving.com/6/f/f/6ff973f7a82bec1fd679602f90d66e59e320d3ce.png\" class=\"latex\" alt=\"$n\\alpha = m_1 + r_1$\" style=\"vertical-align: -2px\" width=\"106\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/a/2/f/a2fb813991bab9505d6228e8c1c3f2da8180ec6d.png\" class=\"latex\" alt=\"$a\\alpha = m_2 + r_2$\" style=\"vertical-align: -4px\" width=\"109\" height=\"15\" />, where <img src=\"//latex.artofproblemsolving.com/2/5/d/25d659c8074c617549d61db9db0773e0fccad7b3.png\" class=\"latex\" alt=\"$m_1$\" style=\"vertical-align: -2px\" width=\"21\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/e/e/5/ee54e8432d4a60984309e86f32931b04c8e2f1da.png\" class=\"latex\" alt=\"$m_2$\" style=\"vertical-align: -2px\" width=\"22\" height=\"10\" /> are integers and <img src=\"//latex.artofproblemsolving.com/9/9/e/99ea4904f987a5de0167997646bb2e826c2c4b2c.png\" class=\"latex\" alt=\"$0&lt; r_2\\le r_1 &lt;1$\" style=\"vertical-align: -2px\" width=\"121\" height=\"15\" /> (<img src=\"//latex.artofproblemsolving.com/0/b/4/0b4f3f4b698ce35667432041e168f7653533fa7b.png\" class=\"latex\" alt=\"$r_2$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" /> is not zero because <img src=\"//latex.artofproblemsolving.com/e/9/5/e95707f4c7d91cfb011359fa85640d7282614645.png\" class=\"latex\" alt=\"$a\\alpha$\" width=\"20\" height=\"8\" /> is irrational). We now have \n<img src=\"//latex.artofproblemsolving.com/f/8/e/f8e8dd06db4dc4cc224271f0fd239c6d391f896a.png\" class=\"latexcenter\" alt=\"\\[\\{0-n\\alpha\\} = \\{-m_1-1 + (1 -r_1)\\}=1-r_1\\]\" width=\"335\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/5/f/5/5f5e9b169973c63fd07b3ed1666f4b1f85247e31.png\" class=\"latexcenter\" alt=\"\\[\\{a\\alpha -n\\alpha\\} = \\{m_2-m_1-1 + (1+r_2-r_1)\\} = 1+r_2-r_1&gt;1-r_1\\]\" width=\"477\" height=\"18\" />\n</p><p>Therefore <img src=\"//latex.artofproblemsolving.com/2/4/1/241e6e35ad6d73fb2ef98244b0211deb2f25222a.png\" class=\"latex\" alt=\"$P_0$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> is either closer to <img src=\"//latex.artofproblemsolving.com/5/4/c/54c51a4acedda645113145d008dbfb50d35f1da3.png\" class=\"latex\" alt=\"$P_n$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" /> than <img src=\"//latex.artofproblemsolving.com/8/d/8/8d874e17c7ea25b97dc858c88374b891b2a6f6d3.png\" class=\"latex\" alt=\"$P_a$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> on the <img src=\"//latex.artofproblemsolving.com/8/d/8/8d874e17c7ea25b97dc858c88374b891b2a6f6d3.png\" class=\"latex\" alt=\"$P_a$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> side, or closer to <img src=\"//latex.artofproblemsolving.com/5/4/c/54c51a4acedda645113145d008dbfb50d35f1da3.png\" class=\"latex\" alt=\"$P_n$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" /> than <img src=\"//latex.artofproblemsolving.com/1/5/2/15245bc6e388de68e6fa07b00f49b5386c770d5d.png\" class=\"latex\" alt=\"$P_b$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> on the <img src=\"//latex.artofproblemsolving.com/1/5/2/15245bc6e388de68e6fa07b00f49b5386c770d5d.png\" class=\"latex\" alt=\"$P_b$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> side. In other words, <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" /> is the closest adjacent point of <img src=\"//latex.artofproblemsolving.com/c/8/9/c898e4838db56320e10a77c62839f4237c974733.png\" class=\"latex\" alt=\"$P_{n+1}$\" style=\"vertical-align: -4px\" width=\"35\" height=\"16\" /> on the <img src=\"//latex.artofproblemsolving.com/1/d/e/1defd9edc2aea91bb1972250a100e7f689930219.png\" class=\"latex\" alt=\"$P_{a+1}$\" style=\"vertical-align: -4px\" width=\"34\" height=\"16\" /> side, or the closest adjacent point of <img src=\"//latex.artofproblemsolving.com/c/8/9/c898e4838db56320e10a77c62839f4237c974733.png\" class=\"latex\" alt=\"$P_{n+1}$\" style=\"vertical-align: -4px\" width=\"35\" height=\"16\" /> on the <img src=\"//latex.artofproblemsolving.com/3/0/f/30f9db86b20caa4da1d59ada53d3ad27be2717ba.png\" class=\"latex\" alt=\"$P_{b+1}$\" style=\"vertical-align: -4px\" width=\"33\" height=\"16\" /> side. Hence <img src=\"//latex.artofproblemsolving.com/f/e/2/fe288e3048ab6eaa4dd26fe6b67f9a8ccc7ebfc6.png\" class=\"latex\" alt=\"$P_c$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> or <img src=\"//latex.artofproblemsolving.com/7/4/5/74505c8c90cbac5d5ca5e984a5dbb0be2d3f2535.png\" class=\"latex\" alt=\"$P_d$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> is <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" />, therefore <img src=\"//latex.artofproblemsolving.com/c/f/b/cfbf2158f412866ad063799935600f03eab2f094.png\" class=\"latex\" alt=\"$c+d \\le n+1$\" style=\"vertical-align: -2px\" width=\"105\" height=\"15\" />.\n</p><p>(ii) Suppose <img src=\"//latex.artofproblemsolving.com/c/9/b/c9b7ddd96e1f845c2828b485707f07498c5ac400.png\" class=\"latex\" alt=\"$a+b\\le n-1$\" style=\"vertical-align: -2px\" width=\"105\" height=\"15\" />\nThen either <img src=\"//latex.artofproblemsolving.com/2/0/a/20afc34400f879415e5698a2622d18f31d0c0c37.png\" class=\"latex\" alt=\"$c+d = (a+1)+(b+1) \\le n+1$\" style=\"vertical-align: -4px\" width=\"259\" height=\"18\" /> when <img src=\"//latex.artofproblemsolving.com/6/f/8/6f806621f2494eb9f42f4be9b6d78d06e3b0bb0c.png\" class=\"latex\" alt=\"$c=a+1$\" style=\"vertical-align: -1px\" width=\"72\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/9/8/0/980e769452bc4c032c309fc642c4c231e6bf2d18.png\" class=\"latex\" alt=\"$d=b+1$\" style=\"vertical-align: -1px\" width=\"71\" height=\"14\" />, or <img src=\"//latex.artofproblemsolving.com/8/6/f/86f74ab72b4c061b4ffc8c5d71aa1e33cb5aa8b8.png\" class=\"latex\" alt=\"$c+d \\le 1+n$\" style=\"vertical-align: -2px\" width=\"105\" height=\"15\" /> when one of <img src=\"//latex.artofproblemsolving.com/f/e/2/fe288e3048ab6eaa4dd26fe6b67f9a8ccc7ebfc6.png\" class=\"latex\" alt=\"$P_c$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> or <img src=\"//latex.artofproblemsolving.com/7/4/5/74505c8c90cbac5d5ca5e984a5dbb0be2d3f2535.png\" class=\"latex\" alt=\"$P_d$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> is <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" />.\n</p><p>In either case, <img src=\"//latex.artofproblemsolving.com/2/8/9/289cc0565c97b2a3314447f5502f10ec1cc12638.png\" class=\"latex\" alt=\"$c+d\\le n+1$\" style=\"vertical-align: -2px\" width=\"105\" height=\"15\" /> is true.\n</p><p>--<a href=\"/wiki/index.php/User:Lightest\" title=\"User:Lightest\">Lightest</a> 20:27, 6 May 2012 (EDT)\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\">USAJMO Problems and Solutions</a></li></ul>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2012_USAJMO\" title=\"2012 USAJMO\">2012 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2012_USAJMO_Problems\" title=\"2012 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2012\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_2\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_5\" title=\"2012 USAJMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_1\" title=\"2012 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_2\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_3\" title=\"2012 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_5\" title=\"2012 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_6\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907212725\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.073 seconds\nReal time usage: 0.075 seconds\nPreprocessor visited node count: 816/1000000\nPreprocessor generated node count: 1914/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 15179/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.946      1 -total\n 73.24%    2.890      1 Template:USAJMO_newbox\n 21.84%    0.862      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11059-0!canonical and timestamp 20240907212725 and revision id 85240\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        },
+        {
+          "ns": 2,
+          "exists": "",
+          "*": "User:Lightest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2012",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2012_USAJMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution",
+          "number": "1.1",
+          "index": "2",
+          "fromtitle": "2012_USAJMO_Problems/Problem_4",
+          "byteoffset": 795,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "2",
+          "index": "3",
+          "fromtitle": "2012_USAJMO_Problems/Problem_4",
+          "byteoffset": 3646,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2012 USAJMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2012 USAJMO Problems/Problem 5": {
+    "parse": {
+      "title": "2012 USAJMO Problems/Problem 5",
+      "pageid": 11060,
+      "revid": 194815,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solutions\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solutions</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Solution_2\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Solution_3\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">Solution 3</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Solution_4\"><span class=\"tocnumber\">2.4</span> <span class=\"toctext\">Solution 4</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-7\"><a href=\"#See_also\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For distinct positive integers <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/d/8/c/d8c3c998e62221622912aabcadd56c8f9f05c25a.png\" class=\"latex\" alt=\"$b &lt; 2012$\" style=\"vertical-align: 0px\" width=\"67\" height=\"13\" />, define <img src=\"//latex.artofproblemsolving.com/0/7/2/07254b24b1c3168cfbf6984fa9fc22b1aa0fb6df.png\" class=\"latex\" alt=\"$f(a,b)$\" style=\"vertical-align: -4px\" width=\"49\" height=\"18\" /> to be the number of integers <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> with <img src=\"//latex.artofproblemsolving.com/7/7/6/7767ea89a744ac304878a5f9504eb78140ca1566.png\" class=\"latex\" alt=\"$1 \\le k &lt; 2012$\" style=\"vertical-align: -2px\" width=\"103\" height=\"15\" /> such that the remainder when <img src=\"//latex.artofproblemsolving.com/f/4/d/f4d0d7039a400779d0c3013db5ed5a4950068462.png\" class=\"latex\" alt=\"$ak$\" width=\"19\" height=\"12\" /> divided by 2012 is greater than that of <img src=\"//latex.artofproblemsolving.com/8/d/c/8dcceb5127d10665924b2e5b1f32de1cd53d8fac.png\" class=\"latex\" alt=\"$bk$\" width=\"17\" height=\"12\" /> divided by 2012.  Let <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> be the minimum value of <img src=\"//latex.artofproblemsolving.com/0/7/2/07254b24b1c3168cfbf6984fa9fc22b1aa0fb6df.png\" class=\"latex\" alt=\"$f(a,b)$\" style=\"vertical-align: -4px\" width=\"49\" height=\"18\" />, where <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> range over all pairs of distinct positive integers less than 2012.  Determine <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solutions\">Solutions</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solutions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h3><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>First we'll show that <img src=\"//latex.artofproblemsolving.com/c/8/9/c895fef1826e6844af9e75623545ec153084e06c.png\" class=\"latex\" alt=\"$S \\geq 502$\" style=\"vertical-align: -2px\" width=\"63\" height=\"15\" />, then we'll find an example <img src=\"//latex.artofproblemsolving.com/2/8/e/28e24c43456d95b5ab8d4f2f8f85a644e98b7ed3.png\" class=\"latex\" alt=\"$(a, b)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> that have <img src=\"//latex.artofproblemsolving.com/e/e/9/ee9735ecd591eb6f0b0043b1d726f92e5bc29ae5.png\" class=\"latex\" alt=\"$f(a, b)=502$\" style=\"vertical-align: -4px\" width=\"101\" height=\"18\" />.\n</p><p>Let <img src=\"//latex.artofproblemsolving.com/f/5/d/f5d3dead9cb8d5f6327c737e014850be7a29d0f0.png\" class=\"latex\" alt=\"$x_k$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> be the remainder when <img src=\"//latex.artofproblemsolving.com/f/4/d/f4d0d7039a400779d0c3013db5ed5a4950068462.png\" class=\"latex\" alt=\"$ak$\" width=\"19\" height=\"12\" /> is divided by 2012, and let <img src=\"//latex.artofproblemsolving.com/c/5/d/c5dd4a48fae40d106f05aa536bdbebd1f0195842.png\" class=\"latex\" alt=\"$y_k$\" style=\"vertical-align: -3px\" width=\"16\" height=\"11\" /> be defined similarly for <img src=\"//latex.artofproblemsolving.com/8/d/c/8dcceb5127d10665924b2e5b1f32de1cd53d8fac.png\" class=\"latex\" alt=\"$bk$\" width=\"17\" height=\"12\" />. First, we know that, if <img src=\"//latex.artofproblemsolving.com/c/3/2/c32460fc78db10d7475e55493bf9b0dbf2fdbdf2.png\" class=\"latex\" alt=\"$x_k &gt; y_k &gt;0$\" style=\"vertical-align: -3px\" width=\"92\" height=\"16\" />, then <img src=\"//latex.artofproblemsolving.com/c/c/d/ccd347893d50bfc7c6ed33429c089be3a5b75163.png\" class=\"latex\" alt=\"$x_{2012-k} \\equiv a(2012-k) \\equiv 2012-ak \\equiv 2012-x_k \\pmod {2012}$\" style=\"vertical-align: -5px\" width=\"477\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/1/c/a/1ca4d529aa5b5bf48aa430afc4b813e5e14e5302.png\" class=\"latex\" alt=\"$y_{2012-k} \\equiv 2012-y_k \\pmod {2012}$\" style=\"vertical-align: -5px\" width=\"255\" height=\"20\" />. This implies that, since <img src=\"//latex.artofproblemsolving.com/e/1/1/e11e619dd0ed437a7b5122a61044c93afe584e32.png\" class=\"latex\" alt=\"$2012 - x_k \\neq 0$\" style=\"vertical-align: -4px\" width=\"110\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/e/c/f/ecf7653bb6b5238eb2a3248ac6b566d4cb5bc7b9.png\" class=\"latex\" alt=\"$2012 -y_k \\neq 0$\" style=\"vertical-align: -4px\" width=\"108\" height=\"17\" />, <img src=\"//latex.artofproblemsolving.com/b/8/9/b8914f11b686bf531d218882cf1da8a83379a40e.png\" class=\"latex\" alt=\"$x_{2012-k} &lt; y_{2012-k}$\" style=\"vertical-align: -3px\" width=\"132\" height=\"13\" />. Similarly, if <img src=\"//latex.artofproblemsolving.com/4/b/2/4b2a598ffc54a74e9bd0843662eb54a0ac65c4da.png\" class=\"latex\" alt=\"$0&lt; x_k &lt; y_k$\" style=\"vertical-align: -3px\" width=\"92\" height=\"16\" /> then <img src=\"//latex.artofproblemsolving.com/5/d/1/5d138f83d45e47300552dba46d97007f3864e876.png\" class=\"latex\" alt=\"$x_{2012-k} &gt; y_{2012-k}$\" style=\"vertical-align: -3px\" width=\"132\" height=\"13\" />, establishing a one-to-one correspondence between the number of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/4/b/2/4b2c55b40532b09f52f25fe454f0da021a91f995.png\" class=\"latex\" alt=\"$x_k &lt; y_k$\" style=\"vertical-align: -3px\" width=\"59\" height=\"13\" />. Thus, if <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is the number of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/1/b/0/1b04ba46847eb96ebb0791cae5a91b32b359c5cf.png\" class=\"latex\" alt=\"$x_k \\neq y_k$\" style=\"vertical-align: -4px\" width=\"59\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/5/4/a/54a45bbe49a1a45d0d1000b6479e84b803b8eef1.png\" class=\"latex\" alt=\"$y_k \\neq 0 \\neq x_k$\" style=\"vertical-align: -4px\" width=\"92\" height=\"17\" />, then <img src=\"//latex.artofproblemsolving.com/7/c/8/7c83590f44a17752bba64d3ebdd89d0657d1950f.png\" class=\"latex\" alt=\"$S \\geq \\frac{1}{2}n$\" style=\"vertical-align: -12px\" width=\"60\" height=\"37\" />. Now I'll show that <img src=\"//latex.artofproblemsolving.com/2/4/7/2473bc89a3a109b6c4054dac60ad1c29f7c7bc03.png\" class=\"latex\" alt=\"$n \\geq 1004$\" style=\"vertical-align: -2px\" width=\"71\" height=\"15\" />.\n</p><p>If <img src=\"//latex.artofproblemsolving.com/e/6/2/e62f226e197ac85d308048ff86eedb6159733e96.png\" class=\"latex\" alt=\"$gcd(k, 2012)=1$\" style=\"vertical-align: -4px\" width=\"127\" height=\"18\" />, then I'll show you that <img src=\"//latex.artofproblemsolving.com/1/b/0/1b04ba46847eb96ebb0791cae5a91b32b359c5cf.png\" class=\"latex\" alt=\"$x_k \\neq y_k$\" style=\"vertical-align: -4px\" width=\"59\" height=\"17\" />. This is actually pretty clear; assume that's not true and set up a congruence relation:\n<img src=\"//latex.artofproblemsolving.com/5/5/2/5524877fffb98e093cb52f75df633560c110c2d5.png\" class=\"latexcenter\" alt=\"\\[ak \\equiv bk \\pmod {2012}\\]\" width=\"168\" height=\"18\" />\nSince <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> is relatively prime to 2012, it is invertible mod 2012, so we must have <img src=\"//latex.artofproblemsolving.com/7/3/8/738ca39298d7ad6b27ddfc464348405117e5c2f6.png\" class=\"latex\" alt=\"$a \\equiv b \\pmod {2012}$\" style=\"vertical-align: -4px\" width=\"139\" height=\"18\" />. Since <img src=\"//latex.artofproblemsolving.com/d/f/c/dfc4b963e98e39d714564e4c3c037186312b339e.png\" class=\"latex\" alt=\"$0 &lt; a, b &lt;2012$\" style=\"vertical-align: -3px\" width=\"118\" height=\"16\" />, this means <img src=\"//latex.artofproblemsolving.com/5/a/b/5abd2c942ae299fd26e18d0ca5d390a7ca4a8c34.png\" class=\"latex\" alt=\"$a=b$\" width=\"42\" height=\"12\" />, which the problem doesn't allow, thus contradiction, and <img src=\"//latex.artofproblemsolving.com/1/b/0/1b04ba46847eb96ebb0791cae5a91b32b359c5cf.png\" class=\"latex\" alt=\"$x_k \\neq y_k$\" style=\"vertical-align: -4px\" width=\"59\" height=\"17\" />. Additionally, if <img src=\"//latex.artofproblemsolving.com/e/6/2/e62f226e197ac85d308048ff86eedb6159733e96.png\" class=\"latex\" alt=\"$gcd(k, 2012)=1$\" style=\"vertical-align: -4px\" width=\"127\" height=\"18\" />, then <img src=\"//latex.artofproblemsolving.com/7/5/6/7562039c1d3ef30c5e61509aadf220c146b6b456.png\" class=\"latex\" alt=\"$x_k \\neq 0 \\neq y_k$\" style=\"vertical-align: -4px\" width=\"92\" height=\"17\" />, then based on what we know about <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> from the previous paragraph, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is at least as large as the number of k relatively prime to 2012. Thus, <img src=\"//latex.artofproblemsolving.com/a/0/d/a0dd11fa5a0fa3092992ecdd3f3fcb7188d30712.png\" class=\"latex\" alt=\"$n \\geq \\phi(2012) = \\phi(503*4) = 1004$\" style=\"vertical-align: -5px\" width=\"262\" height=\"20\" />. Thus, <img src=\"//latex.artofproblemsolving.com/c/8/9/c895fef1826e6844af9e75623545ec153084e06c.png\" class=\"latex\" alt=\"$S \\geq 502$\" style=\"vertical-align: -2px\" width=\"63\" height=\"15\" />.\n</p><p>To show 502 works, consider <img src=\"//latex.artofproblemsolving.com/1/1/f/11f9bca6aad4c523b2aa4b0b68e880360f3fe313.png\" class=\"latex\" alt=\"$(a, b)=(1006, 2)$\" style=\"vertical-align: -4px\" width=\"130\" height=\"18\" />. For all even <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> we have <img src=\"//latex.artofproblemsolving.com/3/e/0/3e07c4e1a8cdd4cfb7aa48816fad3dfcf5487521.png\" class=\"latex\" alt=\"$x_k=0$\" style=\"vertical-align: -2px\" width=\"51\" height=\"15\" />, so it doesn't count towards <img src=\"//latex.artofproblemsolving.com/f/0/2/f02eaba2438d544236e6e060c6f5082dca38851e.png\" class=\"latex\" alt=\"$f(1006, 2)$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" />. Additionally, if <img src=\"//latex.artofproblemsolving.com/b/6/7/b67a16e597403702644083b3db2e17321b10822f.png\" class=\"latex\" alt=\"$k = 503, 503*3$\" style=\"vertical-align: -3px\" width=\"122\" height=\"16\" /> then <img src=\"//latex.artofproblemsolving.com/8/5/e/85e48b7dea1e2b39fd24776387ffc10db1aa4c63.png\" class=\"latex\" alt=\"$x_k = y_k = 1006$\" style=\"vertical-align: -3px\" width=\"119\" height=\"16\" />, so the only number that count towards <img src=\"//latex.artofproblemsolving.com/f/0/2/f02eaba2438d544236e6e060c6f5082dca38851e.png\" class=\"latex\" alt=\"$f(1006, 2)$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" /> are the odd numbers not divisible by 503. There are 1004 such numbers. However, for all such odd k not divisible by 503 (so numbers relatively prime to 2012), we have <img src=\"//latex.artofproblemsolving.com/7/5/6/7562039c1d3ef30c5e61509aadf220c146b6b456.png\" class=\"latex\" alt=\"$x_k \\neq 0 \\neq y_k$\" style=\"vertical-align: -4px\" width=\"92\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/9/a/e/9ae767f40ed800d0de3a7e2057ccd9eea1381107.png\" class=\"latex\" alt=\"$2012-k$\" style=\"vertical-align: 0px\" width=\"68\" height=\"13\" /> is also relatively prime to 2012. Since under those conditions exactly one of <img src=\"//latex.artofproblemsolving.com/9/9/9/999dd1c577071f0a176800c80b4dd1dba78bcd2f.png\" class=\"latex\" alt=\"$x_k &gt; y_k$\" style=\"vertical-align: -3px\" width=\"59\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/5/d/1/5d138f83d45e47300552dba46d97007f3864e876.png\" class=\"latex\" alt=\"$x_{2012-k} &gt; y_{2012-k}$\" style=\"vertical-align: -3px\" width=\"132\" height=\"13\" /> is true, we have at most 1/2 of the 1004 possible k actually count to <img src=\"//latex.artofproblemsolving.com/f/0/2/f02eaba2438d544236e6e060c6f5082dca38851e.png\" class=\"latex\" alt=\"$f(1006, 2)$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" />, so <img src=\"//latex.artofproblemsolving.com/f/a/b/fab4e28aae6acd7de13176f02defcdb040eaac5a.png\" class=\"latex\" alt=\"$\\frac{1004}{2} = 502 \\geq f(1006, 2) \\geq S \\geq 502$\" style=\"vertical-align: -12px\" width=\"282\" height=\"37\" />, so <img src=\"//latex.artofproblemsolving.com/4/1/7/417bdeca4614c0e4902e1549086d8d7ea644c938.png\" class=\"latex\" alt=\"$S=502$\" width=\"63\" height=\"12\" />.\n</p>\n<h3><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>Let <img src=\"//latex.artofproblemsolving.com/7/d/2/7d24f286d3c10a5f3c67127c60d99829e041925c.png\" class=\"latex\" alt=\"$ak \\equiv r_{a} \\pmod{2012}$\" style=\"vertical-align: -4px\" width=\"157\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/6/7/a/67a0197bad1e72752700f33b7b3f3053269cd625.png\" class=\"latex\" alt=\"$bk \\equiv r_{b} \\pmod{2012}$\" style=\"vertical-align: -4px\" width=\"154\" height=\"18\" />. Notice that this means <img src=\"//latex.artofproblemsolving.com/3/2/7/327d2b6d10f615e5177dfe00cff8c23e74120b30.png\" class=\"latex\" alt=\"$a(2012 - k) \\equiv 2012 - r_{a} \\pmod{2012}$\" style=\"vertical-align: -4px\" width=\"289\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/4/0/1/4016611650fc25182b690a8b270b057fb1ab61d1.png\" class=\"latex\" alt=\"$b(2012 - k) \\equiv 2012 - r_{b} \\pmod{2012}$\" style=\"vertical-align: -4px\" width=\"286\" height=\"18\" />. Thus, for every value of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> where <img src=\"//latex.artofproblemsolving.com/7/3/8/738e6d1ddf0a9f3acdccd184553a5893c2aa3d88.png\" class=\"latex\" alt=\"$r_{a} &gt; r_{b}$\" style=\"vertical-align: -2px\" width=\"54\" height=\"12\" />, there is a value of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> where <img src=\"//latex.artofproblemsolving.com/c/7/9/c799b5621315703b406d44a619b42d15c990d961.png\" class=\"latex\" alt=\"$r_{b} &gt; r_{a}$\" style=\"vertical-align: -2px\" width=\"54\" height=\"12\" />. Therefore, we merely have to calculate <img src=\"//latex.artofproblemsolving.com/2/f/9/2f960094315d60883495f9b74148e17487ee9584.png\" class=\"latex\" alt=\"$\\frac{1}{2}$\" style=\"vertical-align: -12px\" width=\"11\" height=\"37\" /> times the number of values of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> for which <img src=\"//latex.artofproblemsolving.com/1/e/f/1ef707c81be0a7eaba48818a91dc3824fc9a914d.png\" class=\"latex\" alt=\"$r_{a} \\neq r_{b}$\" style=\"vertical-align: -4px\" width=\"54\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/3/ff3457ad2360d5798c6b29db487ba1d42df5d7ee.png\" class=\"latex\" alt=\"$r_{a} \\neq 0$\" style=\"vertical-align: -4px\" width=\"49\" height=\"17\" />.\n</p><p><br />\nHowever, the answer is NOT <img src=\"//latex.artofproblemsolving.com/2/6/b/26bd476c23362090784d030e377117c4d732aeac.png\" class=\"latex\" alt=\"$\\frac{1}{2}(2012) = 1006$\" style=\"vertical-align: -12px\" width=\"123\" height=\"37\" />! This is because we must count the cases where the value of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> makes <img src=\"//latex.artofproblemsolving.com/e/9/9/e99c37d69a12ab56b665a5909717227d92e718e0.png\" class=\"latex\" alt=\"$r_{a} = r_{b}$\" style=\"vertical-align: -2px\" width=\"54\" height=\"10\" /> or where <img src=\"//latex.artofproblemsolving.com/8/9/9/89939859360077a4151cd3747e010f6857b83875.png\" class=\"latex\" alt=\"$r_{a} = 0$\" style=\"vertical-align: -2px\" width=\"49\" height=\"15\" />.\n</p><p><br />\nSo, let's start counting.\n</p><p><br />\nIf <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> is even, we have either <img src=\"//latex.artofproblemsolving.com/a/1/4/a14e41c87c11ea67b8cd379f79b84b0f5ff0dd12.png\" class=\"latex\" alt=\"$a \\equiv 0 \\pmod{1006}$\" style=\"vertical-align: -5px\" width=\"144\" height=\"20\" /> or <img src=\"//latex.artofproblemsolving.com/8/3/8/838f918a264b580376a45174347bd49d876a584e.png\" class=\"latex\" alt=\"$a - b \\equiv 0 \\pmod{1006}$\" style=\"vertical-align: -4px\" width=\"170\" height=\"18\" />. So, <img src=\"//latex.artofproblemsolving.com/6/e/f/6eff4bf6b29530e74ff975195fdba99b60e21eab.png\" class=\"latex\" alt=\"$a = 1006$\" style=\"vertical-align: 0px\" width=\"69\" height=\"13\" /> or <img src=\"//latex.artofproblemsolving.com/d/f/5/df57f2d4ab75fb117b8a3f4e8de45360aa15d237.png\" class=\"latex\" alt=\"$a = b + 1006$\" style=\"vertical-align: -1px\" width=\"99\" height=\"14\" />. We have <img src=\"//latex.artofproblemsolving.com/3/1/9/3197521069d117debac49e2d2040cc5949184536.png\" class=\"latex\" alt=\"$1005$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> even values of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> (which is all the possible even values of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, since the two above requirements don't put any bounds on <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> at all).\n</p><p><br />\nIf <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> is odd, if <img src=\"//latex.artofproblemsolving.com/d/6/5/d65172b70e527733a633aeaa3259dd65fd545afc.png\" class=\"latex\" alt=\"$k = 503$\" width=\"61\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/a/f/a/afac87e48c4f9ed3abd9f455a33c0ce379e8cbd7.png\" class=\"latex\" alt=\"$k = 503 \\cdot 3$\" style=\"vertical-align: -1px\" width=\"86\" height=\"14\" />, then <img src=\"//latex.artofproblemsolving.com/7/8/e/78ed257fb978e79adaea96ce64bd618d289162d1.png\" class=\"latex\" alt=\"$a \\equiv 0 \\pmod{4}$\" style=\"vertical-align: -4px\" width=\"113\" height=\"18\" /> or <img src=\"//latex.artofproblemsolving.com/7/d/5/7d552c5a68da9f884e05b3f823724c3888a29c27.png\" class=\"latex\" alt=\"$a \\equiv b \\pmod{4}$\" style=\"vertical-align: -4px\" width=\"112\" height=\"18\" />. Otherwise, <img src=\"//latex.artofproblemsolving.com/6/2/c/62c7a3e890710bb69798928cc41aa266243a6e8c.png\" class=\"latex\" alt=\"$ak \\equiv 0 \\pmod{2012}$\" style=\"vertical-align: -4px\" width=\"150\" height=\"18\" /> or <img src=\"//latex.artofproblemsolving.com/1/9/3/1934b67f69fb923636223c9a340e1f410e83e989.png\" class=\"latex\" alt=\"$ak \\equiv bk \\pmod{2012}$\" style=\"vertical-align: -4px\" width=\"159\" height=\"18\" />, which is impossible to satisfy, given the domain <img src=\"//latex.artofproblemsolving.com/d/2/7/d27b9d94c2e294a72ee05555fcd494cc653c106c.png\" class=\"latex\" alt=\"$a, b &lt; 2012$\" style=\"vertical-align: -3px\" width=\"85\" height=\"16\" />. So, we have <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> values of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />.\n</p><p><br />\nIn total, we have <img src=\"//latex.artofproblemsolving.com/7/1/2/71225df99fff67bc2d614b1907794662e815596c.png\" class=\"latex\" alt=\"$2 + 1005 = 1007$\" style=\"vertical-align: -1px\" width=\"128\" height=\"14\" /> values of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> which makes <img src=\"//latex.artofproblemsolving.com/e/9/9/e99c37d69a12ab56b665a5909717227d92e718e0.png\" class=\"latex\" alt=\"$r_{a} = r_{b}$\" style=\"vertical-align: -2px\" width=\"54\" height=\"10\" /> or <img src=\"//latex.artofproblemsolving.com/8/9/9/89939859360077a4151cd3747e010f6857b83875.png\" class=\"latex\" alt=\"$r_{a} = 0$\" style=\"vertical-align: -2px\" width=\"49\" height=\"15\" />, so there are <img src=\"//latex.artofproblemsolving.com/4/9/5/495af04be8e5e57fff07df18f1a3f1a93f5f6dda.png\" class=\"latex\" alt=\"$2011 - 1007 = 1004$\" style=\"vertical-align: 0px\" width=\"155\" height=\"13\" /> values of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> for which <img src=\"//latex.artofproblemsolving.com/1/e/f/1ef707c81be0a7eaba48818a91dc3824fc9a914d.png\" class=\"latex\" alt=\"$r_{a} \\neq r_{b}$\" style=\"vertical-align: -4px\" width=\"54\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/3/ff3457ad2360d5798c6b29db487ba1d42df5d7ee.png\" class=\"latex\" alt=\"$r_{a} \\neq 0$\" style=\"vertical-align: -4px\" width=\"49\" height=\"17\" />. Thus, by our reasoning above, our solution is <img src=\"//latex.artofproblemsolving.com/c/0/4/c04a5cf8244bb49fb389f2c6e47ca0b801a8087b.png\" class=\"latex\" alt=\"$\\frac{1}{2} \\cdot 1004 = \\boxed{502}$\" style=\"vertical-align: -12px\" width=\"126\" height=\"37\" />.\n</p><p><br />\nSolution by <img src=\"//latex.artofproblemsolving.com/4/6/9/4696a579baa87a4e385fe39c397b54d94d70557b.png\" class=\"latex\" alt=\"$\\textbf{\\underline{Invoker}}$\" style=\"vertical-align: -3px\" width=\"63\" height=\"15\" />\n</p>\n<h3><span class=\"mw-headline\" id=\"Solution_3\">Solution 3</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=5\" title=\"Edit section: Solution 3\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>The key insight in this problem is noticing that when <img src=\"//latex.artofproblemsolving.com/f/4/d/f4d0d7039a400779d0c3013db5ed5a4950068462.png\" class=\"latex\" alt=\"$ak$\" width=\"19\" height=\"12\" /> is higher than <img src=\"//latex.artofproblemsolving.com/8/d/c/8dcceb5127d10665924b2e5b1f32de1cd53d8fac.png\" class=\"latex\" alt=\"$bk$\" width=\"17\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/5/9/8/598ca19b1bdf3ce16c4a80cf421142f151f71052.png\" class=\"latex\" alt=\"$a(2012-k)$\" style=\"vertical-align: -4px\" width=\"91\" height=\"18\" /> is lower than <img src=\"//latex.artofproblemsolving.com/0/d/5/0d527c39bba68573cb4c45a412ba518e08054a86.png\" class=\"latex\" alt=\"$b(2012-k)$\" style=\"vertical-align: -4px\" width=\"89\" height=\"18\" />, except at <img src=\"//latex.artofproblemsolving.com/e/f/1/ef1b2ff8d4401a9eecc589aae9c5cf959aa2c222.png\" class=\"latex\" alt=\"$2 \\pmod{4}$\" style=\"vertical-align: -4px\" width=\"79\" height=\"18\" /> residues*. Also, they must be equal many times. <img src=\"//latex.artofproblemsolving.com/8/8/7/887139c4a207b912e4188fa9f3f27898b33a25fa.png\" class=\"latex\" alt=\"$2012=2^2*503$\" style=\"vertical-align: 0px\" width=\"121\" height=\"15\" />. We should have multiples of <img src=\"//latex.artofproblemsolving.com/7/d/3/7d3817057d16af06717c17f3803fa0d447eb2347.png\" class=\"latex\" alt=\"$503$\" width=\"26\" height=\"12\" />. After trying all three pairs and getting <img src=\"//latex.artofproblemsolving.com/7/d/3/7d3817057d16af06717c17f3803fa0d447eb2347.png\" class=\"latex\" alt=\"$503$\" width=\"26\" height=\"12\" /> as our answer, we win. But look at the <img src=\"//latex.artofproblemsolving.com/a/8/5/a852d686e9175debe363eb9c3abd503a554d685f.png\" class=\"latex\" alt=\"$2\\pmod{4}$\" style=\"vertical-align: -5px\" width=\"83\" height=\"20\" /> idea. What if we just took <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> and plugged it in with <img src=\"//latex.artofproblemsolving.com/2/5/2/2524e7efcb927db9f32af0f14bd63706b4aa9028.png\" class=\"latex\" alt=\"$1006$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />?\nWe get <img src=\"//latex.artofproblemsolving.com/f/5/6/f563574744d6a2d6761415d8edfe3b33182be38d.png\" class=\"latex\" alt=\"$502$\" width=\"26\" height=\"12\" />.\n</p>\n<pre>--<a href=\"/wiki/index.php?title=User:Va2010&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Va2010 (page does not exist)\">Va2010</a> 11:12, 28 April 2012 (EDT)va2010\n</pre>\n<h3><span class=\"mw-headline\" id=\"Solution_4\">Solution 4</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=6\" title=\"Edit section: Solution 4\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>Say that the problem is a race track with <img src=\"//latex.artofproblemsolving.com/f/4/8/f48f95ec89b6c50220ecbbbb6130586135db8ff6.png\" class=\"latex\" alt=\"$2012$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> spots. To intersect the most, we should get next to each other a lot so the negation is high. As <img src=\"//latex.artofproblemsolving.com/8/8/7/887139c4a207b912e4188fa9f3f27898b33a25fa.png\" class=\"latex\" alt=\"$2012=2^2*503$\" style=\"vertical-align: 0px\" width=\"121\" height=\"15\" />, we intersect at a lot of multiples of <img src=\"//latex.artofproblemsolving.com/7/d/3/7d3817057d16af06717c17f3803fa0d447eb2347.png\" class=\"latex\" alt=\"$503$\" width=\"26\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2012_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=7\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\">USAJMO Problems and Solutions</a></li></ul>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2012_USAJMO\" title=\"2012 USAJMO\">2012 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2012_USAJMO_Problems\" title=\"2012 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2012\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_4\" title=\"2012 USAJMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_6\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_1\" title=\"2012 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_2\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_3\" title=\"2012 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_4\" title=\"2012 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2012_USAJMO_Problems/Problem_6\" class=\"mw-redirect\" title=\"2012 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240908054736\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.095 seconds\nReal time usage: 0.103 seconds\nPreprocessor visited node count: 1165/1000000\nPreprocessor generated node count: 2670/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 21404/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    5.709      1 -total\n 74.53%    4.255      1 Template:USAJMO_newbox\n 20.46%    1.168      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11060-0!canonical and timestamp 20240908054736 and revision id 194815\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        },
+        {
+          "ns": 2,
+          "*": "User:Va2010"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2012",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2012_USAJMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solutions",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2012_USAJMO_Problems/Problem_5",
+          "byteoffset": 507,
+          "anchor": "Solutions"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 1",
+          "number": "2.1",
+          "index": "3",
+          "fromtitle": "2012_USAJMO_Problems/Problem_5",
+          "byteoffset": 523,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 2",
+          "number": "2.2",
+          "index": "4",
+          "fromtitle": "2012_USAJMO_Problems/Problem_5",
+          "byteoffset": 3249,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 3",
+          "number": "2.3",
+          "index": "5",
+          "fromtitle": "2012_USAJMO_Problems/Problem_5",
+          "byteoffset": 5249,
+          "anchor": "Solution_3"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 4",
+          "number": "2.4",
+          "index": "6",
+          "fromtitle": "2012_USAJMO_Problems/Problem_5",
+          "byteoffset": 5876,
+          "anchor": "Solution_4"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "7",
+          "fromtitle": "2012_USAJMO_Problems/Problem_5",
+          "byteoffset": 6136,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2012 USAJMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2012 USAJMO Problems/Problem 6": {
+    "parse": {
+      "title": "2012 USAJMO Problems/Problem 6",
+      "pageid": 11329,
+      "revid": 132521,
+      "text": {
+        "*": "<div class=\"redirectMsg\"><p>Redirect to:</p><ul class=\"redirectText\"><li><a href=\"/wiki/index.php/2012_USAMO_Problems/Problem_5\" title=\"2012 USAMO Problems/Problem 5\">2012 USAMO Problems/Problem 5</a></li></ul></div><div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908054736\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.011 seconds\nReal time usage: 0.011 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:11329-0!canonical and timestamp 20240908054736 and revision id 132521\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2012 USAMO Problems/Problem 5"
+        }
+      ],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2012 USAJMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "2001 USA TST Problems/Problem 8": {
+    "parse": {
+      "title": "2001 USA TST Problems/Problem 8",
+      "pageid": 6774,
+      "revid": 25217,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_USA_TST_Problems/Problem_8&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>(<i>Titu Andreescu</i>)\nFind all pairs of nonnegative integers <img src=\"//latex.artofproblemsolving.com/9/8/b/98b7e4c455672c30d743cce7506408a40cb68129.png\" class=\"latex\" alt=\"$(m, n)$\" style=\"vertical-align: -4px\" width=\"47\" height=\"18\" /> such that \n<img src=\"//latex.artofproblemsolving.com/4/0/b/40b5e3c9509765a18e1dafb1311bc485ec8a2af2.png\" class=\"latexcenter\" alt=\"\\[(m+n-5)^2 = 9mn.\\]\" width=\"164\" height=\"19\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_USA_TST_Problems/Problem_8&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>All solutions are consecutive pairs of one of the sequences given recursively by\n<img src=\"//latex.artofproblemsolving.com/5/4/5/545a6746d40f87015818ffafd8c54b1aaffa1695.png\" class=\"latexcenter\" alt=\"\\begin{align*} a_0 &amp;= 0, \\\\ a_1 &amp;= 5, \\\\ a_n &amp;= \\frac{(a_{n-1}-5)^2}{a_{n-2}} \\end{align*}\" width=\"133\" height=\"91\" />\nand\n<img src=\"//latex.artofproblemsolving.com/4/9/5/4959704878333792e1a9acc9afc2f5fa05f712ff.png\" class=\"latexcenter\" alt=\"\\begin{align*} b_0 &amp;= b_1 = 1, \\\\ b_n &amp;= \\frac{(b_{n-1}-5)^2}{b_{n-2}} . \\end{align*}\" width=\"135\" height=\"67\" />\n</p><p>Call a solution <img src=\"//latex.artofproblemsolving.com/7/c/a/7ca10ffe3531cf1faf6222be7eac407c47bef878.png\" class=\"latex\" alt=\"$(m,n)$\" style=\"vertical-align: -4px\" width=\"47\" height=\"18\" /> <i>primitive</i> if there is no solution <img src=\"//latex.artofproblemsolving.com/b/4/8/b483378a4e61373b76034143da89751e15b47748.png\" class=\"latex\" alt=\"$(m&#39;,n)$\" style=\"vertical-align: -4px\" width=\"52\" height=\"18\" /> with <img src=\"//latex.artofproblemsolving.com/3/b/7/3b7c62aacf03a039cffa011904be2d1fad044b64.png\" class=\"latex\" alt=\"$m&#39;&lt;m$\" style=\"vertical-align: 0px\" width=\"60\" height=\"14\" /> and no solution <img src=\"//latex.artofproblemsolving.com/7/c/a/7ca931af43b8f30e2739c4a5dd0e29d8e723bd56.png\" class=\"latex\" alt=\"$(m,n&#39;)$\" style=\"vertical-align: -4px\" width=\"52\" height=\"18\" /> with <img src=\"//latex.artofproblemsolving.com/0/9/b/09b2d43fe5ff2d09edfdd1eddefef41574eafe80.png\" class=\"latex\" alt=\"$n&#39;&lt;n$\" style=\"vertical-align: 0px\" width=\"50\" height=\"14\" />.  Since the given equation is of degree 2, for any integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, there exist at most two integers <img src=\"//latex.artofproblemsolving.com/f/a/8/fa851771f1ba5d306513e10a92b2ba8848904543.png\" class=\"latex\" alt=\"$m_1,m_2$\" style=\"vertical-align: -3px\" width=\"53\" height=\"11\" /> such that <img src=\"//latex.artofproblemsolving.com/b/2/7/b274e2c61623707c610c8cb75853ecabb36815a0.png\" class=\"latex\" alt=\"$(m_1,n)$\" style=\"vertical-align: -4px\" width=\"55\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/1/c/3/1c3801e43e0f50dffa7504061e8c0eaf797fe2d4.png\" class=\"latex\" alt=\"$(m_2,n)$\" style=\"vertical-align: -4px\" width=\"55\" height=\"18\" /> are solutions; it follows that every solution is a pair of consecutive terms in a sequence in which the first two terms form a primitive solution, and any two consecutive terms constitute a solution.\n</p><p>Now, suppose <img src=\"//latex.artofproblemsolving.com/7/c/a/7ca10ffe3531cf1faf6222be7eac407c47bef878.png\" class=\"latex\" alt=\"$(m,n)$\" style=\"vertical-align: -4px\" width=\"47\" height=\"18\" /> is a primitive solution, with <img src=\"//latex.artofproblemsolving.com/9/b/3/9b343d21c3c8cdea3ca14a56343d23ea7ec8a6b3.png\" class=\"latex\" alt=\"$m\\ge n$\" style=\"vertical-align: -2px\" width=\"50\" height=\"14\" />.  Rearranging the given equation, we see\n<img src=\"//latex.artofproblemsolving.com/d/e/e/dee000a816e6d8cd3dab5e0fa7e95f96898edffd.png\" class=\"latexcenter\" alt=\"\\[m^2 - (7n+10)m + (n-5)^2 = 0 ,\\]\" width=\"259\" height=\"19\" />\nso <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> is the smaller of the two nonnegative integer roots of the polynomial\n<img src=\"//latex.artofproblemsolving.com/8/f/9/8f968dd9834e515374f75760a3ba530a01fa34c0.png\" class=\"latexcenter\" alt=\"\\[P(t) = t^2 - (7n+10)t + (n-5)^2 ,\\]\" width=\"266\" height=\"19\" />\nfor if one root of this polynomial is a nonnegative integer, then so is the other.\n</p><p>The other root is evidently <img src=\"//latex.artofproblemsolving.com/d/d/f/ddfce0815aad6b59b1b89b26b286ccb2aad25a11.png\" class=\"latex\" alt=\"$(n-5)^2/m$\" style=\"vertical-align: -4px\" width=\"88\" height=\"19\" />.  It follows that <img src=\"//latex.artofproblemsolving.com/d/5/6/d56b450e0082b4138dcc7ac0409e94326f22fe54.png\" class=\"latex\" alt=\"$n \\le m \\le \\lvert n-5 \\rvert$\" style=\"vertical-align: -4px\" width=\"125\" height=\"18\" />.  Therefore <img src=\"//latex.artofproblemsolving.com/a/c/5/ac58d189a7242cfce08b9e3400b03bbf8c36fc2f.png\" class=\"latex\" alt=\"$n\\le 2$\" style=\"vertical-align: -3px\" width=\"46\" height=\"16\" />.  If <img src=\"//latex.artofproblemsolving.com/0/2/3/02349576cee613512cdf301a365f06c0760acab5.png\" class=\"latex\" alt=\"$n=0$\" width=\"43\" height=\"12\" />, then the only root of this polynomial is 5; if <img src=\"//latex.artofproblemsolving.com/1/d/9/1d96ecc15129c5631ba4a2c6578e91e3d13e3baf.png\" class=\"latex\" alt=\"$n=1$\" style=\"vertical-align: 0px\" width=\"43\" height=\"12\" />, then the roots of this polynomial are 1 and 16; if <img src=\"//latex.artofproblemsolving.com/6/c/b/6cb7ae00764b56ee2adf59e78a1ffde9685b80db.png\" class=\"latex\" alt=\"$n=2$\" width=\"43\" height=\"12\" />, then its roots are not integers.  Therefore <img src=\"//latex.artofproblemsolving.com/6/2/1/62149e3b60b893a0191afe961627276e18c5a584.png\" class=\"latex\" alt=\"$(m,n)=(0,5)$\" style=\"vertical-align: -4px\" width=\"112\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/3/4/5/3451f1ba8fda07feea12cd3006a774efe7a07f6f.png\" class=\"latex\" alt=\"$(m,n)=(1,1)$\" style=\"vertical-align: -4px\" width=\"112\" height=\"18\" /> are the only primitive solutions.\n</p><p>Now for any <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, the roots of <img src=\"//latex.artofproblemsolving.com/d/b/7/db78b95eb8ad3b90e7a653cd85be93e20ec984d9.png\" class=\"latex\" alt=\"$P(t)$\" style=\"vertical-align: -4px\" width=\"33\" height=\"18\" /> are the values of <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> for which <img src=\"//latex.artofproblemsolving.com/7/c/a/7ca10ffe3531cf1faf6222be7eac407c47bef878.png\" class=\"latex\" alt=\"$(m,n)$\" style=\"vertical-align: -4px\" width=\"47\" height=\"18\" /> are the given equation; and these two roots <img src=\"//latex.artofproblemsolving.com/c/a/f/cafebd958702683236f0cb2e09e99f9696c807fe.png\" class=\"latex\" alt=\"$m_1, m_2$\" style=\"vertical-align: -3px\" width=\"53\" height=\"11\" /> satisfy <img src=\"//latex.artofproblemsolving.com/5/f/a/5fa6c8d10c407e4b6a0a327bac12bc2bb90739a2.png\" class=\"latex\" alt=\"$m_1m_2 = (n-5)^2$\" style=\"vertical-align: -4px\" width=\"133\" height=\"19\" />.  Hence the recursive relations given at the beginning of the problem give all solutions, as desired.  We may note that the sequence <img src=\"//latex.artofproblemsolving.com/0/3/7/03720309cd07974be58da8d546e3098594b831ee.png\" class=\"latex\" alt=\"$\\{a_k\\}, \\{ b_k\\}$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" /> are the sequences <img src=\"//latex.artofproblemsolving.com/7/a/e/7ae4de8b5d74fe5a3f5e78404fa1cd46a73ce6e4.png\" class=\"latex\" alt=\"$\\{ 5F_{2k}^2 \\}$\" style=\"vertical-align: -4px\" width=\"52\" height=\"19\" /> and <img src=\"//latex.artofproblemsolving.com/3/6/3/36314c4335952eb6835adeab4efb1eafe325d223.png\" class=\"latex\" alt=\"$\\{L_{2k-1}^2\\}$\" style=\"vertical-align: -4px\" width=\"61\" height=\"19\" />, where <img src=\"//latex.artofproblemsolving.com/7/3/7/737fdb63bf6b6c7046537324815ac7a95bf60df9.png\" class=\"latex\" alt=\"$\\{ F_k \\}$\" style=\"vertical-align: -4px\" width=\"37\" height=\"18\" /> is the <a href=\"/wiki/index.php/Fibonacci_sequence\" title=\"Fibonacci sequence\">Fibonacci sequence</a> and <img src=\"//latex.artofproblemsolving.com/1/0/4/1049549e9e7d28793196e86754d80b5450ade7f6.png\" class=\"latex\" alt=\"$\\{ L_k \\}$\" style=\"vertical-align: -5px\" width=\"41\" height=\"20\" /> is the <a href=\"/wiki/index.php?title=Lucas_sequence&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Lucas sequence (page does not exist)\">Lucas sequence</a>.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p><br />\n<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2001_USA_TST_Problems/Problem_8&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Resources\">Resources</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_USA_TST_Problems/Problem_8&amp;action=edit&amp;section=3\" title=\"Edit section: Resources\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li><a href=\"/wiki/index.php?title=2001_USA_TST_Problems&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2001 USA TST Problems (page does not exist)\">2001 USA TST Problems</a></li>\n<li>&lt;url&gt;Forum/viewtopic.php?t=24857 Discussion on AoPS/MathLinks&lt;/url&gt;</li>\n<li>&lt;url&gt;Forum/viewtopic.php?t=4999 Further discussion&lt;/url&gt;</li></ul>\n\n<!-- \nNewPP limit report\nCached time: 20240908053322\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.031 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 359/1000000\nPreprocessor generated node count: 802/1000000\nPost‐expand include size: 356/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6709/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.383      1 Template:Alternate_solutions\n100.00%    1.383      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6774-0!canonical and timestamp 20240908053322 and revision id 25217\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Fibonacci sequence"
+        },
+        {
+          "ns": 0,
+          "*": "Lucas sequence"
+        },
+        {
+          "ns": 0,
+          "*": "2001 USA TST Problems"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_USA_TST_Problems/Problem_8",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_USA_TST_Problems/Problem_8",
+          "byteoffset": 141,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Resources",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_USA_TST_Problems/Problem_8",
+          "byteoffset": 2479,
+          "anchor": "Resources"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 USA TST Problems/Problem 8",
+      "iwlinks": [],
+      "properties": []
+    }
+  },
+  "2001 USA TST Problems/Problem 9": {
+    "parse": {
+      "title": "2001 USA TST Problems/Problem 9",
+      "pageid": 6773,
+      "revid": 25216,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_USA_TST_Problems/Problem_9&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>(<i>Zuming Feng</i>)\nLet <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> be a finite set of positive integers. Prove that there exists \na finite set <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> of positive integers such that <img src=\"//latex.artofproblemsolving.com/3/2/5/3254647aba215297c432d4a99a5a72b6f45fcbdb.png\" class=\"latex\" alt=\"$A \\subseteq B$\" style=\"vertical-align: -2px\" width=\"52\" height=\"15\" /> and \n<img src=\"//latex.artofproblemsolving.com/a/e/3/ae35686a609764f4a2cbf4dfc36383faf5f00919.png\" class=\"latexcenter\" alt=\"\\[\\prod_{x\\in B} x = \\sum_{x\\in B} x^2.\\]\" width=\"116\" height=\"38\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_USA_TST_Problems/Problem_9&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><b>Lemma 1.</b> For any finite set <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> of positive integers, there exists a finite set <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> of positive integers such that <img src=\"//latex.artofproblemsolving.com/8/c/b/8cb14cf6e75ab537cda755df75ef142e844d72d2.png\" class=\"latex\" alt=\"$A \\subseteq C$\" style=\"vertical-align: -2px\" width=\"52\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/c/7/e/c7e3de622ffca880dfd805184a0075137f5bc6c5.png\" class=\"latex\" alt=\"$\\prod_{x \\in C} x \\ge \\sum_{x\\in C} x^2$\" style=\"vertical-align: -21px\" width=\"111\" height=\"39\" />.\n</p><p><i>Proof.</i>  Let us abbreviate <img src=\"//latex.artofproblemsolving.com/e/3/5/e35e049e634d152728435d15565f4ee86d22ed40.png\" class=\"latex\" alt=\"$p = \\prod_{x\\in A}x$\" style=\"vertical-align: -21px\" width=\"74\" height=\"38\" /> and <img src=\"//latex.artofproblemsolving.com/3/f/7/3f747e0395f311fcc903bf8299db32049ab51cfb.png\" class=\"latex\" alt=\"$s = \\sum_{x\\in A} x^2$\" style=\"vertical-align: -21px\" width=\"79\" height=\"39\" />.  Suppose that <img src=\"//latex.artofproblemsolving.com/6/5/c/65c562ae0f07e8800e21c6c8c0a74fd5cea88e3c.png\" class=\"latex\" alt=\"$p &lt; s$\" style=\"vertical-align: -3px\" width=\"42\" height=\"13\" /> (otherwise, we may have <img src=\"//latex.artofproblemsolving.com/8/4/8/848a04faeeabaf1ca62a4081460b017bf225f991.png\" class=\"latex\" alt=\"$C=A$\" style=\"vertical-align: -1px\" width=\"54\" height=\"14\" />).  Let <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> be a positive integer larger than <img src=\"//latex.artofproblemsolving.com/5/a/4/5a4291c193a57f20f62a578e1db31614adeac4b2.png\" class=\"latex\" alt=\"$\\max(s,5)$\" style=\"vertical-align: -4px\" width=\"72\" height=\"18\" /> (and thus larger than any element of <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />).  Taking <img src=\"//latex.artofproblemsolving.com/f/c/b/fcba29d901d1dbea55bd949194649a814c7079cd.png\" class=\"latex\" alt=\"$C = A \\cup \\{a, a+1, a+2\\}$\" style=\"vertical-align: -4px\" width=\"197\" height=\"18\" />, evidently <img src=\"//latex.artofproblemsolving.com/8/c/b/8cb14cf6e75ab537cda755df75ef142e844d72d2.png\" class=\"latex\" alt=\"$A \\subseteq C$\" style=\"vertical-align: -2px\" width=\"52\" height=\"15\" />, and\n<img src=\"//latex.artofproblemsolving.com/4/3/b/43bd34a5b8be56d7b07402b75002a5afa7d261a0.png\" class=\"latexcenter\" alt=\"\\begin{align*} \\prod_{x\\in C} x &amp;= pa(a+1)(a+2) &gt; pa (a+1)^2 &gt; 5(a+1)^2 \\\\ &amp;&gt; s + a^2 + (a+1)^2 + (a+2)^2 = \\sum_{x \\in C} x, \\end{align*}\" width=\"392\" height=\"87\" />\nas desired.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p><b>Lemma 2.</b> For any finite set <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> of positive integers such that <img src=\"//latex.artofproblemsolving.com/c/7/e/c7e3de622ffca880dfd805184a0075137f5bc6c5.png\" class=\"latex\" alt=\"$\\prod_{x \\in C} x \\ge \\sum_{x\\in C} x^2$\" style=\"vertical-align: -21px\" width=\"111\" height=\"39\" />, there exists a finite set <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> of positive integers such that <img src=\"//latex.artofproblemsolving.com/6/9/a/69a7a7bce37c3d65355aeed0c45769016f4721dc.png\" class=\"latex\" alt=\"$C \\subseteq B$\" style=\"vertical-align: -2px\" width=\"52\" height=\"15\" /> and\n<img src=\"//latex.artofproblemsolving.com/2/f/0/2f080ba163c4a3c3c3ed33731db6dc431cfb736c.png\" class=\"latexcenter\" alt=\"\\[\\prod_{x\\in B}x = \\sum_{x\\in B} x^2 .\\]\" width=\"116\" height=\"39\" />\n</p><p><i>Proof.</i>  Let us abbreviate <img src=\"//latex.artofproblemsolving.com/5/6/f/56f4eaef8a5f0f7721fc0bb2114af1a478af0192.png\" class=\"latex\" alt=\"$s = \\sum_{x \\in C}x^2$\" style=\"vertical-align: -21px\" width=\"79\" height=\"39\" />, and <img src=\"//latex.artofproblemsolving.com/7/f/7/7f7d8d9fee2afe9e1d5215867c15dd4e1012b699.png\" class=\"latex\" alt=\"$d = \\prod_{x \\in C} x - \\sum_{x \\in C} x^2$\" style=\"vertical-align: -21px\" width=\"142\" height=\"39\" />.  We induct on the quantity <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" />, which by hypothesis is a nonnegative integer.\n</p><p>For our base case, <img src=\"//latex.artofproblemsolving.com/7/9/1/791662898215b138613f4dada0a3ce54193d735f.png\" class=\"latex\" alt=\"$d=0$\" width=\"42\" height=\"12\" />, we may take <img src=\"//latex.artofproblemsolving.com/a/b/f/abf7026c16cd53bd4c951c73249436b4efcf0f78.png\" class=\"latex\" alt=\"$B=C$\" style=\"vertical-align: -1px\" width=\"55\" height=\"14\" />.\n</p><p>Now suppose that the lemma holds for <img src=\"//latex.artofproblemsolving.com/d/1/9/d196a69b8d351d3a0202c644980f232f357bbffe.png\" class=\"latex\" alt=\"$d&lt;k$\" style=\"vertical-align: 0px\" width=\"43\" height=\"13\" />.  Suppose <img src=\"//latex.artofproblemsolving.com/8/d/a/8da6365830ca59e4466e591afa31cd9bb47bb8f3.png\" class=\"latex\" alt=\"$d=k$\" width=\"43\" height=\"12\" />.  Let <img src=\"//latex.artofproblemsolving.com/b/c/0/bc0efeeeecff97b22791131de1c4f3e9be16f683.png\" class=\"latex\" alt=\"$C&#39; = C \\cup \\{s+k-1\\}$\" style=\"vertical-align: -4px\" width=\"167\" height=\"18\" />.  Then\n<img src=\"//latex.artofproblemsolving.com/3/1/6/31696879fdb3b4672303330c86c8797d25da31eb.png\" class=\"latexcenter\" alt=\"\\[\\prod_{x\\in C&#39;} x - \\sum_{x\\in C&#39;}x^2 = (s+k)(s+k-1) - s - (s+k-1)^2 = k-1,\\]\" width=\"478\" height=\"39\" />\nso by inductive hypothesis, there exists a set <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/1/2/a/12ad4736b1ba5dc530f378846e294f411ff0458a.png\" class=\"latex\" alt=\"$C&#39; \\subseteq B$\" style=\"vertical-align: -2px\" width=\"57\" height=\"16\" /> and\n<img src=\"//latex.artofproblemsolving.com/c/b/7/cb7f4fa9f5d502cc90211ef48e9412d9f9cf21cd.png\" class=\"latexcenter\" alt=\"\\[\\prod_{x\\in B} x = \\sum_{x\\in B} x^2 .\\]\" width=\"116\" height=\"39\" />\nSince <img src=\"//latex.artofproblemsolving.com/1/0/f/10f77954629d3594e3ffbf696b002357b0926f7a.png\" class=\"latex\" alt=\"$C \\subseteq C&#39; \\subseteq B$\" style=\"vertical-align: -3px\" width=\"98\" height=\"18\" />, this set <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> satisfies the lemma's conditions.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p>Combining the statments of Lemmata 1 and 2, we are done.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p><br />\n<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2001_USA_TST_Problems/Problem_9&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Resources\">Resources</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_USA_TST_Problems/Problem_9&amp;action=edit&amp;section=3\" title=\"Edit section: Resources\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li><a href=\"/wiki/index.php?title=2001_USA_TST_Problems&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2001 USA TST Problems (page does not exist)\">2001 USA TST Problems</a></li>\n<li>&lt;url&gt;Forum/viewtopic.php?t=24756 Discussion on AoPS/MathLinks&lt;/url&gt;</li></ul>\n\n<!-- \nNewPP limit report\nCached time: 20240907211230\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.031 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 377/1000000\nPreprocessor generated node count: 842/1000000\nPost‐expand include size: 356/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 7059/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.261      1 Template:Alternate_solutions\n100.00%    1.261      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6773-0!canonical and timestamp 20240907211230 and revision id 25216\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "*": "2001 USA TST Problems"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_USA_TST_Problems/Problem_9",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_USA_TST_Problems/Problem_9",
+          "byteoffset": 262,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Resources",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_USA_TST_Problems/Problem_9",
+          "byteoffset": 2308,
+          "anchor": "Resources"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 USA TST Problems/Problem 9",
+      "iwlinks": [],
+      "properties": []
+    }
+  }
+}
