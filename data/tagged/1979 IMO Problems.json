@@ -1,0 +1,667 @@
+{
+  "1979 IMO Problems/Problem 1": {
+    "parse": {
+      "title": "1979 IMO Problems/Problem 1",
+      "pageid": 20525,
+      "revid": 143976,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>If <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> and <img src=\"//latex.artofproblemsolving.com/0/6/1/0615acc3725de21025457e7d6f7694dab8e2f758.png\" class=\"latex\" alt=\"$q$\" style=\"vertical-align: -3px\" width=\"8\" height=\"11\" /> are natural numbers so that<img src=\"//latex.artofproblemsolving.com/f/e/7/fe7a47dd9fd28d623ff2b2b7186626d70073ea29.png\" class=\"latexcenter\" alt=\"\\[\\frac{p}{q}=1-\\frac{1}{2}+\\frac{1}{3}-\\frac{1}{4}+ \\ldots -\\frac{1}{1318}+\\frac{1}{1319},\\]\" width=\"324\" height=\"40\" />prove that <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> is divisible with <img src=\"//latex.artofproblemsolving.com/7/b/6/7b6cdf62a4c800756c74d0fac1e13ec127b1d146.png\" class=\"latex\" alt=\"$1979$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We first write\n<img src=\"//latex.artofproblemsolving.com/5/6/d/56d2800f2686d443db659537d0ff0c8590567f28.png\" class=\"latexcenter\" alt=\"\\begin{align*} \\frac{p}{q} &amp;=1-\\frac{1}{2}+\\frac{1}{3}-\\frac{1}{4}+\\cdots-\\frac{1}{1318}+\\frac{1}{1319}\\\\ &amp;=1+\\frac{1}{2}+\\cdots+\\frac{1}{1319}-2\\cdot\\left(\\frac{1}{2}+\\frac{1}{4}+\\cdots+\\frac{1}{1318}\\right)\\\\ &amp;=1+\\frac{1}{2}+\\cdots+\\frac{1}{1319}-\\left(1+\\frac{1}{2}+\\cdots+\\frac{1}{659}\\right)\\\\ &amp;=\\frac{1}{660}+\\frac{1}{661}+\\cdots+\\frac{1}{1319} \\end{align*}\" width=\"408\" height=\"182\" />Now, observe that\n<img src=\"//latex.artofproblemsolving.com/0/9/8/0982983eaca7f9b9cc87facc1fd656df92c1cee3.png\" class=\"latexcenter\" alt=\"\\begin{align*} \\frac{1}{660}+\\frac{1}{1319}=\\frac{660+1319}{660\\cdot 1319}=\\frac{1979}{660\\cdot 1319} \\end{align*}\" width=\"309\" height=\"38\" />and similarly <img src=\"//latex.artofproblemsolving.com/f/3/5/f35bdd34436d405e0ad5cbd765cb193cc680a56c.png\" class=\"latex\" alt=\"$\\frac{1}{661}+\\frac{1}{1318}=\\frac{1979}{661\\cdot 1318}$\" style=\"vertical-align: -13px\" width=\"197\" height=\"38\" /> and <img src=\"//latex.artofproblemsolving.com/9/c/c/9cc5909bb2e92353d8c0487aba8e21892d8f2cf1.png\" class=\"latex\" alt=\"$\\frac{1}{662}+\\frac{1}{1317}=\\frac{1979}{662\\cdot 1317}$\" style=\"vertical-align: -13px\" width=\"197\" height=\"38\" />, and so on. We see that the original equation becomes\n<img src=\"//latex.artofproblemsolving.com/e/5/c/e5c1276cedf00ade2fab38364eb5c2b762a804cf.png\" class=\"latexcenter\" alt=\"\\begin{align*} \\frac{p}{q} =\\frac{1979}{660\\cdot 1319}+\\frac{1979}{661\\cdot 1318}+\\cdots+\\frac{1979}{989\\cdot 990}=1979\\cdot\\frac{r}{s} \\end{align*}\" width=\"442\" height=\"41\" />where <img src=\"//latex.artofproblemsolving.com/6/f/7/6f7bdcc8c3c60c8a381f657b25a878e6ba8d4ffc.png\" class=\"latex\" alt=\"$s=660\\cdot 661\\cdots 1319$\" style=\"vertical-align: 0px\" width=\"163\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/4/7/5/4750f6b44bbbb385895024afadacee4c6d465e3f.png\" class=\"latex\" alt=\"$r=\\frac{s}{660\\cdot 1319}+\\frac{s}{661\\cdot 1318}+\\cdots+\\frac{s}{989\\cdot 990}$\" style=\"vertical-align: -13px\" width=\"352\" height=\"33\" /> are two integers. Finally consider <img src=\"//latex.artofproblemsolving.com/5/d/c/5dcba05c5d1815abd16a28cb5708b082a6dd709b.png\" class=\"latex\" alt=\"$p=1979\\cdot\\frac{qr}{s}$\" style=\"vertical-align: -12px\" width=\"103\" height=\"33\" />, and observe that <img src=\"//latex.artofproblemsolving.com/6/0/1/601104a4302865170525deabbddcafa6fe052538.png\" class=\"latex\" alt=\"$s\\nmid 1979$\" style=\"vertical-align: -4px\" width=\"59\" height=\"18\" /> because <img src=\"//latex.artofproblemsolving.com/7/b/6/7b6cdf62a4c800756c74d0fac1e13ec127b1d146.png\" class=\"latex\" alt=\"$1979$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> is a prime, it follows that <img src=\"//latex.artofproblemsolving.com/c/f/5/cf519814adcb7161838acfc34dc9cb9f6ddd2675.png\" class=\"latex\" alt=\"$\\frac{qr}{s}\\in\\mathbb{Z}$\" style=\"vertical-align: -12px\" width=\"55\" height=\"33\" />. Hence we deduce that <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> is divisible with <img src=\"//latex.artofproblemsolving.com/7/b/6/7b6cdf62a4c800756c74d0fac1e13ec127b1d146.png\" class=\"latex\" alt=\"$1979$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />.\n</p><p>The above solution was posted and copyrighted by Solumilkyu. The original thread for this problem can be found here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://aops.com/community/p6171228\">[1]</a>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1979_IMO\" title=\"1979 IMO\">1979 IMO</a></b> (<b><a href=\"/wiki/index.php/1979_IMO_Problems\" title=\"1979 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b>First question</b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_2\" title=\"1979 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_3\" title=\"1979 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_4\" title=\"1979 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_5\" title=\"1979 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_6\" title=\"1979 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_2\" title=\"1979 IMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908052253\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.027 seconds\nReal time usage: 0.028 seconds\nPreprocessor visited node count: 114/1000000\nPreprocessor generated node count: 525/1000000\nPost‐expand include size: 868/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3997/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.278      1 Template:IMO_box\n100.00%    2.278      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:20525-0!canonical and timestamp 20240908052253 and revision id 143976\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://aops.com/community/p6171228"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1979_IMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1979_IMO_Problems/Problem_1",
+          "byteoffset": 245,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "",
+          "byteoffset": null,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1979 IMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Prime Factorization",
+      "Modular Arithmetic",
+      "Greatest Common Divisor (GCD)"
+    ]
+  },
+  "1979 IMO Problems/Problem 2": {
+    "parse": {
+      "title": "1979 IMO Problems/Problem 2",
+      "pageid": 20527,
+      "revid": 143988,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We consider a prism which has the upper and inferior basis the pentagons: <img src=\"//latex.artofproblemsolving.com/e/1/e/e1eef8dc2aafc63d7f66cdc160bf934aeb307b0c.png\" class=\"latex\" alt=\"$A_{1}A_{2}A_{3}A_{4}A_{5}$\" style=\"vertical-align: -2px\" width=\"104\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/e/b/4/eb4f6429aedb4615c244e2630b29a114d3f81276.png\" class=\"latex\" alt=\"$B_{1}B_{2}B_{3}B_{4}B_{5}$\" style=\"vertical-align: -2px\" width=\"105\" height=\"15\" />. Each of the sides of the two pentagons and the segments <img src=\"//latex.artofproblemsolving.com/5/9/7/597a7bd4b30b0dc3fb0d5377d2bd4000f6465fcf.png\" class=\"latex\" alt=\"$A_{i}B_{j}$\" style=\"vertical-align: -4px\" width=\"38\" height=\"17\" /> with <img src=\"//latex.artofproblemsolving.com/5/4/b/54b51dccdb951253f336e6b55ce5646bd6f4ca2a.png\" class=\"latex\" alt=\"$i,j=1,\\ldots$\" style=\"vertical-align: -3px\" width=\"84\" height=\"16\" />,5 is colored in red or blue. In every triangle which has all sides colored there exists one red side and one blue side. Prove that all the 10 sides of the two basis are colored in the same color.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let us prove first that the edges <img src=\"//latex.artofproblemsolving.com/4/7/5/47593633e777c66b0d6d6d91de3192d382631473.png\" class=\"latex\" alt=\"$A_1A_2,A_2A_3,\\cdots ,A_5A_1$\" style=\"vertical-align: -3px\" width=\"176\" height=\"16\" /> are of the same color. Assume the contrary, and let w.l.o.g. <img src=\"//latex.artofproblemsolving.com/e/f/1/ef100258eefc3cb01f88675aaf511c44213fbf8c.png\" class=\"latex\" alt=\"$A_1A_2$\" style=\"vertical-align: -2px\" width=\"40\" height=\"15\" /> be red and <img src=\"//latex.artofproblemsolving.com/2/8/b/28b7e9a45c61fbf6c1955fd5f48e0c305a52c559.png\" class=\"latex\" alt=\"$A_2A_3$\" style=\"vertical-align: -2px\" width=\"40\" height=\"15\" /> be green. Three of the segments <img src=\"//latex.artofproblemsolving.com/3/4/3/343c2c303ade0fa998d8efae84482ea18d820e82.png\" class=\"latex\" alt=\"$A_2B_l, (l = 1, 2, 3, 4, 5)$\" style=\"vertical-align: -4px\" width=\"168\" height=\"18\" />, say <img src=\"//latex.artofproblemsolving.com/9/b/6/9b63d715b10ea17749b051360a4604b9a6fd2d4f.png\" class=\"latex\" alt=\"$A_2B_i,A_2B_j,A_2B_k$\" style=\"vertical-align: -4px\" width=\"140\" height=\"17\" />,have to be of the same color, let it w.l.o.g. be red. Then <img src=\"//latex.artofproblemsolving.com/d/6/6/d665bd2cf5e63c96d18abbf50f96d04a5ec1414b.png\" class=\"latex\" alt=\"$A_1B_i,A_1B_j,A_1B_k$\" style=\"vertical-align: -4px\" width=\"140\" height=\"17\" /> must be green. At least one of the sides of triangle <img src=\"//latex.artofproblemsolving.com/c/9/2/c92b8661686d7895dd98b63c1a04a6ec8d0facdd.png\" class=\"latex\" alt=\"$B_iB_jB_k$\" style=\"vertical-align: -4px\" width=\"61\" height=\"17\" />, say <img src=\"//latex.artofproblemsolving.com/c/8/e/c8e038b1058c38a4a71702815da652a7e431b69b.png\" class=\"latex\" alt=\"$B_iB_j$\" style=\"vertical-align: -4px\" width=\"39\" height=\"17\" /> ,must be an edge of the prism. Then looking at the triangles <img src=\"//latex.artofproblemsolving.com/e/0/e/e0ef7cb2e4c67d0ef0b980c4c3589406de7f3665.png\" class=\"latex\" alt=\"$A_1B_iB_j$\" style=\"vertical-align: -4px\" width=\"60\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/a/b/7/ab7f4e3cd2a4ef3e2a20cc107e7d17e7bed1ac78.png\" class=\"latex\" alt=\"$A_2B_iB_j$\" style=\"vertical-align: -6px\" width=\"63\" height=\"19\" /> we deduce that <img src=\"//latex.artofproblemsolving.com/c/8/e/c8e038b1058c38a4a71702815da652a7e431b69b.png\" class=\"latex\" alt=\"$B_iB_j$\" style=\"vertical-align: -4px\" width=\"39\" height=\"17\" /> can be neither green nor red, which is acontradiction. Hence all five edges of the pentagon <img src=\"//latex.artofproblemsolving.com/0/b/e/0be9a882d3e97d492288ec42ff95b7608d132cb1.png\" class=\"latex\" alt=\"$A_1A_2A_3A_4A_5$\" style=\"vertical-align: -2px\" width=\"104\" height=\"15\" /> have thesame color. Similarly, all five edges of <img src=\"//latex.artofproblemsolving.com/e/0/f/e0f3fe346864ca5da6443faff932665a21a7beb9.png\" class=\"latex\" alt=\"$B_1B_2B_3B_4B_5$\" style=\"vertical-align: -2px\" width=\"105\" height=\"15\" /> have the same color.We now show that the two colors are the same. Assume otherwise, i.e.,that w.l.o.g. the <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> edges are painted red and the <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> edges green. Let us call segments of the form <img src=\"//latex.artofproblemsolving.com/b/c/3/bc3c27faa67216fa47ef554a7f92f76b7008de43.png\" class=\"latex\" alt=\"$A_iB_j$\" style=\"vertical-align: -4px\" width=\"38\" height=\"17\" /> diagonal (<img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/8/1/2/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png\" class=\"latex\" alt=\"$j$\" style=\"vertical-align: -3px\" width=\"8\" height=\"16\" /> may be equal). We now count the diagonal segments by grouping the red segments based on their <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> point, and the green segments based on their <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> point. As above, the assumption that three of <img src=\"//latex.artofproblemsolving.com/b/c/3/bc3c27faa67216fa47ef554a7f92f76b7008de43.png\" class=\"latex\" alt=\"$A_iB_j$\" style=\"vertical-align: -4px\" width=\"38\" height=\"17\" /> for fixed <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> are red leads to a contradiction. Hence at most two diagonal segments out of each <img src=\"//latex.artofproblemsolving.com/2/7/4/2744600189f7f1df31756f2022b2d5212ef1c767.png\" class=\"latex\" alt=\"$A_i$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> may be red, which counts up to at most <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> red segments. Similarly, at most <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> diagonal segments can be green. But then we can paint at most <img src=\"//latex.artofproblemsolving.com/f/8/3/f8366cd6196dd8a9da6d38a3e9eafb109e99d53e.png\" class=\"latex\" alt=\"$20$\" width=\"17\" height=\"12\" /> diagonal segments out of <img src=\"//latex.artofproblemsolving.com/6/6/6/66644fd9f411299c3c1eabf151b5f601c9ef6c21.png\" class=\"latex\" alt=\"$25$\" width=\"17\" height=\"12\" />, which is a contradiction. Hence all edges in the pentagons <img src=\"//latex.artofproblemsolving.com/0/b/e/0be9a882d3e97d492288ec42ff95b7608d132cb1.png\" class=\"latex\" alt=\"$A_1A_2A_3A_4A_5$\" style=\"vertical-align: -2px\" width=\"104\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/e/0/f/e0f3fe346864ca5da6443faff932665a21a7beb9.png\" class=\"latex\" alt=\"$B_1B_2B_3B_4B_5$\" style=\"vertical-align: -2px\" width=\"105\" height=\"15\" /> have the same color.\n</p><p>This solution was posted and copyrighted by Learner94. The original thread for this problem can be found here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://aops.com/community/p2448979\">[1]</a>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1979_IMO\" title=\"1979 IMO\">1979 IMO</a></b> (<b><a href=\"/wiki/index.php/1979_IMO_Problems\" title=\"1979 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_1\" title=\"1979 IMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_1\" title=\"1979 IMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_3\" title=\"1979 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_4\" title=\"1979 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_5\" title=\"1979 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_6\" title=\"1979 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_3\" title=\"1979 IMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210109\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.033 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 156/1000000\nPreprocessor generated node count: 825/1000000\nPost‐expand include size: 895/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5699/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.604      1 Template:IMO_box\n100.00%    2.604      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:20527-0!canonical and timestamp 20240907210109 and revision id 143988\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://aops.com/community/p2448979"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1979_IMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1979_IMO_Problems/Problem_2",
+          "byteoffset": 477,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "",
+          "byteoffset": null,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1979 IMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Graph Theory",
+      "Pigeonhole Principle",
+      "Inclusion-Exclusion Principle"
+    ]
+  },
+  "1979 IMO Problems/Problem 3": {
+    "parse": {
+      "title": "1979 IMO Problems/Problem 3",
+      "pageid": 20528,
+      "revid": 143991,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_3\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 3</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#See_Also\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Two circles in a plane intersect. <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> is one of the points of intersection. Starting simultaneously from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> two points move with constant speed, each travelling along its own circle in the same sense. The two points return to <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> simultaneously after one revolution. Prove that there is a fixed point <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> in the plane such that the two points are always equidistant from <img src=\"//latex.artofproblemsolving.com/e/3/c/e3ce33ec2a34dc4fddaec3224043f4a72bbe6d0e.png\" class=\"latex\" alt=\"$P.$\" width=\"15\" height=\"12\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/a/f/3/af3e233bb1da8d66bebec90849a037a8f32147ea.png\" class=\"latex\" alt=\"$O_1, O_2$\" style=\"vertical-align: -4px\" width=\"53\" height=\"18\" /> be the centers of the 2 circles and let the points B, C move on the circles <img src=\"//latex.artofproblemsolving.com/1/d/b/1dba2f81b2ca1db35a6cd538f37326fb01615c26.png\" class=\"latex\" alt=\"$(O_1), (O_2)$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" />, recpectively. Let A' be the other intersection of the 2 circles different from the point A. Since the angles <img src=\"//latex.artofproblemsolving.com/d/6/2/d6246ed9ecffcaf5941a878ece4305bc93c1c791.png\" class=\"latex\" alt=\"$\\angle BO_1A = \\angle CO_2A$\" style=\"vertical-align: -2px\" width=\"148\" height=\"15\" /> are equal, the isosceles triangles <img src=\"//latex.artofproblemsolving.com/1/1/e/11e74a8a0095d86e302b7c05c885ad3638ca3776.png\" class=\"latex\" alt=\"$\\triangle AO_1B \\sim \\triangle AO_2C$\" style=\"vertical-align: -2px\" width=\"155\" height=\"16\" /> are similar. Consequently, the angles <img src=\"//latex.artofproblemsolving.com/a/e/0/ae0f1173339415c21418b9ac816fe9f7b16a9485.png\" class=\"latex\" alt=\"$\\angle BAO_1 = \\angle CAO_2$\" style=\"vertical-align: -4px\" width=\"151\" height=\"17\" /> are equal and the angles\n</p><p><img src=\"//latex.artofproblemsolving.com/7/d/f/7df08135019f6d74fa53b66ec700fc97516c1dcb.png\" class=\"latex\" alt=\"$\\angle BAC = BAO_1 + \\angle O_1AO_2 + \\angle O_2AC =$\" style=\"vertical-align: -2px\" width=\"323\" height=\"15\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/f/b/e/fbe72785754ae3dc1c38bd4d31a272f6bffb5dbe.png\" class=\"latex\" alt=\"$= BAO_1 + \\angle O_1AO_2 - \\angle CAO_2 = \\angle O_1AO_2$\" style=\"vertical-align: -2px\" width=\"336\" height=\"15\" />\n</p><p>are also equal. The angles <img src=\"//latex.artofproblemsolving.com/2/2/2/222def1e254d1fdabfcdac23bf1c91e3de68b4d1.png\" class=\"latex\" alt=\"$\\angle A&#39;BA = \\frac{\\angle A&#39;O_1A}{2} = \\angle O_2O_1A$\" style=\"vertical-align: -12px\" width=\"247\" height=\"38\" /> are equal and the angles <img src=\"//latex.artofproblemsolving.com/9/c/f/9cfc7a746f2e9457e8488703f37017bb4a7b74c8.png\" class=\"latex\" alt=\"$\\angle A&#39;CA = \\frac{\\angle A&#39;O_2A}{2} = \\angle O_1O_2A$\" style=\"vertical-align: -12px\" width=\"246\" height=\"38\" /> are also equal. As a result, the point A' is on the side BC of the triangle <img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" />, which is always similar to the fixed triangle <img src=\"//latex.artofproblemsolving.com/4/e/e/4ee158d4627653455faf0dd6ad4680fb01141a25.png\" class=\"latex\" alt=\"$\\triangle O_1AO_2$\" style=\"vertical-align: -2px\" width=\"71\" height=\"16\" />.\n</p><p>Lemma (Yaglom's Geometric Transformations II, pp 68-69). Assume that a figure F' (the triangle <img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" />) moves in such a way that it remains at all times similar to a fixed figure F (the triangle <img src=\"//latex.artofproblemsolving.com/4/e/e/4ee158d4627653455faf0dd6ad4680fb01141a25.png\" class=\"latex\" alt=\"$\\triangle O_1AO_2$\" style=\"vertical-align: -2px\" width=\"71\" height=\"16\" />) and in addition, some point of the figure F' does not move at all (the point A). If a point B of the figure F' describes a curve <img src=\"//latex.artofproblemsolving.com/9/1/3/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png\" class=\"latex\" alt=\"$\\Gamma$\" style=\"vertical-align: 0px\" width=\"11\" height=\"13\" /> (the circle <img src=\"//latex.artofproblemsolving.com/5/0/5/505e8131e6394e4d324a706db1f6ee02b56d15c6.png\" class=\"latex\" alt=\"$(O_1)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" />), then any other point M of the figure F' describes a curve <img src=\"//latex.artofproblemsolving.com/3/3/2/3326232040d196ce9195f25f47ecbf89da4923db.png\" class=\"latex\" alt=\"$\\Gamma&#39;$\" style=\"vertical-align: 0px\" width=\"15\" height=\"14\" /> similar to the curve <img src=\"//latex.artofproblemsolving.com/9/1/3/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png\" class=\"latex\" alt=\"$\\Gamma$\" style=\"vertical-align: 0px\" width=\"11\" height=\"13\" />.\n</p><p>Consequently, the midpoint M of the segment BC decribes a circle (Q). When the points B, C, become identical with the point A, the midpoint M of BC also becomes identical with A. Hence, the circle (Q) passes through the point A. The line BC always passes through A'. Just after the start of motion counter-clockwise, the points B, C, A' follow on the line BC in this order. The points B, C both pass through the point A' one after another and just before the end of one period of motion, the points A', B, C follow on the line BC In this order. From the continuity principle, the midpoint M of BC also passes through the point A' and consequently, the circle (Q), the locus of the midpoints M, also passes through the point A'. Thus the circle (Q) belongs to the same pencil with the circles <img src=\"//latex.artofproblemsolving.com/1/d/b/1dba2f81b2ca1db35a6cd538f37326fb01615c26.png\" class=\"latex\" alt=\"$(O_1), (O_2)$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" /> and it is centered on their center line <img src=\"//latex.artofproblemsolving.com/1/2/7/127e372b5c305f6505bc9497ec419dbe77565fbe.png\" class=\"latex\" alt=\"$O_1O_2$\" style=\"vertical-align: -2px\" width=\"41\" height=\"15\" />. Let p be the perpendicular bisector of the segment BC intersectong the circle (Q) at a point P different from the point M. The point A' and the circle (Q) passing through this point are fixed and the angle <img src=\"//latex.artofproblemsolving.com/8/8/b/88b66af85e4d86fa910ccd32cd84e32d0ca37c96.png\" class=\"latex\" alt=\"$\\angle A&#39;MP = 90^\\circ$\" width=\"113\" height=\"14\" /> is right. Therefore, A'P is a fixed diameter of the circle (Q), which means that the point P is also fixed. Q.E.D.\n</p><p>When the points B, C are both diametrally opposite to the point A on their respective circles, the segment <img src=\"//latex.artofproblemsolving.com/1/2/7/127e372b5c305f6505bc9497ec419dbe77565fbe.png\" class=\"latex\" alt=\"$O_1O_2$\" style=\"vertical-align: -2px\" width=\"41\" height=\"15\" /> is the midline of the triangle <img src=\"//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png\" class=\"latex\" alt=\"$\\triangle ABC$\" style=\"vertical-align: -4px\" width=\"61\" height=\"18\" />, i.e., <img src=\"//latex.artofproblemsolving.com/3/6/5/365b399424568f388e52539e36fd4fed508306a4.png\" class=\"latex\" alt=\"$BC \\parallel O_1O_2$\" style=\"vertical-align: -5px\" width=\"89\" height=\"19\" />, <img src=\"//latex.artofproblemsolving.com/f/4/a/f4ad9d7a8ec8b48879d8d0f9d9c9fc13f53b3d64.png\" class=\"latex\" alt=\"$BC \\perp AA&#39;$\" width=\"83\" height=\"14\" />. The cyclic quadrilateral AA'MP inscribed in the circle (Q) is then a rectangle. Its circumcenter Q is the intersection of its diagonals AM, A'P intersecting at their midpoint and the midpoint of AM is identical with the midpoint of <img src=\"//latex.artofproblemsolving.com/1/2/7/127e372b5c305f6505bc9497ec419dbe77565fbe.png\" class=\"latex\" alt=\"$O_1O_2$\" style=\"vertical-align: -2px\" width=\"41\" height=\"15\" />. Thus the fixed point P is the reflection of the intersection A' of the circles <img src=\"//latex.artofproblemsolving.com/1/d/b/1dba2f81b2ca1db35a6cd538f37326fb01615c26.png\" class=\"latex\" alt=\"$(O_1), (O_2)$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" /> in the midpoint Q of the segment <img src=\"//latex.artofproblemsolving.com/1/2/7/127e372b5c305f6505bc9497ec419dbe77565fbe.png\" class=\"latex\" alt=\"$O_1O_2$\" style=\"vertical-align: -2px\" width=\"41\" height=\"15\" />.\n</p><p>This solution was posted and copyrighted by yetti. The original thread for this problem can be found here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://aops.com/community/p376272\">[1]</a>\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> be the antipodes of <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> on the two circles and let <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> be the foot of the altitude from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, which is the other intersection point of the two circles. Also, let <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> be the midpoint of <img src=\"//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png\" class=\"latex\" alt=\"$\\overline{BC}$\" width=\"29\" height=\"15\" />, and construct rectangle <img src=\"//latex.artofproblemsolving.com/3/4/8/34877f701d7f4d3b1a889cfc7519c8a7736e9856.png\" class=\"latex\" alt=\"$ADMZ$\" width=\"62\" height=\"13\" />. Our claim is that <img src=\"//latex.artofproblemsolving.com/3/e/a/3ead47fb9fb4a4c273feee398f72ff2a09702b84.png\" class=\"latex\" alt=\"$Z$\" width=\"13\" height=\"12\" /> is the fixed point.\nWe let <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" /> be the two points; by the condition the angles are the same. So we have a spiral similarity <img src=\"//latex.artofproblemsolving.com/2/2/3/22367ee8bee2f95dc8e1d8d5b8b51ddb1c15cba9.png\" class=\"latexcenter\" alt=\"\\[\\triangle AXY \\sim \\triangle ABC.\\]\" width=\"145\" height=\"13\" /> <img src=\"//latex.artofproblemsolving.com/1/4/d/14d214ed94c1cf271c4e0f74ab2d05d9b842cb98.png\" class=\"latexcenter\" alt=\"[asy] size(10cm); pair A = dir(110); pair B = dir(210); pair C = dir(330); pair D = foot(A, B, C); pair M = midpoint(B--C); pair Z = A+M-D; pair X = midpoint(A--B)+dir(200)*abs(A-B)/2; pair Y = -D+2*foot(midpoint(A--C), X, D); draw(circumcircle(A, B, D), blue); draw(circumcircle(A, C, D), blue); draw(circumcircle(A, D, M), dashed+deepgreen); pair N = midpoint(X--Y); filldraw(A--X--Y--cycle, invisible, purple); filldraw(A--B--C--cycle, invisible, blue); draw(A--D, blue); draw(A--Z--M, deepgreen); dot(&quot;$A$&quot;, A, dir(A)); dot(&quot;$B$&quot;, B, dir(B)); dot(&quot;$C$&quot;, C, dir(C)); dot(&quot;$D$&quot;, D, dir(D)); dot(&quot;$M$&quot;, M, dir(M)); dot(&quot;$Z$&quot;, Z, dir(Z)); dot(&quot;$X$&quot;, X, dir(X)); dot(&quot;$Y$&quot;, Y, dir(Y)); dot(&quot;$N$&quot;, N, dir(N)); /* TSQ Source: A = dir 110 B = dir 210 C = dir 330 D = foot A B C M = midpoint B--C Z = A+M-D X = midpoint(A--B)+dir(200)*abs(A-B)/2 Y = -D+2*foot midpoint A--C X D circumcircle A B D blue circumcircle A C D blue circumcircle A D M dashed deepgreen N = midpoint X--Y A--X--Y--cycle 0.1 red / purple A--B--C--cycle 0.1 yellow / blue A--D blue A--Z--M deepgreen */ [/asy]\" width=\"475\" height=\"352\" />\nNow let <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> be the midpoint of <img src=\"//latex.artofproblemsolving.com/9/5/9/95915f5885ed19f737ac8338c7c0b1d0e23fb73a.png\" class=\"latex\" alt=\"$\\overline{XY}$\" width=\"31\" height=\"15\" />. By spiral similarity, since <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> maps to <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, it follows <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, and <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> are cyclic too. So actually <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> lies on the circumcircle of rectangle <img src=\"//latex.artofproblemsolving.com/3/4/8/34877f701d7f4d3b1a889cfc7519c8a7736e9856.png\" class=\"latex\" alt=\"$ADMZ$\" width=\"62\" height=\"13\" />, meaning <img src=\"//latex.artofproblemsolving.com/2/5/c/25c4c1adcb8a2a0ea2a3fb81ef23753d49200597.png\" class=\"latex\" alt=\"$\\overline{ZN} \\perp \\overline{XY}$\" width=\"86\" height=\"15\" />, hence <img src=\"//latex.artofproblemsolving.com/e/0/3/e031d90dfa73b5731968b28a37798f5a3417f130.png\" class=\"latex\" alt=\"$ZX = ZY$\" width=\"82\" height=\"12\" /> as needed.\n</p><p>Remark: The special point <img src=\"//latex.artofproblemsolving.com/3/e/a/3ead47fb9fb4a4c273feee398f72ff2a09702b84.png\" class=\"latex\" alt=\"$Z$\" width=\"13\" height=\"12\" /> can be identified by selecting the special case <img src=\"//latex.artofproblemsolving.com/5/2/4/52482f154a9219265d5cef8aa1bdfcb545501d72.png\" class=\"latex\" alt=\"$X \\to A$\" style=\"vertical-align: 0px\" width=\"58\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/8/e/2/8e2ea36a696efef48545067f1fc3ba2de13a08fa.png\" class=\"latex\" alt=\"$Y \\to A$\" style=\"vertical-align: 0px\" width=\"56\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/b/b/2/bb26bbb0657a3b1ad49c1578d88108739f8b0a1c.png\" class=\"latex\" alt=\"$X=B$\" width=\"54\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/1/4/e/14eef2288f6b2d0d99c7694360c2b16138d44525.png\" class=\"latex\" alt=\"$Y=C$\" width=\"53\" height=\"12\" />.\n</p><p>This solution was posted and copyrighted by v_Enhance. The original thread for this problem can be found here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://aops.com/community/p16791217\">[2]</a>\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_3\">Solution 3</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_3&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 3\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let the points on the circles be <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />. Then, let <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> the the other intersection of the two circles, and <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> be the centers of the circles containing <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />, respectively. WLOG, let us name <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> such that <img src=\"//latex.artofproblemsolving.com/2/e/b/2ebde2660d2d9f37d7ae86c9c301f19cbf4109f1.png\" class=\"latex\" alt=\"$CA&gt;DA$\" style=\"vertical-align: 0px\" width=\"81\" height=\"13\" />. Let <img src=\"//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png\" class=\"latex\" alt=\"$O$\" width=\"13\" height=\"12\" /> be the midpoint of <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" />, and the antipode of <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> with respect to the circle centered at <img src=\"//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png\" class=\"latex\" alt=\"$O$\" width=\"13\" height=\"12\" /> with radius <img src=\"//latex.artofproblemsolving.com/b/7/a/b7a762ac8b4e23ffdd778ad6d5a8b97df8c7ce01.png\" class=\"latex\" alt=\"$OA$\" width=\"28\" height=\"13\" /> be <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" />. Let <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> be where this such circle hits <img src=\"//latex.artofproblemsolving.com/c/1/2/c128243ea8125d0bb007b8132dcfa44461df73a7.png\" class=\"latex\" alt=\"$EF$\" width=\"28\" height=\"12\" />. We first note that<img src=\"//latex.artofproblemsolving.com/7/3/c/73c1e97790a9922e020352586edf33fa7dc46ffa.png\" class=\"latexcenter\" alt=\"\\[\\angle ADF = 2\\angle ABF = 2 \\angle APM = \\angle AOM\\]\" width=\"322\" height=\"13\" />and also<img src=\"//latex.artofproblemsolving.com/e/d/2/ed2109ecfa02574e34f21306d6a3c7e9bef02fc7.png\" class=\"latexcenter\" alt=\"\\[2 \\angle APM = 360^{\\circ} - 2\\angle MBA = 360^{\\circ} - 2\\angle EBA = \\angle ACE\\]\" width=\"445\" height=\"13\" />meaning that since <img src=\"//latex.artofproblemsolving.com/d/2/b/d2b8fd4a116352722e9b05a270cea9d61d2fa3a8.png\" class=\"latex\" alt=\"$AD=DF$\" width=\"83\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/a/5/7/a57b7954e2fb7dd56712547a962156db5a949fb6.png\" class=\"latex\" alt=\"$AO=OM$\" style=\"vertical-align: -1px\" width=\"88\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/7/d/5/7d5c332fc913635c049a86a50a2a41e33d3fd1f1.png\" class=\"latex\" alt=\"$AC=CE$\" width=\"80\" height=\"13\" />, then SAS similarity gets us that <img src=\"//latex.artofproblemsolving.com/d/a/9/da923b6b45b27755bdf0ed1797dc65b6f9874e6b.png\" class=\"latex\" alt=\"$\\triangle ADF \\sim \\triangle AOM \\sim \\triangle ACE$\" width=\"230\" height=\"13\" />. This means we have <img src=\"//latex.artofproblemsolving.com/8/c/a/8caf347741be0540eaa6086107763ebe3ff69d2f.png\" class=\"latex\" alt=\"$\\frac{AO}{AM} = \\frac{AC}{AE}$\" style=\"vertical-align: -12px\" width=\"92\" height=\"38\" /> so <img src=\"//latex.artofproblemsolving.com/6/5/3/6531a249c0c57ad8b07adc7dd454332408aa85dc.png\" class=\"latex\" alt=\"$\\frac{AO}{AC} = \\frac{AM}{AE}$\" style=\"vertical-align: -12px\" width=\"91\" height=\"38\" /> and because <img src=\"//latex.artofproblemsolving.com/4/9/f/49f1a840bf8f1fb48af51e8853824e0c8481d153.png\" class=\"latex\" alt=\"$\\angle MAE = \\angle OAC$\" width=\"139\" height=\"13\" />, then <img src=\"//latex.artofproblemsolving.com/a/a/f/aaf5b8def9806cb4d072488c34fc78c1329e5348.png\" class=\"latex\" alt=\"$\\triangle AOC \\sim \\triangle AME$\" style=\"vertical-align: -4px\" width=\"148\" height=\"18\" /> and similarly, we also have <img src=\"//latex.artofproblemsolving.com/8/f/f/8ffd2ac7a985cf13421735d0d620c48260511a14.png\" class=\"latex\" alt=\"$\\triangle AOD \\sim \\triangle AMF$\" width=\"147\" height=\"13\" />. This means that<img src=\"//latex.artofproblemsolving.com/8/0/3/803df92ef54c325d4fcde00da45c07245a5e0948.png\" class=\"latexcenter\" alt=\"\\[\\frac{EM}{MA} = \\frac{OC}{OA} = \\frac{DO}{OA} = \\frac{FM}{MA} \\to EM=FM\\]\" width=\"333\" height=\"37\" />meaning that <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> is the midpoint of <img src=\"//latex.artofproblemsolving.com/c/1/2/c128243ea8125d0bb007b8132dcfa44461df73a7.png\" class=\"latex\" alt=\"$EF$\" width=\"28\" height=\"12\" />. Now, since <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> is the antipode of <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />, then <img src=\"//latex.artofproblemsolving.com/5/5/3/55386b1084f8f6a463059e6f96e97e8e86a7a5eb.png\" class=\"latex\" alt=\"$\\angle BMP = 90^{\\circ} = \\angle EMP = \\angle FMP$\" width=\"281\" height=\"13\" /> so <img src=\"//latex.artofproblemsolving.com/a/7/f/a7f0575b2dec405bf10b5ee1dfd47cfee2d14263.png\" class=\"latex\" alt=\"$EP=FP$\" style=\"vertical-align: -1px\" width=\"83\" height=\"14\" /> for all <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> for some fixed <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and we are done.\n</p><p>This solution was posted and copyrighted by kevinmathz. The original thread for this problem can be found here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://aops.com/community/p19065104\">[3]</a>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1979_IMO\" title=\"1979 IMO\">1979 IMO</a></b> (<b><a href=\"/wiki/index.php/1979_IMO_Problems\" title=\"1979 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_2\" title=\"1979 IMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_1\" title=\"1979 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_2\" title=\"1979 IMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_4\" title=\"1979 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_5\" title=\"1979 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_6\" title=\"1979 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_4\" title=\"1979 IMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210110\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.052 seconds\nReal time usage: 0.054 seconds\nPreprocessor visited node count: 716/1000000\nPreprocessor generated node count: 2193/1000000\nPost‐expand include size: 895/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 18009/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.108      1 Template:IMO_box\n100.00%    2.108      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:20528-0!canonical and timestamp 20240907210110 and revision id 143991\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://aops.com/community/p376272",
+        "https://aops.com/community/p16791217",
+        "https://aops.com/community/p19065104"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1979_IMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1979_IMO_Problems/Problem_3",
+          "byteoffset": 445,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1979_IMO_Problems/Problem_3",
+          "byteoffset": 4036,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 3",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "1979_IMO_Problems/Problem_3",
+          "byteoffset": 6436,
+          "anchor": "Solution_3"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "5",
+          "index": "",
+          "byteoffset": null,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1979 IMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Circle Theorems",
+      "Geometric Mean",
+      "Angle Bisector Theorem"
+    ]
+  },
+  "1979 IMO Problems/Problem 4": {
+    "parse": {
+      "title": "1979 IMO Problems/Problem 4",
+      "pageid": 20529,
+      "revid": 143993,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We consider a point <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> in a plane <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> and a point <img src=\"//latex.artofproblemsolving.com/f/c/5/fc540292b5eeaad696b0116b5896b78c2e3462bc.png\" class=\"latex\" alt=\"$Q \\not\\in p$\" style=\"vertical-align: -4px\" width=\"45\" height=\"17\" />. Determine all the points <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> from <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> for which<img src=\"//latex.artofproblemsolving.com/6/3/1/63137c49aa0ecfc1fcc8784b6422ee646c7740cd.png\" class=\"latexcenter\" alt=\"\\[\\frac{QP+PR}{QR}\\]\" width=\"79\" height=\"40\" />is maximum.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> be the orthogonal projection of the point <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> on the plane <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />. Then, the line <img src=\"//latex.artofproblemsolving.com/2/e/b/2ebdc03b4e24dbee7b5747d6a0aa2def18f5541d.png\" class=\"latex\" alt=\"$PT$\" width=\"27\" height=\"12\" /> is the orthogonal projection of the line <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" /> on the plane <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />, and thus forms the least angle with the line <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" /> among all lines through the point <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> which lie in the plane <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />; hence, <img src=\"//latex.artofproblemsolving.com/5/b/c/5bc5b027fcd07b40d37f9f1fe4c0c1552e947a48.png\" class=\"latex\" alt=\"$\\measuredangle RPQ\\geq\\measuredangle TPQ$\" style=\"vertical-align: -3px\" width=\"133\" height=\"16\" />, and equality holds if and only if the point <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> lies on the ray <img src=\"//latex.artofproblemsolving.com/2/e/b/2ebdc03b4e24dbee7b5747d6a0aa2def18f5541d.png\" class=\"latex\" alt=\"$PT$\" width=\"27\" height=\"12\" /> (the only exception is when <img src=\"//latex.artofproblemsolving.com/2/d/1/2d1629acb4aebcf5a1d73d4df016991256ae9dfc.png\" class=\"latex\" alt=\"$PQ\\perp p$\" style=\"vertical-align: -3px\" width=\"62\" height=\"16\" />; in this case, <img src=\"//latex.artofproblemsolving.com/b/3/a/b3a7e7de2ae54065b5df60417e5954ff4ae80058.png\" class=\"latex\" alt=\"$P = T$\" width=\"51\" height=\"12\" />, so the ray <img src=\"//latex.artofproblemsolving.com/2/e/b/2ebdc03b4e24dbee7b5747d6a0aa2def18f5541d.png\" class=\"latex\" alt=\"$PT$\" width=\"27\" height=\"12\" /> is undefined, and equality holds for all points <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> in the plane <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />, since we always have <img src=\"//latex.artofproblemsolving.com/d/7/1/d718c3334eddf91b571302270ba6ce3421adbd73.png\" class=\"latex\" alt=\"$\\angle RPQ = \\angle TPQ = 90^{\\circ}$\" style=\"vertical-align: -3px\" width=\"182\" height=\"16\" />).\n</p><p>From <img src=\"//latex.artofproblemsolving.com/5/b/c/5bc5b027fcd07b40d37f9f1fe4c0c1552e947a48.png\" class=\"latex\" alt=\"$\\measuredangle RPQ\\geq\\measuredangle TPQ$\" style=\"vertical-align: -3px\" width=\"133\" height=\"16\" />, it follows that <img src=\"//latex.artofproblemsolving.com/b/c/a/bcad4cbf86b7a8f323508bbe5383e7008a42c18d.png\" class=\"latex\" alt=\"$\\frac{\\measuredangle RPQ}{2}\\geq\\frac{\\measuredangle TPQ}{2}$\" style=\"vertical-align: -12px\" width=\"140\" height=\"38\" />; also, since the angles <img src=\"//latex.artofproblemsolving.com/3/8/8/3882df045a2c5dfe5b7eed1f64ee1ddfd5ecb2b1.png\" class=\"latex\" alt=\"$\\angle RPQ$\" style=\"vertical-align: -3px\" width=\"54\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/6/a/1/6a139107de5cc38cefde6ed95eabfcc0a90fc7c0.png\" class=\"latex\" alt=\"$\\angle TPQ$\" style=\"vertical-align: -3px\" width=\"53\" height=\"16\" /> are <img src=\"//latex.artofproblemsolving.com/3/f/0/3f0cd95f95238159d02dbcea0aca632c2928991c.png\" class=\"latex\" alt=\"$180^{\\circ}$\" style=\"vertical-align: 0px\" width=\"33\" height=\"13\" />, their half-angles <img src=\"//latex.artofproblemsolving.com/b/5/1/b5156d7ba3e075e52af5223cacc7bd2d9dd619ad.png\" class=\"latex\" alt=\"$\\frac{\\measuredangle RPQ}{2}$\" style=\"vertical-align: -12px\" width=\"57\" height=\"38\" /> and <img src=\"//latex.artofproblemsolving.com/e/a/a/eaa3958c1528f6e365fdc76069081d1324bada86.png\" class=\"latex\" alt=\"$\\frac{\\measuredangle TPQ}{2}$\" style=\"vertical-align: -12px\" width=\"57\" height=\"38\" /> are &lt; 90°, so that from <img src=\"//latex.artofproblemsolving.com/b/c/a/bcad4cbf86b7a8f323508bbe5383e7008a42c18d.png\" class=\"latex\" alt=\"$\\frac{\\measuredangle RPQ}{2}\\geq\\frac{\\measuredangle TPQ}{2}$\" style=\"vertical-align: -12px\" width=\"140\" height=\"38\" /> we can conclude that <img src=\"//latex.artofproblemsolving.com/b/a/b/babd9fbedc42d17b0a25454d2bb37cc516b69e7f.png\" class=\"latex\" alt=\"$\\sin\\frac{\\measuredangle RPQ}{2}\\geq\\sin\\frac{\\measuredangle TPQ}{2}$\" style=\"vertical-align: -12px\" width=\"191\" height=\"38\" />. Equality holds, as in the above, if and only if the point <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> lies on the ray <img src=\"//latex.artofproblemsolving.com/2/e/b/2ebdc03b4e24dbee7b5747d6a0aa2def18f5541d.png\" class=\"latex\" alt=\"$PT$\" width=\"27\" height=\"12\" /> (and, respectively, for all points <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> in the plane <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> if <img src=\"//latex.artofproblemsolving.com/2/d/1/2d1629acb4aebcf5a1d73d4df016991256ae9dfc.png\" class=\"latex\" alt=\"$PQ\\perp p$\" style=\"vertical-align: -3px\" width=\"62\" height=\"16\" />).\n</p><p>On the other hand, we obviously have <img src=\"//latex.artofproblemsolving.com/0/d/1/0d1a03841ffb2157421f3732ab3b9559cab1742a.png\" class=\"latex\" alt=\"$\\cos\\frac{\\measuredangle QRP-\\measuredangle PQR}{2}\\leq 1$\" style=\"vertical-align: -12px\" width=\"196\" height=\"38\" /> with equality if and only if <img src=\"//latex.artofproblemsolving.com/1/d/8/1d88df87272dcd3b204d1fa26a7bf61898054403.png\" class=\"latex\" alt=\"$\\frac{\\measuredangle QRP-\\measuredangle PQR}{2}=0^{\\circ}$\" style=\"vertical-align: -12px\" width=\"176\" height=\"38\" />, i. e. if and only if &lt; QRP = &lt; PQR, i. e. if and only if triangle PQR is isosceles with base <img src=\"//latex.artofproblemsolving.com/9/a/7/9a7c52aff9dd9987076c0ac4fecccf59b6ed8bdb.png\" class=\"latex\" alt=\"$QR$\" style=\"vertical-align: -3px\" width=\"28\" height=\"16\" />, i. e. if and only if <img src=\"//latex.artofproblemsolving.com/5/8/3/583b8c89615b55e2596051555fee0192a503aa4f.png\" class=\"latex\" alt=\"$PR = PQ$\" style=\"vertical-align: -3px\" width=\"80\" height=\"16\" />, i. e. if and only if the point <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> lies on the sphere with center <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and radius <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" />.\n</p><p>Now, applying the Mollweide theorem in triangle <img src=\"//latex.artofproblemsolving.com/a/e/9/ae9af777de5b716e3f185a72e28d1b1e691d4f53.png\" class=\"latex\" alt=\"$QPR$\" style=\"vertical-align: -4px\" width=\"44\" height=\"18\" />, we get\n</p><p><img src=\"//latex.artofproblemsolving.com/3/e/7/3e7e57ddfbefad740ff6256ae6a6ae9651b87eb2.png\" class=\"latex\" alt=\"$\\frac{QP+PR}{QR}=\\frac{\\cos\\frac{\\measuredangle QRP-\\measuredangle PQR}{2}}{\\sin\\frac{\\measuredangle RPQ}{2}}$\" style=\"vertical-align: -20px\" width=\"233\" height=\"50\" />\n<img src=\"//latex.artofproblemsolving.com/0/1/7/017dcba46ab2098982adb94ae91b2f22e908c352.png\" class=\"latex\" alt=\"$\\leq\\frac{1}{\\sin\\frac{\\measuredangle RPQ}{2}}$\" style=\"vertical-align: -20px\" width=\"91\" height=\"45\" /> (since <img src=\"//latex.artofproblemsolving.com/0/d/1/0d1a03841ffb2157421f3732ab3b9559cab1742a.png\" class=\"latex\" alt=\"$\\cos\\frac{\\measuredangle QRP-\\measuredangle PQR}{2}\\leq 1$\" style=\"vertical-align: -12px\" width=\"196\" height=\"38\" />)\n<img src=\"//latex.artofproblemsolving.com/0/2/2/022f289652f09e0001e9a8e17d5a50031f0c7aa2.png\" class=\"latex\" alt=\"$\\leq\\frac{1}{\\sin\\frac{\\measuredangle TPQ}{2}}$\" style=\"vertical-align: -20px\" width=\"91\" height=\"45\" /> (since <img src=\"//latex.artofproblemsolving.com/b/a/b/babd9fbedc42d17b0a25454d2bb37cc516b69e7f.png\" class=\"latex\" alt=\"$\\sin\\frac{\\measuredangle RPQ}{2}\\geq\\sin\\frac{\\measuredangle TPQ}{2}$\" style=\"vertical-align: -12px\" width=\"191\" height=\"38\" />),\n</p><p>and equality holds here if and only if equality holds in both of the inequalities <img src=\"//latex.artofproblemsolving.com/b/a/b/babd9fbedc42d17b0a25454d2bb37cc516b69e7f.png\" class=\"latex\" alt=\"$\\sin\\frac{\\measuredangle RPQ}{2}\\geq\\sin\\frac{\\measuredangle TPQ}{2}$\" style=\"vertical-align: -12px\" width=\"191\" height=\"38\" /> and <img src=\"//latex.artofproblemsolving.com/0/d/1/0d1a03841ffb2157421f3732ab3b9559cab1742a.png\" class=\"latex\" alt=\"$\\cos\\frac{\\measuredangle QRP-\\measuredangle PQR}{2}\\leq 1$\" style=\"vertical-align: -12px\" width=\"196\" height=\"38\" /> that we have used, i. e. if and only if the point <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> lies both on the ray <img src=\"//latex.artofproblemsolving.com/2/e/b/2ebdc03b4e24dbee7b5747d6a0aa2def18f5541d.png\" class=\"latex\" alt=\"$PT$\" width=\"27\" height=\"12\" /> (this condition should be ignored if <img src=\"//latex.artofproblemsolving.com/2/d/1/2d1629acb4aebcf5a1d73d4df016991256ae9dfc.png\" class=\"latex\" alt=\"$PQ\\perp p$\" style=\"vertical-align: -3px\" width=\"62\" height=\"16\" />) and on the sphere with center <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and radius <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" />.\n</p><p>Hence, the point <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> for which the ratio <img src=\"//latex.artofproblemsolving.com/e/1/7/e1727bc14980c4b4b8c832c2f998af0240c9ad2f.png\" class=\"latex\" alt=\"$\\frac{QP+PR}{QR}$\" style=\"vertical-align: -16px\" width=\"81\" height=\"41\" /> is maximum is the point of intersection of the ray <img src=\"//latex.artofproblemsolving.com/2/e/b/2ebdc03b4e24dbee7b5747d6a0aa2def18f5541d.png\" class=\"latex\" alt=\"$PT$\" width=\"27\" height=\"12\" /> with the sphere with center <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and radius <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" /> (or, respectively, it can be any arbitrary point on the intersection of the plane <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> with the sphere with center <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and radius <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" /> if <img src=\"//latex.artofproblemsolving.com/2/d/1/2d1629acb4aebcf5a1d73d4df016991256ae9dfc.png\" class=\"latex\" alt=\"$PQ\\perp p$\" style=\"vertical-align: -3px\" width=\"62\" height=\"16\" />).\n</p><p>This solution was posted and copyrighted by darij grinberg. The original thread for this problem can be found here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://aops.com/community/p392254\">[1]</a>\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1979_IMO\" title=\"1979 IMO\">1979 IMO</a></b> (<b><a href=\"/wiki/index.php/1979_IMO_Problems\" title=\"1979 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_3\" title=\"1979 IMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_1\" title=\"1979 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_2\" title=\"1979 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_3\" title=\"1979 IMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_5\" title=\"1979 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_6\" title=\"1979 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_5\" title=\"1979 IMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210110\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.034 seconds\nReal time usage: 0.035 seconds\nPreprocessor visited node count: 270/1000000\nPreprocessor generated node count: 1505/1000000\nPost‐expand include size: 895/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 11881/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.816      1 Template:IMO_box\n100.00%    1.816      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:20529-0!canonical and timestamp 20240907210110 and revision id 143993\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://aops.com/community/p392254"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1979_IMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1979_IMO_Problems/Problem_4",
+          "byteoffset": 227,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "",
+          "byteoffset": null,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1979 IMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Law of Cosines",
+      "Angle Bisector Theorem",
+      "Geometric Mean"
+    ]
+  },
+  "1979 IMO Problems/Problem 5": {
+    "parse": {
+      "title": "1979 IMO Problems/Problem 5",
+      "pageid": 20530,
+      "revid": 178564,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Determine all real numbers a for which there exists non-negative reals <img src=\"//latex.artofproblemsolving.com/9/7/1/971c9466ae2b8b57a5dda45ad33d49072de0c365.png\" class=\"latex\" alt=\"$x_{1}, \\ldots, x_{5}$\" style=\"vertical-align: -3px\" width=\"74\" height=\"11\" /> which satisfy the relations <img src=\"//latex.artofproblemsolving.com/d/a/a/daa0fc4c3b5c39b5fe2220a85286d16b9d1a5ce3.png\" class=\"latex\" alt=\"$\\sum_{k=1}^{5} kx_{k}=a,$\" style=\"vertical-align: -20px\" width=\"95\" height=\"50\" /> <img src=\"//latex.artofproblemsolving.com/3/1/8/3181d6fbfa782d488ffe6fdd63a4a858e78cbb84.png\" class=\"latex\" alt=\"$\\sum_{k=1}^{5} k^{3}x_{k}=a^{2},$\" style=\"vertical-align: -20px\" width=\"110\" height=\"50\" /> <img src=\"//latex.artofproblemsolving.com/4/7/c/47c47703780142416f928a28314cd8a37760b97b.png\" class=\"latex\" alt=\"$\\sum_{k=1}^{5} k^{5}x_{k}=a^{3}.$\" style=\"vertical-align: -20px\" width=\"109\" height=\"50\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/9/f/d/9fde823bb0842c450164627a53ba7166031d6885.png\" class=\"latex\" alt=\"$\\Sigma_1= \\sum_{k=1}^{5} kx_{k}$\" style=\"vertical-align: -23px\" width=\"104\" height=\"56\" />, <img src=\"//latex.artofproblemsolving.com/5/a/f/5af6350f66335487b7b4a47633dd9817039ae181.png\" class=\"latex\" alt=\"$\\Sigma_2=\\sum_{k=1}^{5} k^{3}x_{k}$\" style=\"vertical-align: -23px\" width=\"111\" height=\"56\" /> and <img src=\"//latex.artofproblemsolving.com/5/6/7/5671e38a0250188a11a5952e478c7d4245fefc34.png\" class=\"latex\" alt=\"$\\Sigma_3=\\sum_{k=1}^{5} k^{5}x_{k}$\" style=\"vertical-align: -23px\" width=\"111\" height=\"56\" />. For all pairs <img src=\"//latex.artofproblemsolving.com/d/7/4/d74b1cbbdaca0e408ddc58f6fc51912d856b2e56.png\" class=\"latex\" alt=\"$i,j\\in \\mathbb{Z}$\" style=\"vertical-align: -3px\" width=\"56\" height=\"16\" />, let<img src=\"//latex.artofproblemsolving.com/3/9/b/39b56a4eccc2eeebaab5f870cda8312eddc8c9e5.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(i,j)=i^2j^2\\Sigma_1-(i^2+j^2)\\Sigma_2+\\Sigma_3\\]\" width=\"273\" height=\"20\" />Then we have on one hand<img src=\"//latex.artofproblemsolving.com/b/2/e/b2e0d22d3e1a971f0ca9d134bec7282c0ab01461.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(i,j)=i^2j^2\\Sigma_1-(i^2+j^2)\\Sigma_2+\\Sigma_3=\\sum_{k=1}^5(i^2j^2k-(i^2+j^2)k^3+k^5)x_k =\\sum_{k=1}^5k(i^2j^2-(i^2+j^2)k^2+k^4)x_k\\]\" width=\"740\" height=\"51\" />Therefore \\\\(1)<img src=\"//latex.artofproblemsolving.com/d/3/0/d30f9c854cbff4ea35e5e05b329d5da6450cf50a.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(i,j)=\\sum_{k=1}^5k(k^2-i^2)(k^2-j^2)x_k\\]\" width=\"267\" height=\"51\" />and on the other hand \\\\ (2)<img src=\"//latex.artofproblemsolving.com/7/0/5/7056e9ff66736d1c2d08200727670dd79d8ed8ce.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(i,j)=i^2j^2a-(i^2+j^2)a^2+a^3=a(a-i^2)(a-j^2)\\]\" width=\"411\" height=\"20\" />Then from (1) we have<img src=\"//latex.artofproblemsolving.com/c/a/c/cac0d33f30e130fbbe7c0f346e92a952fdef463e.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(0,5)=\\sum_{k=1}^5k^3(k^2-5^2)x_k\\leq 0\\]\" width=\"244\" height=\"51\" />and from (2)<img src=\"//latex.artofproblemsolving.com/e/4/7/e47de2de2c4422884d3dd67202f3ce17d3f5d9eb.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(0,5)=a^2(a-25)\\]\" width=\"156\" height=\"20\" />so <img src=\"//latex.artofproblemsolving.com/3/d/f/3df120a38729f1e1a0913d49ba4609220ff16aa7.png\" class=\"latex\" alt=\"$a\\in [0,25]$\" style=\"vertical-align: -5px\" width=\"79\" height=\"20\" /> Besides we also have from (1)<img src=\"//latex.artofproblemsolving.com/7/c/4/7c4462a0e1dbdc5946100caf8d44526ba3d0188b.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(0,1)=\\sum_{k=1}^5k^3(k^2-1)x_k\\geq 0\\]\" width=\"237\" height=\"51\" />and from (2)<img src=\"//latex.artofproblemsolving.com/6/c/6/6c6db4f0c65a9a9eb2ed42ebef776dd68a73502b.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(0,1)=a^2(a-1)\\geq 0 \\implies a\\notin (0,1)\\]\" width=\"302\" height=\"20\" />and for <img src=\"//latex.artofproblemsolving.com/e/a/2/ea256dfe34c6eedd4d1e350fb397cd824dddc15d.png\" class=\"latex\" alt=\"$n=1,2,3,4$\" style=\"vertical-align: -3px\" width=\"95\" height=\"16\" /><img src=\"//latex.artofproblemsolving.com/c/8/b/c8b96fc5ecf2ea245299be24c945515ede639102.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(n,n+1)=\\sum_{k=1}^5k(k^2-n^2)(k^2-(n+1)^2)x_k\\]\" width=\"358\" height=\"51\" />where in the right hand we have that<img src=\"//latex.artofproblemsolving.com/a/5/e/a5e6164c02f0f443125e99f53b91d3d96f3c882d.png\" class=\"latexcenter\" alt=\"\\[k&lt;n \\implies (k^2-n^2)&lt;0, (k^2-(n+1)^2)&lt;0\\]\" width=\"358\" height=\"20\" />, so<img src=\"//latex.artofproblemsolving.com/4/8/5/485d1cfe551264c3bd2f823d81ed6ebb7d7943c9.png\" class=\"latexcenter\" alt=\"\\[(k^2-n^2)(k^2-(n+1)^2)&gt;0\\]\" width=\"221\" height=\"20\" />,<img src=\"//latex.artofproblemsolving.com/0/8/d/08dc916f8fcc405c4fb4f04a6384d0914bc8b196.png\" class=\"latexcenter\" alt=\"\\[k=n,n+1 , \\implies (k^2-n^2)(k^2-(n+1)^2)=0\\]\" width=\"370\" height=\"20\" />and<img src=\"//latex.artofproblemsolving.com/f/f/f/fffbf63b5acef55ab2b800c872904245a14e4711.png\" class=\"latexcenter\" alt=\"\\[k&gt;n \\implies (k^2-n^2)(k^2-(n+1)^2)&gt;0\\]\" width=\"317\" height=\"20\" />, so<img src=\"//latex.artofproblemsolving.com/5/f/8/5f826909cdbd3344404e3ea7dcd9c04496553dad.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(n,n+1)\\geq 0\\]\" width=\"120\" height=\"18\" />for <img src=\"//latex.artofproblemsolving.com/e/a/2/ea256dfe34c6eedd4d1e350fb397cd824dddc15d.png\" class=\"latex\" alt=\"$n=1,2,3,4$\" style=\"vertical-align: -3px\" width=\"95\" height=\"16\" /> From the latter and (2) we also have<img src=\"//latex.artofproblemsolving.com/b/0/2/b027896330b83e9a9c3ed80c181c76cb867e0b61.png\" class=\"latexcenter\" alt=\"\\[\\Sigma(n,n+1)=a(a-n^2)(a-(n+1)^2))\\geq 0\\implies a\\notin (n^2,(n+1)^2)\\]\" width=\"479\" height=\"20\" />So we have that<img src=\"//latex.artofproblemsolving.com/2/8/f/28fed36f7937afc9686aefc9a7083e2d94f4203a.png\" class=\"latexcenter\" alt=\"\\[a\\in [0,25]-\\bigcup_{n=0}^4(n^2,(n+1^2))=\\{0,1,4,9,16,25\\}\\]\" width=\"383\" height=\"50\" />\nIf <img src=\"//latex.artofproblemsolving.com/8/1/e/81e779efc0abff653a40a092b2acb431c5de95d1.png\" class=\"latex\" alt=\"$a=k^2$\" style=\"vertical-align: -1px\" width=\"53\" height=\"17\" />, <img src=\"//latex.artofproblemsolving.com/1/1/1/111f9ccae134f1425b67f3797d359203fc735833.png\" class=\"latex\" alt=\"$k=0,1,2,3,4,5$\" style=\"vertical-align: -3px\" width=\"128\" height=\"16\" /> take <img src=\"//latex.artofproblemsolving.com/0/9/a/09aebe9c31ba1b39f5cca78ff8b8844ca6e0122e.png\" class=\"latex\" alt=\"$x_k=k$\" style=\"vertical-align: -2px\" width=\"52\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/5/e/d/5ed9e5e2e7b23553218a50466b17d168756a70ee.png\" class=\"latex\" alt=\"$x_j=0$\" style=\"vertical-align: -4px\" width=\"50\" height=\"17\" /> for <img src=\"//latex.artofproblemsolving.com/c/8/3/c837afd0c6c2ad88d095c6a6c3b9b949897e31d7.png\" class=\"latex\" alt=\"$j\\neq k$\" style=\"vertical-align: -4px\" width=\"43\" height=\"17\" />. Then <img src=\"//latex.artofproblemsolving.com/4/4/9/4494e4df6fe4113ce73428be8d519e8d5de45390.png\" class=\"latex\" alt=\"$\\Sigma_1=k^2=a$\" style=\"vertical-align: -4px\" width=\"98\" height=\"20\" />, <img src=\"//latex.artofproblemsolving.com/9/6/e/96e67d5322cfbf72802c1972b99179ab45e0f178.png\" class=\"latex\" alt=\"$\\Sigma_2=k^3k=k^4=a^2$\" style=\"vertical-align: -4px\" width=\"157\" height=\"20\" />, and <img src=\"//latex.artofproblemsolving.com/8/7/d/87d10b0d6dad5231b6a7d1bac322c311a248b8dd.png\" class=\"latex\" alt=\"$\\Sigma_3=k^5k=k^6=a^3$\" style=\"vertical-align: -4px\" width=\"157\" height=\"20\" />\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1979_IMO\" title=\"1979 IMO\">1979 IMO</a></b> (<b><a href=\"/wiki/index.php/1979_IMO_Problems\" title=\"1979 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_4\" title=\"1979 IMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_1\" title=\"1979 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_2\" title=\"1979 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_3\" title=\"1979 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_4\" title=\"1979 IMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_6\" title=\"1979 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_6\" title=\"1979 IMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210110\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.032 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 162/1000000\nPreprocessor generated node count: 865/1000000\nPost‐expand include size: 895/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6813/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.221      1 Template:IMO_box\n100.00%    2.221      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:20530-0!canonical and timestamp 20240907210110 and revision id 178564\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1979_IMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1979_IMO_Problems/Problem_5",
+          "byteoffset": 279,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "",
+          "byteoffset": null,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1979 IMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Cauchy-Schwarz Inequality",
+      "Diophantine Equations"
+    ]
+  },
+  "1979 IMO Problems/Problem 6": {
+    "parse": {
+      "title": "1979 IMO Problems/Problem 6",
+      "pageid": 20531,
+      "revid": 224516,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#SOLUTION_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">SOLUTION 2</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> be opposite vertices of an octagon. A frog starts at vertex <img src=\"//latex.artofproblemsolving.com/8/2/0/8207b79435a4bd499da7598fb44424c8a8499238.png\" class=\"latex\" alt=\"$A.$\" width=\"17\" height=\"13\" /> From any vertex except <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> it jumps to one of the two adjacent vertices. When it reaches <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> it stops. Let <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> be the number of distinct paths of exactly <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> jumps ending at <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />. Prove that:<img src=\"//latex.artofproblemsolving.com/8/f/0/8f0a787324ec20ee5931047947ee94704f9a8ef2.png\" class=\"latexcenter\" alt=\"\\[a_{2n-1}=0, \\quad a_{2n}={(2+\\sqrt2)^{n-1} - (2-\\sqrt2)^{n-1} \\over\\sqrt2}.\\]\" width=\"370\" height=\"45\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>First the part <img src=\"//latex.artofproblemsolving.com/4/e/1/4e17c1c054103f34b7047eda9a7bae2763124a0b.png\" class=\"latex\" alt=\"$a_{2n-1}=0$\" style=\"vertical-align: -2px\" width=\"75\" height=\"15\" /> It's pretty obvious. Let's make a sequence <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> of 1 and -1, setting 1 when the frog jumps left and -1 when it jumps right. If the frog would want to come to vertex E from vertex A, then <img src=\"//latex.artofproblemsolving.com/d/6/3/d6313e2dbe22378c78704ef4af876edde314d7c5.png\" class=\"latex\" alt=\"$\\sum b_{i}$\" style=\"vertical-align: -8px\" width=\"41\" height=\"25\" /> from <img src=\"//latex.artofproblemsolving.com/0/7/f/07fa93113d3621c56a4def6ecb139a4233394fa1.png\" class=\"latex\" alt=\"$i =1$\" style=\"vertical-align: 0px\" width=\"38\" height=\"13\" /> to <img src=\"//latex.artofproblemsolving.com/e/f/9/ef95bc3c72dafebb420927b7cf56b9ad77bf6a06.png\" class=\"latex\" alt=\"$i =2n-1$\" style=\"vertical-align: 0px\" width=\"80\" height=\"13\" /> should be equal to either 4 or -4. But this sum is odd, so we have <img src=\"//latex.artofproblemsolving.com/4/8/6/486da503f366caad60cc715a8951420ed00a6d39.png\" class=\"latex\" alt=\"$a_{2n-1}= 0$\" style=\"vertical-align: -2px\" width=\"75\" height=\"15\" />\n</p><p>Now the less obvious part.\nLet's name <img src=\"//latex.artofproblemsolving.com/d/3/e/d3ee88f7843d5c0e5be6dad3d21ef55adec443c0.png\" class=\"latex\" alt=\"$f(X,y)$\" style=\"vertical-align: -4px\" width=\"56\" height=\"18\" /> the number of ways, in which we can come to vertex X in y moves.\n</p><p>Then\n<img src=\"//latex.artofproblemsolving.com/1/b/8/1b89d927553f3284f917f67804a5d25456450b24.png\" class=\"latex\" alt=\"$f(E,2n) = f(F,2n-1)+f(D, 2n-1) = f(C, 2n-2)+f(G, 2n-2) =$\" style=\"vertical-align: -4px\" width=\"572\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/a/a/4/aa4d7ec50c6ba1551d3db91bd906a7ab6b6bdc00.png\" class=\"latex\" alt=\"$f(D, 2n-3)+f(B, 2n-3)+f(F, 2n-3)+f(H, 2n-3) =$\" style=\"vertical-align: -5px\" width=\"483\" height=\"20\" />\n<img src=\"//latex.artofproblemsolving.com/0/5/b/05b45276d5310351a5546ba38148218afde4f672.png\" class=\"latex\" alt=\"$2f(D, 2n-5)+2f(F, 2n-5)+4f(H,2n-5)+4f(B, 2n-5) =$\" style=\"vertical-align: -4px\" width=\"517\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/d/2/f/d2fe3d53cc3ac9827cbf3d2c733a6c338429eb24.png\" class=\"latex\" alt=\"$4[ f(B,2n-5)+f(D, 2n-5)+f(F,2n-5)+f(H, 2n-5) ]-2 [ f(F,2n-5)+f(D,2n-5)] =$\" style=\"vertical-align: -5px\" width=\"760\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/6/6/9/669dfae3cdf2cfb7df22097073b32b6a05893011.png\" class=\"latex\" alt=\"$4f(E,2n-2)-2f(E,2n-4)$\" style=\"vertical-align: -4px\" width=\"236\" height=\"18\" />\n</p><p>Now we can find a solution to this recurrence or simply prove by induction the given answer.\n</p><p>This solution was posted and copyrighted by Myszon11. The original thread for this problem can be found here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://aops.com/community/p712390\">[1]</a>\n</p><p><i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1979_IMO_Problems/Problem_6&amp;action=edit\">add it</a> to this page.</i>\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"SOLUTION_2\">SOLUTION 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1979_IMO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: SOLUTION 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The given regular octagon is shown in Figure\nSince the number of edges in any path joining A and E is even,\nit is impossible to reach E from A in an odd number of jumps.\nThus a2n – 1 = 0, for all n ≥ 1.\nIt is obvious that a2 = 0. Also, as ABCDE and AHGFE are the\nonly 2 different path of 4 jumps from A to E, we have a4 = 2.\nTo find a recurrence relation for a2n\n</p><p>, we introduce a new\n</p><p>supplementary sequence (bn\n</p><p>) as follows. For each n ≥ 1, let bn\nbe the number of paths of exactly n jumps from C (or G) to E.\nStarting at A there are 4 ways for the frog to move in the first 2\njumps, namely,\nA → B → A, A → H → A\nA → B → C, A → H → G.\nThus, by definitions of (an\n</p><p>) and (bn\n)\n</p><p>a2n = 2a2n – 2 + 2b2n – 2 ...(1)\nOn the other hand, starting at C, there are 3 ways for the frog to move in the next 2\njumps if it does not stop at E, namely,\nC → B → C, C → D → C, C → B → A.\nThus, b2n = 2b2n – 2 + a2n – 2.....(2)\nWe shall now solve the system of linear recurrence relation (1) and (2) From (1),\nb2(n – 1) = a2n – a2(n – 1)\n.....(3)\nSubstituting (3) into (2) gives\na2(n + 1) – a2n = a2n – 2a2(n – 1) + a2(n – 1) or\na2(n + 1) – 4a2n\n</p><p>+ 2a2(n – 1) = 0....(4)\n</p><p>Let dn = a2n\n</p><p>. Then (4) may be written as\n</p><p>dn + 1 – 4dn\n</p><p>+ 2dn – 1 = 0 ...(5)\n</p><p>The characteristic equation of (5) is\nx\n2 – 4x + 2 = 0 and its roots are 2 ± .root2 \nregards kislay kai\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1979_IMO\" title=\"1979 IMO\">1979 IMO</a></b> (<b><a href=\"/wiki/index.php/1979_IMO_Problems\" title=\"1979 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_5\" title=\"1979 IMO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1979_IMO_Problems/Problem_1\" title=\"1979 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_2\" title=\"1979 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_3\" title=\"1979 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_4\" title=\"1979 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1979_IMO_Problems/Problem_5\" title=\"1979 IMO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210111\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.037 seconds\nReal time usage: 0.040 seconds\nPreprocessor visited node count: 230/1000000\nPreprocessor generated node count: 615/1000000\nPost‐expand include size: 1211/2097152 bytes\nTemplate argument size: 51/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3847/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.695      1 -total\n 53.40%    1.973      1 Template:IMO_box\n 43.22%    1.597      1 Template:Alternate_solutions\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:20531-0!canonical and timestamp 20240907210111 and revision id 224516\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1979 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://aops.com/community/p712390"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1979_IMO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1979_IMO_Problems/Problem_6",
+          "byteoffset": 467,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "SOLUTION 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1979_IMO_Problems/Problem_6",
+          "byteoffset": 1592,
+          "anchor": "SOLUTION_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "",
+          "byteoffset": null,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1979 IMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Recurrence Relations",
+      "Combinatorics",
+      "Graph Theory"
+    ]
+  }
+}

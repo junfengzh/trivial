@@ -1,0 +1,708 @@
+{
+  "2016 UMO Problems/Problem 1": {
+    "parse": {
+      "title": "2016 UMO Problems/Problem 1",
+      "pageid": 17153,
+      "revid": 100773,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Ada and Otto are engaged in a battle of wits. In front of them is a ﬁgure with six dots, and nine sticks are placed between pairs of dots as shown below. The dots are labeled <img src=\"//latex.artofproblemsolving.com/e/0/e/e0e530ca11be5fa91e36be4b2e22182215ca2a1b.png\" class=\"latex\" alt=\"$A, B, C, D, E, F$\" style=\"vertical-align: -3px\" width=\"126\" height=\"16\" />. Ada begins the game by placing a pebble on the dot of her choice. Then, starting with Ada and alternating turns, each player picks a stick adjacent to the pebble, moves the pebble to the dot at the other end of the stick, and then removes the stick from the ﬁgure. The game ends when there are no sticks adjacent to the pebble. The player who moves last wins. A sample game is described below. If both players play optimally, who will win?\n</p><p><img src=\"//latex.artofproblemsolving.com/a/0/e/a0e0e3376b5da2c6f74e8ed31f84d927b8d37331.png\" class=\"latexcenter\" alt=\"[asy] pair A=(1,0),B=(1/2,sqrt(3)/2),C=(-1/2,sqrt(3)/2),D=(-1,0),E=(-1/2,-sqrt(3)/2),E=(-1/2,-sqrt(3)/2),F=(1/2,-sqrt(3)/2); draw(A--B--C--D--E--F--A,dot); draw(A--C--E--A,dot); MP(&quot;A&quot;,A,(1,0));MP(&quot;B&quot;,B,NE);MP(&quot;C&quot;,C,NW);MP(&quot;D&quot;,D,W);MP(&quot;E&quot;,E,SW);MP(&quot;F&quot;,F,SE); [/asy]\" width=\"252\" height=\"215\" />\n</p><p>Sample Game \n</p><p>1. Ada places the pebble at B. \n</p><p>2. Ada removes the stick BC, placing the pebble at C. \n</p><p>3. Otto removes the stick CD, placing the pebble at D. \n</p><p>4. Ada removes the stick DE, placing the pebble at E. \n</p><p>5. Otto removes the stick EA, placing the pebble at A. \n</p><p>6. Ada removes the stick AB and wins.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Ada will win. Here is one possible strategy. Turn 1: Ada begins by putting the pebble at A. Turn 2: Ada removes stick AB, and places the pebble at B. Turn 3: The only remaining stick for Otto to choose is stick BC, so Otto removes this stick, placing the pebble at C. Turn 4: Ada removes stick CD, placing the pebble at D. Turn 5: Otto is again forced to choose the only remaining adjacent stick, DE. So Otto removes this stick, and places the pebble at E. Turn 6: Ada removes stick EF, placing the pebble at F. Turn 7: Otto is forced to remove stick FA, placing the pebble at A. Turn 8: Ada removes stick AC, placing the pebble at C. Turn 9: Otto is forced to remove stick CE, placing the pebble at E. Turn 10: Ada removes stick EA, leaving no remaining sticks. At this point, there are no valid moves, so Ada will win because every one of Otto’s moves is forced.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2016_UMO\" title=\"2016 UMO\">2016 UMO </a></b> (<b><a href=\"/wiki/index.php/2016_UMO_Problems\" title=\"2016 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2016_UMO_Answer_Key\" title=\"2016 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_2\" title=\"2016 UMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_2\" title=\"2016 UMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_3\" title=\"2016 UMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_4\" title=\"2016 UMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_5\" title=\"2016 UMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_6\" title=\"2016 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908042345\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.024 seconds\nReal time usage: 0.061 seconds\nPreprocessor visited node count: 64/1000000\nPreprocessor generated node count: 321/1000000\nPost‐expand include size: 905/2097152 bytes\nTemplate argument size: 55/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 660/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    8.351      1 Template:UMO_box\n100.00%    8.351      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17153-0!canonical and timestamp 20240908042345 and revision id 100773\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2016_UMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2016_UMO_Problems/Problem_1",
+          "byteoffset": 1240,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2016_UMO_Problems/Problem_1",
+          "byteoffset": 2122,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2016 UMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Graph Theory",
+      "Combinatorial Game Theory",
+      "Probability of Independent Events"
+    ]
+  },
+  "2016 UMO Problems/Problem 2": {
+    "parse": {
+      "title": "2016 UMO Problems/Problem 2",
+      "pageid": 17154,
+      "revid": 167441,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Four fair six-sided dice are rolled. What is the probability that they can be divided into two pairs which sum to the same value? For example, a roll of <img src=\"//latex.artofproblemsolving.com/9/9/b/99bdaf5eb31c59d6576495951d3f3eeae3fc5868.png\" class=\"latex\" alt=\"$(1,4,6,3)$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" /> can be divided into <img src=\"//latex.artofproblemsolving.com/6/2/1/621f951230bd018717e8c0c5cd3bfd6b1f8720a6.png\" class=\"latex\" alt=\"$(1,6)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/5/6/3/563948106c3332662355412547d99acab218c16f.png\" class=\"latex\" alt=\"$(4,3)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" />, each of which sum to <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" />, but a roll of <img src=\"//latex.artofproblemsolving.com/b/5/a/b5a83c75f792d07516f241a4c246abca1f6a6714.png\" class=\"latex\" alt=\"$(1,1,5,2)$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" /> cannot be divided into two pairs that sum to the same value.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We split this into cases based on the the form of the unordered values shown on the dice. In the following, <img src=\"//latex.artofproblemsolving.com/2/b/2/2b2b9cec140507454d58c3cc7f3a8f4c2784d414.png\" class=\"latex\" alt=\"$1 &lt;= a,b,c,d &lt;= 6$\" style=\"vertical-align: -3px\" width=\"153\" height=\"16\" /> are distinct numbers. After determining the (unordered) numbers that can appear on the dice, we must determine how many ways we can order those dice rolls in sequence. \n</p><p>Case1: The unordered numbers shown are {a,a,a,a} In this case, it is clear that the pairing (a,a) and (a,a) will yield equal sums, so we have 6 possible choices for a, and this is the number of possible rolls that take this form. \n</p><p>Case2: The unordered numbers shown are {a,a,a,b} In this case, one of the pairs will contain b, hence the pairs will be (a,b) and (a,a). But these can never be equal as a 6= b. \n</p><p>Case3: The unordered numbers shown are {a,a,b,b} To obtain equal sums, we must split the numbers into the pairs (a,b) and (a,b). There are <img src=\"//latex.artofproblemsolving.com/6/c/b/6cb253d1a78a22ad076662873c97522db3634fe2.png\" class=\"latex\" alt=\"$\\binom{6}{2}= 15$\" style=\"vertical-align: -22px\" width=\"79\" height=\"53\" /> ways to select a and b, and there are <img src=\"//latex.artofproblemsolving.com/2/8/4/28489cc9af0f13d0dcf5298be73a3fd2289152ea.png\" class=\"latex\" alt=\"$\\binom{4}{2}= 6$\" style=\"vertical-align: -22px\" width=\"70\" height=\"53\" /> ways to order the rolls (select two of the rolls to be a’s). Hence there are 15·6 = 90 total rolls that take this form. \n</p><p>Case4: The unordered numbers shown are {a,a,b,c} In this case, either b pairs with a or b pairs with c. If b pairs with a, then <img src=\"//latex.artofproblemsolving.com/3/d/a/3dadd085d9bb36437c83606adeb69e7d0439b466.png\" class=\"latex\" alt=\"$a + b = c + a$\" style=\"vertical-align: -1px\" width=\"103\" height=\"14\" /> , which is impossible as <img src=\"//latex.artofproblemsolving.com/1/8/c/18cb78e5ac5ae10adb75e6af496ee5b30347454c.png\" class=\"latex\" alt=\"$b \\ne c$\" style=\"vertical-align: -4px\" width=\"40\" height=\"17\" />. Therefore, b must pair with c, so <img src=\"//latex.artofproblemsolving.com/c/9/2/c92c20d6f536c94ad7ba9636dcf7525c140d2589.png\" class=\"latex\" alt=\"$2a = b + c$\" style=\"vertical-align: -1px\" width=\"81\" height=\"14\" />. Therefore, b + c is even. We may assume without loss of generality that <img src=\"//latex.artofproblemsolving.com/f/4/2/f42e638023bd7080e4b131fedd5a6d1db0911d71.png\" class=\"latex\" alt=\"$b &lt;= c$\" style=\"vertical-align: 0px\" width=\"54\" height=\"13\" />, hence the possibilities for (b,c) are (b,c) = (1,3),(1,5),(2,4),(2,6),(3,5),(4,6).\nTherefore, there are six ways to choose (b,c), and a is automatically determined (it is the average of b and c). Then there are 4! 2! = 12 ways to order the rolls, hence there are <img src=\"//latex.artofproblemsolving.com/5/d/2/5d28a22db60cf2d01a2c40f35d33d55cfcf33e23.png\" class=\"latex\" alt=\"$6\\cdot 12 = 72$\" style=\"vertical-align: 0px\" width=\"82\" height=\"13\" /> total rolls that take this form. \n</p><p>Case5: The unordered numbers shown are {a,b,c,d} In this case, the sum of the pairs must be representable in at two ways with distinct integers. We ﬁnd\n5 = 1 + 4 = 2 + 3;  6 = 1 + 5 = 2 + 4; 7 = 1 + 6 = 2 + 5 = 3 + 4; 8 = 2 + 6 = 3 + 5; 9 = 3 + 6 = 4 + 5.\nThese are the only numbers that can be represented as the sum of two numbers in at least two ways using distinct numbers. In particular, for the numbers <img src=\"//latex.artofproblemsolving.com/f/3/b/f3bba0581f09c6d2342c7b7ad47844cc934dbed2.png\" class=\"latex\" alt=\"$5,6,8,9$\" style=\"vertical-align: -3px\" width=\"60\" height=\"16\" />,we know immediately what the four numbers a,b,c,d are. For 7,we must choose two of the three pairs, and we can do this in three ways. Therefore, the number of ways to choose {a,b,c,d} is <img src=\"//latex.artofproblemsolving.com/c/3/8/c388c6cbbfa2fb1bd0368708b90e23040c21684a.png\" class=\"latex\" alt=\"$1+1+1+1+3 = 7$\" style=\"vertical-align: -1px\" width=\"167\" height=\"14\" />. Then we can order the rolls in 4! = 24 ways. Thus there are <img src=\"//latex.artofproblemsolving.com/9/d/1/9d1409515321f1e85c928dbb3cf9ce9bdeca15a9.png\" class=\"latex\" alt=\"$7\\cdot 24 = 168$\" style=\"vertical-align: 0px\" width=\"91\" height=\"13\" /> total rolls that take this form. Adding these together, we ﬁnd <img src=\"//latex.artofproblemsolving.com/c/4/5/c4511b129e60e476edabd2dd810017db58fbc215.png\" class=\"latex\" alt=\"$6 + 90 + 72 + 168 = 336$\" style=\"vertical-align: -1px\" width=\"190\" height=\"14\" /> possibilities, so the answer is <img src=\"//latex.artofproblemsolving.com/1/7/1/1711e36a4e651d2f2407a19560fc2c39f005d00d.png\" class=\"latex\" alt=\"$\\frac{336}{64} = \\frac{7}{27}$\" style=\"vertical-align: -13px\" width=\"76\" height=\"38\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We observe\n<img src=\"//latex.artofproblemsolving.com/2/a/c/2acb3b3fed040cb65fafec73bd1365ff97f5d4fa.png\" class=\"latexcenter\" alt=\"\\[\\textbf{Probability}=\\frac{\\textbf{Favorable}}{\\textbf{Total}}.\\]\" width=\"205\" height=\"37\" />\n</p><p>We have <img src=\"//latex.artofproblemsolving.com/0/3/6/0364809949010d0cb397d5da8c5754ad079178ef.png\" class=\"latex\" alt=\"$\\textbf{Total}=6^4=1296.$\" style=\"vertical-align: -1px\" width=\"152\" height=\"17\" />\n</p><p>We now work on the favorable cases.\n</p><p>Suppose the four numbers, <img src=\"//latex.artofproblemsolving.com/d/8/b/d8b8490a47ba3063da2731316f5d65dc5cf731ed.png\" class=\"latex\" alt=\"$a,b,c,$\" style=\"vertical-align: -3px\" width=\"45\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" /> can be split as\n<img src=\"//latex.artofproblemsolving.com/7/e/a/7eae8643f68b95a0f2f7d2a6221ad3405790be24.png\" class=\"latexcenter\" alt=\"\\[N=a+b=c+d.\\]\" width=\"147\" height=\"14\" />\nWe do casework on the value of <img src=\"//latex.artofproblemsolving.com/0/b/4/0b4a6d41204181432504f1108ded79e4a49e0e03.png\" class=\"latex\" alt=\"$N.$\" width=\"19\" height=\"12\" /> Notice that a sum of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> can be obtained in the same number of ways as a sum of <img src=\"//latex.artofproblemsolving.com/3/c/8/3c844ed79019bd39f4aa9720c6160a3ba50ed7b0.png\" class=\"latex\" alt=\"$14-n$\" style=\"vertical-align: -2px\" width=\"53\" height=\"15\" /> can be obtained. Thus:\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/d/f/4/df49ab19581b33197743316c6da3a6bc6568aaa0.png\" class=\"latex\" alt=\"$\\textbf{n=2:}$\" style=\"vertical-align: -1px\" width=\"42\" height=\"13\" /> A sum of <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> can be obtained only if <img src=\"//latex.artofproblemsolving.com/3/b/8/3b852c261d9ee3e2134cde7ddd207035a4bbd110.png\" class=\"latex\" alt=\"$a=b=c=d=1.$\" style=\"vertical-align: -1px\" width=\"148\" height=\"14\" /> Thus <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> case.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/b/3/c/b3c1d3f4b6abbaa668a9df423f2a4ac3f2826cdd.png\" class=\"latex\" alt=\"$\\textbf{n=3:}$\" style=\"vertical-align: -1px\" width=\"42\" height=\"13\" /> A sum of <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" /> can be obtained as <img src=\"//latex.artofproblemsolving.com/5/2/3/523e883c8edab64b14ad9358ba9d03203dedc209.png\" class=\"latex\" alt=\"$3=1+2$\" style=\"vertical-align: -2px\" width=\"76\" height=\"15\" /> thus <img src=\"//latex.artofproblemsolving.com/2/2/0/220e78f1fb76621bef824b0ce918b81339667b58.png\" class=\"latex\" alt=\"$\\frac{4!}{2!\\cdot 2!}=6$\" style=\"vertical-align: -13px\" width=\"81\" height=\"39\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/a/2/7/a2707b75d629dcb3c49a3b84c72e7ba79d32d435.png\" class=\"latex\" alt=\"$\\textbf{n=4:}$\" style=\"vertical-align: -1px\" width=\"42\" height=\"13\" /> A sum of <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" /> can be obtained as <img src=\"//latex.artofproblemsolving.com/4/b/d/4bd7e18cb9f71e92e1f5895eeddef3f10a5e04ce.png\" class=\"latex\" alt=\"$4=1+3=2+2,$\" style=\"vertical-align: -4px\" width=\"145\" height=\"17\" /> which produces the three possibilities of\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/d/5/c/d5c1ee2fed06e8b7371414f6fb5f3d3cff32d343.png\" class=\"latex\" alt=\"$(2,2,2,2)$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" /> which produces <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> case.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/b/f/3/bf3c848c95d84b66eed1413ddcac59b2509aa13a.png\" class=\"latex\" alt=\"$(1,1,3,3)$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" /> which produces <img src=\"//latex.artofproblemsolving.com/2/2/0/220e78f1fb76621bef824b0ce918b81339667b58.png\" class=\"latex\" alt=\"$\\frac{4!}{2!\\cdot 2!}=6$\" style=\"vertical-align: -13px\" width=\"81\" height=\"39\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/6/3/b/63bf5f80666ed15f95b2e7bdb8f1572f301bc7d1.png\" class=\"latex\" alt=\"$(1,2,2,3)$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" /> which produces <img src=\"//latex.artofproblemsolving.com/a/a/e/aaefb7180bdd76b6056ae5a48a7b7bbc26ad2f03.png\" class=\"latex\" alt=\"$\\frac{4!}{2!}=12$\" style=\"vertical-align: -13px\" width=\"62\" height=\"39\" /> cases.\n</p><p><br />\nThus <img src=\"//latex.artofproblemsolving.com/6/9/2/69201928efc7a63a7cce168d26c77c50f07e4b9e.png\" class=\"latex\" alt=\"$1+6+12=19$\" style=\"vertical-align: -2px\" width=\"125\" height=\"15\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/2/4/9/2499727a00bbdf2968f64fea7ae6f7c37f086515.png\" class=\"latex\" alt=\"$\\textbf{n=5:}$\" style=\"vertical-align: -1px\" width=\"42\" height=\"13\" /> A sum of <img src=\"//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png\" class=\"latex\" alt=\"$5$\" width=\"8\" height=\"12\" /> can be obtained as <img src=\"//latex.artofproblemsolving.com/5/b/c/5bc2cdb310fd2bc7094b6ba91abceaef7015c063.png\" class=\"latex\" alt=\"$5=1+4=2+3,$\" style=\"vertical-align: -4px\" width=\"145\" height=\"17\" /> which produces the three possibilities of\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/2/6/a/26a4f8715ead7f6e2d346654aea7007808198a4e.png\" class=\"latex\" alt=\"$(2,2,3,3)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/3/2/132b83a853e83ccbdcc564f69359264d6d8cd5db.png\" class=\"latex\" alt=\"$\\frac{4!}{2!\\cdot2!}=6$\" style=\"vertical-align: -13px\" width=\"81\" height=\"39\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/0/5/d/05d68f7163db91394fdd93736104b3c66da145d0.png\" class=\"latex\" alt=\"$(1,1,4,4)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/3/2/132b83a853e83ccbdcc564f69359264d6d8cd5db.png\" class=\"latex\" alt=\"$\\frac{4!}{2!\\cdot2!}=6$\" style=\"vertical-align: -13px\" width=\"81\" height=\"39\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/d/0/6/d06a60c2aa2075c3025ac906bb3315b0c768994c.png\" class=\"latex\" alt=\"$(1,2,3,4)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/5/9/1593463d6fb7eaeb3427e06c069fc425fb4f60d9.png\" class=\"latex\" alt=\"$4!=24$\" style=\"vertical-align: 0px\" width=\"56\" height=\"13\" /> cases.\n</p><p><br />\nThus <img src=\"//latex.artofproblemsolving.com/0/4/c/04cf177151e3af7b6867afbcaa2e7bcdcb4b1213.png\" class=\"latex\" alt=\"$6+6+24=36$\" style=\"vertical-align: -2px\" width=\"125\" height=\"15\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/5/a/2/5a2c12da17369c1fb1d4b4607bcfe344c2c0b560.png\" class=\"latex\" alt=\"$\\textbf{n=6:}$\" style=\"vertical-align: -1px\" width=\"42\" height=\"13\" /> A sum of <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" /> can be obtained as <img src=\"//latex.artofproblemsolving.com/5/8/a/58a6e38224ad029857a45452082b56ef855b026f.png\" class=\"latex\" alt=\"$6=1+5=2+4=3+3,$\" style=\"vertical-align: -4px\" width=\"210\" height=\"17\" /> which produces the six possibilities of\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/2/9/9/299a3e6137dbe538718cc85fa388acc889f9bbc6.png\" class=\"latex\" alt=\"$(3,3,3,3)$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" /> which produces <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> case.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/9/e/5/9e5e9d6cc800d31f439ba43790942815387c867d.png\" class=\"latex\" alt=\"$(1,3,3,5)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/a/a/e/aaefb7180bdd76b6056ae5a48a7b7bbc26ad2f03.png\" class=\"latex\" alt=\"$\\frac{4!}{2!}=12$\" style=\"vertical-align: -13px\" width=\"62\" height=\"39\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/d/d/a/ddaf2a482f8e0972a6ad924f4056e25772b9a78a.png\" class=\"latex\" alt=\"$(2,3,3,4)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/a/a/e/aaefb7180bdd76b6056ae5a48a7b7bbc26ad2f03.png\" class=\"latex\" alt=\"$\\frac{4!}{2!}=12$\" style=\"vertical-align: -13px\" width=\"62\" height=\"39\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/a/7/a/a7ae21e8edae70dc0296eef08e00a127b21e8716.png\" class=\"latex\" alt=\"$(1,1,5,5)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/3/2/132b83a853e83ccbdcc564f69359264d6d8cd5db.png\" class=\"latex\" alt=\"$\\frac{4!}{2!\\cdot2!}=6$\" style=\"vertical-align: -13px\" width=\"81\" height=\"39\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/5/4/5/5454950261f856fe5eb501db4da280333048d15d.png\" class=\"latex\" alt=\"$(1,2,4,5)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/5/9/1593463d6fb7eaeb3427e06c069fc425fb4f60d9.png\" class=\"latex\" alt=\"$4!=24$\" style=\"vertical-align: 0px\" width=\"56\" height=\"13\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/b/5/1/b513f2e7c2ac460fe999494fa04a43b78a58a69c.png\" class=\"latex\" alt=\"$(2,2,4,4)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/3/2/132b83a853e83ccbdcc564f69359264d6d8cd5db.png\" class=\"latex\" alt=\"$\\frac{4!}{2!\\cdot2!}=6$\" style=\"vertical-align: -13px\" width=\"81\" height=\"39\" /> cases.\n</p><p><br />\nThus <img src=\"//latex.artofproblemsolving.com/3/4/9/3496ff679bc4ea2163dbd9f1046ded7d1a88e857.png\" class=\"latex\" alt=\"$1+6+12+12+6+24=61$\" style=\"vertical-align: -2px\" width=\"237\" height=\"15\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/6/0/0/60093dfd0632504d5445b80a68960b6a8fea4f17.png\" class=\"latex\" alt=\"$\\textbf{n=7:}$\" style=\"vertical-align: -1px\" width=\"42\" height=\"13\" /> A sum of <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" /> can be obtained as <img src=\"//latex.artofproblemsolving.com/7/9/4/7944f0ea0d104a56a13dac20d60f472173b3d085.png\" class=\"latex\" alt=\"$6=1+6=2+5=3+4,$\" style=\"vertical-align: -4px\" width=\"210\" height=\"17\" /> which produces the six possibilities of\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/a/c/6/ac6ee0dab3e7f5b2530032fa289baff8512f7a7d.png\" class=\"latex\" alt=\"$(1,1,6,6)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/3/2/132b83a853e83ccbdcc564f69359264d6d8cd5db.png\" class=\"latex\" alt=\"$\\frac{4!}{2!\\cdot2!}=6$\" style=\"vertical-align: -13px\" width=\"81\" height=\"39\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/b/9/a/b9a0d2591051ce77b818bc57fbedfaaa9e23ab9f.png\" class=\"latex\" alt=\"$(1,2,5,6)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/5/9/1593463d6fb7eaeb3427e06c069fc425fb4f60d9.png\" class=\"latex\" alt=\"$4!=24$\" style=\"vertical-align: 0px\" width=\"56\" height=\"13\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/d/0/a/d0a51ac9f16f1d9e38d7ad99fc1cdb080f6cb348.png\" class=\"latex\" alt=\"$(1,3,4,6)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/5/9/1593463d6fb7eaeb3427e06c069fc425fb4f60d9.png\" class=\"latex\" alt=\"$4!=24$\" style=\"vertical-align: 0px\" width=\"56\" height=\"13\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/4/b/4/4b428cc17dd513b1fbfa4b77335ffda71ca9dc74.png\" class=\"latex\" alt=\"$(2,2,5,5)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/3/2/132b83a853e83ccbdcc564f69359264d6d8cd5db.png\" class=\"latex\" alt=\"$\\frac{4!}{2!\\cdot2!}=6$\" style=\"vertical-align: -13px\" width=\"81\" height=\"39\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/e/9/0/e90fd61bf330560d8a3e96fe8b4130a45d0962f4.png\" class=\"latex\" alt=\"$(2,3,4,5)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/5/9/1593463d6fb7eaeb3427e06c069fc425fb4f60d9.png\" class=\"latex\" alt=\"$4!=24$\" style=\"vertical-align: 0px\" width=\"56\" height=\"13\" /> cases.\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/7/e/1/7e13f8fcdf31bda707f3173b9ca15e47885a743d.png\" class=\"latex\" alt=\"$(4,4,5,5)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"20\" /> which produces <img src=\"//latex.artofproblemsolving.com/1/3/2/132b83a853e83ccbdcc564f69359264d6d8cd5db.png\" class=\"latex\" alt=\"$\\frac{4!}{2!\\cdot2!}=6$\" style=\"vertical-align: -13px\" width=\"81\" height=\"39\" /> cases.\n</p><p><br />\nThus, <img src=\"//latex.artofproblemsolving.com/0/9/c/09c650fc24430918c283b251eef9725a7561ca36.png\" class=\"latex\" alt=\"$6+24+24+6+24+6=90$\" style=\"vertical-align: -2px\" width=\"237\" height=\"15\" /> cases.\n</p><p><br />\nThis means, we have\n<img src=\"//latex.artofproblemsolving.com/5/0/3/503f00569310ce8a007da1f6dcfcd2b8054d03dd.png\" class=\"latexcenter\" alt=\"\\[\\textbf{Favorable} = 90 +2\\left(1+6+19+36+61\\right)=336.\\]\" width=\"386\" height=\"18\" />\n</p><p>This means\n<img src=\"//latex.artofproblemsolving.com/f/e/e/feea1bd766f1fa64ecd7e7c3c885678031901bd3.png\" class=\"latexcenter\" alt=\"\\[\\textbf{Probability}=\\frac{\\textbf{Favorable}}{\\textbf{Total}}=\\frac{336}{1296}=\\boxed{\\frac{7}{27}}.\\]\" width=\"327\" height=\"48\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_2&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2016_UMO\" title=\"2016 UMO\">2016 UMO </a></b> (<b><a href=\"/wiki/index.php/2016_UMO_Problems\" title=\"2016 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2016_UMO_Answer_Key\" title=\"2016 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_1\" title=\"2016 UMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_3\" title=\"2016 UMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_1\" title=\"2016 UMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_3\" title=\"2016 UMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_4\" title=\"2016 UMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_5\" title=\"2016 UMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_6\" title=\"2016 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908051135\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.057 seconds\nReal time usage: 0.061 seconds\nPreprocessor visited node count: 846/1000000\nPreprocessor generated node count: 2045/1000000\nPost‐expand include size: 934/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 15771/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.624      1 Template:UMO_box\n100.00%    2.624      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17154-0!canonical and timestamp 20240908051135 and revision id 167441\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2016_UMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2016_UMO_Problems/Problem_2",
+          "byteoffset": 390,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2016_UMO_Problems/Problem_2",
+          "byteoffset": 3077,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2016_UMO_Problems/Problem_2",
+          "byteoffset": 6116,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2016 UMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Probability of Independent Events",
+      "Inclusion-Exclusion Principle",
+      "Expected Value"
+    ]
+  },
+  "2016 UMO Problems/Problem 3": {
+    "parse": {
+      "title": "2016 UMO Problems/Problem 3",
+      "pageid": 17155,
+      "revid": 100775,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Can each positive integer <img src=\"//latex.artofproblemsolving.com/c/5/4/c545e35089d0416170a4319373938e07f0dd09b7.png\" class=\"latex\" alt=\"$1,2,3,\\ldots$\" style=\"vertical-align: -3px\" width=\"71\" height=\"16\" /> be colored either red or blue, such that for all positive integers <img src=\"//latex.artofproblemsolving.com/b/b/6/bb60e0857a2c0a2c47acfbe81781032feb1f7150.png\" class=\"latex\" alt=\"$a,b,c,d$\" style=\"vertical-align: -3px\" width=\"59\" height=\"16\" /> (not necessarily distinct), if <img src=\"//latex.artofproblemsolving.com/0/3/3/03394c2b8b0ab7a11bbbc2379fd5438de4ab9e1e.png\" class=\"latex\" alt=\"$a + b + c = d$\" style=\"vertical-align: -1px\" width=\"103\" height=\"14\" /> then <img src=\"//latex.artofproblemsolving.com/b/b/6/bb60e0857a2c0a2c47acfbe81781032feb1f7150.png\" class=\"latex\" alt=\"$a,b,c,d$\" style=\"vertical-align: -3px\" width=\"59\" height=\"16\" /> are not all the same color?\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Solution We claim that no such coloring exists. For the sake of contradiction, assume that such a coloring exists. Without loss of generality, we may assume that 1 is colored red. In the string of steps below, if a number n is known to be colored red, we denote it as <img src=\"//latex.artofproblemsolving.com/5/e/1/5e145305c592d33fe2656ae4503a5664b9066c25.png\" class=\"latex\" alt=\"$n^R$\" width=\"21\" height=\"15\" />, and if it is known to be colored blue, we denote it as <img src=\"//latex.artofproblemsolving.com/7/0/1/70104b6fd35f029f513470b6b3c83b58f4c72cd4.png\" class=\"latex\" alt=\"$n^B$\" width=\"21\" height=\"15\" />. Each of the implications below follow from the fact that if all but one of the distinct numbers in <img src=\"//latex.artofproblemsolving.com/0/3/3/03394c2b8b0ab7a11bbbc2379fd5438de4ab9e1e.png\" class=\"latex\" alt=\"$a + b + c = d$\" style=\"vertical-align: -1px\" width=\"103\" height=\"14\" /> are the same color, then the ﬁnal number must be a different color. <img src=\"//latex.artofproblemsolving.com/d/5/a/d5a7d0afe6363df48acb0a89eae1575867f6cf8e.png\" class=\"latex\" alt=\"$1^R + 1^R + 1^R = 3 \\Rightarrow 3$\" style=\"vertical-align: -1px\" width=\"174\" height=\"16\" /> is blue. <img src=\"//latex.artofproblemsolving.com/4/0/2/4027f987f57045d3b557692b39a5e8447745b469.png\" class=\"latex\" alt=\"$3^B + 3^B + 3^B = 9 \\Rightarrow 9$\" style=\"vertical-align: -1px\" width=\"176\" height=\"16\" /> is red. <img src=\"//latex.artofproblemsolving.com/d/8/c/d8cb7c94cb9b7c5b0926cbefd97ae0790efef1f8.png\" class=\"latex\" alt=\"$1^R + 4 + 4 = 9^R \\Rightarrow 4$\" style=\"vertical-align: -1px\" width=\"164\" height=\"16\" /> is blue. Now we have <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d6446f3035c52bb5df04d1dc34688d259ffceb.png\" class=\"latex\" alt=\"$1^R + 1^R + 9^R = 11 \\Rightarrow 11$\" style=\"vertical-align: -1px\" width=\"192\" height=\"16\" /> is blue AND <img src=\"//latex.artofproblemsolving.com/8/a/b/8ab52cf2f4a8a20dac6678b3a193b3021f533b8f.png\" class=\"latex\" alt=\"$3^B + 4^B + 4^B = 11 \\Rightarrow 11$\" style=\"vertical-align: -1px\" width=\"193\" height=\"16\" /> is red. This is a contradiction because <img src=\"//latex.artofproblemsolving.com/c/6/8/c6878713578626763c38433b3f4c8c2205ad0c15.png\" class=\"latex\" alt=\"$11$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> can only have one color. Therefore, no such coloring exists.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2016_UMO\" title=\"2016 UMO\">2016 UMO </a></b> (<b><a href=\"/wiki/index.php/2016_UMO_Problems\" title=\"2016 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2016_UMO_Answer_Key\" title=\"2016 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_2\" title=\"2016 UMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_4\" title=\"2016 UMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_1\" title=\"2016 UMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_2\" title=\"2016 UMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_4\" title=\"2016 UMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_5\" title=\"2016 UMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_6\" title=\"2016 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908023926\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.019 seconds\nReal time usage: 0.019 seconds\nPreprocessor visited node count: 167/1000000\nPreprocessor generated node count: 541/1000000\nPost‐expand include size: 934/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2387/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.250      1 Template:UMO_box\n100.00%    2.250      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17155-0!canonical and timestamp 20240908023926 and revision id 100775\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2016_UMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2016_UMO_Problems/Problem_3",
+          "byteoffset": 268,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2016_UMO_Problems/Problem_3",
+          "byteoffset": 1243,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2016 UMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pigeonhole Principle",
+      "Graph Coloring",
+      "Modular Arithmetic"
+    ]
+  },
+  "2016 UMO Problems/Problem 4": {
+    "parse": {
+      "title": "2016 UMO Problems/Problem 4",
+      "pageid": 17156,
+      "revid": 100776,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Equiangular hexagon <img src=\"//latex.artofproblemsolving.com/8/0/2/8029902caf855d940e465d04ff40101d8850c3e0.png\" class=\"latex\" alt=\"$ABCDEF$\" width=\"86\" height=\"13\" /> has <img src=\"//latex.artofproblemsolving.com/3/5/1/351771a2b870c0341db6d9f12f870a71a6e86f66.png\" class=\"latex\" alt=\"$AB = CD = EF$\" width=\"135\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/2/3/5/235e58b6a077ef9b4e2372c3ea5b53ddbccffa59.png\" class=\"latex\" alt=\"$AB &gt; BC$\" style=\"vertical-align: 0px\" width=\"81\" height=\"13\" />. Segments <img src=\"//latex.artofproblemsolving.com/b/c/5/bc56862b1fdb71204894da278e42ef75de73a40b.png\" class=\"latex\" alt=\"$AD$\" width=\"28\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/0/7/d/07d29465728e92952374a857beaee91665d8dbd9.png\" class=\"latex\" alt=\"$CF$\" width=\"28\" height=\"12\" /> intersect at point <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and segments <img src=\"//latex.artofproblemsolving.com/a/7/b/a7baf95ecafc2d7791788ec79aeeae390d60b119.png\" class=\"latex\" alt=\"$BE$\" style=\"vertical-align: -1px\" width=\"31\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/0/7/d/07d29465728e92952374a857beaee91665d8dbd9.png\" class=\"latex\" alt=\"$CF$\" width=\"28\" height=\"12\" /> intersect at point <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" /> . If quadrilateral <img src=\"//latex.artofproblemsolving.com/3/e/6/3e6489c5f28baa4bd02a233c02d29792f17e4b11.png\" class=\"latex\" alt=\"$ABYX$\" width=\"58\" height=\"13\" /> can have a circle inscribed inside of it (meaning there exists a circle that is tangent to all four sides of the quadrilateral), then ﬁnd <img src=\"//latex.artofproblemsolving.com/d/5/c/d5cb1906ce4a340b91aac9cd40ed55c1cf594f0e.png\" class=\"latex\" alt=\"$\\frac{AB}{FA}$\" style=\"vertical-align: -12px\" width=\"30\" height=\"38\" />.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/c/f/d/cfdbd19877c13d1755e01b54ba640f512c883a34.png\" class=\"latex\" alt=\"$\\frac{3}{2}$\" style=\"vertical-align: -12px\" width=\"11\" height=\"37\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2016_UMO\" title=\"2016 UMO\">2016 UMO </a></b> (<b><a href=\"/wiki/index.php/2016_UMO_Problems\" title=\"2016 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2016_UMO_Answer_Key\" title=\"2016 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_3\" title=\"2016 UMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_5\" title=\"2016 UMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_1\" title=\"2016 UMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_2\" title=\"2016 UMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_3\" title=\"2016 UMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_5\" title=\"2016 UMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_6\" title=\"2016 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907223306\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.019 seconds\nReal time usage: 0.020 seconds\nPreprocessor visited node count: 158/1000000\nPreprocessor generated node count: 521/1000000\nPost‐expand include size: 934/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1884/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.591      1 Template:UMO_box\n100.00%    2.591      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17156-0!canonical and timestamp 20240907223306 and revision id 100776\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2016_UMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2016_UMO_Problems/Problem_4",
+          "byteoffset": 477,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2016_UMO_Problems/Problem_4",
+          "byteoffset": 519,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2016 UMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Angle Bisector Theorem",
+      "Circle Theorems",
+      "Geometric Mean"
+    ]
+  },
+  "2016 UMO Problems/Problem 5": {
+    "parse": {
+      "title": "2016 UMO Problems/Problem 5",
+      "pageid": 17157,
+      "revid": 100777,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/7/5/7/7577dc84ba759df2186e9e9720462445fc293378.png\" class=\"latex\" alt=\"$a_0,a_1,a_2,\\ldots$\" style=\"vertical-align: -3px\" width=\"95\" height=\"11\" /> be a sequence of integers (positive, negative, or zero) such that for all nonnegative integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/d/d/5/dd580b9f6485353de6e1d62731572b23c4eec496.png\" class=\"latex\" alt=\"$a_{n+k}^2-(2k + 1)a_{n}a_{n+k} + (k^2 + k)a_n^2 = k^2-k$\" style=\"vertical-align: -6px\" width=\"356\" height=\"21\" />. Find all possible sequences <img src=\"//latex.artofproblemsolving.com/c/b/0/cb07e848f9188a9fd706d99ab6513a7d949c48a1.png\" class=\"latex\" alt=\"$(a_n)$\" style=\"vertical-align: -4px\" width=\"31\" height=\"18\" />.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We can factor the equation as <img src=\"//latex.artofproblemsolving.com/9/0/8/908ac0a269a96c93ed984ed65565a29717d0b406.png\" class=\"latex\" alt=\"$[a_{n+k}-k\\cdot a_n][a_{n+k}-(k + 1)\\cdot a_n] = k(k-1)$\" style=\"vertical-align: -5px\" width=\"354\" height=\"18\" />.\nSubstituting in <img src=\"//latex.artofproblemsolving.com/0/0/f/00fab47c0b9d0ce398d03e57d6720129d53434f2.png\" class=\"latex\" alt=\"$k = 1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"13\" />, we ﬁnd that either <img src=\"//latex.artofproblemsolving.com/e/7/e/e7e72fb4e2d1133c18e89fe5950a666f83e3b826.png\" class=\"latex\" alt=\"$a_{n+1} = 2a_n$\" style=\"vertical-align: -4px\" width=\"86\" height=\"16\" /> or <img src=\"//latex.artofproblemsolving.com/b/9/f/b9f1a207b538acd864bab858c82e53360b46590b.png\" class=\"latex\" alt=\"$a_{n+1} = a_n$\" style=\"vertical-align: -4px\" width=\"77\" height=\"12\" /> for all integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />. If <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> is a prime such that <img src=\"//latex.artofproblemsolving.com/8/9/7/8972aa69c9853f130e424fb33817b201a56f169f.png\" class=\"latex\" alt=\"$p \\vert a_r$\" style=\"vertical-align: -4px\" width=\"30\" height=\"18\" />, then by repeatedly applying <img src=\"//latex.artofproblemsolving.com/e/7/e/e7e72fb4e2d1133c18e89fe5950a666f83e3b826.png\" class=\"latex\" alt=\"$a_{n+1} = 2a_n$\" style=\"vertical-align: -4px\" width=\"86\" height=\"16\" /> or <img src=\"//latex.artofproblemsolving.com/b/9/f/b9f1a207b538acd864bab858c82e53360b46590b.png\" class=\"latex\" alt=\"$a_{n+1} = a_n$\" style=\"vertical-align: -4px\" width=\"77\" height=\"12\" />, we ﬁnd that <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> divides <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> for all integers <img src=\"//latex.artofproblemsolving.com/c/5/7/c5791e9fcc7cdcfae777b1f1fabe2ae882f7b190.png\" class=\"latex\" alt=\"$n &gt;= r$\" style=\"vertical-align: 0px\" width=\"57\" height=\"10\" />. Substituting <img src=\"//latex.artofproblemsolving.com/8/e/4/8e44ca2cae6be42148fe1b1fd8b5d55bd6b599bd.png\" class=\"latex\" alt=\"$k = 2$\" width=\"43\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/0/b/a/0baaed622e9636792afd99ff3969d2626a51ad08.png\" class=\"latex\" alt=\"$n = r$\" width=\"43\" height=\"8\" /> into (1) we notice that the LHS is divisible by <img src=\"//latex.artofproblemsolving.com/5/9/1/591f689f950feb4a9cff58ff3166d915f916a405.png\" class=\"latex\" alt=\"$p^2$\" style=\"vertical-align: -3px\" width=\"16\" height=\"18\" />, and the RHS is equal to <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />; hence <img src=\"//latex.artofproblemsolving.com/7/0/f/70ff01e17b261148665f3544a9f9c747b2efb1b0.png\" class=\"latex\" alt=\"$p^2 \\vert 2$\" style=\"vertical-align: -4px\" width=\"31\" height=\"19\" />, which is a contradiction. Thus <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> is never divisible by any prime for any <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, so <img src=\"//latex.artofproblemsolving.com/c/b/5/cb5304657ccf206c528f69aff405df2c369775cf.png\" class=\"latex\" alt=\"$a_n = \\pm 1$\" style=\"vertical-align: -2px\" width=\"65\" height=\"14\" />. In particular, <img src=\"//latex.artofproblemsolving.com/b/9/f/b9f1a207b538acd864bab858c82e53360b46590b.png\" class=\"latex\" alt=\"$a_{n+1} = a_n$\" style=\"vertical-align: -4px\" width=\"77\" height=\"12\" /> for all integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, and <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> is constant either 1 or -1. Substituting either of these sequences into (1) shows that both are valid solutions.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2016_UMO\" title=\"2016 UMO\">2016 UMO </a></b> (<b><a href=\"/wiki/index.php/2016_UMO_Problems\" title=\"2016 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2016_UMO_Answer_Key\" title=\"2016 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_4\" title=\"2016 UMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_6\" title=\"2016 UMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_1\" title=\"2016 UMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_2\" title=\"2016 UMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_3\" title=\"2016 UMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_4\" title=\"2016 UMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_6\" title=\"2016 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908055226\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.040 seconds\nReal time usage: 0.041 seconds\nPreprocessor visited node count: 302/1000000\nPreprocessor generated node count: 841/1000000\nPost‐expand include size: 934/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4806/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.177      1 Template:UMO_box\n100.00%    3.177      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17157-0!canonical and timestamp 20240908055226 and revision id 100777\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2016_UMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2016_UMO_Problems/Problem_5",
+          "byteoffset": 300,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2016_UMO_Problems/Problem_5",
+          "byteoffset": 1342,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2016 UMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Prime Factorization",
+      "Diophantine Equations"
+    ]
+  },
+  "2016 UMO Problems/Problem 6": {
+    "parse": {
+      "title": "2016 UMO Problems/Problem 6",
+      "pageid": 17158,
+      "revid": 100778,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all positive integer pairs <img src=\"//latex.artofproblemsolving.com/6/2/5/625adc7907a33cb93776cbe286045d5da1143305.png\" class=\"latex\" alt=\"$(u,m)$\" style=\"vertical-align: -4px\" width=\"47\" height=\"18\" /> such that <img src=\"//latex.artofproblemsolving.com/1/a/9/1a9a02856336876d182b0dea82d35c43a5d9e061.png\" class=\"latex\" alt=\"$u + m^2$\" style=\"vertical-align: -1px\" width=\"54\" height=\"16\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/b/6/0/b605cb378246d43baf9c243a596b41d2422ce335.png\" class=\"latex\" alt=\"$um-1$\" style=\"vertical-align: 0px\" width=\"56\" height=\"12\" />.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/6/8/b/68bae9f106ea417f9ddc13cec9ec42cbb3fe1bc7.png\" class=\"latex\" alt=\"$(1,2),(1,3),(2,1),(2,2),(2,5),(3,1),(3,5),(5,2),(5,3)$\" style=\"vertical-align: -4px\" width=\"426\" height=\"18\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2016_UMO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2016_UMO\" title=\"2016 UMO\">2016 UMO </a></b> (<b><a href=\"/wiki/index.php/2016_UMO_Problems\" title=\"2016 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2016_UMO_Answer_Key\" title=\"2016 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_5\" title=\"2016 UMO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2016_UMO_Problems/Problem_1\" title=\"2016 UMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_2\" title=\"2016 UMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_3\" title=\"2016 UMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_4\" title=\"2016 UMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2016_UMO_Problems/Problem_5\" title=\"2016 UMO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908051137\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.024 seconds\nReal time usage: 0.055 seconds\nPreprocessor visited node count: 82/1000000\nPreprocessor generated node count: 361/1000000\nPost‐expand include size: 905/2097152 bytes\nTemplate argument size: 55/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 749/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.740      1 Template:UMO_box\n100.00%    4.740      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17158-0!canonical and timestamp 20240908051137 and revision id 100778\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2016 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2016_UMO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2016_UMO_Problems/Problem_6",
+          "byteoffset": 133,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2016_UMO_Problems/Problem_6",
+          "byteoffset": 217,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2016 UMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Diophantine Equations",
+      "Prime Factorization"
+    ]
+  }
+}

@@ -1,0 +1,708 @@
+{
+  "2014 UMO Problems/Problem 1": {
+    "parse": {
+      "title": "2014 UMO Problems/Problem 1",
+      "pageid": 13428,
+      "revid": 117717,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Todd and Allison are playing a game on the grid shown below. At the beginning, an orange stone\nis placed in the center intersection on the grid. They take turns, with Todd going first. In each of\nTodd’s turns, he must move the orange stone from its current position to a horizontally or vertically\nadjacent intersection that is not occupied by a blue stone, and then he places a blue stone in the orange\nstone’s previous spot. In each of Allison’s turns, she places a blue stone on exactly one unoccupied\nintersection. Todd loses the game when he is forced to move into one of the corner intersections,\nlabeled by <img src=\"//latex.artofproblemsolving.com/2/9/9/299ddf7c0f03ea46bf09f81f93adeea0756aa15c.png\" class=\"latex\" alt=\"$A, B, C$\" style=\"vertical-align: -3px\" width=\"58\" height=\"16\" />, and <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> in the diagram below. Allison loses if Todd can’t move.\nAllison tries to force Todd to lose in as few as turns as possible, and Todd tries to survive as long as\npossible. If both of them play as best they can, how many blue stones will be on the board at the end\nof the game? (You may assume that Todd always loses.)\n</p><p><img src=\"//latex.artofproblemsolving.com/f/4/e/f4e8b60037b6020937f0921db1710929039e7ee5.png\" class=\"latexcenter\" alt=\"[asy] size(200); for(int k=0;k&lt;9;++k) { D((0,k)--(8,k),black);D((k,0)--(k,8),black); } MP(&quot;A&quot;,(0,8),NW);MP(&quot;B&quot;,(0,0),SW);MP(&quot;C&quot;,(8,0),SE);MP(&quot;D&quot;,(8,8),NE); D(CR((4,4),.2),black); fill(CR((4,4),.2),orange); [/asy]\" width=\"335\" height=\"328\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>WLOG, assume Todd moves to the left. Note that you can always force Todd to move down or left. Then it's a matter of just counting how many steps it takes to get Todd to the bottom left corner, multiplying by 2, and subtracting one (because you don't play on the last turn). We get <img src=\"//latex.artofproblemsolving.com/f/1/9/f1965fae079a9ba2c0726c307070c2355dfcb213.png\" class=\"latex\" alt=\"$15$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2014_UMO\" title=\"2014 UMO\">2014 UMO </a></b> (<b><a href=\"/wiki/index.php/2014_UMO_Problems\" title=\"2014 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2014_UMO_Answer_Key\" title=\"2014 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_2\" title=\"2014 UMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_2\" title=\"2014 UMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_3\" title=\"2014 UMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_4\" title=\"2014 UMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_5\" title=\"2014 UMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_6\" title=\"2014 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210821\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.025 seconds\nReal time usage: 0.057 seconds\nPreprocessor visited node count: 82/1000000\nPreprocessor generated node count: 361/1000000\nPost‐expand include size: 905/2097152 bytes\nTemplate argument size: 55/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 922/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    5.699      1 Template:UMO_box\n100.00%    5.699      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13428-0!canonical and timestamp 20240907210821 and revision id 117717\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2014_UMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2014_UMO_Problems/Problem_1",
+          "byteoffset": 1201,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2014_UMO_Problems/Problem_1",
+          "byteoffset": 1516,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2014 UMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Probability of Independent Events",
+      "Graph Theory",
+      "Combinatorial Game Theory"
+    ]
+  },
+  "2014 UMO Problems/Problem 2": {
+    "parse": {
+      "title": "2014 UMO Problems/Problem 2",
+      "pageid": 13429,
+      "revid": 66452,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>(a) Find all positive integers <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" /> that satisfy <img src=\"//latex.artofproblemsolving.com/2/5/a/25a3179e00402d5b487e7101b600041bf5ffe906.png\" class=\"latexcenter\" alt=\"\\[x^2+y^2 = 2014,\\]\" width=\"121\" height=\"18\" /> or prove that there are no solutions.\n</p><p><br />\n(b) Find all positive integers <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" /> that satisfy <img src=\"//latex.artofproblemsolving.com/8/8/c/88cf74cb3ba0d63a5d843c9e2cfb0171dac5fa2f.png\" class=\"latexcenter\" alt=\"\\[x^2 + y^2 = 3222014,\\]\" width=\"148\" height=\"18\" /> or prove that there are no\nsolutions.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>(a) We see that we can rewrite <img src=\"//latex.artofproblemsolving.com/3/6/3/36379e255b248de446bc324123f6bd9759cecc0f.png\" class=\"latex\" alt=\"$x^2 + y^2 = 2014$\" style=\"vertical-align: -3px\" width=\"117\" height=\"18\" /> as <img src=\"//latex.artofproblemsolving.com/c/f/d/cfdc40d1a028c9a717664577041015b45744764c.png\" class=\"latex\" alt=\"$x^2 + y^2 \\equiv 6 \\bmod{8}$\" style=\"vertical-align: -3px\" width=\"144\" height=\"18\" />. Since <img src=\"//latex.artofproblemsolving.com/7/6/b/76b2878564ab19b80abb21ba964abe90fe120846.png\" class=\"latex\" alt=\"$x^2$\" width=\"16\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/f/5/a/f5a3faa3658bcbd8bde8e16cfa5baf019619fc9c.png\" class=\"latex\" alt=\"$y^2$\" style=\"vertical-align: -3px\" width=\"15\" height=\"18\" /> are perfect squares, their modulo can only be <img src=\"//latex.artofproblemsolving.com/3/a/9/3a96069f7e588ab3dc206781096cda63731cd047.png\" class=\"latex\" alt=\"${0,1,4}$\" style=\"vertical-align: -3px\" width=\"43\" height=\"16\" />. Since none of those two combinations make <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" />, there are no solutions to <img src=\"//latex.artofproblemsolving.com/3/6/3/36379e255b248de446bc324123f6bd9759cecc0f.png\" class=\"latex\" alt=\"$x^2 + y^2 = 2014$\" style=\"vertical-align: -3px\" width=\"117\" height=\"18\" /> such that <img src=\"//latex.artofproblemsolving.com/5/8/6/58613cc9b23eba179eaf3aef36092548e359c725.png\" class=\"latex\" alt=\"$x,y \\in \\mathbb Z$\" style=\"vertical-align: -3px\" width=\"62\" height=\"15\" />.\n</p><p>(b) Similarly, we can rewrite <img src=\"//latex.artofproblemsolving.com/0/d/6/0d62046e40d15387903178c6cd44a5830f14558a.png\" class=\"latex\" alt=\"$x^2 + y^2 = 3222014$\" style=\"vertical-align: -3px\" width=\"144\" height=\"18\" /> as <img src=\"//latex.artofproblemsolving.com/c/f/d/cfdc40d1a028c9a717664577041015b45744764c.png\" class=\"latex\" alt=\"$x^2 + y^2 \\equiv 6 \\bmod{8}$\" style=\"vertical-align: -3px\" width=\"144\" height=\"18\" /> and therefore it also does not have integer solutions.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2014_UMO\" title=\"2014 UMO\">2014 UMO </a></b> (<b><a href=\"/wiki/index.php/2014_UMO_Problems\" title=\"2014 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2014_UMO_Answer_Key\" title=\"2014 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_1\" title=\"2014 UMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_3\" title=\"2014 UMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_1\" title=\"2014 UMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_3\" title=\"2014 UMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_4\" title=\"2014 UMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_5\" title=\"2014 UMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_6\" title=\"2014 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908050951\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.027 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 194/1000000\nPreprocessor generated node count: 601/1000000\nPost‐expand include size: 934/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2805/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.373      1 Template:UMO_box\n100.00%    2.373      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13429-0!canonical and timestamp 20240908050951 and revision id 66452\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2014_UMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2014_UMO_Problems/Problem_2",
+          "byteoffset": 317,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2014_UMO_Problems/Problem_2",
+          "byteoffset": 871,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2014 UMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Diophantine Equations",
+      "Pigeonhole Principle"
+    ]
+  },
+  "2014 UMO Problems/Problem 3": {
+    "parse": {
+      "title": "2014 UMO Problems/Problem 3",
+      "pageid": 13430,
+      "revid": 117716,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Completely describe the set of all right triangles with positive integer-valued legs such that when four\ncopies of the triangle are arranged in square formation shown below, the incenters of the four triangles\nlie on the extensions of the sides of the smaller square. (Note: the incenter of a triangle is the center\nof the circle inscribed in that triangle.)\n</p><p><img src=\"//latex.artofproblemsolving.com/d/9/1/d9143f1e15da12a92c679c4f32b0a2dfec86b0f7.png\" class=\"latexcenter\" alt=\"[asy] size(200); path T=((0,0)--(4,0)--(4,.3)--(3.7,.3)--(3.7,0)--(4,0)--(4,3)--(0,0)); D(T,black); D(shift(10,0)*rotate(53)*T,black); D(shift(15,5)*rotate(233)*T,black); D(shift(15,0)*rotate(143)*T,black); D(shift(10,5)*rotate(323)*T,black); [/asy]\" width=\"335\" height=\"112\" />\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/3/0/9/30921966d56522be8f6968a77fbf3f924bf966e4.png\" class=\"latexcenter\" alt=\"[asy] size(200); path T=((0,0)--(4,0)--(4,.3)--(3.7,.3)--(3.7,0)--(4,0)--(4,3)--(0,0)); D(shift(10,0)*rotate(53)*T,black); D(shift(15,5)*rotate(233)*T,black); D(shift(15,0)*rotate(143)*T,black); D(shift(10,5)*rotate(323)*T,black); pair A, B, C, X, Y, Z, I; A = shift(10,0)*rotate(53)*(0,0); B = shift(10,0)*rotate(53)*(4, 0); C = shift(10,0)*rotate(53)*(4, 3); I = incenter(A, B, C); X = foot(I, B, C); Y = foot(I, A, C); Z = foot(I, A, B); D(incircle(A, B, C), black); D(I -- X, black); D(I -- Y, black); D(I -- Z, black); label(&quot;X&quot;, X, NE); label(&quot;Y&quot;, Y, W); label(&quot;Z&quot;, Z, S); label(&quot;A&quot;, A, S); label(&quot;B&quot;, B, NE); label(&quot;C&quot;, C, NW); label(&quot;I&quot;, I, N); D(A--Y, green); D(A--Z, green); D(B--Z, red); D(B--X, red); D(C--Y, blue); D(C--X, blue); [/asy]\" width=\"315\" height=\"335\" />\nLet <img src=\"//latex.artofproblemsolving.com/0/2/7/027f4a11d6090f9eac0ce2488df6384dad1263ea.png\" class=\"latex\" alt=\"$I$\" width=\"9\" height=\"12\" /> be the incenter of a triangle. Drop <img src=\"//latex.artofproblemsolving.com/0/2/7/027f4a11d6090f9eac0ce2488df6384dad1263ea.png\" class=\"latex\" alt=\"$I$\" width=\"9\" height=\"12\" /> onto the three sides of the triangle, and let the points be <img src=\"//latex.artofproblemsolving.com/b/9/1/b91abc49a9e72dfe06fe76f6f529fc2a2ef488fd.png\" class=\"latex\" alt=\"$X, Y, Z$\" style=\"vertical-align: -3px\" width=\"56\" height=\"16\" />\nFinally, let <img src=\"//latex.artofproblemsolving.com/9/3/d/93de525a496d1f4ff405442c063642371b739c0f.png\" class=\"latex\" alt=\"$a = AB, b = BC$\" style=\"vertical-align: -3px\" width=\"131\" height=\"16\" /> so that <img src=\"//latex.artofproblemsolving.com/2/5/d/25d8ed1fc54739081e1cc984b300a5b1bd0a984f.png\" class=\"latex\" alt=\"$a &gt; b$\" style=\"vertical-align: 0px\" width=\"42\" height=\"13\" /> and let <img src=\"//latex.artofproblemsolving.com/6/1/8/618f97b19c2ae9a2686fc79a57dbd22b50ccea26.png\" class=\"latex\" alt=\"$s = BZ$\" width=\"61\" height=\"12\" />.\nNote that <img src=\"//latex.artofproblemsolving.com/3/e/a/3ead47fb9fb4a4c273feee398f72ff2a09702b84.png\" class=\"latex\" alt=\"$Z$\" width=\"13\" height=\"12\" /> is also a corner of the square, so <img src=\"//latex.artofproblemsolving.com/e/e/b/eebbbe850e347fdc9b49bdd5baa92b98f1a07f4d.png\" class=\"latex\" alt=\"$s = a - b$\" width=\"72\" height=\"12\" />. But then, <img src=\"//latex.artofproblemsolving.com/7/5/a/75ac2c312374fb83a1af09c83e55798cb1ef77b8.png\" class=\"latex\" alt=\"$AC = CX + AZ = a + b - 2(a-b) = 3b-a$\" style=\"vertical-align: -4px\" width=\"354\" height=\"18\" />. From the Pythogorean theorem, we also know that <img src=\"//latex.artofproblemsolving.com/0/5/9/059c3c274f4e8bc728b94795c045e22d4c178d61.png\" class=\"latex\" alt=\"$AC^2 = a^2+b^2$\" style=\"vertical-align: -1px\" width=\"113\" height=\"16\" />. Therefore,\n<img src=\"//latex.artofproblemsolving.com/1/8/d/18d497439d84dfe6dc3318dbbddfc43951874ac3.png\" class=\"latexcenter\" alt=\"\\[a^2 + b^2 = (3b-a)^2 = 9b^2-6ab + a^2\\]\" width=\"283\" height=\"19\" />\n<img src=\"//latex.artofproblemsolving.com/0/d/b/0db933622074e18e43d372474a48e5fbe7f08eb1.png\" class=\"latexcenter\" alt=\"\\[\\Longleftrightarrow\\]\" width=\"31\" height=\"10\" />\n<img src=\"//latex.artofproblemsolving.com/6/4/c/64cd2acab43740654f6451ca8d32f7f42ef8c712.png\" class=\"latexcenter\" alt=\"\\[8b^2 = 6ab\\]\" width=\"74\" height=\"15\" />\n<img src=\"//latex.artofproblemsolving.com/0/d/b/0db933622074e18e43d372474a48e5fbe7f08eb1.png\" class=\"latexcenter\" alt=\"\\[\\Longleftrightarrow\\]\" width=\"31\" height=\"10\" />\n<img src=\"//latex.artofproblemsolving.com/f/3/c/f3cda0f8484cdb736c8b2369624ccf41563d370d.png\" class=\"latexcenter\" alt=\"\\[b = \\frac34 a\\]\" width=\"54\" height=\"38\" />\nSo, the only solutions are of the form <img src=\"//latex.artofproblemsolving.com/e/6/7/e67b2a3164e5cb75991a41751d7f653a5a35962c.png\" class=\"latex\" alt=\"$(3k, 4k, 5k).$\" style=\"vertical-align: -4px\" width=\"91\" height=\"18\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2014_UMO\" title=\"2014 UMO\">2014 UMO </a></b> (<b><a href=\"/wiki/index.php/2014_UMO_Problems\" title=\"2014 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2014_UMO_Answer_Key\" title=\"2014 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_2\" title=\"2014 UMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_4\" title=\"2014 UMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_1\" title=\"2014 UMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_2\" title=\"2014 UMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_4\" title=\"2014 UMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_5\" title=\"2014 UMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_6\" title=\"2014 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908050951\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 212/1000000\nPreprocessor generated node count: 641/1000000\nPost‐expand include size: 934/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4053/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.224      1 Template:UMO_box\n100.00%    2.224      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13430-0!canonical and timestamp 20240908050951 and revision id 117716\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2014_UMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2014_UMO_Problems/Problem_3",
+          "byteoffset": 626,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2014_UMO_Problems/Problem_3",
+          "byteoffset": 2117,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2014 UMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pythagorean Theorem",
+      "Incenter",
+      "Diophantine Equations"
+    ]
+  },
+  "2014 UMO Problems/Problem 4": {
+    "parse": {
+      "title": "2014 UMO Problems/Problem 4",
+      "pageid": 13431,
+      "revid": 117718,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Joel is playing with ordered lists of integers in the following way. He starts out with an ordered list\nof nonnegative integers. Then, he counts the number of <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" />’s, <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />’s, <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />’s, and so on in the list, writing\nthe counts out as a new list. He stops counting when he has counted everything in the previous list.\nThen he takes the second list and applies the same process to get a third list. He repeats this process\nindefinitely.\n</p><p>For example, he could start out with the ordered list <img src=\"//latex.artofproblemsolving.com/d/5/a/d5aa0a452fe2a10405655bad62c09cabcf4024fd.png\" class=\"latex\" alt=\"$(0, 0, 0, 2)$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" />. He counts three <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" />’s, zero <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />’s, and one\n<img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />, and then stops counting, so the second list is <img src=\"//latex.artofproblemsolving.com/9/4/b/94bad36ea6f989936c6030285c11e45592f91adc.png\" class=\"latex\" alt=\"$(3, 0, 1)$\" style=\"vertical-align: -4px\" width=\"56\" height=\"18\" /> In the second list, he counts one <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" />, one <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />,\nzero <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />’s, and one <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />, so the third list is <img src=\"//latex.artofproblemsolving.com/7/0/d/70dcd96fd4d0c751bbed7388467f2d892115dd1d.png\" class=\"latex\" alt=\"$(1, 1, 0, 1)$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" />. Then he counts one <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" /> and three <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />’s, so the fourth list\nis <img src=\"//latex.artofproblemsolving.com/1/b/a/1ba3e3f9bd99ddc2bf9e6d9244ebf4bfbc3776d1.png\" class=\"latex\" alt=\"$(1, 3)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" />. Here are the first few lists he writes down:\n<img src=\"//latex.artofproblemsolving.com/0/b/c/0bc74beb8de59058a574fad841f5481d8dcfb69c.png\" class=\"latex\" alt=\"$(0,0, 0, 2) \\longrightarrow (3, 0,1) \\longrightarrow (1, 1, 0, 1) \\longrightarrow (1, 3) \\longrightarrow \\cdots$\" style=\"vertical-align: -4px\" width=\"424\" height=\"18\" />\nIf instead he started with <img src=\"//latex.artofproblemsolving.com/c/4/b/c4b86f54134d69cad8793688a431aa907aaf2698.png\" class=\"latex\" alt=\"$(0, 0)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" />, he would write down:\n<img src=\"//latex.artofproblemsolving.com/5/9/1/591dda7f47d0eec5a041feb199c1bc5d23d0d979.png\" class=\"latex\" alt=\"$(0, 0) \\longrightarrow  (2) \\longrightarrow (0, 0, 1) \\longrightarrow (2, 1) \\longrightarrow \\cdots$\" style=\"vertical-align: -4px\" width=\"339\" height=\"18\" />\nIf Joel starts out with an arbitrary list of nonnegative integers and then continues this process, there\nare certain lists <img src=\"//latex.artofproblemsolving.com/9/8/b/98b7e4c455672c30d743cce7506408a40cb68129.png\" class=\"latex\" alt=\"$(m, n)$\" style=\"vertical-align: -4px\" width=\"47\" height=\"18\" /> of length two that he might end up writing an infinite number of times. Find\nall such pairs <img src=\"//latex.artofproblemsolving.com/9/8/b/98b7e4c455672c30d743cce7506408a40cb68129.png\" class=\"latex\" alt=\"$(m, n)$\" style=\"vertical-align: -4px\" width=\"47\" height=\"18\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><b>Answer:</b>\n<i>All</i> pairs of <img src=\"//latex.artofproblemsolving.com/9/8/b/98b7e4c455672c30d743cce7506408a40cb68129.png\" class=\"latex\" alt=\"$(m, n)$\" style=\"vertical-align: -4px\" width=\"47\" height=\"18\" /> work.\n</p><p><b>Proof:</b>\nFirst, note that <img src=\"//latex.artofproblemsolving.com/5/5/0/5506b58320deb5004bf2ed2f1a5e3e672d6e326e.png\" class=\"latex\" alt=\"$(2, 2)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> repeats forever:\n<img src=\"//latex.artofproblemsolving.com/d/0/3/d0315cd5f20e25e5e7aaf75c99dabd10db94e030.png\" class=\"latexcenter\" alt=\"\\[(2, 2)\\to (0, 0, 2)\\to (0, 0, 1)\\to (2, 1)\\to (0, 1, 1)\\to (1,2)\\to (0, 1, 1)\\qquad (1)\\]\" width=\"574\" height=\"18\" />\nNow suppose we have <img src=\"//latex.artofproblemsolving.com/6/4/8/648235a71039bea6360ae73859772e4c126a4ee6.png\" class=\"latex\" alt=\"$m\\ne n$\" style=\"vertical-align: -4px\" width=\"50\" height=\"17\" />. Let <img src=\"//latex.artofproblemsolving.com/2/2/1/2219ec4324ca123849afb6fd6fddb1e8c727593b.png\" class=\"latex\" alt=\"$M =\\max(m, n)$\" style=\"vertical-align: -4px\" width=\"125\" height=\"18\" /> We get\n<img src=\"//latex.artofproblemsolving.com/7/a/4/7a42ce99a690217f803f5b5c55d362b89d7b9a6d.png\" class=\"latexcenter\" alt=\"\\[(m, n)\\to (0, 0, \\dots, 0, 1, 0, \\dots, 0, 1)\\to (M-1, 2)\\to \\cdots \\to (M-2, 2) \\to \\cdots \\to (2, 2)\\qquad (2)\\]\" width=\"694\" height=\"18\" />\nOtherwise, <img src=\"//latex.artofproblemsolving.com/f/e/c/fec4f3da4f422b2346efe86724c8a0aee1023fac.png\" class=\"latex\" alt=\"$m=n$\" width=\"50\" height=\"8\" />. If <img src=\"//latex.artofproblemsolving.com/4/9/d/49d98ffe996c0f0d3b82b284cba2113439fefea9.png\" class=\"latex\" alt=\"$n &gt; 1$\" style=\"vertical-align: 0px\" width=\"43\" height=\"12\" /> then\n<img src=\"//latex.artofproblemsolving.com/1/d/8/1d8c3cb4fcc21492933063a1136a57b75ca204e2.png\" class=\"latexcenter\" alt=\"\\[(n, n)\\to (0, 0, \\dots, 0, 2)\\to (n, 0, 1)\\to (1, 1, 0, \\dots, 0, 1)\\to (n-2, 3)\\]\" width=\"510\" height=\"18\" />\nIf <img src=\"//latex.artofproblemsolving.com/8/4/e/84e75ddd39b9408f4d8e7fa62d2f6cdca00232de.png\" class=\"latex\" alt=\"$n=5$\" style=\"vertical-align: -1px\" width=\"46\" height=\"14\" /> we get\n<img src=\"//latex.artofproblemsolving.com/0/f/8/0f863ddf709e33f133d4b5fe849e460689fa55c0.png\" class=\"latexcenter\" alt=\"\\[(3,3)\\to (1,3) \\to \\text{Apply (2)} \\to (2, 2)\\]\" width=\"274\" height=\"18\" />\nOtherwise we get\n<img src=\"//latex.artofproblemsolving.com/5/9/c/59cd4ba271d53213a0169e6f4d3a94b5b81cec5b.png\" class=\"latexcenter\" alt=\"\\[(n-2, 3)\\to\\text{Apply (2)} \\to (2, 2)\\]\" width=\"238\" height=\"18\" />\nOur final case is if <img src=\"//latex.artofproblemsolving.com/c/7/6/c766f9fce6070981e62f805a7cf7294baed4498e.png\" class=\"latex\" alt=\"$n = 1$\" style=\"vertical-align: 0px\" width=\"43\" height=\"12\" />. Then we have\n<img src=\"//latex.artofproblemsolving.com/5/7/f/57fc90bdb581f6a3de21759488e0e5b0f278e5e8.png\" class=\"latexcenter\" alt=\"\\[(1, 1)\\to (0, 2)\\to (0, 0, 1)\\]\" width=\"191\" height=\"18\" />\nwhich we know repeats from <img src=\"//latex.artofproblemsolving.com/0/d/9/0d9c3b1c142cbd3f8217dabc160c57e4750df241.png\" class=\"latex\" alt=\"$(1)$\" style=\"vertical-align: -4px\" width=\"21\" height=\"18\" />.\n</p><p>Therefore, for all <img src=\"//latex.artofproblemsolving.com/9/8/b/98b7e4c455672c30d743cce7506408a40cb68129.png\" class=\"latex\" alt=\"$(m, n)$\" style=\"vertical-align: -4px\" width=\"47\" height=\"18\" /> it will repeat forever.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2014_UMO\" title=\"2014 UMO\">2014 UMO </a></b> (<b><a href=\"/wiki/index.php/2014_UMO_Problems\" title=\"2014 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2014_UMO_Answer_Key\" title=\"2014 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_3\" title=\"2014 UMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_5\" title=\"2014 UMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_1\" title=\"2014 UMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_2\" title=\"2014 UMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_3\" title=\"2014 UMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_5\" title=\"2014 UMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_6\" title=\"2014 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908050952\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.031 seconds\nReal time usage: 0.036 seconds\nPreprocessor visited node count: 383/1000000\nPreprocessor generated node count: 1021/1000000\nPost‐expand include size: 934/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6646/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.384      1 Template:UMO_box\n100.00%    2.384      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13431-0!canonical and timestamp 20240908050952 and revision id 117718\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2014_UMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2014_UMO_Problems/Problem_4",
+          "byteoffset": 1590,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2014_UMO_Problems/Problem_4",
+          "byteoffset": 2566,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2014 UMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Combinatorial Counting",
+      "Pigeonhole Principle",
+      "Sequences and Series"
+    ]
+  },
+  "2014 UMO Problems/Problem 5": {
+    "parse": {
+      "title": "2014 UMO Problems/Problem 5",
+      "pageid": 13432,
+      "revid": 117719,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all positive real numbers <img src=\"//latex.artofproblemsolving.com/3/2/5/32581661cddf01ad30c1e36efe72f99eb0a0adca.png\" class=\"latex\" alt=\"$x, y$\" style=\"vertical-align: -3px\" width=\"27\" height=\"11\" />, and <img src=\"//latex.artofproblemsolving.com/b/1/3/b13f21416d84e13708696f34dea81026cda583c9.png\" class=\"latex\" alt=\"$z$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> that satisfy both of the following equations.\n<img src=\"//latex.artofproblemsolving.com/3/8/b/38b4a903d79387aa24efa9c2d1ddd0c701d9a661.png\" class=\"latexcenter\" alt=\"\\begin{align*} xyz &amp; = 1\\\\ x^2 + y^2 + z^2 &amp; = 4x\\sqrt{yz}- 2yz \\end{align*}\" width=\"222\" height=\"45\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>By AM-GM\n<img src=\"//latex.artofproblemsolving.com/e/8/f/e8f87922d5bf45ea825cba594c5d9d8752b1df8a.png\" class=\"latexcenter\" alt=\"\\[x^2+y^2+z^2 + 2yz\\ge x^2 + 4yz\\ge 4x\\sqrt{yz}\\]\" width=\"315\" height=\"20\" />\nHence, the second equation implies that <img src=\"//latex.artofproblemsolving.com/6/3/6/636739c8201322993086908b20be3eceb4a7854d.png\" class=\"latex\" alt=\"$y=z$\" style=\"vertical-align: -3px\" width=\"42\" height=\"11\" /> and <img src=\"//latex.artofproblemsolving.com/b/5/1/b51baacb763023bc0e8ca49eed8603b48e3bf60b.png\" class=\"latex\" alt=\"$x^2=4yz\\implies x=2y=2z$\" style=\"vertical-align: -3px\" width=\"214\" height=\"18\" />.\n</p><p>Now we plug it into the first equation to get <img src=\"//latex.artofproblemsolving.com/6/1/5/615f8e13b09796d4a9f54c927e71f534b91d44e4.png\" class=\"latex\" alt=\"$(x,y,z) = \\left(\\sqrt[3]{4}, \\frac{\\sqrt[3]4}{2}, \\frac{\\sqrt[3]4}{2}\\right)$\" style=\"vertical-align: -22px\" width=\"206\" height=\"53\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2014_UMO\" title=\"2014 UMO\">2014 UMO </a></b> (<b><a href=\"/wiki/index.php/2014_UMO_Problems\" title=\"2014 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2014_UMO_Answer_Key\" title=\"2014 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_4\" title=\"2014 UMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_6\" title=\"2014 UMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_1\" title=\"2014 UMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_2\" title=\"2014 UMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_3\" title=\"2014 UMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_4\" title=\"2014 UMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_6\" title=\"2014 UMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908050952\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.022 seconds\nReal time usage: 0.023 seconds\nPreprocessor visited node count: 113/1000000\nPreprocessor generated node count: 421/1000000\nPost‐expand include size: 934/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1387/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.164      1 Template:UMO_box\n100.00%    2.164      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13432-0!canonical and timestamp 20240908050952 and revision id 117719\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2014_UMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2014_UMO_Problems/Problem_5",
+          "byteoffset": 224,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2014_UMO_Problems/Problem_5",
+          "byteoffset": 546,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2014 UMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "AM-GM Inequality",
+      "Geometric Mean",
+      "Quadratic Discriminant"
+    ]
+  },
+  "2014 UMO Problems/Problem 6": {
+    "parse": {
+      "title": "2014 UMO Problems/Problem 6",
+      "pageid": 13433,
+      "revid": 154030,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Note\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Note</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Draw <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> rows of <img src=\"//latex.artofproblemsolving.com/f/9/3/f93f5c51ea4b04b4992b003b39479f29018f6bda.png\" class=\"latex\" alt=\"$2n$\" width=\"19\" height=\"12\" /> equilateral triangles each, stacked on top of each other in a diamond shape, as\nshown below when <img src=\"//latex.artofproblemsolving.com/8/c/3/8c342b01f0cdef0f23d11a2bc9c5aa67f6d83ccb.png\" class=\"latex\" alt=\"$n = 3$\" width=\"43\" height=\"12\" />. Set point <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> as the southwest corner and point <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> as the northeast corner.\nA step consists of moving from one point to an adjacent point along a drawn line segment, in one of\nthe four legal directions indicated. A path is a series of steps, starting at <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and ending at <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />, such\nthat no line segment is used twice. One path is drawn below. Prove that for every positive integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />,\nthe number of distinct paths is a perfect square. (Note: A perfect square is a number of the form <img src=\"//latex.artofproblemsolving.com/0/e/5/0e5c83cc0c639fc2ed843bbe2d3d209fb478b104.png\" class=\"latex\" alt=\"$k^2$\" width=\"16\" height=\"15\" />,\nwhere <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> is an integer).\n</p><p><img src=\"//latex.artofproblemsolving.com/b/a/2/ba215e2558be399cc0e57326ebe439ccfbde21aa.png\" class=\"latexcenter\" alt=\"[asy] size(200); path p1=polygon(3),p2=shift(sqrt(3)/2,1/2)*rotate(180)*polygon(3); for(int k=0;k&lt;3;++k) {for (int j=0;j&lt;3;++j)   {draw(shift(sqrt(3)*(k+j/2),1.5*j)*p1,black+linewidth(.4));    draw(shift(sqrt(3)*(k+j/2),1.5*j)*p2,black+linewidth(.4));} } pair O=(-sqrt(3)/2,-1/2),E=(sqrt(3),0),NW=(-sqrt(3)/2,3/2),NE=(sqrt(3)/2,3/2),SE=(sqrt(3)/2,-3/2); D(O--(O+E)--(O+E+NE)--(O+2E+NE)--(O+2E+NE+SE)--(O+2E+2NE+SE)--(O+2E+2NE+SE+NW)--(O+3E+2NE+SE+NW)--(O+3E+3NE+SE+NW),black+linewidth(2)); MP(&quot;A&quot;,O,SW); MP(&quot;B&quot;,(O+3E+3NE+SE+NW),NE); draw(shift(10,0)*p1,black+linewidth(.4)); draw(shift(10,sqrt(3))*p1,black+linewidth(.4)); draw(shift(12.5,0)*p1,black+linewidth(.4)); draw(shift(12.5,sqrt(3))*p1,black+linewidth(.4)); MP(&quot;Legal    Steps&quot;,(11.4,4.2)); draw((10-sqrt(3)/2,-1/2)--(10,1.5-1/2),arrow=Arrow()); draw((12.5-sqrt(3)/2,-1/2)--(12.5+sqrt(3)/2,-1/2),arrow=Arrow()); draw((10,sqrt(3)+1)--(10+sqrt(3)/2,sqrt(3)-1/2),arrow=Arrow()); draw((12.5+sqrt(3)/2,sqrt(3)-1/2)--(12.5,sqrt(3)+1),arrow=Arrow()); [/asy]\" width=\"335\" height=\"142\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider just the equilateral triangle of length <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> made by cutting the parallelogram in half. In how many ways can you get from the SW vertex to any point on the opposite edge? Call this value <img src=\"//latex.artofproblemsolving.com/8/2/f/82f4341a1efbe1a890de160de023b4e4b84ef444.png\" class=\"latex\" alt=\"$T_n$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> (in fact, it doesn't matter which edgepoint you go to - there are the same number of paths). Note that <img src=\"//latex.artofproblemsolving.com/8/9/7/897171de7ec8d2dee59aadf9d052c8950ea0cfd7.png\" class=\"latex\" alt=\"$T_{n} = 2n\\cdot T_{n-1}$\" style=\"vertical-align: -2px\" width=\"111\" height=\"15\" />. Why? Consider the equilateral triangle of length <img src=\"//latex.artofproblemsolving.com/4/b/d/4bdca93962a2beaffc172ca394e04fe05bd74ffd.png\" class=\"latex\" alt=\"$n-1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" />. Note that for each edgepoint in the <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> triangle, we can get there in <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> ways from each of the <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> edgepoints in the <img src=\"//latex.artofproblemsolving.com/4/b/d/4bdca93962a2beaffc172ca394e04fe05bd74ffd.png\" class=\"latex\" alt=\"$n-1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" /> triangle. Now it isn't hard to see that the general formula for <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/d/4/2/d421d3f4052b5c73fb5efd187e91dce71553cc1f.png\" class=\"latex\" alt=\"$T_n = 2^nn!$\" style=\"vertical-align: -2px\" width=\"76\" height=\"15\" />.\n</p><p>Now to find the number of ways to get from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> to <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />. It's the sum of the number of ways to get from <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> to each point along the diagonal, times <img src=\"//latex.artofproblemsolving.com/8/2/f/82f4341a1efbe1a890de160de023b4e4b84ef444.png\" class=\"latex\" alt=\"$T_n$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" />. But the former is just <img src=\"//latex.artofproblemsolving.com/4/b/6/4b65ffd8bb37d18ac464528c627afa04406d4433.png\" class=\"latex\" alt=\"$2n\\cdot T_{n-1} = T_n$\" style=\"vertical-align: -2px\" width=\"112\" height=\"15\" />. Therefore, the total number of paths is <img src=\"//latex.artofproblemsolving.com/2/4/a/24a063a50a23c4b1cadb39ff5bafefc3451fdd87.png\" class=\"latex\" alt=\"$T_n^2$\" style=\"vertical-align: -4px\" width=\"19\" height=\"19\" />, which is a square number.\n</p>\n<h2><span class=\"mw-headline\" id=\"Note\">Note</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: Note\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A simpler solution, (but no general formula) is as follows:\nSplit the parallelogram into two equilateral triangles. Then let <img src=\"//latex.artofproblemsolving.com/8/2/f/82f4341a1efbe1a890de160de023b4e4b84ef444.png\" class=\"latex\" alt=\"$T_n$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> be the number of walks from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> to each of the <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> endpoints <img src=\"//latex.artofproblemsolving.com/d/8/6/d867328778903e615302ffc6ce3827d4639efdca.png\" class=\"latex\" alt=\"$e_1,...,e_n$\" style=\"vertical-align: -3px\" width=\"63\" height=\"11\" />. Now, let <img src=\"//latex.artofproblemsolving.com/1/0/f/10fb734096ba7000d06944c083ecf0914ecffef4.png\" class=\"latex\" alt=\"$R_n$\" style=\"vertical-align: -4px\" width=\"25\" height=\"17\" /> be the number of walks over the parallelogram. Then notice that if (say) some walk ends at <img src=\"//latex.artofproblemsolving.com/f/8/1/f814fcbba7b623f656f7ce45b87262a9cf562dba.png\" class=\"latex\" alt=\"$e_1$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" />, then we can just \"add\" another walk from the second split triangle. So we can do this in <img src=\"//latex.artofproblemsolving.com/2/4/a/24a063a50a23c4b1cadb39ff5bafefc3451fdd87.png\" class=\"latex\" alt=\"$T_n^2$\" style=\"vertical-align: -4px\" width=\"19\" height=\"19\" /> ways. So we have <img src=\"//latex.artofproblemsolving.com/7/7/6/77609d2dfdaf01e0706ce3ddbeb91588a83ffb75.png\" class=\"latex\" alt=\"$R_n=T_n^2$\" style=\"vertical-align: -4px\" width=\"66\" height=\"19\" />, as desired.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2014_UMO_Problems/Problem_6&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2014_UMO\" title=\"2014 UMO\">2014 UMO </a></b> (<b><a href=\"/wiki/index.php/2014_UMO_Problems\" title=\"2014 UMO Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2014_UMO_Answer_Key\" title=\"2014 UMO Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.utmath.org/home\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_5\" title=\"2014 UMO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Problem</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2014_UMO_Problems/Problem_1\" title=\"2014 UMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_2\" title=\"2014 UMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_3\" title=\"2014 UMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_4\" title=\"2014 UMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2014_UMO_Problems/Problem_5\" title=\"2014 UMO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Utah_Math_Olympiad\" title=\"Utah Math Olympiad\"> All UMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907103925\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 365/1000000\nPreprocessor generated node count: 985/1000000\nPost‐expand include size: 904/2097152 bytes\nTemplate argument size: 54/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6538/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.711      1 Template:UMO_box\n100.00%    2.711      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13433-0!canonical and timestamp 20240907103925 and revision id 154030\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2014 UMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Utah Math Olympiad"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.utmath.org/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2014_UMO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2014_UMO_Problems/Problem_6",
+          "byteoffset": 1782,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Note",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2014_UMO_Problems/Problem_6",
+          "byteoffset": 2848,
+          "anchor": "Note"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2014_UMO_Problems/Problem_6",
+          "byteoffset": 3408,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2014 UMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Combinatorics",
+      "Graph Theory",
+      "Probability of Independent Events"
+    ]
+  }
+}

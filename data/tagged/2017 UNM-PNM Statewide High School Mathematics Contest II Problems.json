@@ -1,0 +1,1364 @@
+{
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1",
+      "pageid": 17119,
+      "revid": 177262,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>What are the last two digits of <img src=\"//latex.artofproblemsolving.com/c/0/0/c002566606b9154bc641f7538defc73bdb8f91d7.png\" class=\"latex\" alt=\"$2017^{2017}$\" style=\"vertical-align: 0px\" width=\"62\" height=\"15\" />?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In this problem, we will use the Chinese remainder theorem. This question is asking us to find <img src=\"//latex.artofproblemsolving.com/e/9/f/e9ffc7d255cf4e17a9c4f5d4e760e497e28939d5.png\" class=\"latex\" alt=\"$2017^{2017}\\mod 100=17^{2017}\\mod 100$\" style=\"vertical-align: 0px\" width=\"293\" height=\"15\" />. By the Chinese remainder theorem, we can find <img src=\"//latex.artofproblemsolving.com/8/0/c/80c7228941fc7416a74cdf1df0822f72faf91c55.png\" class=\"latex\" alt=\"$17^{2017}\\mod 25$\" style=\"vertical-align: 0px\" width=\"116\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/d/1/a/d1a8f1387f274a651df03dce48de9a419c48c1e6.png\" class=\"latex\" alt=\"$17^{2017}\\mod 4$\" style=\"vertical-align: 0px\" width=\"107\" height=\"15\" />, and then \"combine\" them. <img src=\"//latex.artofproblemsolving.com/d/1/4/d140f96116911500b9d7c6dd2841f0e3482b3269.png\" class=\"latex\" alt=\"$17^{2017}\\mod4\\equiv1^{2017}\\mod4\\equiv1\\mod4$\" style=\"vertical-align: 0px\" width=\"325\" height=\"15\" />. To find <img src=\"//latex.artofproblemsolving.com/c/6/3/c63ee15589d2612ff92921a9657cd2aaac5bcab9.png\" class=\"latex\" alt=\"$17^{2017}\\mod25$\" style=\"vertical-align: -1px\" width=\"119\" height=\"17\" />, we'll look for a pattern. The pattern is <img src=\"//latex.artofproblemsolving.com/9/9/9/9992fd80bcf9c25291c7c7969c3acaff343903c5.png\" class=\"latex\" alt=\"$17, 14, 13, 21, 7, 19, 23, 16, 22, -1, -17, -14, -13, -21, -7, -19, -23, -16, -22, 1$\" style=\"vertical-align: -3px\" width=\"621\" height=\"16\" />. Since there are 20 terms, and <img src=\"//latex.artofproblemsolving.com/a/a/5/aa50496da9b1d1408e87020311af95899b55bb8a.png\" class=\"latex\" alt=\"$2017\\equiv17\\mod20$\" style=\"vertical-align: -1px\" width=\"152\" height=\"14\" />, we have that <img src=\"//latex.artofproblemsolving.com/8/5/c/85c799e7a5c63359d69b2f779a1c1b661070c45f.png\" class=\"latex\" alt=\"$17^{2017}\\mod25\\equiv2\\mod25$\" style=\"vertical-align: 0px\" width=\"220\" height=\"15\" />. Now, we want to find a number that's <img src=\"//latex.artofproblemsolving.com/f/d/a/fda075bd8294bd47eda423f4bc1a01d096c4fd79.png\" class=\"latex\" alt=\"$2\\mod25$\" width=\"79\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/0/2/b/02b83cd63440a70114e304e4bba758160cfd9964.png\" class=\"latex\" alt=\"$1\\mod4$\" style=\"vertical-align: 0px\" width=\"71\" height=\"13\" />. We find this number by clever guess and check. We know our number is odd, so it is <img src=\"//latex.artofproblemsolving.com/f/2/8/f28a9804949690f057cbca3943d25f93f03ebee5.png\" class=\"latex\" alt=\"$27\\mod50$\" width=\"88\" height=\"12\" />. First, we try <img src=\"//latex.artofproblemsolving.com/1/0/5/1051e7d41ec0b8bd688a872be17538413f4ee97b.png\" class=\"latex\" alt=\"$27$\" style=\"vertical-align: -1px\" width=\"20\" height=\"14\" />, but that doesn't work. Next, we try <img src=\"//latex.artofproblemsolving.com/7/a/f/7af4b3f8897671e2879b10badf471e5deec8952e.png\" class=\"latex\" alt=\"$77$\" width=\"18\" height=\"12\" />, and that works! So, our answer is <img src=\"//latex.artofproblemsolving.com/5/4/9/54994fa6a40d5dca1c24208f8b55c441fcc0e532.png\" class=\"latexcenter\" alt=\"\\[\\boxed{77}\\]\" width=\"30\" height=\"23\" />\n<i>-bronzetruck2016<i>\n</i></i></p><i><i><h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2></i></i><i><i><table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First question</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table></i></i><p><i><i>\n</i></i></p>\n<!-- \nNewPP limit report\nCached time: 20240907213450\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.031 seconds\nReal time usage: 0.158 seconds\nPreprocessor visited node count: 194/1000000\nPreprocessor generated node count: 658/1000000\nPost‐expand include size: 1821/2097152 bytes\nTemplate argument size: 106/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2751/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   18.927      1 Template:UNM-PNM_Math_Contest_box\n100.00%   18.927      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17119-0!canonical and timestamp 20240907213449 and revision id 177262\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1",
+          "byteoffset": 76,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1",
+          "byteoffset": 1087,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Chinese Remainder Theorem",
+      "Fermat's Little Theorem"
+    ]
+  },
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10",
+      "pageid": 17128,
+      "revid": 100618,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Newton’s method applied to the equation <img src=\"//latex.artofproblemsolving.com/b/0/d/b0df624702c1f988d1b966737e9c46c03bd39eb1.png\" class=\"latex\" alt=\"$f(x) = x^3-x$\" style=\"vertical-align: -4px\" width=\"109\" height=\"19\" /> takes the form of the iteration <img src=\"//latex.artofproblemsolving.com/8/8/8/8885a96b8f00b77a367c1a24db191d1cedf738e5.png\" class=\"latex\" alt=\"$x_{n+1} =x_n-\\frac{(x_n)^3-x_n}{3{x_n}^2-1} , n = 0,1,2,\\ldots$\" style=\"vertical-align: -15px\" width=\"303\" height=\"41\" />\n</p><p>(a) What are the roots of <img src=\"//latex.artofproblemsolving.com/5/7/c/57ccf8d123ba4259e29fba55d9b008874e071492.png\" class=\"latex\" alt=\"$f(x) = 0$\" style=\"vertical-align: -4px\" width=\"68\" height=\"18\" />? \n</p><p>(b) Study the behavior of the iteration when <img src=\"//latex.artofproblemsolving.com/3/1/3/313f1bc49fedd53375f2bf1392783230cea7989a.png\" class=\"latex\" alt=\"$x_0 &gt; \\frac{1}{\\sqrt{3}}$\" style=\"vertical-align: -17px\" width=\"68\" height=\"41\" /> to conclude that the sequence <img src=\"//latex.artofproblemsolving.com/6/9/5/69551c3500bc3d72e8da62cb464c89b4ff8c54c4.png\" class=\"latex\" alt=\"$\\{x_0,x_1,\\ldots\\}$\" style=\"vertical-align: -4px\" width=\"90\" height=\"18\" /> approaches the same root as long as you choose <img src=\"//latex.artofproblemsolving.com/3/1/3/313f1bc49fedd53375f2bf1392783230cea7989a.png\" class=\"latex\" alt=\"$x_0 &gt; \\frac{1}{\\sqrt{3}}$\" style=\"vertical-align: -17px\" width=\"68\" height=\"41\" />. It may be helpful to start with the case <img src=\"//latex.artofproblemsolving.com/f/c/2/fc271598aa425b1f006e6db4fa5dfa0e90f8e7e6.png\" class=\"latex\" alt=\"$x_0&gt;1$\" style=\"vertical-align: -2px\" width=\"50\" height=\"14\" />.\n</p><p>(c) Assume <img src=\"//latex.artofproblemsolving.com/9/0/4/904d8adba8430da264ef4946399ec7e14486a035.png\" class=\"latex\" alt=\"$-\\alpha &lt; x_0 &lt; \\alpha$\" style=\"vertical-align: -2px\" width=\"103\" height=\"12\" />. For what number <img src=\"//latex.artofproblemsolving.com/1/0/f/10f32377ac67d94f764f12a15ea987e88c85d3e1.png\" class=\"latex\" alt=\"$\\alpha$\" style=\"vertical-align: -1px\" width=\"14\" height=\"10\" /> does the sequence always approach <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" />?\n</p><p>(d) For <img src=\"//latex.artofproblemsolving.com/3/6/b/36bb2bc18eebc8db8e9490c2526747cc79ee10c1.png\" class=\"latex\" alt=\"$x_0 \\in(\\alpha,\\frac{1}{\\sqrt{3}})$\" style=\"vertical-align: -17px\" width=\"100\" height=\"41\" /> the sequence may approach either of the roots <img src=\"//latex.artofproblemsolving.com/c/9/c/c9c7695aa4cd5bf92c7da668b766fdfe244a113a.png\" class=\"latex\" alt=\"$\\pm x^{*}$\" style=\"vertical-align: 0px\" width=\"30\" height=\"13\" />. Can you ﬁnd an (implicit) expression that can be used to determine limits <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/b/a/c/bac5179cf12e1a7ff085b57db0ca3f9d9c2e6e9d.png\" class=\"latex\" alt=\"$a_{i+1}$\" style=\"vertical-align: -4px\" width=\"29\" height=\"12\" /> such that if <img src=\"//latex.artofproblemsolving.com/6/1/2/6129d38d496e99f6410e09e6e0d18f42257c4034.png\" class=\"latex\" alt=\"$x0 \\in (a_i,a_{i+1})$\" style=\"vertical-align: -4px\" width=\"109\" height=\"18\" /> then the sequence approaches <img src=\"//latex.artofproblemsolving.com/5/5/4/5549be72a072b90b44c61e9f513388766bc6f199.png\" class=\"latex\" alt=\"$(-1)^i{x^{*}}$\" style=\"vertical-align: -4px\" width=\"59\" height=\"19\" />. Hint:<img src=\"//latex.artofproblemsolving.com/f/8/f/f8fe8abbe2edf8c2677bc17eb0a981830eb12397.png\" class=\"latex\" alt=\"$a_1 = \\frac{1}{\\sqrt{3}}, a_i &gt; a_{i+1}$\" style=\"vertical-align: -17px\" width=\"146\" height=\"41\" /> and <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" /> approaches <img src=\"//latex.artofproblemsolving.com/a/e/2/ae26d1d19e9371dd57975f8cc1eb7c580626ad25.png\" class=\"latex\" alt=\"$\\frac{1}{\\sqrt{5}}$\" style=\"vertical-align: -18px\" width=\"30\" height=\"43\" /> when <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> becomes large.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>(a) The roots are <img src=\"//latex.artofproblemsolving.com/c/d/6/cd6f73ce3de3a556fbdbb2bfa9cf08647141c88c.png\" class=\"latex\" alt=\"$(-1,0,1)$\" style=\"vertical-align: -4px\" width=\"70\" height=\"18\" />.\n</p><p>(b) First consider <img src=\"//latex.artofproblemsolving.com/8/f/b/8fbf8de2bd82a42be77eca6ebd0e4858f07d407f.png\" class=\"latex\" alt=\"$x_0 &gt; 1$\" style=\"vertical-align: -2px\" width=\"50\" height=\"14\" />. Let <img src=\"//latex.artofproblemsolving.com/c/d/8/cd80e269a889a13f7ddba37ac9cd6d0e389a9e76.png\" class=\"latex\" alt=\"$x_{n+1} = 1 + \\epsilon$\" style=\"vertical-align: -4px\" width=\"99\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/b/3/f/b3f8912e908a95f347df18bd4f173f543725ce95.png\" class=\"latex\" alt=\"$x_n = 1 + \\delta$\" style=\"vertical-align: -2px\" width=\"83\" height=\"15\" /> with <img src=\"//latex.artofproblemsolving.com/9/a/4/9a4b1ee77622f50ac112610b5be1c8feb031ef31.png\" class=\"latex\" alt=\"$\\delta &gt; 0$\" style=\"vertical-align: 0px\" width=\"41\" height=\"13\" />. The iteration gives <img src=\"//latex.artofproblemsolving.com/a/c/c/acc66a9838200e0f7e88b8e2d1b628748dfde8be.png\" class=\"latex\" alt=\"$0 &lt;\\frac{\\epsilon}{\\delta} &lt; \\frac{2}{3}$\" style=\"vertical-align: -13px\" width=\"85\" height=\"38\" />. Next consider <img src=\"//latex.artofproblemsolving.com/3/8/8/388d7a1c5058b8ac3043f3bc812032e6dae6c998.png\" class=\"latex\" alt=\"$\\frac{1}{\\sqrt{3}} &lt; x_0 &lt; 1$\" style=\"vertical-align: -17px\" width=\"102\" height=\"41\" />. As the signs of the numerator and denominator in the rational part of the iteration does not change on the interval under consideration we ﬁnd that <img src=\"//latex.artofproblemsolving.com/9/4/3/943423ec3372bca69f75b40263088442dcc5bb47.png\" class=\"latex\" alt=\"$x_1 &gt; 1$\" style=\"vertical-align: -2px\" width=\"50\" height=\"14\" />. Finally, <img src=\"//latex.artofproblemsolving.com/f/c/b/fcb3fc2febb1988b36512463c821633812603961.png\" class=\"latex\" alt=\"$x_0 = 1$\" style=\"vertical-align: -2px\" width=\"50\" height=\"14\" /> produces <img src=\"//latex.artofproblemsolving.com/2/d/d/2dd241834905de5246fcbb2444ed65f963fccbce.png\" class=\"latex\" alt=\"$x_1 = 1$\" style=\"vertical-align: -2px\" width=\"50\" height=\"14\" />. \n</p><p>To answer (c), rewrite the iteration as<img src=\"//latex.artofproblemsolving.com/5/e/4/5e4867baa889604a33aaf90b69649de3b0b88e70.png\" class=\"latex\" alt=\"$x_{n+1} =-\\frac{2(x_n)^3}{1-3(x_n)^2 }$\" style=\"vertical-align: -17px\" width=\"158\" height=\"43\" />, and note that for <img src=\"//latex.artofproblemsolving.com/4/7/a/47a4132741dfe1052b6c8ed959632cebe27f4f81.png\" class=\"latex\" alt=\"$0&lt;=x_0 &lt; \\frac{1}{\\sqrt{3}}$\" style=\"vertical-align: -17px\" width=\"116\" height=\"41\" /> the next iterate will be non-positive. Insisting that <img src=\"//latex.artofproblemsolving.com/c/b/a/cbad59d37e162bb2f0868b90d3bee04b27e6a8fb.png\" class=\"latex\" alt=\"$-x_0 &lt; x_1 &lt;= 0$\" style=\"vertical-align: -2px\" width=\"121\" height=\"15\" />, so that <img src=\"//latex.artofproblemsolving.com/c/c/a/ccada11db7b2b90693e2fac4f887a57fce6f96bf.png\" class=\"latex\" alt=\"$x_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> will be closer to zero than <img src=\"//latex.artofproblemsolving.com/1/7/f/17f1249ad95b7682b8316ad21de8ce4ee9fdcf93.png\" class=\"latex\" alt=\"$x_0$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> gives the limiting case <img src=\"//latex.artofproblemsolving.com/b/3/6/b360234ae2bbb82df12770589d1a294c6b1c93ec.png\" class=\"latex\" alt=\"$x_1 =-x_0$\" style=\"vertical-align: -2px\" width=\"72\" height=\"10\" />, or <img src=\"//latex.artofproblemsolving.com/6/7/e/67e03106e65bee7b0a8257ffeb70b6cfb4b6bee4.png\" class=\"latex\" alt=\"$\\alpha (1-3\\alpha^2) =-2\\alpha^3$\" style=\"vertical-align: -4px\" width=\"150\" height=\"19\" />, which has the solution <img src=\"//latex.artofproblemsolving.com/5/6/e/56e994a290056846abd386e762bdc222f22b9872.png\" class=\"latex\" alt=\"$\\alpha = \\frac{1}{\\sqrt{5}}$\" style=\"vertical-align: -17px\" width=\"62\" height=\"41\" />. \n</p><p>Finally the implicit recurrence in (d) is obtained by running Newton backwards\n<img src=\"//latex.artofproblemsolving.com/f/6/0/f6090d300271cfb6549bb263a345b2c3a59ce55e.png\" class=\"latex\" alt=\"$a_i-\\frac{a_i^3-a_i}{3a_i^2-1}$\" style=\"vertical-align: -16px\" width=\"97\" height=\"43\" />  = <img src=\"//latex.artofproblemsolving.com/3/9/0/390660a9dd7c446ba72143385691e20feb8fd5eb.png\" class=\"latex\" alt=\"$-a_{i-1}, a_1 = \\frac{1}{\\sqrt{3}},\\ldots,a_{\\infty}= \\frac{1}{\\sqrt{5}}$\" style=\"vertical-align: -17px\" width=\"239\" height=\"41\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">Problem 9</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">9</a> <b>•</b> <a class=\"mw-selflink selflink\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908055342\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.035 seconds\nReal time usage: 0.038 seconds\nPreprocessor visited node count: 419/1000000\nPreprocessor generated node count: 1158/1000000\nPost‐expand include size: 1820/2097152 bytes\nTemplate argument size: 105/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 7553/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.709      1 Template:UNM-PNM_Math_Contest_box\n100.00%    2.709      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17128-0!canonical and timestamp 20240908055342 and revision id 100618\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10",
+          "byteoffset": 1176,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10",
+          "byteoffset": 2427,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Newton's Method",
+      "Polynomials and Roots",
+      "Sequences and Series"
+    ]
+  },
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2",
+      "pageid": 17120,
+      "revid": 197273,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Suppose <img src=\"//latex.artofproblemsolving.com/9/9/7/9970c215805f82282067d60741f7d2625e4d6a0c.png\" class=\"latex\" alt=\"$A, R, S$\" style=\"vertical-align: -3px\" width=\"55\" height=\"16\" />, and <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> all denote distinct digits from <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> to <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />. If <img src=\"//latex.artofproblemsolving.com/a/4/e/a4ea1b248c8879f9eafa9a2be89a04279451ff7e.png\" class=\"latex\" alt=\"$\\sqrt{STARS} = SAT$\" style=\"vertical-align: -2px\" width=\"145\" height=\"21\" />, what are <img src=\"//latex.artofproblemsolving.com/9/9/7/9970c215805f82282067d60741f7d2625e4d6a0c.png\" class=\"latex\" alt=\"$A, R, S$\" style=\"vertical-align: -3px\" width=\"55\" height=\"16\" />, and <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" />? \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/3/d/b/3db3adfec88969de7e3d96c3a37e81365c8c6ed3.png\" class=\"latex\" alt=\"$A = 3, T = 9, S = 1$\" style=\"vertical-align: -3px\" width=\"154\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/e/1/2/e122f78c988069feb9afcd41b1736eb12ec8bf6c.png\" class=\"latex\" alt=\"$R = 2$\" width=\"46\" height=\"12\" />\n</p><p>Another way of stating the question is that <img src=\"//latex.artofproblemsolving.com/f/d/c/fdc61b38f2ead8d3c141cb60161d360ebf2ae9e1.png\" class=\"latex\" alt=\"$SAT$\" style=\"vertical-align: -1px\" width=\"41\" height=\"14\" /> <img src=\"//latex.artofproblemsolving.com/8/f/1/8f1fb66751f2ee2626c75303485dba473c39a2f2.png\" class=\"latex\" alt=\"$\\cdot$\" style=\"vertical-align: 3px\" width=\"3\" height=\"2\" /> <img src=\"//latex.artofproblemsolving.com/f/d/c/fdc61b38f2ead8d3c141cb60161d360ebf2ae9e1.png\" class=\"latex\" alt=\"$SAT$\" style=\"vertical-align: -1px\" width=\"41\" height=\"14\" /> = <img src=\"//latex.artofproblemsolving.com/8/3/d/83d03eb6a39a8d4bb17d1f5910a3cc033ccc3afd.png\" class=\"latex\" alt=\"$STARS$\" style=\"vertical-align: -1px\" width=\"67\" height=\"14\" />.\nThis means that the ending digit of <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> <img src=\"//latex.artofproblemsolving.com/8/f/1/8f1fb66751f2ee2626c75303485dba473c39a2f2.png\" class=\"latex\" alt=\"$\\cdot$\" style=\"vertical-align: 3px\" width=\"3\" height=\"2\" /> <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />  has to be the ending digit of a square number, or {<img src=\"//latex.artofproblemsolving.com/6/7/a/67af67d70f2be4de1041d0b128d0f1f7a8754551.png\" class=\"latex\" alt=\"$0, 1, 4, 5, 6, 9$\" style=\"vertical-align: -4px\" width=\"97\" height=\"17\" />}. Keep in mind that <img src=\"//latex.artofproblemsolving.com/8/3/d/83d03eb6a39a8d4bb17d1f5910a3cc033ccc3afd.png\" class=\"latex\" alt=\"$STARS$\" style=\"vertical-align: -1px\" width=\"67\" height=\"14\" /> is a 5-digit number. We know that <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> cannot be 0 because <img src=\"//latex.artofproblemsolving.com/f/d/c/fdc61b38f2ead8d3c141cb60161d360ebf2ae9e1.png\" class=\"latex\" alt=\"$SAT$\" style=\"vertical-align: -1px\" width=\"41\" height=\"14\" /> would become a 2-digit number. It cannot be 4 or over because <img src=\"//latex.artofproblemsolving.com/8/3/d/83d03eb6a39a8d4bb17d1f5910a3cc033ccc3afd.png\" class=\"latex\" alt=\"$STARS$\" style=\"vertical-align: -1px\" width=\"67\" height=\"14\" /> would have 6 digits instead of 5. This only leaves <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> = 1. Because the last digit of <img src=\"//latex.artofproblemsolving.com/8/3/d/83d03eb6a39a8d4bb17d1f5910a3cc033ccc3afd.png\" class=\"latex\" alt=\"$STARS$\" style=\"vertical-align: -1px\" width=\"67\" height=\"14\" /> is <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />, we can conclude that <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> must be <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />. However, since all the digits are unique, <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> = <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />.\nNow the expression becomes:\n</p><p><img src=\"//latex.artofproblemsolving.com/6/a/5/6a57950c934c971ddf607aedea869aba4c3603c7.png\" class=\"latex\" alt=\"$1A9$\" style=\"vertical-align: -1px\" width=\"34\" height=\"14\" /> <img src=\"//latex.artofproblemsolving.com/8/f/1/8f1fb66751f2ee2626c75303485dba473c39a2f2.png\" class=\"latex\" alt=\"$\\cdot$\" style=\"vertical-align: 3px\" width=\"3\" height=\"2\" /> <img src=\"//latex.artofproblemsolving.com/6/a/5/6a57950c934c971ddf607aedea869aba4c3603c7.png\" class=\"latex\" alt=\"$1A9$\" style=\"vertical-align: -1px\" width=\"34\" height=\"14\" /> = <img src=\"//latex.artofproblemsolving.com/9/f/9/9f95d377da1edb6eb87f8bc5fa3493888be21fef.png\" class=\"latex\" alt=\"$19AR1$\" style=\"vertical-align: -1px\" width=\"57\" height=\"14\" />\n</p><p>Because the first two digits of <img src=\"//latex.artofproblemsolving.com/8/3/d/83d03eb6a39a8d4bb17d1f5910a3cc033ccc3afd.png\" class=\"latex\" alt=\"$STARS$\" style=\"vertical-align: -1px\" width=\"67\" height=\"14\" /> are <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png\" class=\"latex\" alt=\"$9$\" width=\"8\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> cannot take on too many values because if it becomes <img src=\"//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png\" class=\"latex\" alt=\"$5$\" width=\"8\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> will become <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />. It cannot be <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" /> either because even then, <img src=\"//latex.artofproblemsolving.com/8/3/d/83d03eb6a39a8d4bb17d1f5910a3cc033ccc3afd.png\" class=\"latex\" alt=\"$STARS$\" style=\"vertical-align: -1px\" width=\"67\" height=\"14\" /> would be too small to satisfy (If <img src=\"//latex.artofproblemsolving.com/a/3/1/a312e59763bb28393d84bb20afda1a88e61f56a7.png\" class=\"latex\" alt=\"$SAT=140$\" style=\"vertical-align: -1px\" width=\"92\" height=\"14\" />, it would still have too big a square for <img src=\"//latex.artofproblemsolving.com/8/3/d/83d03eb6a39a8d4bb17d1f5910a3cc033ccc3afd.png\" class=\"latex\" alt=\"$STARS$\" style=\"vertical-align: -1px\" width=\"67\" height=\"14\" /> to be able to satisfy, <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> being <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" />). Now, if <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> is tested from the set {<img src=\"//latex.artofproblemsolving.com/f/c/b/fcb9c5aca945a186efee0a526882d6c6bd9c299f.png\" class=\"latex\" alt=\"$0,1,2,3$\" style=\"vertical-align: -3px\" width=\"60\" height=\"16\" />}:\n</p><p><img src=\"//latex.artofproblemsolving.com/9/f/4/9f44a5278f9f07028b5386312e86885738ffec92.png\" class=\"latex\" alt=\"$A=0$\" width=\"46\" height=\"13\" />:\n</p><p><img src=\"//latex.artofproblemsolving.com/a/f/4/af4c37ff1a89a2667cb70c3e6e731b7040a36bfa.png\" class=\"latex\" alt=\"$109$\" style=\"vertical-align: -1px\" width=\"29\" height=\"14\" /> <img src=\"//latex.artofproblemsolving.com/8/f/1/8f1fb66751f2ee2626c75303485dba473c39a2f2.png\" class=\"latex\" alt=\"$\\cdot$\" style=\"vertical-align: 3px\" width=\"3\" height=\"2\" /> <img src=\"//latex.artofproblemsolving.com/a/f/4/af4c37ff1a89a2667cb70c3e6e731b7040a36bfa.png\" class=\"latex\" alt=\"$109$\" style=\"vertical-align: -1px\" width=\"29\" height=\"14\" /> = <img src=\"//latex.artofproblemsolving.com/8/8/1/88131eca4f6f3577967797b39036dd9412d3438b.png\" class=\"latex\" alt=\"$11881$\" style=\"vertical-align: -1px\" width=\"47\" height=\"14\" />  (Does not work)\n</p><p><img src=\"//latex.artofproblemsolving.com/f/1/8/f18428217dcd07944b2adbebcafd0978587a770a.png\" class=\"latex\" alt=\"$A=1$\" style=\"vertical-align: 0px\" width=\"46\" height=\"13\" />:\n</p><p><img src=\"//latex.artofproblemsolving.com/2/f/5/2f5dc392ba2faf31608de0cc131ab8c7227b31dd.png\" class=\"latex\" alt=\"$119$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> <img src=\"//latex.artofproblemsolving.com/8/f/1/8f1fb66751f2ee2626c75303485dba473c39a2f2.png\" class=\"latex\" alt=\"$\\cdot$\" style=\"vertical-align: 3px\" width=\"3\" height=\"2\" /> <img src=\"//latex.artofproblemsolving.com/2/f/5/2f5dc392ba2faf31608de0cc131ab8c7227b31dd.png\" class=\"latex\" alt=\"$119$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> = <img src=\"//latex.artofproblemsolving.com/c/6/7/c6746febaa25c14151055b3c3d52e13a4941c013.png\" class=\"latex\" alt=\"$14161$\" style=\"vertical-align: -1px\" width=\"47\" height=\"14\" />  (Does not work)\n</p><p><img src=\"//latex.artofproblemsolving.com/4/f/1/4f1a0a1fba5abcc1686547b4c9754aa25665358a.png\" class=\"latex\" alt=\"$A=2$\" width=\"46\" height=\"13\" />:\n</p><p><img src=\"//latex.artofproblemsolving.com/6/5/7/657b97a497d22369149bd9dc22e0d35eb5dda31c.png\" class=\"latex\" alt=\"$129$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> <img src=\"//latex.artofproblemsolving.com/8/f/1/8f1fb66751f2ee2626c75303485dba473c39a2f2.png\" class=\"latex\" alt=\"$\\cdot$\" style=\"vertical-align: 3px\" width=\"3\" height=\"2\" /> <img src=\"//latex.artofproblemsolving.com/6/5/7/657b97a497d22369149bd9dc22e0d35eb5dda31c.png\" class=\"latex\" alt=\"$129$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> = <img src=\"//latex.artofproblemsolving.com/b/d/4/bd4aacb5bc90179791547ef1a47f9d5147bac322.png\" class=\"latex\" alt=\"$16641$\" style=\"vertical-align: -1px\" width=\"47\" height=\"14\" />  (Does not work)\n</p><p><img src=\"//latex.artofproblemsolving.com/a/7/3/a73e337d455df9943a5fcd2af1514061aa060ddd.png\" class=\"latex\" alt=\"$A=3$\" style=\"vertical-align: -1px\" width=\"49\" height=\"14\" />:\n</p><p><img src=\"//latex.artofproblemsolving.com/c/d/f/cdfe592c0de43e99a92604c8da6f92c6708e919d.png\" class=\"latex\" alt=\"$139$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> <img src=\"//latex.artofproblemsolving.com/8/f/1/8f1fb66751f2ee2626c75303485dba473c39a2f2.png\" class=\"latex\" alt=\"$\\cdot$\" style=\"vertical-align: 3px\" width=\"3\" height=\"2\" /> <img src=\"//latex.artofproblemsolving.com/c/d/f/cdfe592c0de43e99a92604c8da6f92c6708e919d.png\" class=\"latex\" alt=\"$139$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> = <img src=\"//latex.artofproblemsolving.com/7/8/4/7840b006c1fa90a6f6764b59f50f87c3935b679c.png\" class=\"latex\" alt=\"$19321$\" style=\"vertical-align: -1px\" width=\"47\" height=\"14\" />\n</p><p>This works as it fits the template: <img src=\"//latex.artofproblemsolving.com/7/4/d/74d09503404104d3dbcd346abb1e9b183233a8d0.png\" class=\"latex\" alt=\"$\\boxed{\\textbf{(S=1, T=9, A=3, and R=2)}}$\" style=\"vertical-align: -11px\" width=\"250\" height=\"30\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908051233\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.039 seconds\nReal time usage: 0.040 seconds\nPreprocessor visited node count: 693/1000000\nPreprocessor generated node count: 1758/1000000\nPost‐expand include size: 1897/2097152 bytes\nTemplate argument size: 100/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 11660/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.750      1 Template:UNM-PNM_Math_Contest_box\n100.00%    2.750      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17120-0!canonical and timestamp 20240908051233 and revision id 197273\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2",
+          "byteoffset": 221,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2",
+          "byteoffset": 2251,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Prime Factorization",
+      "Diophantine Equations"
+    ]
+  },
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3",
+      "pageid": 17121,
+      "revid": 100607,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/9/e/9/9e9b01e32ab1f00dceffbf6199f0a25d1a451bb2.png\" class=\"latex\" alt=\"$f(x)=\\frac{x}{x-1}$\" style=\"vertical-align: -13px\" width=\"103\" height=\"33\" /> and <img src=\"//latex.artofproblemsolving.com/f/5/4/f548915ecbe42087258ec53873c8c182ea9b2a5e.png\" class=\"latex\" alt=\"$g(x)=\\frac{x}{3x-1}$\" style=\"vertical-align: -13px\" width=\"111\" height=\"33\" />. \n</p><p>(a) Determine <img src=\"//latex.artofproblemsolving.com/7/7/d/77de3602095d356b693a8affff2f66d92baa1b94.png\" class=\"latex\" alt=\"$f\\circ g(x)$\" style=\"vertical-align: -4px\" width=\"60\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/0/f/2/0f2149a3a77f823a303d09cd0f617eac6b751b65.png\" class=\"latex\" alt=\"$g\\circ f(x)$\" style=\"vertical-align: -4px\" width=\"60\" height=\"18\" />. \n</p><p>(b) Denote <img src=\"//latex.artofproblemsolving.com/d/6/8/d6820b2221a441fe5be0da11057b41c91721d5c9.png\" class=\"latex\" alt=\"$\\underbrace{h\\circ h\\circ \\cdot \\circ h}_\\text{n times}&#160;:= h^n$\" style=\"vertical-align: -23px\" width=\"136\" height=\"35\" />. \nDetermine all the functions in the set <img src=\"//latex.artofproblemsolving.com/1/7/5/17578c8a6678db4786e6541ee3aff70230fa91ba.png\" class=\"latex\" alt=\"$S = \\{H | H = (g\\circ f)^n\\circ g$\" style=\"vertical-align: -4px\" width=\"194\" height=\"18\" /> or <img src=\"//latex.artofproblemsolving.com/5/c/9/5c9141fc7f10c58675063bcfc2cfa6fe33cb988b.png\" class=\"latex\" alt=\"$H = (f\\circ g)^n\\circ f$\" style=\"vertical-align: -4px\" width=\"129\" height=\"18\" /> for some <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> a whole number<img src=\"//latex.artofproblemsolving.com/6/5/e/65e2585c1b1cd632b41a41481fd2ad44456aeec4.png\" class=\"latex\" alt=\"$\\}$\" style=\"vertical-align: -4px\" width=\"8\" height=\"18\" />. \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/8/e/f/8ef94f7da6d05c1420bd9afa79db082c9ce9028e.png\" class=\"latex\" alt=\"$S=\\Big\\{ \\frac{x}{(2n+1)x-1} | n\\in \\mathbb{Z} \\Big \\}$\" style=\"vertical-align: -17px\" width=\"219\" height=\"38\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908000503\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 153/1000000\nPreprocessor generated node count: 558/1000000\nPost‐expand include size: 1897/2097152 bytes\nTemplate argument size: 100/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1914/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.554      1 Template:UNM-PNM_Math_Contest_box\n100.00%    2.554      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17121-0!canonical and timestamp 20240908000503 and revision id 100607\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3",
+          "byteoffset": 435,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3",
+          "byteoffset": 519,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Function Composition",
+      "Graph Theory",
+      "Polynomials and Roots"
+    ]
+  },
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4",
+      "pageid": 17122,
+      "revid": 100608,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find a second-degree polynomial with integer coeﬃcients, <img src=\"//latex.artofproblemsolving.com/2/3/e/23e15593ac563c6b655cd4217872c4efb215d22c.png\" class=\"latex\" alt=\"$p(x) = ax^2 + bx + c$\" style=\"vertical-align: -4px\" width=\"157\" height=\"19\" />, such that <img src=\"//latex.artofproblemsolving.com/f/1/a/f1a39d5d513f9d86d5a6afe686813bdbbfdb76a1.png\" class=\"latex\" alt=\"$p(1),p(3),p(5)$\" style=\"vertical-align: -4px\" width=\"112\" height=\"18\" />, and <img src=\"//latex.artofproblemsolving.com/a/7/b/a7b68248c8649cab41ecd3efbc9f1782ecce06b5.png\" class=\"latex\" alt=\"$p(7)$\" style=\"vertical-align: -5px\" width=\"34\" height=\"20\" /> are perfect squares, but <img src=\"//latex.artofproblemsolving.com/e/1/b/e1b5a39632eb09829e575edc9b05b8f39401abcb.png\" class=\"latex\" alt=\"$p(2)$\" style=\"vertical-align: -4px\" width=\"31\" height=\"18\" /> is not.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Answer: A polynomial that satisﬁes the criteria is easily constructed by ﬁrst centering it at <img src=\"//latex.artofproblemsolving.com/e/a/7/ea768618848c1aea8a32490c327911e8ab7243a3.png\" class=\"latex\" alt=\"$x = 4$\" style=\"vertical-align: 0px\" width=\"43\" height=\"12\" />, that is <img src=\"//latex.artofproblemsolving.com/0/6/4/06433c554400aa028289c8444673be4e62994fc9.png\" class=\"latex\" alt=\"$p(x) = \\overline{a}(x-4)^2 + \\overline{c}$\" style=\"vertical-align: -4px\" width=\"162\" height=\"19\" />. Now we have two conditions: <img src=\"//latex.artofproblemsolving.com/6/d/d/6dd7e637cb56403fc0e402ff9056b6aba4d128c5.png\" class=\"latex\" alt=\"$n^2 = p(1) = 9\\overline{a}+\\overline{c}$\" style=\"vertical-align: -4px\" width=\"148\" height=\"19\" /> and <img src=\"//latex.artofproblemsolving.com/f/6/8/f681337bcd2439d498664b98b7127e46fb5961e3.png\" class=\"latex\" alt=\"$m^2 = p(3) = \\overline{a}+\\overline{c}$\" style=\"vertical-align: -4px\" width=\"144\" height=\"19\" /> that determines possible candidates that can then be checked against the condition that <img src=\"//latex.artofproblemsolving.com/e/1/b/e1b5a39632eb09829e575edc9b05b8f39401abcb.png\" class=\"latex\" alt=\"$p(2)$\" style=\"vertical-align: -4px\" width=\"31\" height=\"18\" /> is not a perfect square and the condition that the coeﬃcients are integers. A few possible answers are <img src=\"//latex.artofproblemsolving.com/2/0/4/204a16485297ddd31c575410d9aef7600c62e215.png\" class=\"latex\" alt=\"$(n,m,\\overline{a},\\overline{c}) = (0,4,-2,18),(1,3,-1,10),(2,6,-4,40),(3,5,-2,27),\\ldots$\" style=\"vertical-align: -4px\" width=\"551\" height=\"18\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908023705\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.028 seconds\nReal time usage: 0.118 seconds\nPreprocessor visited node count: 153/1000000\nPreprocessor generated node count: 558/1000000\nPost‐expand include size: 1897/2097152 bytes\nTemplate argument size: 100/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1962/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   12.187      1 Template:UNM-PNM_Math_Contest_box\n100.00%   12.187      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17122-0!canonical and timestamp 20240908023705 and revision id 100608\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4",
+          "byteoffset": 222,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4",
+          "byteoffset": 866,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Polynomials and Roots",
+      "Quadratic Formula",
+      "Diophantine Equations"
+    ]
+  },
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5",
+      "pageid": 17123,
+      "revid": 100609,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all real triples <img src=\"//latex.artofproblemsolving.com/c/7/3/c73ed093cc73a8d9a14185fa525e7067e5c3725d.png\" class=\"latex\" alt=\"$(x,y,z)$\" style=\"vertical-align: -4px\" width=\"58\" height=\"18\" /> which are solutions to the system:\n</p><p><img src=\"//latex.artofproblemsolving.com/0/a/c/0acc7cf8414d42f76fa843714f4034c6df55c33b.png\" class=\"latex\" alt=\"$x^3 + x^2y + x^2z = 40$\" style=\"vertical-align: -3px\" width=\"158\" height=\"18\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/1/a/b/1abe91b0e293974e90f029188f5553b416ed0ed6.png\" class=\"latex\" alt=\"$y^3 + y^2x + y^2z = 90$\" style=\"vertical-align: -3px\" width=\"157\" height=\"18\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/e/7/b/e7bef18c48175da69cd2bf18158ef51f37edc32a.png\" class=\"latex\" alt=\"$z^3 + z^2x + z^2y = 250$\" style=\"vertical-align: -3px\" width=\"165\" height=\"18\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>There are <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" /> solutions <img src=\"//latex.artofproblemsolving.com/8/9/9/899d41029683fdbdc6b45f22b1cba66ab1ce5665.png\" class=\"latex\" alt=\"$(2,3,5)$\" style=\"vertical-align: -4px\" width=\"56\" height=\"18\" /> or <img src=\"//latex.artofproblemsolving.com/9/0/5/905c22232f5bb60b529c2241abffe49a9380efcd.png\" class=\"latex\" alt=\"$(-\\sqrt[3]{\\frac{40}{3}} ,\\sqrt[3]{45},\\sqrt[3]{\\frac{5^4}{3}})$\" style=\"vertical-align: -14px\" width=\"156\" height=\"43\" /> or <img src=\"//latex.artofproblemsolving.com/1/f/5/1f5ffbd968f934c954cd5346a24ca580d95a47ec.png\" class=\"latex\" alt=\"$(\\sqrt[3]{20},-\\frac{3\\sqrt[3]{20}}{ 2} , \\frac{5\\sqrt[3]{20}}{ 2})$\" style=\"vertical-align: -12px\" width=\"171\" height=\"41\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908023705\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.029 seconds\nReal time usage: 0.120 seconds\nPreprocessor visited node count: 135/1000000\nPreprocessor generated node count: 518/1000000\nPost‐expand include size: 1897/2097152 bytes\nTemplate argument size: 100/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1550/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   15.011      1 Template:UNM-PNM_Math_Contest_box\n100.00%   15.011      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17123-0!canonical and timestamp 20240908023705 and revision id 100609\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5",
+          "byteoffset": 208,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5",
+          "byteoffset": 443,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Polynomials and Roots",
+      "Diophantine Equations",
+      "Systems of Equations"
+    ]
+  },
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6",
+      "pageid": 17124,
+      "revid": 100610,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>There are <img src=\"//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png\" class=\"latex\" alt=\"$12$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> stacks of <img src=\"//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png\" class=\"latex\" alt=\"$12$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> coins. Each of the coins in <img src=\"//latex.artofproblemsolving.com/c/6/8/c6878713578626763c38433b3f4c8c2205ad0c15.png\" class=\"latex\" alt=\"$11$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> of the <img src=\"//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png\" class=\"latex\" alt=\"$12$\" style=\"vertical-align: 0px\" width=\"17\" height=\"12\" /> stacks weighs <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> grams each. Suppose the coins in the remaining stack each weigh <img src=\"//latex.artofproblemsolving.com/d/2/4/d24a6676b044440199a3da3885a07fb0fb336b22.png\" class=\"latex\" alt=\"$9.9$\" width=\"22\" height=\"12\" /> grams. You are given one time access to a precise digital scale. Devise a plan to weigh some coins in precisely one weighing to determine which pile has the lighter coins. \n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>On the digital scale, place one coin from the 1st pile, 2 from the 2nd, 3 from the 3rd, continuing in this fashion until you have placed 12 from the 12th pile. The scale will have <img src=\"//latex.artofproblemsolving.com/b/8/e/b8ebe854e88405b5e57da4d99c23198789a7156e.png\" class=\"latex\" alt=\"$\\sum_{i=1}^{12}i=12\\cdot {13}/2 = 78$\" style=\"vertical-align: -20px\" width=\"168\" height=\"50\" /> coins. If the pile weighs 779.9g, the ﬁrst pile has the lighter coins. If the pile weighs 779.8g, the second pile has the lighter coins. And in general, if the pile weighs <img src=\"//latex.artofproblemsolving.com/c/5/6/c56b2a81bf2a6d692f7441509240b6cc69d3d634.png\" class=\"latex\" alt=\"$780-i\\cdot(.1)$\" style=\"vertical-align: -4px\" width=\"95\" height=\"18\" />, the ith pile has the lighter coins.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">Problem 7</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908034252\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.030 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 135/1000000\nPreprocessor generated node count: 518/1000000\nPost‐expand include size: 1897/2097152 bytes\nTemplate argument size: 100/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1392/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.375      1 Template:UNM-PNM_Math_Contest_box\n100.00%    4.375      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17124-0!canonical and timestamp 20240908034252 and revision id 100610\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6",
+          "byteoffset": 422,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6",
+          "byteoffset": 904,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Expected Value",
+      "Probability of Independent Events",
+      "Combinatorics"
+    ]
+  },
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7",
+      "pageid": 17125,
+      "revid": 100611,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find a formula for\n<img src=\"//latex.artofproblemsolving.com/2/0/d/20da502812c9992f10b0b45bf0e6248b69097ea5.png\" class=\"latex\" alt=\"$\\sum_{k=0}^{\\lfloor \\frac{n}{4} \\rfloor } \\binom{n}{4k}$\" style=\"vertical-align: -22px\" width=\"72\" height=\"55\" /> for any natural number <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />. \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/2/6/1/26176a66f4dc305faaec50fb99c74f46d3c9d0fa.png\" class=\"latex\" alt=\"$\\frac{2^n+(1+i)^n+(1-i)^n}{4}$\" style=\"vertical-align: -13px\" width=\"186\" height=\"39\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">Problem 6</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">Problem 8</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">6</a> <b>•</b> <a class=\"mw-selflink selflink\">7</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908021335\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.023 seconds\nReal time usage: 0.024 seconds\nPreprocessor visited node count: 90/1000000\nPreprocessor generated node count: 418/1000000\nPost‐expand include size: 1897/2097152 bytes\nTemplate argument size: 100/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 569/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.602      1 Template:UNM-PNM_Math_Contest_box\n100.00%    2.602      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17125-0!canonical and timestamp 20240908021335 and revision id 100611\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7",
+          "byteoffset": 146,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7",
+          "byteoffset": 204,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Binomial Theorem",
+      "Combination Formula",
+      "Generating Functions"
+    ]
+  },
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8",
+      "pageid": 17126,
+      "revid": 100613,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/0/d/4/0d4fb3befd32138ebd96c3e69941c940a1c7d0fb.png\" class=\"latexcenter\" alt=\"[asy]  pair C=(0,0),A=(0,12),B=(5,0); draw(C--A--B--C,dot); MP(&quot;A&quot;,A,N);MP(&quot;C&quot;,C,SW);MP(&quot;B&quot;,B,E);  real r=10/3; pair X=(0,r),Y=X+r*(12/13,5/13); draw(X--Y,dot); MP(&quot;X&quot;,X,W);MP(&quot;Y&quot;,Y,NE);  draw(circle(X,r));  MP(&quot;12&quot;,(0,8),W);MP(&quot;5&quot;,(2.5,0),S);  [/asy]\" width=\"172\" height=\"252\" />\n</p><p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be a right triangle with right angle at <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />. Suppose <img src=\"//latex.artofproblemsolving.com/d/6/d/d6ddf755b50701c255c065a1c2b6f40c089175d4.png\" class=\"latex\" alt=\"$AC = 12$\" style=\"vertical-align: 0px\" width=\"69\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/1/8/8/18873ba5dae90bd0238752b4cf8a422fedc84cc6.png\" class=\"latex\" alt=\"$BC = 5$\" width=\"61\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/7/3/2/73205379672e860eb250c541187600fae3a3e225.png\" class=\"latex\" alt=\"$CX$\" width=\"30\" height=\"12\" /> is the diameter of a semicircle, where <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> lies on <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> and the semicircle is tangent to side <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />. Find the radius of the semicircle.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Method 1:\n</p><p>We can compute the area in two ways: <img src=\"//latex.artofproblemsolving.com/2/f/c/2fce6224918c77069dd9131fc6e9dd63bbe1e6a6.png\" class=\"latex\" alt=\"$\\triangle{ABC} = \\frac{1}{2}\\cdot 5\\cdot 12 = 30$\" style=\"vertical-align: -12px\" width=\"191\" height=\"37\" /> or <img src=\"//latex.artofproblemsolving.com/3/2/7/327289ab6f1f33b266675a1f09466b0b1b09afde.png\" class=\"latex\" alt=\"$\\triangle{ABC}=\\triangle{ABX} +\\triangle{CBX} \\frac{1}{2}\\cdot{r}\\cdot{13}+\\frac{1}{2}\\cdot{r}\\cdot{5} = 9r$\" style=\"vertical-align: -12px\" width=\"414\" height=\"37\" />. Setting the two areas equal we obtain <img src=\"//latex.artofproblemsolving.com/5/9/e/59efe96276d51dc067248171545804c3471f3498.png\" class=\"latex\" alt=\"$r = \\frac{10}{3}$\" style=\"vertical-align: -12px\" width=\"53\" height=\"37\" />.\n</p><p><br />\n</p><p>Method 2:\nPlace the point C on the origin of the xy plane, <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> at <img src=\"//latex.artofproblemsolving.com/3/8/e/38ec6a35045b7cc0f04c4989a99570bcc29aee43.png\" class=\"latex\" alt=\"$(5,0)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> at <img src=\"//latex.artofproblemsolving.com/a/0/8/a08648694721d1ea0dce0949c4d4336b2813a933.png\" class=\"latex\" alt=\"$(12,0)$\" style=\"vertical-align: -5px\" width=\"51\" height=\"20\" />.\nPoint <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> lies at cartesian coordinate <img src=\"//latex.artofproblemsolving.com/0/7/9/079c557b86ce9aa37377f45f12f94b78c6ae7426.png\" class=\"latex\" alt=\"$(0,r)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" />. \nThe line AB has formula <img src=\"//latex.artofproblemsolving.com/5/1/c/51c83f98c4501c8013eb675863da1323805da738.png\" class=\"latex\" alt=\"$y=\\frac{12}{5}\\cdot(5-x)$\" style=\"vertical-align: -12px\" width=\"123\" height=\"37\" />.\nThe vector <img src=\"//latex.artofproblemsolving.com/3/1/d/31d8599ceac16ae46f3074a50f563acf5cfc3229.png\" class=\"latex\" alt=\"$\\vec{XY}$\" style=\"vertical-align: -1px\" width=\"33\" height=\"19\" /> has coordinates <img src=\"//latex.artofproblemsolving.com/c/a/c/cac2f2b05019d976111735127f3747f2e7ef2ec7.png\" class=\"latex\" alt=\"$r(12/13,5/13)$\" style=\"vertical-align: -4px\" width=\"111\" height=\"18\" /> since it has length <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" /> in the unit direction <img src=\"//latex.artofproblemsolving.com/f/e/1/fe12e7683f7ef89875cbda0d2183d41468b33a93.png\" class=\"latex\" alt=\"$(12,5)/13$\" style=\"vertical-align: -4px\" width=\"76\" height=\"18\" /> which is orthogonal to the line AB.\n</p><p>Then point Y has coordinates <img src=\"//latex.artofproblemsolving.com/1/a/4/1a454eddf696dabe0da10d50cd83069b23b5773e.png\" class=\"latex\" alt=\"$X + \\vec{XY}=(0,r)+r(12/13,5/13)$\" style=\"vertical-align: -4px\" width=\"267\" height=\"22\" /> and lies on the line <img src=\"//latex.artofproblemsolving.com/5/1/c/51c83f98c4501c8013eb675863da1323805da738.png\" class=\"latex\" alt=\"$y=\\frac{12}{5}\\cdot(5-x)$\" style=\"vertical-align: -12px\" width=\"123\" height=\"37\" />.\nSubstituting for these equations gives <img src=\"//latex.artofproblemsolving.com/5/9/e/59efe96276d51dc067248171545804c3471f3498.png\" class=\"latex\" alt=\"$r = \\frac{10}{3}$\" style=\"vertical-align: -12px\" width=\"53\" height=\"37\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">Problem 7</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">Problem 9</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">7</a> <b>•</b> <a class=\"mw-selflink selflink\">8</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908055344\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.032 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 297/1000000\nPreprocessor generated node count: 878/1000000\nPost‐expand include size: 1897/2097152 bytes\nTemplate argument size: 100/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4789/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.921      1 Template:UNM-PNM_Math_Contest_box\n100.00%    2.921      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17126-0!canonical and timestamp 20240908055344 and revision id 100613\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8",
+          "byteoffset": 589,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8",
+          "byteoffset": 1583,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pythagorean Theorem",
+      "Area of a Circle",
+      "Triangle Inequality"
+    ]
+  },
+  "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9": {
+    "parse": {
+      "title": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9",
+      "pageid": 17127,
+      "revid": 100614,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider a triangulation (mesh) of a polygonal domain like the one in the ﬁgure below. (a) Given the vertices of a triangle, devise a strategy for determining if a given point is inside that triangle. (b) Will your strategy work for polygons with more than three sides? (c) After implementing your strategy in an optimally eﬃcient computer code you ﬁnd that the search for a problem with <img src=\"//latex.artofproblemsolving.com/e/5/9/e59e2c6e83eb78cca610a5fd4070ae01c8d4ae60.png\" class=\"latex\" alt=\"$100$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> triangles, on average, takes <img src=\"//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png\" class=\"latex\" alt=\"$10$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> seconds. You reﬁne the triangulation by subdividing each of the triangles into smaller triangles by placing a new vertex at the center of gravity of each triangle. On average, how long will it take to ﬁnd a point in the new mesh?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Various solutions are possible. For example, a simple algorithm is to walk around the polygon along one side at the time. If the point is always to the left (or always to the right) of the line in the plane that coincides with the current side, then the point is inside (for triangles this is done by dot-products). Another option is to use the Jordan Curve Theorem: “Any continuous simple closed curve in the plane, separates the plane into two disjoint regions, the inside and the outside”. This theorem implies that if one casts a ray from the point at hand in any direction and count the number of intersections of the ray and the boundary of the polygon. If the number of crossings is odd then the point is inside, see Figure&#160;??. The complexity will typically be linear so the new search will, on average, take half a minute as the number of triangles have grown by a factor of three. This problem is of signiﬁcant practical importance in computer graphics. Additional information can be found at: \n</p>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Point_in_polygon\">Point in Polygon</a></li></ul>\n<p>If one only consider triangles there are three techniques that are particularly popular: barycentric coordinate system, parametric equations system, check sides with dot product. These are described (along with explicit formulas and computer codes) in this blog post: \n</p>\n<ul><li><a rel=\"nofollow\" class=\"external text\" href=\"http://totologic.blogspot.fr/2014/01/accurate-point-in-triangle-test.html\">Point in Triangle Test</a></li></ul>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II\">2017 UNM-PNM Contest II</a></b> (<b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Answer_Key\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://mathcontest.unm.edu/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">Problem 8</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">Problem 10</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_1\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_2\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_3\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_4\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_5\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_6\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_7\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_8\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8\">8</a> <b>•</b> <a class=\"mw-selflink selflink\">9</a> <b>•</b> <a href=\"/wiki/index.php/2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_10\" title=\"2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/UNM-PNM_Statewide_High_School_Mathematics_Contest\" title=\"UNM-PNM Statewide High School Mathematics Contest\"> All UNM-PNM Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908055345\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.024 seconds\nReal time usage: 0.025 seconds\nPreprocessor visited node count: 81/1000000\nPreprocessor generated node count: 398/1000000\nPost‐expand include size: 1899/2097152 bytes\nTemplate argument size: 102/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 343/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.570      1 Template:UNM-PNM_Math_Contest_box\n100.00%    2.570      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17127-0!canonical and timestamp 20240908055345 and revision id 100614\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "UNM-PNM Statewide High School Mathematics Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNM-PNM Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://en.wikipedia.org/wiki/Point_in_polygon",
+        "http://totologic.blogspot.fr/2014/01/accurate-point-in-triangle-test.html",
+        "http://mathcontest.unm.edu/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9",
+          "byteoffset": 2,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9",
+          "byteoffset": 698,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2017_UNM-PNM_Statewide_High_School_Mathematics_Contest_II_Problems/Problem_9",
+          "byteoffset": 2156,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2017 UNM-PNM Statewide High School Mathematics Contest II Problems/Problem 9",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Area of a Circle",
+      "Geometric Mean",
+      "Triangle Inequality"
+    ]
+  }
+}

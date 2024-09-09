@@ -1,0 +1,673 @@
+{
+  "2009 IMO Problems/Problem 1": {
+    "parse": {
+      "title": "2009 IMO Problems/Problem 1",
+      "pageid": 8300,
+      "revid": 204538,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> be a positive integer and let <img src=\"//latex.artofproblemsolving.com/9/d/4/9d43f85698b8d1250316b575e6c79c4250708ba5.png\" class=\"latex\" alt=\"$a_1,\\ldots,a_k (k\\ge2)$\" style=\"vertical-align: -4px\" width=\"131\" height=\"18\" /> be distinct integers in the set <img src=\"//latex.artofproblemsolving.com/5/a/5/5a5f1c3191725ed0fe5e5809e2e707141b876495.png\" class=\"latex\" alt=\"$\\{1,\\ldots,n\\}$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" /> such that <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> divides <img src=\"//latex.artofproblemsolving.com/3/5/4/3546ec8332d6784455952774050f4cf5cd2588b8.png\" class=\"latex\" alt=\"$a_i(a_{i+1}-1)$\" style=\"vertical-align: -4px\" width=\"91\" height=\"18\" /> for <img src=\"//latex.artofproblemsolving.com/8/5/f/85f9e32cd8c03d88a00f03b82fa36fa44f07cbe1.png\" class=\"latex\" alt=\"$i=1,\\ldots,k-1$\" style=\"vertical-align: -3px\" width=\"120\" height=\"16\" />. Prove that <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> doesn't divide <img src=\"//latex.artofproblemsolving.com/1/9/c/19c6b53a225bccd0246cf98a5b5bab093dd41005.png\" class=\"latex\" alt=\"$a_k(a_1-1)$\" style=\"vertical-align: -4px\" width=\"78\" height=\"18\" />.\n</p><p><i>Author: Ross Atkins, Australia</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/3/e/e/3ee63f8af268add477a76c13a52aec642a1f1e43.png\" class=\"latex\" alt=\"$n=pq$\" style=\"vertical-align: -3px\" width=\"52\" height=\"11\" /> such that <img src=\"//latex.artofproblemsolving.com/4/9/3/49359ae4e564a4b017fd41779234cd785927a35d.png\" class=\"latex\" alt=\"$p\\mid a_1$\" style=\"vertical-align: -4px\" width=\"40\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/4/a/2/4a2dbaa548cf4bbd61e05af25b0fc738a47357a2.png\" class=\"latex\" alt=\"$q\\mid a_2-1$\" style=\"vertical-align: -4px\" width=\"71\" height=\"18\" />. Suppose <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> divides <img src=\"//latex.artofproblemsolving.com/1/9/c/19c6b53a225bccd0246cf98a5b5bab093dd41005.png\" class=\"latex\" alt=\"$a_k(a_1-1)$\" style=\"vertical-align: -4px\" width=\"78\" height=\"18\" />. \nNote <img src=\"//latex.artofproblemsolving.com/4/a/2/4a2dbaa548cf4bbd61e05af25b0fc738a47357a2.png\" class=\"latex\" alt=\"$q\\mid a_2-1$\" style=\"vertical-align: -4px\" width=\"71\" height=\"18\" /> implies <img src=\"//latex.artofproblemsolving.com/6/e/4/6e497c4967b5fff24ada3e672f19c6e49f078de7.png\" class=\"latex\" alt=\"$(q,a_2)=1$\" style=\"vertical-align: -4px\" width=\"80\" height=\"18\" /> and hence <img src=\"//latex.artofproblemsolving.com/f/a/0/fa0e7c44299dea5b441ea232659d419016e7ec15.png\" class=\"latex\" alt=\"$q\\mid a_3-1$\" style=\"vertical-align: -4px\" width=\"71\" height=\"18\" />. Similarly one has <img src=\"//latex.artofproblemsolving.com/0/c/6/0c6e0e7d7de085cb5dd03c8d855de0ec0de77ba0.png\" class=\"latex\" alt=\"$q\\mid a_i-1$\" style=\"vertical-align: -4px\" width=\"69\" height=\"18\" /> for all <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" />'s, in particular, <img src=\"//latex.artofproblemsolving.com/4/9/3/49359ae4e564a4b017fd41779234cd785927a35d.png\" class=\"latex\" alt=\"$p\\mid a_1$\" style=\"vertical-align: -4px\" width=\"40\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/2/1/1/21121c1959f069741ba2f833da53e85ec7f77724.png\" class=\"latex\" alt=\"$q\\mid a_1-1$\" style=\"vertical-align: -4px\" width=\"71\" height=\"18\" /> force <img src=\"//latex.artofproblemsolving.com/d/4/8/d48040616886b5d2b23ba369d73e79d6a6ed0f4f.png\" class=\"latex\" alt=\"$(p,q)=1$\" style=\"vertical-align: -4px\" width=\"72\" height=\"18\" />. Now <img src=\"//latex.artofproblemsolving.com/6/8/2/6822fdba08ba9af1157ea578910b7fe2b1dce0b8.png\" class=\"latex\" alt=\"$(p,a_1-1)=1$\" style=\"vertical-align: -4px\" width=\"112\" height=\"18\" /> gives <img src=\"//latex.artofproblemsolving.com/8/4/2/84289591bc6315cd9d0ef1b4d97a7e08e1728615.png\" class=\"latex\" alt=\"$p\\mid a_k$\" style=\"vertical-align: -5px\" width=\"44\" height=\"20\" />, similarly one has <img src=\"//latex.artofproblemsolving.com/f/b/c/fbcca68b8ac18e21bd156f429d1a095359c3fb0b.png\" class=\"latex\" alt=\"$p\\mid a_i$\" style=\"vertical-align: -4px\" width=\"39\" height=\"18\" /> for all <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" />'s, that is <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" />'s satisfy <img src=\"//latex.artofproblemsolving.com/f/b/c/fbcca68b8ac18e21bd156f429d1a095359c3fb0b.png\" class=\"latex\" alt=\"$p\\mid a_i$\" style=\"vertical-align: -4px\" width=\"39\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/0/c/6/0c6e0e7d7de085cb5dd03c8d855de0ec0de77ba0.png\" class=\"latex\" alt=\"$q\\mid a_i-1$\" style=\"vertical-align: -4px\" width=\"69\" height=\"18\" />, but there should be at most one such integer satisfies them within the range of <img src=\"//latex.artofproblemsolving.com/1/6/7/167ee76d3b20f5af5c140a0b439179db809f7e2a.png\" class=\"latex\" alt=\"$1,2,\\ldots,n$\" style=\"vertical-align: -3px\" width=\"77\" height=\"15\" /> for <img src=\"//latex.artofproblemsolving.com/3/e/e/3ee63f8af268add477a76c13a52aec642a1f1e43.png\" class=\"latex\" alt=\"$n=pq$\" style=\"vertical-align: -3px\" width=\"52\" height=\"11\" /> and <img src=\"//latex.artofproblemsolving.com/d/4/8/d48040616886b5d2b23ba369d73e79d6a6ed0f4f.png\" class=\"latex\" alt=\"$(p,q)=1$\" style=\"vertical-align: -4px\" width=\"72\" height=\"18\" />. A contradiction!!!\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/0/5/3/053ec2788051a472c4947c4a15c66b2609cddf61.png\" class=\"latex\" alt=\"$n = p_1^{b_1}p_2^{b_2} \\cdots p_s^{b_s}$\" style=\"vertical-align: -5px\" width=\"131\" height=\"22\" />. Then after toying around with the <img src=\"//latex.artofproblemsolving.com/e/6/9/e69c5d6da6688d57cfa43d34422b807d5475b7aa.png\" class=\"latex\" alt=\"$p_i^{b_i}$\" style=\"vertical-align: -5px\" width=\"23\" height=\"22\" /> and what they divide, we have that <img src=\"//latex.artofproblemsolving.com/d/8/1/d8158e58e6b0eafd061c439dfc46428e449260d5.png\" class=\"latex\" alt=\"$p_i^{b_i} \\nmid a_k$\" style=\"vertical-align: -5px\" width=\"56\" height=\"22\" />, and so in particular, <img src=\"//latex.artofproblemsolving.com/0/6/8/068f17f7a59326b589b35addc55837bbec68ed1a.png\" class=\"latex\" alt=\"$n \\nmid a_k$\" style=\"vertical-align: -5px\" width=\"46\" height=\"20\" />.\n</p><p>Assume by way of contradiction that <img src=\"//latex.artofproblemsolving.com/8/c/e/8ce020edf45e02a6fae933439db9ecd94a06ad59.png\" class=\"latex\" alt=\"$n \\mid a_k(a_1 - 1)$\" style=\"vertical-align: -5px\" width=\"108\" height=\"20\" />. Then <img src=\"//latex.artofproblemsolving.com/f/f/0/ff03b721f623e4c9ab0b56715e1fd29f945d8684.png\" class=\"latex\" alt=\"$n \\mid a_1 - 1$\" style=\"vertical-align: -5px\" width=\"76\" height=\"20\" />. Now we shift our view towards the <img src=\"//latex.artofproblemsolving.com/7/0/e/70e338a239ecea58b6cb83f00153015286c8e1d6.png\" class=\"latex\" alt=\"$a_i(a_{i + 1} - 1)$\" style=\"vertical-align: -5px\" width=\"94\" height=\"20\" />. Here each <img src=\"//latex.artofproblemsolving.com/e/6/9/e69c5d6da6688d57cfa43d34422b807d5475b7aa.png\" class=\"latex\" alt=\"$p_i^{b_i}$\" style=\"vertical-align: -5px\" width=\"23\" height=\"22\" /> divides <img src=\"//latex.artofproblemsolving.com/d/4/a/d4a8e19384f51d7636809096effe0484b0192773.png\" class=\"latex\" alt=\"$a_i(a_{i + 1} - 1) \\implies a_ia_{i + 1} \\equiv a_i \\pmod{p_i^{b_i}}$\" style=\"vertical-align: -5px\" width=\"315\" height=\"22\" />. Hence we have the chain of equivalences <img src=\"//latex.artofproblemsolving.com/5/3/a/53a192e67aa11a7a90494115d4cb9f35cc4f7c2f.png\" class=\"latex\" alt=\"$a_1a_2 \\equiv a_1 \\pmod{p_i^{b_i}}, a_2a_3 \\equiv a_2 \\pmod{p_i^{b_i}}, \\dots, a_{k - 1}a_k \\equiv a_{k - 1} \\pmod {p_i^{b_i}}$\" style=\"vertical-align: -5px\" width=\"565\" height=\"22\" />. Now we also have that <img src=\"//latex.artofproblemsolving.com/a/a/8/aa8f56b6f701e37e2767ef494fb300cb200cbf3d.png\" class=\"latex\" alt=\"$p_i^{b_i} \\mid n \\mid a_1 - 1$\" style=\"vertical-align: -5px\" width=\"112\" height=\"22\" />. Thus <img src=\"//latex.artofproblemsolving.com/d/d/c/ddc0bb4282f98950ef6e706f5858dd42432206b8.png\" class=\"latex\" alt=\"$a_1 \\equiv 1 \\pmod{p_i^{b_i}}$\" style=\"vertical-align: -5px\" width=\"136\" height=\"22\" />. Now plugging this value of <img src=\"//latex.artofproblemsolving.com/1/a/b/1ab39d761413804680d26d972381f028001562f5.png\" class=\"latex\" alt=\"$a_1$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> modulo <img src=\"//latex.artofproblemsolving.com/e/6/9/e69c5d6da6688d57cfa43d34422b807d5475b7aa.png\" class=\"latex\" alt=\"$p_i^{b_i}$\" style=\"vertical-align: -5px\" width=\"23\" height=\"22\" />, we obtain that <img src=\"//latex.artofproblemsolving.com/e/2/d/e2ddf8e3696afd4f2d6dc028c3d520ec8d7771a3.png\" class=\"latex\" alt=\"$a_1 \\equiv a_2 \\equiv a_3 \\equiv \\cdots a_k \\equiv 1 \\pmod{p_i^{b_i}}$\" style=\"vertical-align: -5px\" width=\"285\" height=\"22\" />. Hence this chain of congruences is also true for <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> as <img src=\"//latex.artofproblemsolving.com/2/4/5/245a5501248a6ea24f520f76d4140cedf08e1674.png\" class=\"latex\" alt=\"$p_i$\" style=\"vertical-align: -3px\" width=\"14\" height=\"11\" /> was arbitrary. However as all the <img src=\"//latex.artofproblemsolving.com/7/3/a/73a169eee68c5d859c55bef6908fb13e721f9fd1.png\" class=\"latex\" alt=\"$a_i \\in \\{1, 2, \\dots, n\\}$\" style=\"vertical-align: -5px\" width=\"135\" height=\"20\" /> we have that not all the <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" /> are distinct, and so this is a contradiction.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_1&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2009_IMO\" title=\"2009 IMO\">2009 IMO</a></b> (<b><a href=\"/wiki/index.php/2009_IMO_Problems\" title=\"2009 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_2\" title=\"2009 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_3\" title=\"2009 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_4\" title=\"2009 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_5\" title=\"2009 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_6\" title=\"2009 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_2\" title=\"2009 IMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907104031\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.029 seconds\nReal time usage: 0.030 seconds\nPreprocessor visited node count: 488/1000000\nPreprocessor generated node count: 1173/1000000\nPost‐expand include size: 866/2097152 bytes\nTemplate argument size: 51/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 9070/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.181      1 Template:IMO_box\n100.00%    2.181      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8300-0!canonical and timestamp 20240907104031 and revision id 204538\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_IMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2009_IMO_Problems/Problem_1",
+          "byteoffset": 358,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2009_IMO_Problems/Problem_1",
+          "byteoffset": 1165,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2009_IMO_Problems/Problem_1",
+          "byteoffset": 2428,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 IMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Greatest Common Divisor (GCD)",
+      "Pigeonhole Principle"
+    ]
+  },
+  "2009 IMO Problems/Problem 2": {
+    "parse": {
+      "title": "2009 IMO Problems/Problem 2",
+      "pageid": 8301,
+      "revid": 225570,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Video_Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Video Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Diagram\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">Diagram</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be a triangle with circumcentre <img src=\"//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png\" class=\"latex\" alt=\"$O$\" width=\"13\" height=\"12\" />. The points <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> are interior points of the sides <img src=\"//latex.artofproblemsolving.com/e/6/5/e657259c0995d2c36d46744bb4aa81471e6575ec.png\" class=\"latex\" alt=\"$CA$\" width=\"28\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> respectively. Let <img src=\"//latex.artofproblemsolving.com/9/1/4/9141cf60419b778a5a3a2d5c6ef4d5e5200ff45a.png\" class=\"latex\" alt=\"$K,L$\" style=\"vertical-align: -3px\" width=\"36\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> be the midpoints of the segments <img src=\"//latex.artofproblemsolving.com/6/6/6/666a267ed622c158b00676df18f0fd043c8504e5.png\" class=\"latex\" alt=\"$BP,CQ$\" style=\"vertical-align: -3px\" width=\"63\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" />, respectively, and let <img src=\"//latex.artofproblemsolving.com/9/1/3/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png\" class=\"latex\" alt=\"$\\Gamma$\" style=\"vertical-align: 0px\" width=\"11\" height=\"13\" /> be the circle passing through <img src=\"//latex.artofproblemsolving.com/9/1/4/9141cf60419b778a5a3a2d5c6ef4d5e5200ff45a.png\" class=\"latex\" alt=\"$K,L$\" style=\"vertical-align: -3px\" width=\"36\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. Suppose that the line <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png\" class=\"latex\" alt=\"$PQ$\" style=\"vertical-align: -3px\" width=\"27\" height=\"16\" /> is tangent to the circle <img src=\"//latex.artofproblemsolving.com/9/1/3/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png\" class=\"latex\" alt=\"$\\Gamma$\" style=\"vertical-align: 0px\" width=\"11\" height=\"13\" />. Prove that <img src=\"//latex.artofproblemsolving.com/7/4/e/74e6b8eb3853536162118052909c13b675829f53.png\" class=\"latex\" alt=\"$OP=OQ$\" style=\"vertical-align: -3px\" width=\"80\" height=\"16\" />. \n</p><p><i>Author: Sergei Berlov, Russia</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Video_Solution\">Video Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Video Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://youtu.be/c1zwoYCMR28\">https://youtu.be/c1zwoYCMR28</a>\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h3><span class=\"mw-headline\" id=\"Diagram\">Diagram</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_2&amp;action=edit&amp;section=4\" title=\"Edit section: Diagram\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p><img src=\"//latex.artofproblemsolving.com/a/5/e/a5e2ab80a07a1e3b2c6085f96ff2d9918f03420b.png\" class=\"latexcenter\" alt=\"[asy] dot(&quot;O&quot;, (50, 38), N); dot(&quot;A&quot;, (40, 100), N); dot(&quot;B&quot;, (0, 0), S); dot(&quot;C&quot;, (100, 0), S); dot(&quot;Q&quot;, (24, 60), W); dot(&quot;P&quot;, (52, 80), E); dot(&quot;L&quot;, (62, 30), SE); dot(&quot;M&quot;, (38, 70), N); dot(&quot;K&quot;, (27, 42), W); draw((100, 0)--(24, 60), dotted); draw((0, 0)--(52, 80), dashed); draw((0, 0)--(100, 0)--(40, 100)--cycle); draw((24, 60)--(52, 80)); draw((27, 42)--(38, 70)--(62, 30)--cycle); draw(circle((49, 49), 23)); label(&quot;$\\Gamma$&quot;, (72, 49), E); draw(circle((50, 38), 63)); label(&quot;$\\omega$&quot;, (-13, 38), NW); [/asy]\" width=\"252\" height=\"252\" />\nDiagram by qwertysri987\n</p>\n<hr />\n<p>By parallel lines and the tangency condition, <img src=\"//latex.artofproblemsolving.com/1/3/6/1365f528027535869e44078ab8b2617fff874219.png\" class=\"latexcenter\" alt=\"\\[\\angle APM\\cong \\angle LMP \\cong \\angle LKM.\\]\" width=\"231\" height=\"13\" /> Similarly, <img src=\"//latex.artofproblemsolving.com/2/1/d/21d90488798387cebb7eed35bf3360df74a54d71.png\" class=\"latexcenter\" alt=\"\\[\\angle AQP\\cong \\angle KLM,\\]\" width=\"143\" height=\"16\" /> so AA similarity implies <img src=\"//latex.artofproblemsolving.com/1/7/7/17760a0f4f38356e1b8e5ebd37f90c199b297113.png\" class=\"latexcenter\" alt=\"\\[\\triangle APQ\\sim \\triangle MKL.\\]\" width=\"150\" height=\"17\" /> Let <img src=\"//latex.artofproblemsolving.com/5/4/d/54d7d48553f4d9e7ab418118607ea324cbfddfda.png\" class=\"latex\" alt=\"$\\omega$\" width=\"11\" height=\"8\" /> denote the circumcircle of <img src=\"//latex.artofproblemsolving.com/6/f/8/6f8dcf98ed1b21dbc446aa28d097d4281599c25e.png\" class=\"latex\" alt=\"$\\triangle ABC,$\" style=\"vertical-align: -3px\" width=\"62\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> its circumradius. As both <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> are inside <img src=\"//latex.artofproblemsolving.com/0/d/c/0dcdcd9c8cdbd7c4679fd83fca62a617ba3727fc.png\" class=\"latex\" alt=\"$\\omega,$\" style=\"vertical-align: -3px\" width=\"16\" height=\"11\" /> \n</p><p><img src=\"//latex.artofproblemsolving.com/d/8/7/d87988879827bec3d9a546c801e4965d8fa44a94.png\" class=\"latexcenter\" alt=\"\\begin{align*} R^2-QO^2&amp;=\\text{Pow}_{\\omega}(Q)\\\\ &amp;=QB\\cdot AQ \\\\ &amp;=2AQ\\cdot MK\\\\ &amp;=2AP\\cdot ML\\\\ &amp;=AP\\cdot PC\\\\ &amp;=\\text{Pow}_{\\omega}(P)\\\\ &amp;=R^2-PO^2. \\end{align*}\" width=\"190\" height=\"167\" /> It follows that <img src=\"//latex.artofproblemsolving.com/1/d/e/1de021266fe2a83dc9bce964b7281d86dbc77720.png\" class=\"latex\" alt=\"$OP=OQ.$\" style=\"vertical-align: -3px\" width=\"85\" height=\"16\" /> <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_2&amp;action=edit&amp;section=5\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2009_IMO\" title=\"2009 IMO\">2009 IMO</a></b> (<b><a href=\"/wiki/index.php/2009_IMO_Problems\" title=\"2009 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_1\" title=\"2009 IMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_1\" title=\"2009 IMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_3\" title=\"2009 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_4\" title=\"2009 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_5\" title=\"2009 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_6\" title=\"2009 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_3\" title=\"2009 IMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908031404\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 306/1000000\nPreprocessor generated node count: 757/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5533/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.192      1 Template:IMO_box\n100.00%    2.192      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8301-0!canonical and timestamp 20240908031404 and revision id 225570\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://youtu.be/c1zwoYCMR28"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_IMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Video Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2009_IMO_Problems/Problem_2",
+          "byteoffset": 586,
+          "anchor": "Video_Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2009_IMO_Problems/Problem_2",
+          "byteoffset": 638,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Diagram",
+          "number": "3.1",
+          "index": "4",
+          "fromtitle": "2009_IMO_Problems/Problem_2",
+          "byteoffset": 653,
+          "anchor": "Diagram"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "5",
+          "fromtitle": "2009_IMO_Problems/Problem_2",
+          "byteoffset": 1907,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 IMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Power of a Point",
+      "Circumcenter",
+      "Angle Bisector Theorem"
+    ]
+  },
+  "2009 IMO Problems/Problem 3": {
+    "parse": {
+      "title": "2009 IMO Problems/Problem 3",
+      "pageid": 8302,
+      "revid": 204540,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Suppose that <img src=\"//latex.artofproblemsolving.com/b/7/d/b7dd022774271e03b3e6fa8e84093b89e1aec93d.png\" class=\"latex\" alt=\"$s_1,s_2,s_3,\\ldots$\" style=\"vertical-align: -3px\" width=\"92\" height=\"11\" /> is a strictly increasing sequence of positive integers such that the subsequences \n</p>\n<center> <img src=\"//latex.artofproblemsolving.com/5/7/8/578b37a84533d816f7bb21a83536aa751620abc2.png\" class=\"latex\" alt=\"$s_{s_1},s_{s_2},s_{s_3},\\ldots$\" style=\"vertical-align: -5px\" width=\"110\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/9/4/3/943bd637535b539c3df40146ad44f3ab658db56c.png\" class=\"latex\" alt=\"$s_{s_1+1},s_{s_2+1},s_{s_3+1},\\ldots$\" style=\"vertical-align: -5px\" width=\"160\" height=\"13\" /> </center>\n<p>are both arithmetic progressions. Prove that the sequence <img src=\"//latex.artofproblemsolving.com/b/7/d/b7dd022774271e03b3e6fa8e84093b89e1aec93d.png\" class=\"latex\" alt=\"$s_1,s_2,s_3,\\ldots$\" style=\"vertical-align: -3px\" width=\"92\" height=\"11\" /> is itself an arithmetic progression.\n</p><p><i>Author: Gabriel Carroll, USA</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>then \n</p>\n<pre>S(s2) - S(s1) = S(s3) - S(s2)\n2S(s2) = S(s1) + S(s3)\n</pre>\n<p>i.s.w.\n</p>\n<pre>2S(s2+1) = S(s1+1) + S(s3+1)\n2S(s2) = S(s1) + S(s3)\n</pre>\n<p>put S(3) = b, S(2) = a, S(1) = k\n</p>\n<pre>--&gt; 2S(k+1) = S(a+1) + S(b+1)\n    2S(k) = S(a) + S(b)\n    \n**if there is S(x) = a,b,k (which is an arithmetic sequence) --&gt; we have 2S(k) = S(a) + S(b) ... (1), 2S(k+1) = S(a+1) + S(b+1) ...(2)\n  but also, by (2), we have 2S(k+2) = S(a+2) + S(b+2) \n                                     ....\n                     we get 2S(b+a) = S(z) + S(y)\n</pre>\n<p>therefore, \nevery S(n) is an arithmetic sequence.\nQ.E.D.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2009_IMO\" title=\"2009 IMO\">2009 IMO</a></b> (<b><a href=\"/wiki/index.php/2009_IMO_Problems\" title=\"2009 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_2\" title=\"2009 IMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_1\" title=\"2009 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_2\" title=\"2009 IMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_4\" title=\"2009 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_5\" title=\"2009 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_6\" title=\"2009 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_4\" title=\"2009 IMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907212352\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.022 seconds\nReal time usage: 0.023 seconds\nPreprocessor visited node count: 73/1000000\nPreprocessor generated node count: 249/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 784/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.737      1 Template:IMO_box\n100.00%    1.737      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8302-0!canonical and timestamp 20240907212352 and revision id 204540\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_IMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2009_IMO_Problems/Problem_3",
+          "byteoffset": 424,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2009_IMO_Problems/Problem_3",
+          "byteoffset": 1000,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 IMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Monotonic Sequences",
+      "Sequences and Series",
+      "Arithmetic Progression"
+    ]
+  },
+  "2009 IMO Problems/Problem 4": {
+    "parse": {
+      "title": "2009 IMO Problems/Problem 4",
+      "pageid": 8303,
+      "revid": 221346,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be a triangle with <img src=\"//latex.artofproblemsolving.com/3/c/9/3c99bbe74cccdc92b249d376f13d9429d41a8b7a.png\" class=\"latex\" alt=\"$AB=AC$\" width=\"80\" height=\"13\" />. The angle bisectors of <img src=\"//latex.artofproblemsolving.com/d/3/9/d39a4406ab9a6a9f1d35009c2e18008d1888fc4a.png\" class=\"latex\" alt=\"$\\angle CAB$\" width=\"54\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/a/3/a/a3ad57710b6810476e6017ea2c2cc6d41219c218.png\" class=\"latex\" alt=\"$\\angle ABC$\" style=\"vertical-align: -1px\" width=\"57\" height=\"14\" /> meet the sides <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/e/6/5/e657259c0995d2c36d46744bb4aa81471e6575ec.png\" class=\"latex\" alt=\"$CA$\" width=\"28\" height=\"13\" /> at <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />, respectively. Let <img src=\"//latex.artofproblemsolving.com/d/f/b/dfb064112b6c94470339f6571f69d07afc1c024c.png\" class=\"latex\" alt=\"$K$\" width=\"16\" height=\"12\" /> be the incenter of triangle <img src=\"//latex.artofproblemsolving.com/8/4/0/840cb55c82434b9ae047760636a017e9441e6ca5.png\" class=\"latex\" alt=\"$ADC$\" style=\"vertical-align: -1px\" width=\"45\" height=\"14\" />. Suppose that <img src=\"//latex.artofproblemsolving.com/f/9/a/f9ad63616bd49b87f4b738bc90b17d6a77352d7b.png\" class=\"latex\" alt=\"$\\angle BEK=45^\\circ$\" style=\"vertical-align: 0px\" width=\"107\" height=\"13\" />. Find all possible values of <img src=\"//latex.artofproblemsolving.com/d/3/9/d39a4406ab9a6a9f1d35009c2e18008d1888fc4a.png\" class=\"latex\" alt=\"$\\angle CAB$\" width=\"54\" height=\"13\" />. \n</p><p><i>Authors: Jan Vonk and Peter Vandendriessche, Belgium, and Hojoo Lee, South Korea</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2009_IMO_Problems/Problem_4&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2009_IMO\" title=\"2009 IMO\">2009 IMO</a></b> (<b><a href=\"/wiki/index.php/2009_IMO_Problems\" title=\"2009 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_3\" title=\"2009 IMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_1\" title=\"2009 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_2\" title=\"2009 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_3\" title=\"2009 IMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_5\" title=\"2009 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_6\" title=\"2009 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_5\" title=\"2009 IMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907212352\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 153/1000000\nPreprocessor generated node count: 441/1000000\nPost‐expand include size: 1317/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1911/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.289      1 -total\n 52.39%    1.723      1 Template:IMO_box\n 44.66%    1.469      1 Template:Solution\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8303-0!canonical and timestamp 20240907212352 and revision id 221346\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_IMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2009_IMO_Problems/Problem_4",
+          "byteoffset": 506,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2009_IMO_Problems/Problem_4",
+          "byteoffset": 533,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 IMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Angle Bisector Theorem",
+      "Law of Sines",
+      "Incenter"
+    ]
+  },
+  "2009 IMO Problems/Problem 5": {
+    "parse": {
+      "title": "2009 IMO Problems/Problem 5",
+      "pageid": 8304,
+      "revid": 204542,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Determine all functions <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> from the set of positive integers to the set of positive integers such that, for all positive integers <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, there exists a non-degenerate triangle with sides of lengths \n</p>\n<center> <img src=\"//latex.artofproblemsolving.com/8/e/6/8e645a0393a2bb5633d525e276321203781753af.png\" class=\"latex\" alt=\"$a,f(b)$\" style=\"vertical-align: -4px\" width=\"49\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/7/e/2/7e24db20845eba2e50f55b74a222d4ef4858c53a.png\" class=\"latex\" alt=\"$f(b+f(a)-1)$\" style=\"vertical-align: -4px\" width=\"119\" height=\"18\" />. </center>\n<p>(A triangle is <i>non-degenerate</i> if its vertices are not collinear.) \n</p><p><i>Author: Bruno Le Floch, France</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Answer: The only such function is <img src=\"//latex.artofproblemsolving.com/4/8/7/4874544e2638f3712dbb70e5ccf37558a5fc0acb.png\" class=\"latex\" alt=\"$f(x)=x$\" style=\"vertical-align: -4px\" width=\"69\" height=\"18\" />.\n</p><p>It is easy to see that this function satisfy the condition. We are going to proof that this is the only such function. \n</p><p>We start with\n</p><p>Lemma. If 1, <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> are sides of a non-degenerate triangle then <img src=\"//latex.artofproblemsolving.com/5/a/b/5abd2c942ae299fd26e18d0ca5d390a7ca4a8c34.png\" class=\"latex\" alt=\"$a=b$\" width=\"42\" height=\"12\" />.\n</p><p>Proof. In this case <img src=\"//latex.artofproblemsolving.com/4/6/c/46c601bb05dde2137874d60f6e667882905e92d8.png\" class=\"latex\" alt=\"$a&lt;b+1$\" style=\"vertical-align: -1px\" width=\"72\" height=\"14\" />, therefore <img src=\"//latex.artofproblemsolving.com/3/5/e/35e1900f9ae83cebcbb5735f6c7bd6b6c505ba55.png\" class=\"latex\" alt=\"$a \\le b$\" style=\"vertical-align: -2px\" width=\"42\" height=\"15\" />. By the same reason, <img src=\"//latex.artofproblemsolving.com/2/3/b/23bf419c2c1fdcaeb436dd3913905a99d62a6330.png\" class=\"latex\" alt=\"$b \\le a$\" style=\"vertical-align: -2px\" width=\"41\" height=\"15\" />. Therefore <img src=\"//latex.artofproblemsolving.com/5/a/b/5abd2c942ae299fd26e18d0ca5d390a7ca4a8c34.png\" class=\"latex\" alt=\"$a=b$\" width=\"42\" height=\"12\" />.\n</p><p>Let <img src=\"//latex.artofproblemsolving.com/5/b/9/5b94e6c20e58291aec1f2d4faada4bdf12705a4a.png\" class=\"latex\" alt=\"$u=f(1)$\" style=\"vertical-align: -4px\" width=\"67\" height=\"18\" />. Now consider the given condition for <img src=\"//latex.artofproblemsolving.com/5/0/2/502e059d1a020b368aee3a99c5669d88331d321f.png\" class=\"latex\" alt=\"$a=1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" />. By Lemma we get that \n</p>\n<center> <img src=\"//latex.artofproblemsolving.com/4/8/0/4805b0a000399510ffe1dcbafe0605026493f1e9.png\" class=\"latex\" alt=\"$f(b)=f(b+u-1)$\" style=\"vertical-align: -4px\" width=\"152\" height=\"18\" /> for any <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />.  </center>\n<p>First, suppose <img src=\"//latex.artofproblemsolving.com/e/1/9/e19980c021a567022376a78a87f6094c8aa3a2b4.png\" class=\"latex\" alt=\"$u&gt;1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" />. Then <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> is a periodic function. But then <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> is bounded by a constant <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, i.e. <img src=\"//latex.artofproblemsolving.com/5/a/b/5ab5a2858299667f808cadac09a84f05c496ecdc.png\" class=\"latex\" alt=\"$f(x)&lt;M$\" style=\"vertical-align: -4px\" width=\"78\" height=\"18\" />. Then take, <img src=\"//latex.artofproblemsolving.com/0/9/0/090b7ae6a0e36353f5f4aa05ee2bfd20f336ee27.png\" class=\"latex\" alt=\"$a&gt;2M$\" style=\"vertical-align: 0px\" width=\"62\" height=\"13\" />. We get that <img src=\"//latex.artofproblemsolving.com/8/e/6/8e645a0393a2bb5633d525e276321203781753af.png\" class=\"latex\" alt=\"$a,f(b)$\" style=\"vertical-align: -4px\" width=\"49\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/7/e/2/7e24db20845eba2e50f55b74a222d4ef4858c53a.png\" class=\"latex\" alt=\"$f(b+f(a)-1)$\" style=\"vertical-align: -4px\" width=\"119\" height=\"18\" /> are sides of the triangle, but the first number is greater than <img src=\"//latex.artofproblemsolving.com/3/2/6/3266113d5495b881ec783fb0da58a679110d4301.png\" class=\"latex\" alt=\"$2M$\" width=\"28\" height=\"12\" /> and other two are less than <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, which is imposible. We get the contradiction, so <img src=\"//latex.artofproblemsolving.com/9/a/d/9ad99798ec4c38e165cf517cb9e02b1c9e824103.png\" class=\"latex\" alt=\"$u$\" width=\"10\" height=\"8\" /> could not be greater than 1.\n</p><p>So <img src=\"//latex.artofproblemsolving.com/d/6/0/d60f9270afb4c3f993c921f9779d6d9a4eb09a56.png\" class=\"latex\" alt=\"$u=f(1)=1$\" style=\"vertical-align: -4px\" width=\"101\" height=\"18\" />.\n</p><p>Property 1. For any <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> \n</p>\n<center> <img src=\"//latex.artofproblemsolving.com/5/7/7/577d36f19d8078a378cba936d43eb40151b1e13d.png\" class=\"latex\" alt=\"$f(f(x)) = x$\" style=\"vertical-align: -4px\" width=\"94\" height=\"18\" /> </center>\n<p>Proof. Consider the given condition for <img src=\"//latex.artofproblemsolving.com/8/3/8/838a259caf8df0b41c91e3aaeff66d6ee9d1c897.png\" class=\"latex\" alt=\"$a=x$\" width=\"44\" height=\"8\" />, <img src=\"//latex.artofproblemsolving.com/c/f/5/cf590e9abb33aa9776ddc386b1ba6ee7b43fa413.png\" class=\"latex\" alt=\"$b=1$\" style=\"vertical-align: 0px\" width=\"40\" height=\"13\" /> and use Lemma.\n</p><p>Property 2. For any <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />\n</p>\n<center> <img src=\"//latex.artofproblemsolving.com/c/d/8/cd865d6d5edaa36b8e186fa54eb2412a1d9f7170.png\" class=\"latex\" alt=\"$f(x+1)+f(y) &gt; f(x+y)$\" style=\"vertical-align: -4px\" width=\"213\" height=\"18\" />  </center>\n<p>Proof. Consider the given condition for <img src=\"//latex.artofproblemsolving.com/8/7/5/8758400d80669f83ba8f3c0e7c89caca02288535.png\" class=\"latex\" alt=\"$a=f(x+1)$\" style=\"vertical-align: -4px\" width=\"99\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/0/a/0/0a00024b052f63c84ae1882bd40e1a38442bcfae.png\" class=\"latex\" alt=\"$b=y$\" style=\"vertical-align: -3px\" width=\"41\" height=\"16\" /> and use triangle inequality and Property 1.\n</p><p>Let <img src=\"//latex.artofproblemsolving.com/1/e/1/1e105e34d8e8c53aca79502ddaaecf977c90cf75.png\" class=\"latex\" alt=\"$g(x)=f(x+1)-1$\" style=\"vertical-align: -4px\" width=\"155\" height=\"18\" />.\n</p><p>Property 3. For any <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />\n</p>\n<center> <img src=\"//latex.artofproblemsolving.com/8/5/1/851e339147cbab9b9c06e6686e20fdf50c5040c3.png\" class=\"latex\" alt=\"$g(x)+g(y) \\ge g(x+y)$\" style=\"vertical-align: -4px\" width=\"177\" height=\"18\" />  </center>\n<p>Proof. Follows from Property 2.\n</p><p>Property 4. For any <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" />, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />\n</p>\n<center> <img src=\"//latex.artofproblemsolving.com/a/9/7/a97d9f69a33c036253e7e9e9df932584c5fb1a30.png\" class=\"latex\" alt=\"$g(nx)+g(my) \\ge g(nx+my)$\" style=\"vertical-align: -5px\" width=\"235\" height=\"20\" />  </center>\n<p>Proof. Follows from Property 3.\n</p><p>Property 5. For any <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, there is <img src=\"//latex.artofproblemsolving.com/e/e/5/ee5106218fe19fadcc2f2d2251da2ebea0bc8820.png\" class=\"latex\" alt=\"$k&gt;n$\" style=\"vertical-align: 0px\" width=\"45\" height=\"13\" />, s.t. <img src=\"//latex.artofproblemsolving.com/a/1/1/a113f38bb785015580d027c25b2131b00e817433.png\" class=\"latex\" alt=\"$g(k) \\ge k$\" style=\"vertical-align: -5px\" width=\"70\" height=\"20\" />.\n</p><p>Proof. Because of the Property 1.\n</p><p>Property 6. <img src=\"//latex.artofproblemsolving.com/7/5/4/7543a500ad662444880b73d431204f4ec1240c26.png\" class=\"latex\" alt=\"$g(x)=x$\" style=\"vertical-align: -4px\" width=\"68\" height=\"18\" />.\n</p><p>Proof. Suppose, for some <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/6/6/f/66fe7346c05e5ed807a85747f6c83e2f30012205.png\" class=\"latex\" alt=\"$g(x)=y\\ne x$\" style=\"vertical-align: -4px\" width=\"102\" height=\"18\" />. Without lost of generality we can assume that <img src=\"//latex.artofproblemsolving.com/0/b/4/0b4aee29876af28821f3a35178c09561adaf5a4a.png\" class=\"latex\" alt=\"$x&lt;y$\" style=\"vertical-align: -3px\" width=\"43\" height=\"13\" />. Then there is a number <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, such than any <img src=\"//latex.artofproblemsolving.com/e/e/5/ee5106218fe19fadcc2f2d2251da2ebea0bc8820.png\" class=\"latex\" alt=\"$k&gt;n$\" style=\"vertical-align: 0px\" width=\"45\" height=\"13\" /> could be represented as <img src=\"//latex.artofproblemsolving.com/a/a/6/aa6a208b00e405152b364e8a3b379592a4ba9332.png\" class=\"latex\" alt=\"$k=ax+by$\" style=\"vertical-align: -4px\" width=\"96\" height=\"18\" />, where <img src=\"//latex.artofproblemsolving.com/0/8/2/082852571ecc48ed136ba13dcffa8f6e40064bbd.png\" class=\"latex\" alt=\"$a&gt;b$\" style=\"vertical-align: 0px\" width=\"42\" height=\"13\" />. Then <img src=\"//latex.artofproblemsolving.com/a/a/e/aae7bb3e3dc683ae9c0c28aa1cf9fd25fd07afed.png\" class=\"latex\" alt=\"$g(k)=g(ax+by)\\ge ag(x)+bg(y)=ay+bx&gt;ax+by=k$\" style=\"vertical-align: -5px\" width=\"475\" height=\"20\" />. That contradicts to the Property 5.\n</p><p>Therefore by definion of <img src=\"//latex.artofproblemsolving.com/3/1/1/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png\" class=\"latex\" alt=\"$g$\" style=\"vertical-align: -3px\" width=\"9\" height=\"11\" />,  <img src=\"//latex.artofproblemsolving.com/4/8/7/4874544e2638f3712dbb70e5ccf37558a5fc0acb.png\" class=\"latex\" alt=\"$f(x)=x$\" style=\"vertical-align: -4px\" width=\"69\" height=\"18\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2009_IMO\" title=\"2009 IMO\">2009 IMO</a></b> (<b><a href=\"/wiki/index.php/2009_IMO_Problems\" title=\"2009 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_4\" title=\"2009 IMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_1\" title=\"2009 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_2\" title=\"2009 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_3\" title=\"2009 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_4\" title=\"2009 IMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_6\" title=\"2009 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_6\" title=\"2009 IMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907212353\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.040 seconds\nReal time usage: 0.041 seconds\nPreprocessor visited node count: 586/1000000\nPreprocessor generated node count: 1389/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 10421/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.359      1 Template:IMO_box\n100.00%    2.359      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8304-0!canonical and timestamp 20240907212353 and revision id 204542\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_IMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2009_IMO_Problems/Problem_5",
+          "byteoffset": 433,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2009_IMO_Problems/Problem_5",
+          "byteoffset": 2918,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 IMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Triangle Inequality",
+      "Heron's Formula",
+      "Law of Cosines"
+    ]
+  },
+  "2009 IMO Problems/Problem 6": {
+    "parse": {
+      "title": "2009 IMO Problems/Problem 6",
+      "pageid": 8305,
+      "revid": 204544,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/b/7/1b70976eb4ca80d39934c9d9dce6509ac4399208.png\" class=\"latex\" alt=\"$a_1,a_2,\\ldots,a_n$\" style=\"vertical-align: -3px\" width=\"100\" height=\"11\" /> be distinct positive integers and let <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> be a set of <img src=\"//latex.artofproblemsolving.com/4/b/d/4bdca93962a2beaffc172ca394e04fe05bd74ffd.png\" class=\"latex\" alt=\"$n-1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" /> positive integers not containing <img src=\"//latex.artofproblemsolving.com/c/f/1/cf1b314382b046f353617a43705a1f111de62ad1.png\" class=\"latex\" alt=\"$s=a_1+a_2+\\ldots+a_n$\" style=\"vertical-align: -2px\" width=\"172\" height=\"13\" />. A grasshopper is to jump along the real axis, starting at the point <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" /> and making <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> jumps to the right with lengths <img src=\"//latex.artofproblemsolving.com/1/b/7/1b70976eb4ca80d39934c9d9dce6509ac4399208.png\" class=\"latex\" alt=\"$a_1,a_2,\\ldots,a_n$\" style=\"vertical-align: -3px\" width=\"100\" height=\"11\" /> in some order. Prove that the order can be chosen in such a way that the grasshopper never lands on any point in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />.\n</p><p><i>Author: Dmitry Khramtsov, Russia</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We will use strong induction on <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />. When <img src=\"//latex.artofproblemsolving.com/c/7/6/c766f9fce6070981e62f805a7cf7294baed4498e.png\" class=\"latex\" alt=\"$n = 1$\" style=\"vertical-align: 0px\" width=\"43\" height=\"12\" />, there are no elements in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, so the one jump can be made without landing on a point in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. When <img src=\"//latex.artofproblemsolving.com/5/9/8/598a16d4b7dde3dec3a390109882d54bb0308ea5.png\" class=\"latex\" alt=\"$n = 2$\" width=\"43\" height=\"12\" />, we consider two cases. If <img src=\"//latex.artofproblemsolving.com/1/a/b/1ab39d761413804680d26d972381f028001562f5.png\" class=\"latex\" alt=\"$a_1$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> is not in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, then the order <img src=\"//latex.artofproblemsolving.com/8/6/7/8672844162eb1e10b48e85f86caa76057dc34679.png\" class=\"latex\" alt=\"$a_1, a_2$\" style=\"vertical-align: -3px\" width=\"40\" height=\"11\" /> will work. If <img src=\"//latex.artofproblemsolving.com/1/a/b/1ab39d761413804680d26d972381f028001562f5.png\" class=\"latex\" alt=\"$a_1$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> is in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, then <img src=\"//latex.artofproblemsolving.com/5/e/9/5e97a8af68fbc8e357d3ee0eba452022b06c1875.png\" class=\"latex\" alt=\"$a_2$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> is not in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and the order <img src=\"//latex.artofproblemsolving.com/c/9/7/c970b1f077c9e4da712cfe4c27274f0d8e4c43c4.png\" class=\"latex\" alt=\"$a_2, a_1$\" style=\"vertical-align: -3px\" width=\"40\" height=\"11\" /> will work. We will assume that the order can be chosen in such a way for all integers <img src=\"//latex.artofproblemsolving.com/a/e/7/ae7386d4b470aa726b7da3deb1a0bae50ded12b2.png\" class=\"latex\" alt=\"$n &lt; k$\" style=\"vertical-align: -2px\" width=\"47\" height=\"15\" /> for <img src=\"//latex.artofproblemsolving.com/a/5/b/a5bb76208dae30e44513fa10ff49ba1329094713.png\" class=\"latex\" alt=\"$k \\ge 3$\" style=\"vertical-align: -3px\" width=\"45\" height=\"17\" />.\n</p><p>When <img src=\"//latex.artofproblemsolving.com/1/4/f/14f9a7f0a078b361958b8019646cc77aaac7ef78.png\" class=\"latex\" alt=\"$n = k$\" width=\"44\" height=\"12\" />, we can assume WLOG that <img src=\"//latex.artofproblemsolving.com/7/7/2/772366dac9a0674da58149b8ac14b5e3e7705cb8.png\" class=\"latex\" alt=\"$a_1&lt;a_2&lt; \\ldots &lt;a_k$\" style=\"vertical-align: -2px\" width=\"144\" height=\"12\" />. We can also assume that the elements of <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> are distinct, since if two elements are identical, we can treat them as one and use induction on <img src=\"//latex.artofproblemsolving.com/9/3/c/93cf7e6f6bb911e44d1eadce1799608f8730bab2.png\" class=\"latex\" alt=\"$n = k-1$\" style=\"vertical-align: 0px\" width=\"75\" height=\"13\" />. We now consider four cases:\n</p><p><br />\n<b>Case 1:</b> <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> is in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> but <img src=\"//latex.artofproblemsolving.com/c/2/d/c2dd51ed4bf03c163643c92980699a058514c39c.png\" class=\"latex\" alt=\"$a_1, a_2, \\ldots, a_{k-1}$\" style=\"vertical-align: -3px\" width=\"115\" height=\"11\" /> are not.\n</p><p>There are at most <img src=\"//latex.artofproblemsolving.com/0/f/9/0f9dc56a5ff59e63eaefd81bad051d4324767d7a.png\" class=\"latex\" alt=\"$k-2$\" width=\"41\" height=\"12\" /> elements in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> greater than <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />. Then, from our assumption, there exists an order of jumps starting from <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> of lengths <img src=\"//latex.artofproblemsolving.com/c/2/d/c2dd51ed4bf03c163643c92980699a058514c39c.png\" class=\"latex\" alt=\"$a_1, a_2, \\ldots, a_{k-1}$\" style=\"vertical-align: -3px\" width=\"115\" height=\"11\" /> where the first jump is <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" /> such that the grasshopper will not land in any point in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. We can then switch the jumps <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" />. Since <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" /> is not in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and no subsequent jumps result in the grasshopper landing in a point in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, this sequence is valid.\n</p><p><b>Case 2:</b> <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> is not in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> but at least one of <img src=\"//latex.artofproblemsolving.com/c/2/d/c2dd51ed4bf03c163643c92980699a058514c39c.png\" class=\"latex\" alt=\"$a_1, a_2, \\ldots, a_{k-1}$\" style=\"vertical-align: -3px\" width=\"115\" height=\"11\" /> is.\n</p><p>There are at most <img src=\"//latex.artofproblemsolving.com/0/f/9/0f9dc56a5ff59e63eaefd81bad051d4324767d7a.png\" class=\"latex\" alt=\"$k-2$\" width=\"41\" height=\"12\" /> elements in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> greater than <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />. Then, from our assumption, there exists an order of jumps starting from <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> of lengths <img src=\"//latex.artofproblemsolving.com/c/2/d/c2dd51ed4bf03c163643c92980699a058514c39c.png\" class=\"latex\" alt=\"$a_1, a_2, \\ldots, a_{k-1}$\" style=\"vertical-align: -3px\" width=\"115\" height=\"11\" /> such that the grasshopper will not land in any point in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. Adding <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> at the beginning of this sequence then results in a valid sequence.\n</p><p><b>Case 3:</b> <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> is in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and at least one of <img src=\"//latex.artofproblemsolving.com/c/2/d/c2dd51ed4bf03c163643c92980699a058514c39c.png\" class=\"latex\" alt=\"$a_1, a_2, \\ldots, a_{k-1}$\" style=\"vertical-align: -3px\" width=\"115\" height=\"11\" /> is.\n</p><p>Consider the following pairs of distinct integers <img src=\"//latex.artofproblemsolving.com/1/b/2/1b2f75ff646027fb71374e778d93867536842620.png\" class=\"latex\" alt=\"$(a_1, a_1+a_k), (a_2, a_2+a_k), \\ldots, (a_{k-1}, a_{k-1}+a_k)$\" style=\"vertical-align: -4px\" width=\"371\" height=\"18\" />. Since at most <img src=\"//latex.artofproblemsolving.com/0/f/9/0f9dc56a5ff59e63eaefd81bad051d4324767d7a.png\" class=\"latex\" alt=\"$k-2$\" width=\"41\" height=\"12\" /> of these points are in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, by the pigeonhole principle, there exists an integer <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/2/4/0/2405da3f2da71d631028d4f9f77922b8eee11485.png\" class=\"latex\" alt=\"$a_i, a_i + a_k$\" style=\"vertical-align: -3px\" width=\"77\" height=\"14\" /> are both not in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. Since there are at most <img src=\"//latex.artofproblemsolving.com/3/9/1/39125e5e32806d03bc40fc63ca90de69fd8a6a58.png\" class=\"latex\" alt=\"$k-3$\" width=\"41\" height=\"12\" /> elements greater than <img src=\"//latex.artofproblemsolving.com/b/e/a/bea4d576937a04ec200b1037fc8ee33e8f744cb1.png\" class=\"latex\" alt=\"$a_k$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />, at most <img src=\"//latex.artofproblemsolving.com/3/9/1/39125e5e32806d03bc40fc63ca90de69fd8a6a58.png\" class=\"latex\" alt=\"$k-3$\" width=\"41\" height=\"12\" /> elements are greater than <img src=\"//latex.artofproblemsolving.com/5/5/8/5583d6efeb2625e5f3cd27a0c229548d40d45290.png\" class=\"latex\" alt=\"$a_i + a_k$\" style=\"vertical-align: -2px\" width=\"54\" height=\"13\" />. Then, from our assumption, there exists an order of jumps starting from <img src=\"//latex.artofproblemsolving.com/5/5/8/5583d6efeb2625e5f3cd27a0c229548d40d45290.png\" class=\"latex\" alt=\"$a_i + a_k$\" style=\"vertical-align: -2px\" width=\"54\" height=\"13\" /> of lengths <img src=\"//latex.artofproblemsolving.com/d/4/0/d406ebb30153feb86d1602c2c1829ef38a1221cd.png\" class=\"latex\" alt=\"$a_1, a_2, \\ldots, a_{i-1}, a_{i+1}, \\ldots, a_{k-1}$\" style=\"vertical-align: -4px\" width=\"228\" height=\"12\" /> such that the grasshopper will not land in any point in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. Adding <img src=\"//latex.artofproblemsolving.com/e/2/f/e2f5b9cf3b0531ed574c79a230abe6a96160a178.png\" class=\"latex\" alt=\"$a_i, a_k$\" style=\"vertical-align: -3px\" width=\"39\" height=\"11\" /> at the beginning of this sequence then results in a valid sequence.\n</p><p><b>Case 4:</b> None of <img src=\"//latex.artofproblemsolving.com/b/e/8/be8c97f116608cdd31187eeb9b47a0adbd951c41.png\" class=\"latex\" alt=\"$a_1, a_2, \\ldots, a_k$\" style=\"vertical-align: -3px\" width=\"99\" height=\"11\" /> are in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />.\n</p><p>Assume that there exists no valid sequence - that any order of jumps will result in the grasshopper landing on at least one element in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. We can select any element <img src=\"//latex.artofproblemsolving.com/7/9/6/796159ab6e186e3675497b6d219b5389ea56175c.png\" class=\"latex\" alt=\"$m_i$\" style=\"vertical-align: -2px\" width=\"20\" height=\"10\" /> in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and, from our assumption, construct a sequence beginning at some <img src=\"//latex.artofproblemsolving.com/0/7/8/0785f19824c8b23ab3dfe000b471994078fdf589.png\" class=\"latex\" alt=\"$a_j$\" style=\"vertical-align: -4px\" width=\"15\" height=\"12\" /> containing <img src=\"//latex.artofproblemsolving.com/4/b/d/4bdca93962a2beaffc172ca394e04fe05bd74ffd.png\" class=\"latex\" alt=\"$n-1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" /> jumps <img src=\"//latex.artofproblemsolving.com/e/7/f/e7fcff30bd2f9262afc202c9f36c29153067f5b2.png\" class=\"latex\" alt=\"$a_1, a_2, \\ldots, a_{j-1}, a_{j+1}, \\ldots, a_k$\" style=\"vertical-align: -4px\" width=\"214\" height=\"12\" /> that will not land on any of the other <img src=\"//latex.artofproblemsolving.com/e/f/9/ef9b02e32cfba0db0f9038a8d077596720f62e91.png\" class=\"latex\" alt=\"$n-2$\" width=\"41\" height=\"12\" /> elements in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. Since no valid sequence exists, during this sequence of jumps, the grasshopper must land on <img src=\"//latex.artofproblemsolving.com/7/9/6/796159ab6e186e3675497b6d219b5389ea56175c.png\" class=\"latex\" alt=\"$m_i$\" style=\"vertical-align: -2px\" width=\"20\" height=\"10\" />. \n</p><p>WLOG, we let <img src=\"//latex.artofproblemsolving.com/1/8/5/18514fcc23ee9dd9673aeafd820d11d519d54d29.png\" class=\"latex\" alt=\"$m_1 &lt; m_2 &lt; \\ldots &lt; m_{k-1}$\" style=\"vertical-align: -2px\" width=\"180\" height=\"12\" />. We let <img src=\"//latex.artofproblemsolving.com/7/7/4/7746ed746b280e2a83d7defebe5cfe5d557fc9c7.png\" class=\"latex\" alt=\"$i = 1$\" style=\"vertical-align: 0px\" width=\"38\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/e/6/3/e63398aa03d942c7f70a9168a4b537b5511e65ec.png\" class=\"latex\" alt=\"$j = k$\" style=\"vertical-align: -3px\" width=\"43\" height=\"16\" /> and use the corresponding sequence that only lands on <img src=\"//latex.artofproblemsolving.com/2/5/d/25d659c8074c617549d61db9db0773e0fccad7b3.png\" class=\"latex\" alt=\"$m_1$\" style=\"vertical-align: -2px\" width=\"21\" height=\"10\" /> and no other element in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. Let the jump immediately after landing on <img src=\"//latex.artofproblemsolving.com/2/5/d/25d659c8074c617549d61db9db0773e0fccad7b3.png\" class=\"latex\" alt=\"$m_1$\" style=\"vertical-align: -2px\" width=\"21\" height=\"10\" /> be <img src=\"//latex.artofproblemsolving.com/9/a/5/9a5af51cfec649afb7d8bf2c8b7080b58ba69830.png\" class=\"latex\" alt=\"$a_x$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />, where <img src=\"//latex.artofproblemsolving.com/6/8/5/685083bda127e7ab83a8aaa4d7906807291c268b.png\" class=\"latex\" alt=\"$x &lt; n$\" style=\"vertical-align: 0px\" width=\"45\" height=\"10\" />. We swap jumps <img src=\"//latex.artofproblemsolving.com/9/a/5/9a5af51cfec649afb7d8bf2c8b7080b58ba69830.png\" class=\"latex\" alt=\"$a_x$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" />. Now, since <img src=\"//latex.artofproblemsolving.com/5/f/5/5f5702e8edb1fec19b2790c1ef3743664129ddd2.png\" class=\"latex\" alt=\"$a_n &gt; a_x$\" style=\"vertical-align: -2px\" width=\"59\" height=\"12\" />, all jumps before <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> will land on a integer less than <img src=\"//latex.artofproblemsolving.com/2/5/d/25d659c8074c617549d61db9db0773e0fccad7b3.png\" class=\"latex\" alt=\"$m_1$\" style=\"vertical-align: -2px\" width=\"21\" height=\"10\" />. Since <img src=\"//latex.artofproblemsolving.com/2/5/d/25d659c8074c617549d61db9db0773e0fccad7b3.png\" class=\"latex\" alt=\"$m_1$\" style=\"vertical-align: -2px\" width=\"21\" height=\"10\" /> is the smallest element in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, none of the jumps before <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> will land on a point in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />. Since no jumps after <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> will land on an element in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> by the construction, the grasshopper must then land on an element <img src=\"//latex.artofproblemsolving.com/9/7/c/97ca820d00c06cf471ffd261ab6ef50fde9a821d.png\" class=\"latex\" alt=\"$m_y &gt; m_1$\" style=\"vertical-align: -4px\" width=\"69\" height=\"14\" /> in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> after making the jump <img src=\"//latex.artofproblemsolving.com/6/f/1/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png\" class=\"latex\" alt=\"$a_n$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" />. However, this would imply that the original construction would land on another element <img src=\"//latex.artofproblemsolving.com/c/4/c/c4cae5c2d7d537e7ee07fc5223c4a882619248d2.png\" class=\"latex\" alt=\"$m_y$\" style=\"vertical-align: -4px\" width=\"23\" height=\"12\" /> different from <img src=\"//latex.artofproblemsolving.com/2/5/d/25d659c8074c617549d61db9db0773e0fccad7b3.png\" class=\"latex\" alt=\"$m_1$\" style=\"vertical-align: -2px\" width=\"21\" height=\"10\" />, but this is a contradiction. So, a valid sequence must exist.\n</p><p><br />\nSince we have an induction on <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, the statement must be true for all <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, and we are done.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_IMO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2009_IMO\" title=\"2009 IMO\">2009 IMO</a></b> (<b><a href=\"/wiki/index.php/2009_IMO_Problems\" title=\"2009 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_5\" title=\"2009 IMO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2009_IMO_Problems/Problem_1\" title=\"2009 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_2\" title=\"2009 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_3\" title=\"2009 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_4\" title=\"2009 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2009_IMO_Problems/Problem_5\" title=\"2009 IMO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Problem</b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907153059\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.038 seconds\nReal time usage: 0.039 seconds\nPreprocessor visited node count: 988/1000000\nPreprocessor generated node count: 2289/1000000\nPost‐expand include size: 865/2097152 bytes\nTemplate argument size: 50/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 17535/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.910      1 Template:IMO_box\n100.00%    1.910      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8305-0!canonical and timestamp 20240907153059 and revision id 204544\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_IMO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2009_IMO_Problems/Problem_6",
+          "byteoffset": 542,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2009_IMO_Problems/Problem_6",
+          "byteoffset": 5431,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 IMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pigeonhole Principle",
+      "Induction",
+      "Combinatorial Counting"
+    ]
+  }
+}

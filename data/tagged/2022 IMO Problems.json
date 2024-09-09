@@ -1,0 +1,695 @@
+{
+  "2022 IMO Problems/Problem 1": {
+    "parse": {
+      "title": "2022 IMO Problems/Problem 1",
+      "pageid": 22925,
+      "revid": 213867,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The Bank of Oslo issues two types of coin: aluminium (denoted A) and bronze (denoted B). Marianne has <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> aluminium coins and <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> bronze coins, arranged in a row in some arbitrary initial order. A chain is any subsequence of consecutive coins of the same type. Given a fixed positive integer <img src=\"//latex.artofproblemsolving.com/3/f/4/3f43f4953582881d602cdc822a2a103e57b82f15.png\" class=\"latex\" alt=\"$k\\le 2n$\" style=\"vertical-align: -3px\" width=\"56\" height=\"17\" />, Marianne repeatedly performs the following operation: she identifies the longest chain containing the <img src=\"//latex.artofproblemsolving.com/9/f/9/9f95e9fc37dc276d9cfc43aba335cde356371cac.png\" class=\"latex\" alt=\"$k^{th}$\" width=\"22\" height=\"15\" /> coin from the left, and moves all coins in that chain to the left end of the row. For example, if <img src=\"//latex.artofproblemsolving.com/5/2/1/5218af40079081e694d8b82eeac2d368ef6ea76a.png\" class=\"latex\" alt=\"$n = 4$\" style=\"vertical-align: 0px\" width=\"44\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/1/b/4/1b4096f1768d4b1191ccc0386de6b4cc16503a1e.png\" class=\"latex\" alt=\"$k = 4$\" style=\"vertical-align: 0px\" width=\"43\" height=\"13\" />, the process starting from the ordering AABBBABA would be\n</p><p>AABBBABA → BBBAAABA → AAABBBBA → BBBBAAAA → BBBBAAAA → ...\n</p><p>Find all pairs <img src=\"//latex.artofproblemsolving.com/7/c/6/7c69351486b4e3261d84b4f2ef341397a55782c2.png\" class=\"latex\" alt=\"$(n, k)$\" style=\"vertical-align: -4px\" width=\"41\" height=\"18\" /> with <img src=\"//latex.artofproblemsolving.com/e/a/3/ea3f53b69acf22a4cd8e8750bdf18076fa3796f2.png\" class=\"latex\" alt=\"$1 \\le k \\le 2n$\" style=\"vertical-align: -3px\" width=\"89\" height=\"17\" /> such that for every initial ordering, at some moment during the process, the leftmost <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> coins will all be of the same type.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.youtube.com/watch?v=nYD-qIOdi_c\">https://www.youtube.com/watch?v=nYD-qIOdi_c</a> [Video contains solutions to all day 1 problems]\n<a rel=\"nofollow\" class=\"external free\" href=\"https://youtu.be/KHn3xD6wS3A\">https://youtu.be/KHn3xD6wS3A</a>\n[Video contains problem 1 discussion]\n</p><p><br />\nWe call a chain basic when it is the largest possible for the coins it consists of. Let \\(A=[i,j]\\) be the basic chain with the \\(i\\)-th and \\(j\\)-th coins being the first and last, respectively.\n</p><p>Claim:\n<img src=\"//latex.artofproblemsolving.com/6/d/a/6daec4b9eba2c332a77f76cec3c2b2c62a22a14a.png\" class=\"latexcenter\" alt=\"\\[k \\notin \\{1, 2, \\ldots, n-1\\} \\cup \\{\\lceil \\frac{3n}{2} \\rceil + 1, \\ldots, 2n\\}.\\]\" width=\"332\" height=\"37\" />\n</p><p>Proof:\nFor \\(k &lt; n\\), it is easy to see that the arrangement \\(A\\ldots AB\\ldots BA\\) remains the same.\n</p><p>For \\(k &gt; \\lceil \\frac{3n}{2} \\rceil = 2n - \\lfloor \\frac{n}{2} \\rfloor\\), we obtain the arrangement \\(A\\ldots AB\\ldots BA\\ldots AB\\ldots B\\), where each basic chain consists of \\(\\lfloor \\frac{n}{2} \\rfloor, \\lceil \\frac{n}{2} \\rceil, \\lceil \\frac{n}{2} \\rceil, \\lfloor \\frac{n}{2} \\rfloor\\) coins, respectively. Since the number of coins in the last chain is \\(\\geq \\lfloor \\frac{n}{2} \\rfloor\\), it follows that \\(k\\) is greater than the number of the remaining coins, or in other words, it is always contained in the last chain.\n</p><p>However, we have a loop:\n<img src=\"//latex.artofproblemsolving.com/8/c/b/8cbfeff2fd681fb1e04de2db2a163f7aa6057fdb.png\" class=\"latexcenter\" alt=\"\\[A\\ldots AB\\ldots BA\\ldots AB\\ldots B\\rightarrow B\\ldots BA\\ldots AB\\ldots BA\\rightarrow \\ldots \\blacksquare\\]\" width=\"497\" height=\"13\" />\n</p><p>We will prove that in any other case, the number of basic chains decreases by a constant, which proves the claim.\n</p><p>For \\(k \\in B=[l, m]\\), where \\(l &gt; 1\\) and \\(m &lt; 2n\\), the basic chains \\(B_1=[l{'}, l-1]\\) and \\(B_2=[m+1, m']\\) merge into one, and we are done since it is impossible to increase.\n</p><p>For \\(k \\in C=[1, l]\\), where \\(n + 1 &gt; l \\geq k \\geq n\\), it holds that \\(l = n\\), which is what we need to prove.\n</p><p>For \\(k \\in D=[m, 2n]\\), we will prove that the basic chains are of quantity 2 or 3 (two are obtained with one move):\nIndeed, if there are at least 4 basic chains, from the beginning of the pigeonhole, we have at least one chain with a number of coins &lt; \\(\\lfloor \\frac{n}{2} \\rfloor + 1 \\leq 2n - k + 1\\). Therefore, \\(k\\) does not belong to this chain when it is the last, and then the number of basic chains decreases, which completes the proof. <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p>In conclusion, such pairs are \\((n, k)\\), where \\(k \\in \\{n, n+1, \\ldots, \\lceil \\frac{3n}{2} \\rceil\\}\\).\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_IMO\" title=\"2022 IMO\">2022 IMO</a></b> (<b><a href=\"/wiki/index.php/2022_IMO_Problems\" title=\"2022 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_2\" title=\"2022 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_3\" title=\"2022 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_4\" title=\"2022 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_5\" title=\"2022 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_6\" title=\"2022 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_2\" title=\"2022 IMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907090057\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.029 seconds\nReal time usage: 0.120 seconds\nPreprocessor visited node count: 142/1000000\nPreprocessor generated node count: 409/1000000\nPost‐expand include size: 866/2097152 bytes\nTemplate argument size: 51/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2105/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   16.690      1 Template:IMO_box\n100.00%   16.690      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22925-0!canonical and timestamp 20240907090057 and revision id 213867\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://www.youtube.com/watch?v=nYD-qIOdi_c",
+        "https://youtu.be/KHn3xD6wS3A"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_IMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_IMO_Problems/Problem_1",
+          "byteoffset": 935,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_IMO_Problems/Problem_1",
+          "byteoffset": 3204,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 IMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pigeonhole Principle",
+      "Inclusion-Exclusion Principle",
+      "Combinatorial Counting"
+    ]
+  },
+  "2022 IMO Problems/Problem 2": {
+    "parse": {
+      "title": "2022 IMO Problems/Problem 2",
+      "pageid": 22926,
+      "revid": 207985,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/b/a/4/ba48837cbe425e0a603921abb6d4be1caf212c15.png\" class=\"latex\" alt=\"$\\mathbb{R}^+$\" width=\"22\" height=\"14\" /> denote the set of positive real numbers. Find all functions <img src=\"//latex.artofproblemsolving.com/7/c/f/7cf20a179600f3a8e4e5f187fcd0a8ef02d7ae1b.png\" class=\"latex\" alt=\"$f&#160;: \\mathbb{R}^+ \\to \\mathbb{R}^+$\" style=\"vertical-align: -4px\" width=\"104\" height=\"20\" /> such that for each <img src=\"//latex.artofproblemsolving.com/e/4/f/e4f661930ed7b93aacf1c1c9e4e7ec7563ed4371.png\" class=\"latex\" alt=\"$x \\in \\mathbb{R}^+$\" style=\"vertical-align: -2px\" width=\"58\" height=\"18\" />, there is exactly one <img src=\"//latex.artofproblemsolving.com/2/8/b/28bafe7786e450c29b864096b4dfa7c4277c6f0a.png\" class=\"latex\" alt=\"$y \\in \\mathbb{R}^+$\" style=\"vertical-align: -3px\" width=\"54\" height=\"18\" /> satisfying\n</p><p><img src=\"//latex.artofproblemsolving.com/a/5/2/a52c8066dc22101920e4ab14534ff3bb74d149fb.png\" class=\"latexcenter\" alt=\"\\[xf (y) + yf (x) \\le 2\\]\" width=\"144\" height=\"18\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.youtube.com/watch?v=nYD-qIOdi_c\">https://www.youtube.com/watch?v=nYD-qIOdi_c</a> [Video contains solutions to all day 1 problems]\n</p><p><a rel=\"nofollow\" class=\"external free\" href=\"https://youtu.be/b5OZ62vkF9Y\">https://youtu.be/b5OZ62vkF9Y</a>  [Video Solution by little fermat]\n</p><p><br />\n</p><p>Answer: The unique solution is the function \\( f(x) = \\frac{1}{x} \\) for every \\( x \\in \\mathbb{R}^+ \\). This function clearly satisfies the required property since the expression \\( xf(y) + yf(x) = \\frac{x}{y} + \\frac{y}{x} \\) is greater than 2 for every \\( y \\neq x \\) (directly from AM-GM) and equal to 2 (with equality) for the unique value \\( y = x \\).\n</p><p>Proof: Let's consider a solution based on some ideas we encountered in the preparation classes for the Olympiad, specifically involving auxiliary sets and functions with specific properties.\n</p><p>The fact that for every \\( x \\in \\mathbb{R}^+ \\), there exists a unique \\( y \\in \\mathbb{R}^+ \\) that satisfies the equation \\( xf(y) + yf(x) \\leq 2 \\) can be equivalently expressed as follows: there exists a well-defined function \\( g: \\mathbb{R}^+ \\to \\mathbb{R}^+ \\) given by \\( g(x)&#160;:= y \\), where \\( y \\) is the one mentioned above. The well-definedness of this function is evident due to the existence and uniqueness, and it satisfies the equation \\( P(x): \\quad xf(g(x)) + f(x)g(x) \\leq 2 \\) while applying the same property for \\( x \\mapsto g(x) \\) gives another unique \\( y&#160;:= g(g(x)) \\) such that \\( g(x)f(y) + yf(g(x)) \\leq 2 \\). Therefore, we have \\( xf(y) + yf(x) &gt; 2 \\) for all \\( y \\neq g(x) \\).\n</p><p>Since this inequality holds for \\( y = x \\) (from \\( xf(y) + yf(x) &gt; 2 \\)), the uniqueness assumption implies that \\( g(g(x)) = x \\), making \\( g \\) an involution (hence bijective).\n</p><p>Generally, working with an involution naturally leads us to consider its fixed points, especially since we aim to show that \\( g(x) = x \\) identically (which holds for the solution \\( f(x) = \\frac{1}{x}\\)). Let's define the set of fixed points of \\( g \\) as \\( \\mathcal{S}&#160;:= \\{ x \\in \\mathbb{R}^+ \\mid g(x) = x \\} \\) and show that \\( \\mathcal{S} = \\mathbb{R}^+ \\) is the entire domain.\n</p><p>Assume for a contradiction that some \\( x \\notin \\mathcal{S} \\) is not a fixed point, i.e., \\( x \\neq g(x) \\). Then, the inequality \\( 2xf(x) &gt; 2 \\) (derived from \\( y \\mapsto x \\)) holds, implying \\( f(x) &gt; \\frac{1}{x} \\). Similarly, \\( x \\notin \\mathcal{S} \\) implies \\( g(x) \\notin \\mathcal{S} \\) (otherwise \\( g(x) \\in \\mathcal{S} \\) implies \\( x = g(g(x)) = g(x) \\), a contradiction), leading to \\( f(g(x)) &gt; \\frac{1}{g(x)} \\).\n</p><p>Applying these inequalities to \\( P(x) \\) gives \\( xf(g(x)) + f(x)g(x) &lt; 2 \\), which is clearly a contradiction as \\( \\frac{x}{g(x)} + \\frac{g(x)}{x} \\geqslant 2 \\), e.g., from the AM-GM inequality. Therefore, we must have \\( x \\in \\mathcal{S} \\) for every \\( x \\in \\mathbb{R}^+ \\), i.e., \\( g(x) = x \\).\n</p><p>Substituting this relationship into the original equation, we obtain \\( P(x): \\quad xf(x) + f(x)x \\leq 2 \\implies xf(x) \\leq 1 \\implies f(x) \\leq \\frac{1}{x} \\) for every \\( x \\in \\mathbb{R}^+ \\). Applying \\( yf(y) \\leq 1 \\) to the equation \\( xf(y) + yf(x) &gt; 2 \\) (since \\( g(x) = x \\)) yields \\( f(x) &gt; \\frac{2}{y} - \\frac{x}{y^2} \\), and taking the limit \\( y \\to x \\) from either side results in \\( f(x) \\geq \\frac{1}{x} \\).\n</p><p>Combining the results, we have \\( f(x) \\leq \\frac{1}{x} \\) and \\( f(x) \\geq \\frac{1}{x} \\), implying \\( f(x) = \\frac{1}{x} \\) as desired. \\(\\blacksquare\\)\n</p><p>Note: This solution is written more extensively and with more details than necessary for a competition, especially since I include comments at certain points to encourage understanding of the ideas and explain the solution. In practice, this idea would take up only a few lines.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_IMO\" title=\"2022 IMO\">2022 IMO</a></b> (<b><a href=\"/wiki/index.php/2022_IMO_Problems\" title=\"2022 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_1\" title=\"2022 IMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_1\" title=\"2022 IMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_3\" title=\"2022 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_4\" title=\"2022 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_5\" title=\"2022 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_6\" title=\"2022 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_3\" title=\"2022 IMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907141700\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.023 seconds\nReal time usage: 0.024 seconds\nPreprocessor visited node count: 82/1000000\nPreprocessor generated node count: 269/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 906/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.321      1 Template:IMO_box\n100.00%    2.321      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22926-0!canonical and timestamp 20240907141700 and revision id 207985\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://www.youtube.com/watch?v=nYD-qIOdi_c",
+        "https://youtu.be/b5OZ62vkF9Y"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_IMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_IMO_Problems/Problem_2",
+          "byteoffset": 305,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_IMO_Problems/Problem_2",
+          "byteoffset": 3919,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 IMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "AM-GM Inequality",
+      "Inequalities",
+      "Functional Equations"
+    ]
+  },
+  "2022 IMO Problems/Problem 3": {
+    "parse": {
+      "title": "2022 IMO Problems/Problem 3",
+      "pageid": 22927,
+      "revid": 204600,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> be a positive integer and let <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> be a finite set of odd prime numbers. Prove that there is at most one way (up to rotation and reflection) to place the elements of <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> around a circle such that the product of any two neighbours is of the form <img src=\"//latex.artofproblemsolving.com/1/1/c/11c4a454b9babe7c29b740d221034cabfbcc91a9.png\" class=\"latex\" alt=\"$x^2 + x + k$\" style=\"vertical-align: -2px\" width=\"85\" height=\"18\" /> for some positive integer <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.youtube.com/watch?v=nYD-qIOdi_c\">https://www.youtube.com/watch?v=nYD-qIOdi_c</a> [Video contains solutions to all day 1 problems]\n</p><p><a rel=\"nofollow\" class=\"external free\" href=\"https://youtu.be/_kF9uXCZ6l4\">https://youtu.be/_kF9uXCZ6l4</a> [Video Solution by little fermat]\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_IMO\" title=\"2022 IMO\">2022 IMO</a></b> (<b><a href=\"/wiki/index.php/2022_IMO_Problems\" title=\"2022 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_2\" title=\"2022 IMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_1\" title=\"2022 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_2\" title=\"2022 IMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_4\" title=\"2022 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_5\" title=\"2022 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_6\" title=\"2022 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_4\" title=\"2022 IMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907141829\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.020 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 82/1000000\nPreprocessor generated node count: 269/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 836/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.193      1 Template:IMO_box\n100.00%    2.193      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22927-0!canonical and timestamp 20240907141829 and revision id 204600\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://www.youtube.com/watch?v=nYD-qIOdi_c",
+        "https://youtu.be/_kF9uXCZ6l4"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_IMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_IMO_Problems/Problem_3",
+          "byteoffset": 365,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_IMO_Problems/Problem_3",
+          "byteoffset": 536,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 IMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Prime Factorization",
+      "Quadratic Formula",
+      "Modular Arithmetic"
+    ]
+  },
+  "2022 IMO Problems/Problem 4": {
+    "parse": {
+      "title": "2022 IMO Problems/Problem 4",
+      "pageid": 22928,
+      "revid": 204601,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Video_Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Video Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/f/1/3/f13a96240c51d61ba3733d9f5c3020fa92ec4136.png\" class=\"latex\" alt=\"$ABCDE$\" width=\"72\" height=\"13\" /> be a convex pentagon such that <img src=\"//latex.artofproblemsolving.com/4/2/8/428c91b22a0b601edfc1005416ebbe55660a9f3f.png\" class=\"latex\" alt=\"$BC = DE$\" style=\"vertical-align: -1px\" width=\"85\" height=\"14\" />. Assume that there is a\npoint <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> inside <img src=\"//latex.artofproblemsolving.com/f/1/3/f13a96240c51d61ba3733d9f5c3020fa92ec4136.png\" class=\"latex\" alt=\"$ABCDE$\" width=\"72\" height=\"13\" /> with <img src=\"//latex.artofproblemsolving.com/0/1/3/01386c549dd8616da35b663db9279e962cc96872.png\" class=\"latex\" alt=\"$TB = TD$\" width=\"80\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/a/e/b/aebe5e56eacd13282aceb5ba012fc454212dd5c1.png\" class=\"latex\" alt=\"$TC = TE$\" style=\"vertical-align: -1px\" width=\"81\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/1/3/f/13fc13991ae8c55cea21c24c36d52524515435dc.png\" class=\"latex\" alt=\"$\\angle ABT = \\angle TEA$\" style=\"vertical-align: -1px\" width=\"134\" height=\"14\" />. Let line <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> intersect\nlines <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/b/e/e/beeb8b6e592416cc65ddbca9ccd35999c615d398.png\" class=\"latex\" alt=\"$CT$\" width=\"27\" height=\"12\" /> at points <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />, respectively. Assume that the points <img src=\"//latex.artofproblemsolving.com/3/c/1/3c199367bcd230fa00311e658a67f08848090f56.png\" class=\"latex\" alt=\"$P, B, A, Q$\" style=\"vertical-align: -4px\" width=\"81\" height=\"18\" /> occur on their\nline in that order. Let line <img src=\"//latex.artofproblemsolving.com/9/a/6/9a65c05bd85d2609bea5db2b109ed5f556463511.png\" class=\"latex\" alt=\"$AE$\" width=\"27\" height=\"13\" /> intersect lines <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/4/6/c46732cc54ebf7b9abd5412d340937bc62972493.png\" class=\"latex\" alt=\"$DT$\" style=\"vertical-align: -1px\" width=\"31\" height=\"14\" /> at points <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />, respectively. Assume\nthat the points <img src=\"//latex.artofproblemsolving.com/c/3/4/c3456bc9c56c29f61b3f8c5a1603f7f3cdda09d1.png\" class=\"latex\" alt=\"$R, E, A, S$\" style=\"vertical-align: -4px\" width=\"80\" height=\"18\" /> occur on their line in that order. Prove that the points <img src=\"//latex.artofproblemsolving.com/8/e/1/8e1e9e8c101f8e1ee4ae2470407b6d49d7fa96ec.png\" class=\"latex\" alt=\"$P, S, Q, R$\" style=\"vertical-align: -4px\" width=\"78\" height=\"18\" /> lie on\na circle.\n</p>\n<h2><span class=\"mw-headline\" id=\"Video_Solution\">Video Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Video Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.youtube.com/watch?v=-AII0ldyDww\">https://www.youtube.com/watch?v=-AII0ldyDww</a> [Video contains solutions to all day 2 problems]\n</p><p><a rel=\"nofollow\" class=\"external free\" href=\"https://youtu.be/WpM0mLyPyLg?si=yi9AZPVdYSPMCcHa\">https://youtu.be/WpM0mLyPyLg?si=yi9AZPVdYSPMCcHa</a>\n[Video Solution by little fermat]\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<div class=\"floatright\"><a href=\"/wiki/index.php/File:2022_IMO_4.png\" class=\"image\"><img alt=\"2022 IMO 4.png\" src=\"https://wiki-images.artofproblemsolving.com//thumb/5/56/2022_IMO_4.png/400px-2022_IMO_4.png\" width=\"400\" height=\"387\" srcset=\"https://wiki-images.artofproblemsolving.com//thumb/5/56/2022_IMO_4.png/600px-2022_IMO_4.png 1.5x, https://wiki-images.artofproblemsolving.com//5/56/2022_IMO_4.png 2x\" /></a></div>\n<p><img src=\"//latex.artofproblemsolving.com/6/8/e/68ea05a51c9d42db04e1b0c91ba34921b99c0e64.png\" class=\"latexcenter\" alt=\"\\[TB = TD, TC = TE, BC = DE \\implies\\]\" width=\"298\" height=\"16\" />\n<img src=\"//latex.artofproblemsolving.com/b/f/2/bf211f5bde0286c839829cbfb266b0b7a47fa30a.png\" class=\"latexcenter\" alt=\"\\[\\triangle TBC = \\triangle TDE \\implies \\angle BTC = \\angle DTE.\\]\" width=\"329\" height=\"13\" /> \n<img src=\"//latex.artofproblemsolving.com/0/9/6/096cb624ceca29c46fe7e23a28a6bb00ce4eac2f.png\" class=\"latexcenter\" alt=\"\\[\\angle BTQ = 180^\\circ - \\angle BTC = 180^\\circ - \\angle DTE = \\angle STE\\]\" width=\"405\" height=\"16\" />\n<img src=\"//latex.artofproblemsolving.com/7/8/0/780a0ed94981f46136ac44ee6df9e53324cdbb60.png\" class=\"latexcenter\" alt=\"\\[\\angle ABT = \\angle AET \\implies  \\triangle TQB \\sim \\triangle TSE \\implies\\]\" width=\"359\" height=\"16\" />\n<img src=\"//latex.artofproblemsolving.com/5/5/f/55f09ddeed3125faac91f8e3d560ec4413ba2110.png\" class=\"latexcenter\" alt=\"\\[\\angle PQC = \\angle EST, \\hspace{18mm}\\frac {QT}{ST}= \\frac {TB}{TE} \\implies\\]\" width=\"350\" height=\"37\" />\n<img src=\"//latex.artofproblemsolving.com/2/6/f/26f2357e000386f6a255dc86fb6599f9cb4e1f64.png\" class=\"latexcenter\" alt=\"\\[QT \\cdot TE =QT \\cdot TC = ST \\cdot TB= ST \\cdot TD \\implies\\]\" width=\"380\" height=\"16\" />\n<img src=\"//latex.artofproblemsolving.com/e/9/0/e906ebd1d891ee7ee2d6c1326dc0a507b6ceb4c9.png\" class=\"latex\" alt=\"$\\hspace{28mm}CDQS$\" style=\"vertical-align: -4px\" width=\"191\" height=\"18\" /> is cyclic <img src=\"//latex.artofproblemsolving.com/4/d/4/4d47504f270d951f9e87209729bb16f41287f3c1.png\" class=\"latex\" alt=\"$\\implies \\angle QCD = \\angle QSD.$\" style=\"vertical-align: -4px\" width=\"188\" height=\"18\" /> \n<img src=\"//latex.artofproblemsolving.com/a/4/f/a4f432c1d2d16eabfca2a95129fd6cb99d3048bf.png\" class=\"latexcenter\" alt=\"\\[\\angle QPR =\\angle QPC = \\angle QCD - \\angle PQC =\\]\" width=\"312\" height=\"16\" />\n<img src=\"//latex.artofproblemsolving.com/b/2/8/b2849a1f2ea4cb7b3b5de500ebc5877020932735.png\" class=\"latexcenter\" alt=\"\\[\\angle QSD - \\angle EST =  \\angle QSR \\implies\\]\" width=\"245\" height=\"16\" />\n<img src=\"//latex.artofproblemsolving.com/d/7/3/d7302093585554367905d197d813b462553cbd28.png\" class=\"latex\" alt=\"$\\hspace{43mm}PRQS$\" style=\"vertical-align: -4px\" width=\"260\" height=\"18\" /> is cyclic.\n</p><p><b>vladimir.shelomovskii@gmail.com, vvsss</b>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_4&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_IMO\" title=\"2022 IMO\">2022 IMO</a></b> (<b><a href=\"/wiki/index.php/2022_IMO_Problems\" title=\"2022 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_3\" title=\"2022 IMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_1\" title=\"2022 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_2\" title=\"2022 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_3\" title=\"2022 IMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_5\" title=\"2022 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_6\" title=\"2022 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_5\" title=\"2022 IMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907073030\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.044 seconds\nReal time usage: 0.045 seconds\nPreprocessor visited node count: 320/1000000\nPreprocessor generated node count: 793/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5460/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.967      1 Template:IMO_box\n100.00%    1.967      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22928-0!canonical and timestamp 20240907073030 and revision id 204601\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [
+        "2022_IMO_4.png"
+      ],
+      "externallinks": [
+        "https://www.youtube.com/watch?v=-AII0ldyDww",
+        "https://youtu.be/WpM0mLyPyLg?si=yi9AZPVdYSPMCcHa"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_IMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Video Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_IMO_Problems/Problem_4",
+          "byteoffset": 748,
+          "anchor": "Video_Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_IMO_Problems/Problem_4",
+          "byteoffset": 945,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2022_IMO_Problems/Problem_4",
+          "byteoffset": 1779,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 IMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Angle Bisector Theorem",
+      "Power of a Point",
+      "Circle Theorems"
+    ]
+  },
+  "2022 IMO Problems/Problem 5": {
+    "parse": {
+      "title": "2022 IMO Problems/Problem 5",
+      "pageid": 22940,
+      "revid": 226613,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Video_solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Video solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_2\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_Also\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all triples <img src=\"//latex.artofproblemsolving.com/8/f/1/8f18e2e1f6599e8d298df85097fc7bbdddedf919.png\" class=\"latex\" alt=\"$(a,b,p)$\" style=\"vertical-align: -4px\" width=\"55\" height=\"18\" /> of positive integers with <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> prime and\n<img src=\"//latex.artofproblemsolving.com/a/a/4/aa46b6f85fbc58c3e2f71228b58d72e65fece693.png\" class=\"latexcenter\" alt=\"\\[a^p = b! + p\\]\" width=\"85\" height=\"16\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Video_solution\">Video solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Video solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://youtu.be/d09PtqRSOuA\">https://youtu.be/d09PtqRSOuA</a>\n</p><p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.youtube.com/watch?v=-AII0ldyDww\">https://www.youtube.com/watch?v=-AII0ldyDww</a> [Video contains solutions to all day 2 problems]\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><b>Case 1:</b> <img src=\"//latex.artofproblemsolving.com/0/f/0/0f0aa57be9d0a90867514eb3707c48ea746d8468.png\" class=\"latex\" alt=\"$b &lt; p$\" style=\"vertical-align: -3px\" width=\"41\" height=\"16\" />\n</p>\n<ul><li>Since <img src=\"//latex.artofproblemsolving.com/2/8/4/284d417767f37f1a3f7cc15fdc76eaf62d72da7d.png\" class=\"latex\" alt=\"$b!$\" width=\"11\" height=\"13\" /> is indivisible by <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />, then <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> must also be indivisible by <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />.</li></ul>\n<ul><li>If <img src=\"//latex.artofproblemsolving.com/3/5/e/35e1900f9ae83cebcbb5735f6c7bd6b6c505ba55.png\" class=\"latex\" alt=\"$a \\le b$\" style=\"vertical-align: -2px\" width=\"42\" height=\"15\" />, then <img src=\"//latex.artofproblemsolving.com/c/8/1/c81184f4230513681a7cb3da3cc30806998ecb26.png\" class=\"latex\" alt=\"$a^p-b!$\" style=\"vertical-align: -2px\" width=\"54\" height=\"16\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, so <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> must be a divisor of <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />, but <img src=\"//latex.artofproblemsolving.com/5/0/2/502e059d1a020b368aee3a99c5669d88331d321f.png\" class=\"latex\" alt=\"$a=1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" /> obviously has no solutions and we ruled out <img src=\"//latex.artofproblemsolving.com/6/d/1/6d17f0145a3b31e966836705f808681474075fb1.png\" class=\"latex\" alt=\"$a=p$\" style=\"vertical-align: -3px\" width=\"43\" height=\"11\" /> already. For <img src=\"//latex.artofproblemsolving.com/2/5/d/25d8ed1fc54739081e1cc984b300a5b1bd0a984f.png\" class=\"latex\" alt=\"$a &gt; b$\" style=\"vertical-align: 0px\" width=\"42\" height=\"13\" />, let's show that there are no solutions using simple inequalities.</li></ul>\n<ul><li>If <img src=\"//latex.artofproblemsolving.com/e/c/8/ec85d6ec7302e71c4c4c68084cb40ae13d07a92c.png\" class=\"latex\" alt=\"$b &lt; a &lt; p$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" />, then <img src=\"//latex.artofproblemsolving.com/3/3/7/337b81f94ae77f3a83192f9ef852cf658e688255.png\" class=\"latex\" alt=\"$b! \\le (a-1)! \\le (a-1)^{a-1}$\" style=\"vertical-align: -5px\" width=\"203\" height=\"21\" /> and <img src=\"//latex.artofproblemsolving.com/4/1/0/410c3e9bb6b1035e47efcd944932b231e0fefd2f.png\" class=\"latex\" alt=\"$a^p = (a-1+1)^p \\ge (a-1)^p + p (a-1)^{p-1}$\" style=\"vertical-align: -5px\" width=\"335\" height=\"21\" /> by throwing away the remaining (non-negative) terms of binomial theorem. For any solution, <img src=\"//latex.artofproblemsolving.com/d/f/2/df285dff93ea45b18b9d294f9390b06a80979ea1.png\" class=\"latex\" alt=\"$(a-1)^p + p (a-1)^{p-1} \\le a^p = b!+p \\le (a-1)^{a-1} + p$\" style=\"vertical-align: -5px\" width=\"421\" height=\"21\" />, which is impossible for <img src=\"//latex.artofproblemsolving.com/a/4/e/a4e6dfc764552fc0d6caa208ff195a8f070345c3.png\" class=\"latex\" alt=\"$a-1 &gt; 1$\" style=\"vertical-align: -2px\" width=\"76\" height=\"15\" />. That leaves us with <img src=\"//latex.artofproblemsolving.com/5/5/a/55afdab16c8c49089c4d9ceeb8d3c8cf1f088be6.png\" class=\"latex\" alt=\"$a=2$\" width=\"42\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/f/5/cf590e9abb33aa9776ddc386b1ba6ee7b43fa413.png\" class=\"latex\" alt=\"$b=1$\" style=\"vertical-align: 0px\" width=\"40\" height=\"13\" />, but <img src=\"//latex.artofproblemsolving.com/3/f/6/3f6e9c5c1b162537d92d9686c9b2e44faaf97ccc.png\" class=\"latex\" alt=\"$2^n &gt; n+1$\" style=\"vertical-align: -2px\" width=\"86\" height=\"16\" /> for any integer <img src=\"//latex.artofproblemsolving.com/3/1/7/317096889b84df0b72bf69ceb4c82208305f1b0f.png\" class=\"latex\" alt=\"$n \\ge 2$\" style=\"vertical-align: -2px\" width=\"43\" height=\"14\" /> (proof by induction), so there are no solutions.</li></ul>\n<ul><li>If <img src=\"//latex.artofproblemsolving.com/9/e/b/9eb691704bb4913e6838d5b52f54553826ffe814.png\" class=\"latex\" alt=\"$b &lt; p &lt; a$\" style=\"vertical-align: -4px\" width=\"77\" height=\"18\" />, RHS is at most <img src=\"//latex.artofproblemsolving.com/e/9/9/e99827a0c958acf6c324eebcd49dbdf60efa48f4.png\" class=\"latex\" alt=\"$(p-1)^{p-1}+p$\" style=\"vertical-align: -5px\" width=\"112\" height=\"21\" /> and LHS is at least <img src=\"//latex.artofproblemsolving.com/0/b/9/0b90f1be79032c0dddff52545c62f5e5a6d115bf.png\" class=\"latex\" alt=\"$(p+1)^p \\ge p^p+p$\" style=\"vertical-align: -5px\" width=\"137\" height=\"20\" /> (again from binomial theorem), which gives no solutions as well.</li></ul>\n<p><b>Case 2:</b> <img src=\"//latex.artofproblemsolving.com/4/f/6/4f61c5f3e28dbc7a929c9b757d9b11bc94272548.png\" class=\"latex\" alt=\"$p \\le b &lt; 2p$\" style=\"vertical-align: -4px\" width=\"86\" height=\"18\" />\n</p>\n<ul><li>Since <img src=\"//latex.artofproblemsolving.com/2/8/4/284d417767f37f1a3f7cc15fdc76eaf62d72da7d.png\" class=\"latex\" alt=\"$b!$\" width=\"11\" height=\"13\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />, then <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> must also be divisible by <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />.</li></ul>\n<ul><li>In addition, RHS is at most <img src=\"//latex.artofproblemsolving.com/b/e/9/be97233442605af497618bbc309429a7e2ea4c9e.png\" class=\"latex\" alt=\"$(2p-1)!+p = p \\prod_{i=1}^{p-1} (p-i)(p+i) + p &lt; p^{2p-1} + p \\le p^{2p}$\" style=\"vertical-align: -23px\" width=\"441\" height=\"56\" />, so <img src=\"//latex.artofproblemsolving.com/8/f/0/8f0f404ae8f998d38073915f34ec7cb965845f2f.png\" class=\"latex\" alt=\"$a &lt; p^2$\" style=\"vertical-align: -4px\" width=\"52\" height=\"20\" />. We may write <img src=\"//latex.artofproblemsolving.com/6/b/8/6b8e65b2db9575784d61fe26e5d3dc1957682899.png\" class=\"latex\" alt=\"$a=pc$\" style=\"vertical-align: -3px\" width=\"51\" height=\"11\" />, where <img src=\"//latex.artofproblemsolving.com/b/5/9/b593d7b9b1e0911a633c8e1eed7830bbee524eeb.png\" class=\"latex\" alt=\"$1 \\le c &lt; p$\" style=\"vertical-align: -3px\" width=\"74\" height=\"15\" />.</li></ul>\n<ul><li>Since <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> is a divisor of <img src=\"//latex.artofproblemsolving.com/6/2/f/62fc51ae72c68e36e98b0b1a75de792aabe10754.png\" class=\"latex\" alt=\"$a^p$\" width=\"16\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/2/8/4/284d417767f37f1a3f7cc15fdc76eaf62d72da7d.png\" class=\"latex\" alt=\"$b!$\" width=\"11\" height=\"13\" /> it must also be a divisor of <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />, so <img src=\"//latex.artofproblemsolving.com/0/e/4/0e4cc644ec8a1c3623c13ed3d14904096a0d87b9.png\" class=\"latex\" alt=\"$c=1$\" style=\"vertical-align: 0px\" width=\"40\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/6/d/1/6d17f0145a3b31e966836705f808681474075fb1.png\" class=\"latex\" alt=\"$a=p$\" style=\"vertical-align: -3px\" width=\"43\" height=\"11\" />. We're looking for solutions of <img src=\"//latex.artofproblemsolving.com/3/7/9/3792dd01baa05f7064c5b17371fcabea621ca451.png\" class=\"latex\" alt=\"$p^{p-1}-1 = b!/p$\" style=\"vertical-align: -5px\" width=\"122\" height=\"21\" />.</li></ul>\n<ul><li>Let's factorise <img src=\"//latex.artofproblemsolving.com/1/0/e/10e1f524939bb65ce2f9d2a7ef2d33f4b6fe9355.png\" class=\"latex\" alt=\"$p^{p-1}-1$\" style=\"vertical-align: -4px\" width=\"67\" height=\"20\" />: if <img src=\"//latex.artofproblemsolving.com/7/1/9/7198be9ea3e0a7f5d7f59250a9e927a69dad6e38.png\" class=\"latex\" alt=\"$p-1 = 2^k \\cdot n$\" style=\"vertical-align: -4px\" width=\"108\" height=\"21\" /> with <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> odd and <img src=\"//latex.artofproblemsolving.com/6/d/a/6da5c768d3e309c1b5337c06bf5ad8df078c5c01.png\" class=\"latex\" alt=\"$k &gt; 0$\" style=\"vertical-align: 0px\" width=\"43\" height=\"13\" />, it's</li></ul>\n<p><img src=\"//latex.artofproblemsolving.com/7/a/5/7a56275d63189765504c4b5abe5d85f9b9d07eaa.png\" class=\"latexcenter\" alt=\"\\[(p^n-1) \\cdot (p^n+1) \\cdot (p^{2n}+1) \\cdot \\ldots \\cdot (p^{2^{k-1} n}+1) = (p-1) \\cdot (1+p+\\ldots+p^{n-1}) \\cdot (p+1) \\cdot (1-p+\\ldots-p^{n-2}+p^{n-1}) \\cdot (p^{2n}+1) \\cdot \\ldots \\cdot (p^{2^{k-1} n}+1) \\,.\\]\" width=\"930\" height=\"23\" />\n</p>\n<ul><li>Since <img src=\"//latex.artofproblemsolving.com/5/e/5/5e59019f93f2882168f926ce7b2663fda7cfb762.png\" class=\"latex\" alt=\"$(1+p+\\ldots+p^{n-1})$\" style=\"vertical-align: -5px\" width=\"157\" height=\"21\" /> and <img src=\"//latex.artofproblemsolving.com/9/9/7/997775bb8ec01245470ac5d443d90bf680ab4f36.png\" class=\"latex\" alt=\"$(1-p+\\ldots-p^{n-2}+p^{n-1})$\" style=\"vertical-align: -5px\" width=\"215\" height=\"21\" /> contain an odd number of odd terms (remember the assumption <img src=\"//latex.artofproblemsolving.com/6/d/a/6da5c768d3e309c1b5337c06bf5ad8df078c5c01.png\" class=\"latex\" alt=\"$k &gt; 0$\" style=\"vertical-align: 0px\" width=\"43\" height=\"13\" /> aka <img src=\"//latex.artofproblemsolving.com/b/f/a/bfa826b6083f20e25449e48028aaf6ec352dd76d.png\" class=\"latex\" alt=\"$p \\neq 2$\" style=\"vertical-align: -4px\" width=\"43\" height=\"17\" />), they're odd. Also, <img src=\"//latex.artofproblemsolving.com/3/2/9/329b205c129279a2f72766a695b88b879bf0f2f9.png\" class=\"latex\" alt=\"$p^2 \\equiv 1$\" style=\"vertical-align: -3px\" width=\"50\" height=\"18\" /> modulo <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" />, so <img src=\"//latex.artofproblemsolving.com/2/6/c/26c640516183ad22b7f556c8db27479d58b1c641.png\" class=\"latex\" alt=\"$(p^{2n}+1)$\" style=\"vertical-align: -5px\" width=\"72\" height=\"21\" /> and each following term is even but indivisible by <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" />. The highest power of <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> dividing <img src=\"//latex.artofproblemsolving.com/1/0/e/10e1f524939bb65ce2f9d2a7ef2d33f4b6fe9355.png\" class=\"latex\" alt=\"$p^{p-1}-1$\" style=\"vertical-align: -4px\" width=\"67\" height=\"20\" /> is therefore <img src=\"//latex.artofproblemsolving.com/7/f/9/7f9d1f0dc1baf0436789e711e93e06ff18d3cb18.png\" class=\"latex\" alt=\"$2^{k + l + k-1}$\" style=\"vertical-align: -1px\" width=\"68\" height=\"17\" /> where <img src=\"//latex.artofproblemsolving.com/4/c/5/4c5cd6173187254219f4218f26d72cdb4d4db84b.png\" class=\"latex\" alt=\"$2^l$\" width=\"12\" height=\"15\" /> is the highest power dividing <img src=\"//latex.artofproblemsolving.com/5/d/5/5d58d0cd6161c8c4be4d6284f59ec576295093e1.png\" class=\"latex\" alt=\"$p+1$\" style=\"vertical-align: -3px\" width=\"40\" height=\"15\" />.</li></ul>\n<ul><li>In comparison, <img src=\"//latex.artofproblemsolving.com/1/b/e/1be2a52a8011b2dc6df2e9af572e21d2e4763b18.png\" class=\"latex\" alt=\"$(p+1)!/p$\" style=\"vertical-align: -5px\" width=\"80\" height=\"20\" /> has factors <img src=\"//latex.artofproblemsolving.com/7/b/7/7b768b0c34b9546e7e4f078431fbc06eaabfd780.png\" class=\"latex\" alt=\"$(p+1)$\" style=\"vertical-align: -5px\" width=\"56\" height=\"20\" />, <img src=\"//latex.artofproblemsolving.com/6/3/6/636a09b7370a3b08ae1534ba58d9443101716d9c.png\" class=\"latex\" alt=\"$(2^k n)$\" style=\"vertical-align: -5px\" width=\"44\" height=\"22\" /> <img src=\"//latex.artofproblemsolving.com/9/7/5/97535ec7c194222f088b6d4189658b9e01261a70.png\" class=\"latex\" alt=\"$(2^{k-1} n)$\" style=\"vertical-align: -5px\" width=\"61\" height=\"22\" /> etc (up to <img src=\"//latex.artofproblemsolving.com/f/9/3/f93f5c51ea4b04b4992b003b39479f29018f6bda.png\" class=\"latex\" alt=\"$2n$\" width=\"19\" height=\"12\" />), and <img src=\"//latex.artofproblemsolving.com/2/7/1/27105dc82762de087b5051dae931f17c4c15677c.png\" class=\"latex\" alt=\"$(p-1)/2-k$\" style=\"vertical-align: -5px\" width=\"107\" height=\"20\" /> other even factors, so it's divisible at least by <img src=\"//latex.artofproblemsolving.com/8/b/6/8b684167f4ad804de5f6c5cb04bbf9e8a16772fe.png\" class=\"latex\" alt=\"$2^{l+k(k+1)/2+(p-1)/2-k}$\" style=\"vertical-align: -1px\" width=\"157\" height=\"18\" />. Since <img src=\"//latex.artofproblemsolving.com/9/a/d/9ad062b77bfabce7afa0d7b2319383c41f955518.png\" class=\"latex\" alt=\"$l+k(k+1)/2+(p-1)/2-k &gt; l+2k-1$\" style=\"vertical-align: -5px\" width=\"343\" height=\"20\" /> for <img src=\"//latex.artofproblemsolving.com/d/f/5/df5e9156a1bcb3cd79a2421c9af46bf95ebd2a77.png\" class=\"latex\" alt=\"$p \\ge 7$\" style=\"vertical-align: -3px\" width=\"43\" height=\"15\" />, the only possible solutions have <img src=\"//latex.artofproblemsolving.com/c/c/5/cc5e2f21a6a5388f1745ec4bc467a3ad3e6605f4.png\" class=\"latex\" alt=\"$p &lt; 7$\" style=\"vertical-align: -4px\" width=\"44\" height=\"17\" /> or <img src=\"//latex.artofproblemsolving.com/e/4/d/e4d94ed8178f5c21b34fcd2f750547a3e5b27fde.png\" class=\"latex\" alt=\"$b = p$\" style=\"vertical-align: -3px\" width=\"41\" height=\"16\" />.</li></ul>\n<ul><li>If <img src=\"//latex.artofproblemsolving.com/1/b/b/1bb7e4990bf652aeb378b94d006725bcf936b2ce.png\" class=\"latex\" alt=\"$b=p$\" style=\"vertical-align: -4px\" width=\"43\" height=\"18\" />, we reuse the inequalities <img src=\"//latex.artofproblemsolving.com/1/e/3/1e314aead694bfc26ed6c8d18ac39df2de8562f1.png\" class=\"latex\" alt=\"$p^{p-1} \\ge (p-1)^{p-1}+p-1$\" style=\"vertical-align: -5px\" width=\"202\" height=\"21\" /> and <img src=\"//latex.artofproblemsolving.com/7/f/4/7f4574f7df1302a2f29c08185b32525e2816e527.png\" class=\"latex\" alt=\"$b!/p \\le (p-1)^{p-1}$\" style=\"vertical-align: -5px\" width=\"136\" height=\"21\" /> to show that there are no solutions for <img src=\"//latex.artofproblemsolving.com/7/a/e/7aeef1a7467822e0f1ab574217b5210d68135a3c.png\" class=\"latex\" alt=\"$p &gt; 2$\" style=\"vertical-align: -3px\" width=\"43\" height=\"15\" />.</li></ul>\n<ul><li>Finally, <img src=\"//latex.artofproblemsolving.com/8/3/5/835e9abf19e9c62f2808b75097b9479367bba3df.png\" class=\"latex\" alt=\"$5^5-5 = 3120$\" style=\"vertical-align: -2px\" width=\"110\" height=\"18\" /> isn't a factorial, <img src=\"//latex.artofproblemsolving.com/b/e/4/be4a32a9bed573713ccc998df57a61d5dbd8d06a.png\" class=\"latex\" alt=\"$3^3-3 = 24 = 4!$\" style=\"vertical-align: -2px\" width=\"130\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/f/1/2/f1277e6be1224e9a0c8946283dc7a91c6305cf98.png\" class=\"latex\" alt=\"$2^2-2 = 2 = 2!$\" style=\"vertical-align: -2px\" width=\"121\" height=\"18\" />.</li></ul>\n<p><b>Case 3:</b> <img src=\"//latex.artofproblemsolving.com/4/c/3/4c3595d5a6befc7123a3acbc1c5e30e1573d8391.png\" class=\"latex\" alt=\"$2p \\le b$\" style=\"vertical-align: -3px\" width=\"50\" height=\"16\" />\n</p><p>Just like in case 2, <img src=\"//latex.artofproblemsolving.com/2/8/4/284d417767f37f1a3f7cc15fdc76eaf62d72da7d.png\" class=\"latex\" alt=\"$b!$\" width=\"11\" height=\"13\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> so <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> must also be divisible by <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" />. However, <img src=\"//latex.artofproblemsolving.com/2/8/4/284d417767f37f1a3f7cc15fdc76eaf62d72da7d.png\" class=\"latex\" alt=\"$b!$\" width=\"11\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/6/2/f/62fc51ae72c68e36e98b0b1a75de792aabe10754.png\" class=\"latex\" alt=\"$a^p$\" width=\"16\" height=\"12\" /> are also both divisible by <img src=\"//latex.artofproblemsolving.com/5/9/1/591f689f950feb4a9cff58ff3166d915f916a405.png\" class=\"latex\" alt=\"$p^2$\" style=\"vertical-align: -3px\" width=\"16\" height=\"18\" />, so remainders modulo <img src=\"//latex.artofproblemsolving.com/5/9/1/591f689f950feb4a9cff58ff3166d915f916a405.png\" class=\"latex\" alt=\"$p^2$\" style=\"vertical-align: -3px\" width=\"16\" height=\"18\" /> tell us that no solutions exist.\n</p><p><b>Conclusion:</b>\n</p><p>The only solutions are <img src=\"//latex.artofproblemsolving.com/9/b/9/9b909c9e3e0b5baf79b0740bc81b5f9f8d21de59.png\" class=\"latex\" alt=\"$(a,b,p) = (2,2,2), (3,4,3)$\" style=\"vertical-align: -5px\" width=\"206\" height=\"20\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_5&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>I considered the cases:\n</p><p>1) If \\(a\\) is even, then it must:\n</p>\n<pre>  1.a) \\(b \\neq 1\\) and \\(p &gt; 2\\)\n  1.b) \\(b!\\) is even and \\(p = 2\\)\n</pre>\n<p>2) If \\(a\\) is odd, then it must:\n</p>\n<pre>  2.a) \\(b \\neq 1\\) and \\(p = 2\\)\n  2.b) \\(b!\\) is even and \\(p &gt; 2\\)\n</pre>\n<p>Examining 1.a), we end up with an equation of the form \\(a^p = p+1\\), which has no integer solutions.\n</p><p>In case 1.b), \\(b!\\) can take values: 2, 6, 24, 120, 720, ..., so \\(b!+2\\) takes values: 4, 8, 26, 122, 722, .... We observe that the only perfect square is 4 among the possible cases, as for \\(b \\geq 5\\), the result ends in 2, which is not a perfect square. Therefore, we have the triple \\((2,2,2)\\).\n</p><p>Case 2.a) yields \\(a^2 = 3\\), which is rejected.\n</p><p>Examining the last case 2.b), we have for \\(b!\\) the values: 2, 6, 24, 120, 720, 5040, \n</p>\n<pre>  i) \\(b! = 2\\), then \\(a^p = 2+p\\), which is rejected.\n  ii) \\(b! = 6\\), then \\(a^p = 6+p\\), also does not give integer solutions.\n  iii) \\(b! = 24\\), then \\(a^p = 24+p\\), giving a solution for \\(p=3\\). Thus, we have the triple \\((3,4,3)\\).\n  iv) \\(b \\geq 5\\):\n     \\(a^3 = b! + 3\\), so \\(a\\) must end in 3 or 7, which does not give solutions.\n     \\(a^5 = b! + 5\\), so \\(a\\) must end in 5, also not giving solutions.\n     \\(a^7 = b! + 7\\), so \\(a\\) must end in 3, again not giving solutions.\n     \\(a^{11} = b! + 11\\), no \\(a \\in \\mathbb{Z^+}\\) satisfies this.\n     \\(a^{19} = b! + 19\\), similarly, no solutions.\n     Other prime exponents reduce to these, as their last digit is one of \\(\\{1,3,7,9\\}\\)\n</pre>\n<p>The analysis of the last case is incomplete, which is why I wasn't initially sure about the number of triples. Therefore, with this approach (which is not strictly documented), we find the triples: \\((2,2,2), (3,4,3)\\).\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_5&amp;action=edit&amp;section=5\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_IMO\" title=\"2022 IMO\">2022 IMO</a></b> (<b><a href=\"/wiki/index.php/2022_IMO_Problems\" title=\"2022 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_4\" title=\"2022 IMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_1\" title=\"2022 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_2\" title=\"2022 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_3\" title=\"2022 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_4\" title=\"2022 IMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_6\" title=\"2022 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_6\" title=\"2022 IMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907224527\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.042 seconds\nReal time usage: 0.043 seconds\nPreprocessor visited node count: 855/1000000\nPreprocessor generated node count: 1977/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 15979/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.017      1 Template:IMO_box\n100.00%    2.017      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22940-0!canonical and timestamp 20240907224527 and revision id 226613\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://youtu.be/d09PtqRSOuA",
+        "https://www.youtube.com/watch?v=-AII0ldyDww"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_IMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Video solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_IMO_Problems/Problem_5",
+          "byteoffset": 130,
+          "anchor": "Video_solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_IMO_Problems/Problem_5",
+          "byteoffset": 273,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2022_IMO_Problems/Problem_5",
+          "byteoffset": 4101,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "5",
+          "index": "5",
+          "fromtitle": "2022_IMO_Problems/Problem_5",
+          "byteoffset": 5839,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 IMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Prime Factorization",
+      "Modular Arithmetic",
+      "Diophantine Equations"
+    ]
+  },
+  "2022 IMO Problems/Problem 6": {
+    "parse": {
+      "title": "2022 IMO Problems/Problem 6",
+      "pageid": 22932,
+      "revid": 213868,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Video_solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Video solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> be a positive integer. A Nordic square is an <img src=\"//latex.artofproblemsolving.com/c/3/d/c3d38f82f48ef9e81c04d49354293305b0067afc.png\" class=\"latex\" alt=\"$n \\times n$\" width=\"43\" height=\"9\" /> board containing all the integers from <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> to <img src=\"//latex.artofproblemsolving.com/6/0/0/6006bba637eef443381fbaff768fa62d9ff41e62.png\" class=\"latex\" alt=\"$n^2$\" width=\"17\" height=\"15\" /> so that each cell contains exactly one number. Two different cells are considered adjacent if they share an edge. Every cell that is adjacent only to cells containing larger numbers is called a valley. An uphill path is a sequence of one or more cells such that:\n</p><p>(i) the first cell in the sequence is a valley,\n</p><p>(ii) each subsequent cell in the sequence is adjacent to the previous cell, and\n</p><p>(iii) the numbers written in the cells in the sequence are in increasing order.\n</p><p>Find, as a function of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, the smallest possible total number of uphill paths in a Nordic square.\n</p>\n<h2><span class=\"mw-headline\" id=\"Video_solution\">Video solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Video solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.youtube.com/watch?v=-AII0ldyDww\">https://www.youtube.com/watch?v=-AII0ldyDww</a> [Video contains solutions to all day 2 problems] \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>The minimum total number of uphill paths in a Nordic square is <img src=\"//latex.artofproblemsolving.com/9/e/f/9efabf522e125139c9e32215394496807d766786.png\" class=\"latex\" alt=\"$2n(n-1)+1$\" style=\"vertical-align: -4px\" width=\"106\" height=\"18\" /></i>\n</p><p><b>Proof:</b>\nFor every pair of adjacent cells in the grid, there is at least one pathway that begins at the higher valued cell, steps to the lower valued cell, and then continues stepping to lower adjacent cells until (by finite descent) a valley is reached. When reversed, this forms an uphill pathway that terminates at that exactly that pair of adjacent cells.\n</p><p>There are <img src=\"//latex.artofproblemsolving.com/b/3/3/b33a5b32263af90c0f176107cc6be3d11b83d94d.png\" class=\"latex\" alt=\"$2n(n-1)$\" style=\"vertical-align: -4px\" width=\"74\" height=\"18\" /> such adjacent pairs (each with at least one unique uphill path). In addition, the cell containing the value 1 will always be a valley which, by itself, forms an additional (singleton) uphill path. Therefore the minimum total number of uphill paths is at least <img src=\"//latex.artofproblemsolving.com/9/e/f/9efabf522e125139c9e32215394496807d766786.png\" class=\"latex\" alt=\"$2n(n-1)+1$\" style=\"vertical-align: -4px\" width=\"106\" height=\"18\" />.\n</p><p>The diagram below shows a general family of constructions of Nordic squares that achieve this lower bound, thus proving the claim:\n</p>\n<div class=\"center\"><div class=\"floatnone\"><a href=\"/wiki/index.php/File:2022_IMO_6.png\" class=\"image\"><img alt=\"2022 IMO 6.png\" src=\"https://wiki-images.artofproblemsolving.com//thumb/4/44/2022_IMO_6.png/900px-2022_IMO_6.png\" width=\"900\" height=\"197\" srcset=\"https://wiki-images.artofproblemsolving.com//thumb/4/44/2022_IMO_6.png/1350px-2022_IMO_6.png 1.5x, https://wiki-images.artofproblemsolving.com//4/44/2022_IMO_6.png 2x\" /></a></div></div>\n<p>In these constructions, numbers are progressively inserted into the white spaces in ascending order emanating outwards from the \"1\" in the corner in the directions of the red arrows, and the remaining j largest numbers are then inserted into the cells labelled as \"mountains\". In this manner, the pathway of finite descent from each pair of adjacent cells is unique, and all terminate at the \"1\" valley, therefore the above-derived minimum is achieved. <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p>- <a href=\"/wiki/index.php?title=User:Griphomaniac&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Griphomaniac (page does not exist)\">Griphomaniac</a> (<a href=\"/wiki/index.php?title=User_talk:Griphomaniac&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User talk:Griphomaniac (page does not exist)\">talk</a>) 13:16, 21 July 2022 (EDT)\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_IMO_Problems/Problem_6&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_IMO\" title=\"2022 IMO\">2022 IMO</a></b> (<b><a href=\"/wiki/index.php/2022_IMO_Problems\" title=\"2022 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_5\" title=\"2022 IMO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2022_IMO_Problems/Problem_1\" title=\"2022 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_2\" title=\"2022 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_3\" title=\"2022 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_4\" title=\"2022 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2022_IMO_Problems/Problem_5\" title=\"2022 IMO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Problem</b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908060130\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.050 seconds\nReal time usage: 0.054 seconds\nPreprocessor visited node count: 119/1000000\nPreprocessor generated node count: 353/1000000\nPost‐expand include size: 865/2097152 bytes\nTemplate argument size: 50/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1442/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.133      1 Template:IMO_box\n100.00%    2.133      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22932-0!canonical and timestamp 20240908060130 and revision id 213868\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        },
+        {
+          "ns": 2,
+          "*": "User:Griphomaniac"
+        },
+        {
+          "ns": 3,
+          "*": "User talk:Griphomaniac"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [
+        "2022_IMO_6.png"
+      ],
+      "externallinks": [
+        "https://www.youtube.com/watch?v=-AII0ldyDww"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_IMO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Video solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_IMO_Problems/Problem_6",
+          "byteoffset": 760,
+          "anchor": "Video_solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_IMO_Problems/Problem_6",
+          "byteoffset": 874,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2022_IMO_Problems/Problem_6",
+          "byteoffset": 2407,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 IMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Graph Theory",
+      "Combinatorial Counting",
+      "Probability of Independent Events"
+    ]
+  }
+}

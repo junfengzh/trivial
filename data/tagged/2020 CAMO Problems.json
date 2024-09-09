@@ -1,0 +1,839 @@
+{
+  "2020 CAMO Problems/Problem 1": {
+    "parse": {
+      "title": "2020 CAMO Problems/Problem 1",
+      "pageid": 19649,
+      "revid": 206217,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_1\">Problem 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/d/d/d/ddda1f7497c0a77bdf9248dee2371ca06bcbbc74.png\" class=\"latex\" alt=\"$f:\\mathbb R_{&gt;0}\\to\\mathbb R_{&gt;0}$\" style=\"vertical-align: -3px\" width=\"114\" height=\"16\" /> (meaning <img src=\"//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png\" class=\"latex\" alt=\"$f$\" style=\"vertical-align: -3px\" width=\"10\" height=\"16\" /> takes positive real numbers to positive real numbers) be a nonconstant function such that for any positive real numbers <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/f/b/f/fbfc1781f9e0e0468cfe295fe4242ac8843e1cd2.png\" class=\"latexcenter\" alt=\"\\[f(x)f(y)f(x+y)=f(x)+f(y)-f(x+y).\\]\" width=\"346\" height=\"18\" />Prove that there is a constant <img src=\"//latex.artofproblemsolving.com/e/b/8/eb8726d98aced2f3140dd77a2d8614c2e7674700.png\" class=\"latex\" alt=\"$a&gt;1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/f/5/3/f53c551cb8a20af7ac1680b0189a9195cae3b7fe.png\" class=\"latexcenter\" alt=\"\\[f(x)=\\frac{a^x-1}{a^x+1}\\]\" width=\"110\" height=\"38\" />for all positive real numbers <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Because <img src=\"//latex.artofproblemsolving.com/4/8/2/4827ef9ccc0a7c47018fc5b1b98275d6f862cddd.png\" class=\"latex\" alt=\"$f(x)f(y)f(x+y)=f(x)+f(y)-f(x+y)$\" style=\"vertical-align: -5px\" width=\"345\" height=\"20\" />, we can find that <img src=\"//latex.artofproblemsolving.com/c/c/1/cc11c69980791dce2103382a323199dff5ecde09.png\" class=\"latexcenter\" alt=\"\\[f(x+y)=\\frac{f(x)+f(y)}{1+f(x)*f(y)}\\]\" width=\"211\" height=\"43\" />\nIt's obvious that if there exists two real numbers <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />, which satisfies <img src=\"//latex.artofproblemsolving.com/f/5/3/f53c551cb8a20af7ac1680b0189a9195cae3b7fe.png\" class=\"latexcenter\" alt=\"\\[f(x)=\\frac{a^x-1}{a^x+1}\\]\" width=\"110\" height=\"38\" /> and <img src=\"//latex.artofproblemsolving.com/f/d/3/fd3de3e55e294e80aa44dca9f7ab616ac963ec0f.png\" class=\"latexcenter\" alt=\"\\[f(y)=\\frac{a^y-1}{a^y+1}\\]\" width=\"109\" height=\"38\" />\n</p><p>Then, for <img src=\"//latex.artofproblemsolving.com/b/d/1/bd1b4d3aa4b63da184a9670452ea2f70eb8752d0.png\" class=\"latex\" alt=\"$f(x+y)$\" style=\"vertical-align: -5px\" width=\"69\" height=\"20\" />,  <img src=\"//latex.artofproblemsolving.com/c/c/1/cc11c69980791dce2103382a323199dff5ecde09.png\" class=\"latexcenter\" alt=\"\\[f(x+y)=\\frac{f(x)+f(y)}{1+f(x)*f(y)}\\]\" width=\"211\" height=\"43\" />, <img src=\"//latex.artofproblemsolving.com/4/5/6/456eeb679ceea07a7476d96d955262a44db8b8be.png\" class=\"latexcenter\" alt=\"\\[f(x+y)=\\frac{2*a^x*a^y-2}{2*a^x*a^y+2}\\]\" width=\"203\" height=\"38\" />\n</p><p>Then, <img src=\"//latex.artofproblemsolving.com/b/7/0/b70ae446b70a7dbc6d2be06f193c032f763352ac.png\" class=\"latexcenter\" alt=\"\\[f(x+y)=\\frac{a^x*a^y-1}{a^x*a^y+1}\\]\" width=\"177\" height=\"38\" />\n</p><p>The fraction is also satisfies for <img src=\"//latex.artofproblemsolving.com/b/d/1/bd1b4d3aa4b63da184a9670452ea2f70eb8752d0.png\" class=\"latex\" alt=\"$f(x+y)$\" style=\"vertical-align: -5px\" width=\"69\" height=\"20\" />\n</p><p>Then, we can solve this problem using mathematical induction\n</p><p>~~Andy666\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CAMO\" title=\"2020 CAMO\">2020 CAMO</a></b> (<b><a href=\"/wiki/index.php/2020_CAMO_Problems\" title=\"2020 CAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First problem</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_2\" title=\"2020 CAMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_2\" title=\"2020 CAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_3\" title=\"2020 CAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_4\" title=\"2020 CAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_5\" title=\"2020 CAMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_6\" title=\"2020 CAMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/CAMO_Problems_and_Solutions\" title=\"CAMO Problems and Solutions\"> All CAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php?title=2020_CJMO&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO (page does not exist)\">2020 CJMO</a></b> (<b><a href=\"/wiki/index.php?title=2020_CJMO_Problems&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems (page does not exist)\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_1&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 1 (page does not exist)\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_3&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 3 (page does not exist)\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_1&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 1 (page does not exist)\">1</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_2&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 2 (page does not exist)\">2</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_3&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 3 (page does not exist)\">3</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_4&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 4 (page does not exist)\">4</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_5&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 5 (page does not exist)\">5</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_6&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 6 (page does not exist)\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php?title=CJMO_Problems_and_Solutions&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"CJMO Problems and Solutions (page does not exist)\"> All CJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907222141\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.051 seconds\nReal time usage: 0.053 seconds\nPreprocessor visited node count: 238/1000000\nPreprocessor generated node count: 726/1000000\nPost‐expand include size: 2069/2097152 bytes\nTemplate argument size: 103/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3421/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    6.401      1 -total\n 41.06%    2.628      1 Template:CAMO_newbox\n 36.74%    2.352      1 Template:CJMO_newbox\n 18.18%    1.164      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19649-0!canonical and timestamp 20240907222141 and revision id 206217\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Algebra_Problems"
+        },
+        {
+          "sortkey": "",
+          "*": "Functional_Equation_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CAMO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "*": "CJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CAMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 1",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CAMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CAMO_Problems/Problem_1",
+          "byteoffset": 435,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CAMO_Problems/Problem_1",
+          "byteoffset": 1085,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CAMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Geometric Series Sum",
+      "Euler's Theorem",
+      "Complex Numbers"
+    ]
+  },
+  "2020 CAMO Problems/Problem 2": {
+    "parse": {
+      "title": "2020 CAMO Problems/Problem 2",
+      "pageid": 19651,
+      "revid": 133171,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_2\">Problem 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> be a positive integer, <img src=\"//latex.artofproblemsolving.com/4/8/4/4843d240c7b2c54b45cfc9ed28b13887dfd36adb.png\" class=\"latex\" alt=\"$p&gt;3$\" style=\"vertical-align: -3px\" width=\"43\" height=\"16\" /> a prime, and <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> an integer with <img src=\"//latex.artofproblemsolving.com/7/9/4/79456269929900c427f42d76b1870e0c28ff0f94.png\" class=\"latex\" alt=\"$0\\le n\\le p^{k-1}$\" style=\"vertical-align: -3px\" width=\"101\" height=\"19\" />. Prove that <img src=\"//latex.artofproblemsolving.com/c/7/9/c79b820229a5e0ac8bdd0cab9ce7f744ba6a8756.png\" class=\"latexcenter\" alt=\"\\[\\binom{p^k}{pn}\\equiv\\binom{p^{k-1}}n\\pmod{p^{2k+1}}.\\]\" width=\"248\" height=\"53\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2020_CAMO_Problems/Problem_2&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CAMO\" title=\"2020 CAMO\">2020 CAMO</a></b> (<b><a href=\"/wiki/index.php/2020_CAMO_Problems\" title=\"2020 CAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_1\" title=\"2020 CAMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_3\" title=\"2020 CAMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_1\" title=\"2020 CAMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_3\" title=\"2020 CAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_4\" title=\"2020 CAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_5\" title=\"2020 CAMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_6\" title=\"2020 CAMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/CAMO_Problems_and_Solutions\" title=\"CAMO Problems and Solutions\"> All CAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055735\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.040 seconds\nReal time usage: 0.042 seconds\nPreprocessor visited node count: 94/1000000\nPreprocessor generated node count: 318/1000000\nPost‐expand include size: 1558/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 852/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.941      1 -total\n 42.91%    1.691      1 Template:CAMO_newbox\n 32.25%    1.271      1 Template:Solution\n 20.33%    0.801      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19651-0!canonical and timestamp 20240908055735 and revision id 133171\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        },
+        {
+          "sortkey": "",
+          "*": "Olympiad_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CAMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 2",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CAMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CAMO_Problems/Problem_2",
+          "byteoffset": 230,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CAMO_Problems/Problem_2",
+          "byteoffset": 257,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CAMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Binomial Theorem",
+      "Modular Arithmetic",
+      "Combination Formula"
+    ]
+  },
+  "2020 CAMO Problems/Problem 3": {
+    "parse": {
+      "title": "2020 CAMO Problems/Problem 3",
+      "pageid": 19652,
+      "revid": 133172,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_3\">Problem 3</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 3\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be a triangle with incircle <img src=\"//latex.artofproblemsolving.com/5/4/d/54d7d48553f4d9e7ab418118607ea324cbfddfda.png\" class=\"latex\" alt=\"$\\omega$\" width=\"11\" height=\"8\" />, and let <img src=\"//latex.artofproblemsolving.com/5/4/d/54d7d48553f4d9e7ab418118607ea324cbfddfda.png\" class=\"latex\" alt=\"$\\omega$\" width=\"11\" height=\"8\" /> touch <img src=\"//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png\" class=\"latex\" alt=\"$\\overline{BC}$\" width=\"29\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/f/b/b/fbb0f1d8a43539dbc3355734bafb2bfd855b5f87.png\" class=\"latex\" alt=\"$\\overline{CA}$\" width=\"28\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/8/4/0/840e2b592390eb6ec918fa6f3292716ce170de66.png\" class=\"latex\" alt=\"$\\overline{AB}$\" style=\"vertical-align: -1px\" width=\"30\" height=\"18\" /> at <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" />, respectively. Point <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> is the midpoint of <img src=\"//latex.artofproblemsolving.com/e/d/0/ed0f6a692f19a65fe60fe5745826792f3fd1d57e.png\" class=\"latex\" alt=\"$\\overline{EF}$\" width=\"29\" height=\"15\" />, and <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> is the point on <img src=\"//latex.artofproblemsolving.com/5/4/d/54d7d48553f4d9e7ab418118607ea324cbfddfda.png\" class=\"latex\" alt=\"$\\omega$\" width=\"11\" height=\"8\" /> such that <img src=\"//latex.artofproblemsolving.com/3/9/5/395d12e8025056df9ad47ca87bd91dd78567efc8.png\" class=\"latex\" alt=\"$\\overline{DT}$\" width=\"29\" height=\"15\" /> is a diameter. Line <img src=\"//latex.artofproblemsolving.com/8/5/7/8571a8b4fba89d6d32f83b40ea1bd87f7c9aaf2f.png\" class=\"latex\" alt=\"$MT$\" width=\"32\" height=\"12\" /> meets the line through <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> parallel to <img src=\"//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png\" class=\"latex\" alt=\"$\\overline{BC}$\" width=\"29\" height=\"15\" /> at <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/5/4/d/54d7d48553f4d9e7ab418118607ea324cbfddfda.png\" class=\"latex\" alt=\"$\\omega$\" width=\"11\" height=\"8\" /> again at <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />. Lines <img src=\"//latex.artofproblemsolving.com/c/7/3/c7387ef3aa3162cea3e516216d4ed946506bd30d.png\" class=\"latex\" alt=\"$DF$\" width=\"29\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/6/d/5/6d5c9afa92ae3180f02754c177e530d9d0f8b4d4.png\" class=\"latex\" alt=\"$DE$\" width=\"29\" height=\"12\" /> intersect line <img src=\"//latex.artofproblemsolving.com/e/3/b/e3bb4eeb347e74e025fd175c22f1f7275af0555e.png\" class=\"latex\" alt=\"$AP$\" width=\"27\" height=\"13\" /> at <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" /> respectively. Prove that the circumcircles of <img src=\"//latex.artofproblemsolving.com/b/8/9/b89cb1776431d56dcf6668eaeed7e634677d3215.png\" class=\"latex\" alt=\"$\\triangle APQ$\" style=\"vertical-align: -3px\" width=\"57\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/1/d/d/1dd0737aae6de0ce1ca8bcc9be4554f0a0c9204e.png\" class=\"latex\" alt=\"$\\triangle DXY$\" width=\"62\" height=\"13\" /> are tangent.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2020_CAMO_Problems/Problem_3&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CAMO\" title=\"2020 CAMO\">2020 CAMO</a></b> (<b><a href=\"/wiki/index.php/2020_CAMO_Problems\" title=\"2020 CAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_2\" title=\"2020 CAMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_4\" title=\"2020 CAMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_1\" title=\"2020 CAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_2\" title=\"2020 CAMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_4\" title=\"2020 CAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_5\" title=\"2020 CAMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_6\" title=\"2020 CAMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/CAMO_Problems_and_Solutions\" title=\"CAMO Problems and Solutions\"> All CAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240908055736\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.049 seconds\nReal time usage: 0.050 seconds\nPreprocessor visited node count: 293/1000000\nPreprocessor generated node count: 760/1000000\nPost‐expand include size: 1635/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4147/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.241      1 -total\n 40.49%    1.717      1 Template:CAMO_newbox\n 35.32%    1.498      1 Template:Solution\n 19.92%    0.845      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19652-0!canonical and timestamp 20240908055735 and revision id 133172\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        },
+        {
+          "sortkey": "",
+          "*": "Olympiad_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CAMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=2020",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 3",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CAMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem_3"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CAMO_Problems/Problem_3",
+          "byteoffset": 834,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CAMO_Problems/Problem_3",
+          "byteoffset": 861,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CAMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Power of a Point",
+      "Circle Theorems",
+      "Angle Bisector Theorem"
+    ]
+  },
+  "2020 CAMO Problems/Problem 4": {
+    "parse": {
+      "title": "2020 CAMO Problems/Problem 4",
+      "pageid": 19653,
+      "revid": 133174,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_4\">Problem 4</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 4\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be a triangle and <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> a point on its circumcircle. Let <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png\" class=\"latex\" alt=\"$F$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> be the reflections of <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> over <img src=\"//latex.artofproblemsolving.com/8/4/0/840e2b592390eb6ec918fa6f3292716ce170de66.png\" class=\"latex\" alt=\"$\\overline{AB}$\" style=\"vertical-align: -1px\" width=\"30\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png\" class=\"latex\" alt=\"$\\overline{AC}$\" style=\"vertical-align: -1px\" width=\"30\" height=\"18\" />, respectively. Select points <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" /> on line <img src=\"//latex.artofproblemsolving.com/c/1/2/c128243ea8125d0bb007b8132dcfa44461df73a7.png\" class=\"latex\" alt=\"$EF$\" width=\"28\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/f/f/3/ff35501c711c42708a27f1df5cd7fca77e10dc80.png\" class=\"latex\" alt=\"$\\overline{BX}\\parallel\\overline{AC}$\" style=\"vertical-align: -5px\" width=\"78\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/0/3/0/0306a7d2f6ca9926aa529c47a3349553a501f8cb.png\" class=\"latex\" alt=\"$\\overline{CY}\\parallel\\overline{AB}$\" style=\"vertical-align: -5px\" width=\"76\" height=\"20\" />, and let <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> be the reflections of <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" /> over <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> respectively. Prove that <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> are collinear.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2020_CAMO_Problems/Problem_4&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CAMO\" title=\"2020 CAMO\">2020 CAMO</a></b> (<b><a href=\"/wiki/index.php/2020_CAMO_Problems\" title=\"2020 CAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_3\" title=\"2020 CAMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_5\" title=\"2020 CAMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_1\" title=\"2020 CAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_2\" title=\"2020 CAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_3\" title=\"2020 CAMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_5\" title=\"2020 CAMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_6\" title=\"2020 CAMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/CAMO_Problems_and_Solutions\" title=\"CAMO Problems and Solutions\"> All CAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907144829\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.051 seconds\nReal time usage: 0.061 seconds\nPreprocessor visited node count: 238/1000000\nPreprocessor generated node count: 638/1000000\nPost‐expand include size: 1558/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3350/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    5.366      1 -total\n 41.18%    2.210      1 Template:CAMO_newbox\n 33.51%    1.798      1 Template:Solution\n 21.19%    1.137      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19653-0!canonical and timestamp 20240907144829 and revision id 133174\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        },
+        {
+          "sortkey": "",
+          "*": "Olympiad_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CAMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 4",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CAMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem_4"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CAMO_Problems/Problem_4",
+          "byteoffset": 660,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CAMO_Problems/Problem_4",
+          "byteoffset": 687,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CAMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Angle Bisector Theorem",
+      "Ceva's Theorem",
+      "Power of a Point"
+    ]
+  },
+  "2020 CAMO Problems/Problem 5": {
+    "parse": {
+      "title": "2020 CAMO Problems/Problem 5",
+      "pageid": 19654,
+      "revid": 133176,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_5\">Problem 5</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 5\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/5/f/3/5f344da4b7281482f8a8a4334cbaea8fb61f6942.png\" class=\"latex\" alt=\"$f(x)=x^2-2$\" style=\"vertical-align: -4px\" width=\"108\" height=\"19\" />. Prove that for all positive integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, the polynomial <img src=\"//latex.artofproblemsolving.com/7/7/0/770cd7a8887dbd0befdf8d5cb85f7cc1f1a7baf3.png\" class=\"latexcenter\" alt=\"\\[P(x)=\\underbrace{f(f(\\ldots f}_{n\\text{ times}}(x)\\ldots))-x\\]\" width=\"229\" height=\"41\" />can be factored into two polynomials with integer coefficients and equal degree.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>This problem needs a solution. If you have a solution for it, please help us out by <span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2020_CAMO_Problems/Problem_5&amp;action=edit\">adding it</a></span>.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CAMO\" title=\"2020 CAMO\">2020 CAMO</a></b> (<b><a href=\"/wiki/index.php/2020_CAMO_Problems\" title=\"2020 CAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_4\" title=\"2020 CAMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_6\" title=\"2020 CAMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_1\" title=\"2020 CAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_2\" title=\"2020 CAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_3\" title=\"2020 CAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_4\" title=\"2020 CAMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_6\" title=\"2020 CAMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/CAMO_Problems_and_Solutions\" title=\"CAMO Problems and Solutions\"> All CAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php?title=2020_CJMO&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO (page does not exist)\">2020 CJMO</a></b> (<b><a href=\"/wiki/index.php?title=2020_CJMO_Problems&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems (page does not exist)\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_5&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 5 (page does not exist)\">Problem 5</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last problem</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_1&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 1 (page does not exist)\">1</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_2&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 2 (page does not exist)\">2</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_3&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 3 (page does not exist)\">3</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_4&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 4 (page does not exist)\">4</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_5&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 5 (page does not exist)\">5</a> <b>•</b> <a href=\"/wiki/index.php?title=2020_CJMO_Problems/Problem_6&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2020 CJMO Problems/Problem 6 (page does not exist)\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php?title=CJMO_Problems_and_Solutions&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"CJMO Problems and Solutions (page does not exist)\"> All CJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908055736\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.047 seconds\nReal time usage: 0.052 seconds\nPreprocessor visited node count: 102/1000000\nPreprocessor generated node count: 438/1000000\nPost‐expand include size: 2494/2097152 bytes\nTemplate argument size: 102/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 534/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    6.493      1 -total\n 29.17%    1.894      1 Template:CAMO_newbox\n 27.86%    1.809      1 Template:CJMO_newbox\n 23.10%    1.500      1 Template:Solution\n 15.80%    1.026      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19654-0!canonical and timestamp 20240908055736 and revision id 133176\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Problems_with_no_solution"
+        },
+        {
+          "sortkey": "",
+          "*": "Olympiad_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CAMO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "*": "2020 CJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "*": "CJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Solution"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CAMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 5",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CAMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem_5"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CAMO_Problems/Problem_5",
+          "byteoffset": 268,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CAMO_Problems/Problem_5",
+          "byteoffset": 295,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CAMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Polynomials and Roots",
+      "Quadratic Formula",
+      "Sequences and Series"
+    ]
+  },
+  "2020 CAMO Problems/Problem 6": {
+    "parse": {
+      "title": "2020 CAMO Problems/Problem 6",
+      "pageid": 19655,
+      "revid": 135239,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_6\">Problem 6</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 6\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> be a positive integer. Eric and a squid play a turn-based game on an infinite grid of unit squares. Eric's goal is to capture the squid by moving onto the same square as it.\n</p><p>Initially, all the squares are colored white. The squid begins on an arbitrary square in the grid, and Eric chooses a different square to start on. On the squid's turn, it performs the following action exactly <img src=\"//latex.artofproblemsolving.com/5/0/9/509a9369d5c55fd98dc99cb2938fb44f0101f90a.png\" class=\"latex\" alt=\"$2020$\" width=\"35\" height=\"12\" /> times: it chooses an adjacent unit square that is white, moves onto it, and sprays the previous unit square either black or gray. Once the squid has performed this action <img src=\"//latex.artofproblemsolving.com/5/0/9/509a9369d5c55fd98dc99cb2938fb44f0101f90a.png\" class=\"latex\" alt=\"$2020$\" width=\"35\" height=\"12\" /> times, all squares colored gray are automatically colored white again, and the squid's turn ends. If the squid is ever unable to move, then Eric automatically wins. Moreover, the squid is claustrophobic, so at no point in time is it ever surrounded by a closed loop of black or gray squares. On Eric's turn, he performs the following action at most <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> times: he chooses an adjacent unit square that is white and moves onto it. Note that the squid can trap Eric in a closed region, so that Eric can never win.\n</p><p>Eric wins if he ever occupies the same square as the squid. Suppose the squid has the first turn, and both Eric and the squid play optimally. Both Eric and the squid always know each other's location and the colors of all the squares. Find all positive integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> such that Eric can win in finitely many moves.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>First, we should note that there are some starting positions for which Eric can never win, if the squid starts first. For example, if Eric is right next to the squid, then he can just get covered entirely by black squares in 6 moves. In general, if we have a coordinate system with origin at the squid's starting position, with Eric's coordinates <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />, then they must be such that:\n</p><p><img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> <img src=\"//latex.artofproblemsolving.com/7/7/c/77cf26be132ef93923e082ee4153b2cb0ef44a50.png\" class=\"latex\" alt=\"$+$\" style=\"vertical-align: -1px\" width=\"13\" height=\"12\" /> <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" /> <img src=\"//latex.artofproblemsolving.com/7/7/f/77f0cdbd0dbecd281387229d95a014017a0a395a.png\" class=\"latex\" alt=\"$&gt;$\" style=\"vertical-align: 0px\" width=\"13\" height=\"10\" /> <img src=\"//latex.artofproblemsolving.com/2/f/a/2fa725c98dfe19f98809033755b801810bc298aa.png\" class=\"latex\" alt=\"$2013$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />, otherwise Eric can always be covered in the first turn.\n</p><p>Now, assuming that it isn't possible for that to happen, then we change the origin of the coordinate system to the squid's most recent position. Say <img src=\"//latex.artofproblemsolving.com/3/6/7/3677e209d475c58145c74bf53d9b74728db69e03.png\" class=\"latex\" alt=\"$x + y = 2014$\" style=\"vertical-align: -3px\" width=\"102\" height=\"16\" />, then if <img src=\"//latex.artofproblemsolving.com/a/5/a/a5a4c53f1cfb85741abc13732cdc16647e496b41.png\" class=\"latex\" alt=\"$n &lt; 2013$\" style=\"vertical-align: -2px\" width=\"73\" height=\"15\" />, then the squid can cover Eric in the very next turn. Hence, <img src=\"//latex.artofproblemsolving.com/0/4/5/04518a2a6233d9baae26997f5265c5d4c38d2aa5.png\" class=\"latex\" alt=\"$n &gt; 2013$\" style=\"vertical-align: 0px\" width=\"70\" height=\"13\" />. Now we try to get a strategy for which Eric wins. The sum of Eric's coordinates should be greater than <img src=\"//latex.artofproblemsolving.com/2/f/a/2fa725c98dfe19f98809033755b801810bc298aa.png\" class=\"latex\" alt=\"$2013$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" /> after any squid-move for the squid to avoid defeat. On any move in which the squid cannot win directly, it must focus on getting away. If initially <img src=\"//latex.artofproblemsolving.com/3/6/7/3677e209d475c58145c74bf53d9b74728db69e03.png\" class=\"latex\" alt=\"$x + y = 2014$\" style=\"vertical-align: -3px\" width=\"102\" height=\"16\" />, then after the squid's move, <img src=\"//latex.artofproblemsolving.com/b/9/9/b9976536944504b81852f80b97eb0793feb6ae5a.png\" class=\"latex\" alt=\"$x + y &lt; 4035$\" style=\"vertical-align: -3px\" width=\"102\" height=\"16\" />. If <img src=\"//latex.artofproblemsolving.com/5/5/1/55133685d5b5034e8284e86aa83f01e2698676cd.png\" class=\"latex\" alt=\"$n &gt; 4034$\" style=\"vertical-align: 0px\" width=\"71\" height=\"13\" />, the squid can always be caught in the next move. If <img src=\"//latex.artofproblemsolving.com/7/a/b/7ab3034d8e9044aaea69d6004d2c2eae84d9b453.png\" class=\"latex\" alt=\"$n &lt; 4034$\" style=\"vertical-align: 0px\" width=\"71\" height=\"13\" />, the squid can always get away/win. Hence, <img src=\"//latex.artofproblemsolving.com/5/5/1/55133685d5b5034e8284e86aa83f01e2698676cd.png\" class=\"latex\" alt=\"$n &gt; 4034$\" style=\"vertical-align: 0px\" width=\"71\" height=\"13\" /> Our answer is all <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> greater than <img src=\"//latex.artofproblemsolving.com/e/4/d/e4dc4a9c18f1cf47f733180e6bcf1343294f2dbd.png\" class=\"latex\" alt=\"$4034$\" style=\"vertical-align: 0px\" width=\"36\" height=\"13\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2020_CAMO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2020_CAMO\" title=\"2020 CAMO\">2020 CAMO</a></b> (<b><a href=\"/wiki/index.php/2020_CAMO_Problems\" title=\"2020 CAMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=27&amp;year=2020\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_5\" title=\"2020 CAMO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Problem</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_1\" title=\"2020 CAMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_2\" title=\"2020 CAMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_3\" title=\"2020 CAMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_4\" title=\"2020 CAMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2020_CAMO_Problems/Problem_5\" title=\"2020 CAMO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/CAMO_Problems_and_Solutions\" title=\"CAMO Problems and Solutions\"> All CAMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the MAC's <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/view/annualcmc/home\">Christmas Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240908002647\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.042 seconds\nReal time usage: 0.044 seconds\nPreprocessor visited node count: 245/1000000\nPreprocessor generated node count: 646/1000000\nPost‐expand include size: 1102/2097152 bytes\nTemplate argument size: 54/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3860/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.723      1 -total\n 68.20%    2.539      1 Template:CAMO_newbox\n 28.82%    1.073      1 Template:MAC_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19655-0!canonical and timestamp 20240908002647 and revision id 135239\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2020 CAMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "CAMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:CAMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAC Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=27&year=2020",
+        "https://sites.google.com/view/annualcmc/home"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 6",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2020_CAMO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem_6"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2020_CAMO_Problems/Problem_6",
+          "byteoffset": 1472,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2020_CAMO_Problems/Problem_6",
+          "byteoffset": 2902,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2020 CAMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Graph Theory",
+      "Probability of Independent Events",
+      "Combinatorial Counting"
+    ]
+  }
+}

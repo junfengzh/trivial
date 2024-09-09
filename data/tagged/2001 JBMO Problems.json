@@ -1,0 +1,458 @@
+{
+  "2001 JBMO Problems/Problem 1": {
+    "parse": {
+      "title": "2001 JBMO Problems/Problem 1",
+      "pageid": 16630,
+      "revid": 218792,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution1\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution1</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Solve the equation <img src=\"//latex.artofproblemsolving.com/d/3/2/d320d56558d3680da6f97756f5a311548ea8afaf.png\" class=\"latex\" alt=\"$a^3 + b^3 + c^3 = 2001$\" style=\"vertical-align: -1px\" width=\"151\" height=\"16\" /> in positive integers.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution1\">Solution1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Note that for all positive integers <img src=\"//latex.artofproblemsolving.com/c/5/4/c54e7152acd659788861f0453ac195c635e0a005.png\" class=\"latex\" alt=\"$n,$\" style=\"vertical-align: -3px\" width=\"15\" height=\"11\" /> the value <img src=\"//latex.artofproblemsolving.com/4/b/a/4ba37f50c674bcbae995ed1d9dfd4beb5e53c765.png\" class=\"latex\" alt=\"$n^3$\" width=\"17\" height=\"15\" /> is congruent to <img src=\"//latex.artofproblemsolving.com/4/f/a/4fa52acd39eb0dc3d8250f2eb6b464e67abd8bf5.png\" class=\"latex\" alt=\"$-1,0,1$\" style=\"vertical-align: -3px\" width=\"56\" height=\"16\" /> <a href=\"/wiki/index.php/Modulo\" class=\"mw-redirect\" title=\"Modulo\">modulo</a> <img src=\"//latex.artofproblemsolving.com/f/6/a/f6a1b9d5cec741422bfb37f91db47fd7514f5377.png\" class=\"latex\" alt=\"$9.$\" width=\"12\" height=\"12\" />  Since <img src=\"//latex.artofproblemsolving.com/c/7/9/c79d53d28d4c6b5552a9d0ddc1bf2e7f1e4a7903.png\" class=\"latex\" alt=\"$2001 \\equiv 3 \\pmod{9},$\" style=\"vertical-align: -4px\" width=\"146\" height=\"18\" /> we find that <img src=\"//latex.artofproblemsolving.com/3/a/d/3ad09e3fb0dfc322f2f2bff1aced48615194cc48.png\" class=\"latex\" alt=\"$a^3,b^3,c^3 \\equiv 1 \\pmod{9}.$\" style=\"vertical-align: -4px\" width=\"172\" height=\"19\" /> Thus, <img src=\"//latex.artofproblemsolving.com/4/4/b/44b8c1c5544183d3622343bbbc1c04aa9102371c.png\" class=\"latex\" alt=\"$a,b,c \\equiv 1 \\pmod{3},$\" style=\"vertical-align: -4px\" width=\"151\" height=\"18\" /> and the only numbers congruent to <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> modulo <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" /> are <img src=\"//latex.artofproblemsolving.com/9/c/a/9ca7688a8e6057b9c4b72bf36b321c34ac2c4145.png\" class=\"latex\" alt=\"$1,4,7,10.$\" style=\"vertical-align: -3px\" width=\"73\" height=\"16\" />\n</p><p><br />\n<a href=\"/wiki/index.php/WLOG\" class=\"mw-redirect\" title=\"WLOG\">WLOG</a>, let <img src=\"//latex.artofproblemsolving.com/f/9/e/f9e8a9a48259c6d1b3e1ca2121dabbf2fcc57098.png\" class=\"latex\" alt=\"$a \\ge b \\ge c.$\" style=\"vertical-align: -2px\" width=\"77\" height=\"15\" />  That means <img src=\"//latex.artofproblemsolving.com/8/b/8/8b8e1cca5c44613a72077d2a259f2eaa53ab42d0.png\" class=\"latex\" alt=\"$a^3 \\ge b^3, c^3$\" style=\"vertical-align: -3px\" width=\"78\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/3/9/0/390ea478ff8c60d08f7cc14a5975a0a58f7b47fd.png\" class=\"latex\" alt=\"$3a^3 \\ge 2001.$\" style=\"vertical-align: -2px\" width=\"90\" height=\"17\" />  Thus, <img src=\"//latex.artofproblemsolving.com/3/7/e/37ea034dcc2bc42a028bf3bff30ff1860e03ef99.png\" class=\"latex\" alt=\"$a^3 \\ge 667,$\" style=\"vertical-align: -3px\" width=\"72\" height=\"18\" /> so <img src=\"//latex.artofproblemsolving.com/9/b/8/9b868737fa8c96a9aeffb2bfb2fa31488ab1b58f.png\" class=\"latex\" alt=\"$a = 10.$\" style=\"vertical-align: 0px\" width=\"55\" height=\"13\" />\n</p><p><br />\nNow <img src=\"//latex.artofproblemsolving.com/3/d/9/3d92505a5241f6404ce9fed4c4b4c9007e09609c.png\" class=\"latex\" alt=\"$b^3 + c^3 = 1001.$\" style=\"vertical-align: -1px\" width=\"116\" height=\"16\" />  Since <img src=\"//latex.artofproblemsolving.com/2/3/9/2390626ea691e703bbb15a3dae8ab2b76843af54.png\" class=\"latex\" alt=\"$b^3 \\ge c^3,$\" style=\"vertical-align: -3px\" width=\"59\" height=\"18\" /> we find that <img src=\"//latex.artofproblemsolving.com/5/7/e/57eca92728bc94b35ad1838f58c6a7943bcea816.png\" class=\"latex\" alt=\"$2b^3 \\ge 1001.$\" style=\"vertical-align: -2px\" width=\"88\" height=\"17\" />  That means <img src=\"//latex.artofproblemsolving.com/a/7/2/a7203b7e6f070ba402b9cd45dee2bfc125164fd4.png\" class=\"latex\" alt=\"$b = 10$\" style=\"vertical-align: -1px\" width=\"52\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/c/6/0/c600fc32822186112e113b0e34287a7c4154d43a.png\" class=\"latex\" alt=\"$c = 1.$\" style=\"vertical-align: 0px\" width=\"44\" height=\"12\" />\n</p><p><br />\nIn summary, the only solutions are <img src=\"//latex.artofproblemsolving.com/d/f/b/dfbb5c9a21fd43fa29e47d02fcad2280d8d5e84a.png\" class=\"latex\" alt=\"$\\boxed{(10,10,1),(10,1,10),(1,10,10)}.$\" style=\"vertical-align: -10px\" width=\"258\" height=\"29\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution2\">Solution2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: Solution2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>You can also watch remainders modulo 7 which are also -1,0,1. The rest is almost identical as in solution 1.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_1&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_JBMO\" title=\"2001 JBMO\">2001 JBMO</a></b> (<b><a href=\"/wiki/index.php/2001_JBMO_Problems\" title=\"2001 JBMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c13_contests\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_2\" title=\"2001 JBMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_2\" title=\"2001 JBMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_3\" title=\"2001 JBMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_4\" title=\"2001 JBMO Problems/Problem 4\">4</a> <b></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/JBMO_Problems_and_Solutions,_with_authors\" title=\"JBMO Problems and Solutions, with authors\"> All JBMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211224\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.031 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 238/1000000\nPreprocessor generated node count: 639/1000000\nPost‐expand include size: 839/2097152 bytes\nTemplate argument size: 43/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3939/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.790      1 Template:JBMO_box\n100.00%    1.790      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:16630-0!canonical and timestamp 20240907211224 and revision id 218792\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "JBMO Problems and Solutions, with authors"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Modulo"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "WLOG"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:JBMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_JBMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_JBMO_Problems/Problem_1",
+          "byteoffset": 91,
+          "anchor": "Solution1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_JBMO_Problems/Problem_1",
+          "byteoffset": 935,
+          "anchor": "Solution2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2001_JBMO_Problems/Problem_1",
+          "byteoffset": 1059,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 JBMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Diophantine Equations",
+      "Prime Factorization"
+    ]
+  },
+  "2001 JBMO Problems/Problem 2": {
+    "parse": {
+      "title": "2001 JBMO Problems/Problem 2",
+      "pageid": 16648,
+      "revid": 97222,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be a triangle with <img src=\"//latex.artofproblemsolving.com/f/9/e/f9e702326a58a2848df8758e667ae40abdbfb150.png\" class=\"latex\" alt=\"$\\angle C = 90^\\circ$\" width=\"75\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/3/b/f3b49e824f35a5f63de9c462efdccdabfd8e1400.png\" class=\"latex\" alt=\"$CA \\ne CB$\" style=\"vertical-align: -4px\" width=\"80\" height=\"17\" />.  Let <img src=\"//latex.artofproblemsolving.com/2/0/e/20e8e26d580012b86d8fe55e70e5740908c35af0.png\" class=\"latex\" alt=\"$CH$\" width=\"31\" height=\"12\" /> be an altitude and <img src=\"//latex.artofproblemsolving.com/4/d/2/4d21d821b4d355d89a283fb4770140d1497d26c1.png\" class=\"latex\" alt=\"$CL$\" width=\"26\" height=\"12\" /> be an interior angle bisector.  Show that for <img src=\"//latex.artofproblemsolving.com/5/1/6/516347f8d3b28b18096a75c16e7fd7310cd14f16.png\" class=\"latex\" alt=\"$X \\ne C$\" style=\"vertical-align: -4px\" width=\"54\" height=\"17\" /> on the line <img src=\"//latex.artofproblemsolving.com/3/d/d/3dda116148cf63a5139291b72ac7723a8bb7afb8.png\" class=\"latex\" alt=\"$CL,$\" style=\"vertical-align: -3px\" width=\"31\" height=\"16\" /> we have <img src=\"//latex.artofproblemsolving.com/c/d/1/cd17d43e4a12224fcc9fcda8427a74f92fe5c68f.png\" class=\"latex\" alt=\"$\\angle XAC \\ne \\angle XBC$\" style=\"vertical-align: -4px\" width=\"139\" height=\"17\" />.  Also show that for <img src=\"//latex.artofproblemsolving.com/d/c/1/dc1ab97e5eba9e5798ad9f42577bdcd806262f0d.png\" class=\"latex\" alt=\"$Y \\ne C$\" style=\"vertical-align: -4px\" width=\"53\" height=\"17\" /> on the line <img src=\"//latex.artofproblemsolving.com/2/0/e/20e8e26d580012b86d8fe55e70e5740908c35af0.png\" class=\"latex\" alt=\"$CH$\" width=\"31\" height=\"12\" /> we have <img src=\"//latex.artofproblemsolving.com/5/5/9/5594c182004855d8ce1915687a482f1fd07a8aaf.png\" class=\"latex\" alt=\"$\\angle YAC \\ne \\angle YBC$\" style=\"vertical-align: -4px\" width=\"135\" height=\"17\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><img src=\"//latex.artofproblemsolving.com/7/2/a/72a7f29e9eaf8d3bfb88d3969df78cfd9319e3c4.png\" class=\"latexcenter\" alt=\"[asy] draw((0,0)--(30,0)--(0,40)--(0,0)); dot((0,0)); label(&quot;C&quot;,(0,0),SW); dot((0,40)); label(&quot;A&quot;,(0,40),NW); dot((30,0)); label(&quot;B&quot;,(30,0),SE);  draw((0,0)--(120/7,120/7)); dot((120/7,120/7)); label(&quot;L&quot;,(120/7,120/7),NE);  dot((10,10)); label(&quot;X&quot;,(10,10),S); draw((0,40)--(10,10)--(30,0));  draw(anglemark((0,0),(0,40),(10,10),150)); draw(anglemark((10,10),(30,0),(0,0),150)); [/asy]\" width=\"202\" height=\"252\" />\n</p><p>Assume that <img src=\"//latex.artofproblemsolving.com/e/8/e/e8e6f6cf735444b195167e7df05300b2750ad3ec.png\" class=\"latex\" alt=\"$\\angle XAC = \\angle XBC$\" width=\"139\" height=\"13\" />.  Since <img src=\"//latex.artofproblemsolving.com/4/d/2/4d21d821b4d355d89a283fb4770140d1497d26c1.png\" class=\"latex\" alt=\"$CL$\" width=\"26\" height=\"12\" /> is an <a href=\"/wiki/index.php/Angle_bisector\" title=\"Angle bisector\">angle bisector</a> of <img src=\"//latex.artofproblemsolving.com/f/d/3/fd3dfac5859d0d9ea1dd6189e46c786144ce1c3d.png\" class=\"latex\" alt=\"$\\angle ACB,$\" style=\"vertical-align: -3px\" width=\"59\" height=\"16\" /> <img src=\"//latex.artofproblemsolving.com/4/0/e/40e19817470188de26cec3be003057dc9e649254.png\" class=\"latex\" alt=\"$\\angle ACX = \\angle BCX.$\" width=\"142\" height=\"13\" />  Thus, by AAS Congruency, <img src=\"//latex.artofproblemsolving.com/e/4/a/e4a00e0db38dc2eaa1d763d8c30f12c1fbb61e66.png\" class=\"latex\" alt=\"$\\triangle ACX \\cong \\triangle BCX,$\" style=\"vertical-align: -3px\" width=\"149\" height=\"17\" /> which results in <img src=\"//latex.artofproblemsolving.com/a/e/1/ae1c97d4d65b99ec000470a437414dad2caae11d.png\" class=\"latex\" alt=\"$AC = BC.$\" style=\"vertical-align: -1px\" width=\"87\" height=\"14\" />  But <img src=\"//latex.artofproblemsolving.com/b/a/6/ba6d8fa604ea292c5152c7d18460269daa10909b.png\" class=\"latex\" alt=\"$AC \\ne BC,$\" style=\"vertical-align: -4px\" width=\"84\" height=\"17\" /> so by <a href=\"/wiki/index.php/Proof_by_contradiction\" title=\"Proof by contradiction\">proof by contradiction</a>, <img src=\"//latex.artofproblemsolving.com/a/5/0/a50785b57b40e1a6a1660f22f3fd01e68a19ba49.png\" class=\"latex\" alt=\"$\\angle XAC \\ne \\angle XBC.$\" style=\"vertical-align: -4px\" width=\"146\" height=\"18\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/f/1/2/f12a5b0d06601be8766fb4567b424adfbce720e0.png\" class=\"latexcenter\" alt=\"[asy] draw((0,0)--(30,0)--(0,40)--(0,0)); dot((0,0)); label(&quot;C&quot;,(0,0),SW); dot((0,40)); label(&quot;A&quot;,(0,40),NW); dot((30,0)); label(&quot;B&quot;,(30,0),SE);  draw((0,0)--(96/5,72/5)); dot((96/5,72/5)); label(&quot;H&quot;,(96/5,72/5),NE);  dot((12,9)); label(&quot;Y&quot;,(12,9),NW); draw((0,40)--(12,9)--(30,0)); draw((0,9)--(12,9)--(12,0),dotted);  dot((0,9)); label(&quot;$A&#39;$&quot;,(0,9),W); dot((12,0)); label(&quot;$B&#39;$&quot;,(12,0),S);  draw(anglemark((0,0),(0,40),(12,9),150)); draw(anglemark((0,0),(0,40),(12,9),200)); draw(anglemark((12,9),(30,0),(0,0),150)); draw(anglemark((12,9),(30,0),(0,0),200));  [/asy]\" width=\"205\" height=\"252\" />\n</p><p>Assume that <img src=\"//latex.artofproblemsolving.com/6/d/4/6d4fb221b05bff77966cd16e608fc02be692e9c2.png\" class=\"latex\" alt=\"$\\angle YAC = \\angle YBC$\" width=\"135\" height=\"13\" />.  Draw points <img src=\"//latex.artofproblemsolving.com/1/0/9/1090530ae883b627e090bfb5e450ef796febca40.png\" class=\"latex\" alt=\"$A&#39;$\" style=\"vertical-align: -1px\" width=\"20\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/4/c/7/4c71f19552a05ee5e2b31e94aff3fb986884bf31.png\" class=\"latex\" alt=\"$B&#39;$\" width=\"18\" height=\"14\" /> on <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png\" class=\"latex\" alt=\"$BC$\" width=\"28\" height=\"12\" /> respectively such that <img src=\"//latex.artofproblemsolving.com/4/4/b/44b3f3aaea4269215bafa5652c783b0dad241b4f.png\" class=\"latex\" alt=\"$AY&#39;BC$\" width=\"61\" height=\"14\" /> is a rectangle.  That means <img src=\"//latex.artofproblemsolving.com/c/1/3/c13359c51e44adb16de8aead92cf167fe45ec0c0.png\" class=\"latex\" alt=\"$B&#39;BHY$\" width=\"64\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/b/0/8/b082a38749d11522560f0e98928543d870315f44.png\" class=\"latex\" alt=\"$AA&#39;YH$\" width=\"63\" height=\"14\" /> are <a href=\"/wiki/index.php/Cyclic_quadrilaterals\" class=\"mw-redirect\" title=\"Cyclic quadrilaterals\">cyclic quadrilaterals</a>, which means that <img src=\"//latex.artofproblemsolving.com/c/c/5/cc575df212389a3a7f1fc9f3645db23fb015151d.png\" class=\"latex\" alt=\"$\\angle A&#39;HY = \\angle B&#39;HY.$\" width=\"150\" height=\"14\" />\n</p><p><br />\nBecause <img src=\"//latex.artofproblemsolving.com/4/e/3/4e39919f572d9421d9fe01d80321554dfafdeced.png\" class=\"latex\" alt=\"$A&#39;B&#39;$\" width=\"36\" height=\"14\" /> is bisected by <img src=\"//latex.artofproblemsolving.com/b/c/b/bcb82bca7de59684e050803ba493e050e355614f.png\" class=\"latex\" alt=\"$HC$\" width=\"30\" height=\"12\" />, by the <a href=\"/wiki/index.php/Angle_Bisector_Theorem\" class=\"mw-redirect\" title=\"Angle Bisector Theorem\">Angle Bisector Theorem</a>, we have <img src=\"//latex.artofproblemsolving.com/2/7/5/275dbbb0d908ffba45225cbe38b870e18f91fc03.png\" class=\"latex\" alt=\"$HA&#39; = HB&#39;,$\" style=\"vertical-align: -3px\" width=\"99\" height=\"17\" /> so by SAS Congruency, we have <img src=\"//latex.artofproblemsolving.com/6/c/b/6cb379d122e5fce962c41bfafbb87e78e32b918c.png\" class=\"latex\" alt=\"$\\triangle HA&#39;Y \\cong \\triangle HB&#39;Y,$\" style=\"vertical-align: -3px\" width=\"157\" height=\"17\" /> making <img src=\"//latex.artofproblemsolving.com/8/e/9/8e9043ebce79ca9e63ad7f68588d065fe1eaa04c.png\" class=\"latex\" alt=\"$A&#39;Y = YB&#39;$\" width=\"90\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/4/2/4/42426918f5577719e6191f1402fed912033f9c60.png\" class=\"latex\" alt=\"$A&#39;YCB&#39;$\" width=\"65\" height=\"14\" /> a square.  This also means that <img src=\"//latex.artofproblemsolving.com/c/9/8/c98005e5ce61357fdbadeeb0f593ceaf63883b55.png\" class=\"latex\" alt=\"$\\angle A&#39;CY = \\angle B&#39;CY,$\" style=\"vertical-align: -3px\" width=\"146\" height=\"17\" /> so <img src=\"//latex.artofproblemsolving.com/c/f/4/cf441c32196fe2d613ff893f30d3c72d2b3924cc.png\" class=\"latex\" alt=\"$\\triangle ACY \\cong \\triangle BCY$\" width=\"142\" height=\"13\" /> by AAS Congruency, making <img src=\"//latex.artofproblemsolving.com/a/e/1/ae1c97d4d65b99ec000470a437414dad2caae11d.png\" class=\"latex\" alt=\"$AC = BC.$\" style=\"vertical-align: -1px\" width=\"87\" height=\"14\" />  However, it is given that <img src=\"//latex.artofproblemsolving.com/b/a/6/ba6d8fa604ea292c5152c7d18460269daa10909b.png\" class=\"latex\" alt=\"$AC \\ne BC,$\" style=\"vertical-align: -4px\" width=\"84\" height=\"17\" /> so <img src=\"//latex.artofproblemsolving.com/5/5/9/5594c182004855d8ce1915687a482f1fd07a8aaf.png\" class=\"latex\" alt=\"$\\angle YAC \\ne \\angle YBC$\" style=\"vertical-align: -4px\" width=\"135\" height=\"17\" /> by proof by contradiction.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_JBMO\" title=\"2001 JBMO\">2001 JBMO</a></b> (<b><a href=\"/wiki/index.php/2001_JBMO_Problems\" title=\"2001 JBMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c13_contests\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_1\" title=\"2001 JBMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_3\" title=\"2001 JBMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_1\" title=\"2001 JBMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_3\" title=\"2001 JBMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_4\" title=\"2001 JBMO Problems/Problem 4\">4</a> <b></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/JBMO_Problems_and_Solutions,_with_authors\" title=\"JBMO Problems and Solutions, with authors\"> All JBMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211224\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.034 seconds\nReal time usage: 0.035 seconds\nPreprocessor visited node count: 408/1000000\nPreprocessor generated node count: 1015/1000000\nPost‐expand include size: 868/2097152 bytes\nTemplate argument size: 36/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 8038/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.130      1 Template:JBMO_box\n100.00%    2.130      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:16648-0!canonical and timestamp 20240907211224 and revision id 97222\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Angle Bisector Theorem"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Angle bisector"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Cyclic quadrilaterals"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "JBMO Problems and Solutions, with authors"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Proof by contradiction"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:JBMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_JBMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_JBMO_Problems/Problem_2",
+          "byteoffset": 432,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_JBMO_Problems/Problem_2",
+          "byteoffset": 2677,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 JBMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Angle Bisector Theorem",
+      "Law of Sines",
+      "Law of Cosines"
+    ]
+  },
+  "2001 JBMO Problems/Problem 3": {
+    "parse": {
+      "title": "2001 JBMO Problems/Problem 3",
+      "pageid": 16984,
+      "revid": 186113,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem_3\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem 3</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Bonus_Question\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Bonus Question</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_to_Bonus_Question\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution to Bonus Question</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_also\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem_3\">Problem 3</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 3\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be an equilateral triangle and <img src=\"//latex.artofproblemsolving.com/f/e/d/fed096cb12bb4627f07259bd946a58ff827aefa6.png\" class=\"latex\" alt=\"$D,E$\" style=\"vertical-align: -3px\" width=\"37\" height=\"16\" /> on the sides <img src=\"//latex.artofproblemsolving.com/a/d/a/ada6f54288b7a2cdd299eba0055f8c8d19916b4b.png\" class=\"latex\" alt=\"$[AB]$\" style=\"vertical-align: -5px\" width=\"40\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/3/0936990e6625d65357ca51006c08c9fe3e04ba0c.png\" class=\"latex\" alt=\"$[AC]$\" style=\"vertical-align: -5px\" width=\"36\" height=\"18\" /> respectively.  If <img src=\"//latex.artofproblemsolving.com/8/5/a/85a74cad6df8d737330bbcc412acc0a477c5a78d.png\" class=\"latex\" alt=\"$DF,EG$\" style=\"vertical-align: -3px\" width=\"64\" height=\"16\" /> (with <img src=\"//latex.artofproblemsolving.com/b/a/b/bab647d696e2f613d32d866e816e3aeb7c94dc90.png\" class=\"latex\" alt=\"$F \\in AE, G \\in AD$\" style=\"vertical-align: -3px\" width=\"137\" height=\"16\" />) are the interior angle bisectors of the angles of the triangle <img src=\"//latex.artofproblemsolving.com/7/0/4/70422100db8de33f8e5e0ab5062c5bb6a5ac969d.png\" class=\"latex\" alt=\"$ADE$\" width=\"43\" height=\"13\" />, prove that the sum of the areas of the triangles <img src=\"//latex.artofproblemsolving.com/2/e/9/2e9e8b2c23e0545ef6de81f0ea578173e9ab7a64.png\" class=\"latex\" alt=\"$DEF$\" width=\"44\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/6/5/7/65772dfa055c928d9b85ea6be539a35c1dff1b38.png\" class=\"latex\" alt=\"$DEG$\" width=\"44\" height=\"12\" /> is at most equal with the area of the triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" />.  When does the equality hold?\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We have <img src=\"//latex.artofproblemsolving.com/4/4/d/44dd4d53c715d7722f7efd789c4c560fa8543084.png\" class=\"latexcenter\" alt=\"\\[\\frac{[DEF]}{[DEA]} = \\frac{EF}{EA} = \\frac{DE}{DE+AD}\\]\" width=\"221\" height=\"43\" /> Similarly <img src=\"//latex.artofproblemsolving.com/9/6/2/962abf42782448e4553a4019200c800ea0512047.png\" class=\"latexcenter\" alt=\"\\[\\frac{[DEG]}{[DEA]} = \\frac{DG}{DA} = \\frac{DE}{DE+AE}\\]\" width=\"221\" height=\"43\" /> Thus <img src=\"//latex.artofproblemsolving.com/c/8/1/c819a3f0194fef68d03566df2ceb112999796a1e.png\" class=\"latex\" alt=\"$[DEF] + [DEG] = DE[DEA](1/(DE+AD) + 1/(DE+AE))$\" style=\"vertical-align: -5px\" width=\"500\" height=\"18\" />. We have <img src=\"//latex.artofproblemsolving.com/3/d/d/3dd088d0ab1e1de048a42d4faaba978ca3d53d83.png\" class=\"latex\" alt=\"$[DEA] = 1/2 AD\\cdot AE\\sin A$\" style=\"vertical-align: -5px\" width=\"217\" height=\"18\" />, and <img src=\"//latex.artofproblemsolving.com/0/e/a/0ea5a1d26aabcbac0b9135cd06cce97fd56aacd3.png\" class=\"latex\" alt=\"$[ABC] = 1/2 AB\\cdot AC \\sin A$\" style=\"vertical-align: -5px\" width=\"215\" height=\"18\" />, so <img src=\"//latex.artofproblemsolving.com/1/e/e/1ee301f7350e8859d09af7c7a2b64ff550a769f6.png\" class=\"latexcenter\" alt=\"\\[\\frac{[DEF] + [DEG]}{[ABC]} = \\frac{DE\\cdot AD\\cdot AE}{AB^2}\\cdot\\frac{1}{(DE+AD) + 1/(DE+AE)}\\]\" width=\"512\" height=\"43\" />\nObviously <img src=\"//latex.artofproblemsolving.com/1/9/2/192a2671ac4a674ba8a150e398725c3cd6dca40b.png\" class=\"latex\" alt=\"$DE \\le AB$\" style=\"vertical-align: -2px\" width=\"82\" height=\"15\" />, so it is sufficient to prove that <img src=\"//latex.artofproblemsolving.com/e/0/2/e0267d7d4c246ad28d79b9be3ab0b79de2542c69.png\" class=\"latex\" alt=\"$AD\\cdot AE(1/(DE+AD) + 1/(DE+AE)) \\le DE (*)$\" style=\"vertical-align: -4px\" width=\"409\" height=\"18\" />.\nThe cosine rule applied to <img src=\"//latex.artofproblemsolving.com/7/0/4/70422100db8de33f8e5e0ab5062c5bb6a5ac969d.png\" class=\"latex\" alt=\"$ADE$\" width=\"43\" height=\"13\" /> gives <img src=\"//latex.artofproblemsolving.com/4/1/0/41046dc59ecaddc8f7b03e89fc5a1f6bd874f4f7.png\" class=\"latex\" alt=\"$DE^2 = AD^2 + AE^2 - AD\\cdot AE$\" style=\"vertical-align: -1px\" width=\"248\" height=\"16\" />. Hence also  <img src=\"//latex.artofproblemsolving.com/a/b/b/abbb3af0e7c859a7ef86b83c5611f90bb37369cb.png\" class=\"latex\" alt=\"$DE^2 - AD\\cdot AE = (AD - AE)^2\\ge 0$\" style=\"vertical-align: -5px\" width=\"291\" height=\"21\" />. Thus we have <img src=\"//latex.artofproblemsolving.com/b/6/3/b63ef56c25faf1358b8ee206182d245c68932053.png\" class=\"latex\" alt=\"$DE(AD - AE)^2 + DE^2(AD + AE) \\ge AD\\cdot AE(AD + AE)$\" style=\"vertical-align: -4px\" width=\"471\" height=\"19\" />.\n</p><p>So <img src=\"//latex.artofproblemsolving.com/3/0/d/30ddfc7526032685449e7ef6656bf4c33cd4f355.png\" class=\"latexcenter\" alt=\"\\[AD\\cdot AE(AD + AE + 2DE) \\le DE(AD^2 + AE^2 + DE(AD + AE)) = DE(DE + AD)(DE + AE)\\]\" width=\"711\" height=\"19\" />, which is <img src=\"//latex.artofproblemsolving.com/9/d/0/9d02e715e7f7195675151570530c5b62ba7b2744.png\" class=\"latex\" alt=\"$(*)$\" style=\"vertical-align: -4px\" width=\"21\" height=\"18\" />.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Bonus_Question\">Bonus Question</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: Bonus Question\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In the above problem, prove that <img src=\"//latex.artofproblemsolving.com/b/8/2/b823de85f5167c923370978875dd81f634a347eb.png\" class=\"latex\" alt=\"$DF/EG = AD/AE$\" style=\"vertical-align: -4px\" width=\"155\" height=\"18\" />.\n</p><p>- Proposed by <img src=\"//latex.artofproblemsolving.com/a/b/8/ab8a050ca0f84a6aef15ead346438c2777533f30.png\" class=\"latex\" alt=\"$Kris17$\" style=\"vertical-align: -1px\" width=\"60\" height=\"14\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_to_Bonus_Question\">Solution to Bonus Question</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_3&amp;action=edit&amp;section=4\" title=\"Edit section: Solution to Bonus Question\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> be the intersection of <img src=\"//latex.artofproblemsolving.com/c/7/3/c7387ef3aa3162cea3e516216d4ed946506bd30d.png\" class=\"latex\" alt=\"$DF$\" width=\"29\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/2/7/927d4689159fbeb80f7b468ca9ae96b48e926312.png\" class=\"latex\" alt=\"$EG$\" width=\"28\" height=\"12\" />, so <img src=\"//latex.artofproblemsolving.com/e/3/b/e3bb4eeb347e74e025fd175c22f1f7275af0555e.png\" class=\"latex\" alt=\"$AP$\" width=\"27\" height=\"13\" /> is an angle bisector of triangle <img src=\"//latex.artofproblemsolving.com/7/0/4/70422100db8de33f8e5e0ab5062c5bb6a5ac969d.png\" class=\"latex\" alt=\"$ADE$\" width=\"43\" height=\"13\" />.\nExtend line DE to meet BC at H.\nLet us define <img src=\"//latex.artofproblemsolving.com/0/b/e/0beb78d266c72807247b07045151d9c46ff75517.png\" class=\"latex\" alt=\"$\\angle DHB = \\theta$\" width=\"92\" height=\"13\" />\n</p><p>We have <img src=\"//latex.artofproblemsolving.com/4/b/0/4b06124b21d0dbc12447387d9e2a12c41ca9ea53.png\" class=\"latex\" alt=\"$\\angle PDE = (60^{\\circ} - \\theta)/2 = (30^{\\circ} - \\theta/2)$\" style=\"vertical-align: -4px\" width=\"282\" height=\"18\" />\nand <img src=\"//latex.artofproblemsolving.com/9/2/6/926b773b0cf84d272ff62419a6ede859a598763a.png\" class=\"latex\" alt=\"$\\angle PED = (60^{\\circ} + \\theta)/2 = (30^{\\circ} + \\theta/2)$\" style=\"vertical-align: -4px\" width=\"282\" height=\"18\" />\nThus <img src=\"//latex.artofproblemsolving.com/e/5/9/e59fb18554160498701076495ac05d5af2519253.png\" class=\"latex\" alt=\"$\\angle DPE = 180^{\\circ} - (\\angle PDE + \\angle PED) = 120^{\\circ}$\" style=\"vertical-align: -4px\" width=\"346\" height=\"18\" />.\n</p><p>It follows that <img src=\"//latex.artofproblemsolving.com/6/1/6/6160ed1b549214b3e5b75a371c5d31614c9ffe1a.png\" class=\"latex\" alt=\"$AGPF$\" width=\"56\" height=\"13\" /> is a cyclic quadrilateral.\nSo we have <img src=\"//latex.artofproblemsolving.com/6/6/f/66f2b24881d7d5cbd0982b47e2cfebf2b7dd3a49.png\" class=\"latex\" alt=\"$\\angle GFP = \\angle GAP = 30^{\\circ}$\" width=\"183\" height=\"13\" />, and <img src=\"//latex.artofproblemsolving.com/3/e/0/3e0a43bd3c66d0885810e319225f86378bb2bf77.png\" class=\"latex\" alt=\"$\\angle PGF = \\angle FAP = 30^{\\circ}$\" width=\"183\" height=\"13\" />\n</p><p>So <img src=\"//latex.artofproblemsolving.com/0/4/d/04debb4692ccd9c49438b83a85a25a1637d9bc00.png\" class=\"latex\" alt=\"$\\angle GFP = \\angle PGF$\" width=\"135\" height=\"12\" />, implying that triangle <img src=\"//latex.artofproblemsolving.com/7/0/6/70632d625ec605cff7a576af81bd7023be1b1612.png\" class=\"latex\" alt=\"$PGF$\" width=\"42\" height=\"12\" /> is an isoceles triangle.\nSo we have <img src=\"//latex.artofproblemsolving.com/4/b/3/4b36758908e2e4c919ee1e92976375a02c294840.png\" class=\"latex\" alt=\"$PG = PF$\" width=\"81\" height=\"12\" />.\n</p><p>Also, since <img src=\"//latex.artofproblemsolving.com/8/b/5/8b5a13d542296146fad12c409bcd3761f8cc8f13.png\" class=\"latex\" alt=\"$\\angle GPD = 180^{\\circ} - \\angle DPE = 60^{\\circ} = \\angle DAF$\" style=\"vertical-align: 0px\" width=\"325\" height=\"13\" />,\nand <img src=\"//latex.artofproblemsolving.com/c/b/3/cb30e30ea37ad4356c4203c1008aaf8073d7d8de.png\" class=\"latex\" alt=\"$\\angle GDP = \\angle ADF$\" width=\"137\" height=\"13\" />, it follows that:\ntrianlge <img src=\"//latex.artofproblemsolving.com/0/6/6/06652aa2a7b2d77f371004d07fb91f350e09728d.png\" class=\"latex\" alt=\"$GDP$\" width=\"44\" height=\"12\" /> ~ triangle <img src=\"//latex.artofproblemsolving.com/6/5/1/651bffb059906f373d826a5030b415fdc31e3729.png\" class=\"latex\" alt=\"$ADF$\" width=\"43\" height=\"13\" />\n</p><p>Similarly it can be shown that:\ntrianlge <img src=\"//latex.artofproblemsolving.com/c/2/e/c2ed1737c767012db19524e067a543c3f7dbe0ce.png\" class=\"latex\" alt=\"$FEP$\" width=\"42\" height=\"12\" /> ~ triangle <img src=\"//latex.artofproblemsolving.com/0/f/d/0fdedf5200397f35c61277c1da005058e24d647d.png\" class=\"latex\" alt=\"$AEG$\" width=\"42\" height=\"13\" />.\n</p><p>From trianlge <img src=\"//latex.artofproblemsolving.com/0/6/6/06652aa2a7b2d77f371004d07fb91f350e09728d.png\" class=\"latex\" alt=\"$GDP$\" width=\"44\" height=\"12\" /> ~ triangle <img src=\"//latex.artofproblemsolving.com/6/5/1/651bffb059906f373d826a5030b415fdc31e3729.png\" class=\"latex\" alt=\"$ADF$\" width=\"43\" height=\"13\" /> we get:\n<img src=\"//latex.artofproblemsolving.com/0/d/e/0de19787cf28d497a4f6d299c0e582701eb230a6.png\" class=\"latex\" alt=\"$PG/AF = DG/DF$\" style=\"vertical-align: -4px\" width=\"157\" height=\"18\" />, or <img src=\"//latex.artofproblemsolving.com/e/9/3/e938711e61202715e490d2c62f3e379bc1f16627.png\" class=\"latex\" alt=\"$PG = AF(DG/DF)$\" style=\"vertical-align: -4px\" width=\"162\" height=\"18\" />\n</p><p>From triangle <img src=\"//latex.artofproblemsolving.com/c/2/e/c2ed1737c767012db19524e067a543c3f7dbe0ce.png\" class=\"latex\" alt=\"$FEP$\" width=\"42\" height=\"12\" /> ~ triangle <img src=\"//latex.artofproblemsolving.com/0/f/d/0fdedf5200397f35c61277c1da005058e24d647d.png\" class=\"latex\" alt=\"$AEG$\" width=\"42\" height=\"13\" /> we get:\n<img src=\"//latex.artofproblemsolving.com/0/a/d/0ad4ec4c1feb5cbf412033d522e5d608c8560cb7.png\" class=\"latex\" alt=\"$PF/AG = FE/GE$\" style=\"vertical-align: -4px\" width=\"154\" height=\"18\" />, or <img src=\"//latex.artofproblemsolving.com/7/f/3/7f3b82c0833b1100b628e6bec864b89bfcf227be.png\" class=\"latex\" alt=\"$PF = AG(FE/GE)$\" style=\"vertical-align: -4px\" width=\"159\" height=\"18\" />\n</p><p>Since <img src=\"//latex.artofproblemsolving.com/4/b/3/4b36758908e2e4c919ee1e92976375a02c294840.png\" class=\"latex\" alt=\"$PG = PF$\" width=\"81\" height=\"12\" />, we get <img src=\"//latex.artofproblemsolving.com/f/8/1/f81190b5b83eb2c41d8652e49ecd710cccb59fb3.png\" class=\"latex\" alt=\"$AF(DG/DF) = AG(FE/GE)$\" style=\"vertical-align: -4px\" width=\"242\" height=\"18\" />\n</p><p>or <img src=\"//latex.artofproblemsolving.com/a/4/5/a45086718cfc6606fd436bdd565f38109bb663e9.png\" class=\"latex\" alt=\"$(AF/FE)(DG/AG) = (DF/EG)$\" style=\"vertical-align: -5px\" width=\"266\" height=\"20\" />\n</p><p>or <img src=\"//latex.artofproblemsolving.com/1/3/6/13634804bd449b77efc2a30d4bd38f0cb94416bf.png\" class=\"latex\" alt=\"$(AD/DE)(DE/AE) = (DF/EG)$\" style=\"vertical-align: -4px\" width=\"266\" height=\"18\" />\n</p><p>Thus <img src=\"//latex.artofproblemsolving.com/b/8/2/b823de85f5167c923370978875dd81f634a347eb.png\" class=\"latex\" alt=\"$DF/EG = AD/AE$\" style=\"vertical-align: -4px\" width=\"155\" height=\"18\" />\n</p><p><br />\n<img src=\"//latex.artofproblemsolving.com/a/b/8/ab8a050ca0f84a6aef15ead346438c2777533f30.png\" class=\"latex\" alt=\"$Kris17$\" style=\"vertical-align: -1px\" width=\"60\" height=\"14\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_3&amp;action=edit&amp;section=5\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_JBMO\" title=\"2001 JBMO\">2001 JBMO</a></b> (<b><a href=\"/wiki/index.php/2001_JBMO_Problems\" title=\"2001 JBMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c13_contests\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_2\" title=\"2001 JBMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_4\" title=\"2001 JBMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_1\" title=\"2001 JBMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_2\" title=\"2001 JBMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_4\" title=\"2001 JBMO Problems/Problem 4\">4</a> <b></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/JBMO_Problems_and_Solutions,_with_authors\" title=\"JBMO Problems and Solutions, with authors\"> All JBMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211224\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.042 seconds\nReal time usage: 0.045 seconds\nPreprocessor visited node count: 596/1000000\nPreprocessor generated node count: 1423/1000000\nPost‐expand include size: 868/2097152 bytes\nTemplate argument size: 36/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 10756/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.875      1 Template:JBMO_box\n100.00%    1.875      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:16984-0!canonical and timestamp 20240907211224 and revision id 186113\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "JBMO Problems and Solutions, with authors"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:JBMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 3",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_JBMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem_3"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_JBMO_Problems/Problem_3",
+          "byteoffset": 478,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Bonus Question",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_JBMO_Problems/Problem_3",
+          "byteoffset": 1428,
+          "anchor": "Bonus_Question"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution to Bonus Question",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2001_JBMO_Problems/Problem_3",
+          "byteoffset": 1545,
+          "anchor": "Solution_to_Bonus_Question"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "5",
+          "index": "5",
+          "fromtitle": "2001_JBMO_Problems/Problem_3",
+          "byteoffset": 3131,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 JBMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Angle Bisector Theorem",
+      "Law of Cosines",
+      "Geometric Mean"
+    ]
+  },
+  "2001 JBMO Problems/Problem 4": {
+    "parse": {
+      "title": "2001 JBMO Problems/Problem 4",
+      "pageid": 23676,
+      "revid": 186114,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#See_also\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png\" class=\"latex\" alt=\"$N$\" width=\"16\" height=\"12\" /> be a convex polygon with 1415 vertices and perimeter 2001. Prove that we can find 3 vertices of N which form a triangle of area smaller than 1.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The largest side has length at least <img src=\"//latex.artofproblemsolving.com/1/1/1/111fcc99e0ba06119608a3a8b67974b9867f7007.png\" class=\"latex\" alt=\"$\\frac{2001}{1415}$\" style=\"vertical-align: -13px\" width=\"42\" height=\"38\" />. Therefore, the sum of the other <img src=\"//latex.artofproblemsolving.com/f/8/2/f8263a51c3e04cdf532afbfa6955aa2363850b92.png\" class=\"latex\" alt=\"$1414$\" style=\"vertical-align: 0px\" width=\"36\" height=\"12\" /> sides is <img src=\"//latex.artofproblemsolving.com/9/4/4/944a8e6ba61874d6aa219c6c3cd51b2d5cf27917.png\" class=\"latex\" alt=\"$\\frac{2001\\cdot1414}{1415}$\" style=\"vertical-align: -13px\" width=\"92\" height=\"38\" />. Divide these sides into <img src=\"//latex.artofproblemsolving.com/7/f/4/7f4cac61733f1edf8017c1087c2a6e566482c198.png\" class=\"latex\" alt=\"$707$\" style=\"vertical-align: -1px\" width=\"29\" height=\"14\" /> pairs of adjacent sides, and there exist one pair of sides <img src=\"//latex.artofproblemsolving.com/e/9/b/e9bdf3e496517e8f8742f81dd774be1f93cf6e8c.png\" class=\"latex\" alt=\"$a,b$\" style=\"vertical-align: -3px\" width=\"25\" height=\"16\" /> such that <img src=\"//latex.artofproblemsolving.com/b/9/b/b9bd87816553cdd19b220f5b6b35e7eba511ebca.png\" class=\"latex\" alt=\"$a+b \\le \\frac{2001\\cdot1414}{1415\\cdot707}=\\frac{2001\\cdot2}{1415}$\" style=\"vertical-align: -13px\" width=\"242\" height=\"38\" />. Blah blah blah... we know how to prove <img src=\"//latex.artofproblemsolving.com/2/9/8/298f71cd66367e8c7700c3a0893b480cb4928662.png\" class=\"latex\" alt=\"$\\frac{2001\\cdot2}{1415} &lt; 2\\sqrt2$\" style=\"vertical-align: -13px\" width=\"122\" height=\"38\" /> except why would a problem want you to do that.... no idea.\n</p><p>Well, then <img src=\"//latex.artofproblemsolving.com/5/a/4/5a41926464c1cf9165c570859b2487f6b1a7e92e.png\" class=\"latex\" alt=\"$2\\sqrt{ab} &lt; a+b (AM-GM) &lt; 2\\sqrt2 \\Rightarrow ab &lt; 2$\" style=\"vertical-align: -4px\" width=\"345\" height=\"22\" /> and the area of the triangle with sides <img src=\"//latex.artofproblemsolving.com/e/9/b/e9bdf3e496517e8f8742f81dd774be1f93cf6e8c.png\" class=\"latex\" alt=\"$a,b$\" style=\"vertical-align: -3px\" width=\"25\" height=\"16\" /> and the angle <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> between them has area <img src=\"//latex.artofproblemsolving.com/f/1/9/f19b8373701a98f7ef13e3591db992b2e08f8ece.png\" class=\"latex\" alt=\"$\\frac12ab\\sin C \\le \\frac{1}{2}ab\\sin \\frac{\\pi}{2} &lt;\\frac12\\cdot2\\cdot1 = 1$\" style=\"vertical-align: -13px\" width=\"288\" height=\"38\" /> as desired.\n</p><p>~ <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/user/61542\">AwesomeToad</a>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_JBMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_JBMO\" title=\"2001 JBMO\">2001 JBMO</a></b> (<b><a href=\"/wiki/index.php/2001_JBMO_Problems\" title=\"2001 JBMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c13_contests\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_2\" title=\"2001 JBMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_1\" title=\"2001 JBMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_2\" title=\"2001 JBMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2001_JBMO_Problems/Problem_3\" title=\"2001 JBMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/JBMO_Problems_and_Solutions,_with_authors\" title=\"JBMO Problems and Solutions, with authors\"> All JBMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211225\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.031 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 145/1000000\nPreprocessor generated node count: 435/1000000\nPost‐expand include size: 839/2097152 bytes\nTemplate argument size: 43/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2293/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.322      1 Template:JBMO_box\n100.00%    2.322      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:23676-0!canonical and timestamp 20240907211225 and revision id 186114\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 JBMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "JBMO Problems and Solutions, with authors"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:JBMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_JBMO_Problems/Problem_4",
+          "byteoffset": 9,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_JBMO_Problems/Problem_4",
+          "byteoffset": 185,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_JBMO_Problems/Problem_4",
+          "byteoffset": 1081,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 JBMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Area of a Circle",
+      "Heron's Formula",
+      "Triangle Inequality"
+    ]
+  }
+}

@@ -1,0 +1,724 @@
+{
+  "2001 Pan African MO Problems/Problem 1": {
+    "parse": {
+      "title": "2001 Pan African MO Problems/Problem 1",
+      "pageid": 17913,
+      "revid": 112855,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all positive integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> such that:\n<img src=\"//latex.artofproblemsolving.com/b/e/8/be82bae1c6366f386ccad61bfaefb45a87021066.png\" class=\"latexcenter\" alt=\"\\[\\dfrac{n^3+3}{n^2+7}\\]\" width=\"50\" height=\"40\" />\nis a positive integer.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Perform polynomial long division to get <img src=\"//latex.artofproblemsolving.com/7/3/2/73258c0bae7b342895a4dda5ebfb177cc9265b75.png\" class=\"latex\" alt=\"$\\frac{n^3 + 3}{n^2 + 7} = n + \\frac{3-7n}{n^2 + 7}$\" style=\"vertical-align: -14px\" width=\"164\" height=\"40\" />.  Note that if <img src=\"//latex.artofproblemsolving.com/f/0/6/f06143693d1a7e9abfadd13f8360b595daae3617.png\" class=\"latex\" alt=\"$n^2 + 7 &gt; |3-7n|$\" style=\"vertical-align: -4px\" width=\"133\" height=\"19\" />, then <img src=\"//latex.artofproblemsolving.com/4/6/4/46432deec330eaebcde11fcae80a8c97603991c4.png\" class=\"latex\" alt=\"$\\frac{3-7n}{n^2 + 7}$\" style=\"vertical-align: -14px\" width=\"53\" height=\"39\" /> can not be an integer.  Thus, all of the solutions satisfy the inequality <img src=\"//latex.artofproblemsolving.com/7/f/a/7fa82ec8c78825af8c8ee27785236074adc08d46.png\" class=\"latex\" alt=\"$|3-7n| \\ge n^2 + 7$\" style=\"vertical-align: -4px\" width=\"135\" height=\"19\" />.\n</p><p><br />\nIf <img src=\"//latex.artofproblemsolving.com/4/3/4/434da9c5ce436bf96d16a46b919a534590853492.png\" class=\"latex\" alt=\"$3-7n \\ge 0$\" style=\"vertical-align: -2px\" width=\"84\" height=\"15\" />, then <img src=\"//latex.artofproblemsolving.com/d/1/8/d18a5d225b2585cf83649f57abff4c8ec43c6972.png\" class=\"latex\" alt=\"$n \\le \\frac73$\" style=\"vertical-align: -12px\" width=\"46\" height=\"37\" />.  However, there are no positive integers in this case.  If <img src=\"//latex.artofproblemsolving.com/3/4/8/348deabbe663f9de368049b095feb399f9fd8679.png\" class=\"latex\" alt=\"$3-7n &lt; 0$\" style=\"vertical-align: 0px\" width=\"84\" height=\"13\" />, then <img src=\"//latex.artofproblemsolving.com/a/b/2/ab285b9c0ddbc5e26aaac78a15abfad6fec6a197.png\" class=\"latex\" alt=\"$n &gt; \\frac37$\" style=\"vertical-align: -13px\" width=\"50\" height=\"38\" /> and <img src=\"//latex.artofproblemsolving.com/4/9/5/4953ea1c480469e90c1cd370fb9bdf4fe50a750e.png\" class=\"latex\" alt=\"$7n-3 \\ge n^2 + 7$\" style=\"vertical-align: -2px\" width=\"125\" height=\"17\" />.  Rearranging the second inequality results in <img src=\"//latex.artofproblemsolving.com/6/0/5/6055591bc01cf7c635ff1914cc4a8c301d26f58d.png\" class=\"latex\" alt=\"$0 \\ge n^2 - 7n + 10$\" style=\"vertical-align: -2px\" width=\"133\" height=\"17\" />.  Factoring results in <img src=\"//latex.artofproblemsolving.com/9/e/4/9e45ea41d979e431595fd2500a945628051bcf46.png\" class=\"latex\" alt=\"$0 \\ge (n-5)(n-2)$\" style=\"vertical-align: -4px\" width=\"144\" height=\"18\" />, so <img src=\"//latex.artofproblemsolving.com/3/a/5/3a5a1591386b33e9608caf60874a92c001143b3f.png\" class=\"latex\" alt=\"$2 \\le n \\le 5$\" style=\"vertical-align: -2px\" width=\"77\" height=\"15\" />.\n</p><p><br />\nNow there are only four possible positive integers, so we can use trial and error to determine if <img src=\"//latex.artofproblemsolving.com/9/6/7/967f2b8ad036d45271f23e85e87f43785a2485a9.png\" class=\"latex\" alt=\"$\\frac{n^3 + 3}{n^2 + 7}$\" style=\"vertical-align: -14px\" width=\"52\" height=\"40\" /> is a positive integer.  After doing trial and error, the only positive integers that make <img src=\"//latex.artofproblemsolving.com/9/6/7/967f2b8ad036d45271f23e85e87f43785a2485a9.png\" class=\"latex\" alt=\"$\\frac{n^3 + 3}{n^2 + 7}$\" style=\"vertical-align: -14px\" width=\"52\" height=\"40\" /> an integer are <img src=\"//latex.artofproblemsolving.com/9/f/7/9f77d3e14c9a1201eb017cc9ef82548d2facfd79.png\" class=\"latex\" alt=\"$\\boxed{n = 2}$\" style=\"vertical-align: -5px\" width=\"56\" height=\"23\" /> or <img src=\"//latex.artofproblemsolving.com/b/8/7/b87619d0b1ed27e4c0f69286cfb2ae49dc2f6920.png\" class=\"latex\" alt=\"$\\boxed{n = 5}$\" style=\"vertical-align: -5px\" width=\"56\" height=\"23\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_Pan_African_MO\" title=\"2001 Pan African MO\">2001 Pan African MO</a></b> (<b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems\" title=\"2001 Pan African MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_2\" title=\"2001 Pan African MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_3\" title=\"2001 Pan African MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_4\" title=\"2001 Pan African MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_5\" title=\"2001 Pan African MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_6\" title=\"2001 Pan African MO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_2\" title=\"2001 Pan African MO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Pan_African_MO_Problems_and_Solutions\" title=\"Pan African MO Problems and Solutions\"> All Pan African MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211227\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 196/1000000\nPreprocessor generated node count: 523/1000000\nPost‐expand include size: 923/2097152 bytes\nTemplate argument size: 51/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3334/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.095      1 Template:Pan_African_MO_box\n100.00%    2.095      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17913-0!canonical and timestamp 20240907211227 and revision id 112855\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Pan African MO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Pan African MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_1",
+          "byteoffset": 128,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_1",
+          "byteoffset": 1158,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 Pan African MO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Diophantine Equations",
+      "Polynomials and Roots"
+    ]
+  },
+  "2001 Pan African MO Problems/Problem 2": {
+    "parse": {
+      "title": "2001 Pan African MO Problems/Problem 2",
+      "pageid": 17920,
+      "revid": 161619,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> be a positive integer. A child builds a wall along a line with <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> identical cubes. He lays the first cube on the line and at each subsequent step, he lays the next cube either on the ground or on the top of another cube, so that it has a common face with the previous one. How many such distinct walls exist?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>From smaller values of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, there is 1 wall with 1 cube, 2 walls with 2 cubes, 4 walls with 3 cubes, and 8 walls with 4 cubes.  Thus, we can suspect that there are <img src=\"//latex.artofproblemsolving.com/6/6/8/66877bd3ddd8dd7995544baee949cc4737866732.png\" class=\"latex\" alt=\"$2^{n-1}$\" width=\"33\" height=\"15\" /> walls with <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> cubes.\n</p><p><br />\nTo prove our claim, we can calculate the number of walls with <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> blocks and <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> columns.  We can use <a href=\"/wiki/index.php/Ball-and-urn\" title=\"Ball-and-urn\">ball-and-urn</a> counting to determine the number of walls.  Since there are <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> columns, there would be <img src=\"//latex.artofproblemsolving.com/7/d/c/7dc6fab4c2fdb4e9046030fbfdcf6ea721b05602.png\" class=\"latex\" alt=\"$k-1$\" style=\"vertical-align: 0px\" width=\"40\" height=\"13\" /> dividers.  There are a total of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> blocks, but each column must have at least one block, so there are <img src=\"//latex.artofproblemsolving.com/6/6/1/661be8725d21f704676c88a277456b0d569bcad8.png\" class=\"latex\" alt=\"$n-k$\" width=\"42\" height=\"12\" /> blocks left to sort.  Thus, there are <img src=\"//latex.artofproblemsolving.com/b/e/7/be796035911c684ad1c943db18740a514098b601.png\" class=\"latex\" alt=\"$\\binom{n-1}{n-k}$\" style=\"vertical-align: -22px\" width=\"67\" height=\"53\" /> walls that have <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> blocks and <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> columns.\n</p><p><br />\nSumming all possible values of <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> means that there are a total of <img src=\"//latex.artofproblemsolving.com/5/1/f/51f80b12e43cf10ff89761b404baddbfe888fe4a.png\" class=\"latex\" alt=\"$\\binom{n-1}{n-1} + \\binom{n-1}{n-2} + \\cdots + \\binom{n-1}{0} = \\boxed{2^{n-1}}$\" style=\"vertical-align: -22px\" width=\"370\" height=\"53\" /> walls with <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> cubes.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>There are <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> cubes. After placing the first cube down, we have <img src=\"//latex.artofproblemsolving.com/7/9/5/7955459cf8b75c3ac12c23c393024177d7d56412.png\" class=\"latex\" alt=\"$(n-1)$\" style=\"vertical-align: -4px\" width=\"54\" height=\"18\" /> cubes left. Now for each of these remaining <img src=\"//latex.artofproblemsolving.com/7/9/5/7955459cf8b75c3ac12c23c393024177d7d56412.png\" class=\"latex\" alt=\"$(n-1)$\" style=\"vertical-align: -4px\" width=\"54\" height=\"18\" /> remaining cubes, we have two options; stack the cube or put it in front. This then gives that since there are <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> options for each of the <img src=\"//latex.artofproblemsolving.com/7/9/5/7955459cf8b75c3ac12c23c393024177d7d56412.png\" class=\"latex\" alt=\"$(n-1)$\" style=\"vertical-align: -4px\" width=\"54\" height=\"18\" /> cubes, the answer as <img src=\"//latex.artofproblemsolving.com/5/c/9/5c986a57fa2f14d9a8e0391bf5001aad1063366e.png\" class=\"latex\" alt=\"$\\boxed{2^{n-1}}$\" style=\"vertical-align: -6px\" width=\"48\" height=\"28\" />.\n</p><p>-th1nq3r\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_2&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_Pan_African_MO\" title=\"2001 Pan African MO\">2001 Pan African MO</a></b> (<b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems\" title=\"2001 Pan African MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_1\" title=\"2001 Pan African MO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_1\" title=\"2001 Pan African MO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_3\" title=\"2001 Pan African MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_4\" title=\"2001 Pan African MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_5\" title=\"2001 Pan African MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_6\" title=\"2001 Pan African MO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_3\" title=\"2001 Pan African MO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Pan_African_MO_Problems_and_Solutions\" title=\"Pan African MO Problems and Solutions\"> All Pan African MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211228\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.029 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 248/1000000\nPreprocessor generated node count: 627/1000000\nPost‐expand include size: 962/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3602/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.830      1 Template:Pan_African_MO_box\n100.00%    1.830      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17920-0!canonical and timestamp 20240907211227 and revision id 161619\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Combinatorics_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Ball-and-urn"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Pan African MO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Pan African MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_2",
+          "byteoffset": 354,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_2",
+          "byteoffset": 1336,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_2",
+          "byteoffset": 1738,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 Pan African MO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Combinatorial Counting",
+      "Binomial Theorem",
+      "Inclusion-Exclusion Principle"
+    ]
+  },
+  "2001 Pan African MO Problems/Problem 3": {
+    "parse": {
+      "title": "2001 Pan African MO Problems/Problem 3",
+      "pageid": 17930,
+      "revid": 120172,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> be an equilateral triangle and let <img src=\"//latex.artofproblemsolving.com/2/4/1/241e6e35ad6d73fb2ef98244b0211deb2f25222a.png\" class=\"latex\" alt=\"$P_0$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> be a point outside this triangle, such that <img src=\"//latex.artofproblemsolving.com/d/2/9/d29f795f355e054576b29f5d4ada6b1bfe8d1c8b.png\" class=\"latex\" alt=\"$\\triangle{AP_0C}$\" style=\"vertical-align: -2px\" width=\"63\" height=\"16\" /> is an isosceles triangle with a right angle at <img src=\"//latex.artofproblemsolving.com/2/4/1/241e6e35ad6d73fb2ef98244b0211deb2f25222a.png\" class=\"latex\" alt=\"$P_0$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" />. A grasshopper starts from <img src=\"//latex.artofproblemsolving.com/2/4/1/241e6e35ad6d73fb2ef98244b0211deb2f25222a.png\" class=\"latex\" alt=\"$P_0$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> and turns around the triangle as follows. From <img src=\"//latex.artofproblemsolving.com/2/4/1/241e6e35ad6d73fb2ef98244b0211deb2f25222a.png\" class=\"latex\" alt=\"$P_0$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> the grasshopper jumps to <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" />, which is the symmetric point of <img src=\"//latex.artofproblemsolving.com/2/4/1/241e6e35ad6d73fb2ef98244b0211deb2f25222a.png\" class=\"latex\" alt=\"$P_0$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> with respect to <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />. From <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" />, the grasshopper jumps to <img src=\"//latex.artofproblemsolving.com/1/0/7/107c7c8e5a64d81ed24331e510b777b7d08345b7.png\" class=\"latex\" alt=\"$P_2$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" />, which is the symmetric point of <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" /> with respect to <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />. Then the grasshopper jumps to <img src=\"//latex.artofproblemsolving.com/9/0/9/9090f2e6bd5da465fea10a8c755d64e9185f61f1.png\" class=\"latex\" alt=\"$P_3$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> which is the symmetric point of <img src=\"//latex.artofproblemsolving.com/1/0/7/107c7c8e5a64d81ed24331e510b777b7d08345b7.png\" class=\"latex\" alt=\"$P_2$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" /> with respect to <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />, and so on. Compare the distance <img src=\"//latex.artofproblemsolving.com/1/0/f/10f87574947eecd302ba2d136ae87aa3b03b81f1.png\" class=\"latex\" alt=\"$P_0P_1$\" style=\"vertical-align: -4px\" width=\"40\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/a/1/9/a1959187164749ca908afa04472ca348cd81f353.png\" class=\"latex\" alt=\"$P_0P_n$\" style=\"vertical-align: -4px\" width=\"42\" height=\"17\" />. <img src=\"//latex.artofproblemsolving.com/5/e/e/5ee4e5b25187f45e9cfa54eb61d6b4b858455045.png\" class=\"latex\" alt=\"$n \\in N$\" style=\"vertical-align: -1px\" width=\"49\" height=\"13\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We can use <a href=\"/wiki/index.php/Coordinate_geometry\" title=\"Coordinate geometry\">coordinate geometry</a> to solve the problem.  Let <img src=\"//latex.artofproblemsolving.com/b/d/4/bd451aa8657c1d534fa923abd1c376fea0373955.png\" class=\"latex\" alt=\"$P_0 = (0,0)$\" style=\"vertical-align: -4px\" width=\"82\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/a/7/5/a75ffc4f7f947fcfc1fa966734a8cdfbed74a88e.png\" class=\"latex\" alt=\"$A = (0,a)$\" style=\"vertical-align: -5px\" width=\"81\" height=\"20\" />, and <img src=\"//latex.artofproblemsolving.com/2/c/6/2c63037353ccef80e435b5ed388946c7879902e9.png\" class=\"latex\" alt=\"$C = (a,0)$\" style=\"vertical-align: -4px\" width=\"78\" height=\"18\" />, making <img src=\"//latex.artofproblemsolving.com/2/5/b/25b8b5e7ca86fdd358e68235ba82dff290b84a7d.png\" class=\"latex\" alt=\"$AC = a \\sqrt{2}$\" style=\"vertical-align: -1px\" width=\"86\" height=\"18\" />.  To calculate the coordinates of <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />, note that <img src=\"//latex.artofproblemsolving.com/a/e/9/ae92f93860d1b9cef5ad897106b39e0764af7035.png\" class=\"latex\" alt=\"$BP_0 \\perp AC$\" style=\"vertical-align: -4px\" width=\"88\" height=\"17\" /> since <img src=\"//latex.artofproblemsolving.com/4/8/2/482b681174af957cd0545a6b995acce6f4ed37b8.png\" class=\"latex\" alt=\"$BCP_0 A$\" style=\"vertical-align: -2px\" width=\"61\" height=\"15\" /> is a <a href=\"/wiki/index.php/Kite\" title=\"Kite\">kite</a>.  Thus, <img src=\"//latex.artofproblemsolving.com/6/f/a/6fac0fcaa4e4feb4441c2b9579c2e26fe5757be9.png\" class=\"latex\" alt=\"$BP_0$\" style=\"vertical-align: -2px\" width=\"32\" height=\"15\" /> bissects <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" />, so <img src=\"//latex.artofproblemsolving.com/6/f/a/6faf905203bacc37fd021f2b3b445dc4c2fb10f4.png\" class=\"latex\" alt=\"$BP_0 = \\tfrac{a\\sqrt{2}}{2} + \\tfrac{a\\sqrt{6}}{2}$\" style=\"vertical-align: -6px\" width=\"136\" height=\"24\" />.  Additionally, <img src=\"//latex.artofproblemsolving.com/4/4/9/449fdf8b26fd570ae4a3163070b325cf2cdc81be.png\" class=\"latex\" alt=\"$\\angle BP_0 C = 45^\\circ$\" style=\"vertical-align: -2px\" width=\"109\" height=\"15\" /> because <img src=\"//latex.artofproblemsolving.com/3/4/5/345989c6c2ee541e7fcf002f525365b13f3bfd03.png\" class=\"latex\" alt=\"$\\angle BP_0 C$\" style=\"vertical-align: -2px\" width=\"60\" height=\"15\" /> bissects <img src=\"//latex.artofproblemsolving.com/b/d/9/bd9dc32aaabd116f0671fa5731401e1db1baf44f.png\" class=\"latex\" alt=\"$\\angle AP_0 C$\" style=\"vertical-align: -2px\" width=\"59\" height=\"15\" />.  Thus, the coordinates of <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are <img src=\"//latex.artofproblemsolving.com/0/6/1/061e77fe8d4b3cd9c4a6b2b3c944cfc18ee624cc.png\" class=\"latex\" alt=\"$(\\tfrac{a+a\\sqrt{3}}{2},\\tfrac{a+a\\sqrt{3}}{2})$\" style=\"vertical-align: -6px\" width=\"113\" height=\"24\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/4/6/f/46fdadb4c8912f15f253435ef3f09d62738376fb.png\" class=\"latexcenter\" alt=\"[asy] import graph; size(9.22 cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-1.2,xmax=15.2,ymin=-1.2,ymax=15.2;  pen cqcqcq=rgb(0.75,0.75,0.75), evevff=rgb(0.9,0.9,1), zzttqq=rgb(0.6,0.2,0);   /*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(&quot;2 2&quot;); real gx=2,gy=2; for(real i=ceil(xmin/gx)*gx;i&lt;=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i&lt;=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);  Label laxis; laxis.p=fontsize(10);  xaxis(xmin,xmax,defaultpen+black,Arrows(6),above=true); yaxis(ymin,ymax,defaultpen+black,Arrows(6),above=true); clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);  pair A=(0,10),C=(10,0),P=(0,0),B=(13.660,13.660); dot(A); label(&quot;$A$&quot;,A,W); dot(C); label(&quot;$C$&quot;,C,S); dot(P); label(&quot;$P_0$&quot;,P,SW); dot(B); label(&quot;$B$&quot;,B,NE); draw(A--C--P--A); draw(A--B--C); draw(B--P,dotted); [/asy]\" width=\"438\" height=\"438\" />\nBy repeatedly applying the <a href=\"/wiki/index.php?title=Midpoint_Formula&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Midpoint Formula (page does not exist)\">Midpoint Formula</a>, we can determine the coordinates of <img src=\"//latex.artofproblemsolving.com/a/5/b/a5b0256a78d58b6d5f7a53400b19e7747d2983fa.png\" class=\"latex\" alt=\"$P_1$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" />, <img src=\"//latex.artofproblemsolving.com/1/0/7/107c7c8e5a64d81ed24331e510b777b7d08345b7.png\" class=\"latex\" alt=\"$P_2$\" style=\"vertical-align: -4px\" width=\"21\" height=\"17\" />, <img src=\"//latex.artofproblemsolving.com/9/0/9/9090f2e6bd5da465fea10a8c755d64e9185f61f1.png\" class=\"latex\" alt=\"$P_3$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" />, and so on.  We can also use the <a href=\"/wiki/index.php?title=Distance_Formula&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Distance Formula (page does not exist)\">Distance Formula</a> to calculate the distance of <img src=\"//latex.artofproblemsolving.com/1/0/f/10f87574947eecd302ba2d136ae87aa3b03b81f1.png\" class=\"latex\" alt=\"$P_0P_1$\" style=\"vertical-align: -4px\" width=\"40\" height=\"17\" />, <img src=\"//latex.artofproblemsolving.com/1/2/7/12705ddc84c2b924af883d88481940ab4b831229.png\" class=\"latex\" alt=\"$P_0P_2$\" style=\"vertical-align: -2px\" width=\"36\" height=\"15\" />, and so on.  The values are shown in the below table.\n</p>\n<table class=\"wikitable\" style=\"margin-left: auto; margin-right: auto;\">\n\n<tbody><tr>\n<td><img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />\n</td>\n<td>Coordinates of <img src=\"//latex.artofproblemsolving.com/5/4/c/54c51a4acedda645113145d008dbfb50d35f1da3.png\" class=\"latex\" alt=\"$P_n$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" />\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/6/6/a/66a221083783d65bd5306d6c6d0689f7881e99ef.png\" class=\"latex\" alt=\"$P_0 P_n$\" style=\"vertical-align: -2px\" width=\"38\" height=\"15\" />\n</td></tr>\n<tr>\n<td>1\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/8/0/1/801938be3ff1a26731c8e82bf1b3c88d668aee3c.png\" class=\"latex\" alt=\"$(0,2a)$\" style=\"vertical-align: -4px\" width=\"48\" height=\"18\" />\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/6/c/6/6c6ea4756efa52a156029529aba37a305a5cb496.png\" class=\"latex\" alt=\"$2a$\" width=\"18\" height=\"12\" />\n</td></tr>\n<tr>\n<td>2\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/e/f/3/ef3fb901478f190b903806e6cf4c3794b5d03d3c.png\" class=\"latex\" alt=\"$(a+a\\sqrt{3},-a+a\\sqrt{3})$\" style=\"vertical-align: -4px\" width=\"166\" height=\"21\" />\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/c/f/a/cfa795c07f0636883f34bb5e40a3041be9f2f55d.png\" class=\"latex\" alt=\"$2a\\sqrt{2}$\" style=\"vertical-align: -1px\" width=\"43\" height=\"18\" />\n</td></tr>\n<tr>\n<td>3\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/6/b/0/6b06c18c7d76364190be1c67fc2ad1c1981f8a3c.png\" class=\"latex\" alt=\"$(a-a\\sqrt{3},a-a\\sqrt{3})$\" style=\"vertical-align: -4px\" width=\"152\" height=\"21\" />\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/0/c/2/0c2ab697dc63c3f75180ecad79d286f714508398.png\" class=\"latex\" alt=\"$a\\sqrt{6} - a\\sqrt{2}$\" style=\"vertical-align: -1px\" width=\"90\" height=\"18\" />\n</td></tr>\n<tr>\n<td>4\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/7/f/e/7fe5b0f1bbdaa061ad760ec56456de2a85a264dc.png\" class=\"latex\" alt=\"$(-a+a\\sqrt{3},a+a\\sqrt{3})$\" style=\"vertical-align: -4px\" width=\"166\" height=\"21\" />\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/c/f/a/cfa795c07f0636883f34bb5e40a3041be9f2f55d.png\" class=\"latex\" alt=\"$2a\\sqrt{2}$\" style=\"vertical-align: -1px\" width=\"43\" height=\"18\" />\n</td></tr>\n<tr>\n<td>5\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/8/b/d/8bdae3486e634158da70e3693e7a596be692a494.png\" class=\"latex\" alt=\"$(2a,0)$\" style=\"vertical-align: -4px\" width=\"48\" height=\"18\" />\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/6/c/6/6c6ea4756efa52a156029529aba37a305a5cb496.png\" class=\"latex\" alt=\"$2a$\" width=\"18\" height=\"12\" />\n</td></tr>\n<tr>\n<td>6\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/f/9/6/f9603ca3089464e548fc6f1366bc474e7efef8d9.png\" class=\"latex\" alt=\"$(0,0)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" />\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" />\n</td></tr>\n<tr>\n<td>7\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/8/0/1/801938be3ff1a26731c8e82bf1b3c88d668aee3c.png\" class=\"latex\" alt=\"$(0,2a)$\" style=\"vertical-align: -4px\" width=\"48\" height=\"18\" />\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/6/c/6/6c6ea4756efa52a156029529aba37a305a5cb496.png\" class=\"latex\" alt=\"$2a$\" width=\"18\" height=\"12\" />\n</td></tr>\n<tr>\n<td>8\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/e/f/3/ef3fb901478f190b903806e6cf4c3794b5d03d3c.png\" class=\"latex\" alt=\"$(a+a\\sqrt{3},-a+a\\sqrt{3})$\" style=\"vertical-align: -4px\" width=\"166\" height=\"21\" />\n</td>\n<td><img src=\"//latex.artofproblemsolving.com/c/f/a/cfa795c07f0636883f34bb5e40a3041be9f2f55d.png\" class=\"latex\" alt=\"$2a\\sqrt{2}$\" style=\"vertical-align: -1px\" width=\"43\" height=\"18\" />\n</td></tr></tbody></table>\n<p>Note that the coordinates of <img src=\"//latex.artofproblemsolving.com/5/4/c/54c51a4acedda645113145d008dbfb50d35f1da3.png\" class=\"latex\" alt=\"$P_n$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" /> as well as the distance <img src=\"//latex.artofproblemsolving.com/6/6/a/66a221083783d65bd5306d6c6d0689f7881e99ef.png\" class=\"latex\" alt=\"$P_0 P_n$\" style=\"vertical-align: -2px\" width=\"38\" height=\"15\" /> cycle after <img src=\"//latex.artofproblemsolving.com/e/3/2/e326b48726d4c73525c3b980409600fd87ea9846.png\" class=\"latex\" alt=\"$n = 6$\" width=\"43\" height=\"12\" />.  Thus, <img src=\"//latex.artofproblemsolving.com/8/d/b/8db09dbacd8d2668da6077ced7c1c1253435d6d0.png\" class=\"latex\" alt=\"$P_0P_n = \\frac{\\sqrt{6} - \\sqrt{2}}{2} \\cdot P_0P_1$\" style=\"vertical-align: -12px\" width=\"188\" height=\"41\" /> if <img src=\"//latex.artofproblemsolving.com/0/2/4/02420c9da2665c9984b481be8ad51d41688aa5b5.png\" class=\"latex\" alt=\"$n \\equiv 3 \\pmod{6}$\" style=\"vertical-align: -4px\" width=\"115\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/d/c/1/dc11a6700454c7cf3f77121a789c03af06906a6b.png\" class=\"latex\" alt=\"$P_0P_n = 0$\" style=\"vertical-align: -2px\" width=\"72\" height=\"15\" /> if <img src=\"//latex.artofproblemsolving.com/2/2/7/2279dfd5bfac0badae18c78a178ed2f0f9eb4fb4.png\" class=\"latex\" alt=\"$n \\equiv 0 \\pmod{6}$\" style=\"vertical-align: -4px\" width=\"115\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/d/7/9/d7918cb9f37c4fb47403a26243cb89f18c3bcd33.png\" class=\"latex\" alt=\"$P_0P_n = P_0P_1$\" style=\"vertical-align: -2px\" width=\"100\" height=\"15\" /> if <img src=\"//latex.artofproblemsolving.com/1/6/e/16efa53627e046f1297296dab3a07e1dc2992a6c.png\" class=\"latex\" alt=\"$n \\equiv 1, 5 \\pmod{6}$\" style=\"vertical-align: -4px\" width=\"132\" height=\"18\" />, and <img src=\"//latex.artofproblemsolving.com/2/4/4/244ccfe3ff068c816af970c8035e470a317ae088.png\" class=\"latex\" alt=\"$P_0P_n = \\sqrt{2} \\cdot P_0P_1$\" style=\"vertical-align: -2px\" width=\"137\" height=\"19\" /> if <img src=\"//latex.artofproblemsolving.com/9/9/e/99ee1df4c29847466202beaa2377c4d09af3be27.png\" class=\"latex\" alt=\"$n \\equiv 2, 4 \\pmod{6}$\" style=\"vertical-align: -4px\" width=\"132\" height=\"18\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_Pan_African_MO\" title=\"2001 Pan African MO\">2001 Pan African MO</a></b> (<b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems\" title=\"2001 Pan African MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_2\" title=\"2001 Pan African MO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_1\" title=\"2001 Pan African MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_2\" title=\"2001 Pan African MO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_4\" title=\"2001 Pan African MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_5\" title=\"2001 Pan African MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_6\" title=\"2001 Pan African MO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_4\" title=\"2001 Pan African MO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Pan_African_MO_Problems_and_Solutions\" title=\"Pan African MO Problems and Solutions\"> All Pan African MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211228\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.057 seconds\nReal time usage: 0.063 seconds\nPreprocessor visited node count: 667/1000000\nPreprocessor generated node count: 1563/1000000\nPost‐expand include size: 962/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 13239/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    5.945      1 Template:Pan_African_MO_box\n100.00%    5.945      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17930-0!canonical and timestamp 20240907211228 and revision id 120172\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Coordinate geometry"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Kite"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Pan African MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "Midpoint Formula"
+        },
+        {
+          "ns": 0,
+          "*": "Distance Formula"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Pan African MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_3",
+          "byteoffset": 831,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_3",
+          "byteoffset": 3802,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 Pan African MO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Coordinate Geometry",
+      "Distance Formula",
+      "Angle Bisector Theorem"
+    ]
+  },
+  "2001 Pan African MO Problems/Problem 4": {
+    "parse": {
+      "title": "2001 Pan African MO Problems/Problem 4",
+      "pageid": 17924,
+      "revid": 113026,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> be a positive integer, and let <img src=\"//latex.artofproblemsolving.com/4/c/2/4c28242522f23e896074dc89612847f8317911d7.png\" class=\"latex\" alt=\"$a&gt;0$\" style=\"vertical-align: 0px\" width=\"42\" height=\"13\" /> be a real number. Consider the equation:\n<img src=\"//latex.artofproblemsolving.com/a/1/0/a10529df5c75836665db01d0d8bf3ae96ab0caf9.png\" class=\"latexcenter\" alt=\"\\[\\sum_{i=1}^{n}(x_i^2+(a-x_i)^2)= na^2\\]\" width=\"199\" height=\"47\" />\nHow many solutions (<img src=\"//latex.artofproblemsolving.com/2/d/2/2d2719960d803a38ff2560599c978b4acac5fbe7.png\" class=\"latex\" alt=\"$x_1, x_2 \\cdots , x_n$\" style=\"vertical-align: -3px\" width=\"100\" height=\"11\" />) does this equation have, such that:\n<img src=\"//latex.artofproblemsolving.com/8/b/1/8b167df83780d55ba5dfb9c67b13a0fda5d96fd2.png\" class=\"latexcenter\" alt=\"\\[0 \\leq x_i \\leq a, i \\in N^+\\]\" width=\"145\" height=\"18\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>First, rearrange the equation by expanding, simplifying, and using properties of <a href=\"/wiki/index.php/Summation\" title=\"Summation\">summation</a>.\n<img src=\"//latex.artofproblemsolving.com/f/e/3/fe36d1024826abd0ac0bec2f24d392d8eb3913b1.png\" class=\"latexcenter\" alt=\"\\begin{align*} \\sum_{i=1}^{n} (x_i^2 + a^2 - 2ax_i + x_i^2) &amp;= na^2 \\\\ \\sum_{i=1}^{n} (a^2 + 2x_i^2 - 2ax_i) &amp;= na^2 \\\\ na^2 + 2 \\sum_{i=1}^{n} (x_i^2) - 2a \\sum_{i=1}^{n} (x_i) &amp;= na^2 \\\\ 2 \\sum_{i=1}^{n} (x_i^2) - 2a \\sum_{i=1}^{n} (x_i) &amp;= 0 \\\\ \\sum_{i=1}^{n} (x_i^2) - a \\sum_{i=1}^{n} (x_i) &amp;= 0 \\end{align*}\" width=\"270\" height=\"279\" />\nNext, we can try smaller values of <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> to find patterns.  If <img src=\"//latex.artofproblemsolving.com/7/7/4/7746ed746b280e2a83d7defebe5cfe5d557fc9c7.png\" class=\"latex\" alt=\"$i = 1$\" style=\"vertical-align: 0px\" width=\"38\" height=\"13\" />, then the equation becomes <img src=\"//latex.artofproblemsolving.com/6/8/e/68e5a4515df8f16c140f19e02f53d5deff8420eb.png\" class=\"latex\" alt=\"$x_1^2 - ax_1 = 0$\" style=\"vertical-align: -4px\" width=\"100\" height=\"19\" />, so <img src=\"//latex.artofproblemsolving.com/a/3/d/a3dc3ecf2fcb08b3ca53e2f8a39760158a8a63a3.png\" class=\"latex\" alt=\"$x_1 = 0$\" style=\"vertical-align: -4px\" width=\"53\" height=\"17\" /> or <img src=\"//latex.artofproblemsolving.com/c/9/d/c9dede0e9752caabb69f3be9dbe1852fe469c224.png\" class=\"latex\" alt=\"$x_1 = a$\" style=\"vertical-align: -2px\" width=\"51\" height=\"10\" />.  If <img src=\"//latex.artofproblemsolving.com/b/7/6/b763cbcce134c20ae9e2bfb823a1ef21a9eb8e74.png\" class=\"latex\" alt=\"$i = 2$\" width=\"39\" height=\"12\" />, we can graph the equation on the <a href=\"/wiki/index.php/Cartesian_plane\" class=\"mw-redirect\" title=\"Cartesian plane\">Cartesian plane</a> (with axes as <img src=\"//latex.artofproblemsolving.com/c/c/a/ccada11db7b2b90693e2fac4f887a57fce6f96bf.png\" class=\"latex\" alt=\"$x_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/6/a/7/6a7d010bbff66a0c41e43310a51efbaa6bf63396.png\" class=\"latex\" alt=\"$x_2$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />).  The equation is a <a href=\"/wiki/index.php/Circle\" title=\"Circle\">circle</a>, and from the bounds, the only solutions are <img src=\"//latex.artofproblemsolving.com/f/7/6/f7649afc3d3a51caf97f60eed73ea07fe47d70b1.png\" class=\"latex\" alt=\"$(0,0),(0,a),(a,0),(a,a)$\" style=\"vertical-align: -4px\" width=\"186\" height=\"18\" />.  It seems as if the solution to the set involves only <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />.  To prove this, we need to prove that solutions involving only <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> would work and that no other solutions are possible.\n</p><p><br />\nFor the first part, we can use <a href=\"/wiki/index.php/Induction\" title=\"Induction\">induction</a>.  The base case is already covered since the solutions for <img src=\"//latex.artofproblemsolving.com/7/7/4/7746ed746b280e2a83d7defebe5cfe5d557fc9c7.png\" class=\"latex\" alt=\"$i = 1$\" style=\"vertical-align: 0px\" width=\"38\" height=\"13\" /> are <img src=\"//latex.artofproblemsolving.com/a/3/d/a3dc3ecf2fcb08b3ca53e2f8a39760158a8a63a3.png\" class=\"latex\" alt=\"$x_1 = 0$\" style=\"vertical-align: -4px\" width=\"53\" height=\"17\" /> or <img src=\"//latex.artofproblemsolving.com/c/9/d/c9dede0e9752caabb69f3be9dbe1852fe469c224.png\" class=\"latex\" alt=\"$x_1 = a$\" style=\"vertical-align: -2px\" width=\"51\" height=\"10\" />.  For the inductive step, assume that <img src=\"//latex.artofproblemsolving.com/a/3/1/a31b9656e752837a9046149cd658e183b9130cb5.png\" class=\"latex\" alt=\"$\\sum_{i=1}^{n}(x_i^2+(a-x_i)^2)= na^2$\" style=\"vertical-align: -23px\" width=\"203\" height=\"53\" />, where <img src=\"//latex.artofproblemsolving.com/e/e/c/eec020b09f33839d9c5190e7ead679afcc68d1c5.png\" class=\"latex\" alt=\"$x_i = 0$\" style=\"vertical-align: -2px\" width=\"48\" height=\"15\" /> or <img src=\"//latex.artofproblemsolving.com/f/c/4/fc4e531e3d2a6da0bcd0bc3940d5925f2e48ced5.png\" class=\"latex\" alt=\"$x_i = a$\" style=\"vertical-align: -2px\" width=\"49\" height=\"10\" /> for integer values of <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" />.  If <img src=\"//latex.artofproblemsolving.com/b/6/1/b612c04916e1f37baeea775bdfcdab31a2fbe8cd.png\" class=\"latex\" alt=\"$x_{i+1} = 0$\" style=\"vertical-align: -4px\" width=\"65\" height=\"16\" />, then <img src=\"//latex.artofproblemsolving.com/f/3/e/f3e4cbbb635d5bec59a75795e0c892d626429ed3.png\" class=\"latex\" alt=\"$x_{i+1}^2+(a-x_{i+1})^2 = a^2$\" style=\"vertical-align: -6px\" width=\"181\" height=\"21\" />, and if <img src=\"//latex.artofproblemsolving.com/5/7/c/57c349487a2a6a44e58b03a2a2152222d6827180.png\" class=\"latex\" alt=\"$x_{i+1} = a$\" style=\"vertical-align: -4px\" width=\"66\" height=\"12\" />, then <img src=\"//latex.artofproblemsolving.com/f/3/e/f3e4cbbb635d5bec59a75795e0c892d626429ed3.png\" class=\"latex\" alt=\"$x_{i+1}^2+(a-x_{i+1})^2 = a^2$\" style=\"vertical-align: -6px\" width=\"181\" height=\"21\" />.  Thus, <img src=\"//latex.artofproblemsolving.com/a/f/c/afc03903f977e719c2a244468e3532f075546e7d.png\" class=\"latex\" alt=\"$\\sum_{i=1}^{n}(x_i^2+(a-x_i)^2) + x_{i+1}^2+(a-x_{i+1})^2 = (n+1)a^2$\" style=\"vertical-align: -23px\" width=\"412\" height=\"53\" />.  The inductive step holds, so solutions are all ordered pairs <img src=\"//latex.artofproblemsolving.com/8/b/f/8bff80d36c501f381f93696cf58757931726649d.png\" class=\"latex\" alt=\"$(x_1, x_2, \\cdots x_n)$\" style=\"vertical-align: -4px\" width=\"108\" height=\"18\" /> where <img src=\"//latex.artofproblemsolving.com/e/e/c/eec020b09f33839d9c5190e7ead679afcc68d1c5.png\" class=\"latex\" alt=\"$x_i = 0$\" style=\"vertical-align: -2px\" width=\"48\" height=\"15\" /> or <img src=\"//latex.artofproblemsolving.com/f/c/4/fc4e531e3d2a6da0bcd0bc3940d5925f2e48ced5.png\" class=\"latex\" alt=\"$x_i = a$\" style=\"vertical-align: -2px\" width=\"49\" height=\"10\" /> for integer values of <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" />.\n</p><p><br />\nFor the second part, note that we can complete the square for <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> to get <img src=\"//latex.artofproblemsolving.com/e/7/2/e7249e3d174f9b9ee909eda3a3247435228dbecc.png\" class=\"latex\" alt=\"$(x_1 - \\tfrac{a}{2})^2 + (x_2 - \\tfrac{a}{2})^2 + \\cdots (x_n - \\tfrac{a}{2})^2 = \\tfrac{na^2}{4}$\" style=\"vertical-align: -6px\" width=\"337\" height=\"24\" />.  We know that for integer values of <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/f/8/d/f8d36f82b4d13fe00b2d1c7ee3a5c58430b0fa6c.png\" class=\"latex\" alt=\"$0 \\le x_i \\le a$\" style=\"vertical-align: -2px\" width=\"83\" height=\"15\" />, so <img src=\"//latex.artofproblemsolving.com/a/9/2/a92a20244f5ea887baf220582b90c91f427320df.png\" class=\"latex\" alt=\"$-\\tfrac{a}{2} \\le x_i - \\tfrac{a}{2} \\le \\tfrac{a}{2}$\" style=\"vertical-align: -7px\" width=\"136\" height=\"20\" />.  Thus, <img src=\"//latex.artofproblemsolving.com/1/9/6/196dfaa81042bdf68c9a7ae55cc5af6301468152.png\" class=\"latex\" alt=\"$(x_i - \\tfrac{a}{2})^2 \\le \\tfrac{a^2}{4}$\" style=\"vertical-align: -6px\" width=\"111\" height=\"24\" />.\n</p><p><br />\nIf <img src=\"//latex.artofproblemsolving.com/f/c/4/fc4e531e3d2a6da0bcd0bc3940d5925f2e48ced5.png\" class=\"latex\" alt=\"$x_i = a$\" style=\"vertical-align: -2px\" width=\"49\" height=\"10\" /> or <img src=\"//latex.artofproblemsolving.com/e/e/c/eec020b09f33839d9c5190e7ead679afcc68d1c5.png\" class=\"latex\" alt=\"$x_i = 0$\" style=\"vertical-align: -2px\" width=\"48\" height=\"15\" />, then <img src=\"//latex.artofproblemsolving.com/1/9/6/196dfaa81042bdf68c9a7ae55cc5af6301468152.png\" class=\"latex\" alt=\"$(x_i - \\tfrac{a}{2})^2 \\le \\tfrac{a^2}{4}$\" style=\"vertical-align: -6px\" width=\"111\" height=\"24\" />.  If <img src=\"//latex.artofproblemsolving.com/c/9/0/c908fc2e66f7cac3f0bb766ea8d5f05568ffb2b5.png\" class=\"latex\" alt=\"$x_i \\ne 0, a$\" style=\"vertical-align: -4px\" width=\"67\" height=\"17\" />, then <img src=\"//latex.artofproblemsolving.com/c/f/2/cf2e522b37cda95dc9ae065a3771633fb6860a61.png\" class=\"latex\" alt=\"$0 &lt; x_i &lt; a$\" style=\"vertical-align: -2px\" width=\"83\" height=\"15\" />, so <img src=\"//latex.artofproblemsolving.com/f/8/4/f84d85fdf89b8680ae3d27a5ae61685073d35f92.png\" class=\"latex\" alt=\"$(x_i - \\tfrac{a}{2})^2 &lt; \\tfrac{a^2}{4}$\" style=\"vertical-align: -6px\" width=\"111\" height=\"24\" />.  <a href=\"/wiki/index.php/WLOG\" class=\"mw-redirect\" title=\"WLOG\">WLOG</a>, let <img src=\"//latex.artofproblemsolving.com/d/2/e/d2e80454f8e2f9436f5571fec1afe7532f8bc105.png\" class=\"latex\" alt=\"$0 &lt; x_1 &lt; a$\" style=\"vertical-align: -2px\" width=\"85\" height=\"15\" />, making <img src=\"//latex.artofproblemsolving.com/2/5/2/252ca75f59513b92a73adb1cd26ad63660718885.png\" class=\"latex\" alt=\"$(x_1 - \\tfrac{a}{2})^2 &lt; \\tfrac{a^2}{4}$\" style=\"vertical-align: -6px\" width=\"113\" height=\"24\" />.  Thus, <img src=\"//latex.artofproblemsolving.com/a/6/7/a672fa3a49e9399b6ae48c574e769deaaa0119ab.png\" class=\"latex\" alt=\"$\\sum_{i=1}^n (x_i - \\tfrac{a}{2})^2 &lt; \\tfrac{na^2}{4}$\" style=\"vertical-align: -23px\" width=\"149\" height=\"53\" />, so there are no solutions where <img src=\"//latex.artofproblemsolving.com/c/9/0/c908fc2e66f7cac3f0bb766ea8d5f05568ffb2b5.png\" class=\"latex\" alt=\"$x_i \\ne 0, a$\" style=\"vertical-align: -4px\" width=\"67\" height=\"17\" />.\n</p><p><br />\nThus, for each <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> in the solution to the original equation, where <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> is an integer, <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> can only equal <img src=\"//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png\" class=\"latex\" alt=\"$0$\" width=\"8\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />.  Therefore, there are <img src=\"//latex.artofproblemsolving.com/9/e/3/9e32bd4fa2a52f01181916df23f0c86cc7ec9785.png\" class=\"latex\" alt=\"$\\boxed{2^n}$\" style=\"vertical-align: -5px\" width=\"30\" height=\"24\" /> ordered pairs that are solutions to the equation.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_Pan_African_MO\" title=\"2001 Pan African MO\">2001 Pan African MO</a></b> (<b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems\" title=\"2001 Pan African MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_3\" title=\"2001 Pan African MO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_1\" title=\"2001 Pan African MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_2\" title=\"2001 Pan African MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_3\" title=\"2001 Pan African MO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_5\" title=\"2001 Pan African MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_6\" title=\"2001 Pan African MO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_5\" title=\"2001 Pan African MO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Pan_African_MO_Problems_and_Solutions\" title=\"Pan African MO Problems and Solutions\"> All Pan African MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211228\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.037 seconds\nReal time usage: 0.038 seconds\nPreprocessor visited node count: 550/1000000\nPreprocessor generated node count: 1303/1000000\nPost‐expand include size: 962/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 10595/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.940      1 Template:Pan_African_MO_box\n100.00%    1.940      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17924-0!canonical and timestamp 20240907211228 and revision id 113026\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Cartesian plane"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Circle"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Induction"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Pan African MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Summation"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "WLOG"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Pan African MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_4",
+          "byteoffset": 315,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_4",
+          "byteoffset": 3401,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 Pan African MO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Completing the Square",
+      "Induction"
+    ]
+  },
+  "2001 Pan African MO Problems/Problem 5": {
+    "parse": {
+      "title": "2001 Pan African MO Problems/Problem 5",
+      "pageid": 17922,
+      "revid": 112989,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find the value of the sum:\n<img src=\"//latex.artofproblemsolving.com/1/3/b/13b97ad5b59212b797cd833ceef0381d0e2b5898.png\" class=\"latexcenter\" alt=\"\\[\\sum_{i=1}^{2001} [\\sqrt{i}]\\]\" width=\"55\" height=\"50\" />\nwhere <img src=\"//latex.artofproblemsolving.com/9/7/9/97988f3618289185c731de2299e17e1b84bef42d.png\" class=\"latex\" alt=\"$[ {x} ]$\" style=\"vertical-align: -5px\" width=\"18\" height=\"18\" /> denotes the greatest integer which does not exceed <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>First, note that for positive integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, the list of integers <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> where <img src=\"//latex.artofproblemsolving.com/a/8/d/a8d3f5a43154a55252a621ea2a3d947665ac1963.png\" class=\"latex\" alt=\"$[\\sqrt{i}] = n$\" style=\"vertical-align: -5px\" width=\"69\" height=\"24\" /> is <img src=\"//latex.artofproblemsolving.com/1/4/4/144ca50b5c4b42f7aec38ed16a62ebaf0113f65f.png\" class=\"latex\" alt=\"$n^2, n^2 + 1, n^2 + 2, \\cdots n^2 + 2n$\" style=\"vertical-align: -3px\" width=\"226\" height=\"18\" />.  Thus, there are <img src=\"//latex.artofproblemsolving.com/e/b/1/eb1f6c66c2acad3c8bd9092f389f85e7e3805a6e.png\" class=\"latex\" alt=\"$(n^2 + 2n) - n^2 + 1 = 2n + 1$\" style=\"vertical-align: -4px\" width=\"221\" height=\"19\" /> values of <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> where <img src=\"//latex.artofproblemsolving.com/a/8/d/a8d3f5a43154a55252a621ea2a3d947665ac1963.png\" class=\"latex\" alt=\"$[\\sqrt{i}] = n$\" style=\"vertical-align: -5px\" width=\"69\" height=\"24\" />.\n</p><p><br />\nAdditionally, note that <img src=\"//latex.artofproblemsolving.com/9/d/c/9dc3df5b561e3a539b0bf3e7fddc9748f1c0826a.png\" class=\"latex\" alt=\"$44^2 = 1936$\" style=\"vertical-align: 0px\" width=\"85\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/7/7/9/779f216c74ee287256d39b586d92171189ae882e.png\" class=\"latex\" alt=\"$45^2 = 2025$\" style=\"vertical-align: 0px\" width=\"85\" height=\"15\" />.  There are <img src=\"//latex.artofproblemsolving.com/3/6/0/3608b833e680cd6b4847c32333e3ba6fb5c82bd4.png\" class=\"latex\" alt=\"$2001-1936+1 = 66$\" style=\"vertical-align: -1px\" width=\"168\" height=\"14\" /> values of <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> where <img src=\"//latex.artofproblemsolving.com/4/0/d/40d0338d17021d5c29f39f03c1288cdc87eee0a1.png\" class=\"latex\" alt=\"$[\\sqrt{i}] = 44$\" style=\"vertical-align: -5px\" width=\"74\" height=\"22\" />.  Therefore, the value <img src=\"//latex.artofproblemsolving.com/d/c/7/dc7876498f5abd466319aebbd09bdb099f70b7bb.png\" class=\"latex\" alt=\"$\\sum_{i=1}^{2001} [\\sqrt{i}] = 1 \\cdot 3 + 2 \\cdot 5 + 3 \\cdot 7 + \\cdots + 43 \\cdot 87 + 44 \\cdot 66$\" style=\"vertical-align: -20px\" width=\"407\" height=\"50\" />.\n</p><p><br />\nBy rewriting the above value as a <a href=\"/wiki/index.php/Summation\" title=\"Summation\">summation</a>, we can compute the value to be equal to \n<img src=\"//latex.artofproblemsolving.com/e/0/5/e0599bd5afe8a8e4e72731e05d825af5e789d726.png\" class=\"latexcenter\" alt=\"\\begin{align*} \\sum_{i=1}^{43} (i(2i+1)) + 44 \\cdot 66 &amp;= \\sum_{i=1}^{43} (2i^2 + i) + 44 \\cdot 66 \\\\ &amp;= 2 \\sum_{i=1}^{43} (i^2) + \\sum_{i=1}^{43} (i) + 44 \\cdot 66 \\\\ &amp;= \\frac{2 \\cdot 43 \\cdot 44 \\cdot 87}{6} + \\frac{44 \\cdot 43}{2} + 44 \\cdot 66 \\\\ &amp;= (86 \\cdot 22 \\cdot 29) + (22 \\cdot 43) + (22 \\cdot 132) \\\\ &amp;= (22 \\cdot 2494) + (22 \\cdot 175) \\\\ &amp;= 22 \\cdot 2669 \\\\ &amp;= \\boxed{58718}. \\end{align*}\" width=\"476\" height=\"261\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_Pan_African_MO\" title=\"2001 Pan African MO\">2001 Pan African MO</a></b> (<b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems\" title=\"2001 Pan African MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_4\" title=\"2001 Pan African MO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_1\" title=\"2001 Pan African MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_2\" title=\"2001 Pan African MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_3\" title=\"2001 Pan African MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_4\" title=\"2001 Pan African MO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_6\" title=\"2001 Pan African MO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_6\" title=\"2001 Pan African MO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Pan_African_MO_Problems_and_Solutions\" title=\"Pan African MO Problems and Solutions\"> All Pan African MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907211229\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.029 seconds\nPreprocessor visited node count: 190/1000000\nPreprocessor generated node count: 503/1000000\nPost‐expand include size: 962/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3454/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.945      1 Template:Pan_African_MO_box\n100.00%    1.945      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:17922-0!canonical and timestamp 20240907211229 and revision id 112989\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Pan African MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Summation"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Pan African MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_5",
+          "byteoffset": 181,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_5",
+          "byteoffset": 1336,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 Pan African MO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Greatest Common Divisor (GCD)",
+      "Sum of an Arithmetic Series",
+      "Geometric Series Sum"
+    ]
+  },
+  "2001 Pan African MO Problems/Problem 6": {
+    "parse": {
+      "title": "2001 Pan African MO Problems/Problem 6",
+      "pageid": 19461,
+      "revid": 130781,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p>Let <img src=\"//latex.artofproblemsolving.com/b/1/0/b10d5ee88ffc7d59f9c282b366953fb4fa4051f6.png\" class=\"latex\" alt=\"$S_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"15\" /> be a semicircle with centre <img src=\"//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png\" class=\"latex\" alt=\"$O$\" width=\"13\" height=\"12\" /> and diameter <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />.A circle <img src=\"//latex.artofproblemsolving.com/7/0/b/70b97eb4ad6e4e7a5a97e2547d9ed6e965960d0c.png\" class=\"latex\" alt=\"$C_1$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> with centre <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> is drawn, tangent to <img src=\"//latex.artofproblemsolving.com/b/1/0/b10d5ee88ffc7d59f9c282b366953fb4fa4051f6.png\" class=\"latex\" alt=\"$S_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"15\" />, and tangent to <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> at <img src=\"//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png\" class=\"latex\" alt=\"$O$\" width=\"13\" height=\"12\" />. A semicircle <img src=\"//latex.artofproblemsolving.com/7/f/4/7f4caea56d945d0b6e49701b42ce06e0fb92e663.png\" class=\"latex\" alt=\"$S_2$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> is drawn, with centre <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> on <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, tangent to <img src=\"//latex.artofproblemsolving.com/b/1/0/b10d5ee88ffc7d59f9c282b366953fb4fa4051f6.png\" class=\"latex\" alt=\"$S_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"15\" /> and to <img src=\"//latex.artofproblemsolving.com/7/0/b/70b97eb4ad6e4e7a5a97e2547d9ed6e965960d0c.png\" class=\"latex\" alt=\"$C_1$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" />. A circle <img src=\"//latex.artofproblemsolving.com/b/6/5/b65e6facfe122c182fe14d503aeace2c52a9739d.png\" class=\"latex\" alt=\"$C_2$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" /> with centre <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> is drawn, internally tangent to <img src=\"//latex.artofproblemsolving.com/b/1/0/b10d5ee88ffc7d59f9c282b366953fb4fa4051f6.png\" class=\"latex\" alt=\"$S_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"15\" /> and externally tangent to <img src=\"//latex.artofproblemsolving.com/7/f/4/7f4caea56d945d0b6e49701b42ce06e0fb92e663.png\" class=\"latex\" alt=\"$S_2$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/7/0/b/70b97eb4ad6e4e7a5a97e2547d9ed6e965960d0c.png\" class=\"latex\" alt=\"$C_1$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" />. Prove that <img src=\"//latex.artofproblemsolving.com/2/5/e/25e95c7e16ef158247dae7de796d859d651d5d8b.png\" class=\"latex\" alt=\"$OPRQ$\" style=\"vertical-align: -3px\" width=\"56\" height=\"16\" /> is a rectangle.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We use <a href=\"/wiki/index.php/Cartesian_coordinate_system\" class=\"mw-redirect\" title=\"Cartesian coordinate system\">Cartesian coordinates</a>, setting <img src=\"//latex.artofproblemsolving.com/7/7/6/77633f29a3eeff3ecba40e700d127677727cf2a3.png\" class=\"latex\" alt=\"$O = (0,0), B = (1,0)$\" style=\"vertical-align: -4px\" width=\"165\" height=\"18\" />, and assume without loss of generality that <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> is closer to <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> than to <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and that the <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />-coordinate of <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> is positive. Then we compute <img src=\"//latex.artofproblemsolving.com/0/5/7/05765bc070b9574cb0c9ec2c69aaa2fb28863f8c.png\" class=\"latex\" alt=\"$P = (0, \\frac{1}{2})$\" style=\"vertical-align: -12px\" width=\"81\" height=\"37\" /> (because that is the only choice that allows for tangency to both <img src=\"//latex.artofproblemsolving.com/b/1/0/b10d5ee88ffc7d59f9c282b366953fb4fa4051f6.png\" class=\"latex\" alt=\"$S_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"15\" /> and the line <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />). Letting <img src=\"//latex.artofproblemsolving.com/2/a/e/2aeb3aa7b54c28a4051d8b550b52f949da165dc2.png\" class=\"latex\" alt=\"$r_Q$\" style=\"vertical-align: -4px\" width=\"18\" height=\"12\" /> be the radius of <img src=\"//latex.artofproblemsolving.com/7/f/4/7f4caea56d945d0b6e49701b42ce06e0fb92e663.png\" class=\"latex\" alt=\"$S_2$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" />, we find that <img src=\"//latex.artofproblemsolving.com/3/8/e/38e73118d9945a31aae74704c2e2dc9c42f61431.png\" class=\"latex\" alt=\"$Q = (1 - r_Q, 0)$\" style=\"vertical-align: -4px\" width=\"119\" height=\"18\" />. However, since <img src=\"//latex.artofproblemsolving.com/7/0/b/70b97eb4ad6e4e7a5a97e2547d9ed6e965960d0c.png\" class=\"latex\" alt=\"$C_1$\" style=\"vertical-align: -2px\" width=\"18\" height=\"15\" /> and <img src=\"//latex.artofproblemsolving.com/7/f/4/7f4caea56d945d0b6e49701b42ce06e0fb92e663.png\" class=\"latex\" alt=\"$S_2$\" style=\"vertical-align: -2px\" width=\"17\" height=\"15\" /> are tangent, we know that <img src=\"//latex.artofproblemsolving.com/6/5/1/6517d451dda85e977b026b7c10319161ff1de81f.png\" class=\"latex\" alt=\"$PQ = \\frac{1}{2} + r_Q$\" style=\"vertical-align: -12px\" width=\"106\" height=\"37\" />; using the <a href=\"/wiki/index.php/Pythagorean_theorem\" class=\"mw-redirect\" title=\"Pythagorean theorem\">Pythagorean theorem</a>, we then solve <img src=\"//latex.artofproblemsolving.com/5/1/8/5186872a9697e5e6f833d2e0ba629b0b063420d7.png\" class=\"latex\" alt=\"$(\\frac{1}{2})^2 + (1 - r_Q)^2 = (\\frac{1}{2} + r_Q)^2$\" style=\"vertical-align: -12px\" width=\"228\" height=\"37\" />, which solves to <img src=\"//latex.artofproblemsolving.com/9/d/0/9d01aa005c09955db1f5f7045fb8dd14354b6080.png\" class=\"latex\" alt=\"$r_Q = \\frac{1}{3}$\" style=\"vertical-align: -12px\" width=\"55\" height=\"37\" />, so that <img src=\"//latex.artofproblemsolving.com/6/d/8/6d8868cf1e05df7c1a0c89b9ea0c859e070a9526.png\" class=\"latex\" alt=\"$Q = (\\frac{2}{3}, 0)$\" style=\"vertical-align: -12px\" width=\"81\" height=\"37\" />.\n</p><p>Finally, we know that <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> must now be uniquely determined. If <img src=\"//latex.artofproblemsolving.com/2/5/e/25e95c7e16ef158247dae7de796d859d651d5d8b.png\" class=\"latex\" alt=\"$OPRQ$\" style=\"vertical-align: -3px\" width=\"56\" height=\"16\" /> was a <a href=\"/wiki/index.php/Rectangle\" title=\"Rectangle\">rectangle</a>, then <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> would have to be located at <img src=\"//latex.artofproblemsolving.com/3/9/c/39c6140f661680af677de1470547d8711fee408f.png\" class=\"latex\" alt=\"$(\\frac{2}{3}, \\frac{1}{2})$\" style=\"vertical-align: -12px\" width=\"47\" height=\"37\" />, so we only need check that a circle centered there is tangent to <img src=\"//latex.artofproblemsolving.com/d/c/7/dc7848b117b8d46047751c6a57aa2bd28f0fa9ac.png\" class=\"latex\" alt=\"$S_1, S_2, C_1$\" style=\"vertical-align: -3px\" width=\"72\" height=\"16\" />. Letting <img src=\"//latex.artofproblemsolving.com/d/4/5/d45724bc994a8ae60cf03eaf3bba37e2e141e3bb.png\" class=\"latex\" alt=\"$r_R$\" style=\"vertical-align: -2px\" width=\"18\" height=\"10\" /> denote the radius of <img src=\"//latex.artofproblemsolving.com/b/6/5/b65e6facfe122c182fe14d503aeace2c52a9739d.png\" class=\"latex\" alt=\"$C_2$\" style=\"vertical-align: -2px\" width=\"19\" height=\"15\" />, we know from tangencies that we must have <img src=\"//latex.artofproblemsolving.com/1/b/b/1bb4bda7e365afa71a5c9cb898c23cffba497415.png\" class=\"latex\" alt=\"$PR = \\frac{1}{2} + r_R, QR = \\frac{1}{3} + r_R, OR = 1 - r_R$\" style=\"vertical-align: -12px\" width=\"332\" height=\"37\" />. These equations are all satisfied for our desired choice of <img src=\"//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png\" class=\"latex\" alt=\"$R$\" width=\"14\" height=\"12\" /> and the value <img src=\"//latex.artofproblemsolving.com/d/9/4/d94872d27a17225a92f2a3b414209bf0c132a6dd.png\" class=\"latex\" alt=\"$r_R = \\frac{1}{6}$\" style=\"vertical-align: -12px\" width=\"55\" height=\"37\" />, so we conclude that <img src=\"//latex.artofproblemsolving.com/2/5/e/25e95c7e16ef158247dae7de796d859d651d5d8b.png\" class=\"latex\" alt=\"$OPRQ$\" style=\"vertical-align: -3px\" width=\"56\" height=\"16\" /> is rectangular and we are done.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2001_Pan_African_MO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2001_Pan_African_MO\" title=\"2001 Pan African MO\">2001 Pan African MO</a></b> (<b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems\" title=\"2001 Pan African MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_5\" title=\"2001 Pan African MO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_1\" title=\"2001 Pan African MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_2\" title=\"2001 Pan African MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_3\" title=\"2001 Pan African MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_4\" title=\"2001 Pan African MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2001_Pan_African_MO_Problems/Problem_5\" title=\"2001 Pan African MO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Problem</b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Pan_African_MO_Problems_and_Solutions\" title=\"Pan African MO Problems and Solutions\"> All Pan African MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908053322\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.033 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 463/1000000\nPreprocessor generated node count: 1119/1000000\nPost‐expand include size: 922/2097152 bytes\nTemplate argument size: 50/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 8149/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.925      1 Template:Pan_African_MO_box\n100.00%    1.925      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:19461-0!canonical and timestamp 20240908053322 and revision id 130781\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2001 Pan African MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Cartesian coordinate system"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Pan African MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Pythagorean theorem"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Rectangle"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Pan African MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_6",
+          "byteoffset": 588,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2001_Pan_African_MO_Problems/Problem_6",
+          "byteoffset": 2148,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2001 Pan African MO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pythagorean Theorem",
+      "Circle Theorems",
+      "Coordinate Geometry"
+    ]
+  }
+}

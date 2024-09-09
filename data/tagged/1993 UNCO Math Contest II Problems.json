@@ -1,0 +1,1427 @@
+{
+  "1993 UNCO Math Contest II Problems/Problem 1": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 1",
+      "pageid": 13616,
+      "revid": 187132,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solutions\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solutions</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Solution_2\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Solution 2</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_also\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>How many times must one shoot at this target, and which rings must one hit in order to score exactly <img src=\"//latex.artofproblemsolving.com/e/5/9/e59e2c6e83eb78cca610a5fd4070ae01c8d4ae60.png\" class=\"latex\" alt=\"$100$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" /> points?\n</p><p><img src=\"//latex.artofproblemsolving.com/c/a/9/ca92e43d47d5fa16d0bd1cd84cb92dee8d52e9d8.png\" class=\"latexcenter\" alt=\"[asy] draw(circle((0,0),1),black); draw(circle((0,0),2),black); draw(circle((0,0),3),black); draw(circle((0,0),4),black); draw(circle((0,0),5),black); draw(circle((0,0),6),black); MP(&quot;40&quot;,(0,0-.3),N); MP(&quot;39&quot;,(0,1-.1),N); MP(&quot;24&quot;,(0,2-.1),N); MP(&quot;23&quot;,(0,3-.1),N); MP(&quot;17&quot;,(0,4-.1),N); MP(&quot;16&quot;,(0,5-.1),N); [/asy]\" width=\"252\" height=\"252\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solutions\">Solutions</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solutions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h3><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>We can try combinations of numbers that add to <img src=\"//latex.artofproblemsolving.com/e/5/9/e59e2c6e83eb78cca610a5fd4070ae01c8d4ae60.png\" class=\"latex\" alt=\"$100$\" style=\"vertical-align: 0px\" width=\"26\" height=\"13\" />. We soon find that one must shoot at the target <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" /> times and hit the <img src=\"//latex.artofproblemsolving.com/9/a/5/9a5b4928c8fe50ce3c2428da3bee3505e891b788.png\" class=\"latex\" alt=\"$16$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> ring <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> times and hit the <img src=\"//latex.artofproblemsolving.com/b/7/6/b7616a230c77f0d9a577e5bca01aa06f1c35c457.png\" class=\"latex\" alt=\"$17$\" style=\"vertical-align: 0px\" width=\"18\" height=\"12\" /> ring <img src=\"//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png\" class=\"latex\" alt=\"$4$\" style=\"vertical-align: 0px\" width=\"9\" height=\"12\" /> times.\n</p>\n<h3><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_1&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>Since <img src=\"//latex.artofproblemsolving.com/2/1/1/211471b44c15400b0676022c09e70a5bd8fd20c1.png\" class=\"latex\" alt=\"$100=2^2\\cdot5^2$\" style=\"vertical-align: 0px\" width=\"96\" height=\"15\" />, we can take <img src=\"//latex.artofproblemsolving.com/4/e/c/4ec35d7a7e3a2ded232904e1769538191e42cb7b.png\" class=\"latex\" alt=\"$\\pmod25$\" style=\"vertical-align: -4px\" width=\"80\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/0/d/1/0d18453cf7868fc5cc1955bdd1f945819c3cf2aa.png\" class=\"latex\" alt=\"$\\pmod4$\" style=\"vertical-align: -5px\" width=\"74\" height=\"20\" /> of the <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" /> numbers. From <img src=\"//latex.artofproblemsolving.com/4/e/c/4ec35d7a7e3a2ded232904e1769538191e42cb7b.png\" class=\"latex\" alt=\"$\\pmod25$\" style=\"vertical-align: -4px\" width=\"80\" height=\"18\" /> we have the set (in order) <img src=\"//latex.artofproblemsolving.com/a/6/d/a6d9cc8d21b583d7338f4f80bf9c4a168f9bda34.png\" class=\"latex\" alt=\"${15,14,-1,-2,-8,16}$\" style=\"vertical-align: -4px\" width=\"166\" height=\"17\" />, and from <img src=\"//latex.artofproblemsolving.com/0/d/1/0d18453cf7868fc5cc1955bdd1f945819c3cf2aa.png\" class=\"latex\" alt=\"$\\pmod4$\" style=\"vertical-align: -5px\" width=\"74\" height=\"20\" /> we have the set <img src=\"//latex.artofproblemsolving.com/8/5/6/85649e9eee1d595c8e7ccdf06fbeebb4d09a322b.png\" class=\"latex\" alt=\"${0,-1,0,-1,1,0}$\" style=\"vertical-align: -4px\" width=\"125\" height=\"17\" />. We notice that as <img src=\"//latex.artofproblemsolving.com/8/4/5/8455f3b5cb3b4880b8c9d782a5c1f0334db819eb.png\" class=\"latex\" alt=\"$8$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> is <img src=\"//latex.artofproblemsolving.com/1/f/3/1f3cc0ad966b3e637cd199607cbf0d1befc0e491.png\" class=\"latex\" alt=\"$1/2$\" style=\"vertical-align: -4px\" width=\"26\" height=\"18\" /> times <img src=\"//latex.artofproblemsolving.com/9/a/5/9a5b4928c8fe50ce3c2428da3bee3505e891b788.png\" class=\"latex\" alt=\"$16$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" />, we probably have two times more <img src=\"//latex.artofproblemsolving.com/b/7/6/b7616a230c77f0d9a577e5bca01aa06f1c35c457.png\" class=\"latex\" alt=\"$17$\" style=\"vertical-align: 0px\" width=\"18\" height=\"12\" />s than <img src=\"//latex.artofproblemsolving.com/9/a/5/9a5b4928c8fe50ce3c2428da3bee3505e891b788.png\" class=\"latex\" alt=\"$16$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" />s, and it works perfectly, so one has to shoot the <img src=\"//latex.artofproblemsolving.com/9/a/5/9a5b4928c8fe50ce3c2428da3bee3505e891b788.png\" class=\"latex\" alt=\"$16$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> ring <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> times and the <img src=\"//latex.artofproblemsolving.com/b/7/6/b7616a230c77f0d9a577e5bca01aa06f1c35c457.png\" class=\"latex\" alt=\"$17$\" style=\"vertical-align: 0px\" width=\"18\" height=\"12\" /> ring <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> times.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_1&amp;action=edit&amp;section=5\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First Question</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210714\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.034 seconds\nReal time usage: 0.037 seconds\nPreprocessor visited node count: 290/1000000\nPreprocessor generated node count: 853/1000000\nPost‐expand include size: 1363/2097152 bytes\nTemplate argument size: 100/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4550/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.607      1 Template:UNCO_Math_Contest_box\n100.00%    2.607      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13616-0!canonical and timestamp 20240907210714 and revision id 187132\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_1",
+          "byteoffset": 9,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solutions",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_1",
+          "byteoffset": 465,
+          "anchor": "Solutions"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 1",
+          "number": "2.1",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_1",
+          "byteoffset": 481,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 2",
+          "number": "2.2",
+          "index": "4",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_1",
+          "byteoffset": 743,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "5",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_1",
+          "byteoffset": 1338,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Chinese Remainder Theorem",
+      "Diophantine Equations"
+    ]
+  },
+  "1993 UNCO Math Contest II Problems/Problem 10": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 10",
+      "pageid": 13625,
+      "revid": 174312,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_10&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The scalene triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> has side lengths <img src=\"//latex.artofproblemsolving.com/7/8/e/78e5ec10b802d2c4ee3e36981c70b593b1100405.png\" class=\"latex\" alt=\"$51, 52, 53.$\" style=\"vertical-align: -3px\" width=\"74\" height=\"16\" /> <img src=\"//latex.artofproblemsolving.com/b/c/5/bc56862b1fdb71204894da278e42ef75de73a40b.png\" class=\"latex\" alt=\"$AD$\" width=\"28\" height=\"13\" /> is perpendicular to <img src=\"//latex.artofproblemsolving.com/b/3/f/b3f6f7cd16a47f33bebcf3fc361eeb808b630504.png\" class=\"latex\" alt=\"$BC.$\" width=\"31\" height=\"12\" />\n<img src=\"//latex.artofproblemsolving.com/1/f/5/1f591d390f2c7453f1a1db5777dcbe9eed30220a.png\" class=\"latexcenter\" alt=\"[asy] draw((0,0)--(52,0)--(24,sqrt(3)*26)--cycle); draw((24,0)--(24,sqrt(3)*26)); draw((0,-8)--(52,-8),arrow=Arrow()); draw((52,-8)--(0,-8),arrow=Arrow()); draw((24,3)--(21,3)--(21,0),black); MP(&quot;B&quot;,(0,0),SW);MP(&quot;A&quot;,(24,sqrt(3)*26),N);MP(&quot;C&quot;,(52,0),SE);MP(&quot;D&quot;,(24,0),S); MP(&quot;52&quot;,(26,-8),S);MP(&quot;53&quot;,(38,sqrt(3)*13),NE);MP(&quot;51&quot;,(12,sqrt(3)*13),NW); [/asy]\" width=\"248\" height=\"252\" />\n</p><p>(a) Determine the length of <img src=\"//latex.artofproblemsolving.com/d/0/e/d0edb6ba307f77287794310f53f3d7586c5ff6d6.png\" class=\"latex\" alt=\"$BD.$\" width=\"34\" height=\"12\" />\n</p><p>(b) Determine the area of triangle <img src=\"//latex.artofproblemsolving.com/b/d/2/bd222166def59a3315433877917a826de6488031.png\" class=\"latex\" alt=\"$ABC.$\" width=\"45\" height=\"13\" />\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_10&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We will solve both parts at once since it is easy to get the two answers from this all-inclusive solution.\n</p><p>Heron's Formula states that in a triangle with sides <img src=\"//latex.artofproblemsolving.com/a/c/c/acc6d9a6172d35127b6cb37ea92192caf7029a54.png\" class=\"latex\" alt=\"$a, b, c$\" style=\"vertical-align: -4px\" width=\"43\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/d/7/3/d73a198449b2d2566597a7dff0128f5b063e31b8.png\" class=\"latex\" alt=\"$s = \\frac{a + b + c}{2},$\" style=\"vertical-align: -12px\" width=\"110\" height=\"37\" /> the area is given by <img src=\"//latex.artofproblemsolving.com/3/7/7/3777ec93b0beb3be1569c6b6bec9537f88bf6d47.png\" class=\"latexcenter\" alt=\"\\[\\sqrt{s(s - a)(s - b)(s - c)}.\\]\" width=\"188\" height=\"32\" /> We plug in <img src=\"//latex.artofproblemsolving.com/2/c/a/2ca3508bb69d7e0630d7af04c60fa01ee3b66bd5.png\" class=\"latex\" alt=\"$a = 52, b = 53, c = 51.$\" style=\"vertical-align: -3px\" width=\"172\" height=\"16\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/9/5/7/95702f4f1c063eeacf355fd0c8f52baf1570fa13.png\" class=\"latexcenter\" alt=\"\\begin{align*} s &amp;= \\dfrac{51 + 52 + 53}{2} = \\dfrac{3 \\cdot 52}{2} = 3 \\cdot 26 = 78 \\\\ [ABC] &amp;= \\sqrt{78(78 - 51)(78 - 52)(78 - 53)} = \\sqrt{78(27)(26)(25)} = 5 \\sqrt{(3 \\cdot 26)\\left(3^3\\right)(2 \\cdot 13)} \\\\ &amp;= 5 \\cdot 3 \\sqrt{3 \\cdot 2 \\cdot 13 \\cdot 3 \\cdot 2 \\cdot 13} = 15 \\sqrt{2^2 \\cdot 3^2 \\cdot 13^2} = 15 \\sqrt{(2 \\cdot 3 \\cdot 13)}^2 \\\\ &amp;= \\boxed{1170} \\end{align*}\" width=\"683\" height=\"149\" />\n</p><p>Since <img src=\"//latex.artofproblemsolving.com/f/7/7/f7709d83f96dddbe5ad579cd33d307d8a533cda2.png\" class=\"latex\" alt=\"$[ABC] = \\frac{bh}{2},$\" style=\"vertical-align: -12px\" width=\"103\" height=\"37\" /> we know that <img src=\"//latex.artofproblemsolving.com/a/c/c/acc46c05482c13f6a4c2c88bdfea73b24c434a2c.png\" class=\"latex\" alt=\"$1170 = \\frac{AD \\cdot 52}{2} = 26 \\cdot AD.$\" style=\"vertical-align: -13px\" width=\"217\" height=\"39\" /> Solving, we get <img src=\"//latex.artofproblemsolving.com/8/a/5/8a51cf23aed0909b61a15fb67c86083693cc937a.png\" class=\"latex\" alt=\"$AD = 45.$\" style=\"vertical-align: 0px\" width=\"75\" height=\"13\" /> Remembering our 8-15-17 Pythagorean triple, we see that <img src=\"//latex.artofproblemsolving.com/b/5/8/b58ab304c6ae8de111385cb8e730f6612607a689.png\" class=\"latex\" alt=\"$BD = \\boxed{24}.$\" style=\"vertical-align: -5px\" width=\"87\" height=\"23\" /> <img src=\"//latex.artofproblemsolving.com/b/6/c/b6cf65b1f2fbdf388e3daeff9b96b34d3399d777.png\" class=\"latex\" alt=\"$\\square$\" width=\"13\" height=\"12\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_10&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">Problem 9</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">9</a> <b>•</b> <a class=\"mw-selflink selflink\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210717\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.028 seconds\nReal time usage: 0.029 seconds\nPreprocessor visited node count: 209/1000000\nPreprocessor generated node count: 685/1000000\nPost‐expand include size: 1362/2097152 bytes\nTemplate argument size: 99/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3690/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.319      1 Template:UNCO_Math_Contest_box\n100.00%    2.319      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13625-0!canonical and timestamp 20240907210717 and revision id 174312\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_10",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_10",
+          "byteoffset": 604,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_10",
+          "byteoffset": 1617,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 10",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Heron's Formula",
+      "Pythagorean Theorem",
+      "Area of a Circle"
+    ]
+  },
+  "1993 UNCO Math Contest II Problems/Problem 2": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 2",
+      "pageid": 13617,
+      "revid": 187135,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_1_.3D\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 1 =</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_2\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_also\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Determine the digit in the <img src=\"//latex.artofproblemsolving.com/d/b/4/db43972a31bb85737768e51aa1076120bf5f178c.png\" class=\"latex\" alt=\"$623^{rd}$\" width=\"41\" height=\"15\" /> place after the decimal point in the repeating decimal for:\n<img src=\"//latex.artofproblemsolving.com/3/8/7/387a5a2b63baa05702f1c04e43386006d0f7cd42.png\" class=\"latexcenter\" alt=\"\\[\\frac{1}{9}+\\frac{2}{99}+\\frac{3}{999}.\\]\" width=\"112\" height=\"37\" />\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span id=\"Solution_1_=\"></span><span class=\"mw-headline\" id=\"Solution_1_.3D\">Solution 1 =</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 1 =\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Fist we add them together and divide. We get the repeating decimal .134316134316. We can see that it repeats every six decimal places, so we need to find the remainder when 623 is divided by six. When we divide, we see that the remainder is five, so we go in five decimal places and find 1, and we are done.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_2&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The sum of <img src=\"//latex.artofproblemsolving.com/0/d/3/0d3dba22edcee4ff7213635505e90128beebb42e.png\" class=\"latex\" alt=\"$1/9$\" style=\"vertical-align: -4px\" width=\"26\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/0/5/6/056c2f990d6a5758c99c078be50de152d8844221.png\" class=\"latex\" alt=\"$2/99$\" style=\"vertical-align: -5px\" width=\"38\" height=\"20\" /> is <img src=\"//latex.artofproblemsolving.com/2/0/b/20bace9895e1a422c3d9286825b8077abffe208a.png\" class=\"latex\" alt=\"$13/99$\" style=\"vertical-align: -4px\" width=\"44\" height=\"18\" />, and the sum of of <img src=\"//latex.artofproblemsolving.com/2/0/b/20bace9895e1a422c3d9286825b8077abffe208a.png\" class=\"latex\" alt=\"$13/99$\" style=\"vertical-align: -4px\" width=\"44\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/e/8/2/e8298e1ff321780df38934880887c91835c1dc76.png\" class=\"latex\" alt=\"$3/999$\" style=\"vertical-align: -5px\" width=\"47\" height=\"20\" /> (aka <img src=\"//latex.artofproblemsolving.com/3/2/2/322181b6293daca0a856ab3cb467d1992b937a48.png\" class=\"latex\" alt=\"$1/333$\" style=\"vertical-align: -5px\" width=\"47\" height=\"20\" />) is <img src=\"//latex.artofproblemsolving.com/1/f/3/1f3662e4dfb1f32c8accbc9546d17519d83a01a8.png\" class=\"latex\" alt=\"$164/1221$\" style=\"vertical-align: -5px\" width=\"75\" height=\"20\" />. Doing long division, we get the decimal <img src=\"//latex.artofproblemsolving.com/9/f/a/9faf389871f26fef3e4b050a714ab2ff31781c28.png\" class=\"latex\" alt=\"$0.\\overline{134316}$\" style=\"vertical-align: -1px\" width=\"71\" height=\"17\" />, so the <img src=\"//latex.artofproblemsolving.com/d/b/4/db43972a31bb85737768e51aa1076120bf5f178c.png\" class=\"latex\" alt=\"$623^{rd}$\" width=\"41\" height=\"15\" /> place, we only need the <img src=\"//latex.artofproblemsolving.com/d/2/3/d23cf75833dfa75247f83b85f33714a440b450c5.png\" class=\"latex\" alt=\"$623\\pod6=5^{th}$\" style=\"vertical-align: -5px\" width=\"107\" height=\"22\" /> digit, which is <img src=\"//latex.artofproblemsolving.com/3/5/4/3547351abf03ab0b6cbda7b0b905b2e4f6220e1e.png\" class=\"latex\" alt=\"$\\boxed{1}$\" style=\"vertical-align: -5px\" width=\"20\" height=\"23\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_2&amp;action=edit&amp;section=5\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210714\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.031 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 186/1000000\nPreprocessor generated node count: 613/1000000\nPost‐expand include size: 1407/2097152 bytes\nTemplate argument size: 94/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2269/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.836      1 Template:UNCO_Math_Contest_box\n100.00%    2.836      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13617-0!canonical and timestamp 20240907210714 and revision id 187135\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_2",
+          "byteoffset": 9,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_2",
+          "byteoffset": 190,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1 =",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_2",
+          "byteoffset": 205,
+          "anchor": "Solution_1_.3D"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_2",
+          "byteoffset": 532,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "5",
+          "index": "5",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_2",
+          "byteoffset": 929,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Geometric Series Sum",
+      "Probability of Independent Events"
+    ]
+  },
+  "1993 UNCO Math Contest II Problems/Problem 3": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 3",
+      "pageid": 13618,
+      "revid": 107173,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A student thinks of four numbers. She adds them in pairs to get the six sums <img src=\"//latex.artofproblemsolving.com/b/b/9/bb90f5600a75999eff9e5c6499260f79f3112628.png\" class=\"latex\" alt=\"$9,18,21,23,26,35.$\" style=\"vertical-align: -3px\" width=\"143\" height=\"16\" />  \nWhat are the four numbers? There are two different solutions.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let the numbers be <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/b/1/3/b13f21416d84e13708696f34dea81026cda583c9.png\" class=\"latex\" alt=\"$z$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, and <img src=\"//latex.artofproblemsolving.com/9/e/e/9ee4b825a2e36ae093ed7be5e4851ef453b34914.png\" class=\"latex\" alt=\"$w$\" width=\"13\" height=\"8\" />. Writing in terms of these, we have:\n</p><p><img src=\"//latex.artofproblemsolving.com/3/b/0/3b0102a096450868a1e6f9f4086a9ba189f1c393.png\" class=\"latex\" alt=\"$x+y=9$\" style=\"vertical-align: -3px\" width=\"75\" height=\"16\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/e/b/5/eb5b52a95308a2ff9a1ca6a65940d74f97879522.png\" class=\"latex\" alt=\"$x+z=18$\" style=\"vertical-align: -1px\" width=\"83\" height=\"14\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/5/3/2/532b55e441b50c97b2e6e64051257c35a8ba00c3.png\" class=\"latex\" alt=\"$x+w=21$\" style=\"vertical-align: -1px\" width=\"87\" height=\"13\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/2/1/1/21152273a456c5bcc9a469fcb08baf3d25522a29.png\" class=\"latex\" alt=\"$y+z=23$\" style=\"vertical-align: -3px\" width=\"83\" height=\"16\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/d/0/8/d080611a99ba368b89042ae4ac8c0319f9074d24.png\" class=\"latex\" alt=\"$y+w=26$\" style=\"vertical-align: -3px\" width=\"87\" height=\"16\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/d/3/3/d331671c5097b22394df6bafee6e1c8f0815da8a.png\" class=\"latex\" alt=\"$z+w=35$\" style=\"vertical-align: -1px\" width=\"86\" height=\"14\" />.\n</p><p>Adding these up, we have <img src=\"//latex.artofproblemsolving.com/5/2/f/52f023d617568599144b79fa9f3a6f3b189091dc.png\" class=\"latex\" alt=\"$3x+3y+3z+3w=132$\" style=\"vertical-align: -3px\" width=\"196\" height=\"16\" />, so <img src=\"//latex.artofproblemsolving.com/e/2/0/e200ac346d024c2368a25c4b7015cffbfd56bb32.png\" class=\"latex\" alt=\"$x+y+z+w=44$\" style=\"vertical-align: -3px\" width=\"151\" height=\"15\" />. Adding the first two equations, we get <img src=\"//latex.artofproblemsolving.com/6/f/f/6ff86ed1a26d2840fab64f6176738cc4134f2cfb.png\" class=\"latex\" alt=\"$2x+y+z=27$\" style=\"vertical-align: -3px\" width=\"125\" height=\"15\" />. Subtracting this, we obtain <img src=\"//latex.artofproblemsolving.com/c/2/9/c299cebb58fc20d93f50cc8c1f3f19c111af4252.png\" class=\"latex\" alt=\"$w-x=17$\" style=\"vertical-align: 0px\" width=\"88\" height=\"12\" />. Adding to the third equation, we have <img src=\"//latex.artofproblemsolving.com/8/6/f/86f0fd6ffa66f263de51a3c3ffaf6066fd166efd.png\" class=\"latex\" alt=\"$2w=38$\" width=\"64\" height=\"12\" />, so <img src=\"//latex.artofproblemsolving.com/7/5/7/757fda029eb11ccfc0d25a5a9e44e94a161e2c4e.png\" class=\"latex\" alt=\"$w=19$\" style=\"vertical-align: 0px\" width=\"55\" height=\"13\" />. Substituting, we have <img src=\"//latex.artofproblemsolving.com/6/9/2/69271b422e022ea65ff1f288eddfcfa82afd8ab7.png\" class=\"latex\" alt=\"$x=2$\" width=\"43\" height=\"12\" />. <img src=\"//latex.artofproblemsolving.com/d/4/c/d4c37261466c0ff756401c32f293c33e111f4712.png\" class=\"latex\" alt=\"$y=7$\" style=\"vertical-align: -3px\" width=\"43\" height=\"15\" />, and <img src=\"//latex.artofproblemsolving.com/6/9/b/69bcb82b69533eaf1e7f91a7f78f32677682202a.png\" class=\"latex\" alt=\"$z=16 \\Rightarrow \\boxed{(2, 7, 16, 19)}$\" style=\"vertical-align: -10px\" width=\"184\" height=\"29\" /> as one of our solutions.\n</p><p><br />\n</p>\n<ul><li>second solution</li></ul>\n<p>Let the numbers be <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/b/1/3/b13f21416d84e13708696f34dea81026cda583c9.png\" class=\"latex\" alt=\"$z$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, and <img src=\"//latex.artofproblemsolving.com/9/e/e/9ee4b825a2e36ae093ed7be5e4851ef453b34914.png\" class=\"latex\" alt=\"$w$\" width=\"13\" height=\"8\" />. We have the following 6 equations from the problem statement:\n</p><p><img src=\"//latex.artofproblemsolving.com/3/b/0/3b0102a096450868a1e6f9f4086a9ba189f1c393.png\" class=\"latex\" alt=\"$x+y=9$\" style=\"vertical-align: -3px\" width=\"75\" height=\"16\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/e/b/5/eb5b52a95308a2ff9a1ca6a65940d74f97879522.png\" class=\"latex\" alt=\"$x+z=18$\" style=\"vertical-align: -1px\" width=\"83\" height=\"14\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/d/8/6/d862d80327e07edb91bbdb1a15f66fb9ff9fb526.png\" class=\"latex\" alt=\"$y+z=21$\" style=\"vertical-align: -3px\" width=\"82\" height=\"15\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/8/1/b/81bf88ae55100fdddd34fde12ecccd0648094255.png\" class=\"latex\" alt=\"$x+w=23$\" style=\"vertical-align: -1px\" width=\"88\" height=\"14\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/d/0/8/d080611a99ba368b89042ae4ac8c0319f9074d24.png\" class=\"latex\" alt=\"$y+w=26$\" style=\"vertical-align: -3px\" width=\"87\" height=\"16\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/d/3/3/d331671c5097b22394df6bafee6e1c8f0815da8a.png\" class=\"latex\" alt=\"$z+w=35$\" style=\"vertical-align: -1px\" width=\"86\" height=\"14\" />\n</p><p>Adding all of these up:\n<img src=\"//latex.artofproblemsolving.com/5/2/f/52f023d617568599144b79fa9f3a6f3b189091dc.png\" class=\"latex\" alt=\"$3x+3y+3z+3w=132$\" style=\"vertical-align: -3px\" width=\"196\" height=\"16\" /> gives  <img src=\"//latex.artofproblemsolving.com/e/2/0/e200ac346d024c2368a25c4b7015cffbfd56bb32.png\" class=\"latex\" alt=\"$x+y+z+w=44$\" style=\"vertical-align: -3px\" width=\"151\" height=\"15\" />&#160;: call this equation A\n</p><p>Adding first two equations:\n<img src=\"//latex.artofproblemsolving.com/6/f/f/6ff86ed1a26d2840fab64f6176738cc4134f2cfb.png\" class=\"latex\" alt=\"$2x+y+z=27$\" style=\"vertical-align: -3px\" width=\"125\" height=\"15\" />&#160;: call this equation B\n</p><p>Subtracting equation B from A gives us <img src=\"//latex.artofproblemsolving.com/c/2/9/c299cebb58fc20d93f50cc8c1f3f19c111af4252.png\" class=\"latex\" alt=\"$w-x=17$\" style=\"vertical-align: 0px\" width=\"88\" height=\"12\" /> &#160;: call this equation C\n</p><p>Adding C to the 4th equation gives <img src=\"//latex.artofproblemsolving.com/4/c/e/4cef08063aab31646dbb6e1875e67b0dd3334439.png\" class=\"latex\" alt=\"$2w=40$\" style=\"vertical-align: 0px\" width=\"64\" height=\"13\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/6/f/4/6f46d5402598bc1d4dc9fb0008ba0d89c7ec16e8.png\" class=\"latex\" alt=\"$w=20$\" width=\"55\" height=\"12\" />\n</p><p>Substituting w in the original equations gives:\n<img src=\"//latex.artofproblemsolving.com/b/0/2/b022dc8ef6d33931fc1ae3d27df3ea0a81b52936.png\" class=\"latex\" alt=\"$x=3$\" width=\"43\" height=\"12\" />, <img src=\"//latex.artofproblemsolving.com/d/a/a/daaf07d9f0a2413768e291d1264b59b3c835e4aa.png\" class=\"latex\" alt=\"$y=6$\" style=\"vertical-align: -3px\" width=\"42\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/2/6/e/26ec141f8f1fa189de37d9f94f8fddce087289a0.png\" class=\"latex\" alt=\"$z=15 \\Rightarrow \\boxed{(3, 6, 15, 20)}$\" style=\"vertical-align: -10px\" width=\"184\" height=\"29\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907202109\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.027 seconds\nReal time usage: 0.028 seconds\nPreprocessor visited node count: 411/1000000\nPreprocessor generated node count: 1125/1000000\nPost‐expand include size: 1407/2097152 bytes\nTemplate argument size: 94/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6750/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.002      1 Template:UNCO_Math_Contest_box\n100.00%    3.002      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13618-0!canonical and timestamp 20240907202109 and revision id 107173\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_3",
+          "byteoffset": 189,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_3",
+          "byteoffset": 1642,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "System of Equations",
+      "Probability of Independent Events",
+      "Combinatorics"
+    ]
+  },
+  "1993 UNCO Math Contest II Problems/Problem 4": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 4",
+      "pageid": 13619,
+      "revid": 110605,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>The table gives some of the straight line distances between certain pairs of cities. for example the distance\nbetween city <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and city <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/2/6/3/263fa63f962aa848483d27ca7cf8286fd5c77013.png\" class=\"latex\" alt=\"$34.$\" style=\"vertical-align: 0px\" width=\"21\" height=\"13\" /> Use the given data to determine the distance between city <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and city <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />.\n(Hint: a problem in the first round was similar in spirit to this one.)\n<img src=\"//latex.artofproblemsolving.com/8/7/5/875589aaf1c4017093d241e0946e98083b3e7261.png\" class=\"latexcenter\" alt=\"\\[\\begin{tabular}{c|cccc} &amp; A &amp; B &amp; C &amp; D \\\\ \\hline A &amp; 34 &amp; &amp; 16 \\\\  B &amp; &amp; 42 &amp; \\\\  C &amp; &amp; &amp; 12\\\\  D &amp; 30 &amp; &amp; \\\\  \\end{tabular}\\]\" width=\"175\" height=\"100\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907165145\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.018 seconds\nReal time usage: 0.019 seconds\nPreprocessor visited node count: 114/1000000\nPreprocessor generated node count: 465/1000000\nPost‐expand include size: 1407/2097152 bytes\nTemplate argument size: 94/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1085/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.825      1 Template:UNCO_Math_Contest_box\n100.00%    2.825      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13619-0!canonical and timestamp 20240907165145 and revision id 110605\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_4",
+          "byteoffset": 510,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_4",
+          "byteoffset": 526,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Triangle Inequality",
+      "Law of Cosines",
+      "Geometric Mean"
+    ]
+  },
+  "1993 UNCO Math Contest II Problems/Problem 5": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 5",
+      "pageid": 13620,
+      "revid": 187137,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Solution_2\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Solution 2</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_also\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A collection of <img src=\"//latex.artofproblemsolving.com/6/6/6/66644fd9f411299c3c1eabf151b5f601c9ef6c21.png\" class=\"latex\" alt=\"$25$\" width=\"17\" height=\"12\" /> consecutive positive integers adds to <img src=\"//latex.artofproblemsolving.com/6/b/4/6b434ebc2071e706df740975a3c90aad3cfa1455.png\" class=\"latex\" alt=\"$1000.$\" style=\"vertical-align: 0px\" width=\"39\" height=\"13\" /> What are the smallest and largest integers in this collection?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h3><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>The thirteenth integer is the average, which is <img src=\"//latex.artofproblemsolving.com/1/d/6/1d6dea06b5cdd933b0b65549a581c2892de55631.png\" class=\"latex\" alt=\"$\\frac{1000}{25}=40$\" style=\"vertical-align: -12px\" width=\"82\" height=\"37\" />. So, the largest integer is 12 larger, which is <img src=\"//latex.artofproblemsolving.com/6/5/1/65141e575277ddba2a7c8896b65405909ee29b69.png\" class=\"latex\" alt=\"$40+12=\\boxed{52}$\" style=\"vertical-align: -5px\" width=\"112\" height=\"23\" />, and the smallest integer is 12 less, which is <img src=\"//latex.artofproblemsolving.com/b/e/f/befce04baa8b1b3e542ad6aefb24aa1eb7353e98.png\" class=\"latex\" alt=\"$40-12=\\boxed{28}$\" style=\"vertical-align: -5px\" width=\"112\" height=\"23\" />.\n</p>\n<h3><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_5&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>By the summation formula, the sum of 25 consecutive numbers (where <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> is the smallest number in the list) is\n<img src=\"//latex.artofproblemsolving.com/c/b/0/cb083ab997f1476b4f2c3258057221f885b91629.png\" class=\"latexcenter\" alt=\"\\[\\frac{25(2x+24)}{2}\\]\" width=\"92\" height=\"38\" />\n<img src=\"//latex.artofproblemsolving.com/3/7/f/37f6c3bfe330335b8c1824290b5a77eb8db936dd.png\" class=\"latexcenter\" alt=\"\\[25(x+12)\\]\" width=\"80\" height=\"18\" />\nLetting the value of the equation be <img src=\"//latex.artofproblemsolving.com/6/e/e/6ee927e1332358c96c62c277441c907c4f51057f.png\" class=\"latex\" alt=\"$1000$\" style=\"vertical-align: 0px\" width=\"35\" height=\"13\" />, we have\n<img src=\"//latex.artofproblemsolving.com/8/b/7/8b79b70ca942186c6813522f6f185d917ca260e9.png\" class=\"latexcenter\" alt=\"\\[25(x+12)=1000\\]\" width=\"142\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/3/9/5/395935b85d4897adc34bd8e2bc2e02b58d5cfd8f.png\" class=\"latexcenter\" alt=\"\\[x+12=40\\]\" width=\"92\" height=\"13\" />\n<img src=\"//latex.artofproblemsolving.com/5/0/c/50cd03d7e874b318e12c3ea98b16b7a9631c348c.png\" class=\"latexcenter\" alt=\"\\[x=28\\]\" width=\"51\" height=\"12\" />\nThus the smallest value of the list is <img src=\"//latex.artofproblemsolving.com/0/d/f/0df6f7b8b7508033bdb866472ec195ec08cde8f7.png\" class=\"latex\" alt=\"$\\boxed{28}$\" style=\"vertical-align: -5px\" width=\"30\" height=\"23\" />, and the largest is <img src=\"//latex.artofproblemsolving.com/a/d/7/ad78c1e5afff2addfac5891bc36e9eae57d03025.png\" class=\"latex\" alt=\"$28+24=\\boxed{52}$\" style=\"vertical-align: -6px\" width=\"114\" height=\"25\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_5&amp;action=edit&amp;section=5\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210715\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.032 seconds\nReal time usage: 0.035 seconds\nPreprocessor visited node count: 194/1000000\nPreprocessor generated node count: 633/1000000\nPost‐expand include size: 1407/2097152 bytes\nTemplate argument size: 94/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2394/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.761      1 Template:UNCO_Math_Contest_box\n100.00%    2.761      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13620-0!canonical and timestamp 20240907210715 and revision id 187137\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_5",
+          "byteoffset": 168,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 1",
+          "number": "2.1",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_5",
+          "byteoffset": 183,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 2,
+          "level": "3",
+          "line": "Solution 2",
+          "number": "2.2",
+          "index": "4",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_5",
+          "byteoffset": 439,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "5",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_5",
+          "byteoffset": 888,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Sum of an Arithmetic Series",
+      "Geometric Series Sum",
+      "Expected Value"
+    ]
+  },
+  "1993 UNCO Math Contest II Problems/Problem 6": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 6",
+      "pageid": 13621,
+      "revid": 160612,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Observe that \n<img src=\"//latex.artofproblemsolving.com/d/c/f/dcf8af785fd4feed6700c123d56d09de8ce6939a.png\" class=\"latexcenter\" alt=\"\\begin{align*} 2^2+3^2+6^2 &amp;= 7^2 \\\\ 3^2+4^2+12^2 &amp;= 13^2 \\\\ 4^2+5^2+20^2 &amp;= 21^2 \\\\ \\end{align*}\" width=\"151\" height=\"72\" />\n</p><p>(a) Find integers <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" /> so that <img src=\"//latex.artofproblemsolving.com/7/b/7/7b7faa33f9c3985c1152e40a327c6d0a1210ed32.png\" class=\"latex\" alt=\"$5^2+6^2+x^2=y^2.$\" style=\"vertical-align: -3px\" width=\"140\" height=\"18\" />\n</p><p>(b) Conjecture a general rule that is being illustrated here.\n</p><p>(c) Prove your conjecture.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>(a) We can rewrite the given equation as <img src=\"//latex.artofproblemsolving.com/6/3/c/63cdf60ccae4a472305cb1a10676e8285d30c12a.png\" class=\"latex\" alt=\"$y^2-x^2 = 25+36 = 61$\" style=\"vertical-align: -4px\" width=\"184\" height=\"20\" />. Use difference of squares to obtain <img src=\"//latex.artofproblemsolving.com/a/a/9/aa9c8fab74c4b6d9519a01bd2f9474343e247944.png\" class=\"latex\" alt=\"$(y + x)(y - x) = 61$\" style=\"vertical-align: -5px\" width=\"157\" height=\"20\" />. Since <img src=\"//latex.artofproblemsolving.com/8/6/6/866b44935f69a5b800547127fe13210bb1e36fbc.png\" class=\"latex\" alt=\"$61$\" style=\"vertical-align: 0px\" width=\"17\" height=\"13\" /> is a prime we conclude that <img src=\"//latex.artofproblemsolving.com/3/f/d/3fd51e2c6c540d944cae07a864960fccb62214b0.png\" class=\"latex\" alt=\"$(y + x) = 61 \\text{ and } (y - x) = 1$\" style=\"vertical-align: -5px\" width=\"228\" height=\"20\" />, giving us <img src=\"//latex.artofproblemsolving.com/3/1/2/31254b1e31d04ca0de0314529a003e6c70fb291d.png\" class=\"latex\" alt=\"$x = 30 \\text{ and } y = 31$\" style=\"vertical-align: -4px\" width=\"144\" height=\"17\" />.\n</p><p><br />\n(b) It is not too hard to notice that the LHS above is <img src=\"//latex.artofproblemsolving.com/5/8/7/587e581b61369ffe551fdf3881e3cce4818043a0.png\" class=\"latex\" alt=\"$n^2 + (n+1)^2 + (n(n+1))^2$\" style=\"vertical-align: -5px\" width=\"217\" height=\"21\" /> and the RHS above is <img src=\"//latex.artofproblemsolving.com/5/6/1/561384dac996549378784d49c99a3dd08f97027a.png\" class=\"latex\" alt=\"$(n(n+1)+1)^2$\" style=\"vertical-align: -5px\" width=\"122\" height=\"21\" /> for <img src=\"//latex.artofproblemsolving.com/9/7/d/97d5a348205bd16cd565040c9a797d592117c59a.png\" class=\"latex\" alt=\"$n = 2, 3, 4 \\text{ and } 5$\" style=\"vertical-align: -4px\" width=\"127\" height=\"17\" />. We will prove that the LHS <img src=\"//latex.artofproblemsolving.com/d/5/e/d5eb8726a34932d28103ce7ce17456421222603f.png\" class=\"latex\" alt=\"$=$\" style=\"vertical-align: 2px\" width=\"13\" height=\"5\" /> RHS for all integers (although the proof extends to real numbers) in (c).\n</p><p><br />\n(c) We expand the LHS to obtain \n<img src=\"//latex.artofproblemsolving.com/f/b/1/fb1d77cb84215abc85cf08a7daf2dcea5055ab4d.png\" class=\"latexcenter\" alt=\"\\begin{align*} n^2 + n^2 + 2n + 1 + n^2(n^2 + 2n + 1) &amp;= n^4 + 2n^3 + 3n^2 + 2n + 1 \\\\ &amp;= (n^4 + n^3 + n^2) + (n^3 + n^2 + n) + (n^2 + n + 1) \\\\ &amp;= (n^2 + n + 1)^2 \\\\ \\end{align*}\" width=\"662\" height=\"75\" /> \nThus LHS = RHS and we are done.\n~AK2006\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">Problem 7</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210716\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.029 seconds\nReal time usage: 0.030 seconds\nPreprocessor visited node count: 186/1000000\nPreprocessor generated node count: 625/1000000\nPost‐expand include size: 1407/2097152 bytes\nTemplate argument size: 94/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2826/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.091      1 Template:UNCO_Math_Contest_box\n100.00%    3.091      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13621-0!canonical and timestamp 20240907210716 and revision id 160612\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Introductory_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_6",
+          "byteoffset": 326,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_6",
+          "byteoffset": 1217,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pythagorean Theorem",
+      "Diophantine Equations",
+      "Quadratic Formula"
+    ]
+  },
+  "1993 UNCO Math Contest II Problems/Problem 7": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 7",
+      "pageid": 13622,
+      "revid": 113375,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_7&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Choose four numbers by circling exactly one number in each horizontal row, and one number in each vertical column.\nCompute the product of these four numbers. Explain clearly why the same product results no matter which selection \nof this type of four numbers you make.\n</p><p><img src=\"//latex.artofproblemsolving.com/7/6/f/76fed477a4de2d3ce8ef324a91f02235365d0fe6.png\" class=\"latexcenter\" alt=\"\\[\\begin{tabular}{|cccc|} \\hline 10 &amp; 15 &amp; 35 &amp; 20 \\\\ 2&amp; 3&amp; 7&amp; 4\\\\ 8&amp; 12&amp; 28&amp; 16\\\\ 12&amp; 18&amp; 42&amp; 24\\\\ \\hline \\end{tabular}\\]\" width=\"147\" height=\"81\" />\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_7&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Notice that, within each row, all four numbers are in the same ratio of <img src=\"//latex.artofproblemsolving.com/7/1/2/712c4351db806761187d2a2d97d759e41995b1db.png\" class=\"latex\" alt=\"$2:3:7:4$\" style=\"vertical-align: 0px\" width=\"81\" height=\"13\" />, and that, within each column, all four numbers are in the same ratio of <img src=\"//latex.artofproblemsolving.com/3/9/c/39cee621926d4d7c930a1a43e86e973048ae1381.png\" class=\"latex\" alt=\"$5:1:4:6$\" style=\"vertical-align: 0px\" width=\"81\" height=\"13\" />. If we align the ratio of numbers in the same row horizontally above the table and align the ratio of numbers in the same column vertically to the next of the table, we see that each entry in the table can be found by multiplying its corresponding row \"factor\" and column \"factor\". \n</p><p>If exactly one number is being taken from each row, then each row \"factor\" will be used exactly once. In the same way, if exactly one number is taken from each column, then each column \"factor\" will be used exactly once. Thus, no matter which numbers you choose, you will always end up multiplying all the row factors together, along with all the column factors, meaning your product will always be <img src=\"//latex.artofproblemsolving.com/8/2/f/82fe7a265bf6833327d39e02f9510ed8ceea1007.png\" class=\"latex\" alt=\"$2 * 3 * 7 * 4 * 5 * 1 * 4 * 6 = 20,160$\" style=\"vertical-align: -3px\" width=\"270\" height=\"16\" />. Thus, the product is invariant.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_7&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">Problem 6</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">Problem 8</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">6</a> <b>•</b> <a class=\"mw-selflink selflink\">7</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">8</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908052824\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.024 seconds\nReal time usage: 0.025 seconds\nPreprocessor visited node count: 96/1000000\nPreprocessor generated node count: 425/1000000\nPost‐expand include size: 1407/2097152 bytes\nTemplate argument size: 94/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 878/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.401      1 Template:UNCO_Math_Contest_box\n100.00%    2.401      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13622-0!canonical and timestamp 20240908052824 and revision id 113375\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_7",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_7",
+          "byteoffset": 422,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_7",
+          "byteoffset": 1393,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 7",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Prime Factorization",
+      "Area of a Circle",
+      "Probability of Independent Events"
+    ]
+  },
+  "1993 UNCO Math Contest II Problems/Problem 8": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 8",
+      "pageid": 13623,
+      "revid": 117780,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_8&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For what integer value of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is the expression\n<img src=\"//latex.artofproblemsolving.com/9/8/d/98d87dd5c5681bbe1b1159dbd806c337306aa8f2.png\" class=\"latexcenter\" alt=\"\\[\\frac{1}{\\sqrt{1}+\\sqrt{2}}+\\frac{1}{\\sqrt{2}+\\sqrt{3}}+\\frac{1}{\\sqrt{3}+\\sqrt{4}}+\\cdots +\\frac{1}{\\sqrt{n}+\\sqrt{n+1}}\\]\" width=\"440\" height=\"42\" />\nequal to <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" />&#160;? (Hint: <img src=\"//latex.artofproblemsolving.com/3/1/5/315a1648e969e2c4a3f11a4d7a799ac0d3e44905.png\" class=\"latex\" alt=\"$(1+\\sqrt{2})(1-\\sqrt{2})=-1.$\" style=\"vertical-align: -5px\" width=\"194\" height=\"24\" />)\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_8&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Looking at the first fraction, we get that <img src=\"//latex.artofproblemsolving.com/4/6/f/46fbca8f0b5b00284179ef92bd87f86e5192dad0.png\" class=\"latex\" alt=\"$\\frac{1}{\\sqrt{1}+\\sqrt{2}} = \\sqrt{2} - \\sqrt{1}$\" style=\"vertical-align: -17px\" width=\"170\" height=\"41\" />. Moving on, we see an interesting pattern in which the fraction <img src=\"//latex.artofproblemsolving.com/f/0/0/f00f80151c9dfe956475aaa671880423bbbb954f.png\" class=\"latex\" alt=\"$\\frac{1}{\\sqrt{n}+\\sqrt{n+1}} = \\sqrt{n+1} - \\sqrt{n}$\" style=\"vertical-align: -18px\" width=\"239\" height=\"42\" />. This means that we can rewrite the fractions as <img src=\"//latex.artofproblemsolving.com/7/d/7/7d79ab26f70e4d51eb6b1e35d3c32d6d514bb0d4.png\" class=\"latex\" alt=\"$(\\sqrt{2} - \\sqrt{1}) + (\\sqrt{3} - \\sqrt{2}) + ... + (\\sqrt{n+1} - \\sqrt{n})$\" style=\"vertical-align: -4px\" width=\"369\" height=\"21\" />. We can cancel out most of the terms in that sequence and get <img src=\"//latex.artofproblemsolving.com/4/7/f/47f108676c59f72d086737cc7dbe39521ce389a4.png\" class=\"latex\" alt=\"$\\sqrt{n+1} - \\sqrt{1} = \\sqrt{n+1} - 1$\" style=\"vertical-align: -2px\" width=\"215\" height=\"19\" />. However, we need to solve for <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> now. Setting the previous expression equal to <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" />, we get that <img src=\"//latex.artofproblemsolving.com/b/1/4/b14b1e4e70ef4d6f5d0faf77a523dbe6f35c2576.png\" class=\"latex\" alt=\"$\\sqrt{n+1} = 8$\" style=\"vertical-align: -2px\" width=\"90\" height=\"18\" />. Squaring both sides, we get that <img src=\"//latex.artofproblemsolving.com/8/f/0/8f048c232fd6499daac9759dce756f3cabe8abfa.png\" class=\"latex\" alt=\"$n+1 = 64$\" style=\"vertical-align: -1px\" width=\"84\" height=\"14\" />. Hence, <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> = <img src=\"//latex.artofproblemsolving.com/2/6/8/268b842ffb89ba784e217eeda83b348437b61678.png\" class=\"latex\" alt=\"$\\boxed{63}$\" style=\"vertical-align: -5px\" width=\"30\" height=\"23\" />.\n</p><p>-xMidnightFirex\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_8&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">Problem 7</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">Problem 9</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">7</a> <b>•</b> <a class=\"mw-selflink selflink\">8</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_9\" title=\"1993 UNCO Math Contest II Problems/Problem 9\">9</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210716\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 186/1000000\nPreprocessor generated node count: 625/1000000\nPost‐expand include size: 1407/2097152 bytes\nTemplate argument size: 94/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2626/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.486      1 Template:UNCO_Math_Contest_box\n100.00%    2.486      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13623-0!canonical and timestamp 20240907210716 and revision id 117780\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 9"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_8",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_8",
+          "byteoffset": 289,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_8",
+          "byteoffset": 1068,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 8",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Geometric Series Sum",
+      "Inclusion-Exclusion Principle",
+      "Expected Value"
+    ]
+  },
+  "1993 UNCO Math Contest II Problems/Problem 9": {
+    "parse": {
+      "title": "1993 UNCO Math Contest II Problems/Problem 9",
+      "pageid": 13624,
+      "revid": 187138,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_9&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> be a point inside the rectangle <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" />. If <img src=\"//latex.artofproblemsolving.com/0/3/b/03b317ce3508ee6fd7a08a1a9d8461c33e000d95.png\" class=\"latex\" alt=\"$AP=5$\" width=\"60\" height=\"13\" /> , <img src=\"//latex.artofproblemsolving.com/5/b/0/5b03974ad4ae2caae3f8e12085ef0ed7fc8647bb.png\" class=\"latex\" alt=\"$BP=10$\" style=\"vertical-align: 0px\" width=\"70\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/5/8/0/580ce09b46e652cd33b96540b60d13fa159c9ce8.png\" class=\"latex\" alt=\"$CP=11$\" style=\"vertical-align: 0px\" width=\"69\" height=\"13\" />, find the length of <img src=\"//latex.artofproblemsolving.com/7/8/3/783d500281f8f46167dff3b071c543d42150e67f.png\" class=\"latex\" alt=\"$DP$\" width=\"29\" height=\"12\" />. \n(Hint: draw helpful vertical and horizontal lines.)\n</p><p><img src=\"//latex.artofproblemsolving.com/c/e/5/ce5c11133ade1b8f6d288e91b6d710637a5ee630.png\" class=\"latexcenter\" alt=\"[asy] pair P=(2,2); draw((0,0)--(0,5)--(10,5)--(10,0)--cycle,dot); draw((0,0)--P,black); draw((0,5)--P,black); draw((10,5)--P,black); draw((10,0)--P,black); dot(P); MP(&quot;P&quot;,(1,1),N); MP(&quot;5&quot;,(1.5,2.9),N); MP(&quot;10&quot;,(6.5,2.8),N); MP(&quot;11&quot;,(6.5,.9),N); MP(&quot;A&quot;,(0,5),NW); MP(&quot;B&quot;,(10,5),NE); MP(&quot;C&quot;,(10,0),SE); MP(&quot;D&quot;,(0,0),SW); [/asy]\" width=\"252\" height=\"142\" />\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_9&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>By the <a href=\"/wiki/index.php/British_Flag_Theorem\" title=\"British Flag Theorem\">British Flag Theorem</a>, we have <img src=\"//latex.artofproblemsolving.com/b/0/c/b0c1ec16776c0c5d3e728166315540114d2c7a9e.png\" class=\"latex\" alt=\"$AP^2+CP^2$\" style=\"vertical-align: -1px\" width=\"92\" height=\"16\" />=<img src=\"//latex.artofproblemsolving.com/f/d/b/fdbbf86db6b4190d49a91dce53e987246cf82f8a.png\" class=\"latex\" alt=\"$BP^2+DP^2$\" style=\"vertical-align: -1px\" width=\"94\" height=\"16\" />. Substituting in, we have <img src=\"//latex.artofproblemsolving.com/9/d/9/9d9bb209f2c91b0e66d4adf746c7853c4c6b6e29.png\" class=\"latex\" alt=\"$25+121=100+DP^2$\" style=\"vertical-align: -1px\" width=\"177\" height=\"16\" />. We find <img src=\"//latex.artofproblemsolving.com/7/8/3/783d500281f8f46167dff3b071c543d42150e67f.png\" class=\"latex\" alt=\"$DP$\" width=\"29\" height=\"12\" /> to be <img src=\"//latex.artofproblemsolving.com/1/1/a/11a58cdb318fb73a4472fa8f1726c202b2e55e08.png\" class=\"latex\" alt=\"$\\boxed{\\sqrt{46}}$\" style=\"vertical-align: -7px\" width=\"45\" height=\"30\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_also\">See also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1993_UNCO_Math_Contest_II_Problems/Problem_9&amp;action=edit&amp;section=3\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:80%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II\" title=\"1993 UNCO Math Contest II\">1993 UNCO Math Contest II</a></b> (<b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems\" title=\"1993 UNCO Math Contest II Problems\">Problems</a></b> • <b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Answer_Key\" title=\"1993 UNCO Math Contest II Answer Key\">Answer Key</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://uncmathcontest.wordpress.com/\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">Problem 8</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">Problem 10</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_1\" title=\"1993 UNCO Math Contest II Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_2\" title=\"1993 UNCO Math Contest II Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_3\" title=\"1993 UNCO Math Contest II Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_4\" title=\"1993 UNCO Math Contest II Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_5\" title=\"1993 UNCO Math Contest II Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_6\" title=\"1993 UNCO Math Contest II Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_7\" title=\"1993 UNCO Math Contest II Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_8\" title=\"1993 UNCO Math Contest II Problems/Problem 8\">8</a> <b>•</b> <a class=\"mw-selflink selflink\">9</a> <b>•</b> <a href=\"/wiki/index.php/1993_UNCO_Math_Contest_II_Problems/Problem_10\" title=\"1993 UNCO Math Contest II Problems/Problem 10\">10</a>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/University_of_Northern_Colorado_Math_Contest\" title=\"University of Northern Colorado Math Contest\"> All UNCO Math Contest Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907210717\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.027 seconds\nReal time usage: 0.029 seconds\nPreprocessor visited node count: 168/1000000\nPreprocessor generated node count: 585/1000000\nPost‐expand include size: 1409/2097152 bytes\nTemplate argument size: 96/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2356/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.676      1 Template:UNCO_Math_Contest_box\n100.00%    2.676      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13624-0!canonical and timestamp 20240907210717 and revision id 187138\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Answer Key"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 10"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1993 UNCO Math Contest II Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "British Flag Theorem"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "University of Northern Colorado Math Contest"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:UNCO Math Contest box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://uncmathcontest.wordpress.com/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_9",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_9",
+          "byteoffset": 570,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1993_UNCO_Math_Contest_II_Problems/Problem_9",
+          "byteoffset": 791,
+          "anchor": "See_also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1993 UNCO Math Contest II Problems/Problem 9",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pythagorean Theorem",
+      "Law of Cosines",
+      "Geometric Mean"
+    ]
+  }
+}

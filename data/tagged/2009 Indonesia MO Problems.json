@@ -1,0 +1,419 @@
+{
+  "2009 Indonesia MO Problems/Problem 1": {
+    "parse": {
+      "title": "2009 Indonesia MO Problems/Problem 1",
+      "pageid": 16704,
+      "revid": 140391,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all positive integers <img src=\"//latex.artofproblemsolving.com/0/a/0/0a049abaf82e495dbbe3fd64f09590288a57e9a9.png\" class=\"latex\" alt=\"$n\\in\\{1,2,3,\\ldots,2009\\}$\" style=\"vertical-align: -4px\" width=\"170\" height=\"18\" /> such that\n<img src=\"//latex.artofproblemsolving.com/c/d/a/cdaab11884dd5aa4fc547b475a86851623b56c52.png\" class=\"latexcenter\" alt=\"\\[4n^6 + n^3 + 5\\]\" width=\"98\" height=\"16\" />\nis divisible by <img src=\"//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png\" class=\"latex\" alt=\"$7$\" width=\"9\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>First, if <img src=\"//latex.artofproblemsolving.com/7/4/5/7459e50adad63e9b987992aede91604ab326cff4.png\" class=\"latex\" alt=\"$n \\equiv 0 \\pmod{7}$\" style=\"vertical-align: -4px\" width=\"115\" height=\"18\" />, then <img src=\"//latex.artofproblemsolving.com/8/f/0/8f0474e5ca0c1e3d64e8350d83fa60623bfe904d.png\" class=\"latex\" alt=\"$4n^6 + n^3 + 5 \\equiv 5 \\pmod{7}$\" style=\"vertical-align: -4px\" width=\"203\" height=\"19\" />, so <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is relatively prime to 7.\n</p><p><br />\nSince <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> is relatively prime to 7, by <a href=\"/wiki/index.php/Euler%27s_Totient_Theorem\" title=\"Euler&#39;s Totient Theorem\">Euler's Totient Theorem</a>, <img src=\"//latex.artofproblemsolving.com/6/8/3/683db856db8a9c403c9ed3038f770c562ce17668.png\" class=\"latex\" alt=\"$n^6 \\equiv 1 \\pmod{7}$\" style=\"vertical-align: -4px\" width=\"122\" height=\"19\" />, so <img src=\"//latex.artofproblemsolving.com/e/5/7/e57b5409fbf681d1f91e0b510a0b259929744941.png\" class=\"latex\" alt=\"$4n^6 + n^3 + 5 \\equiv n^3 + 2 \\pmod{7}$\" style=\"vertical-align: -4px\" width=\"244\" height=\"19\" />.  This means <img src=\"//latex.artofproblemsolving.com/6/9/1/691ec480d2e54c909640da59f6aae36926b41946.png\" class=\"latex\" alt=\"$n^3 \\equiv 5 \\pmod{7}$\" style=\"vertical-align: -4px\" width=\"122\" height=\"19\" /> if <img src=\"//latex.artofproblemsolving.com/f/1/2/f12939b73d76b79e11ab3b05ee5dcc413cf30e4a.png\" class=\"latex\" alt=\"$4n^6 + n^3 + 5$\" style=\"vertical-align: -1px\" width=\"99\" height=\"16\" /> is divisible by 7.\n</p><p><br />\nHowever, testing out all the residues from 1 to 6 reveals that <img src=\"//latex.artofproblemsolving.com/4/b/a/4ba37f50c674bcbae995ed1d9dfd4beb5e53c765.png\" class=\"latex\" alt=\"$n^3$\" width=\"17\" height=\"15\" /> is congruent to 1 or 6 modulo 7, so there are no positive integers such that <img src=\"//latex.artofproblemsolving.com/f/1/2/f12939b73d76b79e11ab3b05ee5dcc413cf30e4a.png\" class=\"latex\" alt=\"$4n^6 + n^3 + 5$\" style=\"vertical-align: -1px\" width=\"99\" height=\"16\" /> is divisible by 7.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>First, we let <img src=\"//latex.artofproblemsolving.com/b/0/1/b0149f53dda1c963ad87dc143a26333bbb52699b.png\" class=\"latex\" alt=\"$x = n^3$\" width=\"51\" height=\"15\" /> so that the given equation becomes: <img src=\"//latex.artofproblemsolving.com/8/2/a/82abfec79144b988f24816ec0dee96bd1afb6244.png\" class=\"latex\" alt=\"$4x^2 + x +5 \\equiv 0 \\pmod{7}$\" style=\"vertical-align: -4px\" width=\"194\" height=\"19\" />. \n</p><p><br />\n</p><p>By easily checking each of the 7 possible values of <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> we find that only <img src=\"//latex.artofproblemsolving.com/8/e/4/8e4a1ebb733f6b7bac21b751cf87524c36564874.png\" class=\"latex\" alt=\"$x \\equiv 5 \\pmod{7}$\" style=\"vertical-align: -4px\" width=\"114\" height=\"18\" /> satisfy the equation above. But we can also easily check that there's no <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> such that <img src=\"//latex.artofproblemsolving.com/6/9/1/691ec480d2e54c909640da59f6aae36926b41946.png\" class=\"latex\" alt=\"$n^3 \\equiv 5 \\pmod{7}$\" style=\"vertical-align: -4px\" width=\"122\" height=\"19\" />. Therefore no integer can satisfy our equation.\n</p><p>~NounZero\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_1&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2009_Indonesia_MO\" title=\"2009 Indonesia MO\">2009 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2009_Indonesia_MO_Problems\" title=\"2009 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_2\" title=\"2009 Indonesia MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_3&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 3 (page does not exist)\">3</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_4&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 4 (page does not exist)\">4</a> <b>•</b> <a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_5\" title=\"2009 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_6\" title=\"2009 Indonesia MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_7&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 7 (page does not exist)\">7</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_8&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 8 (page does not exist)\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_2\" title=\"2009 Indonesia MO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907091040\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.035 seconds\nReal time usage: 0.056 seconds\nPreprocessor visited node count: 212/1000000\nPreprocessor generated node count: 564/1000000\nPost‐expand include size: 1007/2097152 bytes\nTemplate argument size: 59/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3329/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.636      1 Template:Indonesia_MO_box\n100.00%    2.636      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:16704-0!canonical and timestamp 20240907091040 and revision id 140391\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Euler's Totient Theorem"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 8"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_1",
+          "byteoffset": 155,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_1",
+          "byteoffset": 796,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_1",
+          "byteoffset": 1247,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 Indonesia MO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Euler's Totient Function",
+      "Fermat's Little Theorem"
+    ]
+  },
+  "2009 Indonesia MO Problems/Problem 2": {
+    "parse": {
+      "title": "2009 Indonesia MO Problems/Problem 2",
+      "pageid": 20214,
+      "revid": 140401,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For any real <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />, let <img src=\"//latex.artofproblemsolving.com/4/4/1/441416e660d25335f27e55334ac2a06e51541c97.png\" class=\"latex\" alt=\"$\\lfloor x\\rfloor$\" style=\"vertical-align: -5px\" width=\"23\" height=\"19\" /> be the largest integer that is not more than <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />. Given a sequence of positive integers <img src=\"//latex.artofproblemsolving.com/1/3/b/13b1681eacea3585aaf0086478b7a8218bff87fb.png\" class=\"latex\" alt=\"$a_1,a_2,a_3,\\ldots$\" style=\"vertical-align: -3px\" width=\"95\" height=\"11\" /> such that <img src=\"//latex.artofproblemsolving.com/8/d/a/8da9cfa8d9cd02104386314a76c5a7a06e939076.png\" class=\"latex\" alt=\"$a_1&gt;1$\" style=\"vertical-align: -2px\" width=\"49\" height=\"14\" /> and\n<img src=\"//latex.artofproblemsolving.com/4/1/e/41ed37b1838ff25d878777dfd631e4d86fbcfbbf.png\" class=\"latexcenter\" alt=\"\\[\\left\\lfloor\\frac{a_1+1}{a_2}\\right\\rfloor=\\left\\lfloor\\frac{a_2+1}{a_3}\\right\\rfloor=\\left\\lfloor\\frac{a_3+1}{a_4}\\right\\rfloor=\\cdots\\]\" width=\"307\" height=\"43\" />\nProve that\n<img src=\"//latex.artofproblemsolving.com/3/b/3/3b30afd10e3ff652311e1f187a5b6f18fdef71be.png\" class=\"latexcenter\" alt=\"\\[\\left\\lfloor\\frac{a_n+1}{a_{n+1}}\\right\\rfloor\\leq1\\]\" width=\"103\" height=\"43\" />\nholds for every positive integer <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>By assuming <img src=\"//latex.artofproblemsolving.com/5/d/4/5d4fc1d3a5216b8af56aecc60b64c01151f03f7d.png\" class=\"latex\" alt=\"$\\left\\lfloor\\frac{a_n+1}{a_{n+1}}\\right\\rfloor &gt;2$\" style=\"vertical-align: -17px\" width=\"107\" height=\"43\" /> we can conclude that: \n<img src=\"//latex.artofproblemsolving.com/6/7/3/673ef8fa70490bfdd691d612824e53d7c64abc6b.png\" class=\"latexcenter\" alt=\"\\[\\left\\lfloor\\frac{a_1+1}{a_2}\\right\\rfloor=\\left\\lfloor\\frac{a_2+1}{a_3}\\right\\rfloor=\\left\\lfloor\\frac{a_3+1}{a_4}\\right\\rfloor=\\cdots &gt;2\\]\" width=\"342\" height=\"43\" />\n<br /> \n</p><p>Since <img src=\"//latex.artofproblemsolving.com/4/3/a/43a24f9cba8184e755ef551ac2d2dab7d4b0ad36.png\" class=\"latex\" alt=\"$\\left\\lfloor\\frac{a_1+1}{a_{2}}\\right\\rfloor &gt;2$\" style=\"vertical-align: -17px\" width=\"106\" height=\"43\" /> , it is also true that <img src=\"//latex.artofproblemsolving.com/f/1/f/f1f7794a5aecf26e80d4363718408b8157dc263b.png\" class=\"latex\" alt=\"$\\frac{a_1+1}{a_{2}} &gt; 2$\" style=\"vertical-align: -15px\" width=\"85\" height=\"39\" />, implying <img src=\"//latex.artofproblemsolving.com/9/9/3/993b55d774d597f616d3e0c5d2a57b31ee449a7c.png\" class=\"latex\" alt=\"$a_1 &gt; 2a_2 - 1 &gt; a_2$\" style=\"vertical-align: -2px\" width=\"138\" height=\"14\" />.\n</p><p><br />\n</p><p>After repeating this same process to all given fractions, we get: <img src=\"//latex.artofproblemsolving.com/c/b/3/cb373dbffd758544eebf8898f15c1ff44b9f4d5e.png\" class=\"latex\" alt=\"$a_1 &gt; a_2 &gt; a_3 &gt; ...$\" style=\"vertical-align: -2px\" width=\"137\" height=\"12\" /> which is a impossible statement because <img src=\"//latex.artofproblemsolving.com/8/e/7/8e7a0be6768908d897d9096e6e2953163e2bf715.png\" class=\"latex\" alt=\"$a_1, a_2, a_3, ...$\" style=\"vertical-align: -3px\" width=\"89\" height=\"11\" /> are all positive integers.\n</p><p><br />\n</p><p>Therefore, <img src=\"//latex.artofproblemsolving.com/4/c/d/4cd9fa8ac7c7c4b5cc35f046be9685e3ea479ec0.png\" class=\"latex\" alt=\"$\\left\\lfloor\\frac{a_n+1}{a_{n+1}}\\right\\rfloor\\leq1$\" style=\"vertical-align: -17px\" width=\"107\" height=\"43\" />\n</p><p><br />\n</p><p>~NounZero\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2009_Indonesia_MO\" title=\"2009 Indonesia MO\">2009 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2009_Indonesia_MO_Problems\" title=\"2009 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b>First Problem</b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_1\" title=\"2009 Indonesia MO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_3&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 3 (page does not exist)\">3</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_4&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 4 (page does not exist)\">4</a> <b>•</b> <a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_5\" title=\"2009 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_6\" title=\"2009 Indonesia MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_7&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 7 (page does not exist)\">7</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_8&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 8 (page does not exist)\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_3&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 3 (page does not exist)\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907212354\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.030 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 181/1000000\nPreprocessor generated node count: 500/1000000\nPost‐expand include size: 1007/2097152 bytes\nTemplate argument size: 59/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3268/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.417      1 Template:Indonesia_MO_box\n100.00%    2.417      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:20214-0!canonical and timestamp 20240907212354 and revision id 140401\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Intermediate_Number_Theory_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 8"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_2",
+          "byteoffset": 528,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_2",
+          "byteoffset": 1285,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 Indonesia MO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Greatest Common Divisor (GCD)",
+      "Inequalities",
+      "Sequences and Series"
+    ]
+  },
+  "2009 Indonesia MO Problems/Problem 5": {
+    "parse": {
+      "title": "2009 Indonesia MO Problems/Problem 5",
+      "pageid": 28558,
+      "revid": 224983,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><p>In a drawer, there are at most <img src=\"//latex.artofproblemsolving.com/8/5/7/85727a3ea4f5d7ba25bc591590b0e085bca557b1.png\" class=\"latex\" alt=\"$2009$\" width=\"35\" height=\"12\" /> balls, some of them are white, the rest are blue, which are randomly distributed. If two balls were taken at the same time, then the probability that the balls are both blue or both white is <img src=\"//latex.artofproblemsolving.com/b/d/c/bdc960c165b21ba43f7a90caa2893d40409d6944.png\" class=\"latex\" alt=\"$\\frac12$\" style=\"vertical-align: -12px\" width=\"11\" height=\"37\" />. Determine the maximum amount of white balls in the drawer, such that the probability statement is true?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solutions\">Solutions</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Solutions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n\n<!-- \nNewPP limit report\nCached time: 20240907153752\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.009 seconds\nReal time usage: 0.010 seconds\nPreprocessor visited node count: 21/1000000\nPreprocessor generated node count: 48/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 324/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:28558-0!canonical and timestamp 20240907153752 and revision id 224983\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solutions",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_5",
+          "byteoffset": 369,
+          "anchor": "Solutions"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 Indonesia MO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Probability of Independent Events",
+      "Inclusion-Exclusion Principle",
+      "Expected Value"
+    ]
+  },
+  "2009 Indonesia MO Problems/Problem 6": {
+    "parse": {
+      "title": "2009 Indonesia MO Problems/Problem 6",
+      "pageid": 16724,
+      "revid": 97568,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find the lowest possible values from the function\n<img src=\"//latex.artofproblemsolving.com/6/c/3/6c39bb8d14d8194e418854f16e7fc68e811996e3.png\" class=\"latexcenter\" alt=\"\\[f(x) = x^{2008} - 2x^{2007} + 3x^{2006} - 4x^{2005} + 5x^{2004} - \\cdots - 2006x^3 + 2007x^2 - 2008x + 2009\\]\" width=\"623\" height=\"19\" />\nfor any real numbers <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We start the search for potential minimums by taking the <a href=\"/wiki/index.php/Derivative\" title=\"Derivative\">derivative</a> of <img src=\"//latex.artofproblemsolving.com/c/9/6/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png\" class=\"latex\" alt=\"$f(x)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" /> and setting it to equal 0.\n<img src=\"//latex.artofproblemsolving.com/a/1/9/a191ce0600ea4c81c49fb26b0a097da317d258df.png\" class=\"latexcenter\" alt=\"\\[f&#39;(x) = 2008x^{2007} - 4014x^{2006} + 6018x^{2005} - \\cdots - 6018x^2 + 4014x - 2008 = 0\\]\" width=\"562\" height=\"20\" />\nNotice from the <a href=\"/wiki/index.php/Symmetry\" title=\"Symmetry\">symmetry</a> of the function that <img src=\"//latex.artofproblemsolving.com/4/2/3/42391cc120904a9ba079203f5777564c71bd99c9.png\" class=\"latex\" alt=\"$f&#39;(1) = 0$\" style=\"vertical-align: -4px\" width=\"71\" height=\"18\" />.  This makes <img src=\"//latex.artofproblemsolving.com/b/b/5/bb5b19bf7575fdc3655bb5767980f09dbb747a8d.png\" class=\"latex\" alt=\"$f(1)$\" style=\"vertical-align: -4px\" width=\"32\" height=\"18\" /> a <i>possible</i> minimum of the function.\n</p><p><br />\nTo check, we find that\n<img src=\"//latex.artofproblemsolving.com/5/4/7/547c256fe2ddd2233be2a58e940e241b1395b974.png\" class=\"latexcenter\" alt=\"\\begin{align*} f(x) &amp;= (x-1)(x^{2007} - x^{2006} + 2x^{2005} - 2x^{2004} + \\cdots + 1004x - 1004) + 1005 \\\\ &amp;= (x-1)^2(x^{2006} + 2x^{2004} + 3x^{2002} + \\cdots + 1004) + 1005 \\end{align*}\" width=\"593\" height=\"47\" />\nFrom the <a href=\"/wiki/index.php/Trivial_Inequality\" title=\"Trivial Inequality\">Trivial Inequality</a>, <img src=\"//latex.artofproblemsolving.com/9/a/c/9ac45d006de7350ff90fd6209f4d23499dd4cd4f.png\" class=\"latex\" alt=\"$(x-1)^2 \\ge 0$\" style=\"vertical-align: -4px\" width=\"96\" height=\"19\" /> and <img src=\"//latex.artofproblemsolving.com/5/a/6/5a6da72548860aa7db55b1a9c2f44d68f717a968.png\" class=\"latex\" alt=\"$x^{2006} + 2x^{2004} + 3x^{2002} + \\cdots + 1004 &gt; 0$\" style=\"vertical-align: -1px\" width=\"310\" height=\"16\" />, so <img src=\"//latex.artofproblemsolving.com/c/7/f/c7f3386fc112283609c2e86b42f382e4ceef499c.png\" class=\"latex\" alt=\"$(x-1)^2(x^{2006} + 2x^{2004} + 3x^{2002} + \\cdots + 1004) \\ge 0$\" style=\"vertical-align: -4px\" width=\"388\" height=\"19\" />.  Thus, the minimum of <img src=\"//latex.artofproblemsolving.com/c/9/6/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png\" class=\"latex\" alt=\"$f(x)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" /> is <img src=\"//latex.artofproblemsolving.com/0/5/a/05aef39b38574cb99dcbec8f61a70acfe1797597.png\" class=\"latex\" alt=\"$\\boxed{1005}$\" style=\"vertical-align: -5px\" width=\"48\" height=\"23\" />, obtained when <img src=\"//latex.artofproblemsolving.com/3/4/3/34310f2f36ed6d724838edb08788ee62acb33386.png\" class=\"latex\" alt=\"$x = 1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" />.\n</p><p><i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_6&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2009_Indonesia_MO\" title=\"2009 Indonesia MO\">2009 Indonesia MO</a></b> (<b><a href=\"/wiki/index.php/2009_Indonesia_MO_Problems\" title=\"2009 Indonesia MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_5\" title=\"2009 Indonesia MO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_1\" title=\"2009 Indonesia MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_2\" title=\"2009 Indonesia MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_3&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 3 (page does not exist)\">3</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_4&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 4 (page does not exist)\">4</a> <b>•</b> <a href=\"/wiki/index.php/2009_Indonesia_MO_Problems/Problem_5\" title=\"2009 Indonesia MO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_7&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 7 (page does not exist)\">7</a> <b>•</b> <a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_8&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 8 (page does not exist)\">8</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php?title=2009_Indonesia_MO_Problems/Problem_7&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"2009 Indonesia MO Problems/Problem 7 (page does not exist)\">Problem 7</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/Indonesia_MO_Problems_and_Solutions\" title=\"Indonesia MO Problems and Solutions\"> All Indonesia MO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907212354\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.032 seconds\nReal time usage: 0.036 seconds\nPreprocessor visited node count: 164/1000000\nPreprocessor generated node count: 466/1000000\nPost‐expand include size: 1415/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2721/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.399      1 -total\n 49.81%    1.693      1 Template:Indonesia_MO_box\n 47.28%    1.607      1 Template:Alternate_solutions\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:16724-0!canonical and timestamp 20240907212354 and revision id 97568\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2009 Indonesia MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Derivative"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Indonesia MO Problems and Solutions"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Symmetry"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Trivial Inequality"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "*": "2009 Indonesia MO Problems/Problem 8"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Indonesia MO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_6",
+          "byteoffset": 226,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2009_Indonesia_MO_Problems/Problem_6",
+          "byteoffset": 1183,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2009 Indonesia MO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Polynomials and Roots",
+      "Quadratic Discriminant",
+      "Inequalities"
+    ]
+  }
+}

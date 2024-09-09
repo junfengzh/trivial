@@ -1,0 +1,688 @@
+{
+  "1970 Canadian MO Problems/Problem 1": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 1",
+      "pageid": 10532,
+      "revid": 50407,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all number triples <img src=\"//latex.artofproblemsolving.com/c/7/3/c73ed093cc73a8d9a14185fa525e7067e5c3725d.png\" class=\"latex\" alt=\"$(x,y,z)$\" style=\"vertical-align: -4px\" width=\"58\" height=\"18\" /> such that when any of these numbers is added to the product of the other two, the result is <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We have:\n</p>\n<center>\n<p><img src=\"//latex.artofproblemsolving.com/5/2/2/522004cf02626d17b2b43ac70f94dfa4a2242d01.png\" class=\"latex\" alt=\"$\\begin{matrix} x + yz &amp;=&amp; 2\\\\ y + xz &amp;=&amp; 2\\\\ z + yx &amp;=&amp; 2 \\end{matrix}$\" style=\"vertical-align: -23px\" width=\"107\" height=\"55\" />\n</p>\n</center>\n<p>From the first equation minus the second, we get&#160;:\n</p><p><img src=\"//latex.artofproblemsolving.com/6/2/0/620c8551cdc003c897cd60e620e0f6a453f94137.png\" class=\"latexcenter\" alt=\"\\[\\begin{matrix}x-y + yz - xz &amp;=&amp; 0 \\\\(1-z)(x-y) &amp;=&amp; 0\\end{matrix}\\]\" width=\"180\" height=\"37\" />\n</p><p>So either <img src=\"//latex.artofproblemsolving.com/6/b/d/6bd3d68e77a39e1ea97e7009f70e12622fa76835.png\" class=\"latex\" alt=\"$z=1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/0/1/1/0110f1bb04c51b2a4d431bf14489fc1b48b37421.png\" class=\"latex\" alt=\"$x=y$\" style=\"vertical-align: -3px\" width=\"43\" height=\"11\" />. For <img src=\"//latex.artofproblemsolving.com/6/b/d/6bd3d68e77a39e1ea97e7009f70e12622fa76835.png\" class=\"latex\" alt=\"$z=1$\" style=\"vertical-align: 0px\" width=\"41\" height=\"12\" />, since the equations were symmetric, we have one solution of <img src=\"//latex.artofproblemsolving.com/b/e/0/be0934bc275d55cdaaa1a44959370defba39e808.png\" class=\"latex\" alt=\"$(x,y,z)=(1,1,1)$\" style=\"vertical-align: -4px\" width=\"139\" height=\"18\" />.\nFrom <img src=\"//latex.artofproblemsolving.com/0/1/1/0110f1bb04c51b2a4d431bf14489fc1b48b37421.png\" class=\"latex\" alt=\"$x=y$\" style=\"vertical-align: -3px\" width=\"43\" height=\"11\" />, substituting it into the original three derived equations, we have:\n<img src=\"//latex.artofproblemsolving.com/f/6/c/f6c4322d96e4d83b378519dfe13c679f43644cc6.png\" class=\"latexcenter\" alt=\"\\[\\begin{matrix} x+xz &amp;=&amp; 2\\\\ z + x^2 &amp;=&amp; 2 \\end{matrix}\\]\" width=\"107\" height=\"33\" />\nWe then get <img src=\"//latex.artofproblemsolving.com/f/d/6/fd6381d3040210d943035e8fd4b7f2388c689814.png\" class=\"latexcenter\" alt=\"\\[z = 2-x^2\\]\" width=\"81\" height=\"15\" /> Substituting this into <img src=\"//latex.artofproblemsolving.com/2/0/6/206d5d6d817265f8ef6ab68cef2ca6cc3f5d2de0.png\" class=\"latex\" alt=\"$x+xz = 2$\" style=\"vertical-align: -1px\" width=\"85\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/4/c/8/4c86c53830aec8163507f4db372088fda15fbaa2.png\" class=\"latexcenter\" alt=\"\\[\\begin{matrix} x + x(2-x^2) &amp;=&amp; 2\\\\ x^3 - 3x + 2 &amp;=&amp; 0\\\\ (x-1)^2(x+2) = 0 \\end{matrix}\\]\" width=\"207\" height=\"58\" />\nThus, either <img src=\"//latex.artofproblemsolving.com/3/4/3/34310f2f36ed6d724838edb08788ee62acb33386.png\" class=\"latex\" alt=\"$x = 1$\" style=\"vertical-align: 0px\" width=\"42\" height=\"12\" />, or <img src=\"//latex.artofproblemsolving.com/f/3/6/f361efa9ea92a34219e05e0825907161f273f17a.png\" class=\"latex\" alt=\"$x = -2$\" width=\"57\" height=\"12\" />. Since the equations were symmetric, we then get the full solution set of:\n</p><p><img src=\"//latex.artofproblemsolving.com/3/2/4/324fe63375a7dbda6240c2f1ee0e19c97973e8f2.png\" class=\"latexcenter\" alt=\"\\[(x,y,z) = {(1,1,1), (-2,-2,-2)}\\]\" width=\"246\" height=\"18\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1970_Canadian_MO\" title=\"1970 Canadian MO\">1970 Canadian MO</a></b> (<b><a href=\"/wiki/index.php/1970_Canadian_MO_Problems\" title=\"1970 Canadian MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b>First Question</b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_2\" title=\"1970 Canadian MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_3\" title=\"1970 Canadian MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_4\" title=\"1970 Canadian MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_5\" title=\"1970 Canadian MO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_6\" title=\"1970 Canadian MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_7\" title=\"1970 Canadian MO Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_8\" title=\"1970 Canadian MO Problems/Problem 8\">8</a> <b>•</b>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_2\" title=\"1970 Canadian MO Problems/Problem 2\">Problem 2</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907205842\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.025 seconds\nReal time usage: 0.026 seconds\nPreprocessor visited node count: 180/1000000\nPreprocessor generated node count: 497/1000000\nPost‐expand include size: 890/2097152 bytes\nTemplate argument size: 60/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3007/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.949      1 Template:Old_CanadaMO_box\n100.00%    1.949      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:10532-0!canonical and timestamp 20240907205842 and revision id 50407\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 8"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Old CanadaMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_1",
+          "byteoffset": 169,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_1",
+          "byteoffset": 1124,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Diophantine Equations",
+      "Polynomials and Roots"
+    ]
+  },
+  "1970 Canadian MO Problems/Problem 10": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 10",
+      "pageid": 13342,
+      "revid": 107833,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_10&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given the polynomial <img src=\"//latex.artofproblemsolving.com/e/7/e/e7e45620bbe954045eda009f29533ed71d6b91fc.png\" class=\"latex\" alt=\"$f(x)=x^n+a_{1}x^{n-1}+a_{2}x^{n-2}+\\cdots+a_{n-1}x+a_n$\" style=\"vertical-align: -4px\" width=\"382\" height=\"19\" /> with integer coefficients <img src=\"//latex.artofproblemsolving.com/1/b/7/1b70976eb4ca80d39934c9d9dce6509ac4399208.png\" class=\"latex\" alt=\"$a_1,a_2,\\ldots,a_n$\" style=\"vertical-align: -3px\" width=\"100\" height=\"11\" />, and given also that there exist four distinct integers <img src=\"//latex.artofproblemsolving.com/a/c/c/acc6d9a6172d35127b6cb37ea92192caf7029a54.png\" class=\"latex\" alt=\"$a, b, c$\" style=\"vertical-align: -4px\" width=\"43\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/8/a/5/8a5aaeba9de87e5e2adadf45dd1a70c3c2740d03.png\" class=\"latex\" alt=\"$f(a)=f(b)=f(c)=f(d)=5$\" style=\"vertical-align: -4px\" width=\"240\" height=\"18\" />, show that there is no integer <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/c/b/5/cb55915ad26950edcea3df1d1a3c469849970b4d.png\" class=\"latex\" alt=\"$f(k)=8$\" style=\"vertical-align: -4px\" width=\"68\" height=\"18\" />. \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_10&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Set g(x) = f(x) − 5. Since a, b, c, d are all roots of g(x), we must have\n</p><p>g(x) = (x − a) (x − b) (x − c) (x − d) h(x)\n</p><p>for some h(x) ∈ Z[x]. \n</p><p>Let k be an integer such that f(k) = 8, giving g(k) = f(k) − 5 = 3. Using the factorization above, we find that\n</p><p>3 = (k − a) (k − b) (k − c) (k − d) h(x).\n</p><p>By the Fundamental Theorem of Arithmetic, we can only express 3 as the product\nof at most three distinct integers (−3, 1, −1). Since k − a, k − b, k − c, k − d\nare all distinct integers, we have too many terms in the product, leading to a\ncontradiction. \n</p><p>via Justin Stevens\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907205845\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.017 seconds\nReal time usage: 0.018 seconds\nPreprocessor visited node count: 69/1000000\nPreprocessor generated node count: 152/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1243/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13342-0!canonical and timestamp 20240907205845 and revision id 107833\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_10",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_10",
+          "byteoffset": 382,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 10",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Polynomials and Roots",
+      "Diophantine Equations",
+      "Prime Factorization"
+    ]
+  },
+  "1970 Canadian MO Problems/Problem 2": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 2",
+      "pageid": 13336,
+      "revid": 94936,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given a triangle <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png\" class=\"latex\" alt=\"$ABC$\" width=\"42\" height=\"13\" /> with angle <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> obtuse and with altitudes of length <img src=\"//latex.artofproblemsolving.com/8/1/8/8189a5b5a0917b8c93350827be4038af1839139d.png\" class=\"latex\" alt=\"$h$\" width=\"10\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> as shown in the diagram, prove that <img src=\"//latex.artofproblemsolving.com/c/4/1/c41bac6d0f418abd83db4f46aaf9bf4d6e0697bf.png\" class=\"latex\" alt=\"$a+h\\ge b+k$\" style=\"vertical-align: -2px\" width=\"106\" height=\"15\" />. Find under what conditions <img src=\"//latex.artofproblemsolving.com/d/a/5/da59e6cdd481251238592a3d8c47d087d15eb03e.png\" class=\"latex\" alt=\"$a+h=b+k$\" style=\"vertical-align: -1px\" width=\"106\" height=\"14\" />. \n</p><p><br />\n</p><p><img src=\"//latex.artofproblemsolving.com/2/c/7/2c7bfd534adec8136ef3f3f3b2cdd08f17cad685.png\" class=\"latexcenter\" alt=\"[asy] draw((0,0)--(5,0)--(16/5,12/5)--cycle,dot); draw((2.5,0)--(2.5,7.5/4)--(5,0)--cycle,black); MP(&quot;C&quot;,(0,0),SW);MP(&quot;D&quot;,(16/5,12/5),N);MP(&quot;B&quot;,(5,0),SE); MP(&quot;E&quot;,(2.5,0),NE);MP(&quot;A&quot;,(2.5,7.5/4),N); MP(&quot;h&quot;,(2.5,7.5/8),W);MP(&quot;k&quot;,(41/10,6/5),NE); draw((-.2,.2)--(2.5-.2,7.5/4+.2),arrow=ArcArrow(TeXHead)); draw((2.5-.2,7.5/4+.2)--(-.2,.2),arrow=ArcArrow(TeXHead)); MP(&quot;b&quot;,(2.3/2-.05,7.5/8+.25),N); draw((0,-.2)--(5,-.2),arrow=ArcArrow(TeXHead)); draw((5,-.2)--(0,-.2),arrow=ArcArrow(TeXHead)); MP(&quot;a&quot;,(2.5,-.2),S); draw((16/5,12/5)--(16/5-.2,12/5-.15)--(16/5-.2+.15,12/5-.15-.2)--(16/5+.15,12/5-.2)--cycle,black); [/asy]\" width=\"252\" height=\"145\" />\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>There is, in fact, no equality case: <img src=\"//latex.artofproblemsolving.com/8/3/7/8379a15f1050354b0b8af22c0ef874dfd13adc5c.png\" class=\"latex\" alt=\"$a + h &gt; b + k$\" style=\"vertical-align: -1px\" width=\"106\" height=\"14\" />. In triangle <img src=\"//latex.artofproblemsolving.com/f/3/4/f348b5890100fa57eaa4a3c548badc83b75af585.png\" class=\"latex\" alt=\"$ACE$\" width=\"42\" height=\"13\" />, we have <img src=\"//latex.artofproblemsolving.com/c/7/d/c7dc611696e0ce96b904e174f3e04eb688be688a.png\" class=\"latex\" alt=\"$b &gt; h$\" style=\"vertical-align: 0px\" width=\"42\" height=\"13\" /> since it is a right triangle. Since angle <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> is obtuse we have <img src=\"//latex.artofproblemsolving.com/2/5/d/25d8ed1fc54739081e1cc984b300a5b1bd0a984f.png\" class=\"latex\" alt=\"$a &gt; b$\" style=\"vertical-align: 0px\" width=\"42\" height=\"13\" />, or <img src=\"//latex.artofproblemsolving.com/3/3/4/33497b4ea14b5d0f91eb37ed6b89bca3c2399623.png\" class=\"latex\" alt=\"$(a-b) &gt; 0$\" style=\"vertical-align: -4px\" width=\"86\" height=\"18\" />. Then <img src=\"//latex.artofproblemsolving.com/2/8/5/2856b2c092972750a40ffbec949aec87d5c79e75.png\" class=\"latex\" alt=\"$(a-b) &gt; h(a-b)/b$\" style=\"vertical-align: -4px\" width=\"159\" height=\"18\" />, or <img src=\"//latex.artofproblemsolving.com/f/7/4/f7404afbe0e78d6183537c67d1e3596fe93fdce2.png\" class=\"latex\" alt=\"$a - b &gt; ha/b - h$\" style=\"vertical-align: -4px\" width=\"133\" height=\"18\" />. Here we can use the fact that <img src=\"//latex.artofproblemsolving.com/3/0/7/30761d1a158212ebe783d4a2d2af202e6cd0b4aa.png\" class=\"latex\" alt=\"$(a,h)$\" style=\"vertical-align: -4px\" width=\"41\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/e/9/8/e98a03c8b4edd7551b48398acd134ececf03d17e.png\" class=\"latex\" alt=\"$(b,k)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> are base-altitude pairs so <img src=\"//latex.artofproblemsolving.com/a/4/5/a456a22b24b8097ed7dfc332b8d80af7e6488ecd.png\" class=\"latex\" alt=\"$k = ha/b$\" style=\"vertical-align: -5px\" width=\"73\" height=\"20\" />. Therefore <img src=\"//latex.artofproblemsolving.com/c/0/5/c053f5d0caaaa9fa6e50b907f0d3f9d0a425eb95.png\" class=\"latex\" alt=\"$a - b &gt; k - h$\" style=\"vertical-align: 0px\" width=\"106\" height=\"13\" />, so <img src=\"//latex.artofproblemsolving.com/8/3/7/8379a15f1050354b0b8af22c0ef874dfd13adc5c.png\" class=\"latex\" alt=\"$a + h &gt; b + k$\" style=\"vertical-align: -1px\" width=\"106\" height=\"14\" />.\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907205842\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.020 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 108/1000000\nPreprocessor generated node count: 412/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4078/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13336-0!canonical and timestamp 20240907205842 and revision id 94936\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_2",
+          "byteoffset": 879,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Law of Sines",
+      "Law of Cosines",
+      "Triangle Inequality"
+    ]
+  },
+  "1970 Canadian MO Problems/Problem 3": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 3",
+      "pageid": 13337,
+      "revid": 97258,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A set of balls is given. Each ball is coloured red or blue, and there is at least one of each colour. Each ball weighs either <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> pound or <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" /> pounds, and there is at least one of each weight. Prove that there are two balls having different weights and different colours. \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/e/d/eeda568c479f64453180d8edb56ab01260bda95e.png\" class=\"latex\" alt=\"$R1, R2, B1, B2$\" style=\"vertical-align: -3px\" width=\"117\" height=\"16\" /> each be the 4 types of balls such that the number is the weight and the letter be the color of the ball.\n</p><p>We can prove by contradiction.\n</p><p>Assume <img src=\"//latex.artofproblemsolving.com/b/3/f/b3fa0185bc3071220961447e87761f3df3f1e9f4.png\" class=\"latex\" alt=\"$R1$\" style=\"vertical-align: 0px\" width=\"22\" height=\"13\" /> exists, then, <img src=\"//latex.artofproblemsolving.com/a/b/7/ab7558b972e6fc3f54b00087df978c8c963b5efc.png\" class=\"latex\" alt=\"$B2$\" style=\"vertical-align: -1px\" width=\"26\" height=\"14\" /> can't exist. We know there has to be at least 1 of each color, so <img src=\"//latex.artofproblemsolving.com/c/7/7/c77352b3a165195d107c5655becdaae61baec7b2.png\" class=\"latex\" alt=\"$B1$\" style=\"vertical-align: 0px\" width=\"22\" height=\"13\" /> has to exist. Since <img src=\"//latex.artofproblemsolving.com/a/b/7/ab7558b972e6fc3f54b00087df978c8c963b5efc.png\" class=\"latex\" alt=\"$B2$\" style=\"vertical-align: -1px\" width=\"26\" height=\"14\" /> exist, <img src=\"//latex.artofproblemsolving.com/f/8/d/f8d9227d690e0c29949227608036b21aa585e4a5.png\" class=\"latex\" alt=\"$R2$\" width=\"22\" height=\"12\" /> can't exist. The question states that there has to be at least 1 of each weight, but there isn't any ball that weighs 2 pounds. There is a contradiction.\n</p><p>Thus, there has to be a ball with different color and weight.\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907205843\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.017 seconds\nReal time usage: 0.017 seconds\nPreprocessor visited node count: 42/1000000\nPreprocessor generated node count: 172/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1328/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13337-0!canonical and timestamp 20240907205843 and revision id 97258\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_3",
+          "byteoffset": 311,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pigeonhole Principle",
+      "Complementary Counting",
+      "Graph Theory"
+    ]
+  },
+  "1970 Canadian MO Problems/Problem 4": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 4",
+      "pageid": 13338,
+      "revid": 121937,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>a) Find all positive integers with initial digit <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" /> such that the integer formed by deleting <img src=\"//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png\" class=\"latex\" alt=\"$6$\" width=\"8\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/a/6/a/a6ad35b9fd964dab4022f116eb90a00220c45044.png\" class=\"latex\" alt=\"$1/25$\" style=\"vertical-align: -5px\" width=\"38\" height=\"20\" /> of the original integer. \n</p><p>b) Show that there is no integer such that the deletion of the first digit produces a result that is <img src=\"//latex.artofproblemsolving.com/d/8/4/d847a752a5a29ab05bfcd0f54331058100e6b4ff.png\" class=\"latex\" alt=\"$1/35$\" style=\"vertical-align: -4px\" width=\"35\" height=\"18\" /> of the original integer.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>a)\nLet the integer have n digits. Then the integer can be represented in the form of <img src=\"//latex.artofproblemsolving.com/7/b/6/7b6dc16b7f79595ac222e6c855c2e3de3667994a.png\" class=\"latex\" alt=\"$6 *10^{n-1} + x$\" style=\"vertical-align: -1px\" width=\"102\" height=\"16\" /> where x is a non-negative integer less than <img src=\"//latex.artofproblemsolving.com/c/1/d/c1d84fdd8a443af3b729ea401dc0f70d6ebf6115.png\" class=\"latex\" alt=\"$10^{n-1}$\" style=\"vertical-align: 0px\" width=\"42\" height=\"15\" />. The problem is asking for integers such as <img src=\"//latex.artofproblemsolving.com/a/3/9/a390be5add46f247d07546aaf66936daafd40979.png\" class=\"latex\" alt=\"$6 *10^{n-1} + x = 25x$\" style=\"vertical-align: -2px\" width=\"158\" height=\"18\" />. Solving for x results in <img src=\"//latex.artofproblemsolving.com/7/a/8/7a86ded68e96e8bba2b9c5acb94033f4f9823fa9.png\" class=\"latexcenter\" alt=\"\\[x = \\frac{10^{n-1}}{4}\\]\" width=\"80\" height=\"39\" /> Since x has to be an integer, n has to be greater than or equal to 3. Thus, the answer is <img src=\"//latex.artofproblemsolving.com/4/3/f/43fac99965dfdfa0b924c16c902b0d65033ba6a2.png\" class=\"latexcenter\" alt=\"\\[625, 6250, 62500, \\ldots\\]\" width=\"152\" height=\"16\" />\n</p><p><br />\nb)\nWe use the same notation as part a. Then, the condition can be represented as <img src=\"//latex.artofproblemsolving.com/c/7/3/c7355fc31a8eb436d427b5c358ea5ef0fea2aff9.png\" class=\"latex\" alt=\"$m*10^{n-1} + x = 35x$\" style=\"vertical-align: -1px\" width=\"162\" height=\"16\" /> where <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> is an integer between 1 and 9 inclusive. Solving for x results in <img src=\"//latex.artofproblemsolving.com/f/9/4/f94c788d14e8eedabf8978efe845ce26979d6573.png\" class=\"latexcenter\" alt=\"\\[x = \\frac{m*10^{n-1}}{34}\\]\" width=\"113\" height=\"39\" />For x to be an integer, the numerator of the expression has to be divisible by 34, and thus 17. <img src=\"//latex.artofproblemsolving.com/c/1/d/c1d84fdd8a443af3b729ea401dc0f70d6ebf6115.png\" class=\"latex\" alt=\"$10^{n-1}$\" style=\"vertical-align: 0px\" width=\"42\" height=\"15\" /> obviously does not have any factors of 17, meaning that <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> must have a factor of 17, which is also impossible since m is an integer between 1 and 9. Therefore, an integer required by the problem is not possible.\n</p><p>Sol by Vwall\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907205843\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.018 seconds\nReal time usage: 0.018 seconds\nPreprocessor visited node count: 72/1000000\nPreprocessor generated node count: 292/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2362/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13338-0!canonical and timestamp 20240907205843 and revision id 121937\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_4",
+          "byteoffset": 327,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Diophantine Equations",
+      "Modular Arithmetic",
+      "Integer Partitions"
+    ]
+  },
+  "1970 Canadian MO Problems/Problem 5": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 5",
+      "pageid": 3678,
+      "revid": 24156,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>A <a href=\"/wiki/index.php/Quadrilateral\" title=\"Quadrilateral\">quadrilateral</a> has one <a href=\"/wiki/index.php/Vertex\" title=\"Vertex\">vertex</a> on each side of a <a href=\"/wiki/index.php/Square\" title=\"Square\">square</a> of side-length 1. Show that the lengths <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" /> of the sides of the quadrilateral satisfy the inequalities <img src=\"//latex.artofproblemsolving.com/e/e/7/ee705cdc7e8bfc912787c64c3faabd2672f8fc3d.png\" class=\"latex\" alt=\"$2\\le a^2+b^2+c^2+d^2\\le 4.$\" style=\"vertical-align: -2px\" width=\"201\" height=\"17\" />\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let the quadrilateral be <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" />. Suppose <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> is a distance <img src=\"//latex.artofproblemsolving.com/9/e/e/9ee4b825a2e36ae093ed7be5e4851ef453b34914.png\" class=\"latex\" alt=\"$w$\" width=\"13\" height=\"8\" />, <img src=\"//latex.artofproblemsolving.com/1/9/5/195c4d9f2b5f16c667a1e4a163a1dc195412c474.png\" class=\"latex\" alt=\"$1-w$\" style=\"vertical-align: 0px\" width=\"44\" height=\"12\" /> from the two nearest vertices of the square. Define <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" />, <img src=\"//latex.artofproblemsolving.com/b/1/3/b13f21416d84e13708696f34dea81026cda583c9.png\" class=\"latex\" alt=\"$z$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> similarly. Then the sum of the squares of the sides of the quadrilateral is <img src=\"//latex.artofproblemsolving.com/2/8/1/281ea10be802af9a3b0baff5a6233690c3dc9bd3.png\" class=\"latex\" alt=\"$w^2 + (1-w)^2 + x^2 + (1-x)^2 + y^2 + (1-y)^2 + z^2 + (1-z)^2$\" style=\"vertical-align: -4px\" width=\"481\" height=\"19\" />. But <img src=\"//latex.artofproblemsolving.com/9/0/0/900458fe5984ae8473540d9004153e42e9e1aa73.png\" class=\"latex\" alt=\"$w^2 + (1-w)^2 = 2(w - \\frac{1}{2})^2 + \\frac{1}{2}$\" style=\"vertical-align: -12px\" width=\"247\" height=\"37\" /> which is at least <img src=\"//latex.artofproblemsolving.com/2/f/9/2f960094315d60883495f9b74148e17487ee9584.png\" class=\"latex\" alt=\"$\\frac{1}{2}$\" style=\"vertical-align: -12px\" width=\"11\" height=\"37\" /> and at most <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />. Similarly for the other pairs of terms, and hence proved.\n</p><p><br />\n</p>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1970_Canadian_MO\" title=\"1970 Canadian MO\">1970 Canadian MO</a></b> (<b><a href=\"/wiki/index.php/1970_Canadian_MO_Problems\" title=\"1970 Canadian MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_4\" title=\"1970 Canadian MO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_1\" title=\"1970 Canadian MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_2\" title=\"1970 Canadian MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_3\" title=\"1970 Canadian MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_4\" title=\"1970 Canadian MO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_6\" title=\"1970 Canadian MO Problems/Problem 6\">6</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_7\" title=\"1970 Canadian MO Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_8\" title=\"1970 Canadian MO Problems/Problem 8\">8</a> <b>•</b>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_6\" title=\"1970 Canadian MO Problems/Problem 6\">Problem 6</a></b>\n</td></tr></tbody></table>\n<p><br />\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907205843\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.026 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 113/1000000\nPreprocessor generated node count: 493/1000000\nPost‐expand include size: 925/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2745/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.060      1 Template:Old_CanadaMO_box\n100.00%    2.060      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:3678-0!canonical and timestamp 20240907205843 and revision id 24156\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 8"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Quadrilateral"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Square"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "Vertex"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Old CanadaMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_5",
+          "byteoffset": 289,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Triangle Inequality",
+      "Geometric Mean",
+      "Cauchy-Schwarz Inequality"
+    ]
+  },
+  "1970 Canadian MO Problems/Problem 6": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 6",
+      "pageid": 10557,
+      "revid": 43827,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given three non-collinear points <img src=\"//latex.artofproblemsolving.com/2/e/9/2e9e84eb3b30456a70ab34b765c85e17bf227c6c.png\" class=\"latex\" alt=\"$A,B,C,$\" style=\"vertical-align: -3px\" width=\"62\" height=\"16\" /> construct a circle with centre <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> such that the tangents from <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> are parallel. \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Construct segment <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />. Find the midpoint of <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> (denote the midpoint <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />), by constructing its perpendicular bisector, and the point where the perpendicular bisector and <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> meet is the midpoint of <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />. Join <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> to the centre of the circle, point <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />. \nConstruct lines <img src=\"//latex.artofproblemsolving.com/9/b/2/9b25f8e64b484493fda944d25cad453423041fe6.png\" class=\"latex\" alt=\"$l$\" width=\"5\" height=\"12\" /> parallel to the line <img src=\"//latex.artofproblemsolving.com/4/d/5/4d5ee546f7ea84755eae7a58fbf1d892bd258118.png\" class=\"latex\" alt=\"$MC$\" width=\"33\" height=\"12\" /> through <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, and line <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> parallel to <img src=\"//latex.artofproblemsolving.com/4/d/5/4d5ee546f7ea84755eae7a58fbf1d892bd258118.png\" class=\"latex\" alt=\"$MC$\" width=\"33\" height=\"12\" /> through <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />. \nFrom <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" />, drop a perpendicular to line <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />, and let this point be <img src=\"//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png\" class=\"latex\" alt=\"$D$\" style=\"vertical-align: -1px\" width=\"17\" height=\"14\" />. Construct the circle with centre <img src=\"//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png\" class=\"latex\" alt=\"$C$\" width=\"14\" height=\"12\" /> and radius <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" />. Let this circle pass through E on line <img src=\"//latex.artofproblemsolving.com/9/b/2/9b25f8e64b484493fda944d25cad453423041fe6.png\" class=\"latex\" alt=\"$l$\" width=\"5\" height=\"12\" />. Then this circle is tangent to lines <img src=\"//latex.artofproblemsolving.com/9/b/2/9b25f8e64b484493fda944d25cad453423041fe6.png\" class=\"latex\" alt=\"$l$\" width=\"5\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" />, and lines <img src=\"//latex.artofproblemsolving.com/9/b/2/9b25f8e64b484493fda944d25cad453423041fe6.png\" class=\"latex\" alt=\"$l$\" width=\"5\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> are parallel. \n</p><p>Proof: We have line <img src=\"//latex.artofproblemsolving.com/9/b/2/9b25f8e64b484493fda944d25cad453423041fe6.png\" class=\"latex\" alt=\"$l$\" width=\"5\" height=\"12\" /> parallel to <img src=\"//latex.artofproblemsolving.com/f/a/3/fa38fd42cdaa5db0dd4e0f7df98ae79a598eb627.png\" class=\"latex\" alt=\"$CM$\" width=\"33\" height=\"12\" /> by our construction, and line <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> parallel to <img src=\"//latex.artofproblemsolving.com/f/a/3/fa38fd42cdaa5db0dd4e0f7df98ae79a598eb627.png\" class=\"latex\" alt=\"$CM$\" width=\"33\" height=\"12\" /> by our construction. Thus, lines <img src=\"//latex.artofproblemsolving.com/9/b/2/9b25f8e64b484493fda944d25cad453423041fe6.png\" class=\"latex\" alt=\"$l$\" width=\"5\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> are parallel. Thus, the line <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> is a transversal to <img src=\"//latex.artofproblemsolving.com/9/b/2/9b25f8e64b484493fda944d25cad453423041fe6.png\" class=\"latex\" alt=\"$l$\" width=\"5\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />. Since <img src=\"//latex.artofproblemsolving.com/4/8/c/48cf7343274ca9b4ff59011df32def89ea274e37.png\" class=\"latex\" alt=\"$\\angle BDC = 90^{\\circ}$\" width=\"105\" height=\"13\" />, by the co-interior angle theorem for parallel lines, <img src=\"//latex.artofproblemsolving.com/a/7/1/a71a42fcedbc72bd609f8d5d92c25bed11070471.png\" class=\"latex\" alt=\"$\\angle AED = 180 - \\angle BDC = 180 - 90 = 90$\" style=\"vertical-align: -2px\" width=\"324\" height=\"16\" />. Thus, the circle is indeed tangent to lines <img src=\"//latex.artofproblemsolving.com/9/b/2/9b25f8e64b484493fda944d25cad453423041fe6.png\" class=\"latex\" alt=\"$l$\" width=\"5\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" /> and these two lines are parallel.\n</p>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1970_Canadian_MO\" title=\"1970 Canadian MO\">1970 Canadian MO</a></b> (<b><a href=\"/wiki/index.php/1970_Canadian_MO_Problems\" title=\"1970 Canadian MO Problems\">Problems</a></b>)\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_5\" title=\"1970 Canadian MO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_1\" title=\"1970 Canadian MO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_2\" title=\"1970 Canadian MO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_3\" title=\"1970 Canadian MO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_4\" title=\"1970 Canadian MO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_5\" title=\"1970 Canadian MO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_7\" title=\"1970 Canadian MO Problems/Problem 7\">7</a> <b>•</b> <a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_8\" title=\"1970 Canadian MO Problems/Problem 8\">8</a> <b>•</b>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1970_Canadian_MO_Problems/Problem_7\" title=\"1970 Canadian MO Problems/Problem 7\">Problem 7</a></b>\n</td></tr></tbody></table>\n<p><br />\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907205844\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.030 seconds\nReal time usage: 0.031 seconds\nPreprocessor visited node count: 179/1000000\nPreprocessor generated node count: 973/1000000\nPost‐expand include size: 925/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5871/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.073      1 Template:Old_CanadaMO_box\n100.00%    2.073      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:10557-0!canonical and timestamp 20240907205844 and revision id 43827\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 7"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1970 Canadian MO Problems/Problem 8"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Old CanadaMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_6",
+          "byteoffset": 191,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Circle Theorems",
+      "Angle Bisector Theorem",
+      "Power of a Point"
+    ]
+  },
+  "1970 Canadian MO Problems/Problem 7": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 7",
+      "pageid": 13339,
+      "revid": 206193,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_7&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Show that from any five integers, not necessarily distinct, one can always choose three of these integers whose sum is divisible by <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />. \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_7&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><b>Claim 1:</b> if <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> have equal modularity, then <img src=\"//latex.artofproblemsolving.com/c/7/9/c795e80fdbfeb58c2dea332063b04eda2786f0bd.png\" class=\"latex\" alt=\"$(a+b+c)$\" style=\"vertical-align: -4px\" width=\"82\" height=\"18\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />\n</p><p>Proof of Claim 1: Let <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> be three integers with equal modularity.\n</p><p>That is, <img src=\"//latex.artofproblemsolving.com/f/8/b/f8bfa53c9063aa47bbfec436d34082f993e140ec.png\" class=\"latex\" alt=\"$a \\equiv b\\;(mod\\;3)\\equiv c\\;(mod\\;3)\\equiv k\\;(mod\\;3)$\" style=\"vertical-align: -5px\" width=\"313\" height=\"20\" />, where <img src=\"//latex.artofproblemsolving.com/c/c/2/cc21247f1f932dc5806c90b1735753124279d7d8.png\" class=\"latex\" alt=\"$k=-1,0,$\" style=\"vertical-align: -4px\" width=\"82\" height=\"18\" /> or <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />.\n</p><p>Then <img src=\"//latex.artofproblemsolving.com/8/8/2/882367b7114ad1d1d2321fdc90dc10b6ac7bb9e6.png\" class=\"latex\" alt=\"$(a+b+c)\\equiv 3k\\;(mod\\;3)\\equiv 0\\;(mod\\;3)$\" style=\"vertical-align: -5px\" width=\"298\" height=\"20\" />\n</p><p>Thus, if <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> have equal modularity, then <img src=\"//latex.artofproblemsolving.com/c/7/9/c795e80fdbfeb58c2dea332063b04eda2786f0bd.png\" class=\"latex\" alt=\"$(a+b+c)$\" style=\"vertical-align: -4px\" width=\"82\" height=\"18\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />\n</p><p><b>Claim 2:</b> if <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> have different modularity from each other, then <img src=\"//latex.artofproblemsolving.com/c/7/9/c795e80fdbfeb58c2dea332063b04eda2786f0bd.png\" class=\"latex\" alt=\"$(a+b+c)$\" style=\"vertical-align: -4px\" width=\"82\" height=\"18\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />\n</p><p>Proof of Claim 2: Let <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> be three integers where one of them is is divisible by 3, the other one has a reminder of 1 when divided by 3 and the other one a reminder of 2, (or -1) for simplicity.\n</p><p>Then <img src=\"//latex.artofproblemsolving.com/1/3/f/13ffb731586eebf7f7c63ab34352504fe0d64f74.png\" class=\"latex\" alt=\"$(a+b+c)\\equiv (-1+0+1)\\;(mod\\;3)\\equiv 0\\;(mod\\;3)$\" style=\"vertical-align: -5px\" width=\"378\" height=\"20\" />\n</p><p>Thus, if <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, and <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" /> have different modularity from each other, then <img src=\"//latex.artofproblemsolving.com/c/7/9/c795e80fdbfeb58c2dea332063b04eda2786f0bd.png\" class=\"latex\" alt=\"$(a+b+c)$\" style=\"vertical-align: -4px\" width=\"82\" height=\"18\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />\n</p><p>In order for the sum of three integers to be divisible by three these three integers should have either all with the same modularity to each other, or they must have distinct modularity.\n</p><p>To have 4 integers that their sum is not divisible by three, then we can't have any combinations of 3 out of 4 where each of those are either the same modularity or different modularity with each other.\n</p><p>Therefore, one can chose 2 integers with the same modularity with each other and another integer with a different modularity but the same modularity with each other.\n</p><p>So, from integers <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png\" class=\"latex\" alt=\"$c$\" width=\"8\" height=\"8\" />, and <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" />, the only combinations of the modularities that we can have with 4 numbers such that no three of those numbers get a sum that divisible by three are:\n</p><p>Combination 1: <img src=\"//latex.artofproblemsolving.com/d/7/2/d7271da1ddf662a2d9efd860b08be2aadcb67bb2.png\" class=\"latex\" alt=\"$0,\\;0,\\;1,\\;1$\" style=\"vertical-align: -4px\" width=\"78\" height=\"17\" />, Combination 2: <img src=\"//latex.artofproblemsolving.com/8/7/d/87ded14bec53ed1a3869eabdbfd6dc36263758cf.png\" class=\"latex\" alt=\"$0,\\;0,\\;-1,\\;-1$\" style=\"vertical-align: -4px\" width=\"106\" height=\"17\" />, or Combination 3: <img src=\"//latex.artofproblemsolving.com/5/5/7/5577436f3f218515e017d5203f4482e509215889.png\" class=\"latex\" alt=\"$-1,\\;-1,\\;1,\\;1$\" style=\"vertical-align: -4px\" width=\"106\" height=\"17\" />\n</p><p>The fifth number <img src=\"//latex.artofproblemsolving.com/a/3/a/a3a59bb1293ee3f6dec19de4019a7178874219ae.png\" class=\"latex\" alt=\"$e$\" style=\"vertical-align: -1px\" width=\"10\" height=\"10\" /> will be of modularity <img src=\"//latex.artofproblemsolving.com/c/d/c/cdcc625fd8e7ad8e8d292c5f8aebeeaabff89a96.png\" class=\"latex\" alt=\"$-1, 0,$\" style=\"vertical-align: -3px\" width=\"44\" height=\"16\" /> or <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />. \n</p><p><b>Case 1:</b> <img src=\"//latex.artofproblemsolving.com/1/0/7/107fe8e4f425769284702ad514dee93b574032c7.png\" class=\"latex\" alt=\"$e\\equiv -1\\;(mod\\;3)$\" style=\"vertical-align: -5px\" width=\"125\" height=\"20\" />\n</p><p>From Combination 1, we have <img src=\"//latex.artofproblemsolving.com/d/7/2/d7218046ab5655427dfbea22472db9f04464c12e.png\" class=\"latex\" alt=\"$0,\\;0,\\;1,\\;1,\\;-1$\" style=\"vertical-align: -4px\" width=\"114\" height=\"17\" /> from which we can chose <img src=\"//latex.artofproblemsolving.com/b/8/5/b85adc8be8529d844914e32a887ef0ecc5399b14.png\" class=\"latex\" alt=\"$0,\\;1,\\;-1$\" style=\"vertical-align: -4px\" width=\"70\" height=\"17\" /> which is divisible by three\n</p><p>From Combination 2, we have <img src=\"//latex.artofproblemsolving.com/4/7/9/4790c555e7b1c3872b96c0bb9e0807f44bf44c00.png\" class=\"latex\" alt=\"$0,\\;0,\\;-1,\\;-1,\\;-1$\" style=\"vertical-align: -4px\" width=\"142\" height=\"17\" /> from which we can chose <img src=\"//latex.artofproblemsolving.com/b/1/d/b1dc7380194e4c66872f67d88df97a9e8d4baab9.png\" class=\"latex\" alt=\"$-1,\\;-1,\\;-1$\" style=\"vertical-align: -4px\" width=\"98\" height=\"17\" /> which is divisible by three\n</p><p>From Combination 3, we have <img src=\"//latex.artofproblemsolving.com/e/3/7/e37f527976afc2727d5245fdbb0b9e0aafcdc8e9.png\" class=\"latex\" alt=\"$-1,\\;-1,\\;1,\\;1,\\;-1$\" style=\"vertical-align: -4px\" width=\"142\" height=\"17\" /> from which we can chose <img src=\"//latex.artofproblemsolving.com/b/1/d/b1dc7380194e4c66872f67d88df97a9e8d4baab9.png\" class=\"latex\" alt=\"$-1,\\;-1,\\;-1$\" style=\"vertical-align: -4px\" width=\"98\" height=\"17\" /> which is divisible by three\n</p><p><b>Case 2:</b> <img src=\"//latex.artofproblemsolving.com/7/9/f/79f8842041d6a657ded88040660003efcc83de50.png\" class=\"latex\" alt=\"$e\\equiv 0\\;(mod\\;3)$\" style=\"vertical-align: -5px\" width=\"111\" height=\"20\" />\n</p><p>From Combination 1, we have <img src=\"//latex.artofproblemsolving.com/4/4/3/4434f931269a454238d90243a8b2a4e482f692ae.png\" class=\"latex\" alt=\"$0,\\;0,\\;1,\\;1,\\;0$\" style=\"vertical-align: -4px\" width=\"100\" height=\"17\" /> from which we can chose <img src=\"//latex.artofproblemsolving.com/2/c/b/2cb44b972ecba2b3dbdd2062a64f1305fcbf5e2d.png\" class=\"latex\" alt=\"$0,\\;0,\\;0$\" style=\"vertical-align: -4px\" width=\"55\" height=\"17\" /> which is divisible by three\n</p><p>From Combination 2, we have <img src=\"//latex.artofproblemsolving.com/e/4/3/e432df0473f4ac3a866bee259c56122682dd51e0.png\" class=\"latex\" alt=\"$0,\\;0,\\;-1,\\;-1,\\;0$\" style=\"vertical-align: -4px\" width=\"128\" height=\"17\" /> from which we can chose <img src=\"//latex.artofproblemsolving.com/2/c/b/2cb44b972ecba2b3dbdd2062a64f1305fcbf5e2d.png\" class=\"latex\" alt=\"$0,\\;0,\\;0$\" style=\"vertical-align: -4px\" width=\"55\" height=\"17\" /> which is divisible by three\n</p><p>From Combination 3, we have <img src=\"//latex.artofproblemsolving.com/c/c/8/cc8d82d74207300b23b7424e6af0c157abf2f3b6.png\" class=\"latex\" alt=\"$-1,\\;-1,\\;1,\\;1,\\;0$\" style=\"vertical-align: -4px\" width=\"128\" height=\"17\" /> from which we can chose <img src=\"//latex.artofproblemsolving.com/5/d/d/5dd6f247b0d9ddf22b1d0ea67324ce90b0249905.png\" class=\"latex\" alt=\"$-1,\\;0,\\;1$\" style=\"vertical-align: -4px\" width=\"70\" height=\"17\" /> which is divisible by three\n</p><p><b>Case 3:</b> <img src=\"//latex.artofproblemsolving.com/4/3/8/4380b1021a94b110b87e768133e0fca97024adb0.png\" class=\"latex\" alt=\"$e\\equiv 1\\;(mod\\;3)$\" style=\"vertical-align: -5px\" width=\"111\" height=\"20\" />\n</p><p>From Combination 1, we have <img src=\"//latex.artofproblemsolving.com/6/1/8/618cb2191530417f12dcb6dbfb1b8f1e963036a7.png\" class=\"latex\" alt=\"$0,\\;0,\\;1,\\;1,\\;1$\" style=\"vertical-align: -4px\" width=\"100\" height=\"17\" /> from which we can chose <img src=\"//latex.artofproblemsolving.com/d/f/f/dffbcaf8037df85d57a3fe542a42113294386126.png\" class=\"latex\" alt=\"$1,\\;1,\\;1$\" style=\"vertical-align: -4px\" width=\"55\" height=\"17\" /> which is divisible by three\n</p><p>From Combination 2, we have <img src=\"//latex.artofproblemsolving.com/a/3/d/a3d51e24ab10a344994533a85efe962edd84d5e1.png\" class=\"latex\" alt=\"$0,\\;0,\\;-1,\\;-1,\\;1$\" style=\"vertical-align: -4px\" width=\"128\" height=\"17\" /> from which we can chose <img src=\"//latex.artofproblemsolving.com/e/e/f/eef39ac15af2728fe8a6653822da10618010bd96.png\" class=\"latex\" alt=\"$0,\\;-1,\\;1$\" style=\"vertical-align: -4px\" width=\"70\" height=\"17\" /> which is divisible by three\n</p><p>From Combination 3, we have <img src=\"//latex.artofproblemsolving.com/e/1/e/e1e8c19217d20e4f6d241d3b59e49ef01173aac0.png\" class=\"latex\" alt=\"$-1,\\;-1,\\;1,\\;1,\\;1$\" style=\"vertical-align: -4px\" width=\"128\" height=\"17\" /> from which we can chose <img src=\"//latex.artofproblemsolving.com/d/f/f/dffbcaf8037df85d57a3fe542a42113294386126.png\" class=\"latex\" alt=\"$1,\\;1,\\;1$\" style=\"vertical-align: -4px\" width=\"55\" height=\"17\" /> which is divisible by three\n</p><p>And this proves that from any five integers, not necessarily distinct, one can always choose three of these integers whose sum is divisible by <img src=\"//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png\" class=\"latex\" alt=\"$3$\" width=\"8\" height=\"12\" />\n</p><p>~Tomas Diaz. orders@tomasdiaz.com\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_7&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Drawing a graph tree with nodes with all the modular possibilities and their paths chowing each path how it ends when a specific combination of three out of available numbers on that path, their summation is divisible by 3:\n</p><p><a href=\"/wiki/index.php/File:1970_CMO_P7b.png\" class=\"image\"><img alt=\"1970 CMO P7b.png\" src=\"https://wiki-images.artofproblemsolving.com//thumb/c/cb/1970_CMO_P7b.png/800px-1970_CMO_P7b.png\" width=\"800\" height=\"583\" srcset=\"https://wiki-images.artofproblemsolving.com//c/cb/1970_CMO_P7b.png 1.5x\" /></a>\n</p><p>~Tomas Diaz. orders@tomasdiaz.com\n</p><p><i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_7&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907205844\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.058 seconds\nReal time usage: 0.063 seconds\nPreprocessor visited node count: 591/1000000\nPreprocessor generated node count: 1322/1000000\nPost‐expand include size: 368/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 11065/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.963      1 Template:Alternate_solutions\n100.00%    1.963      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13339-0!canonical and timestamp 20240907205844 and revision id 206193\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        }
+      ],
+      "images": [
+        "1970_CMO_P7b.png"
+      ],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_7",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_7",
+          "byteoffset": 165,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_7",
+          "byteoffset": 4026,
+          "anchor": "Solution_2"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 7",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Pigeonhole Principle",
+      "Inclusion-Exclusion Principle"
+    ]
+  },
+  "1970 Canadian MO Problems/Problem 8": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 8",
+      "pageid": 13340,
+      "revid": 206214,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_8&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider all line segments of length 4 with one end-point on the line y=x and the other end-point on the line y=2x. Find the equation of the locus of the midpoints of these line segments. \n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_8&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Point on <img src=\"//latex.artofproblemsolving.com/7/4/1/741a74d86df899c10724dc2f80638f5e7f599194.png\" class=\"latex\" alt=\"$y=x$\" style=\"vertical-align: -3px\" width=\"44\" height=\"11\" /> line: <img src=\"//latex.artofproblemsolving.com/b/b/3/bb3c8b44f6786741864d61e9e40c3bf9c81ac8e5.png\" class=\"latex\" alt=\"$(a,a)$\" style=\"vertical-align: -4px\" width=\"40\" height=\"18\" />\n</p><p>Point on <img src=\"//latex.artofproblemsolving.com/2/0/c/20c311147b479df529d837e7da1ff0428df1f75a.png\" class=\"latex\" alt=\"$y=2x$\" style=\"vertical-align: -3px\" width=\"53\" height=\"15\" /> line: <img src=\"//latex.artofproblemsolving.com/d/9/a/d9a661152357eb09addbc005a0cdb434e4b533ab.png\" class=\"latex\" alt=\"$(b,2b)$\" style=\"vertical-align: -5px\" width=\"49\" height=\"20\" />\n</p><p>Then,\n</p><p><img src=\"//latex.artofproblemsolving.com/5/e/b/5eb0dc9b927d4926cc4e609b05b51fad4a9992d6.png\" class=\"latex\" alt=\"$(b-a)^2+(2b-a)^2=4^2$\" style=\"vertical-align: -5px\" width=\"196\" height=\"21\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/f/a/d/fadc6c6837acb3f233c5bd8a11d90507c18b3db1.png\" class=\"latex\" alt=\"$5b^2-6ab+2a^2-16=0$\" style=\"vertical-align: -2px\" width=\"197\" height=\"18\" />\n</p><p>Using the quadratic equation,\n</p><p><img src=\"//latex.artofproblemsolving.com/5/3/b/53b9bd5e83b10432594a649826edc801b4214dda.png\" class=\"latex\" alt=\"$b=\\frac{3a \\pm \\sqrt{80 - a^2}}{5}$\" style=\"vertical-align: -13px\" width=\"151\" height=\"43\" />\n</p><p>Midpoint <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" /> as follows:\n</p><p><img src=\"//latex.artofproblemsolving.com/0/4/6/046afcd5e225bf2ae7af3501f61db84833121d27.png\" class=\"latex\" alt=\"$x=\\frac{b+a}{2}=\\frac{8a \\pm \\sqrt{80 - a^2}}{10}$\" style=\"vertical-align: -13px\" width=\"222\" height=\"43\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/6/c/f/6cf5d2f7492f92ab0ff55906489d504341044a05.png\" class=\"latex\" alt=\"$y=\\frac{2b+a}{2}=\\frac{11a \\pm 2\\sqrt{80 - a^2}}{10}$\" style=\"vertical-align: -13px\" width=\"248\" height=\"43\" />\n</p><p>Solving for <img src=\"//latex.artofproblemsolving.com/4/2/0/420c785a4fd2eeeac6022795114280b78ee4f112.png\" class=\"latex\" alt=\"$\\sqrt{80 - a^2}$\" style=\"vertical-align: -3px\" width=\"74\" height=\"21\" /> we have:\n</p><p><img src=\"//latex.artofproblemsolving.com/b/9/2/b92cfcb1008250b84f20c5bd6bde0059aec8d3a3.png\" class=\"latex\" alt=\"$\\pm \\sqrt{80 - a^2}=10x-8a=\\frac{10y-11a}{2}$\" style=\"vertical-align: -13px\" width=\"288\" height=\"38\" />\n</p><p>Solving for <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> we get:\n</p><p><img src=\"//latex.artofproblemsolving.com/8/2/d/82d04bd13fafd29fc1cb68ae7d5b7a1ea0727d8e.png\" class=\"latex\" alt=\"$a=4x-2y$\" style=\"vertical-align: -4px\" width=\"96\" height=\"17\" /> which we put into one of the equations for x as:\n</p><p><img src=\"//latex.artofproblemsolving.com/f/b/3/fb352d2ec95ca68ff22cfda8e1336a59df914fbd.png\" class=\"latex\" alt=\"$x=\\frac{8(4x-2y) \\pm \\sqrt{80 - (4x-2y)^2}}{10}$\" style=\"vertical-align: -13px\" width=\"286\" height=\"43\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/a/5/9/a5921b96aec4cc89e44df6c6d0bb01b0ea63e2aa.png\" class=\"latex\" alt=\"$(10x-8(4x-2y))^2=80-(4x-2y)^2$\" style=\"vertical-align: -5px\" width=\"304\" height=\"21\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/8/3/5/835f4b1537b473123611bbe2a3996dec806afd89.png\" class=\"latex\" alt=\"$100x^2-160x(4x-2y)+65(4x-2y)^2-80=0$\" style=\"vertical-align: -5px\" width=\"377\" height=\"21\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/4/f/0/4f05d962103c9763d7938b0c9c5199571058df17.png\" class=\"latex\" alt=\"$20x^2-32x(4x-2y)+13(4x-2y)^2-16=0$\" style=\"vertical-align: -5px\" width=\"359\" height=\"21\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/8/3/f/83ff270021e54d41caa95359ea5d3fdeb3a5d52c.png\" class=\"latex\" alt=\"$20x^2-128x^2+64xy+208x^2-208xy+52y^2-16=0$\" style=\"vertical-align: -4px\" width=\"433\" height=\"20\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/2/8/f/28ff0459bccb7e5adad4997990aaa37d77c0740b.png\" class=\"latex\" alt=\"$100x^2-144xy+52y^2-16=0$\" style=\"vertical-align: -4px\" width=\"248\" height=\"20\" />\n</p><p>which simplifies to the equation of the an ellipse:\n</p><p><img src=\"//latex.artofproblemsolving.com/8/0/7/807dab5766bea9c8a32521fab31657688513c744.png\" class=\"latex\" alt=\"$25x^2-36xy+13y^2-4=0$\" style=\"vertical-align: -4px\" width=\"220\" height=\"20\" />\n</p><p><br />\n~Tomas Diaz. orders@tomasdiaz.com\n</p><p><i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_8&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907205844\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.029 seconds\nReal time usage: 0.029 seconds\nPreprocessor visited node count: 77/1000000\nPreprocessor generated node count: 478/1000000\nPost‐expand include size: 368/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4246/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.663      1 Template:Alternate_solutions\n100.00%    1.663      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13340-0!canonical and timestamp 20240907205844 and revision id 206214\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_8",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_8",
+          "byteoffset": 205,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 8",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Conic Sections",
+      "Coordinate Geometry"
+    ]
+  },
+  "1970 Canadian MO Problems/Problem 9": {
+    "parse": {
+      "title": "1970 Canadian MO Problems/Problem 9",
+      "pageid": 13341,
+      "revid": 206200,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem_9\">Problem 9</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_9&amp;action=edit&amp;section=1\" title=\"Edit section: Problem 9\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/e/f/eef0203e65664bd00b5f0325c5c5fcd81bcead8d.png\" class=\"latex\" alt=\"$f(n)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" /> be the sum of the first <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> terms of the sequence\n<img src=\"//latex.artofproblemsolving.com/5/4/d/54dd33346e8b5e5ecc8d3462de89499e4d5d62d7.png\" class=\"latexcenter\" alt=\"\\[0, 1,1, 2,2, 3,3, 4,4, 5,5, 6,6, \\ldots\\, .\\]\" width=\"253\" height=\"16\" />\na) Give a formula for <img src=\"//latex.artofproblemsolving.com/e/e/f/eef0203e65664bd00b5f0325c5c5fcd81bcead8d.png\" class=\"latex\" alt=\"$f(n)$\" style=\"vertical-align: -4px\" width=\"34\" height=\"18\" />.\n</p><p>b) Prove that <img src=\"//latex.artofproblemsolving.com/7/e/0/7e067a796ec1b5a6b72aaee7f2b52113ebfbc036.png\" class=\"latex\" alt=\"$f(s+t)-f(s-t)=st$\" style=\"vertical-align: -4px\" width=\"185\" height=\"18\" /> where <img src=\"//latex.artofproblemsolving.com/f/3/7/f37bba504894945c07a32f5496d74299a37aa51c.png\" class=\"latex\" alt=\"$s$\" width=\"8\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/e/0/d/e0d2bf360290fd61d1c1557e763f2622363b3d35.png\" class=\"latex\" alt=\"$t$\" width=\"6\" height=\"11\" /> are positive integers and <img src=\"//latex.artofproblemsolving.com/4/e/5/4e5fcf57e3a250056cad10c68e31c5b7afc86cc5.png\" class=\"latex\" alt=\"$s&gt;t$\" style=\"vertical-align: 0px\" width=\"39\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_9&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><b>Part a):</b>\n</p><p><img src=\"//latex.artofproblemsolving.com/d/4/6/d46d4e589a322d0f8851dd8fd594ae9674bea33e.png\" class=\"latex\" alt=\"$f(n)=\\begin{cases} 2\\sum_{k=1}^{\\frac{n-1}{2}}k,\\; &amp; n\\;is\\;odd \\\\ 2\\sum_{k=1}^{\\frac{n}{2}}k-\\frac{n}{2},\\; &amp; n\\;is\\;even\\end{cases}$\" style=\"vertical-align: -23px\" width=\"281\" height=\"56\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/a/d/f/adf615138148ee79d4adaaf5ee47a4cc2658a0ca.png\" class=\"latex\" alt=\"$f(n)=\\begin{cases} \\left( \\frac{n-1}{2} \\right)\\left( \\frac{n-1}{2}+1 \\right),\\; &amp; n\\;is\\;odd \\\\           \\left( \\frac{n}{2} \\right)\\left( \\frac{n}{2}+1 \\right)-\\frac{n}{2},\\; &amp; n\\;is\\;even\\end{cases}$\" style=\"vertical-align: -23px\" width=\"306\" height=\"55\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/4/4/a/44a898c224902871b8b1d68e37c0d7c4fedd1b84.png\" class=\"latex\" alt=\"$f(n)=\\begin{cases} \\frac{n^2-1}{4},\\; &amp; n\\;is\\;odd \\\\                      \\frac{n^2}{4},\\; &amp; n\\;is\\;even\\end{cases}$\" style=\"vertical-align: -23px\" width=\"214\" height=\"55\" />\n</p><p>Using <img src=\"//latex.artofproblemsolving.com/b/c/7/bc7ad55874da5f8786213c175bf9a6c67bda299b.png\" class=\"latex\" alt=\"$(-1)^n$\" style=\"vertical-align: -4px\" width=\"45\" height=\"18\" /> in the formula we can have:\n</p><p><img src=\"//latex.artofproblemsolving.com/8/5/2/85206597369a3f3d0c440543b7c3d7a9d8669af4.png\" class=\"latex\" alt=\"$\\frac{(-1)^n-1}{2}=\\begin{cases} -1,\\; &amp; n\\;is\\;odd \\\\                      0,\\; &amp; n\\;is\\;even\\end{cases}$\" style=\"vertical-align: -23px\" width=\"247\" height=\"55\" />\n</p><p>Therefore,\n</p><p><img src=\"//latex.artofproblemsolving.com/4/f/e/4fe49c2a8a7b973889de18b44692f459597de43b.png\" class=\"latex\" alt=\"$f(n)=\\frac{n^2+\\frac{(-1)^n-1}{2}}{4}$\" style=\"vertical-align: -13px\" width=\"163\" height=\"45\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/e/e/8/ee813b06c3b6f8c090bae6419073ea5d7a2c1d54.png\" class=\"latex\" alt=\"$f(n)=\\frac{2n^2-1+(-1)^n}{8}$\" style=\"vertical-align: -13px\" width=\"193\" height=\"41\" />\n</p><p><b>Part b):</b>\n</p><p><img src=\"//latex.artofproblemsolving.com/0/9/7/0973ee91b2064686c8d798e52208d50a09335ce2.png\" class=\"latex\" alt=\"$f(s+t)-f(s-t)=\\frac{2(s+t)^2-1+(-1)^{s+t}}{8}-\\frac{2(s-t)^2-1+(-1)^{s-t}}{8}$\" style=\"vertical-align: -13px\" width=\"566\" height=\"41\" />\n</p><p>since <img src=\"//latex.artofproblemsolving.com/7/3/9/739d85703b35e4dce92aeea8c90946e926862f47.png\" class=\"latex\" alt=\"$(s+t)\\equiv (s-t)\\;(mod\\;2)$\" style=\"vertical-align: -5px\" width=\"197\" height=\"20\" />, then <img src=\"//latex.artofproblemsolving.com/8/3/7/837d445259fdbeffabd1ecc6b15c679de632f237.png\" class=\"latex\" alt=\"$(-1)^{s+t}=(-1)^{s-t}$\" style=\"vertical-align: -5px\" width=\"146\" height=\"21\" /> and our expression reduces to:\n</p><p><img src=\"//latex.artofproblemsolving.com/0/2/4/02410b938d95af99447323e156793ab707ca7357.png\" class=\"latex\" alt=\"$f(s+t)-f(s-t)=\\frac{2(s+t)^2-2(s-t)^2}{8}=\\frac{(s+t)^2-(s-t)^2}{4}$\" style=\"vertical-align: -13px\" width=\"503\" height=\"41\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/b/5/6/b56fd9ca5dbe6921304cd0f261fe3e9a5c630c2e.png\" class=\"latex\" alt=\"$f(s+t)-f(s-t)=\\frac{s^2+2st+t^2-s^2+2st-t^2}{4}=\\frac{4st}{4}=st$\" style=\"vertical-align: -13px\" width=\"488\" height=\"41\" />\n</p><p>Tomas Diaz. orders@tomasdiaz.com\n</p><p><i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1970_Canadian_MO_Problems/Problem_9&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<!-- \nNewPP limit report\nCached time: 20240907104139\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.015 seconds\nReal time usage: 0.016 seconds\nPreprocessor visited node count: 119/1000000\nPreprocessor generated node count: 438/1000000\nPost‐expand include size: 368/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4303/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.276      1 Template:Alternate_solutions\n100.00%    1.276      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:13341-0!canonical and timestamp 20240907104139 and revision id 206200\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem 9",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_9",
+          "byteoffset": 0,
+          "anchor": "Problem_9"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1970_Canadian_MO_Problems/Problem_9",
+          "byteoffset": 332,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1970 Canadian MO Problems/Problem 9",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Sum of an Arithmetic Series",
+      "Sequences and Series"
+    ]
+  }
+}

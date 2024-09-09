@@ -1,0 +1,77 @@
+{
+  "1999 BMO Problems/Problem 4": {
+    "parse": {
+      "title": "1999 BMO Problems/Problem 4",
+      "pageid": 6091,
+      "revid": 21648,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1999_BMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/b/c/1bc7b7ed94b4968aacf9ead0b8b17a55a1ad238c.png\" class=\"latex\" alt=\"$\\{a_n \\}_{n\\ge 0}$\" style=\"vertical-align: -5px\" width=\"61\" height=\"19\" /> be a non-decreasing, unbounded sequence of non-negative integers with <img src=\"//latex.artofproblemsolving.com/3/4/b/34b671ab48de5392b8ddbd64c268ab86395fa0f7.png\" class=\"latex\" alt=\"$a_0=0$\" style=\"vertical-align: -2px\" width=\"50\" height=\"15\" />.  Let the number of members of the sequence not exceeding <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> be <img src=\"//latex.artofproblemsolving.com/8/f/f/8ffd01cdc48042ce7c67d8edcd4904809831cfe4.png\" class=\"latex\" alt=\"$b_n$\" style=\"vertical-align: -2px\" width=\"16\" height=\"15\" />.  Prove that for all positive integers <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> and <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />, we have\n<img src=\"//latex.artofproblemsolving.com/1/7/8/178b5a24adf671918ef1d15614ca43cd006449ad.png\" class=\"latexcenter\" alt=\"\\[a_0 + a_1 + \\dotsb + a_m + b_0 + b_1 + \\dotsb + b_n \\ge (m+1)(n+1) .\\]\" width=\"446\" height=\"18\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1999_BMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Note that for arbitrary nonnegative integers <img src=\"//latex.artofproblemsolving.com/0/1/d/01d9dbe8588e6243350fc642973b9365304100da.png\" class=\"latex\" alt=\"$i,j$\" style=\"vertical-align: -3px\" width=\"22\" height=\"16\" />, the relation <img src=\"//latex.artofproblemsolving.com/8/0/1/8016d99a94fe1746a45ec67bb556588f4ee8bee4.png\" class=\"latex\" alt=\"$j \\le a_i$\" style=\"vertical-align: -3px\" width=\"47\" height=\"16\" /> is equivalent to the relation <img src=\"//latex.artofproblemsolving.com/1/7/e/17e841151aa680de2547d1ab0230cef2a6b3ffc5.png\" class=\"latex\" alt=\"$i \\ge b_{j-1}$\" style=\"vertical-align: -4px\" width=\"60\" height=\"17\" />.  It then follows that\n<img src=\"//latex.artofproblemsolving.com/b/6/4/b648e961fde5e59ff6e5349802cdc12e0d5a1e17.png\" class=\"latexcenter\" alt=\"\\[\\sum_{i=0}^m a_i = \\sum_{i=0}^m \\sum_{j=1}^{a_i} 1 = \\sum_{j=1}^{a_m} \\sum_{i=b_{j-1}}^m 1 = \\sum_{j=1}^{a_m} ( m+1 - b_{j-1} ) = \\sum_{j=0}^{a_m-1} (m+1 - b_j ) .\\]\" width=\"535\" height=\"53\" />\nNote that if <img src=\"//latex.artofproblemsolving.com/1/5/b/15b98d950d6b16edcc3129ea48920791b64f0ae7.png\" class=\"latex\" alt=\"$j \\le a_m-1$\" style=\"vertical-align: -3px\" width=\"85\" height=\"16\" />, then there are at most <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> terms of <img src=\"//latex.artofproblemsolving.com/6/8/e/68e55c0094b368f263d92c1a8dd7ca5910d5c214.png\" class=\"latex\" alt=\"$\\{ a_k\\}_{k\\ge 0}$\" style=\"vertical-align: -5px\" width=\"60\" height=\"19\" /> which do not exceed <img src=\"//latex.artofproblemsolving.com/8/1/2/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png\" class=\"latex\" alt=\"$j$\" style=\"vertical-align: -3px\" width=\"8\" height=\"16\" />, i.e., <img src=\"//latex.artofproblemsolving.com/1/9/1/191e0c4bb990630dcdc2db8c7a5487cbd793ba7b.png\" class=\"latex\" alt=\"$b_j \\le m$\" style=\"vertical-align: -4px\" width=\"54\" height=\"17\" />; it follows that every term of the last summation is positive.\n</p><p>Now, if <img src=\"//latex.artofproblemsolving.com/6/6/f/66f2c7f17c127d3f1b1ac9c336edda6376d72f70.png\" class=\"latex\" alt=\"$a_m \\ge n+1$\" style=\"vertical-align: -2px\" width=\"87\" height=\"14\" />, then we have\n<img src=\"//latex.artofproblemsolving.com/9/c/b/9cb5ee51a1791650a98fc11ddacdf394e89845f5.png\" class=\"latexcenter\" alt=\"\\begin{align*} \\sum_{i=0}^m a_i + \\sum_{j=0}^n b_j &amp;= \\sum_{j=n+1}^{a_m-1}(m+1 - b_j) + \\sum_{j=0}^n (m+1 - b_j + b_j) \\\\ &amp;= \\sum_{j=n+1}^{a_m-1}(m+1-b_j) + (n+1)(m+1) \\ge (n+1)(m+1), \\end{align*}\" width=\"559\" height=\"114\" />\nas desired.  On the other hand, if <img src=\"//latex.artofproblemsolving.com/5/8/6/586efbcf67e806576e820d887855fd34185bfc9e.png\" class=\"latex\" alt=\"$a_m &lt; n+1$\" style=\"vertical-align: -2px\" width=\"87\" height=\"14\" />, then for all <img src=\"//latex.artofproblemsolving.com/e/4/5/e4582483e4781681fdc72755c1812b7569c38d77.png\" class=\"latex\" alt=\"$j\\ge a_m$\" style=\"vertical-align: -3px\" width=\"54\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/a/0/7/a0713129f5cc069877719baa6b9868f6d3e3606e.png\" class=\"latex\" alt=\"$b_j \\ge m+1$\" style=\"vertical-align: -6px\" width=\"88\" height=\"19\" />.  It then follows that\n<img src=\"//latex.artofproblemsolving.com/4/8/9/4893de2ec3e5df338e9e0c1530e10dda0125634d.png\" class=\"latexcenter\" alt=\"\\begin{align*}  \\sum_{i=0}^m a_j + \\sum_{j=0}^n b_j &amp;= \\sum_{j=0}^{a_m-1}(m+1 - b_j + b_j) + \\sum_{j=a_m}^n b_j \\\\ &amp;= (a_m)(m+1) + \\sum_{j=a_m}^n b_j \\\\ &amp;\\ge (a_m)(m+1) + (n+1-a_m)(m+1) = (n+1)(m+1), \\end{align*}\" width=\"563\" height=\"139\" />\nas desired.  Therefore the problem statement is true in all cases.  <img src=\"//latex.artofproblemsolving.com/3/b/b/3bbb9e25e5be095e317771a9c5d00877ee9c8012.png\" class=\"latex\" alt=\"$\\blacksquare$\" width=\"13\" height=\"12\" />\n</p><p><br />\n<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/wiki/index.php?title=1999_BMO_Problems/Problem_4&amp;action=edit\">add it</a> to this page.</i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Resources\">Resources</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1999_BMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: Resources\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li><a href=\"/wiki/index.php?title=1999_BMO_Problems&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"1999 BMO Problems (page does not exist)\">1999 BMO Problems</a></li>\n<li><a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/viewtopic.php?p=495371#495371\">Discussion on AoPS/MathLinks</a></li></ul>\n\n<!-- \nNewPP limit report\nCached time: 20240907211043\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.029 seconds\nReal time usage: 0.031 seconds\nPreprocessor visited node count: 224/1000000\nPreprocessor generated node count: 502/1000000\nPost‐expand include size: 344/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4488/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.627      1 Template:Alternate_solutions\n100.00%    1.627      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:6091-0!canonical and timestamp 20240907211042 and revision id 21648\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Algebra_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "*": "1999 BMO Problems"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:Alternate solutions"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/viewtopic.php?p=495371#495371"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1999_BMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1999_BMO_Problems/Problem_4",
+          "byteoffset": 401,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Resources",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1999_BMO_Problems/Problem_4",
+          "byteoffset": 1778,
+          "anchor": "Resources"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1999 BMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Monotonic Sequences",
+      "Inequalities",
+      "Sequences and Series"
+    ]
+  }
+}

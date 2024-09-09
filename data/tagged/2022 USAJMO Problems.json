@@ -1,0 +1,665 @@
+{
+  "2022 USAJMO Problems/Problem 1": {
+    "parse": {
+      "title": "2022 USAJMO Problems/Problem 1",
+      "pageid": 22656,
+      "revid": 219966,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_1\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 1</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#See_Also\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>For which positive integers <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> does there exist an infinite arithmetic sequence of integers <img src=\"//latex.artofproblemsolving.com/0/7/4/0745de1c39f471c9ff6c8445596d10a9d3c76c15.png\" class=\"latex\" alt=\"$a_1,a_2,\\cdots$\" style=\"vertical-align: -3px\" width=\"70\" height=\"11\" /> and an infinite geometric sequence of integers <img src=\"//latex.artofproblemsolving.com/7/1/1/711d2d411b2b04ada1b71ea819b1e6008201d2a3.png\" class=\"latex\" alt=\"$g_1,g_2,\\cdots$\" style=\"vertical-align: -3px\" width=\"68\" height=\"11\" /> satisfying the following properties?\n</p><p><img src=\"//latex.artofproblemsolving.com/d/5/3/d534b942086dae501cbdce030206adb87567bb07.png\" class=\"latex\" alt=\"$\\bullet$\" style=\"vertical-align: 1px\" width=\"8\" height=\"7\" /> <img src=\"//latex.artofproblemsolving.com/f/5/e/f5e73587c6428a62778b306d67d05a749b9c4bba.png\" class=\"latex\" alt=\"$a_n-g_n$\" style=\"vertical-align: -4px\" width=\"60\" height=\"16\" /> is divisible by <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> for all integers <img src=\"//latex.artofproblemsolving.com/6/5/2/65262bf247c4a3c6114a8223d249dc9702619d3e.png\" class=\"latex\" alt=\"$n&gt;1$\" style=\"vertical-align: 0px\" width=\"43\" height=\"12\" />;\n</p><p><img src=\"//latex.artofproblemsolving.com/d/5/3/d534b942086dae501cbdce030206adb87567bb07.png\" class=\"latex\" alt=\"$\\bullet$\" style=\"vertical-align: 1px\" width=\"8\" height=\"7\" /> <img src=\"//latex.artofproblemsolving.com/a/9/1/a911807b9ee0cf87a1cc922f3bfea0da9b50d3f0.png\" class=\"latex\" alt=\"$a_2-a_1$\" style=\"vertical-align: -4px\" width=\"58\" height=\"15\" /> is not divisible by <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let the arithmetic sequence be <img src=\"//latex.artofproblemsolving.com/6/c/6/6c689b64e037feffbb1a8612a266b91b0ffaa6a8.png\" class=\"latex\" alt=\"$\\{ a, a+d, a+2d, \\dots \\}$\" style=\"vertical-align: -5px\" width=\"170\" height=\"20\" /> and the geometric sequence to be <img src=\"//latex.artofproblemsolving.com/e/7/b/e7b72ae06a2af47e74ea36d3858bf9a7481ea796.png\" class=\"latex\" alt=\"$\\{ g, gr, gr^2, \\dots \\}$\" style=\"vertical-align: -5px\" width=\"120\" height=\"21\" />. Rewriting the problem based on our new terminology, we want to find all positive integers <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> such that there exist integers <img src=\"//latex.artofproblemsolving.com/3/b/c/3bc3a934f4bd3516e6d453d890141617f359782c.png\" class=\"latex\" alt=\"$a,d,r$\" style=\"vertical-align: -4px\" width=\"46\" height=\"18\" /> with <img src=\"//latex.artofproblemsolving.com/f/1/a/f1a63039dc43c5caa8549cd8afbb763284f0a71e.png\" class=\"latex\" alt=\"$m \\nmid d$\" style=\"vertical-align: -5px\" width=\"42\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/c/1/b/c1b234518e13847a13f1c8001461db971f51c4b0.png\" class=\"latex\" alt=\"$m|a+(n-1)d-gr^{n-1}$\" style=\"vertical-align: -5px\" width=\"187\" height=\"21\" /> for all integers <img src=\"//latex.artofproblemsolving.com/6/5/2/65262bf247c4a3c6114a8223d249dc9702619d3e.png\" class=\"latex\" alt=\"$n&gt;1$\" style=\"vertical-align: 0px\" width=\"43\" height=\"12\" />.\n</p><p>Note that \n<img src=\"//latex.artofproblemsolving.com/3/7/8/378d0e30b148d7304c166448a158208c7acae721.png\" class=\"latexcenter\" alt=\"\\[m | a+nd-gr^n \\; (1),\\]\" width=\"154\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/0/9/8/098259e57105cb652003bc93378415ebef417f1b.png\" class=\"latexcenter\" alt=\"\\[m | a+(n+1)d-gr^{n+1} \\; (2),\\]\" width=\"216\" height=\"20\" />\n<img src=\"//latex.artofproblemsolving.com/5/6/3/563dd7fa29dde7092384ee93211978357153e475.png\" class=\"latexcenter\" alt=\"\\[m | a+(n+2)d-gr^{n+2} \\; (3),\\]\" width=\"216\" height=\"20\" />\n</p><p>for all integers <img src=\"//latex.artofproblemsolving.com/0/9/6/0965ac6a39c0b4d67771c31210b98312ae2e4f01.png\" class=\"latex\" alt=\"$n\\ge 1$\" style=\"vertical-align: -2px\" width=\"43\" height=\"14\" />. From (1) and (2), we have <img src=\"//latex.artofproblemsolving.com/9/9/5/9953b541727dba88c53392bb3e03f14591682208.png\" class=\"latex\" alt=\"$m | d-gr^{n+1}+gr^n$\" style=\"vertical-align: -5px\" width=\"148\" height=\"21\" /> and from (2) and (3), we have <img src=\"//latex.artofproblemsolving.com/4/c/8/4c86173fc3756e8d39c03cf3de4d6f66d0b817cb.png\" class=\"latex\" alt=\"$m | d-gr^{n+2}+gr^{n+1}$\" style=\"vertical-align: -5px\" width=\"165\" height=\"21\" />. Reinterpreting both equations,\n</p><p><img src=\"//latex.artofproblemsolving.com/1/3/4/13477259f7402db416985d704e39c50ffc44db7f.png\" class=\"latexcenter\" alt=\"\\[m | gr^{n+1}-gr^n-d \\; (4),\\]\" width=\"177\" height=\"20\" />\n<img src=\"//latex.artofproblemsolving.com/0/5/c/05cb638e610af2a3bbd2893c1e590267d6cbd1e3.png\" class=\"latexcenter\" alt=\"\\[m | gr^{n+2}-gr^{n+1}-d \\; (5),\\]\" width=\"194\" height=\"20\" />\n</p><p>for all integers <img src=\"//latex.artofproblemsolving.com/0/9/6/0965ac6a39c0b4d67771c31210b98312ae2e4f01.png\" class=\"latex\" alt=\"$n\\ge 1$\" style=\"vertical-align: -2px\" width=\"43\" height=\"14\" />. Thus, <img src=\"//latex.artofproblemsolving.com/a/1/f/a1fca154f8ec9dd48a3b2f523cd20728490706bd.png\" class=\"latex\" alt=\"$m | gr^k - 2gr^{k+1} + gr^{k+2} = gr^k(r-1)^2 \\; (6)$\" style=\"vertical-align: -5px\" width=\"329\" height=\"22\" />. Note that if <img src=\"//latex.artofproblemsolving.com/f/7/5/f75d7ce2bdefa45f77cbfae7fd5ce0279129b7dd.png\" class=\"latex\" alt=\"$m|g,r$\" style=\"vertical-align: -5px\" width=\"49\" height=\"20\" />, then <img src=\"//latex.artofproblemsolving.com/0/d/c/0dc502f495ad5af9f77a91f40c9b78677f7491c0.png\" class=\"latex\" alt=\"$m|gr^{n+1}-gr^n$\" style=\"vertical-align: -5px\" width=\"116\" height=\"21\" />, which, plugged into (4), yields <img src=\"//latex.artofproblemsolving.com/3/1/e/31e0e38519bc4b46bc2e4ed3f4976116827294a6.png\" class=\"latex\" alt=\"$m|d$\" style=\"vertical-align: -4px\" width=\"30\" height=\"18\" />, which is invalid. Also, note that (4)<img src=\"//latex.artofproblemsolving.com/7/7/c/77cf26be132ef93923e082ee4153b2cb0ef44a50.png\" class=\"latex\" alt=\"$+$\" style=\"vertical-align: -1px\" width=\"13\" height=\"12\" />(5) gives\n</p><p><img src=\"//latex.artofproblemsolving.com/1/c/6/1c6f15b7013f1b0e39ecbec46a9ceef6acec37fe.png\" class=\"latexcenter\" alt=\"\\[m | gr(r-1)(r+1) - 2d \\; (7),\\]\" width=\"220\" height=\"18\" />\n</p><p>so if <img src=\"//latex.artofproblemsolving.com/b/1/3/b137d89f0618bd47d16f377428618060e55580ee.png\" class=\"latex\" alt=\"$r \\equiv \\pm 1 \\pmod m$\" style=\"vertical-align: -5px\" width=\"137\" height=\"20\" /> or <img src=\"//latex.artofproblemsolving.com/4/7/1/471d89ecb8a47163d67ae41cb81dca8cd2f6b1e4.png\" class=\"latex\" alt=\"$gr \\equiv 0 \\pmod m$\" style=\"vertical-align: -5px\" width=\"132\" height=\"20\" />, then <img src=\"//latex.artofproblemsolving.com/3/1/e/31e0e38519bc4b46bc2e4ed3f4976116827294a6.png\" class=\"latex\" alt=\"$m|d$\" style=\"vertical-align: -4px\" width=\"30\" height=\"18\" />, which is also invalid. Thus, according to (6), <img src=\"//latex.artofproblemsolving.com/e/7/3/e733346bfe0143a24741182bc6e277f01cd28c40.png\" class=\"latex\" alt=\"$m|g(r-1)^2$\" style=\"vertical-align: -5px\" width=\"94\" height=\"21\" />, with <img src=\"//latex.artofproblemsolving.com/e/b/2/eb24e4d111af5535d35d992a0ee9e6f32519b147.png\" class=\"latex\" alt=\"$m \\nmid g,r$\" style=\"vertical-align: -5px\" width=\"59\" height=\"20\" />. Also from (7) is that <img src=\"//latex.artofproblemsolving.com/0/2/2/022429f103440430b124531886c77ee9e0036c41.png\" class=\"latex\" alt=\"$m \\nmid g(r-1)$\" style=\"vertical-align: -5px\" width=\"96\" height=\"20\" />.\n</p><p>Finally, we can conclude that the only <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> that will work are numbers in the form of <img src=\"//latex.artofproblemsolving.com/e/8/1/e81bcdae6b9f3547966bc7bef372197bef6cca8b.png\" class=\"latex\" alt=\"$xy^2$\" style=\"vertical-align: -3px\" width=\"26\" height=\"18\" />, other than <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" />, for integers <img src=\"//latex.artofproblemsolving.com/b/6/4/b6400c6fe3f1ed70e5afd387a9686cdc3fa09531.png\" class=\"latex\" alt=\"$x,y$\" style=\"vertical-align: -3px\" width=\"27\" height=\"11\" /> (<img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png\" class=\"latex\" alt=\"$y$\" style=\"vertical-align: -4px\" width=\"11\" height=\"13\" /> can be equal), ie. <img src=\"//latex.artofproblemsolving.com/6/6/d/66de793ec8882385ca91897ab19eb3380e792104.png\" class=\"latex\" alt=\"$4,8,9,12,16,18,20,24,25,\\dots$\" style=\"vertical-align: -4px\" width=\"235\" height=\"17\" />.\n</p><p>~sml1809\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We claim that <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> satisfies the given conditions if and only if <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> is a perfect square.\n</p><p>To begin, we let the common difference of <img src=\"//latex.artofproblemsolving.com/c/a/d/cad681354a2a529a1828a56b2b5629faec3cd128.png\" class=\"latex\" alt=\"$\\{a_n\\}$\" style=\"vertical-align: -4px\" width=\"35\" height=\"18\" /> be <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" /> and the common ratio of <img src=\"//latex.artofproblemsolving.com/2/b/d/2bd44fa9b610204e68ed18cf05208888d213542b.png\" class=\"latex\" alt=\"$\\{g_n\\}$\" style=\"vertical-align: -5px\" width=\"38\" height=\"20\" /> be <img src=\"//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png\" class=\"latex\" alt=\"$r$\" width=\"8\" height=\"8\" />. Then, rewriting the conditions modulo <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> gives:\n<img src=\"//latex.artofproblemsolving.com/4/3/7/4376f07605505181f96fc2b82469c968458b95c4.png\" class=\"latexcenter\" alt=\"\\[a_2-a_1=d\\not\\equiv 0\\pmod{m}\\text{         (1)}\\]\" width=\"237\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/1/4/8/148b9f756a924df8962b2a4750627a3bea62d479.png\" class=\"latexcenter\" alt=\"\\[a_n\\equiv g_n\\pmod{m}\\text{             (2)}\\]\" width=\"175\" height=\"18\" />\n</p><p>Condition <img src=\"//latex.artofproblemsolving.com/0/d/9/0d9c3b1c142cbd3f8217dabc160c57e4750df241.png\" class=\"latex\" alt=\"$(1)$\" style=\"vertical-align: -4px\" width=\"21\" height=\"18\" /> holds if no consecutive terms in <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" /> are equivalent modulo <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" />, which is the same thing as never having consecutive, equal, terms, in <img src=\"//latex.artofproblemsolving.com/b/5/f/b5f872ced630db0a04acbb1359dfa46fe0736bd4.png\" class=\"latex\" alt=\"$a_i\\pmod{m}$\" style=\"vertical-align: -5px\" width=\"96\" height=\"20\" />. By Condition <img src=\"//latex.artofproblemsolving.com/6/2/f/62f62a19f0425d8e6121ca0c1cfd3ce96e43c9c5.png\" class=\"latex\" alt=\"$(2)$\" style=\"vertical-align: -4px\" width=\"21\" height=\"18\" />, this is also the same as never having equal, consecutive, terms in <img src=\"//latex.artofproblemsolving.com/7/c/5/7c5ced580e1ce5598a92105d2dd02a64bed2d609.png\" class=\"latex\" alt=\"$g_i\\pmod{m}$\" style=\"vertical-align: -5px\" width=\"95\" height=\"20\" />:\n</p><p><img src=\"//latex.artofproblemsolving.com/8/c/8/8c8e0f7614589c8a8e5f7ea5b5a9c6db9af6da54.png\" class=\"latexcenter\" alt=\"\\[(1)\\iff g_l\\not\\equiv g_{l-1}\\pmod{m}\\text{ for any integer }l&gt;1\\]\" width=\"388\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/1/5/5/155e5be8a57ff19ad4332c7399e3ad8cce4d86d1.png\" class=\"latexcenter\" alt=\"\\[\\iff g_{l-1}(r-1)\\not\\equiv 0\\pmod{m}.\\text{        (3)}\\]\" width=\"280\" height=\"18\" />\n</p><p><br />\nAlso, Condition <img src=\"//latex.artofproblemsolving.com/6/2/f/62f62a19f0425d8e6121ca0c1cfd3ce96e43c9c5.png\" class=\"latex\" alt=\"$(2)$\" style=\"vertical-align: -4px\" width=\"21\" height=\"18\" /> holds if\n<img src=\"//latex.artofproblemsolving.com/f/2/9/f29ec84ddf376f39496a9d4e00d6ef87cbda53c5.png\" class=\"latexcenter\" alt=\"\\[g_{l+1}-g_l\\equiv g_l-g_{l-1}\\pmod{m}\\]\" width=\"245\" height=\"18\" />\n<img src=\"//latex.artofproblemsolving.com/0/1/2/012bf8a065970a7eb7f6a4fae63b4e9493be334e.png\" class=\"latexcenter\" alt=\"\\[g_{l-1}(r-1)^2\\equiv0\\pmod{m}\\text{        (4)}.\\]\" width=\"245\" height=\"20\" />\n</p><p>Restating, <img src=\"//latex.artofproblemsolving.com/1/f/8/1f8d1475299c5f72b6b64ce7e1ef568e7b3ac3fa.png\" class=\"latex\" alt=\"$(1),(2)\\quad \\textrm{if} \\quad(3),(4)$\" style=\"vertical-align: -5px\" width=\"154\" height=\"20\" />, and the conditions <img src=\"//latex.artofproblemsolving.com/f/6/d/f6de24abd47a857080252fac928be976f9bb9520.png\" class=\"latex\" alt=\"$g_{l-1}(r-1)\\not\\equiv 0\\pmod{m}$\" style=\"vertical-align: -5px\" width=\"199\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/e/f/3/ef3bb16b8b3cf1c12b32d7a405554826c12e8e2d.png\" class=\"latex\" alt=\"$g_{l-1}(r-1)^2\\equiv0\\pmod{m}$\" style=\"vertical-align: -5px\" width=\"207\" height=\"21\" /> hold if and only if <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> is a perfect square.\n</p><p>[will finish that step here]\n</p><p>Note: This shouldn't work since we see that m = 12 is a solution. Let the initials for both series by 1, then let the ratio be 7 and the common difference to be 6. We see multiplying by 7 mod 12 that the geometric sequence is alternating from 1 to 7 to 1 to 7 and so on, which is the same as adding 6. Therefore, this solution is wrong. My counter-conjecture is that all non square-free m (4, 8, 9, 16, 18, 25...) should all work, but I don't have a proof. However, if you edit the one above, you can see non square-free m will work. In order to construct a ratio, we could us (4) and find a square multiple of m, take the square root and add 1 to get the ratio. Let <img src=\"//latex.artofproblemsolving.com/4/d/2/4d2c316205d1c4074e8a2a7145b85998354d57aa.png\" class=\"latex\" alt=\"$m = at^2$\" style=\"vertical-align: -1px\" width=\"66\" height=\"17\" /> then <img src=\"//latex.artofproblemsolving.com/d/3/1/d317886a3cb290214ffd28344b85d0245c85cfee.png\" class=\"latex\" alt=\"$at + 1 \\not\\equiv 1 \\pmod{at^2}$\" style=\"vertical-align: -5px\" width=\"169\" height=\"21\" /> or <img src=\"//latex.artofproblemsolving.com/d/1/3/d130f7f162b26c74edd0d82a2fee7f2acedc4133.png\" class=\"latex\" alt=\"$at$\" width=\"15\" height=\"11\" /> is not divisble by <img src=\"//latex.artofproblemsolving.com/4/5/f/45f455cf227b6eb02d6c199de6fb7941b2d7f676.png\" class=\"latex\" alt=\"$at^2$\" style=\"vertical-align: -1px\" width=\"25\" height=\"17\" />. If <img src=\"//latex.artofproblemsolving.com/9/c/3/9c30bbb3a66ef235e5183332e4bdd8bc0972d31d.png\" class=\"latex\" alt=\"$t = 1$\" style=\"vertical-align: 0px\" width=\"39\" height=\"12\" />, this is false and this is not possible. But if it isn't, if <img src=\"//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png\" class=\"latex\" alt=\"$m$\" width=\"15\" height=\"8\" /> isn't square free, then it should work.\n</p><p>Note: This counter-conjecture is correct. To prove it, it suffices to show that if m is square-free, then (3) and (4) contradict each other. Indeed, if m is square-free, then each prime dividing m only has a power of 1 in the prime factorization, so given (4) that m|<img src=\"//latex.artofproblemsolving.com/2/5/8/2589a509a9b5a28d47dd1a121c01b21deb76f135.png\" class=\"latex\" alt=\"$x\\cdot (r-1)^2$\" style=\"vertical-align: -5px\" width=\"87\" height=\"21\" />, m has at most one of each prime factor of <img src=\"//latex.artofproblemsolving.com/e/0/2/e0261d4f19873d8c7376696f264e3ee141471009.png\" class=\"latex\" alt=\"$x \\cdot (r-1)^2$\" style=\"vertical-align: -5px\" width=\"87\" height=\"21\" />, but then m has at most one of each prime factor of <img src=\"//latex.artofproblemsolving.com/5/8/3/58343beb56e601e3e4da257829032e90adcc8b56.png\" class=\"latex\" alt=\"$x \\cdot (r-1)$\" style=\"vertical-align: -5px\" width=\"80\" height=\"20\" />, so m divides <img src=\"//latex.artofproblemsolving.com/5/8/3/58343beb56e601e3e4da257829032e90adcc8b56.png\" class=\"latex\" alt=\"$x \\cdot (r-1)$\" style=\"vertical-align: -5px\" width=\"80\" height=\"20\" />, contradicting (3).\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_1&amp;action=edit&amp;section=4\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_USAJMO\" title=\"2022 USAJMO\">2022 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2022_USAJMO_Problems\" title=\"2022 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2022\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b>First Question</b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_2\" title=\"2022 USAJMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_2\" title=\"2022 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_3\" class=\"mw-redirect\" title=\"2022 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_4\" title=\"2022 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_5\" title=\"2022 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_6\" title=\"2022 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240908060151\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.066 seconds\nReal time usage: 0.072 seconds\nPreprocessor visited node count: 754/1000000\nPreprocessor generated node count: 1778/1000000\nPost‐expand include size: 1204/2097152 bytes\nTemplate argument size: 56/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 13929/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.885      1 -total\n 72.84%    2.830      1 Template:USAJMO_newbox\n 22.50%    0.874      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22656-0!canonical and timestamp 20240908060151 and revision id 219966\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2022",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_USAJMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_USAJMO_Problems/Problem_1",
+          "byteoffset": 445,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_USAJMO_Problems/Problem_1",
+          "byteoffset": 2160,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2022_USAJMO_Problems/Problem_1",
+          "byteoffset": 4973,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 USAJMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Modular Arithmetic",
+      "Geometric Series Sum",
+      "Diophantine Equations"
+    ]
+  },
+  "2022 USAJMO Problems/Problem 2": {
+    "parse": {
+      "title": "2022 USAJMO Problems/Problem 2",
+      "pageid": 22657,
+      "revid": 210317,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><div id=\"toc\" class=\"toc\"><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Problem\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Problem</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Solution_1:_Pigeonhole\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Solution 1: Pigeonhole</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Solution_2\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Solution 2</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Solution_3:_Graph_Theoretic\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Solution 3: Graph Theoretic</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_Also\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> be positive integers. The cells of an <img src=\"//latex.artofproblemsolving.com/1/2/1/121a7e1423deaa60ce50345183b9f40acd733667.png\" class=\"latex\" alt=\"$(a + b + 1)\\times (a + b + 1)$\" style=\"vertical-align: -5px\" width=\"194\" height=\"20\" /> grid are colored amber and bronze such that there are at least <img src=\"//latex.artofproblemsolving.com/5/4/1/5415997a56a2b97d6bc520444b30cbbbc8466525.png\" class=\"latex\" alt=\"$a^2+ab-b$\" style=\"vertical-align: -2px\" width=\"89\" height=\"18\" /> amber cells and at least <img src=\"//latex.artofproblemsolving.com/7/c/d/7cdfa552e5d21dc69beab6b1366d85347b6c0266.png\" class=\"latex\" alt=\"$b^2+ab-a$\" style=\"vertical-align: -2px\" width=\"89\" height=\"18\" /> bronze cells. Prove that it is possible to choose <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> amber cells and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> bronze cells such that no two of the <img src=\"//latex.artofproblemsolving.com/a/d/d/add2609af1bb7632cc22b68fd49fdd94de06b327.png\" class=\"latex\" alt=\"$a+b$\" style=\"vertical-align: -2px\" width=\"41\" height=\"16\" /> chosen cells lie in the same row or column.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1:_Pigeonhole\">Solution 1: Pigeonhole</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1: Pigeonhole\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/0/b/a/0ba4ddd26dfe94aaeda34e1f0c116cc58a6bbe51.png\" class=\"latex\" alt=\"$n=a+b+1$\" style=\"vertical-align: -1px\" width=\"105\" height=\"14\" />. There are <img src=\"//latex.artofproblemsolving.com/6/3/f/63f344e7d8b14a7886fc7fb72da53cd0a3271dcc.png\" class=\"latex\" alt=\"$n!$\" width=\"14\" height=\"13\" /> ways to select <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> cells such that no two are in the same row or column. Each such selection can be specified by <img src=\"//latex.artofproblemsolving.com/e/f/6/ef63744ef816b8b817b292bd8ce6ccb51297c176.png\" class=\"latex\" alt=\"$p_i=(p_{i1},p_{i2},\\cdots,p_{in})$\" style=\"vertical-align: -5px\" width=\"172\" height=\"20\" />, a permutation of <img src=\"//latex.artofproblemsolving.com/8/1/1/81164e2efee75ee34e89e1e7ca9c09aa93314965.png\" class=\"latex\" alt=\"$1,2,3,\\cdots,n$\" style=\"vertical-align: -3px\" width=\"97\" height=\"16\" />, such that in the <img src=\"//latex.artofproblemsolving.com/6/c/7/6c7d0a0c1fe48c51fc221b23357c019c873f5103.png\" class=\"latex\" alt=\"$k^\\text{th}$\" width=\"22\" height=\"15\" /> row, the cell in column <img src=\"//latex.artofproblemsolving.com/1/a/9/1a9381b130df02378027e97f8e6cc6c125bbf6b3.png\" class=\"latex\" alt=\"$p_{ik}$\" style=\"vertical-align: -4px\" width=\"24\" height=\"13\" /> is selected. Let <img src=\"//latex.artofproblemsolving.com/4/c/1/4c1c10246fa9096463dfd06142362e39f5ba45fd.png\" class=\"latex\" alt=\"$A(p_i)$\" style=\"vertical-align: -5px\" width=\"44\" height=\"20\" /> be the number of amber cells in the selection <img src=\"//latex.artofproblemsolving.com/2/4/5/245a5501248a6ea24f520f76d4140cedf08e1674.png\" class=\"latex\" alt=\"$p_i$\" style=\"vertical-align: -3px\" width=\"14\" height=\"11\" />. We just need to prove there exists a <img src=\"//latex.artofproblemsolving.com/2/4/5/245a5501248a6ea24f520f76d4140cedf08e1674.png\" class=\"latex\" alt=\"$p_i$\" style=\"vertical-align: -3px\" width=\"14\" height=\"11\" /> such that\n<img src=\"//latex.artofproblemsolving.com/3/0/7/30759590b19717864da037143a3cd2cdb79058ec.png\" class=\"latexcenter\" alt=\"\\[A(p_i)=a,\\text{ or } A(p_i)=a+1.\\]\" width=\"221\" height=\"18\" />\nUsing contradiction, assuming no such <img src=\"//latex.artofproblemsolving.com/2/4/5/245a5501248a6ea24f520f76d4140cedf08e1674.png\" class=\"latex\" alt=\"$p_i$\" style=\"vertical-align: -3px\" width=\"14\" height=\"11\" /> exists.\n</p><p>In calculating <img src=\"//latex.artofproblemsolving.com/b/6/4/b642375181338a8b92e660f883a486f36b5884a8.png\" class=\"latex\" alt=\"$\\sum A(p_i)$\" style=\"vertical-align: -11px\" width=\"73\" height=\"31\" />, each amber cell is counted <img src=\"//latex.artofproblemsolving.com/c/6/8/c680399c425113bf35cf459f6690f834aa62ac47.png\" class=\"latex\" alt=\"$(n-1)!$\" style=\"vertical-align: -4px\" width=\"59\" height=\"18\" /> times. We have\n<img src=\"//latex.artofproblemsolving.com/6/9/9/699966e3a75f0299b73e294d3078c44268aaf3a8.png\" class=\"latexcenter\" alt=\"\\[\\sum A(p_i) \\ge (n-1)!(a^2+ab-b).\\]\" width=\"261\" height=\"25\" />\n<img src=\"//latex.artofproblemsolving.com/1/d/c/1dc184a038597052aa510a73fb9b4e8a5e9fbe4c.png\" class=\"latexcenter\" alt=\"\\[\\Rightarrow\\max(A(p_i))\\ge\\left\\lceil\\frac{(n-1)!(a^2+ab-b)}{n!}\\right\\rceil=\\left\\lceil\\frac{n(a-1)+1}{n}\\right\\rceil = a.\\]\" width=\"508\" height=\"43\" />\nWLOG, let <img src=\"//latex.artofproblemsolving.com/f/3/9/f3963fabbf19c2246dea7a5f92c11479c71a1606.png\" class=\"latex\" alt=\"$A(p_1)=\\max(A(p_i))$\" style=\"vertical-align: -5px\" width=\"161\" height=\"20\" />. With the contradiction assumption\n<img src=\"//latex.artofproblemsolving.com/c/9/3/c93da6f302d5c5a6bb53c7c5b08bc51bc98c97d8.png\" class=\"latexcenter\" alt=\"\\[A(p_1)\\ge a+2.\\]\" width=\"112\" height=\"18\" />\nSimilarly, let <img src=\"//latex.artofproblemsolving.com/a/6/3/a63714be4c58edfae39df0a5eb9bca2cc87c2982.png\" class=\"latex\" alt=\"$A(p_2)=\\min(A(p_i))$\" style=\"vertical-align: -5px\" width=\"157\" height=\"20\" />.\n<img src=\"//latex.artofproblemsolving.com/1/0/c/10c3b80b02637a1e83c597fbefbe382b593585ba.png\" class=\"latexcenter\" alt=\"\\[\\sum A(p_i) \\le (n-1)![n^2-(b^2+ab-a)] \\Rightarrow \\min(A(p_i))\\le a+1 \\Rightarrow A(p_2)\\le a-1.\\]\" width=\"580\" height=\"25\" />\n</p><p>One can always move from <img src=\"//latex.artofproblemsolving.com/e/0/1/e01486dcc7cb25518b89692706b17389dc67c92b.png\" class=\"latex\" alt=\"$p_1$\" style=\"vertical-align: -3px\" width=\"15\" height=\"11\" /> to <img src=\"//latex.artofproblemsolving.com/a/2/e/a2e8bc2235f5b0094bc37f2ef74f7dc647f0a406.png\" class=\"latex\" alt=\"$p_2$\" style=\"vertical-align: -4px\" width=\"18\" height=\"13\" /> via a path in <img src=\"//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png\" class=\"latex\" alt=\"$p$\" style=\"vertical-align: -3px\" width=\"10\" height=\"11\" /> space\n<img src=\"//latex.artofproblemsolving.com/1/9/a/19a509de37326d806587bea29cca382b8daaf6aa.png\" class=\"latexcenter\" alt=\"\\[p_1\\rightarrow q_1 \\rightarrow q_2 \\rightarrow \\cdots \\rightarrow q_k \\rightarrow p_2\\]\" width=\"242\" height=\"13\" />\nsuch that in each step two numbers in the starting permutation are swapped to get the next permutation. For example if\n<img src=\"//latex.artofproblemsolving.com/6/8/d/68d032cf2da8fc3c3516d2933db5569878b2bef3.png\" class=\"latexcenter\" alt=\"\\[p_1=(5,4,3,1,2), p_2=(1,2,3,4,5)\\]\" width=\"273\" height=\"18\" />\none such path is \n<img src=\"//latex.artofproblemsolving.com/7/6/f/76fcd2e5cafc667cf3c71a3cc1b0a9b45a084a92.png\" class=\"latexcenter\" alt=\"\\[(5,4,3,1,2)\\rightarrow (1,4,3,5,2) \\rightarrow (1,2,3,5,4) \\rightarrow (1,2,3,4,5).\\]\" width=\"454\" height=\"18\" />\nThen the value of <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> along the path changes by at most 2 in each step. \nOn the other hand since <img src=\"//latex.artofproblemsolving.com/9/e/a/9ea4a383bdb5fa76ba2b0ec5a0ee3723b8aac790.png\" class=\"latex\" alt=\"$A(p_i)\\neq a, a+1$\" style=\"vertical-align: -5px\" width=\"127\" height=\"20\" />, there is a gap of at least width 3 in the range of <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />. A path starting above the gap and ending below the gap with max step size two should not exist. Contradiction. \n</p><p>Therefore there must be an <img src=\"//latex.artofproblemsolving.com/3/4/8/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png\" class=\"latex\" alt=\"$i$\" width=\"5\" height=\"12\" /> such that either <img src=\"//latex.artofproblemsolving.com/1/a/8/1a84de038e06194f97aa6f24680c1c536cc35ad5.png\" class=\"latex\" alt=\"$A(p_i)=a$\" style=\"vertical-align: -5px\" width=\"78\" height=\"20\" /> or <img src=\"//latex.artofproblemsolving.com/4/5/3/4532eabb0eb423b4f59fcf82069340f6a5c6c0f4.png\" class=\"latex\" alt=\"$A(p_i)=a+1$\" style=\"vertical-align: -5px\" width=\"109\" height=\"20\" />.\n(Y)\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_2\">Solution 2</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=3\" title=\"Edit section: Solution 2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We claim that it is possible to choose <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> amber cells such that no two lie in the same row or column.\n</p><p>Number the rows and columns from <img src=\"//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png\" class=\"latex\" alt=\"$1$\" style=\"vertical-align: -1px\" width=\"11\" height=\"14\" /> to <img src=\"//latex.artofproblemsolving.com/a/2/8/a285a67a3395500f0caf02036a88a79f795ba400.png\" class=\"latex\" alt=\"$a+b+1.$\" style=\"vertical-align: -2px\" width=\"78\" height=\"16\" /> In cell <img src=\"//latex.artofproblemsolving.com/d/6/5/d65e341986740d4269b766b4d01bf615ded39061.png\" class=\"latex\" alt=\"$(x,y),$\" style=\"vertical-align: -4px\" width=\"46\" height=\"18\" /> write the number <img src=\"//latex.artofproblemsolving.com/e/c/e/ece36c65cf52ba4d6d19c3a6ce7fc2281079bbc4.png\" class=\"latex\" alt=\"$x+y\\pmod{a+b+1}.$\" style=\"vertical-align: -5px\" width=\"183\" height=\"20\" />  Then two same-numbered cells will be on different rows and columns.\n</p><p>There are <img src=\"//latex.artofproblemsolving.com/1/1/a/11af7f46bc5e57d50e1e8c75ad61be022fb6a2cc.png\" class=\"latex\" alt=\"$a+b+1$\" style=\"vertical-align: -1px\" width=\"70\" height=\"14\" /> different numbers and <img src=\"//latex.artofproblemsolving.com/6/7/7/677dcda348dc010292614875d90819455ffe6a7b.png\" class=\"latex\" alt=\"$\\geq a^2+ab-b = (a-1)(a+b+1)+1$\" style=\"vertical-align: -5px\" width=\"303\" height=\"21\" /> amber cells. Using Pigeonhole, we have <img src=\"//latex.artofproblemsolving.com/1/1/a/11af7f46bc5e57d50e1e8c75ad61be022fb6a2cc.png\" class=\"latex\" alt=\"$a+b+1$\" style=\"vertical-align: -1px\" width=\"70\" height=\"14\" /> holes, and cells in the same hole are in different rows and columns, and <img src=\"//latex.artofproblemsolving.com/c/4/7/c474bb4083a9ecb697b11008f62903aaa895270e.png\" class=\"latex\" alt=\"$\\geq(a-1)(a+b+1)+1$\" style=\"vertical-align: -5px\" width=\"192\" height=\"20\" /> pigeons, so there exists <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> amber cells such that no two lie in the same row or column. Similarly, there exists b bronze cells such that no two lie in the same row or column.\n</p><p>Choose those <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> amber cells and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> bronze cells. If no two chosen cells lie in the same row or column then we are done. Otherwise, since there are <img src=\"//latex.artofproblemsolving.com/1/1/a/11af7f46bc5e57d50e1e8c75ad61be022fb6a2cc.png\" class=\"latex\" alt=\"$a+b+1$\" style=\"vertical-align: -1px\" width=\"70\" height=\"14\" /> rows and columns, there exists a row and a column with no chosen cell. If their intersection is an amber cell, choose that cells and unchoose an amber cell that is in the same row or column as a bronze cell. If the intersection is a bronze cell, choose that cell and unchoose a chosen bronze cell that is in the same row or column as an amber cell. Repeating this process, we can obtain <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> amber cells and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> bronze cells such that no two lie in the same row or column.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_3:_Graph_Theoretic\">Solution 3: Graph Theoretic</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=4\" title=\"Edit section: Solution 3: Graph Theoretic\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We can prove this statement by using the Hall's marriage theorem. Let us define a bipartite graph <img src=\"//latex.artofproblemsolving.com/a/c/3/ac3ef29408ccea28cd1e4ae46cf912cdc97c1c6e.png\" class=\"latex\" alt=\"$G = (A \\cup B, E)$\" style=\"vertical-align: -5px\" width=\"126\" height=\"20\" />, where <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> is the set of rows of the grid, <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" /> is the set of columns of the grid, and <img src=\"//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png\" class=\"latex\" alt=\"$E$\" style=\"vertical-align: -1px\" width=\"16\" height=\"14\" /> is the set of edges between <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png\" class=\"latex\" alt=\"$B$\" width=\"14\" height=\"12\" />. We say that a row <img src=\"//latex.artofproblemsolving.com/6/6/7/66705dd209e625e2717f8580bfe38cc2010e56fc.png\" class=\"latex\" alt=\"$a \\in A$\" style=\"vertical-align: -1px\" width=\"45\" height=\"14\" /> is connected to a column <img src=\"//latex.artofproblemsolving.com/2/c/4/2c4a5415d1e2419d839d8bd4d5045549c441bd4a.png\" class=\"latex\" alt=\"$b \\in B$\" style=\"vertical-align: -1px\" width=\"44\" height=\"13\" /> if and only if the cell in row <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and column <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> is colored amber.\n</p><p>Now, we need to show that the conditions of Hall's marriage theorem are satisfied. That is, for any subset <img src=\"//latex.artofproblemsolving.com/e/0/e/e0e00df1eb6cb7e3a34df3abe280c7feaf725987.png\" class=\"latex\" alt=\"$S \\subseteq A$\" style=\"vertical-align: -3px\" width=\"52\" height=\"17\" />, the number of columns connected to <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> is at least <img src=\"//latex.artofproblemsolving.com/1/1/c/11ceba9d7455309f60178fe82bb6e81e6c01fa83.png\" class=\"latex\" alt=\"$|S|$\" style=\"vertical-align: -4px\" width=\"20\" height=\"18\" />. To prove this, let <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> be any subset of <img src=\"//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png\" class=\"latex\" alt=\"$A$\" width=\"13\" height=\"13\" />, and let <img src=\"//latex.artofproblemsolving.com/2/5/5/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png\" class=\"latex\" alt=\"$T$\" width=\"13\" height=\"12\" /> be the set of columns connected to <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" />. Then, the number of amber cells in the rows of <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> is at least <img src=\"//latex.artofproblemsolving.com/8/5/b/85b70dc76b7411d990067841301f041cf0efa177.png\" class=\"latex\" alt=\"$a|S|$\" style=\"vertical-align: -5px\" width=\"34\" height=\"20\" />, and the number of amber cells in the rows not in <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> is at least <img src=\"//latex.artofproblemsolving.com/6/e/5/6e5f540b98264b5affdecd8ea22c09fe8e385742.png\" class=\"latex\" alt=\"$b(a+b+1)-a|S|$\" style=\"vertical-align: -5px\" width=\"149\" height=\"20\" />. Therefore, the total number of amber cells is at least <img src=\"//latex.artofproblemsolving.com/7/a/8/7a89a5fbc92659ff859edd0fad4861a4073e0b91.png\" class=\"latex\" alt=\"$a|S| + b(a+b+1)-a|S| = ab + b(a+b)$\" style=\"vertical-align: -5px\" width=\"328\" height=\"20\" />, which is at least <img src=\"//latex.artofproblemsolving.com/5/4/1/5415997a56a2b97d6bc520444b30cbbbc8466525.png\" class=\"latex\" alt=\"$a^2+ab-b$\" style=\"vertical-align: -2px\" width=\"89\" height=\"18\" /> by assumption. Hence, the number of columns connected to <img src=\"//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png\" class=\"latex\" alt=\"$S$\" style=\"vertical-align: -1px\" width=\"14\" height=\"14\" /> is at least <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" />.\n</p><p>Similarly, we can define a bipartite graph <img src=\"//latex.artofproblemsolving.com/3/0/c/30ceb0eba0af03c77a82feb5f932236c06f865d0.png\" class=\"latex\" alt=\"$G&#39; = (A \\cup B&#39;, E&#39;)$\" style=\"vertical-align: -5px\" width=\"140\" height=\"20\" />, where <img src=\"//latex.artofproblemsolving.com/4/c/7/4c71f19552a05ee5e2b31e94aff3fb986884bf31.png\" class=\"latex\" alt=\"$B&#39;$\" width=\"18\" height=\"14\" /> is the set of rows of the grid, and an edge between a row <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and a column <img src=\"//latex.artofproblemsolving.com/9/a/9/9a98c632330869a291bf7309a6eb55b0e9eb31df.png\" class=\"latex\" alt=\"$b&#39; \\in B&#39;$\" style=\"vertical-align: -2px\" width=\"56\" height=\"17\" /> exists if and only if the cell in row <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and column <img src=\"//latex.artofproblemsolving.com/d/3/9/d39574adf537bc19e989f7b69bee4bf19c7d7f1e.png\" class=\"latex\" alt=\"$b&#39;$\" width=\"11\" height=\"14\" /> is colored bronze. We can show that the conditions of Hall's marriage theorem are also satisfied for <img src=\"//latex.artofproblemsolving.com/4/2/6/4266c984c216eb19c23f8c0bfc87639017930763.png\" class=\"latex\" alt=\"$G&#39;$\" width=\"18\" height=\"14\" />.\n</p><p>Therefore, by Hall's marriage theorem, there exist matchings <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/7/6/b/76b4f897205beb16e266ea66d8ae8ece27cf5af8.png\" class=\"latex\" alt=\"$M&#39;$\" width=\"23\" height=\"14\" /> in <img src=\"//latex.artofproblemsolving.com/6/e/2/6e28ce12d49d39f160d5a0ef54077fc98e4b9d2b.png\" class=\"latex\" alt=\"$G$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/4/2/6/4266c984c216eb19c23f8c0bfc87639017930763.png\" class=\"latex\" alt=\"$G&#39;$\" width=\"18\" height=\"14\" />, respectively, such that each row and column in the grid is incident to at most one edge in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/7/6/b/76b4f897205beb16e266ea66d8ae8ece27cf5af8.png\" class=\"latex\" alt=\"$M&#39;$\" width=\"23\" height=\"14\" />. Let <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> be the set of cells in the grid that are covered by <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" />, and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" /> be the set of cells in the grid that are covered by <img src=\"//latex.artofproblemsolving.com/7/6/b/76b4f897205beb16e266ea66d8ae8ece27cf5af8.png\" class=\"latex\" alt=\"$M&#39;$\" width=\"23\" height=\"14\" />. Then, <img src=\"//latex.artofproblemsolving.com/2/f/5/2f5ad6137e601f6c22a2ded17509ea5f686df448.png\" class=\"latex\" alt=\"$|X| = |Y| = a+b$\" style=\"vertical-align: -5px\" width=\"141\" height=\"20\" />, since each matching covers a total of <img src=\"//latex.artofproblemsolving.com/a/d/d/add2609af1bb7632cc22b68fd49fdd94de06b327.png\" class=\"latex\" alt=\"$a+b$\" style=\"vertical-align: -2px\" width=\"41\" height=\"16\" /> cells. Moreover, no two cells in <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" /> lie in the same row or column, since each row and column is incident to at most one edge in <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> or <img src=\"//latex.artofproblemsolving.com/7/6/b/76b4f897205beb16e266ea66d8ae8ece27cf5af8.png\" class=\"latex\" alt=\"$M&#39;$\" width=\"23\" height=\"14\" />.\n</p><p>Finally, we can choose <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> amber cells and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> bronze cells from <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" />, respectively, such that no two of the chosen cells lie in the same row or column. This is because <img src=\"//latex.artofproblemsolving.com/2/f/5/2f5ad6137e601f6c22a2ded17509ea5f686df448.png\" class=\"latex\" alt=\"$|X| = |Y| = a+b$\" style=\"vertical-align: -5px\" width=\"141\" height=\"20\" />, and there are at least <img src=\"//latex.artofproblemsolving.com/5/4/1/5415997a56a2b97d6bc520444b30cbbbc8466525.png\" class=\"latex\" alt=\"$a^2+ab-b$\" style=\"vertical-align: -2px\" width=\"89\" height=\"18\" /> amber cells in the grid and at least <img src=\"//latex.artofproblemsolving.com/7/c/d/7cdfa552e5d21dc69beab6b1366d85347b6c0266.png\" class=\"latex\" alt=\"$b^2+ab-a$\" style=\"vertical-align: -2px\" width=\"89\" height=\"18\" /> bronze cells in the grid. Therefore, there are at least <img src=\"//latex.artofproblemsolving.com/5/4/1/5415997a56a2b97d6bc520444b30cbbbc8466525.png\" class=\"latex\" alt=\"$a^2+ab-b$\" style=\"vertical-align: -2px\" width=\"89\" height=\"18\" /> cells colored amber in <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" />, and at least <img src=\"//latex.artofproblemsolving.com/7/c/d/7cdfa552e5d21dc69beab6b1366d85347b6c0266.png\" class=\"latex\" alt=\"$b^2+ab-a$\" style=\"vertical-align: -2px\" width=\"89\" height=\"18\" /> cells colored bronze in <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" />. This implies that there are at least <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> amber cells in <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and at least <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> bronze cells in <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" />, so we can choose a subset of <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> amber cells from <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and a subset of <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> bronze cells from <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" />, such that no two of the chosen cells lie in the same row or column.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_2&amp;action=edit&amp;section=5\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_USAJMO\" title=\"2022 USAJMO\">2022 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2022_USAJMO_Problems\" title=\"2022 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2022\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_1\" title=\"2022 USAJMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_3\" class=\"mw-redirect\" title=\"2022 USAJMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_1\" title=\"2022 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_3\" class=\"mw-redirect\" title=\"2022 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_4\" title=\"2022 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_5\" title=\"2022 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_6\" title=\"2022 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907121203\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.071 seconds\nReal time usage: 0.074 seconds\nPreprocessor visited node count: 1148/1000000\nPreprocessor generated node count: 2642/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 20727/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.501      1 -total\n 74.78%    2.618      1 Template:USAJMO_newbox\n 22.77%    0.797      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22657-0!canonical and timestamp 20240907121203 and revision id 210317\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2022",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_USAJMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1: Pigeonhole",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_USAJMO_Problems/Problem_2",
+          "byteoffset": 458,
+          "anchor": "Solution_1:_Pigeonhole"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 2",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_USAJMO_Problems/Problem_2",
+          "byteoffset": 2596,
+          "anchor": "Solution_2"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 3: Graph Theoretic",
+          "number": "4",
+          "index": "4",
+          "fromtitle": "2022_USAJMO_Problems/Problem_2",
+          "byteoffset": 4073,
+          "anchor": "Solution_3:_Graph_Theoretic"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "5",
+          "index": "5",
+          "fromtitle": "2022_USAJMO_Problems/Problem_2",
+          "byteoffset": 7421,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 USAJMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Pigeonhole Principle",
+      "Graph Theory",
+      "Inclusion-Exclusion Principle"
+    ]
+  },
+  "2022 USAJMO Problems/Problem 3": {
+    "parse": {
+      "title": "2022 USAJMO Problems/Problem 3",
+      "pageid": 22658,
+      "revid": 173749,
+      "text": {
+        "*": "<div class=\"redirectMsg\"><p>Redirect to:</p><ul class=\"redirectText\"><li><a href=\"/wiki/index.php/2022_USAMO_Problems/Problem_2\" title=\"2022 USAMO Problems/Problem 2\">2022 USAMO Problems/Problem 2</a></li></ul></div><div class=\"mw-parser-output\">\n<!-- \nNewPP limit report\nCached time: 20240908060152\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.011 seconds\nReal time usage: 0.011 seconds\nPreprocessor visited node count: 0/1000000\nPreprocessor generated node count: 2/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 0/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22658-0!canonical and timestamp 20240908060152 and revision id 173749\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAMO Problems/Problem 2"
+        }
+      ],
+      "templates": [],
+      "images": [],
+      "externallinks": [],
+      "sections": [],
+      "parsewarnings": [],
+      "displaytitle": "2022 USAJMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Geometric Mean",
+      "Diophantine Equations"
+    ]
+  },
+  "2022 USAJMO Problems/Problem 4": {
+    "parse": {
+      "title": "2022 USAJMO Problems/Problem 4",
+      "pageid": 22660,
+      "revid": 215386,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" /> be a rhombus, and let <img src=\"//latex.artofproblemsolving.com/d/f/b/dfb064112b6c94470339f6571f69d07afc1c024c.png\" class=\"latex\" alt=\"$K$\" width=\"16\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/8/5/9/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png\" class=\"latex\" alt=\"$L$\" width=\"12\" height=\"12\" /> be points such that <img src=\"//latex.artofproblemsolving.com/d/f/b/dfb064112b6c94470339f6571f69d07afc1c024c.png\" class=\"latex\" alt=\"$K$\" width=\"16\" height=\"12\" /> lies inside the rhombus, <img src=\"//latex.artofproblemsolving.com/8/5/9/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png\" class=\"latex\" alt=\"$L$\" width=\"12\" height=\"12\" /> lies outside the rhombus, and <img src=\"//latex.artofproblemsolving.com/7/5/1/751d75f1122a9c7fe5a00dea8b2b123d24585c96.png\" class=\"latex\" alt=\"$KA=KB=LC=LD$\" style=\"vertical-align: -1px\" width=\"191\" height=\"14\" />. Prove that there exist points <img src=\"//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png\" class=\"latex\" alt=\"$X$\" width=\"15\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/c/e/5/ce58e4af225c93d08606c26554caaa5ae32edeba.png\" class=\"latex\" alt=\"$Y$\" width=\"14\" height=\"12\" /> on lines <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/8/9/f/89fff82bb65d0215e49c8c91cb7c553da52205e2.png\" class=\"latex\" alt=\"$BD$\" width=\"29\" height=\"12\" /> such that <img src=\"//latex.artofproblemsolving.com/e/e/6/ee6a15923a3f7570a0db869af85bd2f7e5c54013.png\" class=\"latex\" alt=\"$KXLY$\" style=\"vertical-align: -1px\" width=\"62\" height=\"14\" /> is also a rhombus.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>(Image of the solution is here <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://wiki-images.artofproblemsolving.com//d/de/Usajmo2022-4.png\">[1]</a>)\n</p><p>Let's draw (<img src=\"//latex.artofproblemsolving.com/6/3/c/63c17c295325f731666c7d74952b563a01e00fcc.png\" class=\"latex\" alt=\"$\\ell$\" style=\"vertical-align: 0px\" width=\"7\" height=\"13\" />) perpendicular bisector of <img src=\"//latex.artofproblemsolving.com/3/8/f/38fca9b1f53e3e90a96af8cf5e1a57c634115760.png\" class=\"latex\" alt=\"$\\overline{KL}$\" width=\"29\" height=\"15\" />. Let <img src=\"//latex.artofproblemsolving.com/7/8/8/788f3c8df73c43990991c6f116e759e1e1116b47.png\" class=\"latex\" alt=\"$X, Y$\" style=\"vertical-align: -3px\" width=\"37\" height=\"16\" /> be intersections of <img src=\"//latex.artofproblemsolving.com/6/3/c/63c17c295325f731666c7d74952b563a01e00fcc.png\" class=\"latex\" alt=\"$\\ell$\" style=\"vertical-align: 0px\" width=\"7\" height=\"13\" /> with <img src=\"//latex.artofproblemsolving.com/a/1/7/a179ff2638e4799cadd820db205c2beff6299ce9.png\" class=\"latex\" alt=\"$AC$\" style=\"vertical-align: -1px\" width=\"30\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/8/9/f/89fff82bb65d0215e49c8c91cb7c553da52205e2.png\" class=\"latex\" alt=\"$BD$\" width=\"29\" height=\"12\" />, respectively. <img src=\"//latex.artofproblemsolving.com/e/e/6/ee6a15923a3f7570a0db869af85bd2f7e5c54013.png\" class=\"latex\" alt=\"$KXLY$\" style=\"vertical-align: -1px\" width=\"62\" height=\"14\" /> is a kite. Let <img src=\"//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png\" class=\"latex\" alt=\"$O$\" width=\"13\" height=\"12\" /> mid-point of <img src=\"//latex.artofproblemsolving.com/3/8/f/38fca9b1f53e3e90a96af8cf5e1a57c634115760.png\" class=\"latex\" alt=\"$\\overline{KL}$\" width=\"29\" height=\"15\" />. Let <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> mid-point of <img src=\"//latex.artofproblemsolving.com/4/3/7/4373e7b4be983c0315e82e1fda1df66ed34dd7fb.png\" class=\"latex\" alt=\"$\\overline{BD}$\" width=\"30\" height=\"15\" /> (and also <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> is mid-point of <img src=\"//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png\" class=\"latex\" alt=\"$\\overline{AC}$\" style=\"vertical-align: -1px\" width=\"30\" height=\"18\" />). <img src=\"//latex.artofproblemsolving.com/b/6/5/b658f6e49366289fb256923a3e3418e8a17c15b4.png\" class=\"latex\" alt=\"$X, O, Y$\" style=\"vertical-align: -3px\" width=\"60\" height=\"16\" /> are on the line <img src=\"//latex.artofproblemsolving.com/6/3/c/63c17c295325f731666c7d74952b563a01e00fcc.png\" class=\"latex\" alt=\"$\\ell$\" style=\"vertical-align: 0px\" width=\"7\" height=\"13\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/f/a/a/faaea912636627782fa4d89174bdef1eed2e49a6.png\" class=\"latex\" alt=\"$BK=DL$\" style=\"vertical-align: -1px\" width=\"85\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/2/b/e/2be6cb325986ace4a4b695c98cb672f416c99be2.png\" class=\"latex\" alt=\"$BX=XD$\" style=\"vertical-align: -1px\" width=\"89\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/d/7/4/d74a837d3d90527d644f88aae47d3254e854240f.png\" class=\"latex\" alt=\"$XK=XL$\" width=\"86\" height=\"12\" /> and so <img src=\"//latex.artofproblemsolving.com/4/8/6/4868958ccd28dfb0c5e05bf3f3d13dc0d452fcd0.png\" class=\"latex\" alt=\"$\\triangle BXK \\cong \\triangle DXL$\" style=\"vertical-align: -4px\" width=\"151\" height=\"18\" /> (side-side-side). By spiral similarity, <img src=\"//latex.artofproblemsolving.com/4/5/9/459f5b21ba897544aa5d1efd354b137ffe13ecfc.png\" class=\"latex\" alt=\"$\\triangle BXD \\sim\\triangle KXL$\" style=\"vertical-align: -4px\" width=\"151\" height=\"18\" />. Hence, we get\n<img src=\"//latex.artofproblemsolving.com/0/8/2/082476caa7bcf0acf76612a58deda3570a43910a.png\" class=\"latexcenter\" alt=\"\\[\\angle XBD = \\angle XDB = \\angle XKL = \\angle XLK = b .\\]\" width=\"344\" height=\"12\" />\n</p><p>Similarly, <img src=\"//latex.artofproblemsolving.com/6/e/8/6e8e5987410e96eb6bf1c422728900c4cf502771.png\" class=\"latex\" alt=\"$AK =CL$\" style=\"vertical-align: -1px\" width=\"83\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/2/c/7/2c71fdddb374623f00b51d1964eac30926175bfe.png\" class=\"latex\" alt=\"$YK = YL$\" style=\"vertical-align: -1px\" width=\"84\" height=\"14\" />, <img src=\"//latex.artofproblemsolving.com/7/a/c/7ac6486ad041e92b935e6380588bbd49a22ef1f8.png\" class=\"latex\" alt=\"$YA=YC$\" width=\"81\" height=\"13\" /> and so <img src=\"//latex.artofproblemsolving.com/2/8/3/2838fd3d0f11f60768681ea03604fcc4afacf180.png\" class=\"latex\" alt=\"$\\triangle AKY \\cong \\triangle CYL$\" style=\"vertical-align: -4px\" width=\"145\" height=\"18\" /> (side-side-side). From spiral similarity, <img src=\"//latex.artofproblemsolving.com/e/3/2/e324e44e22b33fcce6aee0e225e156b1b043a4ee.png\" class=\"latex\" alt=\"$\\triangle YKL\\sim \\triangle YAC$\" style=\"vertical-align: -4px\" width=\"145\" height=\"18\" />. Thus,\n</p><p><img src=\"//latex.artofproblemsolving.com/e/f/b/efb9bde9c5bfdca77eede7a21fc7ae38b272a8ab.png\" class=\"latexcenter\" alt=\"\\[\\angle YAC = \\angle YCA = \\angle YKL = \\angle YLK = a .\\]\" width=\"333\" height=\"13\" />\n</p><p>If we can show that <img src=\"//latex.artofproblemsolving.com/5/a/b/5abd2c942ae299fd26e18d0ca5d390a7ca4a8c34.png\" class=\"latex\" alt=\"$a=b$\" width=\"42\" height=\"12\" />, then the kite <img src=\"//latex.artofproblemsolving.com/e/e/6/ee6a15923a3f7570a0db869af85bd2f7e5c54013.png\" class=\"latex\" alt=\"$KXLY$\" style=\"vertical-align: -1px\" width=\"62\" height=\"14\" /> will be a rhombus.\n</p><p>By spiral similarities, <img src=\"//latex.artofproblemsolving.com/3/8/a/38a467ee5dcdb1dd358ce1a59b9a323978f5b6b1.png\" class=\"latex\" alt=\"$\\dfrac{BX}{BD} = \\dfrac{XK}{KL}$\" style=\"vertical-align: -13px\" width=\"98\" height=\"39\" /> and <img src=\"//latex.artofproblemsolving.com/9/7/6/976d640db12563c9a4fcf4e36ec5aa87584ebcb9.png\" class=\"latex\" alt=\"$\\dfrac{YA}{AC} = \\dfrac{YK}{KL}$\" style=\"vertical-align: -13px\" width=\"94\" height=\"39\" />. Then, <img src=\"//latex.artofproblemsolving.com/6/d/c/6dcf334767c9dcfe02d069ed6356eb5cf1c0dca7.png\" class=\"latex\" alt=\"$KL = \\dfrac{BD \\cdot XK}{BX} = \\dfrac{AC \\cdot YK}{YA}$\" style=\"vertical-align: -13px\" width=\"236\" height=\"39\" />.\n</p><p><img src=\"//latex.artofproblemsolving.com/a/8/5/a85ba5b1409635e43c6c33f1a896cfa147b2f8e4.png\" class=\"latex\" alt=\"$\\dfrac{XK}{YK} = \\dfrac{AC \\cdot BX}{AY \\cdot BD}$\" style=\"vertical-align: -13px\" width=\"140\" height=\"39\" />. Then, <img src=\"//latex.artofproblemsolving.com/1/f/4/1f4caaebf989e804ebcb850d984339e69d1934ad.png\" class=\"latex\" alt=\"$\\dfrac{YK}{XK} = \\dfrac{(BD/2) \\cdot AY}{(AC/2) \\cdot BX} = \\dfrac{\\sin b}{\\sin a}$\" style=\"vertical-align: -18px\" width=\"235\" height=\"45\" />. Also, in the right triangles <img src=\"//latex.artofproblemsolving.com/f/c/3/fc363f5790abad783ead86e052bcbd0de3ac632b.png\" class=\"latex\" alt=\"$\\triangle KXO$\" style=\"vertical-align: -4px\" width=\"66\" height=\"18\" /> and <img src=\"//latex.artofproblemsolving.com/5/b/1/5b18261a7aa3426324ad5ec8cbd390bab304c6b5.png\" class=\"latex\" alt=\"$\\triangle KYO$\" style=\"vertical-align: -4px\" width=\"64\" height=\"18\" />,  <img src=\"//latex.artofproblemsolving.com/a/6/0/a600673360873825ac5bc30032a982a180951238.png\" class=\"latex\" alt=\"$\\dfrac{YK}{XK} = \\dfrac{OK/\\cos a}{OK/\\cos b} = \\dfrac{\\cos b}{\\cos a}$\" style=\"vertical-align: -18px\" width=\"212\" height=\"45\" />. Therefore,\n<img src=\"//latex.artofproblemsolving.com/0/f/4/0f42161bb7f14fe8b99c5c230dff66b89c20a435.png\" class=\"latexcenter\" alt=\"\\[\\dfrac{\\sin b}{\\sin a} = \\dfrac{\\cos b}{\\cos a}.\\]\" width=\"105\" height=\"37\" />\n</p><p><img src=\"//latex.artofproblemsolving.com/e/b/4/eb4399275042e66468c19fced3ace15e29202164.png\" class=\"latex\" alt=\"$\\sin a \\cos b = \\sin b \\cos a \\implies \\sin a \\cos b - \\sin b \\cos a = 0 \\implies \\sin(a-b) = 0$\" style=\"vertical-align: -5px\" width=\"583\" height=\"20\" /> and we get <img src=\"//latex.artofproblemsolving.com/5/a/b/5abd2c942ae299fd26e18d0ca5d390a7ca4a8c34.png\" class=\"latex\" alt=\"$a=b$\" width=\"42\" height=\"12\" />.\n</p><p>(Lokman GÖKÇE)\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_USAJMO\" title=\"2022 USAJMO\">2022 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2022_USAJMO_Problems\" title=\"2022 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2022\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_3\" class=\"mw-redirect\" title=\"2022 USAJMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_5\" title=\"2022 USAJMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_1\" title=\"2022 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_2\" title=\"2022 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_3\" class=\"mw-redirect\" title=\"2022 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_5\" title=\"2022 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_6\" title=\"2022 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240908060152\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.058 seconds\nReal time usage: 0.063 seconds\nPreprocessor visited node count: 501/1000000\nPreprocessor generated node count: 1214/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 8973/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.216      1 -total\n 73.34%    3.092      1 Template:USAJMO_newbox\n 21.30%    0.898      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22660-0!canonical and timestamp 20240908060152 and revision id 215386\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "https://wiki-images.artofproblemsolving.com//d/de/Usajmo2022-4.png",
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2022",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_USAJMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_USAJMO_Problems/Problem_4",
+          "byteoffset": 378,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_USAJMO_Problems/Problem_4",
+          "byteoffset": 2410,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 USAJMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Geometric Mean",
+      "Law of Cosines",
+      "Angle Bisector Theorem"
+    ]
+  },
+  "2022 USAJMO Problems/Problem 5": {
+    "parse": {
+      "title": "2022 USAJMO Problems/Problem 5",
+      "pageid": 22659,
+      "revid": 199238,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h3><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<p>Find all pairs of primes <img src=\"//latex.artofproblemsolving.com/b/6/b/b6b7a40ab0d8178e83fe1b91c511d04b1246059b.png\" class=\"latex\" alt=\"$(p,q)$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" /> for which <img src=\"//latex.artofproblemsolving.com/a/1/f/a1f8131b9cef2c23369011c1cbc425f2861c026e.png\" class=\"latex\" alt=\"$p-q$\" style=\"vertical-align: -4px\" width=\"42\" height=\"16\" /> and <img src=\"//latex.artofproblemsolving.com/9/d/5/9d5681a55a654874058d03ade8b5b02eb70ff10d.png\" class=\"latex\" alt=\"$pq-q$\" style=\"vertical-align: -4px\" width=\"51\" height=\"16\" /> are both perfect squares.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution_1\">Solution 1</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution 1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We first consider the case where one of <img src=\"//latex.artofproblemsolving.com/f/7/7/f779d95c15f7e41de74cb767f52fe4e7b92c745e.png\" class=\"latex\" alt=\"$p,q$\" style=\"vertical-align: -3px\" width=\"26\" height=\"11\" /> is even. If <img src=\"//latex.artofproblemsolving.com/2/5/b/25b803838ba4ded99f094071740c256527784b2e.png\" class=\"latex\" alt=\"$p=2$\" style=\"vertical-align: -3px\" width=\"43\" height=\"15\" />, <img src=\"//latex.artofproblemsolving.com/d/b/4/db486c375f5f2f91e5d8cfc22bb5f81e7b17b6fb.png\" class=\"latex\" alt=\"$p-q=0$\" style=\"vertical-align: -4px\" width=\"75\" height=\"17\" /> and <img src=\"//latex.artofproblemsolving.com/e/7/9/e79aae3e6668eb5e7d26393ab105447ec6bbc1a5.png\" class=\"latex\" alt=\"$pq-q=2$\" style=\"vertical-align: -4px\" width=\"84\" height=\"17\" /> which doesn't satisfy the problem restraints. If <img src=\"//latex.artofproblemsolving.com/2/2/4/2249017892bda0490d89aa6d997b953b070b1ba1.png\" class=\"latex\" alt=\"$q=2$\" style=\"vertical-align: -3px\" width=\"41\" height=\"15\" />, we can set <img src=\"//latex.artofproblemsolving.com/1/f/5/1f57e4af177fc823565ef3691653176189276098.png\" class=\"latex\" alt=\"$p-2=x^2$\" style=\"vertical-align: -4px\" width=\"84\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/6/4/9/649bdb20bf9c8fda51249ddaa6a000905f4952ef.png\" class=\"latex\" alt=\"$2p-2=y^2$\" style=\"vertical-align: -4px\" width=\"93\" height=\"20\" /> giving us <img src=\"//latex.artofproblemsolving.com/e/9/8/e98adbbe1e23540600215e6bbdf21fc5f8c35503.png\" class=\"latex\" alt=\"$p=y^2-x^2=(y+x)(y-x)$\" style=\"vertical-align: -5px\" width=\"229\" height=\"21\" />. This forces <img src=\"//latex.artofproblemsolving.com/c/c/e/ccebb279d54ee2ff5f2566e3abc5d84516b6356f.png\" class=\"latex\" alt=\"$y-x=1$\" style=\"vertical-align: -4px\" width=\"77\" height=\"17\" /> so <img src=\"//latex.artofproblemsolving.com/0/8/c/08c8a7511667e369a114454e2fbcf886d41314a8.png\" class=\"latex\" alt=\"$p=2x+1\\rightarrow 2x+1=x^2+2 \\rightarrow x=1$\" style=\"vertical-align: -4px\" width=\"310\" height=\"20\" /> giving us the solution <img src=\"//latex.artofproblemsolving.com/1/a/5/1a56c7a0994aaddae8d93f28a294cdd16647b61c.png\" class=\"latex\" alt=\"$(p,q)=(3,2)$\" style=\"vertical-align: -4px\" width=\"103\" height=\"18\" />.\n</p><p><br />\nNow assume that <img src=\"//latex.artofproblemsolving.com/f/7/7/f779d95c15f7e41de74cb767f52fe4e7b92c745e.png\" class=\"latex\" alt=\"$p,q$\" style=\"vertical-align: -3px\" width=\"26\" height=\"11\" /> are both odd primes. Set <img src=\"//latex.artofproblemsolving.com/6/b/d/6bd586d530ea67572359a32943e4b08a1be82ceb.png\" class=\"latex\" alt=\"$p-q=x^2$\" style=\"vertical-align: -4px\" width=\"84\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/9/c/b/9cb5d69761f5deeefed09b8b2df0f5897eb71a34.png\" class=\"latex\" alt=\"$pq-q=y^2$\" style=\"vertical-align: -4px\" width=\"92\" height=\"20\" /> so <img src=\"//latex.artofproblemsolving.com/d/9/5/d9571edeb0404c2f17064a601172f22cd2a3546b.png\" class=\"latex\" alt=\"$(pq-q)-(p-q)=y^2-x^2 \\rightarrow p(q-1)$\" style=\"vertical-align: -5px\" width=\"314\" height=\"21\" /> <img src=\"//latex.artofproblemsolving.com/f/4/8/f48c56a37b8d11aed26b6dba6fb281b68b95d7a7.png\" class=\"latex\" alt=\"$=(y+x)(y-x)$\" style=\"vertical-align: -5px\" width=\"134\" height=\"20\" />. Since <img src=\"//latex.artofproblemsolving.com/4/4/e/44e3e7ac887593f91293a07ba670c830f2b88563.png\" class=\"latex\" alt=\"$y+x&gt;y-x$\" style=\"vertical-align: -4px\" width=\"110\" height=\"16\" />, <img src=\"//latex.artofproblemsolving.com/8/0/e/80efb7c86493d1610b4ffd0d4db84f25297b3d31.png\" class=\"latex\" alt=\"$p | (x+y)$\" style=\"vertical-align: -5px\" width=\"72\" height=\"20\" />. Note that <img src=\"//latex.artofproblemsolving.com/5/5/a/55af207869f43d97328748a5cb85274095a6a935.png\" class=\"latex\" alt=\"$q-1$\" style=\"vertical-align: -3px\" width=\"39\" height=\"15\" /> is an even integer and since <img src=\"//latex.artofproblemsolving.com/6/6/4/664b6746f67e0733c4e070dacafae867f279a6ee.png\" class=\"latex\" alt=\"$y+x$\" style=\"vertical-align: -3px\" width=\"42\" height=\"14\" /> and <img src=\"//latex.artofproblemsolving.com/1/5/2/1528b38e29e999e114af339c40ba2596e89c8182.png\" class=\"latex\" alt=\"$y-x$\" style=\"vertical-align: -3px\" width=\"42\" height=\"11\" /> have the same parity, they both must be even. Therefore, <img src=\"//latex.artofproblemsolving.com/6/c/5/6c53f9d0d4c5b07bdd60522e24158cfb4cdce43a.png\" class=\"latex\" alt=\"$x+y=pk$\" style=\"vertical-align: -4px\" width=\"87\" height=\"18\" /> for some positive even integer <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />. On the other hand, <img src=\"//latex.artofproblemsolving.com/8/9/0/890b4b10eef2a0ddd9aa9b2fc5948f4c6f198978.png\" class=\"latex\" alt=\"$p&gt;p-q=x^2 \\rightarrow p&gt;x$\" style=\"vertical-align: -4px\" width=\"190\" height=\"20\" /> and <img src=\"//latex.artofproblemsolving.com/2/2/c/22c3eeea8247df873151d994d00d2d33928099dd.png\" class=\"latex\" alt=\"$p^2-p&gt;pq-q=y^2 \\rightarrow p&gt;y$\" style=\"vertical-align: -4px\" width=\"235\" height=\"20\" />. Therefore, <img src=\"//latex.artofproblemsolving.com/6/a/d/6ada009c28d02a8f1243580682a34d599e23175d.png\" class=\"latex\" alt=\"$2p&gt;x+y$\" style=\"vertical-align: -4px\" width=\"86\" height=\"17\" /> so <img src=\"//latex.artofproblemsolving.com/4/c/e/4ce113ee31fb78ac35d184422fb71a915e6da6ed.png\" class=\"latex\" alt=\"$x+y=p$\" style=\"vertical-align: -4px\" width=\"77\" height=\"16\" />, giving us a contradiction.\n</p><p><br />\nTherefore, the only solution to this problem is <img src=\"//latex.artofproblemsolving.com/1/a/5/1a56c7a0994aaddae8d93f28a294cdd16647b61c.png\" class=\"latex\" alt=\"$(p,q)=(3,2)$\" style=\"vertical-align: -4px\" width=\"103\" height=\"18\" />.\n</p><p><br />\n~BennettHuang\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_USAJMO\" title=\"2022 USAJMO\">2022 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2022_USAJMO_Problems\" title=\"2022 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2022\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_4\" title=\"2022 USAJMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_6\" title=\"2022 USAJMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_1\" title=\"2022 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_2\" title=\"2022 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_3\" class=\"mw-redirect\" title=\"2022 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_4\" title=\"2022 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_6\" title=\"2022 USAJMO Problems/Problem 6\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907111703\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.053 seconds\nReal time usage: 0.221 seconds\nPreprocessor visited node count: 321/1000000\nPreprocessor generated node count: 814/1000000\nPost‐expand include size: 1234/2097152 bytes\nTemplate argument size: 48/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5572/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   20.896      1 -total\n 72.98%   15.249      1 Template:USAJMO_newbox\n 25.95%    5.422      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22659-0!canonical and timestamp 20240907111703 and revision id 199238\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2022",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "3",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_USAJMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution 1",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_USAJMO_Problems/Problem_5",
+          "byteoffset": 134,
+          "anchor": "Solution_1"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_USAJMO_Problems/Problem_5",
+          "byteoffset": 1330,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 USAJMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Prime Factorization",
+      "Modular Arithmetic",
+      "Diophantine Equations"
+    ]
+  },
+  "2022 USAJMO Problems/Problem 6": {
+    "parse": {
+      "title": "2022 USAJMO Problems/Problem 6",
+      "pageid": 22661,
+      "revid": 199239,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/e/c/7/ec7f5c8a2e333c93cce2a88e21f33042eafde614.png\" class=\"latex\" alt=\"$a_0,b_0,c_0$\" style=\"vertical-align: -3px\" width=\"62\" height=\"16\" /> be complex numbers, and define\n</p><p><img src=\"//latex.artofproblemsolving.com/c/a/4/ca4a66b31e3c693419b2771c78287d9c589fa2f5.png\" class=\"latexcenter\" alt=\"\\[a_{n+1}=a_n^2+2b_nc_n\\]\" width=\"142\" height=\"20\" />\n<img src=\"//latex.artofproblemsolving.com/4/6/3/463e0666030d03bba947553e814096c91db2b329.png\" class=\"latexcenter\" alt=\"\\[b_{n+1}=b_n^2+2c_na_n\\]\" width=\"140\" height=\"20\" />\n<img src=\"//latex.artofproblemsolving.com/5/e/c/5eceeed057fdd37716fb322b3962ee36433d75ab.png\" class=\"latexcenter\" alt=\"\\[c_{n+1}=c_n^2+2a_nb_n\\]\" width=\"140\" height=\"20\" />\nfor all nonnegative integers <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />.\n</p><p>Suppose that <img src=\"//latex.artofproblemsolving.com/8/3/5/83560f9ad39323aa08aa51fd2f8c0e369f58d8aa.png\" class=\"latex\" alt=\"$\\max{|a_n|,|b_n|,|c_n|}\\leq2022$\" style=\"vertical-align: -5px\" width=\"198\" height=\"20\" /> for all <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />. Prove that\n<img src=\"//latex.artofproblemsolving.com/f/a/d/fad6f3579e7bc550cc761eaa40aa09481da67745.png\" class=\"latexcenter\" alt=\"\\[|a_0|^2+|b_0|^2+|c_0|^2\\leq 1.\\]\" width=\"179\" height=\"20\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=2022_USAJMO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"margin:0.5em auto; font-size:95%; border:1px solid black; width:40%;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/2022_USAJMO\" title=\"2022 USAJMO\">2022 USAJMO</a></b> (<b><a href=\"/wiki/index.php/2022_USAJMO_Problems\" title=\"2022 USAJMO Problems\">Problems</a></b> • <a rel=\"nofollow\" class=\"external text\" href=\"http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=176&amp;year=2022\">Resources</a>)\n</td></tr>\n<tr>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_5\" title=\"2022 USAJMO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"50%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_1\" title=\"2022 USAJMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_2\" title=\"2022 USAJMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_3\" class=\"mw-redirect\" title=\"2022 USAJMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_4\" title=\"2022 USAJMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/2022_USAJMO_Problems/Problem_5\" title=\"2022 USAJMO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td></tr>\n<tr>\n<td colspan=\"3\" style=\"text-align:center;\"><b><a href=\"/wiki/index.php/USAJMO_Problems_and_Solutions\" title=\"USAJMO Problems and Solutions\"> All USAJMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n<p>The problems on this page are copyrighted by the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maa.org\">Mathematical Association of America</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"https://maa.org/student-programs/amc/\">American Mathematics Competitions</a>. <a href=\"/wiki/index.php/File:AMC_logo.png\" class=\"image\"><img alt=\"AMC logo.png\" src=\"https://wiki-images.artofproblemsolving.com//8/8b/AMC_logo.png\" width=\"97\" height=\"84\" style=\"vertical-align: middle\" /></a>\n</p>\n<div style=\"clear:both;\"></div>\n\n<!-- \nNewPP limit report\nCached time: 20240907090057\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.046 seconds\nReal time usage: 0.232 seconds\nPreprocessor visited node count: 111/1000000\nPreprocessor generated node count: 354/1000000\nPost‐expand include size: 1203/2097152 bytes\nTemplate argument size: 55/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1364/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   38.900      1 -total\n 60.67%   23.599      1 Template:USAJMO_newbox\n 38.75%   15.075      1 Template:MAA_Notice\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:22661-0!canonical and timestamp 20240907090057 and revision id 199239\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "2022 USAJMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "USAJMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO newbox"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:USAJMO box"
+        },
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:MAA Notice"
+        }
+      ],
+      "images": [
+        "AMC_logo.png"
+      ],
+      "externallinks": [
+        "http://www.artofproblemsolving.com/Forum/resources.php?c=182&cid=176&year=2022",
+        "http://www.maa.org",
+        "https://maa.org/student-programs/amc/"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "2022_USAJMO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "2022_USAJMO_Problems/Problem_6",
+          "byteoffset": 370,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "2022_USAJMO_Problems/Problem_6",
+          "byteoffset": 384,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "2022 USAJMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Complex Numbers",
+      "Sequences and Series",
+      "Inequalities"
+    ]
+  }
+}

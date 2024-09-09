@@ -1,0 +1,617 @@
+{
+  "1965 IMO Problems/Problem 1": {
+    "parse": {
+      "title": "1965 IMO Problems/Problem 1",
+      "pageid": 8271,
+      "revid": 35170,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_1&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Determine all values <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> in the interval <img src=\"//latex.artofproblemsolving.com/3/e/f/3efe8d5774acdb98332975e307ec556749f7a2e9.png\" class=\"latex\" alt=\"$0\\leq x\\leq 2\\pi$\" style=\"vertical-align: -2px\" width=\"87\" height=\"15\" /> which satisfy the inequality\n<img src=\"//latex.artofproblemsolving.com/4/b/8/4b8f8dde7d81edc16f593f80f05d7d1b85bf26e0.png\" class=\"latexcenter\" alt=\"\\[2\\cos x \\leq \\left| \\sqrt{1+\\sin 2x} - \\sqrt{1-\\sin 2x } \\right| \\leq \\sqrt{2}.\\]\" width=\"342\" height=\"33\" />\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_1&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>We shall deal with the left side of the inequality first (<img src=\"//latex.artofproblemsolving.com/a/a/d/aad26369195e34beac5f4e7a7874ff7277eae5e9.png\" class=\"latex\" alt=\"$2\\cos x \\leq \\left| \\sqrt{1+\\sin 2x} - \\sqrt{1-\\sin 2x } \\right|$\" style=\"vertical-align: -12px\" width=\"293\" height=\"34\" />) and the right side after that.\n</p><p>It is clear that the left inequality is true when <img src=\"//latex.artofproblemsolving.com/1/1/f/11f986c49f29d7a2ed4c28cab7319fa2ee3ee978.png\" class=\"latex\" alt=\"$\\cos x$\" width=\"37\" height=\"8\" /> is non-positive, and that is when <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> is in the interval <img src=\"//latex.artofproblemsolving.com/e/5/d/e5dc8e80979228cd1993ed80a454eab31d9322bb.png\" class=\"latex\" alt=\"$[\\pi/2, 3\\pi/2]$\" style=\"vertical-align: -5px\" width=\"83\" height=\"18\" />. We shall now consider when <img src=\"//latex.artofproblemsolving.com/1/1/f/11f986c49f29d7a2ed4c28cab7319fa2ee3ee978.png\" class=\"latex\" alt=\"$\\cos x$\" width=\"37\" height=\"8\" /> is positive. We can square the given inequality, and the resulting inequality will be true whenever the original left inequality is true. <img src=\"//latex.artofproblemsolving.com/7/d/f/7df72390adbb2f370403b7df570464a1c4bc1d5c.png\" class=\"latex\" alt=\"$4\\cos^2{x}\\leq 1+\\sin 2x+1-\\sin 2x-2\\sqrt{1-\\sin^2 2x}=2-2\\sqrt{\\cos^2{2x}}$\" style=\"vertical-align: -2px\" width=\"523\" height=\"22\" />. This inequality is equivalent to <img src=\"//latex.artofproblemsolving.com/0/f/4/0f45b5311a288709aa23680e7d3faf88f21eccfd.png\" class=\"latex\" alt=\"$2\\cos^2 x\\leq 1-\\left| \\cos 2x\\right|$\" style=\"vertical-align: -4px\" width=\"168\" height=\"19\" />. I shall now divide this problem into cases.\n</p><p>Case 1: <img src=\"//latex.artofproblemsolving.com/f/0/1/f01f935e92d5237e2b29debf11c43492b27c18b3.png\" class=\"latex\" alt=\"$\\cos 2x$\" width=\"46\" height=\"12\" /> is non-negative. This means that <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> is in one of the intervals <img src=\"//latex.artofproblemsolving.com/8/b/1/8b13ee28d80d5ac3ffe99aae3bf99f72ac3e7864.png\" class=\"latex\" alt=\"$[0,\\pi/4]$\" style=\"vertical-align: -5px\" width=\"54\" height=\"18\" /> or <img src=\"//latex.artofproblemsolving.com/1/2/1/121b737c0dedcb521ddd6e39d4101380d34019e8.png\" class=\"latex\" alt=\"$[7\\pi/4, 2\\pi]$\" style=\"vertical-align: -5px\" width=\"74\" height=\"18\" />. We must find all <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> in these two intervals such that <img src=\"//latex.artofproblemsolving.com/1/c/9/1c9f5f90efa3c53ee2af7afae2e85983dcf7c662.png\" class=\"latex\" alt=\"$2\\cos^2 x\\leq 1-\\cos 2x$\" style=\"vertical-align: -2px\" width=\"159\" height=\"17\" />. This inequality is equivalent to <img src=\"//latex.artofproblemsolving.com/3/7/c/37c6513c8d8e52a9a120b7498dfb0e4dec6fea97.png\" class=\"latex\" alt=\"$2\\cos^2 x\\leq 2\\sin^2 x$\" style=\"vertical-align: -2px\" width=\"136\" height=\"18\" />, which is only true when <img src=\"//latex.artofproblemsolving.com/6/3/b/63b5a074b8cc363aa8abc61722f53376c42c0991.png\" class=\"latex\" alt=\"$x=\\pi/4$\" style=\"vertical-align: -4px\" width=\"63\" height=\"18\" /> or <img src=\"//latex.artofproblemsolving.com/3/e/a/3ea852f5dc5dd938bef3b628fbfa208f94d7e796.png\" class=\"latex\" alt=\"$7\\pi/4$\" style=\"vertical-align: -4px\" width=\"38\" height=\"18\" />.\n</p><p>Case 2: <img src=\"//latex.artofproblemsolving.com/f/0/1/f01f935e92d5237e2b29debf11c43492b27c18b3.png\" class=\"latex\" alt=\"$\\cos 2x$\" width=\"46\" height=\"12\" /> is negative. This means that <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> is in one of the interavals <img src=\"//latex.artofproblemsolving.com/0/d/7/0d789e0a40047f4083dcb7b8434c67e32132747e.png\" class=\"latex\" alt=\"$(\\pi/4, \\pi/2)$\" style=\"vertical-align: -4px\" width=\"79\" height=\"18\" /> or <img src=\"//latex.artofproblemsolving.com/5/4/c/54cdfcc539d0fbfe181086c89ce1d28d9b3d3c8f.png\" class=\"latex\" alt=\"$(3\\pi/2, 7\\pi/4)$\" style=\"vertical-align: -4px\" width=\"97\" height=\"18\" />. We must find all <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> in these two intervals such that <img src=\"//latex.artofproblemsolving.com/2/a/5/2a58565f15899743cb0d526768d4f8ae1ba8f727.png\" class=\"latex\" alt=\"$2\\cos^2 x\\leq 1+\\cos 2x$\" style=\"vertical-align: -2px\" width=\"159\" height=\"17\" />, which is equivalent to <img src=\"//latex.artofproblemsolving.com/4/c/d/4cd4321c66ad8cf79171b6d9a6f959e3e2eaf67e.png\" class=\"latex\" alt=\"$2\\cos^2 x\\leq 2\\cos^2 x$\" style=\"vertical-align: -2px\" width=\"138\" height=\"17\" />, which is true for all <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> in these intervals.\n</p><p>Therefore the left inequality is true when <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> is in the union of the intervals <img src=\"//latex.artofproblemsolving.com/1/b/2/1b2b8abe18a81da94f703ce8a365576af1014c50.png\" class=\"latex\" alt=\"$[\\pi/4, \\pi/2)$\" style=\"vertical-align: -5px\" width=\"77\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/9/b/0/9b0b8f916639ef6c51912cb6e1b78a4088e77e7b.png\" class=\"latex\" alt=\"$(3\\pi/2, 7\\pi/4]$\" style=\"vertical-align: -5px\" width=\"94\" height=\"18\" />, and <img src=\"//latex.artofproblemsolving.com/e/5/d/e5dc8e80979228cd1993ed80a454eab31d9322bb.png\" class=\"latex\" alt=\"$[\\pi/2, 3\\pi/2]$\" style=\"vertical-align: -5px\" width=\"83\" height=\"18\" />, which is the interval <img src=\"//latex.artofproblemsolving.com/1/0/8/1080f25e795bfb94fe513435d676fb59f874b6c2.png\" class=\"latex\" alt=\"$[\\pi/4, 7\\pi/4]$\" style=\"vertical-align: -5px\" width=\"88\" height=\"20\" />. We shall now deal with the right inequality.\n</p><p>As above, we can square it and have it be true whenever the original right inequality is true, so we do that. <img src=\"//latex.artofproblemsolving.com/7/c/d/7cd2729cd01bba8970d483f485d6c520b48fea31.png\" class=\"latex\" alt=\"$2-2\\sqrt{\\cos^2{2x}}\\leq 2$\" style=\"vertical-align: -2px\" width=\"142\" height=\"20\" />, which is always true. Therefore the original right inequality is always satisfied, and all <img src=\"//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png\" class=\"latex\" alt=\"$x$\" style=\"vertical-align: -1px\" width=\"12\" height=\"10\" /> such that the original inequality is satisfied are in the interval <img src=\"//latex.artofproblemsolving.com/1/0/8/1080f25e795bfb94fe513435d676fb59f874b6c2.png\" class=\"latex\" alt=\"$[\\pi/4, 7\\pi/4]$\" style=\"vertical-align: -5px\" width=\"88\" height=\"20\" />.\n</p><p><br />\n</p>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1965_IMO\" title=\"1965 IMO\">1965 IMO</a></b> (<b><a href=\"/wiki/index.php/1965_IMO_Problems\" title=\"1965 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b>First Question</b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a class=\"mw-selflink selflink\">1</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_2\" title=\"1965 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_3\" title=\"1965 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_4\" title=\"1965 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_5\" title=\"1965 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_6\" title=\"1965 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_2\" title=\"1965 IMO Problems/Problem 2\">Problem 2</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240908051924\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.040 seconds\nReal time usage: 0.041 seconds\nPreprocessor visited node count: 153/1000000\nPreprocessor generated node count: 865/1000000\nPost‐expand include size: 867/2097152 bytes\nTemplate argument size: 52/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6406/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.178      1 Template:IMO_box\n100.00%    3.178      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8271-0!canonical and timestamp 20240908051924 and revision id 35170\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1965_IMO_Problems/Problem_1",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1965_IMO_Problems/Problem_1",
+          "byteoffset": 222,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1965 IMO Problems/Problem 1",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Trigonometric Inequalities",
+      "Geometric Series Sum",
+      "Complex Numbers"
+    ]
+  },
+  "1965 IMO Problems/Problem 2": {
+    "parse": {
+      "title": "1965 IMO Problems/Problem 2",
+      "pageid": 8272,
+      "revid": 71196,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_2&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider the system of equations\n<img src=\"//latex.artofproblemsolving.com/1/8/a/18adca5a58b5c0fceb009eddd8da54eb3f708e59.png\" class=\"latexcenter\" alt=\"\\[a_{11}x_1 + a_{12}x_2 + a_{13}x_3 = 0\\]\" width=\"201\" height=\"15\" />\n<img src=\"//latex.artofproblemsolving.com/d/d/f/ddfcafa461ec4fecf95446f00716e9e501deeb98.png\" class=\"latexcenter\" alt=\"\\[a_{21}x_1 + a_{22}x_2 + a_{23}x_3 = 0\\]\" width=\"201\" height=\"15\" />\n<img src=\"//latex.artofproblemsolving.com/d/0/a/d0a1b4632e8b8ba0fce7f094d1288af1bd24a8f1.png\" class=\"latexcenter\" alt=\"\\[a_{31}x_1 + a_{32}x_2 + a_{33}x_3 = 0\\]\" width=\"201\" height=\"15\" />\nwith unknowns <img src=\"//latex.artofproblemsolving.com/c/c/a/ccada11db7b2b90693e2fac4f887a57fce6f96bf.png\" class=\"latex\" alt=\"$x_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/6/a/7/6a7d010bbff66a0c41e43310a51efbaa6bf63396.png\" class=\"latex\" alt=\"$x_2$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/e/e/6/ee60922c5fc5ee1941df04f838cdae71fbc29d6f.png\" class=\"latex\" alt=\"$x_3$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />. The coefficients satisfy the conditions:\n</p><p>(a) <img src=\"//latex.artofproblemsolving.com/1/8/b/18b49f4ed1eaf78a457483785c0ce3d80a47c0dc.png\" class=\"latex\" alt=\"$a_{11}$\" style=\"vertical-align: -2px\" width=\"21\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/3/7/f/37f1c2fe37ec19c83eabedd7ec86959f660aa907.png\" class=\"latex\" alt=\"$a_{22}$\" style=\"vertical-align: -2px\" width=\"22\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/d/b/9/db9c786d86ed8c335f2e854cdad39762973ab748.png\" class=\"latex\" alt=\"$a_{33}$\" style=\"vertical-align: -2px\" width=\"22\" height=\"10\" /> are positive numbers;\n</p><p>(b) the remaining coefficients are negative numbers;\n</p><p>(c) in each equation, the sum of the coefficients is positive.\n</p><p>Prove that the given system has only the solution <img src=\"//latex.artofproblemsolving.com/c/1/7/c17cdbc6ef8b6b6fa999cd5336b990f39db54b31.png\" class=\"latex\" alt=\"$x_1 = x_2 = x_3 = 0$\" style=\"vertical-align: -2px\" width=\"134\" height=\"15\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_2&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Clearly if the <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> are all equal, then they are equal to 0. Now let's assume WLOG that <img src=\"//latex.artofproblemsolving.com/1/3/f/13fc6e422abab267c4044323541d00c88f1ce8d0.png\" class=\"latex\" alt=\"$x_1=0$\" style=\"vertical-align: -2px\" width=\"50\" height=\"15\" />. If <img src=\"//latex.artofproblemsolving.com/6/a/7/6a7d010bbff66a0c41e43310a51efbaa6bf63396.png\" class=\"latex\" alt=\"$x_2$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> or <img src=\"//latex.artofproblemsolving.com/e/e/6/ee60922c5fc5ee1941df04f838cdae71fbc29d6f.png\" class=\"latex\" alt=\"$x_3$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> is 0, then the other is clearly zero, so let's consider the case where neither are 0. <img src=\"//latex.artofproblemsolving.com/3/f/6/3f6bfb1f0a208187bed5a389462b7e45bb2a04c9.png\" class=\"latex\" alt=\"$a_{12}$\" style=\"vertical-align: -2px\" width=\"22\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/c/d/9/cd97e21d2e71d785c570ae8b343b3d5d8efef4f0.png\" class=\"latex\" alt=\"$a_{21}$\" style=\"vertical-align: -2px\" width=\"21\" height=\"10\" /> are negative, so exactly one of <img src=\"//latex.artofproblemsolving.com/6/a/7/6a7d010bbff66a0c41e43310a51efbaa6bf63396.png\" class=\"latex\" alt=\"$x_2$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> or <img src=\"//latex.artofproblemsolving.com/e/e/6/ee60922c5fc5ee1941df04f838cdae71fbc29d6f.png\" class=\"latex\" alt=\"$x_3$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> is positive. Unfortunately this means that one of <img src=\"//latex.artofproblemsolving.com/a/6/a/a6a3e7dfead17069c0b689a89ebca5f94906ea6e.png\" class=\"latex\" alt=\"$a_{22}x_2 + a_{23}x_3$\" style=\"vertical-align: -4px\" width=\"107\" height=\"15\" /> or <img src=\"//latex.artofproblemsolving.com/c/6/4/c647f8495a8dbb5d404161674276a4529ced0aff.png\" class=\"latex\" alt=\"$a_{32}x_2 + a_{33}x_3 = 0$\" style=\"vertical-align: -2px\" width=\"138\" height=\"15\" /> is positive and the other is negative, so the equation couldn't possibly be satisfied if <img src=\"//latex.artofproblemsolving.com/6/a/7/6a7d010bbff66a0c41e43310a51efbaa6bf63396.png\" class=\"latex\" alt=\"$x_2$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> or <img src=\"//latex.artofproblemsolving.com/e/e/6/ee60922c5fc5ee1941df04f838cdae71fbc29d6f.png\" class=\"latex\" alt=\"$x_3$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" /> isn't 0. We have covered the case where one of the <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> is 0, now let's assume that none of them are 0.\n</p><p>If two are positive and one is negative, then when the negative <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> is paired with one of the positive <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" />, the corresponding equation is negative. This is bad. If two are negative and one is positive, then when the positive <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> is paired with one of the positive <img src=\"//latex.artofproblemsolving.com/4/1/2/412787c048e28774dc63fc27db42dc52ca858de7.png\" class=\"latex\" alt=\"$a_i$\" style=\"vertical-align: -2px\" width=\"14\" height=\"10\" />, the corresponding equation is positive. This is also bad. Therefore the <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> all have the same sign.\n</p><p>Case 1: The <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> are all positive. WLOG <img src=\"//latex.artofproblemsolving.com/b/6/6/b6640a58c8101d339f1bf0683aa3150d12e41f3e.png\" class=\"latex\" alt=\"$x_1\\leq x_2\\leq x_3$\" style=\"vertical-align: -2px\" width=\"100\" height=\"14\" />. Now consider the third equation, <img src=\"//latex.artofproblemsolving.com/b/0/1/b0122f314303a1c278ade4c0f60b8cf3e9db3c8d.png\" class=\"latex\" alt=\"$a_{31}x_1 + a_{32}x_2 + a_{33}x_3 = 0$\" style=\"vertical-align: -2px\" width=\"201\" height=\"15\" />. Therefore <img src=\"//latex.artofproblemsolving.com/2/d/2/2d2b85c40e4aaf53f675db6b32c93581f0537309.png\" class=\"latex\" alt=\"$x_2(a_{31} +a_{32}+a_{33})+ a_{31}(x_1-x_2)+a_{33}(x_3-x_2)= 0$\" style=\"vertical-align: -4px\" width=\"416\" height=\"18\" />, but all of the terms on the LHS are non-negative and the first one is positive, so this is impossible.\n</p><p>Case 2: The <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> are all negative. WLOG <img src=\"//latex.artofproblemsolving.com/f/5/c/f5ceaed1323143ba009d9a5b009c6caeeb728804.png\" class=\"latex\" alt=\"$x_1\\geq x_2\\geq x_3$\" style=\"vertical-align: -2px\" width=\"100\" height=\"14\" />. Consider the third equation, <img src=\"//latex.artofproblemsolving.com/b/0/1/b0122f314303a1c278ade4c0f60b8cf3e9db3c8d.png\" class=\"latex\" alt=\"$a_{31}x_1 + a_{32}x_2 + a_{33}x_3 = 0$\" style=\"vertical-align: -2px\" width=\"201\" height=\"15\" />. Therefore <img src=\"//latex.artofproblemsolving.com/f/5/b/f5b4dacef8b895a46ff60b37c97d6796a7301b5a.png\" class=\"latex\" alt=\"$x_3(a_{31}+a_{32}+a_{33})+a_{31}(x_1-x_3)+a_{32}(x_2-x_3)=0$\" style=\"vertical-align: -4px\" width=\"416\" height=\"18\" />, but all of the terms on the LHS are non-positive and the first one is negative, so this is impossible.\n</p><p>Therefore at least one of the <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> is 0, which implies all of them are 0.\n</p><p><br />\n</p>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1965_IMO\" title=\"1965 IMO\">1965 IMO</a></b> (<b><a href=\"/wiki/index.php/1965_IMO_Problems\" title=\"1965 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_1\" title=\"1965 IMO Problems/Problem 1\">Problem 1</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_1\" title=\"1965 IMO Problems/Problem 1\">1</a> <b>•</b> <a class=\"mw-selflink selflink\">2</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_3\" title=\"1965 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_4\" title=\"1965 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_5\" title=\"1965 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_6\" title=\"1965 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_3\" title=\"1965 IMO Problems/Problem 3\">Problem 3</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907205722\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.033 seconds\nReal time usage: 0.045 seconds\nPreprocessor visited node count: 204/1000000\nPreprocessor generated node count: 905/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6743/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.634      1 Template:IMO_box\n100.00%    2.634      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8272-0!canonical and timestamp 20240907205722 and revision id 71196\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1965_IMO_Problems/Problem_2",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1965_IMO_Problems/Problem_2",
+          "byteoffset": 608,
+          "anchor": "Solution"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1965 IMO Problems/Problem 2",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Linear Transformations",
+      "Eigenvalues and Eigenvectors",
+      "Diophantine Equations"
+    ]
+  },
+  "1965 IMO Problems/Problem 3": {
+    "parse": {
+      "title": "1965 IMO Problems/Problem 3",
+      "pageid": 8273,
+      "revid": 178563,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_3&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Given the tetrahedron <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" /> whose edges <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> have lengths <img src=\"//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png\" class=\"latex\" alt=\"$a$\" style=\"vertical-align: -1px\" width=\"11\" height=\"10\" /> and <img src=\"//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png\" class=\"latex\" alt=\"$b$\" style=\"vertical-align: -1px\" width=\"10\" height=\"14\" /> respectively. The distance between the skew lines <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> is <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" />, and the angle between them is <img src=\"//latex.artofproblemsolving.com/5/4/d/54d7d48553f4d9e7ab418118607ea324cbfddfda.png\" class=\"latex\" alt=\"$\\omega$\" width=\"11\" height=\"8\" />. Tetrahedron <img src=\"//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png\" class=\"latex\" alt=\"$ABCD$\" width=\"57\" height=\"13\" /> is divided into two solids by plane <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a63918a6fa75b62ad87ad17aaf65f782d71546.png\" class=\"latex\" alt=\"$\\varepsilon$\" width=\"8\" height=\"8\" />, parallel to lines <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" />. The ratio of the distances of <img src=\"//latex.artofproblemsolving.com/e/2/a/e2a63918a6fa75b62ad87ad17aaf65f782d71546.png\" class=\"latex\" alt=\"$\\varepsilon$\" width=\"8\" height=\"8\" /> from <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png\" class=\"latex\" alt=\"$CD$\" width=\"29\" height=\"12\" /> is equal to <img src=\"//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png\" class=\"latex\" alt=\"$k$\" width=\"9\" height=\"12\" />. Compute the ratio of the volumes of the two solids obtained.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_3&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let the plane meet AD at X, BD at Y, BC at Z and AC at W. Take plane parallel to BCD through WX and let it meet AB in P.\n</p><p>Since the distance of AB from WXYZ is k times the distance of CD, we have that AX = k·XD and hence that AX/AD = k/(k+1). Similarly AP/AB = AW/AC = AX/AD. XY is parallel to AB, so also AX/AD = BY/BD = BZ/BC.\n</p><p>vol ABWXYZ = vol APWX + vol WXPBYZ. APWX is similar to the tetrahedron ABCD. The sides are k/(k+1) times smaller, so vol APWX = k3(k+1)3 vol ABCD. The base of the prism WXPBYZ is BYZ which is similar to BCD with sides k/(k+1) times smaller and hence area k2(k+1)2 times smaller. Its height is 1/(k+1) times the height of A above ABCD, so vol prism = 3 k2(k+1)3 vol ABCD. Thus vol ABWXYZ = (k3 + 3k2)/(k+1)3 vol ABCD. We get the vol of the other piece as vol ABCD - vol ABWXYZ and hence the ratio is (after a little manipulation) k2(k+3)/(3k+1).\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_3&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1965_IMO\" title=\"1965 IMO\">1965 IMO</a></b> (<b><a href=\"/wiki/index.php/1965_IMO_Problems\" title=\"1965 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_2\" title=\"1965 IMO Problems/Problem 2\">Problem 2</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_1\" title=\"1965 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_2\" title=\"1965 IMO Problems/Problem 2\">2</a> <b>•</b> <a class=\"mw-selflink selflink\">3</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_4\" title=\"1965 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_5\" title=\"1965 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_6\" title=\"1965 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_4\" title=\"1965 IMO Problems/Problem 4\">Problem 4</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907205722\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.032 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 190/1000000\nPreprocessor generated node count: 509/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2519/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.814      1 Template:IMO_box\n100.00%    2.814      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8273-0!canonical and timestamp 20240907205722 and revision id 178563\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [
+        {
+          "sortkey": "",
+          "*": "Olympiad_Geometry_Problems"
+        },
+        {
+          "sortkey": "",
+          "*": "3D_Geometry_Problems"
+        }
+      ],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1965_IMO_Problems/Problem_3",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1965_IMO_Problems/Problem_3",
+          "byteoffset": 641,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1965_IMO_Problems/Problem_3",
+          "byteoffset": 1533,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1965 IMO Problems/Problem 3",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Volume of a Tetrahedron",
+      "Geometric Series Sum",
+      "Similarity of Triangles"
+    ]
+  },
+  "1965 IMO Problems/Problem 4": {
+    "parse": {
+      "title": "1965 IMO Problems/Problem 4",
+      "pageid": 8274,
+      "revid": 143764,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_4&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Find all sets of four real numbers <img src=\"//latex.artofproblemsolving.com/c/c/a/ccada11db7b2b90693e2fac4f887a57fce6f96bf.png\" class=\"latex\" alt=\"$x_1$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/6/a/7/6a7d010bbff66a0c41e43310a51efbaa6bf63396.png\" class=\"latex\" alt=\"$x_2$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/e/e/6/ee60922c5fc5ee1941df04f838cdae71fbc29d6f.png\" class=\"latex\" alt=\"$x_3$\" style=\"vertical-align: -2px\" width=\"16\" height=\"10\" />, <img src=\"//latex.artofproblemsolving.com/4/2/0/420543d9a4f93ed4180b45b3149b663a8aa7674d.png\" class=\"latex\" alt=\"$x_4$\" style=\"vertical-align: -2px\" width=\"17\" height=\"10\" /> such that the sum of any one and the product of the other three is equal to <img src=\"//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png\" class=\"latex\" alt=\"$2$\" width=\"8\" height=\"12\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_4&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/b/8/c/b8c1838e739431f7520b1236bb0cc96fc46f4609.png\" class=\"latex\" alt=\"$P = x_1x_2x_3x_4$\" style=\"vertical-align: -2px\" width=\"109\" height=\"15\" /> be the product of the four real numbers. \n</p><p>Then, for <img src=\"//latex.artofproblemsolving.com/b/7/a/b7aa0b885ce0b7603f4d83fdb853d120a1085397.png\" class=\"latex\" alt=\"$i = 1,2,3,4$\" style=\"vertical-align: -3px\" width=\"91\" height=\"16\" /> we have: <img src=\"//latex.artofproblemsolving.com/d/3/7/d37e808fae5ec66cd8a8fb849f3a30bf1f0265d0.png\" class=\"latex\" alt=\"$x_i + \\prod_{j \\neq i}x_j = 2$\" style=\"vertical-align: -23px\" width=\"114\" height=\"40\" />. \n</p><p><br />\nMultiplying by <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> yields: \n</p><p><img src=\"//latex.artofproblemsolving.com/3/e/6/3e6886b9b860960ecf1a764b51fa910697cb4c08.png\" class=\"latex\" alt=\"$x^2_i + P = 2x_i \\Longleftrightarrow x^2_i-2x_i+1 = (x_i-1)^2 = 1-P \\Longleftrightarrow x_i = 1 \\pm t$\" style=\"vertical-align: -4px\" width=\"527\" height=\"19\" /> where <img src=\"//latex.artofproblemsolving.com/6/b/7/6b7c0eccfb0e92ef0b26244b1fc1fb44993af68d.png\" class=\"latex\" alt=\"$t = \\pm \\sqrt{1-P} \\in \\mathbb{R}$\" style=\"vertical-align: -2px\" width=\"140\" height=\"18\" />.  \n</p><p>If <img src=\"//latex.artofproblemsolving.com/5/a/6/5a607fd61885c014512c949fee18869690330407.png\" class=\"latex\" alt=\"$t=0$\" width=\"39\" height=\"12\" />, then we have <img src=\"//latex.artofproblemsolving.com/f/e/f/fef0710151e820d746d5fd34f11412ccddb1c3e6.png\" class=\"latex\" alt=\"$(x_1,x_2,x_3,x_4)=(1,1,1,1)$\" style=\"vertical-align: -4px\" width=\"207\" height=\"18\" /> which is a solution. \n</p><p>So assume that <img src=\"//latex.artofproblemsolving.com/b/4/1/b414fcdbcb545791b6eeac1dda5153ca3427243c.png\" class=\"latex\" alt=\"$t \\neq 0$\" style=\"vertical-align: -4px\" width=\"39\" height=\"17\" />. WLOG, let at least two of <img src=\"//latex.artofproblemsolving.com/6/7/b/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png\" class=\"latex\" alt=\"$x_i$\" style=\"vertical-align: -2px\" width=\"15\" height=\"10\" /> equal <img src=\"//latex.artofproblemsolving.com/d/0/2/d02ffc3af74e89d075a75df035bf8af7c157e3d2.png\" class=\"latex\" alt=\"$1+t$\" style=\"vertical-align: -1px\" width=\"37\" height=\"13\" />, and <img src=\"//latex.artofproblemsolving.com/5/d/e/5de04c1c7e3bc63d199fcd0b3b405f0038fe3648.png\" class=\"latex\" alt=\"$x_1 \\ge x_2 \\ge x_3 \\ge x_4$\" style=\"vertical-align: -2px\" width=\"143\" height=\"14\" /> OR <img src=\"//latex.artofproblemsolving.com/b/f/1/bf16fc6467eef4c7462dcdcc21a5545616beeffb.png\" class=\"latex\" alt=\"$x_1 \\le x_2 \\le x_3 \\le x_4$\" style=\"vertical-align: -2px\" width=\"143\" height=\"14\" />. \n</p><p><br />\nCase I: <img src=\"//latex.artofproblemsolving.com/3/4/5/34584d6731612c94f0ef500a1a13d2971c4fcbc5.png\" class=\"latex\" alt=\"$x_1 = x_2 = x_3 = x_4 = 1+t$\" style=\"vertical-align: -2px\" width=\"205\" height=\"14\" /> \n</p><p>Then we have: \n</p><p><img src=\"//latex.artofproblemsolving.com/c/e/d/cedea4749f7223feeba77e85f4c4539ef415b5b6.png\" class=\"latex\" alt=\"$(1+t)+(1+t)^3 = 2 \\Longleftrightarrow t^3+3t^2+4t = 0 \\Longleftrightarrow t(t^2+3t+4) = 0$\" style=\"vertical-align: -4px\" width=\"521\" height=\"19\" /> \n</p><p>Which has no non-zero solutions for <img src=\"//latex.artofproblemsolving.com/e/0/d/e0d2bf360290fd61d1c1557e763f2622363b3d35.png\" class=\"latex\" alt=\"$t$\" width=\"6\" height=\"11\" />. \n</p><p><br />\nCase II: <img src=\"//latex.artofproblemsolving.com/8/c/4/8c4cf40a85dc019c80fbdb1df4dae7b15ad3274f.png\" class=\"latex\" alt=\"$x_1 = x_2 = x_3 = 1+t$\" style=\"vertical-align: -2px\" width=\"163\" height=\"14\" /> AND <img src=\"//latex.artofproblemsolving.com/e/6/5/e65392b4169c9e0cff86c0549627395db800562b.png\" class=\"latex\" alt=\"$x_4 = 1-t$\" style=\"vertical-align: -2px\" width=\"79\" height=\"14\" />\n</p><p>Then we have: \n</p><p><img src=\"//latex.artofproblemsolving.com/2/b/8/2b8e6339a72a603104fed07f37edf33cc7040480.png\" class=\"latex\" alt=\"$(1-t)+(1+t)^3 = 2 \\Longleftrightarrow t^3+3t^2+2t = 0$\" style=\"vertical-align: -4px\" width=\"340\" height=\"19\" /> <img src=\"//latex.artofproblemsolving.com/e/4/4/e44d8c2e1ce7d000c2c7715b7ba1428504c7490e.png\" class=\"latex\" alt=\"$\\Longleftrightarrow t(t+1)(t+2) = 0 \\Longleftrightarrow t \\in \\{0,-1,-2\\}$\" style=\"vertical-align: -4px\" width=\"343\" height=\"18\" /> \n</p><p>AND\n</p><p><img src=\"//latex.artofproblemsolving.com/b/9/f/b9f9078808d13aacd0f3f5f2475b951ae37925ab.png\" class=\"latex\" alt=\"$(1+t)+(1-t)(1+t)^2 = 2 (1+t)+(1-t)(1+t)^2 = 2 -t^3-t^2+2t = 0$\" style=\"vertical-align: -4px\" width=\"581\" height=\"19\" /> <img src=\"//latex.artofproblemsolving.com/8/3/2/8322b25c738307ae199234cceb7af8d148ee68cb.png\" class=\"latex\" alt=\"$\\Longleftrightarrow -t(t-1)(t+2) = 0 \\Longleftrightarrow t \\in \\{0,1,-2\\}$\" style=\"vertical-align: -4px\" width=\"343\" height=\"18\" /> \n</p><p>So, we have <img src=\"//latex.artofproblemsolving.com/a/b/a/aba158f78c3802fda31c4eb7428f2d542215bfac.png\" class=\"latex\" alt=\"$t = -2$\" style=\"vertical-align: -2px\" width=\"56\" height=\"15\" /> as the only non-zero solution, and thus, <img src=\"//latex.artofproblemsolving.com/4/a/1/4a11bb81ef65180d9ed1ac62611e340f9541c14b.png\" class=\"latex\" alt=\"$(x_1,x_2,x_3,x_4) = (-1,-1,-1,3)$\" style=\"vertical-align: -4px\" width=\"249\" height=\"18\" /> and all permutations are solutions.\n</p><p><br />\nCase III: <img src=\"//latex.artofproblemsolving.com/5/8/d/58ddc6b7d1b8d43324018b15a9bdee6da322014a.png\" class=\"latex\" alt=\"$x_1 = x_2 = 1+t$\" style=\"vertical-align: -2px\" width=\"121\" height=\"14\" /> AND <img src=\"//latex.artofproblemsolving.com/1/b/5/1b57cff7fece3900347895c5c33848ebbadfe0a8.png\" class=\"latex\" alt=\"$x_3 = x_4 = 1-t$\" style=\"vertical-align: -2px\" width=\"121\" height=\"14\" />\n</p><p>Then we have: \n</p><p><img src=\"//latex.artofproblemsolving.com/2/a/8/2a80cf1b3e8ab06cfc70dfe0fa5aaa03f8ca19ce.png\" class=\"latex\" alt=\"$(1-t)+(1-t)(1+t)^2 = 2 \\Longleftrightarrow -t^3-t^2 = 0$\" style=\"vertical-align: -4px\" width=\"359\" height=\"19\" /> <img src=\"//latex.artofproblemsolving.com/b/3/2/b3217fbe867121bd6a83f13d81ae270618f28751.png\" class=\"latex\" alt=\"$\\Longleftrightarrow -t^2(t+1) = 0 \\Longleftrightarrow t \\in \\{0,-1\\}$\" style=\"vertical-align: -4px\" width=\"281\" height=\"19\" /> \n</p><p>AND\n</p><p><img src=\"//latex.artofproblemsolving.com/6/a/7/6a77aa156f31b8ec1cca5e1193494b93cf414f40.png\" class=\"latex\" alt=\"$(1+t)+(1+t)(1-t)^2 = 2 \\Longleftrightarrow t^3-t^2 = 0$\" style=\"vertical-align: -4px\" width=\"345\" height=\"19\" /> <img src=\"//latex.artofproblemsolving.com/c/5/f/c5f037c9edabaf9a5ef4b0c014a78fa730b4deda.png\" class=\"latex\" alt=\"$\\Longleftrightarrow t^2(t-1) = 0 \\Longleftrightarrow t \\in \\{0,1\\}$\" style=\"vertical-align: -4px\" width=\"253\" height=\"19\" /> \n</p><p>Thus, there are no non-zero solutions for <img src=\"//latex.artofproblemsolving.com/e/0/d/e0d2bf360290fd61d1c1557e763f2622363b3d35.png\" class=\"latex\" alt=\"$t$\" width=\"6\" height=\"11\" /> in this case. \n</p><p><br />\nTherefore, the solutions are: <img src=\"//latex.artofproblemsolving.com/9/4/7/947784fa1fcfcfde64d78465f49e3109f305e5c5.png\" class=\"latex\" alt=\"$(1,1,1,1)$\" style=\"vertical-align: -4px\" width=\"73\" height=\"18\" />; <img src=\"//latex.artofproblemsolving.com/e/b/d/ebde6a4ebbf0bedfc7080923e323675aad221d00.png\" class=\"latex\" alt=\"$(3,-1,-1,-1)$\" style=\"vertical-align: -4px\" width=\"115\" height=\"18\" />; <img src=\"//latex.artofproblemsolving.com/a/c/a/aca706a4bd00a54c9111ae83e0e4e25f514b073b.png\" class=\"latex\" alt=\"$(-1,3,-1,-1)$\" style=\"vertical-align: -5px\" width=\"119\" height=\"20\" />; <img src=\"//latex.artofproblemsolving.com/1/b/a/1ba5d87d25a570643a8300ba3b4a75dd2fef1ad4.png\" class=\"latex\" alt=\"$(-1,-1,3,-1)$\" style=\"vertical-align: -4px\" width=\"115\" height=\"18\" />; <img src=\"//latex.artofproblemsolving.com/7/6/6/766dec08f68f85e9f15a2d7cbb2119952810ec0e.png\" class=\"latex\" alt=\"$(-1,-1,-1,3)$\" style=\"vertical-align: -4px\" width=\"115\" height=\"18\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_4&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1965_IMO\" title=\"1965 IMO\">1965 IMO</a></b> (<b><a href=\"/wiki/index.php/1965_IMO_Problems\" title=\"1965 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_3\" title=\"1965 IMO Problems/Problem 3\">Problem 3</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_1\" title=\"1965 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_2\" title=\"1965 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_3\" title=\"1965 IMO Problems/Problem 3\">3</a> <b>•</b> <a class=\"mw-selflink selflink\">4</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_5\" title=\"1965 IMO Problems/Problem 5\">5</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_6\" title=\"1965 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_5\" title=\"1965 IMO Problems/Problem 5\">Problem 5</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907160028\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.035 seconds\nReal time usage: 0.035 seconds\nPreprocessor visited node count: 406/1000000\nPreprocessor generated node count: 989/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 7961/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    2.322      1 Template:IMO_box\n100.00%    2.322      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8274-0!canonical and timestamp 20240907160028 and revision id 143764\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1965_IMO_Problems/Problem_4",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1965_IMO_Problems/Problem_4",
+          "byteoffset": 213,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1965_IMO_Problems/Problem_4",
+          "byteoffset": 2338,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1965 IMO Problems/Problem 4",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Quadratic Formula",
+      "Vieta's Formulas",
+      "Diophantine Equations"
+    ]
+  },
+  "1965 IMO Problems/Problem 5": {
+    "parse": {
+      "title": "1965 IMO Problems/Problem 5",
+      "pageid": 8275,
+      "revid": 183774,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_5&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Consider <img src=\"//latex.artofproblemsolving.com/d/f/c/dfc13f0783d8b0092bce37b79f5696127bec4586.png\" class=\"latex\" alt=\"$\\triangle OAB$\" width=\"58\" height=\"13\" /> with acute angle <img src=\"//latex.artofproblemsolving.com/c/d/9/cd97737c9a1eb5146725902d4e4c4bda1388129b.png\" class=\"latex\" alt=\"$AOB$\" width=\"42\" height=\"13\" />. Through a point <img src=\"//latex.artofproblemsolving.com/4/2/b/42ba7969dfec9ba58df2e8586b171c66e4785db3.png\" class=\"latex\" alt=\"$M \\neq O$\" style=\"vertical-align: -4px\" width=\"57\" height=\"17\" /> perpendiculars are drawn to <img src=\"//latex.artofproblemsolving.com/b/7/a/b7a762ac8b4e23ffdd778ad6d5a8b97df8c7ce01.png\" class=\"latex\" alt=\"$OA$\" width=\"28\" height=\"13\" /> and <img src=\"//latex.artofproblemsolving.com/0/9/6/0964c9cf406ef8e5ec8beaa6a92125f2d8f90460.png\" class=\"latex\" alt=\"$OB$\" width=\"28\" height=\"12\" />, the feet of which are <img src=\"//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png\" class=\"latex\" alt=\"$P$\" width=\"14\" height=\"12\" /> and <img src=\"//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png\" class=\"latex\" alt=\"$Q$\" style=\"vertical-align: -3px\" width=\"13\" height=\"16\" /> respectively. The point of intersection of the altitudes of <img src=\"//latex.artofproblemsolving.com/6/d/d/6dd05513c1a170b4f2356d5efe4ece31cf814845.png\" class=\"latex\" alt=\"$\\triangle OPQ$\" style=\"vertical-align: -3px\" width=\"58\" height=\"17\" /> is <img src=\"//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png\" class=\"latex\" alt=\"$H$\" width=\"16\" height=\"12\" />. What is the locus of <img src=\"//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png\" class=\"latex\" alt=\"$H$\" width=\"16\" height=\"12\" /> if <img src=\"//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png\" class=\"latex\" alt=\"$M$\" width=\"19\" height=\"12\" /> is permitted to range over (a) the side <img src=\"//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png\" class=\"latex\" alt=\"$AB$\" width=\"27\" height=\"13\" />, (b) the interior of <img src=\"//latex.artofproblemsolving.com/d/f/c/dfc13f0783d8b0092bce37b79f5696127bec4586.png\" class=\"latex\" alt=\"$\\triangle OAB$\" width=\"58\" height=\"13\" />?\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_5&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>Let <img src=\"//latex.artofproblemsolving.com/1/1/9/119df68f12ebb63556698c529b26b8b3951fd5d0.png\" class=\"latex\" alt=\"$O(0,0),A(a,0),B(b,c)$\" style=\"vertical-align: -4px\" width=\"176\" height=\"18\" />.\nEquation of the line <img src=\"//latex.artofproblemsolving.com/e/a/5/ea59cf3a1832a0f7ba96dd7d0ecaab4b5020a007.png\" class=\"latex\" alt=\"$AB: y=\\frac{c}{b-a}(x-a)$\" style=\"vertical-align: -12px\" width=\"175\" height=\"33\" />.\nPoint <img src=\"//latex.artofproblemsolving.com/4/a/f/4aff383386cd294ff8d44ccc2bf00ab3c3bdbdd2.png\" class=\"latex\" alt=\"$M \\in AB&#160;: M(\\lambda,\\frac{c}{b-a}(\\lambda-a))$\" style=\"vertical-align: -12px\" width=\"236\" height=\"33\" />.\nEasy, point <img src=\"//latex.artofproblemsolving.com/a/a/e/aae3e39ffed19b81c9f29bfd9ffc53adb818907c.png\" class=\"latex\" alt=\"$P(\\lambda,0)$\" style=\"vertical-align: -5px\" width=\"58\" height=\"20\" />.\nPoint <img src=\"//latex.artofproblemsolving.com/a/0/b/a0ba492c39d5b4617eb58ad9a573d62daf5c1d1b.png\" class=\"latex\" alt=\"$Q = OB \\cap MQ$\" style=\"vertical-align: -4px\" width=\"124\" height=\"18\" />, <img src=\"//latex.artofproblemsolving.com/f/1/e/f1e20ef055ba875fa992cb461dfbd0c92d916be4.png\" class=\"latex\" alt=\"$MQ \\bot OB$\" style=\"vertical-align: -3px\" width=\"76\" height=\"16\" />.\nEquation of <img src=\"//latex.artofproblemsolving.com/8/4/3/843fd32b4d573acaee03ed3c126bc43f1c3c7ee2.png\" class=\"latex\" alt=\"$OB&#160;: y=\\frac{c}{b}x$\" style=\"vertical-align: -13px\" width=\"102\" height=\"34\" />, equation of <img src=\"//latex.artofproblemsolving.com/c/e/8/ce8b21511702091b391c981f16f16f6bb29d099d.png\" class=\"latex\" alt=\"$MQ&#160;: y=-\\frac{b}{c}(x-\\lambda)+\\frac{c}{b-a}(\\lambda-a)$\" style=\"vertical-align: -12px\" width=\"287\" height=\"37\" />.\nSolving: <img src=\"//latex.artofproblemsolving.com/f/7/c/f7cc7ca01202d042c748625a7c623205f9c22a06.png\" class=\"latex\" alt=\"$x_{Q}=\\frac{1}{b^{2}+c^{2}}\\left[b^{2}\\lambda+\\frac{c^{2}(\\lambda-a)b}{b-a}\\right]$\" style=\"vertical-align: -17px\" width=\"252\" height=\"43\" />.\nEquation of the first altitude: <img src=\"//latex.artofproblemsolving.com/9/c/9/9c9d705acb86b116ae2d1034e22a8bed9524238a.png\" class=\"latex\" alt=\"$x=\\frac{1}{b^{2}+c^{2}}\\left[b^{2}\\lambda+\\frac{c^{2}(\\lambda-a)b}{b-a}\\right] \\quad (1)$\" style=\"vertical-align: -17px\" width=\"286\" height=\"43\" />.\nEquation of the second altitude: <img src=\"//latex.artofproblemsolving.com/8/b/a/8baf8afb1da94a5e28b0525ec6b0486ac8269b65.png\" class=\"latex\" alt=\"$y=-\\frac{b}{c}(x-\\lambda)\\quad\\quad (2)$\" style=\"vertical-align: -12px\" width=\"172\" height=\"37\" />.\nEliminating <img src=\"//latex.artofproblemsolving.com/c/e/4/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png\" class=\"latex\" alt=\"$\\lambda$\" width=\"10\" height=\"13\" /> from (1) and (2):\n\t<img src=\"//latex.artofproblemsolving.com/f/3/3/f33c89f59ee22ba2885ec4c2810ea7580b27bb25.png\" class=\"latexcenter\" alt=\"\\[ac \\cdot x + (b^{2}+c^{2}-ab)y=abc\\]\" width=\"228\" height=\"19\" />\na line segment <img src=\"//latex.artofproblemsolving.com/2/6/a/26a17c8823560d0f4c8548b97f8e91c222377887.png\" class=\"latex\" alt=\"$MN , M \\in OA , N \\in OB$\" style=\"vertical-align: -3px\" width=\"188\" height=\"16\" />.\nSecond question: the locus consists in the <img src=\"//latex.artofproblemsolving.com/f/4/7/f478eb0154739bce82ca166885f8da958f82c983.png\" class=\"latex\" alt=\"$\\triangle OMN$\" width=\"66\" height=\"13\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_5&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1965_IMO\" title=\"1965 IMO\">1965 IMO</a></b> (<b><a href=\"/wiki/index.php/1965_IMO_Problems\" title=\"1965 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_4\" title=\"1965 IMO Problems/Problem 4\">Problem 4</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_1\" title=\"1965 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_2\" title=\"1965 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_3\" title=\"1965 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_4\" title=\"1965 IMO Problems/Problem 4\">4</a> <b>•</b> <a class=\"mw-selflink selflink\">5</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_6\" title=\"1965 IMO Problems/Problem 6\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_6\" title=\"1965 IMO Problems/Problem 6\">Problem 6</a></b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907205723\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.028 seconds\nReal time usage: 0.029 seconds\nPreprocessor visited node count: 289/1000000\nPreprocessor generated node count: 729/1000000\nPost‐expand include size: 894/2097152 bytes\nTemplate argument size: 44/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4970/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.777      1 Template:IMO_box\n100.00%    1.777      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8275-0!canonical and timestamp 20240907205723 and revision id 183774\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 6"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1965_IMO_Problems/Problem_5",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1965_IMO_Problems/Problem_5",
+          "byteoffset": 510,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1965_IMO_Problems/Problem_5",
+          "byteoffset": 1475,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1965 IMO Problems/Problem 5",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Law of Sines",
+      "Law of Cosines",
+      "Geometric Mean"
+    ]
+  },
+  "1965 IMO Problems/Problem 6": {
+    "parse": {
+      "title": "1965 IMO Problems/Problem 6",
+      "pageid": 8276,
+      "revid": 143766,
+      "text": {
+        "*": "<div class=\"mw-parser-output\"><h2><span class=\"mw-headline\" id=\"Problem\">Problem</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_6&amp;action=edit&amp;section=1\" title=\"Edit section: Problem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>In a plane a set of <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" /> points (<img src=\"//latex.artofproblemsolving.com/8/1/1/811f76ab716762dc2652ba611378a1816b671893.png\" class=\"latex\" alt=\"$n\\geq 3$\" style=\"vertical-align: -2px\" width=\"43\" height=\"15\" />) is given. Each pair of points is connected by a segment. Let <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" /> be the length of the longest of these segments. We define a diameter of the set to be any connecting segment of length <img src=\"//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png\" class=\"latex\" alt=\"$d$\" width=\"9\" height=\"12\" />. Prove that the number of diameters of the given set is at most <img src=\"//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png\" class=\"latex\" alt=\"$n$\" width=\"10\" height=\"8\" />.\n</p>\n<h2><span class=\"mw-headline\" id=\"Solution\">Solution</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_6&amp;action=edit&amp;section=2\" title=\"Edit section: Solution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><a rel=\"nofollow\" class=\"external text\" href=\"https://i.imgur.com/hjGyVyg.png\">Image of problem Solution</a>. Credits to user <b>awe-sum</b>.\n</p><p><br />\n</p>\n<h2><span class=\"mw-headline\" id=\"See_Also\">See Also</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/wiki/index.php?title=1965_IMO_Problems/Problem_6&amp;action=edit&amp;section=3\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table class=\"wikitable\" style=\"clear:both; margin:0.5em auto; font-size:95%; border:1px solid black;\">\n<tbody><tr>\n<td style=\"background:#ccf;text-align:center;\" colspan=\"3\"><b><a href=\"/wiki/index.php/1965_IMO\" title=\"1965 IMO\">1965 IMO</a></b> (<b><a href=\"/wiki/index.php/1965_IMO_Problems\" title=\"1965 IMO Problems\">Problems</a></b>) • <a rel=\"nofollow\" class=\"external text\" href=\"https://artofproblemsolving.com/community/c3222\">Resources</a>\n</td></tr>\n<tr>\n<td width=\"33%\" align=\"center\">Preceded&#160;by<br /><b><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_5\" title=\"1965 IMO Problems/Problem 5\">Problem 5</a></b>\n</td>\n<td width=\"34%\" style=\"text-align:center;\"><a href=\"/wiki/index.php/1965_IMO_Problems/Problem_1\" title=\"1965 IMO Problems/Problem 1\">1</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_2\" title=\"1965 IMO Problems/Problem 2\">2</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_3\" title=\"1965 IMO Problems/Problem 3\">3</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_4\" title=\"1965 IMO Problems/Problem 4\">4</a> <b>•</b> <a href=\"/wiki/index.php/1965_IMO_Problems/Problem_5\" title=\"1965 IMO Problems/Problem 5\">5</a> <b>•</b> <a class=\"mw-selflink selflink\">6</a>\n</td>\n<td width=\"33%\" align=\"center\" rowspan=\"1\">Followed&#160;by<br /><b>Last Question</b>\n</td></tr>\n<tr>\n<td align=\"center\" colspan=\"3\"><b><a href=\"/wiki/index.php/IMO_Problems_and_Solutions\" title=\"IMO Problems and Solutions\"> All IMO Problems and Solutions</a></b>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20240907205723\nCache expiry: 86400\nDynamic content: false\nCPU time usage: 0.022 seconds\nReal time usage: 0.023 seconds\nPreprocessor visited node count: 79/1000000\nPreprocessor generated node count: 269/1000000\nPost‐expand include size: 866/2097152 bytes\nTemplate argument size: 51/2097152 bytes\nHighest expansion depth: 2/40\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 745/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    1.923      1 Template:IMO_box\n100.00%    1.923      1 -total\n-->\n</div>\n<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:8276-0!canonical and timestamp 20240907205723 and revision id 143766\n -->\n"
+      },
+      "langlinks": [],
+      "categories": [],
+      "links": [
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 1"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 2"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 3"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 4"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "1965 IMO Problems/Problem 5"
+        },
+        {
+          "ns": 0,
+          "exists": "",
+          "*": "IMO Problems and Solutions"
+        }
+      ],
+      "templates": [
+        {
+          "ns": 10,
+          "exists": "",
+          "*": "Template:IMO box"
+        }
+      ],
+      "images": [],
+      "externallinks": [
+        "https://i.imgur.com/hjGyVyg.png"
+      ],
+      "sections": [
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Problem",
+          "number": "1",
+          "index": "1",
+          "fromtitle": "1965_IMO_Problems/Problem_6",
+          "byteoffset": 0,
+          "anchor": "Problem"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "Solution",
+          "number": "2",
+          "index": "2",
+          "fromtitle": "1965_IMO_Problems/Problem_6",
+          "byteoffset": 370,
+          "anchor": "Solution"
+        },
+        {
+          "toclevel": 1,
+          "level": "2",
+          "line": "See Also",
+          "number": "3",
+          "index": "3",
+          "fromtitle": "1965_IMO_Problems/Problem_6",
+          "byteoffset": 480,
+          "anchor": "See_Also"
+        }
+      ],
+      "parsewarnings": [],
+      "displaytitle": "1965 IMO Problems/Problem 6",
+      "iwlinks": [],
+      "properties": []
+    },
+    "tags": [
+      "Graph Theory",
+      "Triangle Inequality",
+      "Pigeonhole Principle"
+    ]
+  }
+}
