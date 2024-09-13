@@ -4,11 +4,15 @@
 (() => {
   let allPages = [];
   let allProblems = [];
+  let tagToProblems = {};
   $.getJSON("/data/allpages.json", (json) => {
     allPages = json;
   });
   $.getJSON("/data/allproblems.json", (json) => {
     allProblems = json;
+  });
+  $.getJSON("/data/tagtoproblems.json", (json) => {
+    tagToProblems = json;
   });
   let categoryPages = [];
   let theoremPages = [];

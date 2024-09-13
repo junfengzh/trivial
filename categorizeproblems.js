@@ -1,7 +1,6 @@
 import fs from "fs";
 import turndown from "turndown";
 
-
 async function categorize(problem, topics) {
     const apiKey = process.env.OPENAI_API_KEY;
     const apiUrl = "https://api.openai.com/v1/chat/completions";
