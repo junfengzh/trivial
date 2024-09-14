@@ -1,19 +1,10 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
-(() => {
-  let allPages = [];
-  let allProblems = [];
-  let tagToProblems = {};
-  $.getJSON("/data/allpages.json", (json) => {
-    allPages = json;
-  });
-  $.getJSON("/data/allproblems.json", (json) => {
-    allProblems = json;
-  });
-  $.getJSON("/data/tagtoproblems.json", (json) => {
-    tagToProblems = json;
-  });
+(async () => {
+  let allPages = await $.getJSON("data/allpages.json");
+  let allProblems = await $.getJSON("data/allproblems.json");
+  let tagToProblems = await $.getJSON("data/tagtoproblems.json");
   let categoryPages = [];
   let theoremPages = [];
   let testsList = `AMC 8, AMC 10, AMC 12, AIME, USAJMO, USAMO, IMO, AJHSME, AHSME`;
@@ -4399,4 +4390,114 @@
     }
     $(".subtitle").html(text);
   });*/
+
+  //
+  // New experience code begin
+  //
+  let currentLevel = 2;
+  let attemptedProblems = {};
+  async function showNextProblem() {
+    let problemName = pickProblem();
+    let problemSetName = problemName.split('/')[0];
+    let problemSet = await $.getJSON(`data/tagged/${problemSetName}.json`);
+    let problem = problemSet[problemName];
+    let problemRawText = problem.parse.text["*"];
+    if (problemRawText.includes('redirectText')) {
+      await showNextProblem();
+      return;
+    }
+    let problemText = latexer(problemRawText);
+    let problemProblem = getProblem(problemText);
+    let answer = await getAnswer(problemName);
+    let problemUrl = 'https://artofproblemsolving.com/wiki/index.php/';
+    problemUrl += problemName.replaceAll(' ', '_');
+
+    $('#progress').text(`CurrentLevel ${currentLevel/2.0}`);
+    $("#problem-text").html(problemProblem);
+    $('#gold-answer').text(answer);
+    $('#page-name').text(problemName);
+    $("#solutions-text").html(`<a href="${problemUrl}" target="_blank">Problem Link</a>`);
+  }
+
+  function pickProblem() {
+    while (true) {
+      let problems = problemsByDifficulty[currentLevel];
+      let problem = problems[Math.floor(Math.random() * problems.length)];
+      if (problem in attemptedProblems) {
+        continue;
+      }
+      console.log('picked', problem);
+      return problem;
+    }
+  }
+
+  async function getAnswer(pagename) {
+    let answersTitle = `${pagename?.split(" Problems/Problem")[0]} Answer Key`;
+    let apiEndpoint = "https://artofproblemsolving.com/wiki/api.php";
+    let params = `action=parse&page=${answersTitle}&format=json`;
+
+    let response = await fetch(`${apiEndpoint}?${params}&origin=*`);
+    let json = await response.json();
+    let answerText = json.parse?.text["*"];
+    let problemNum = computeNumber(pagename);
+    let answer = $($.parseHTML(answerText))
+      ?.find("ol li")
+      ?.eq(problemNum - 1)
+      ?.text();
+    return answer;
+  }
+
+  function checkAnswer() {
+    let pagename = $("#page-name").text();
+    let answer = $("#gold-answer").text();
+    let originalAnswer = sanitize($("#input-answer").val());
+    originalAnswer = originalAnswer.toUpperCase();
+    let finalAnswer = originalAnswer;
+    if (!finalAnswer) {
+      return;
+    }
+    if (computeTest(pagename) === "AIME")
+      finalAnswer = originalAnswer.padStart(3, "0");
+    if (
+      finalAnswer === answer ||
+      (pagename === "2012 AMC 12B Problems/Problem 12" &&
+        (finalAnswer === "D" || finalAnswer === "E")) ||
+      (pagename === "2015 AMC 10A Problems/Problem 20" &&
+        finalAnswer === "B") ||
+      (pagename === "2022 AIME II Problems/Problem 8" &&
+        (finalAnswer === "080" || finalAnswer === "081"))
+    ) {
+      alert('Yay!');
+      currentLevel++;
+    } else {
+      alert('Oops!');
+    }
+    attemptedProblems[pagename] = true;
+    $('#input-answer').val('');
+    showNextProblem();
+  }
+
+  let problemsByDifficulty = (() => {
+    let diffToProblems = [];
+    for (let i = 0; i < 20; i++) {
+      diffToProblems.push([]);
+    }
+    allProblems.forEach(x => {
+      let diff = computeDifficulty(
+        computeTest(x), computeNumber(x), computeYear(x)
+      );
+      if (!diff || diff <= 0) {
+        return;
+      }
+      diff = Math.round(diff * 2);
+      diffToProblems[diff].push(x);
+    });
+    return diffToProblems;
+  })();
+
+  $(".page-container").on("click", "#check-answer", checkAnswer);
+  await showNextProblem();
+  //
+  // New experience code end
+  //
 })();

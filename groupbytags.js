@@ -10,6 +10,9 @@ import turndown from "turndown";
         let problems = JSON.parse(fs.readFileSync(`data/tagged/${file}`));
         for (let name in problems) {
             let problem = problems[name];
+            if (problem.parse.text['*'].includes('redirectText')) {
+                continue;
+            }
             problem['tags'].forEach(x => {
                 if (!(x in tagToProblems)) {
                     tagToProblems[x] = [];
