@@ -4394,8 +4394,35 @@
   //
   // New experience code begin
   //
-  let currentLevel = 2;
+  let currentDifficulty = 1;
+  let count = 0;
+  let xp = 0;
+  let level = 1;
   let attemptedProblems = {};
+
+  function save() {
+    localStorage.setItem('amc-trivial', JSON.stringify({
+      currentDifficulty,
+      count,
+      xp,
+      level,
+      attemptedProblems
+    }));
+  }
+
+  function load() {
+    let data = localStorage.getItem('amc-trivial');
+    if (!data) {
+      return;
+    }
+    data = JSON.parse(data);
+    currentDifficulty = data.currentDifficulty;
+    count = data.count;
+    xp = data.xp;
+    level = data.level;
+    attemptedProblems = data.attemptedProblems;
+  }
+
   async function showNextProblem() {
     let problemName = pickProblem();
     let problemSetName = problemName.split('/')[0];
@@ -4408,20 +4435,25 @@
     }
     let problemText = latexer(problemRawText);
     let problemProblem = getProblem(problemText);
+    let problemSolution = getSolutions(problemText);
     let answer = await getAnswer(problemName);
     let problemUrl = 'https://artofproblemsolving.com/wiki/index.php/';
     problemUrl += problemName.replaceAll(' ', '_');
 
-    $('#progress').text(`CurrentLevel ${currentLevel/2.0}`);
+    $('#progress').text(`
+Difficulty: ${currentDifficulty}
+ | Level: ${level}
+ | Count: ${count}
+ | XP Left: ${2*level-xp}`);
     $("#problem-text").html(problemProblem);
     $('#gold-answer').text(answer);
     $('#page-name').text(problemName);
-    $("#solutions-text").html(`<a href="${problemUrl}" target="_blank">Problem Link</a>`);
+    $("#solutions-text").html(problemSolution).hide();
   }
 
   function pickProblem() {
     while (true) {
-      let problems = problemsByDifficulty[currentLevel];
+      let problems = problemsByDifficulty[currentDifficulty];
       let problem = problems[Math.floor(Math.random() * problems.length)];
       if (problem in attemptedProblems) {
         continue;
@@ -4458,6 +4490,7 @@
     }
     if (computeTest(pagename) === "AIME")
       finalAnswer = originalAnswer.padStart(3, "0");
+    let isCorrect = true;
     if (
       finalAnswer === answer ||
       (pagename === "2012 AMC 12B Problems/Problem 12" &&
@@ -4467,14 +4500,42 @@
       (pagename === "2022 AIME II Problems/Problem 8" &&
         (finalAnswer === "080" || finalAnswer === "081"))
     ) {
-      alert('Yay!');
-      currentLevel++;
+      isCorrect = true;
     } else {
-      alert('Oops!');
+      isCorrect = false;
     }
     attemptedProblems[pagename] = true;
+    if (isCorrect) {
+      // Correct!
+      count++;
+      xp += currentDifficulty;
+      if (xp >= 2 * level) {
+        level++;
+        xp = 0;
+      }
+      if (count >= 3) {
+        currentDifficulty++;
+        count = 0;
+      }
+    } else {
+      // Wrong!
+      count--;
+      if (count <= -3) {
+        if (currentDifficulty > 1) {
+          currentDifficulty--;
+          count = 0;
+        } else {
+          count = -3;
+        }
+      }
+    }
+    save();
     $('#input-answer').val('');
-    showNextProblem();
+    $('#check-answer').hide();
+    $('#input-answer').hide();
+    $('#solutions-text').show();
+    $('#next-problem').show();
+    // showNextProblem();
   }
 
   let problemsByDifficulty = (() => {
@@ -4496,6 +4557,7 @@
   })();
 
   $(".page-container").on("click", "#check-answer", checkAnswer);
+  load();
   await showNextProblem();
   //
   // New experience code end
