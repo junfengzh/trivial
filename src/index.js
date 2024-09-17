@@ -4394,7 +4394,7 @@
   //
   // New experience code begin
   //
-  let currentDifficulty = 1;
+  let currentDifficulty = 6;
   let count = 0;
   let xp = 0;
   let level = 1;
